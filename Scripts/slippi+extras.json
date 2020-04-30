@@ -14,12 +14,6 @@
           "annotation": "Unlock All Characters and Stages [Datel]"
         },
         {
-          "type": "injectFolder",
-          "sourceFolder": "..\\ASM\\Faster Melee Codes/External/Skip Memcard Prompt",
-          "isRecursive": true,
-          "annotation": "Skip Memcard Prompt [UnclePunch]"
-        },
-        {
           "type": "binary",
           "sourceFile": "..\\ASM\\Faster Melee Codes/Binary/FasterMeleeSettings/DisableSpecialMessages.bin",
           "annotation": "Disable Special Messages [Most]"
