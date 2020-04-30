@@ -1,0 +1,23 @@
+{
+  "outputFiles": [
+    {
+      "file": "..\\Output\\On Boot.txt"
+    }
+  ],
+  "codes": [
+    {
+      "name": "Slightly Modified Faster Melee Netplay Settings",
+      "authors": [
+        "A bunch of people who aren't big money :("
+      ],
+      "build": [
+        {
+          "type": "injectFolder",
+          "sourceFolder": "..\\ASM\\On Boot",
+          "isRecursive": true
+        }
+      ]
+    }
+
+  ]
+}
