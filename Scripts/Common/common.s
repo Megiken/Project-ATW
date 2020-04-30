@@ -139,6 +139,7 @@ addi    r1,r1,0x100    # release the space
 .set IMgetCorrectBans,functSpace+0xa8
 .set checkBanClone,functSpace+0xac
 .set updateBanText,functSpace+0xb0
+.set getCustomStageByte,functSpace+0xb4
 
 
 ################################################################################
@@ -183,6 +184,7 @@ addi    r1,r1,0x100    # release the space
 .set IMbanOrder,debugSpace+0x80
 .set IMplayerMoney,debugSpace+0x84
 .set IMcharCost,debugSpace+0x88
+.set customStageData,debugSpace
 
 .set itemSpawnRate,debugSpace+0x18
 
@@ -233,6 +235,8 @@ addi    r1,r1,0x100    # release the space
 .set ATWstocks,-0x7d34
 .set newHeapStart,-0x7d10
 .set IMmoneyTextStruct,-0x7d0c
+.set tempStageAdr,
+.set tempBackupAscii,
 
 ################################################################################
 # Values
