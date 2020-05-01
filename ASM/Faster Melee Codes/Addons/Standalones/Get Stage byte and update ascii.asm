@@ -54,7 +54,7 @@ b Miiverse
 b SplattlefinoPlaza
 b Smash4FD
 b SaffronCity
-b 75m
+b seventyfivem
 b Warioland
 
 THERE:
@@ -127,7 +127,7 @@ Miiverse:
 SplattlefinoPlaza:
 Smash4FD:
 SaffronCity:
-75m:
+seventyfivem:
 Warioland:
 
 
