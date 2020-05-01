@@ -15,8 +15,8 @@ public class Main{
 	public static String[] doneoffset = new String[100];
 	public static int currentID = 0;
 	public static File currentFile = new File("");
-	public static String[] stages = {"Dummy","Test","Fountain Of Dreams","Pokemon Stadium","Peach's Castle","Kongo Jungle","Brinstar","Corneria","Yoshi's Story","Onett","Mute City","Rainbow Cruise","Jungle Japes","Great Bay","Hyrule Temple","Brinstar Depths","Yoshi's Island","Green Greens","Fourside","Mushroom Kingdom 1","Mushroom Kingdom 2","Akaneia","Venom","Poke Floats","Big Blue","Icicle Mountain","Icetop","Flatzone","Dreamland","Yoshi's Island N64","Kongo Jungle N64","Battlefield","Final Destination","Mario Target Test","Captain Falcon Target Test","Young link Target Test","Donkey Kong Target Test","Dr Mario Target Test","Falco Target Test","Fox Target Test","Ice Climbers Target Test","Kirby Target Test","Bowser Target Test","Link Target Test","Luigi Target Test","Marth Target Test","Mewtwo Target Test","Ness Target Test","Peach Target Test","Pichu Target Test","Pikachu Target Test","Jigglypuff Target Test","Samus Target Test","Sheik Target Test","Yoshi Target Test","Zelda Target Test","Mr Game and watch Target Test","Roy Target Test","Ganondorf Target Test","Majoras Mask","Entei","Goomba","Mount Olympus","All star rest","Home run contest","Escape Shaft","Race to the finish","Duelist pro stage","Event 32 Corneria","Legal Rainbow Cruise","Legal Green Greens","Legal big blue","Legal Peach's Castle","Legal Yoshi's island","Legal Jungle Japes","Legal Great Bay","Legal Mushroom Kindom 2","Legal Yoshi's Island N64","Legal Kongo Jungle","Smashville fourside","Skyrule","Kirby Ware","Long FD","Lylat Cruise","Nintendo Gamecube","Kalos Pokemon League","Wario Ware Inc","Hyrule Castle","Suzaku Castle","Metal Cavern M","Metroid Lab","Battlefino Plaza","Smash 4 Battlefield","Miiverse","Splattlefino Plaza","Smash 4 FD","Saffron City","75m","Wario land"};
-	public static String myFile = "C:/Users/Thomas/Desktop/Project ATW/ASM/Faster Melee Codes/Addons/Debug Menu/";
+	public static String[] stages = {"Dummy","Test","Fountain Of Dreams","Pokemon Stadium","Peachs Castle","Kongo Jungle","Brinstar","Corneria","Yoshis Story","Onett","Mute City","Rainbow Cruise","Jungle Japes","Great Bay","Hyrule Temple","Brinstar Depths","Yoshis Island","Green Greens","Fourside","Mushroom Kingdom 1","Mushroom Kingdom 2","Akaneia","Venom","Poke Floats","Big Blue","Icicle Mountain","Icetop","Flatzone","Dreamland","Yoshis Island N64","Kongo Jungle N64","Battlefield","Final Destination","Mario Target Test","Captain Falcon Target Test","Young link Target Test","Donkey Kong Target Test","Dr Mario Target Test","Falco Target Test","Fox Target Test","Ice Climbers Target Test","Kirby Target Test","Bowser Target Test","Link Target Test","Luigi Target Test","Marth Target Test","Mewtwo Target Test","Ness Target Test","Peach Target Test","Pichu Target Test","Pikachu Target Test","Jigglypuff Target Test","Samus Target Test","Sheik Target Test","Yoshi Target Test","Zelda Target Test","Mr Game and watch Target Test","Roy Target Test","Ganondorf Target Test","Majoras Mask","Entei","Goomba","Mount Olympus","All star rest","Home run contest","Escape Shaft","Race to the finish","Duelist pro stage","Event 32 Corneria","Legal Rainbow Cruise","Legal Green Greens","Legal big blue","Legal Peachs Castle","Legal Yoshis island","Legal Jungle Japes","Legal Great Bay","Legal Mushroom Kindom 2","Legal Yoshis Island N64","Legal Kongo Jungle","Smashville fourside","Skyrule","Kirby Ware","Long FD","Lylat Cruise","Nintendo Gamecube","Kalos Pokemon League","Wario Ware Inc","Hyrule Castle","Suzaku Castle","Metal Cavern M","Metroid Lab","Battlefino Plaza","Smash 4 Battlefield","Miiverse","Splattlefino Plaza","Smash 4 FD","Saffron City","75m","Wario land"};
+	public static String myFile = "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/";
 	public static String text = "";
 	public static String var = "";
 	public static String eighty = "80";
@@ -43,6 +43,7 @@ public class Main{
 	public static String[] widescreen = {"Off","Analog","True"};
 	public static String[] lagreduction = {"Off","Half frame","Full frame"};
 	public static String[] yesno = {"Yes","No"};
+	public static String[] nightDreamland = {"Enabled","ATW Only","Disabled"};
 
 	public static void main(String[] args) throws InterruptedException, IOException {
 		subMenu projectATW = new subMenu(1,"Main Menu");
@@ -56,19 +57,33 @@ public class Main{
 		subMenu generalVisuals = new subMenu(1,"Visuals");
 		subMenu generalCredits = new subMenu(1,"Credits");
 
+		generalCredits.menuItems[0] = new menuItem(0,"Credits");
+		generalCredits.menuItems[1] = new menuItem(0);
+		generalCredits.menuItems[2] = new menuItem(0,"Big money is the coolest");
+		generalCredits.menuItems[3] = new menuItem(0,"Ill add more people later but no one is as cool as big money");
 
-
+		
+		generalVisuals.menuItems[0] = new menuItem(0,"Visual Settings");
+		generalVisuals.menuItems[1] = new menuItem(0);
+		generalVisuals.menuItems[2] = new menuItem(2,"Costume Dependent Marth Sword Colours: ",ende,1);
+		generalVisuals.menuItems[3] = new menuItem(2,"Night Dreamland: ",nightDreamland,1);
 
 		projectATW.menuItems[0] = new menuItem(0,"Hi, this is the temporaray debug menu!");
 		projectATW.menuItems[1] = new menuItem(0);
 		projectATW.menuItems[2] = generalMain;
-		projectATW.menuItems[3] = generalItems;
-		projectATW.menuItems[4] = generalMechanics;
-		projectATW.menuItems[5] = generalGamemodes;
-		projectATW.menuItems[6] = generalVisuals;
-		projectATW.menuItems[7] = generalCredits;
+		projectATW.menuItems[3] = generalStages;
+		projectATW.menuItems[4] = generalItems;
+		projectATW.menuItems[5] = generalMechanics;
+		projectATW.menuItems[6] = generalGamemodes;
+		projectATW.menuItems[7] = generalVisuals;
+		projectATW.menuItems[8] = generalCredits;
 
-
+		generalMechanics.menuItems[0] = new menuItem(0,"Mechanics Settings");
+		generalMechanics.menuItems[1] = new menuItem(0);
+		generalMechanics.menuItems[2] = new menuItem(2,"Fancy Throwing: ",ende,1);
+		generalMechanics.menuItems[3] = new menuItem(2,"Invincibility After Bury: ",ende,1);
+		generalMechanics.menuItems[4] = new menuItem(2,"Health per kill: ",nightDreamland,1);
+		generalMechanics.menuItems[5] = new menuItem(3,"Health per kill amount: ",25,50,1);
 
 
 		subMenu ATWstartMatch = new subMenu(1,"Starting Characters");
@@ -115,7 +130,7 @@ public class Main{
 		atwInfo.menuItems[5] = new menuItem(0,"automatically changed after each game, and you will automatically");
 		atwInfo.menuItems[6] = new menuItem(0,"be taken out of when you are out of characters. On the character");
 		atwInfo.menuItems[7] = new menuItem(0,"select screen, you can hit A to put yourself in the game, L to");
-		atwInfo.menuItems[8] = new menuItem(0,"bring up the nametag screen, and R to bring up the rules. It's");
+		atwInfo.menuItems[8] = new menuItem(0,"bring up the nametag screen, and R to bring up the rules. Its");
 		atwInfo.menuItems[9] = new menuItem(0,"recommended that you do not change the item settings, ");
 		atwInfo.menuItems[10] = new menuItem(0,"everything else should be ok to change though.");
 
@@ -308,7 +323,7 @@ public class Main{
 
 		specialMelee.menuItems[0] = new menuItem(0,"Special Melee");
 		specialMelee.menuItems[1] = new menuItem(0);
-		specialMelee.menuItems[2] = new menuItem(2,"%Stamina",SM1,0);
+		specialMelee.menuItems[2] = new menuItem(2,"Percent/Stamina",SM1,0);
 		specialMelee.menuItems[3] = new menuItem(3,"Stamina Amount",150,500,1);
 		specialMelee.menuItems[4] = new menuItem(2,"Size: ",SM2,0);
 		specialMelee.menuItems[5] = new menuItem(2,"Head: ",SM3,0);
@@ -343,29 +358,63 @@ public class Main{
 		generalMain.menuItems[8] = new menuItem(2,"Widescreen: ",widescreen,0);
 		generalMain.menuItems[9] = new menuItem(2,"Lag reduction: ",lagreduction,0);
 
+		tourneyMods.menuItems[0] = new menuItem(0,"Tourney Mods");
+		tourneyMods.menuItems[1] = new menuItem(0);
+		tourneyMods.menuItems[2] = new menuItem(2,"C Stick in 1p modes: ",ende,0);
+		tourneyMods.menuItems[3] = new menuItem(2,"Adjust Default CSS hand position: ",ende,1);
+		tourneyMods.menuItems[4] = new menuItem(2,"Idle Screen: ",ende,0);
+		tourneyMods.menuItems[5] = new menuItem(2,"Ledgegrab Limit: ",ende,1);
+		tourneyMods.menuItems[6] = new menuItem(3,"Max Ledge Grabs: ",60,150,1);
+		tourneyMods.menuItems[7] = new menuItem(2,"Wobbling Fix: ",ende,1);
+		tourneyMods.menuItems[8] = new menuItem(2,"UCF",ende,0);
+		tourneyMods.menuItems[9] = new menuItem(2,"Decreased Dreamland Volume: ",ende,1);
+		
+		playerAttributes.menuItems[0] = new menuItem(0,"Player Attributes");
+		playerAttributes.menuItems[1] = new menuItem(0);
+		playerAttributes.menuItems[2] = new menuItem(0,"Player 1 Scales:");
+		playerAttributes.menuItems[3] = new menuItem(8,"Model: ",1,3,0.0625);
+		playerAttributes.menuItems[4] = new menuItem(8,"Offense: ",1,3,0.0625);
+		playerAttributes.menuItems[5] = new menuItem(8,"Defense: ",1,3,0.0625);
+		playerAttributes.menuItems[6] = new menuItem(0);
+		playerAttributes.menuItems[7] = new menuItem(0,"Player 2 Scales:");
+		playerAttributes.menuItems[8] = new menuItem(8,"Model: ",1,3,0.0625);
+		playerAttributes.menuItems[9] = new menuItem(8,"Offense: ",1,3,0.0625);
+		playerAttributes.menuItems[10] = new menuItem(8,"Defense: ",1,3,0.0625);
+		playerAttributes.menuItems[11] = new menuItem(0);
+		playerAttributes.menuItems[12] = new menuItem(0,"Player 3 Scales:");
+		playerAttributes.menuItems[13] = new menuItem(8,"Model: ",1,3,0.0625);
+		playerAttributes.menuItems[14] = new menuItem(8,"Offense: ",1,3,0.0625);
+		playerAttributes.menuItems[15] = new menuItem(8,"Defense: ",1,3,0.0625);
+		playerAttributes.menuItems[16] = new menuItem(0);
+		playerAttributes.menuItems[17] = new menuItem(0,"Player 4 Scales:");
+		playerAttributes.menuItems[18] = new menuItem(8,"Model: ",1,3,0.0625);
+		playerAttributes.menuItems[19] = new menuItem(8,"Offense: ",1,3,0.0625);
+		playerAttributes.menuItems[20] = new menuItem(8,"Defense: ",1,3,0.0625);
 
-
+		
+		
+		
 		generalItems.menuItems[0] = new menuItem(0,"Items");
 		generalItems.menuItems[1] = new menuItem(0);
-		generalItems.menuItems[2] = new menuItem(2,"Use custom item timer: ",yesno,0);
-		generalItems.menuItems[3] = new menuItem(3,"Custom item timer: ",750,2000,5);
+		generalItems.menuItems[2] = new menuItem(2,"Custom item timer: ",ende,0);
+		generalItems.menuItems[3] = new menuItem(3,"Custom Timer: ",800,2000,5);
 
 		subMenu customStageSelectScreen = new subMenu(1,"Custom Stage Select Screen Builder");
 
-		customStageSelectScreen.menuItems[0] = new menuItem(2,"Peach's Castle: ",stages,4);
+		customStageSelectScreen.menuItems[0] = new menuItem(2,"Peachs Castle: ",stages,4);
 		customStageSelectScreen.menuItems[1] = new menuItem(2,"Rainbow Cruise: ",stages,11);
 		customStageSelectScreen.menuItems[2] = new menuItem(2,"Kongo Jungle: ",stages,5);
 		customStageSelectScreen.menuItems[3] = new menuItem(2,"Jungle Japes: ",stages,12);
 		customStageSelectScreen.menuItems[4] = new menuItem(2,"Great Bay: ",stages,13);
 		customStageSelectScreen.menuItems[5] = new menuItem(2,"Hyrule Temple: ",stages,14);
-		customStageSelectScreen.menuItems[6] = new menuItem(2,"Yoshi's Story: ",stages,8);
-		customStageSelectScreen.menuItems[7] = new menuItem(2,"Yoshi's Island: ",stages,16);
+		customStageSelectScreen.menuItems[6] = new menuItem(2,"Yoshis Story: ",stages,8);
+		customStageSelectScreen.menuItems[7] = new menuItem(2,"Yoshis Island: ",stages,16);
 		customStageSelectScreen.menuItems[8] = new menuItem(2,"Fountain Of Dreams: ",stages,2);
 		customStageSelectScreen.menuItems[9] = new menuItem(2,"Green Greens: ",stages,17);
 		customStageSelectScreen.menuItems[10] = new menuItem(2,"Corneria: ",stages,7);
 		customStageSelectScreen.menuItems[11] = new menuItem(2,"Venom: ",stages,22);
 		customStageSelectScreen.menuItems[12] = new menuItem(2,"Brinstar: ",stages,6);
-		customStageSelectScreen.menuItems[13] = new menuItem(2,"Brinstar Depths: ",stages,14);
+		customStageSelectScreen.menuItems[13] = new menuItem(2,"Brinstar Depths: ",stages,15);
 		customStageSelectScreen.menuItems[14] = new menuItem(2,"Onett: ",stages,9);
 		customStageSelectScreen.menuItems[15] = new menuItem(2,"Fourside: ",stages,18);
 		customStageSelectScreen.menuItems[16] = new menuItem(2,"Mute City: ",stages,10);
@@ -379,7 +428,7 @@ public class Main{
 		customStageSelectScreen.menuItems[24] = new menuItem(2,"Battlefield: ",stages,31);
 		customStageSelectScreen.menuItems[25] = new menuItem(2,"Final Destination: ",stages,32);
 		customStageSelectScreen.menuItems[26] = new menuItem(2,"Dreamland: ",stages,28);
-		customStageSelectScreen.menuItems[27] = new menuItem(2,"Yoshi's Island 64: ",stages,29);
+		customStageSelectScreen.menuItems[27] = new menuItem(2,"Yoshis Island 64: ",stages,29);
 		customStageSelectScreen.menuItems[28] = new menuItem(2,"Kongo Jungle 64: ",stages,30);
 
 
@@ -387,6 +436,25 @@ public class Main{
 		generalStages.menuItems[1] = new menuItem(0);
 		generalStages.menuItems[2] = customStageSelectScreen;
 		generalStages.menuItems[3] = new menuItem(0);
+		generalStages.menuItems[4] = new menuItem(2,"Shy guys: ",ende,0);
+		generalStages.menuItems[5] = new menuItem(2,"Pokemon Stadium Transformations: ",ende,1);
+		generalStages.menuItems[6] = new menuItem(2,"Dreamland wind: ",ende,0);
+		generalStages.menuItems[7] = new menuItem(2,"Brinstar lava: ",ende,0);
+		generalStages.menuItems[8] = new menuItem(2,"FOD platforms and jets: ",ende,0);
+		generalStages.menuItems[9] = new menuItem(2,"Corneria ships: ",ende,0);
+		generalStages.menuItems[10] = new menuItem(2,"Corneria great gun: ",ende,0);
+		generalStages.menuItems[11] = new menuItem(2,"Green Greens blocks: ",ende,0);
+		generalStages.menuItems[12] = new menuItem(2,"Green Greens wind and apples: ",ende,0);
+		generalStages.menuItems[13] = new menuItem(2,"Peachs Castle switches and bullets: ",ende,0);
+		generalStages.menuItems[14] = new menuItem(2,"FD background transitions: ",ende,0);
+		generalStages.menuItems[15] = new menuItem(2,"Mushroom Kingdom 1 Levers: ",ende,0);
+		generalStages.menuItems[16] = new menuItem(2,"Mushroom Kingdom 1 blocks respawn: ",ende,0);
+		generalStages.menuItems[17] = new menuItem(2,"Jungle Japes water and klap trap: ",ende,0);
+		generalStages.menuItems[18] = new menuItem(2,"Onett Cars: ",ende,0);
+		generalStages.menuItems[19] = new menuItem(2,"Onett drug store platforms: ",ende,0);
+		generalStages.menuItems[20] = new menuItem(2,"Mute city cars: ",ende,0);
+		generalStages.menuItems[21] = new menuItem(2,"Kongo Jungle Barrel: ",ende,0);
+		generalStages.menuItems[22] = new menuItem(2,"Kongo Jungle 64 Barrel: ",ende,0);
 
 
 
@@ -570,19 +638,21 @@ public class Main{
 			if(menu.menuItems[i] == null) {
 				break;
 			}
-			if(menu.menuItems[i] instanceof subMenu) {
-				subMenu temp = (subMenu) menu.menuItems[i];
-				currentMenuSpace+=getNumOfMenuItems(menu);
-				backup = currentMenuSpace;
-				printMenu(temp,filename,list);
-			}
-			menu.menuItems[i].injectSpot = backup;
 			if(i == 0) {
-				backup = currentMenuSpace;
 				data = "#To be inserted at " + eighty + Integer.toHexString(currentMenuSpace) + "\n";
 				newFile = new File(myFile + menu.text + ".s");
 				list.add(new jsonObject((eighty + Integer.toHexString(currentMenuSpace)),newFile));
+				System.out.println(menu.text + " : " + data);
+				currentMenuSpace+=getNumOfMenuItems(menu);
+				backup = currentMenuSpace;
 			}
+
+			if(menu.menuItems[i] instanceof subMenu) {
+				subMenu temp = (subMenu) menu.menuItems[i];
+				printMenu(temp,filename,list);
+			}
+			menu.menuItems[i].injectSpot = backup;
+			backup = currentMenuSpace;
 			switch (menu.menuItems[i].type) {
 			case 0:
 				data += "\n.long 0";
@@ -631,7 +701,7 @@ public class Main{
 				data += "\n.long 0x" + getTextPointer(menu.menuItems[i].text);
 				data += "\n.long 0";
 				data += "\n.long 0x" + getVarPointer((float)menu.menuItems[i].defaultValue, menu.menuItems[i]);
-				data += "\n.long 0";
+				data += "\n.long 0x" + getFloat((float) menu.menuItems[i].valToInc);
 				data += "\n.long 0x" + getFloat((float) menu.menuItems[i].LRItems);
 				data += "\n.long 0x" + getFloat((float) menu.menuItems[i].valToInc);
 				break;
