@@ -1,3 +1,3 @@
-#To be inserted at 8028fb18
+#To be inserted at 8014c538
 
-cmpw r3,r3
+nop

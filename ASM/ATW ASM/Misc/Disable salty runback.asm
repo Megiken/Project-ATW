@@ -1,3 +1,3 @@
-#To be inserted at 801A5B14
+#To be inserted at 801B15E4
 
-li	r29, 0
+addi	r30, r3, 0

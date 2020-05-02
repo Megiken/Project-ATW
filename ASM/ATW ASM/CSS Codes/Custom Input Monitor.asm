@@ -24,6 +24,8 @@ rlwinm.	r0, r7, 0, 23, 23
 bne APRESSED
 rlwinm.	r0, r7, 0, 19, 19
 bne STARTPRESSED
+rlwinm.	r0, r7, 0, 31, 31
+bne DPADLEFTPRESSED
 b END
 
 STARTPRESSED:
@@ -201,6 +203,41 @@ stb r21,1(r20)
 mr r3,r17
 branchl r12,0x8025db35
 b END
+
+DPADLEFTPRESSED:
+li r18,0x861
+branchl r12,checkData
+cmpwi r17,-1
+beq END
+branchl r12,getCSSplayers
+cmpwi r3,0
+bne END
+
+branchl r12,getCharData
+mflr r3
+load r4,0x01010101
+stw r4,0(r3)
+addi r3,r3,4
+li r4,108
+branchl r12,0x8000c160
+load r20,0x8045acb8
+lis r21,0x1a03
+li r22,0
+LOOP:
+stw r21,0(r20)
+addi r20,r20,0x24
+addi r22,r22,1
+cmpwi r22,4
+bne LOOP
+li r3,0xdf
+li r4,0xfe
+li r5,0x80
+li r7,7
+branchl r12,playsfx
+b END
+
+
+
 END:
 li r7,0
 REALEND:

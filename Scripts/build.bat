@@ -29,21 +29,21 @@ gecko build -c onboot.json...
 echo.
 
 echo Creating ATW DAT...
-java -jar CodeConverter.jar -c "..\Output\ATW Codes.txt" -o "..\Files\ATW.dat"
+java -jar CodeConverter.jar -c "..\Output\ATW Codes.txt" -o "..\Files\Custom Code\ATW.dat"
 echo.
 
 echo Creating DP DAT...
-java -jar CodeConverter.jar -c "..\Output\Duelist Pro.txt" -o "..\Files\DP.dat"
+java -jar CodeConverter.jar -c "..\Output\Duelist Pro.txt" -o "..\Files\Custom Code\DP.dat"
 echo.
 
 echo Creating KOTH DAT...
-java -jar CodeConverter.jar -c "..\Output\KOTH.txt" -o "..\Files\KTH.dat"
+java -jar CodeConverter.jar -c "..\Output\KOTH.txt" -o "..\Files\Custom Code\KTH.dat"
 echo.
 
 echo Creating Iron Man DAT...
-java -jar CodeConverter.jar -c "..\Output\ironman.txt" -o "..\Files\IM.dat"
+java -jar CodeConverter.jar -c "..\Output\ironman.txt" -o "..\Files\Custom Code\IM.dat"
 echo.
 
 echo Creating Slippi + Extras DAT...
-java -jar CodeConverter.jar -c "..\Output\Slippi + Extras.txt" -o "..\Files\S+E.dat"
+java -jar CodeConverter.jar -c "..\Output\Slippi + Extras.txt" -o "..\Files\Custom Code\S+E.dat"
 echo.

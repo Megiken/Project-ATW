@@ -10,17 +10,9 @@ cmpwi r22,0x0610
 bne BACK
 li r19,0
 sth r19,0xa(r31)
-mulli r19,r20,0x24
-load r21,0x803f0e08
-add r21,r21,r19
-li r22,3
-stb r22,-0x1(r21)
-stb r22,0(r21)
-li r22,0x19
-stb r22,2(r21)
-stb r22,3(r21)
-li r22,0
-stb r22,1(r21)
+
+
+branchl r12,removePlayerFromCSS
 
 branchl r12,getCharData
 mflr r15

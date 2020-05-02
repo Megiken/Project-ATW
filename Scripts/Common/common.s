@@ -140,6 +140,7 @@ addi    r1,r1,0x100    # release the space
 .set checkBanClone,functSpace+0xac
 .set updateBanText,functSpace+0xb0
 .set getCustomStageByte,functSpace+0xb4
+.set removePlayerFromCSS,functSpace+0xb8
 
 
 ################################################################################
@@ -149,6 +150,7 @@ addi    r1,r1,0x100    # release the space
 #Debug menu
 
 .set debugSpace,0x80192f4c
+
 .set IMmoneyOffset,0x70
 
 .set playerAttributes,debugSpace
@@ -185,9 +187,9 @@ addi    r1,r1,0x100    # release the space
 .set muteCityCars,debugSpace+0x118
 .set kongoJungleBarrel,debugSpace+0x11c
 .set kongoJungle64Barrel,debugSpace+0x120
-.set onettCars,debugSpace+0x124
-.set customItemSpawnFlag,debugSpace+0x128
-.set itemSpawnRate,debugSpace+0x12c
+.set customItemSpawnFlag,debugSpace+0x124
+.set itemSpawnRate,debugSpace+0x128
+.set fancyThrowingFlag,debugSpace+0x12c
 .set invincAfterBury,debugSpace+0x130
 .set HPKflag,debugSpace+0x134
 .set healthPerKill,debugSpace+0x138
@@ -286,7 +288,7 @@ addi    r1,r1,0x100    # release the space
 # Values
 ################################################################################
 
-.set allocSpace,0x10000
+.set allocSpace,0x18000
 .set debugMenuValues,0x80bdcd40+allocSpace+0x520
 
 ################################################################################
