@@ -235,8 +235,8 @@ addi    r1,r1,0x100    # release the space
 .set ATWstocks,-0x7d34
 .set newHeapStart,-0x7d10
 .set IMmoneyTextStruct,-0x7d0c
-.set tempStageAdr,1
-.set tempBackupAscii,1
+.set tempStageAdr,-0x7cf0
+.set tempBackupAscii,-0x7cec
 
 ################################################################################
 # Values

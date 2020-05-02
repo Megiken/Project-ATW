@@ -15,7 +15,7 @@ public class Main{
 	public static String[] doneoffset = new String[100];
 	public static int currentID = 0;
 	public static File currentFile = new File("");
-	public static String[] stages = {"Dummy","Test","Fountain Of Dreams","Pokemon Stadium","Peachs Castle","Kongo Jungle","Brinstar","Corneria","Yoshis Story","Onett","Mute City","Rainbow Cruise","Jungle Japes","Great Bay","Hyrule Temple","Brinstar Depths","Yoshis Island","Green Greens","Fourside","Mushroom Kingdom 1","Mushroom Kingdom 2","Akaneia","Venom","Poke Floats","Big Blue","Icicle Mountain","Icetop","Flatzone","Dreamland","Yoshis Island N64","Kongo Jungle N64","Battlefield","Final Destination","Mario Target Test","Captain Falcon Target Test","Young link Target Test","Donkey Kong Target Test","Dr Mario Target Test","Falco Target Test","Fox Target Test","Ice Climbers Target Test","Kirby Target Test","Bowser Target Test","Link Target Test","Luigi Target Test","Marth Target Test","Mewtwo Target Test","Ness Target Test","Peach Target Test","Pichu Target Test","Pikachu Target Test","Jigglypuff Target Test","Samus Target Test","Sheik Target Test","Yoshi Target Test","Zelda Target Test","Mr Game and watch Target Test","Roy Target Test","Ganondorf Target Test","Majoras Mask","Entei","Goomba","Mount Olympus","All star rest","Home run contest","Escape Shaft","Race to the finish","Duelist pro stage","Event 32 Corneria","Legal Rainbow Cruise","Legal Green Greens","Legal big blue","Legal Peachs Castle","Legal Yoshis island","Legal Jungle Japes","Legal Great Bay","Legal Mushroom Kindom 2","Legal Yoshis Island N64","Legal Kongo Jungle","Smashville fourside","Skyrule","Kirby Ware","Long FD","Lylat Cruise","Nintendo Gamecube","Kalos Pokemon League","Wario Ware Inc","Hyrule Castle","Suzaku Castle","Metal Cavern M","Metroid Lab","Battlefino Plaza","Smash 4 Battlefield","Miiverse","Splattlefino Plaza","Smash 4 FD","Saffron City","75m","Wario land"};
+	public static String[] stages = {"Dummy","Test","Fountain Of Dreams","Pokemon Stadium","Peachs Castle","Kongo Jungle","Brinstar","Corneria","Yoshis Story","Onett","Mute City","Rainbow Cruise","Jungle Japes","Great Bay","Hyrule Temple","Brinstar Depths","Yoshis Island","Green Greens","Fourside","Mushroom Kingdom 1","Mushroom Kingdom 2","Akaneia","Venom","Poke Floats","Big Blue","Icicle Mountain","Icetop","Flatzone","Dreamland","Yoshis Island N64","Kongo Jungle N64","Battlefield","Final Destination","Mario Target Test","Captain Falcon Target Test","Young link Target Test","Donkey Kong Target Test","Dr Mario Target Test","Falco Target Test","Fox Target Test","Ice Climbers Target Test","Kirby Target Test","Bowser Target Test","Link Target Test","Luigi Target Test","Marth Target Test","Mewtwo Target Test","Ness Target Test","Peach Target Test","Pichu Target Test","Pikachu Target Test","Jigglypuff Target Test","Samus Target Test","Sheik Target Test","Yoshi Target Test","Zelda Target Test","Mr Game and watch Target Test","Roy Target Test","Ganondorf Target Test","Majoras Mask","Entei","Goomba","Mount Olympus","All star rest","Home run contest","Escape Shaft","Race to the finish","Duelist pro stage","Event 32 Corneria","Legal Green Greens","Legal big blue","Legal Peachs Castle","Legal Yoshis island","Legal Jungle Japes","Legal Great Bay","Legal Mushroom Kindom 2","Legal Yoshis Island N64","Legal Kongo Jungle","Smashville fourside","Skyrule","Kirby Ware","Lylat Cruise","Nintendo Gamecube","Kalos Pokemon League","Wario Ware Inc","Hyrule Castle","Suzaku Castle","Metal Cavern M","Metroid Lab","Battlefino Plaza","Smash 4 Battlefield","Miiverse","Splattlefino Plaza","Smash 4 FD","Saffron City","75m","Wario land"};
 	public static String myFile = "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/";
 	public static String text = "";
 	public static String var = "";
@@ -435,26 +435,27 @@ public class Main{
 		generalStages.menuItems[0] = new menuItem(0,"Stages");
 		generalStages.menuItems[1] = new menuItem(0);
 		generalStages.menuItems[2] = customStageSelectScreen;
-		generalStages.menuItems[3] = new menuItem(0);
-		generalStages.menuItems[4] = new menuItem(2,"Shy guys: ",ende,0);
-		generalStages.menuItems[5] = new menuItem(2,"Pokemon Stadium Transformations: ",ende,1);
-		generalStages.menuItems[6] = new menuItem(2,"Dreamland wind: ",ende,0);
-		generalStages.menuItems[7] = new menuItem(2,"Brinstar lava: ",ende,0);
-		generalStages.menuItems[8] = new menuItem(2,"FOD platforms and jets: ",ende,0);
-		generalStages.menuItems[9] = new menuItem(2,"Corneria ships: ",ende,0);
-		generalStages.menuItems[10] = new menuItem(2,"Corneria great gun: ",ende,0);
-		generalStages.menuItems[11] = new menuItem(2,"Green Greens blocks: ",ende,0);
-		generalStages.menuItems[12] = new menuItem(2,"Green Greens wind and apples: ",ende,0);
-		generalStages.menuItems[13] = new menuItem(2,"Peachs Castle switches and bullets: ",ende,0);
-		generalStages.menuItems[14] = new menuItem(2,"FD background transitions: ",ende,0);
-		generalStages.menuItems[15] = new menuItem(2,"Mushroom Kingdom 1 Levers: ",ende,0);
-		generalStages.menuItems[16] = new menuItem(2,"Mushroom Kingdom 1 blocks respawn: ",ende,0);
-		generalStages.menuItems[17] = new menuItem(2,"Jungle Japes water and klap trap: ",ende,0);
-		generalStages.menuItems[18] = new menuItem(2,"Onett Cars: ",ende,0);
-		generalStages.menuItems[19] = new menuItem(2,"Onett drug store platforms: ",ende,0);
-		generalStages.menuItems[20] = new menuItem(2,"Mute city cars: ",ende,0);
-		generalStages.menuItems[21] = new menuItem(2,"Kongo Jungle Barrel: ",ende,0);
-		generalStages.menuItems[22] = new menuItem(2,"Kongo Jungle 64 Barrel: ",ende,0);
+		generalStages.menuItems[3] = new menuItem(0,"Custom Stage Select Screen does not work with auto random stage on");
+		generalStages.menuItems[4] = new menuItem(0);
+		generalStages.menuItems[5] = new menuItem(2,"Shy guys: ",ende,0);
+		generalStages.menuItems[6] = new menuItem(2,"Pokemon Stadium Transformations: ",ende,1);
+		generalStages.menuItems[7] = new menuItem(2,"Dreamland wind: ",ende,0);
+		generalStages.menuItems[8] = new menuItem(2,"Brinstar lava: ",ende,0);
+		generalStages.menuItems[9] = new menuItem(2,"FOD platforms and jets: ",ende,0);
+		generalStages.menuItems[10] = new menuItem(2,"Corneria ships: ",ende,0);
+		generalStages.menuItems[11] = new menuItem(2,"Corneria great gun: ",ende,0);
+		generalStages.menuItems[12] = new menuItem(2,"Green Greens blocks: ",ende,0);
+		generalStages.menuItems[13] = new menuItem(2,"Green Greens wind and apples: ",ende,0);
+		generalStages.menuItems[14] = new menuItem(2,"Peachs Castle switches and bullets: ",ende,0);
+		generalStages.menuItems[15] = new menuItem(2,"FD background transitions: ",ende,0);
+		generalStages.menuItems[16] = new menuItem(2,"Mushroom Kingdom 1 Levers: ",ende,0);
+		generalStages.menuItems[17] = new menuItem(2,"Mushroom Kingdom 1 blocks respawn: ",ende,0);
+		generalStages.menuItems[18] = new menuItem(2,"Jungle Japes water and klap trap: ",ende,0);
+		generalStages.menuItems[19] = new menuItem(2,"Onett Cars: ",ende,0);
+		generalStages.menuItems[20] = new menuItem(2,"Onett drug store platforms: ",ende,0);
+		generalStages.menuItems[21] = new menuItem(2,"Mute city cars: ",ende,0);
+		generalStages.menuItems[22] = new menuItem(2,"Kongo Jungle Barrel: ",ende,0);
+		generalStages.menuItems[23] = new menuItem(2,"Kongo Jungle 64 Barrel: ",ende,0);
 
 
 

@@ -26,7 +26,6 @@ b EscapeShaft
 b Racetothefinish
 b Duelistprostage
 b Event32Corneria
-b LegalRainbowCruise
 b Legalbigblue
 b LegalGreenGreens
 b LegalPeachsCastle
@@ -39,7 +38,6 @@ b LegalKongoJungle
 b Smashvillefourside
 b Skyrule
 b KirbyWare
-b LongFD
 b LylatCruise
 b NintendoGamecube
 b KalosPokemonLeague
@@ -91,50 +89,220 @@ li r3,0x52
 b CUSTOMEND
 Duelistprostage:
 
+li r3,0x2c
+load r20,0x803e8e44
+load r21,0x4c672e30
+
+
+b CUSTOM2END
+
 Event32Corneria:
 li r3,0xe9
 b CUSTOMEND
-LegalRainbowCruise:
 
 Legalbigblue:
 
+li r3,0x18
+load r20,0x803E2D18
+load r21,0x622e3061
+b CUSTOM2END
+
 LegalGreenGreens:
+
+li r3,0x11
+load r20,0x803E76C8
+load r21,0x722e3061
+b CUSTOM2END
 
 LegalPeachsCastle:
 
+li r3,0x4
+load r20,0x803E119C
+load r21,0x732E3061
+b CUSTOM2END
+
 LegalYoshisisland:
 
+li r3,0x10
+load r20,0x803E51C4
+load r21,0x742E3061
+b CUSTOM2END
+
 LegalJungleJapes:
+
+li r3,0xc
+load r20,0x803E52D8
+load r21,0x642E3061
+b CUSTOM2END
+
 LegalGreatBay:
+
+li r3,0xd
+load r20,0x803E3F64
+load r21,0x622E3061
+b CUSTOM2END
+
 LegalMushroomKingdom2:
+
+li r3,0x14
+load r20,0x803E4BF8
+load r21,0x322E3061
+b CUSTOM2END
+
 LegalYoshisIslandN64:
+
+li r3,0x1d
+load r20,0x803E6504
+load r21,0x792E3061
+b CUSTOM2END
+
 LegalKongoJungle:
+
+li r3,0x5
+load r20,0x803E17F8
+load r21,0x672E3061
+b CUSTOM2END
+
 Smashvillefourside:
+
+li r3,0x12
+load r20,0x803E3D8C
+load r21,0x732E3061
+b CUSTOM2END
+
 Skyrule:
+
+li r3,0xe
+load r20,0x803E5128
+load r21,0x682E3061
+b CUSTOM2END
+
 KirbyWare:
-LongFD:
+
+li r3,0x1c
+load r20,0x803E6740
+load r21,0x702E3061
+b CUSTOM2END
+
 LylatCruise:
+
+li r3,0x2b
+load r20,0x803E8D84
+load r21,0x4C6B2E30
+b CUSTOM2END
+
 NintendoGamecube:
+
+li r3,0x2c
+load r20,0x803e8e44
+load r21,0x4C672E32
+b CUSTOM2END
+
 KalosPokemonLeague:
+
+li r3,0x39
+load r20,0x803E9814
+load r21,0x46652E30
+b CUSTOM2END
+
 WarioWareInc:
+
+li r3,0x1d
+load r20,0x803E6504
+load r21,0x792E3161
+b CUSTOM2END
+
 HyruleCastle:
+
+li r3,0x30
+load r20,0x803E9144
+load r21,0x50652E30
+b CUSTOM2END
+
 SuzakuCastle:
+
+li r3,0x2c
+load r20,0x803e8e44
+load r21,0x4C672E30
+b CUSTOM2END
+
 MetalCavernM:
+
+li r3,0x32
+load r20,0x803E92C4
+load r21,0x506B2E30
+b CUSTOM2END
+
 MetroidLab:
+
+li r3,0x2a
+load r20,0x803E8CC4
+load r21,0x4B702E30
+b CUSTOM2END
+
 BattlefinoPlaza:
+
+li r3,0x1f
+load r20,0x803E7E30
+load r21,0x42612E30
+b CUSTOM2END
+
 Smash4Battlefield:
+
+li r3,0x23
+load r20,0x803E8724
+load r21,0x436C2E30
+b CUSTOM2END
+
 Miiverse:
+
+li r3,0x29
+load r20,0x803E8C04
+load r21,0x4B622E30
+b CUSTOM2END
+
 SplattlefinoPlaza:
+
+li r3,0x35
+load r20,0x803E950C
+load r21,0x536B2E30
+b CUSTOM2END
+
 Smash4FD:
+
+li r3,0x20
+load r20,0x803E7F88
+load r21,0x4C612E30
+b CUSTOM2END
+
 SaffronCity:
+
+li r3,0x22
+load r20,0x803E865C
+load r21,0x43612E30
+b CUSTOM2END
+
 seventyfivem:
+
+li r3,0x3a
+load r20,0x803E98D4
+load r21,0x476E2E30
+b CUSTOM2END
+
 Warioland:
 
+li r3,0x2f
+load r20,0x803E9084
+load r21,0x4E732E30
+b CUSTOM2END
+
+CUSTOM2END:
 
 
-
-
-
+lwz r22,0(r20)
+stw r20,tempStageAdr(rtoc)
+stw r22,tempBackupAscii(rtoc)
+stw r21,0(r20)
 
 
 
