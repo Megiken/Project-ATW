@@ -8,6 +8,16 @@ load r20,doublesByte
 lbz r20,0(r20)
 cmpwi r20,1
 beq END
+load r20,HPKflag
+lwz r20,0(r20)
+cmpwi r20,0
+beq END
+cmpwi r20,2
+beq GOOD
+lwz r20,gameID(rtoc)
+cmpwi r20,1
+bne END
+GOOD:
 branchl r12,0x8016b558
 cmpwi r3,2
 ble END

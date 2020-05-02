@@ -192,6 +192,95 @@ addi    r1,r1,0x100    # release the space
 .set IMmoneyOffset,0x70
 
 
+
+
+
+
+.set playerAttributes,debugSpace
+.set CstickFlag,debugSpace+0x30
+.set defaultHandsFlag,debugSpace+0x34
+.set idleScreenFlag,debugSpace+0x38
+.set ledgeGrabLimitFlag,debugSpace+0x3c
+.set maxLedgeGrabs,debugSpace+0x40
+.set wobblingFlag,debugSpace+0x44
+.set UCFflag,debugSpace+0x48
+.set dreamlandVolumeFlag,debugSpace+0x4c
+.set gameSpeedMult,debugSpace+0x50
+.set starKOFlag,debugSpace+0x54
+.set meleeVersion,debugSpace+0x58
+.set wideScreenFlag,debugSpace+0x5c
+.set lagReduction,debugSpace+0x60
+.set customStageData,debugSpace+0x64
+.set yoshisFlag,debugSpace+0xd8
+.set frozenPokemon,debugSpace+0xdc
+.set dreamLandWind,debugSpace+0xe0
+.set brinstarLava,debugSpace+0xe4
+.set FODflag,debugSpace+0xe8
+.set corneriaShips,debugSpace+0xec
+.set corneriaGun,debugSpace+0xf0
+.set greenGreensBlocks,debugSpace+0xf4
+.set greenGreensTree,debugSpace+0xf8
+.set peachCastle,debugSpace+0xfc
+.set fdBackground,debugSpace+0x100
+.set mushroomKingdom1Levers,debugSpace+0x104
+.set mushroomKingdom1Blocks,debugSpace+0x108
+.set jungleJapesFlag,debugSpace+0x10c
+.set onettCars,debugSpace+0x110
+.set onettDrugstore,debugSpace+0x114
+.set muteCityCars,debugSpace+0x118
+.set kongoJungleBarrel,debugSpace+0x11c
+.set kongoJungle64Barrel,debugSpace+0x120
+.set onettCars,debugSpace+0x124
+.set customItemSpawnFlag,debugSpace+0x128
+.set itemSpawnRate,debugSpace+0x12c
+.set invincAfterBury,debugSpace+0x130
+.set HPKflag,debugSpace+0x134
+.set healthPerKill,debugSpace+0x138
+.set firstChars,debugSpace+0x13c
+.set gameType,debugSpace+0x14c
+.set doublesType,debugSpace+0x150
+.set percentSwapFlag,debugSpace+0x154
+.set timerVar,debugSpace+0x158
+.set customTimer,debugSpace+0x15c
+.set numOfChars,debugSpace+0x160
+.set saveStocks,debugSpace+0x164
+.set battlefieldFlag,debugSpace+0x168
+.set fdFlag,debugSpace+0x16c
+.set dreamlandFlag,debugSpace+0x174
+.set redeadTimer,debugSpace+0x178
+.set bombImpact,debugSpace+0x17c
+.set bombExplosion,debugSpace+0x180
+.set gravity,debugSpace+0x184
+.set terminalVelocity,debugSpace+0x188
+.set KOTHgameType,debugSpace+0x18c
+.set KOTHmaxScore,debugSpace+0x190
+.set KOTHhillTime,debugSpace+0x194
+.set IMnumOfChars,debugSpace+0x198
+.set IMcharOrder,debugSpace+0x19c
+.set IMbanOrder,debugSpace+0x1a0
+.set IMplayerMoney,debugSpace+0x1a4
+.set IMcharCost,debugSpace+0x1a8
+.set percentStaminaFlag,debugSpace+0x210
+.set staminaAmount,debugSpace+0x214
+.set sizeFlag,debugSpace+0x218
+.set headFlag,debugSpace+0x21c
+.set bodyFlag,debugSpace+0x220
+.set statusFlag,debugSpace+0x224
+.set gravityFlag,debugSpace+0x228
+.set speedFlag,debugSpace+0x22c
+.set cameraFlag,debugSpace+0x230
+.set customGamemodeFlag,debugSpace+0x234
+.set swordColoursFlag,debugSpace+0x238
+.set nightDreamlandFlag,debugSpace+0x23c
+
+
+
+
+
+
+
+
+
 #Other
 
 .set heapStart,0x8065cc60
