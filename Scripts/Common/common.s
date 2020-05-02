@@ -148,53 +148,8 @@ addi    r1,r1,0x100    # release the space
 
 #Debug menu
 
-#ATW
-
 .set debugSpace,0x80192f4c
-
-
-
-.set firstChars,debugSpace+0x1c
-.set gameType,debugSpace+0x2c
-.set doublesType,debugSpace+0x30
-.set percentSwapFlag,debugSpace+0x34
-.set timerVar,debugSpace+0x38
-.set customTimer,debugSpace+0x3c
-.set numOfChars,debugSpace+0x40
-.set saveStocks,debugSpace+0x44
-.set battlefieldFlag,debugSpace+0x48
-.set fdFlag,debugSpace+0x4c
-.set yoshisFlag,debugSpace+0x50
-.set dreamlandFlag,debugSpace+0x54
-.set redeadTimer,debugSpace+0x58
-
-
-
-.set bombImpact,debugSpace+0x5c
-.set bombExplosion,debugSpace+0x60
-.set gravity,debugSpace+0x64
-.set terminalVelocity,debugSpace+0x68
-
-.set KOTHgameType,debugSpace+0x6c
-.set KOTHmaxScore,debugSpace+0x70
-.set KOTHhillTime,debugSpace+0x74
-
-.set IMnumOfChars,debugSpace+0x78
-.set IMcharOrder,debugSpace+0x7c
-.set IMbanOrder,debugSpace+0x80
-.set IMplayerMoney,debugSpace+0x84
-.set IMcharCost,debugSpace+0x88
-.set customStageData,debugSpace
-
-.set itemSpawnRate,debugSpace+0x18
-
-
 .set IMmoneyOffset,0x70
-
-
-
-
-
 
 .set playerAttributes,debugSpace
 .set CstickFlag,debugSpace+0x30
