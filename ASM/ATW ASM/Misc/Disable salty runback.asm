@@ -1,3 +1,3 @@
-#To be inserted at 801B15E4
+#To be inserted at 801a4160
 
-addi	r30, r3, 0
+stb	r0, 0x0003 (r31)

@@ -352,10 +352,10 @@ public class Main{
 		generalMain.menuItems[2] = playerAttributes;
 		generalMain.menuItems[3] = tourneyMods;
 		generalMain.menuItems[4] = new menuItem(0);
-		generalMain.menuItems[5] = new menuItem(8,"Game speed mult: ",1,3,0.0625);
-		generalMain.menuItems[6] = new menuItem(2,"Disable Star KO: ",ende,1);
+		generalMain.menuItems[5] = new menuItem(8,"8032C904","Game speed mult: ",1,3,0.0625);
+		generalMain.menuItems[6] = new menuItem(2,"Disable Star KO: ",onoff,1);
 		generalMain.menuItems[7] = new menuItem(2,"Melee Version: ",versions,0) ;
-		generalMain.menuItems[8] = new menuItem(2,"Widescreen: ",widescreen,0);
+		generalMain.menuItems[8] = new menuItem(2,"Widescreen: ",onoff,1);
 		generalMain.menuItems[9] = new menuItem(2,"Lag reduction: ",lagreduction,0);
 
 		tourneyMods.menuItems[0] = new menuItem(0,"Tourney Mods");

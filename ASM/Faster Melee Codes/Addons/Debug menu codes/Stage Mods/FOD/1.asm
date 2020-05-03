@@ -6,8 +6,8 @@ load r20,FODflag
 lwz r20,0(r20)
 cmpwi r20,0
 bne END
-fsub	f0,f0,f0
+fmadds	f0,f0,f31,f0
 b LOL
 END:
-fmadds	f0,f0,f31,f0
+fsub	f0,f0,f0
 LOL:

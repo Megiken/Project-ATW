@@ -56,8 +56,17 @@ public class menuItem {
 		defaultValue = m;
 		LRItems = k;
 		valToInc = l;
+		functPointer = "0";
 	}
 	
+	public menuItem(int i, String p, String j, double m,double k, double l) {
+		type = i;
+		text = j;
+		defaultValue = m;
+		LRItems = k;
+		valToInc = l;
+		functPointer = p;
+	}
 	
 	//9
 	
