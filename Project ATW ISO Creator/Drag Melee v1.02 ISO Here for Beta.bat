@@ -13,7 +13,7 @@ cd /d %~dp0
 cd Stuff
 
 echo Downloading xdelta patch...
-echo This may take however long it takes you to download 1 gb.
+echo This may take however long it takes you to download 860mb.
 echo.
 
 wget https://rebrand.ly/370wxjo -O patch.vcdiff
@@ -26,7 +26,7 @@ xdelta3.exe -d -vfs %1 "patch.vcdiff" "../Beta Project ATW.iso"
 
 echo.
 echo Done!
-echo The file is loacted in the folder. Enjoy!
+echo The file is located in the folder. Enjoy!
 echo You can close this window.
 
 pause

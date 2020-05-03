@@ -25,7 +25,7 @@ xdelta3.exe -d -vfs %1 "patch.vcdiff" "../Stable Project ATW.iso"
 
 echo.
 echo Done!
-echo The file is loacted in the folder. Enjoy!
+echo The file is located in the folder. Enjoy!
 echo You can close this window.
 
 pause
