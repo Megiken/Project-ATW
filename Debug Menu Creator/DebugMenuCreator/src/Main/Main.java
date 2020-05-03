@@ -407,29 +407,30 @@ public class Main{
 		customStageSelectScreen.menuItems[3] = new menuItem(2,"Jungle Japes: ",stages,12);
 		customStageSelectScreen.menuItems[4] = new menuItem(2,"Great Bay: ",stages,13);
 		customStageSelectScreen.menuItems[5] = new menuItem(2,"Hyrule Temple: ",stages,14);
-		customStageSelectScreen.menuItems[6] = new menuItem(2,"Yoshis Story: ",stages,8);
-		customStageSelectScreen.menuItems[7] = new menuItem(2,"Yoshis Island: ",stages,16);
-		customStageSelectScreen.menuItems[8] = new menuItem(2,"Fountain Of Dreams: ",stages,2);
-		customStageSelectScreen.menuItems[9] = new menuItem(2,"Green Greens: ",stages,17);
-		customStageSelectScreen.menuItems[10] = new menuItem(2,"Corneria: ",stages,7);
-		customStageSelectScreen.menuItems[11] = new menuItem(2,"Venom: ",stages,22);
-		customStageSelectScreen.menuItems[12] = new menuItem(2,"Brinstar: ",stages,6);
-		customStageSelectScreen.menuItems[13] = new menuItem(2,"Brinstar Depths: ",stages,15);
-		customStageSelectScreen.menuItems[14] = new menuItem(2,"Onett: ",stages,9);
-		customStageSelectScreen.menuItems[15] = new menuItem(2,"Fourside: ",stages,18);
+		customStageSelectScreen.menuItems[6] = new menuItem(2,"Brinstar: ",stages,6);
+		customStageSelectScreen.menuItems[7] = new menuItem(2,"Brinstar Depths: ",stages,15);
+		customStageSelectScreen.menuItems[8] = new menuItem(2,"Yoshis Story: ",stages,8);
+		customStageSelectScreen.menuItems[9] = new menuItem(2,"Yoshis Island: ",stages,16);
+		customStageSelectScreen.menuItems[10] = new menuItem(2,"Fountain Of Dreams: ",stages,2);
+		customStageSelectScreen.menuItems[11] = new menuItem(2,"Green Greens: ",stages,17);
+		customStageSelectScreen.menuItems[12] = new menuItem(2,"Corneria: ",stages,7);
+		customStageSelectScreen.menuItems[13] = new menuItem(2,"Venom: ",stages,22);
+		customStageSelectScreen.menuItems[14] = new menuItem(2,"Pokemon Stadium: ",stages,3);
+		customStageSelectScreen.menuItems[15] = new menuItem(2,"Poke Floats: ",stages,23);
 		customStageSelectScreen.menuItems[16] = new menuItem(2,"Mute City: ",stages,10);
 		customStageSelectScreen.menuItems[17] = new menuItem(2,"Big Blue: ",stages,24);
-		customStageSelectScreen.menuItems[18] = new menuItem(2,"Pokemon Stadium: ",stages,3);
-		customStageSelectScreen.menuItems[19] = new menuItem(2,"Poke Floats: ",stages,23);
-		customStageSelectScreen.menuItems[20] = new menuItem(2,"Mushroom Kingdom 1: ",stages,19);
-		customStageSelectScreen.menuItems[21] = new menuItem(2,"Mushroom Kingdom 2: ",stages,20);
-		customStageSelectScreen.menuItems[22] = new menuItem(2,"Icicle Mountain: ",stages,25);
+		customStageSelectScreen.menuItems[18] = new menuItem(2,"Onett: ",stages,9);
+		customStageSelectScreen.menuItems[19] = new menuItem(2,"Fourside: ",stages,18);
+		customStageSelectScreen.menuItems[20] = new menuItem(2,"Icicle Mountain: ",stages,25);
+		customStageSelectScreen.menuItems[21] = new menuItem(2,"Mushroom Kingdom 1: ",stages,19);
+		customStageSelectScreen.menuItems[22] = new menuItem(2,"Mushroom Kingdom 2: ",stages,20);
 		customStageSelectScreen.menuItems[23] = new menuItem(2,"Flatzone: ",stages,27);
 		customStageSelectScreen.menuItems[24] = new menuItem(2,"Battlefield: ",stages,31);
 		customStageSelectScreen.menuItems[25] = new menuItem(2,"Final Destination: ",stages,32);
 		customStageSelectScreen.menuItems[26] = new menuItem(2,"Dreamland: ",stages,28);
 		customStageSelectScreen.menuItems[27] = new menuItem(2,"Yoshis Island 64: ",stages,29);
 		customStageSelectScreen.menuItems[28] = new menuItem(2,"Kongo Jungle 64: ",stages,30);
+
 
 
 		generalStages.menuItems[0] = new menuItem(0,"Stages");
