@@ -13,7 +13,7 @@ cd /d %~dp0
 cd Stuff
 
 echo Downloading xdelta patch...
-echo This may take however long it takes you to download 860mb.
+echo This may take however long it takes you to download 600mb.
 echo.
 
 wget https://rebrand.ly/370wxjo -O patch.vcdiff
