@@ -13,7 +13,7 @@
 .long 0x3f800000 #Defense: 
 .long 0x00000000 #C Stick in 1p modes: 
 .long 0x00000001 #Adjust Default CSS hand position: 
-.long 0x00000000 #Idle Screen: 
+.long 0x00000000 #Skip Results Screen: 
 .long 0x00000001 #Ledgegrab Limit: 
 .long 0x0000003c #Max Ledge Grabs: 
 .long 0x00000001 #Wobbling Fix: 
@@ -23,7 +23,7 @@
 .long 0x00000001 #Disable Star KO: 
 .long 0x00000000 #Melee Version: 
 .long 0x00000001 #Widescreen: 
-.long 0x00000000 #Lag reduction: 
+.long 0x00000001 #Lag reduction: 
 .long 0x00000004 #Peachs Castle: 
 .long 0x0000000b #Rainbow Cruise: 
 .long 0x00000005 #Kongo Jungle: 

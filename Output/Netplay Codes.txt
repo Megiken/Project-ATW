@@ -5,10 +5,8 @@ $Slightly Modified Faster Melee Netplay Settings [A bunch of people who aren't b
 0415D984 4E800020 #Disable Trophy Messages [Achilles]
 0245C390 00000125 #Unlock All 293 Trophies [Datel]
 0245C395 01266363
-0416B480 60000000 #C-Stick in Single Player [Zauron]
 0422D638 38000006 #Debug Menu [Magus, donny2112]
 042641B0 38000001 #Faster CSS Load [UnclePunch]
-0421AAE4 60000000 #Disable FD Background Transitions [Achilles, Dan Salvato]
 04452F54 42000000 #Unrestricted Camera while Paused [strikebowler585]
 04452F58 42000000
 04452F5C 42000000

@@ -39,11 +39,6 @@
         },
         {
           "type": "binary",
-          "sourceFile": "..\\ASM\\Faster Melee Codes/Binary/FasterMeleeSettings/CStickSinglePlayer.bin",
-          "annotation": "C-Stick in Single Player [Zauron]"
-        },
-        {
-          "type": "binary",
           "sourceFile": "..\\ASM\\Faster Melee Codes/Binary/FasterMeleeSettings/DebugMenu.bin",
           "annotation": "Debug Menu [Magus, donny2112]"
         },
@@ -51,11 +46,6 @@
           "type": "binary",
           "sourceFile": "..\\ASM\\Faster Melee Codes/Binary/FasterMeleeSettings/FasterCssLoad.bin",
           "annotation": "Faster CSS Load [UnclePunch]"
-        },
-        {
-          "type": "binary",
-          "sourceFile": "..\\ASM\\Faster Melee Codes/Binary/FasterMeleeSettings/DisableFdTransitions.bin",
-          "annotation": "Disable FD Background Transitions [Achilles, Dan Salvato]"
         },
         {
           "type": "binary",

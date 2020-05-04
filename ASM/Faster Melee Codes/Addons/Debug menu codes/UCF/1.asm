@@ -1,5 +1,12 @@
 #To be inserted at 800C9A44
 
+.include "Common/common.s"
+
+load r20,UCFflag
+lwz r20,0(r20)
+cmpwi r20,1
+beq loc_0x108
+
 loc_0x0:
   lhz r4, 1000(r31)
   cmpwi r4, 0x4000

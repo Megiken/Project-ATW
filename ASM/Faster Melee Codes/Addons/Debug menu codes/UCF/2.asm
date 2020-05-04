@@ -1,5 +1,12 @@
 #To be inserted at 800998A4
 
+.include "Common/common.s"
+
+load r20,UCFflag
+lwz r20,0(r20)
+cmpwi r20,1
+beq LOL
+
 loc_0x0:
   lwz r3, 44(r3)
   lfs f1, 1596(r3)
@@ -65,4 +72,5 @@ loc_0x8C:
 
 loc_0xE4:
   mr r3, r30
+LOL:
   lwz r4, 44(r3)

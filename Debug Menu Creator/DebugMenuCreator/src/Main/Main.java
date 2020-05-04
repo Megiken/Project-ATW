@@ -356,13 +356,13 @@ public class Main{
 		generalMain.menuItems[6] = new menuItem(2,"Disable Star KO: ",onoff,1);
 		generalMain.menuItems[7] = new menuItem(2,"Melee Version: ",versions,0) ;
 		generalMain.menuItems[8] = new menuItem(2,"Widescreen: ",onoff,1);
-		generalMain.menuItems[9] = new menuItem(2,"Lag reduction: ",lagreduction,0);
+		generalMain.menuItems[9] = new menuItem(2,"Lag reduction: ",onoff,1);
 
 		tourneyMods.menuItems[0] = new menuItem(0,"Tourney Mods");
 		tourneyMods.menuItems[1] = new menuItem(0);
 		tourneyMods.menuItems[2] = new menuItem(2,"C Stick in 1p modes: ",ende,0);
 		tourneyMods.menuItems[3] = new menuItem(2,"Adjust Default CSS hand position: ",ende,1);
-		tourneyMods.menuItems[4] = new menuItem(2,"Idle Screen: ",ende,0);
+		tourneyMods.menuItems[4] = new menuItem(2,"Skip Results Screen: ",ende,0);
 		tourneyMods.menuItems[5] = new menuItem(2,"Ledgegrab Limit: ",ende,1);
 		tourneyMods.menuItems[6] = new menuItem(3,"Max Ledge Grabs: ",60,150,1);
 		tourneyMods.menuItems[7] = new menuItem(2,"Wobbling Fix: ",ende,1);
