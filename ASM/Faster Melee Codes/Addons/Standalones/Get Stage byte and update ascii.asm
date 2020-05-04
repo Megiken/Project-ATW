@@ -10,6 +10,29 @@ mulli r21,r15,4
 lwzx r20,r21,r20
 cmpwi r20,0x3a
 bgt CUSTOM
+cmpwi r20,0x1a
+bne RETURN
+
+load r21,dreamlandFlag
+lwz r21,0(r21)
+cmpwi r21,0
+beq RETURN
+cmpwi r21,2
+beq NIGHT
+lwz r21,gameID(rtoc)
+cmpwi r21,1
+bne RETURN
+
+NIGHT:
+lis r17,0x803e
+ori r17,r17,0x6740
+load r16,0x702e7261
+lwz r18,0(r17)
+stw r17,tempStageAdr(rtoc)
+stw r18,tempBackupAscii(rtoc)
+stw r16,0(r17)
+
+RETURN:
 mr r15,r20
 blr
 CUSTOM:

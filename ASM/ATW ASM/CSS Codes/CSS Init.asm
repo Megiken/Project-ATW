@@ -5,21 +5,6 @@
 
 backupall
 
-#Set dreamland
-
-load r14,nightDreamlandFlag
-lwz r14,0(r14)
-lis r17,0x803e
-ori r17,r17,0x6742
-cmpwi r14,1
-beq DAT
-li r16,0x7261
-sth r16,0(r17)
-b DUBS
-DAT:
-li r16,0x6461
-sth r16,0(r17)
-
 #Set doubles
 
 DUBS:
