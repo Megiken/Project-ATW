@@ -372,22 +372,22 @@ public class Main{
 		playerAttributes.menuItems[0] = new menuItem(0,"Player Attributes");
 		playerAttributes.menuItems[1] = new menuItem(0);
 		playerAttributes.menuItems[2] = new menuItem(0,"Player 1 Scales:");
-		playerAttributes.menuItems[3] = new menuItem(8,"Model: ",1,3,0.0625);
+		playerAttributes.menuItems[3] = new menuItem(8,"Player: ",1,3,0.0625);
 		playerAttributes.menuItems[4] = new menuItem(8,"Offense: ",1,3,0.0625);
 		playerAttributes.menuItems[5] = new menuItem(8,"Defense: ",1,3,0.0625);
 		playerAttributes.menuItems[6] = new menuItem(0);
 		playerAttributes.menuItems[7] = new menuItem(0,"Player 2 Scales:");
-		playerAttributes.menuItems[8] = new menuItem(8,"Model: ",1,3,0.0625);
+		playerAttributes.menuItems[8] = new menuItem(8,"Player: ",1,3,0.0625);
 		playerAttributes.menuItems[9] = new menuItem(8,"Offense: ",1,3,0.0625);
 		playerAttributes.menuItems[10] = new menuItem(8,"Defense: ",1,3,0.0625);
 		playerAttributes.menuItems[11] = new menuItem(0);
 		playerAttributes.menuItems[12] = new menuItem(0,"Player 3 Scales:");
-		playerAttributes.menuItems[13] = new menuItem(8,"Model: ",1,3,0.0625);
+		playerAttributes.menuItems[13] = new menuItem(8,"Player: ",1,3,0.0625);
 		playerAttributes.menuItems[14] = new menuItem(8,"Offense: ",1,3,0.0625);
 		playerAttributes.menuItems[15] = new menuItem(8,"Defense: ",1,3,0.0625);
 		playerAttributes.menuItems[16] = new menuItem(0);
 		playerAttributes.menuItems[17] = new menuItem(0,"Player 4 Scales:");
-		playerAttributes.menuItems[18] = new menuItem(8,"Model: ",1,3,0.0625);
+		playerAttributes.menuItems[18] = new menuItem(8,"Player: ",1,3,0.0625);
 		playerAttributes.menuItems[19] = new menuItem(8,"Offense: ",1,3,0.0625);
 		playerAttributes.menuItems[20] = new menuItem(8,"Defense: ",1,3,0.0625);
 

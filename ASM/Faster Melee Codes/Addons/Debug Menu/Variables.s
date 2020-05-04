@@ -1,14 +1,14 @@
 #To be inserted at 80192f4c
-.long 0x3f800000 #Model: 
+.long 0x3f800000 #Player: 
 .long 0x3f800000 #Offense: 
 .long 0x3f800000 #Defense: 
-.long 0x3f800000 #Model: 
+.long 0x3f800000 #Player: 
 .long 0x3f800000 #Offense: 
 .long 0x3f800000 #Defense: 
-.long 0x3f800000 #Model: 
+.long 0x3f800000 #Player: 
 .long 0x3f800000 #Offense: 
 .long 0x3f800000 #Defense: 
-.long 0x3f800000 #Model: 
+.long 0x3f800000 #Player: 
 .long 0x3f800000 #Offense: 
 .long 0x3f800000 #Defense: 
 .long 0x00000000 #C Stick in 1p modes: 
