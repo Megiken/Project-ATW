@@ -4,16 +4,13 @@
 
 lfs f1, 1616(r31)
 
-
-lwz r20, 44(r24)
-lbz r21, 12(r20)
-
-branchl r12,getATWstats
-mflr r20
-li r23,1
-addi r20,r20,Stats_turboPickup
-stbx r23,r20,r21
-
+load r20,statusFlag
+lwz r20,0(r20)
+cmpwi r20,2
+beq GO
+lwz r20,gameID(rtoc)
+cmpwi r20,1
+bne loc_0x348
 
 branchl r12,getItemVars
 mflr r20
@@ -22,6 +19,8 @@ lbzx r20,r20,r21
 cmpwi r20,0
 beq loc_0x348
 
+
+GO:
 
 lfs f0, -30604(r2)
 fcmpu cr0, f0, f1

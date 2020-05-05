@@ -141,6 +141,7 @@ addi    r1,r1,0x100    # release the space
 .set updateBanText,functSpace+0xb0
 .set getCustomStageByte,functSpace+0xb4
 .set removePlayerFromCSS,functSpace+0xb8
+.set getCustomEntityStruct,functSpace+0xbc
 
 ################################################################################
 # Offsets
@@ -257,7 +258,7 @@ addi    r1,r1,0x100    # release the space
 .set cssStruct,0x804d6cbc
 .set digitalData,0x804C1FAC
 .set cssStruct2,0x8043208c
-
+.set frameRate,0x80432a2c
 
 
 ################################################################################
