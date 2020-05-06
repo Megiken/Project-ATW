@@ -53,4 +53,3 @@ loc_0x98:
 
 loc_0xA0:
   mr r3, r8
-  blr

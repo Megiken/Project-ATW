@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main{
+	public static String[] functions = {"803001dc","8032C908","8032C908","8032C908","8032C908","8032C908"};
 	public static int textSpace = 1651108;
 	public static int originalTextSpace = 1651108;
 	public static int subMenuSpace = 1662796;
@@ -467,7 +468,7 @@ public class Main{
 
 		ArrayList<jsonObject> list = new ArrayList<jsonObject>();
 
-		printMenu(projectATW,myFile,list);
+		printMenu(projectATW,myFile,list,0);
 		String data = "#To be inserted at " + eighty + Integer.toHexString(originalTextSpace) + "\n";
 		File newFile = new File(myFile + "Text" + ".s");
 		FileWriter writer = new FileWriter(newFile);
@@ -632,7 +633,7 @@ public class Main{
 	}
 
 
-	public static void printMenu(subMenu menu, String filename, ArrayList<jsonObject> list) throws InterruptedException, IOException {
+	public static void printMenu(subMenu menu, String filename, ArrayList<jsonObject> list, int deep) throws InterruptedException, IOException {
 		String data = "";
 		int backup = 0;
 		File newFile = new File("");
@@ -651,7 +652,7 @@ public class Main{
 
 			if(menu.menuItems[i] instanceof subMenu) {
 				subMenu temp = (subMenu) menu.menuItems[i];
-				printMenu(temp,filename,list);
+				printMenu(temp,filename,list,deep+1);
 			}
 			menu.menuItems[i].injectSpot = backup;
 			backup = currentMenuSpace;
@@ -669,7 +670,12 @@ public class Main{
 			case 1:
 
 				data += "\n.long 1";
-				data += "\n.long 0x" + menu.menuItems[i].functPointer;
+				if(menu.menuItems[i].functPointer == null) {
+					data += "\n.long 0x" + functions[deep];
+				}
+				else {
+					data += "\n.long 0x" + menu.menuItems[i].functPointer;	
+				}
 				data += "\n.long 0x" + getTextPointer(menu.menuItems[i].text);
 				data += "\n.long 0";
 				data += "\n.long 0";

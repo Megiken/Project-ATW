@@ -142,6 +142,7 @@ addi    r1,r1,0x100    # release the space
 .set getCustomStageByte,functSpace+0xb4
 .set removePlayerFromCSS,functSpace+0xb8
 .set getCustomEntityStruct,functSpace+0xbc
+.set secondLevelDebugMenu,functSpace+0xc0
 
 ################################################################################
 # Offsets

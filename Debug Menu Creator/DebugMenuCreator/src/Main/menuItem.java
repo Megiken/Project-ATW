@@ -19,7 +19,6 @@ public class menuItem {
 	public menuItem(int i, String p) {
 		type = i;
 		text = p;
-		functPointer = "803001dc";
 	}
 	
 	//2

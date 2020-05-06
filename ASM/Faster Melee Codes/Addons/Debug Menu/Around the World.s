@@ -81,7 +81,7 @@
 .long 0
 .long 0
 .long 1
-.long 0x803001dc
+.long 0x8032C908
 .long 0x80194494
 .long 0
 .long 0
@@ -89,7 +89,7 @@
 .long 0
 .long 0
 .long 1
-.long 0x803001dc
+.long 0x8032C908
 .long 0x80194608
 .long 0
 .long 0
@@ -97,7 +97,7 @@
 .long 0
 .long 0
 .long 1
-.long 0x803001dc
+.long 0x8032C908
 .long 0x80194684
 .long 0
 .long 0
@@ -105,7 +105,7 @@
 .long 0
 .long 0
 .long 1
-.long 0x803001dc
+.long 0x8032C908
 .long 0x801948dc
 .long 0
 .long 0
