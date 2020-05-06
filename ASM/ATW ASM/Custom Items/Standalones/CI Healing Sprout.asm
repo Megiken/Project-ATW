@@ -47,7 +47,7 @@ addi r15,r15,4
 lbzx r19,r15,r16
 addi r19,r19,1
 stbx r19,r15,r16
-li r3,3
+li r3,5
 branchl r12,0x80380580
 addi r3,r3,1
 mr r19,r3

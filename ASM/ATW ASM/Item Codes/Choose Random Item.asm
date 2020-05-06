@@ -15,121 +15,120 @@ branchl r12,0x80380580
 mr r4,r3
 
 
-li r3,0x12
-cmpwi r4,16
+li r3,yoshiEgg
+cmpwi r4,41
 blt FINISH
-li r3,0x20
-cmpwi r4,31
+li r3,Flipper
+cmpwi r4,82
 blt FINISH
-li r3,0x1c
-cmpwi r4,47
-blt FINISH
-li r3,0x21
-cmpwi r4,63
-blt FINISH
-li r3,0x8
-cmpwi r4,78
-blt FINISH
-li r3,0xa
-cmpwi r4,94
-blt FINISH
-li r3,0xf
-cmpwi r4,110
-blt FINISH
-li r3,0x1e
-cmpwi r4,125
-blt FINISH
-li r3,0x12
-cmpwi r4,141
+li r3,Freezie
+cmpwi r4,124
 blt FINISH
 
-
-
-
-li r3,0x1a
+li r3,Pokeball
 cmpwi r4,165
 blt FINISH
-li r3,0x1b
-cmpwi r4,188
+li r3,Greenshell
+cmpwi r4,206
+blt FINISH
+li r3,Capsule
+cmpwi r4,248
 blt FINISH
 
-
-
-li r3,0x0e
-cmpwi r4,227
+li r3,Barrel
+cmpwi r4,289
 blt FINISH
-li r3,0x22
-cmpwi r4,266
+li r3,Crate
+cmpwi r4,330
 blt FINISH
-li r3,0x0
-cmpwi r4,305
-blt FINISH
-li r3,0x02
-cmpwi r4,344
+li r3,Starrod
+cmpwi r4,372
 blt FINISH
 
+li r3,Beamsword
+cmpwi r4,413
+blt FINISH
+li r3,Lipstick
+cmpwi r4,454
+blt FINISH
+li r3,Fan
+cmpwi r4,496
+blt FINISH
 
-li r3,0x01
-cmpwi r4,375
+li r3,MrSaturn
+cmpwi r4,537
 blt FINISH
-li r3,0x03
-cmpwi r4,406
+li r3,Bobomb
+cmpwi r4,578
 blt FINISH
-li r3,0x04
-cmpwi r4,438
+li r3,Motionmine
+cmpwi r4,620
 blt FINISH
-li r3,0x05
-cmpwi r4,469
+
+li r3,Superscope
+cmpwi r4,641
 blt FINISH
-li r3,0x07
-cmpwi r4,500
+li r3,Raygun
+cmpwi r4,662
 blt FINISH
-li r3,0x14
-cmpwi r4,531
+li r3,Homerunbat
+cmpwi r4,684
 blt FINISH
-li r3,0x1f
-cmpwi r4,562
+
+li r3,Egg
+cmpwi r4,705
 blt FINISH
-li r3,0x11
-cmpwi r4,593
+li r3,Barrelcannon
+cmpwi r4,726
 blt FINISH
-li r3,0xd
-cmpwi r4,624
+li r3,Screwattack
+cmpwi r4,748
 blt FINISH
-li r3,0x17
-cmpwi r4,656
+
+li r3,MetalBox
+cmpwi r4,769
 blt FINISH
-li r3,0x18
-cmpwi r4,687
+li r3,Redshell
+cmpwi r4,790
 blt FINISH
-li r3,0x6
-cmpwi r4,718
-blt FINISH
-li r3,0x1d
-cmpwi r4,750
-blt FINISH
-li r3,0x13
-cmpwi r4,781
-blt FINISH
-li r3,0x16
+li r3,Warpstar
 cmpwi r4,812
 blt FINISH
-li r3,0x10
-cmpwi r4,843
+
+li r3,Bunnyhood
+cmpwi r4,833
 blt FINISH
-li r3,0x0c
-cmpwi r4,874
+li r3,Parasol
+cmpwi r4,854
 blt FINISH
-li r3,0xb
-cmpwi r4,906
+li r3,Partyball
+cmpwi r4,876
 blt FINISH
-li r3,0x19
-cmpwi r4,937
+
+li r3,Fireflower
+cmpwi r4,897
 blt FINISH
-li r3,0x15
-cmpwi r4,968
+li r3,Supermushroom
+cmpwi r4,918
 blt FINISH
-li r3,0x2a
+li r3,Poisonmushroom
+cmpwi r4,940
+blt FINISH
+
+li r3,Heart
+cmpwi r4,950
+blt FINISH
+li r3,Hammer
+cmpwi r4,960
+blt FINISH
+li r3,CloakingDevice
+cmpwi r4,970
+blt FINISH
+li r3,Starman
+cmpwi r4,980
+blt FINISH
+li r3,Food
+
 
 
 

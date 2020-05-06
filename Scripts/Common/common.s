@@ -89,6 +89,7 @@ addi    r1,r1,0x100    # release the space
 .set EntityItemSpawn,0x80268B18
 .set getStageGObj,0x801c2ba4
 .set setStageGObj,0x801c2bbc
+.set GObjRemove,0x8038fed4
 
 .set functSpace,0x8032C848
 
@@ -324,25 +325,84 @@ addi    r1,r1,0x100    # release the space
 .set Stats_damageTaken,0x4c
 
 
+################################################################################
+# Pokemon IDs
+################################################################################
 
 
 
+.set GoldeenID,0
+.set ChikoritaID,1
+.set SnorlaxID, 2
+.set BlastoiseID, 3
+.set WeezingID, 4
+.set CharizardID, 5
+.set MoltresID, 6
+.set ZapdosID, 7
+.set ArticunoID, 8
+.set WobuffetID, 9
+.set ScizorID, 10
+.set UnownID, 11
+.set EnteiID, 12
+.set RaikouID, 13
+.set SuicuneID, 14
+.set BellossomID, 15
+.set VoltorbID, 16
+.set LugiaID, 17
+.set HoOhID, 18
+.set DittoID, 19
+.set ClefairyID, 20
+.set TogepiID, 21
+.set MewID, 22
+.set CelebiID, 23
+.set StaryuID, 24
+.set ChanseyID, 25
+.set Porygon2ID, 26
+.set CyndaquilID, 27
+.set MarillID, 28
+.set VenusaurID,29
 
 
+################################################################################
+# Item IDs
+################################################################################
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.set Capsule,0
+.set Crate,1
+.set Barrel,2
+.set Egg,3
+.set Partyball,4
+.set Barrelcannon,5
+.set Bobomb,6
+.set MrSaturn,7
+.set Heart,8
+.set Maximtomato,9
+.set Starman,10
+.set Homerunbat,11
+.set Beamsword,12
+.set Parasol,13
+.set Greenshell,14
+.set Redshell,15
+.set Raygun,16
+.set Freezie,17
+.set Food,18
+.set Motionmine,19
+.set Flipper,20
+.set Superscope,21
+.set Starrod,22
+.set Lipstick,23
+.set Fan,24
+.set Fireflower,25
+.set Supermushroom,26
+.set Poisonmushroom,27
+.set Hammer,28
+.set Warpstar,29
+.set Screwattack,30
+.set Bunnyhood,31
+.set MetalBox,32
+.set CloakingDevice,33
+.set Pokeball,34
+.set yoshiEgg,0x2a
 
 
 

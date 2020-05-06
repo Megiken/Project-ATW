@@ -8,5 +8,5 @@ bne END
 li r0,1
 b LOL
 END:
-lwz	r0, 0x1980 (r31)
+lwz	r0, 0x2018 (r31)
 LOL:

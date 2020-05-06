@@ -3,6 +3,12 @@
 .include "Common/common.s"
 
 #Scales
+
+load r20,0x80479d30
+lbz r20,3(r20)
+cmpwi r20,4
+beq END
+
 load r20,sizeFlag
 lwz r20,0(r20)
 cmpwi r20,0

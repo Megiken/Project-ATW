@@ -73,7 +73,7 @@
 .long 0x00000000 #Kongo Jungle Barrel: 
 .long 0x00000000 #Kongo Jungle 64 Barrel: 
 .long 0x00000000 #Custom item timer: 
-.long 0x00000320 #Custom Timer: 
+.long 0x000002d0 #Custom Timer: 
 .long 0x00000001 #Fancy Throwing: 
 .long 0x00000001 #Invincibility After Bury: 
 .long 0x00000001 #Health per kill: 

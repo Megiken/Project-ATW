@@ -12,7 +12,7 @@ backupall
 load r20,customGamemodeFlag
 lwz r20,0(r20)
 cmpwi r20,1
-beq END2
+beq END3
 
 load r20,cssID
 lbz r20,0(r20)
@@ -78,12 +78,14 @@ blrl
 
 END2:
 restoreall
-lbz r3,0(r3)
+li r3,2
 
 
 
 
 b LOL
+END3:
+restoreall
 END:
 lbz r3,0(r3)
 LOL:
