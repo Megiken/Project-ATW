@@ -398,7 +398,7 @@ public class Main{
 		generalItems.menuItems[0] = new menuItem(0,"Items");
 		generalItems.menuItems[1] = new menuItem(0);
 		generalItems.menuItems[2] = new menuItem(2,"Custom item timer: ",ende,0);
-		generalItems.menuItems[3] = new menuItem(3,"Custom Timer: ",720,2000,5);
+		generalItems.menuItems[3] = new menuItem(3,"Custom Timer: ",800,2000,5);
 
 		subMenu customStageSelectScreen = new subMenu(1,"Custom Stage Select Screen Builder");
 
