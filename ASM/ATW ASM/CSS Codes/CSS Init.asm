@@ -9,6 +9,17 @@ backupall
 
 DUBS:
 
+load r20,doublesType
+lwz r20,0(r20)
+cmpwi r20,1
+blt TESTDUBS
+cmpwi r20,3
+bgt TESTDUBS
+b DOUBLES
+
+
+TESTDUBS:
+
 branchl r12,getCSSplayers
 cmpwi r3,4
 beq DOUBLES

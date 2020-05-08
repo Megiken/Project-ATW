@@ -42,7 +42,27 @@ backup
    mflr r15
    load r16,doublesByte
    lbz r16,0(r16)
-   stb r16,Stats_doublesbool(r15)
+   cmpwi r16,0
+   beq SKIPDUBS
+   li r14,1
+LOOPDUBS:
+   mr r3,r14
+   branchl r12,getPlayerData
+   lbz r16,0x61b(r3)
+   cmpwi r16,0
+   beq FOUND
+   addi r14,r14,1
+   cmpwi r14,4
+   beq SKIPDUBS
+   b LOOPDUBS
+
+FOUND:
+   stb r14,Stats_doublesbool(r15)
+   b DONEDUBS
+SKIPDUBS:
+li r16,-1
+stb r16,Stats_doublesbool(r15)
+DONEDUBS:
    load r16,stageData
    lwz r16,0x88(r16)
    stb r16,Stats_stageID(r15)
