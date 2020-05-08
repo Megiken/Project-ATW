@@ -302,7 +302,7 @@ addi    r1,r1,0x100    # release the space
 .set Stats_stageID,0x0
 .set Stats_numofplayers,0x1
 .set Stats_timeoutbool,0x2
-
+.set Stats_doublesbool,0x3
 
 .set Stats_charsLeft,0x4
 .set Stats_numitemspickedup,0x8
@@ -316,7 +316,6 @@ addi    r1,r1,0x100    # release the space
 .set Stats_screwattackPickup,0x28
 .set Stats_poisonmushroomTouch,0x2c
 .set Stats_supermushroomTouch,0x30
-
 
 
 ################################################################################

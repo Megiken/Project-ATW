@@ -40,7 +40,9 @@ backup
 
    branchl r12,getATWstats
    mflr r15
-
+   load r16,doublesByte
+   lbz r16,0(r16)
+   stb r16,Stats_doublesbool(r15)
    load r16,stageData
    lwz r16,0x88(r16)
    stb r16,Stats_stageID(r15)
