@@ -44,11 +44,6 @@
         },
         {
           "type": "injectFolder",
-          "sourceFolder": "..\\ASM\\Faster Melee Codes/Common/CSS KO Stars",
-          "annotation": "Asign KO Stars Upon Exiting Dairantou [UnclePunch]"
-        },
-        {
-          "type": "injectFolder",
           "sourceFolder": "..\\ASM\\Faster Melee Codes/Common/Gecko",
           "annotation": "Static function to process Gecko codes [Fizzi]"
         },
