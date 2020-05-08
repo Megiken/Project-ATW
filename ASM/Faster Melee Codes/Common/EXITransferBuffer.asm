@@ -1,4 +1,7 @@
-#To be inserted at 800055f0
+################################################################################
+# Address: FN_EXITransferBuffer # 0x800055f0 from Common.s
+################################################################################
+
 ################################################################################
 # Function: ExiTransferBuffer
 # Inject @ 800055f0
@@ -9,9 +12,7 @@
 #     r4 = buffer length
 #     r5 = read (0x0) or write (0x1)
 ################################################################################
-.include "Common.s"
-
-.set CONST_MemSlot, 1 # 0 is SlotA, 1 is SlotB. Indicates which slot to use
+.include "Common/Common.s"
 
 # Register names
 .set REG_TransferBehavior, 31
@@ -47,42 +48,42 @@ FLUSH_WRITE_LOOP:
 InitializeEXI:
 # Step 1 - Prepare slot
 # Prepare to call EXIAttach (803464c0)
-  li r3, CONST_MemSlot # slot
+  li r3, STG_EXIIndex # slot
   li r4, 0 # maybe a callback? leave 0
-  branchl r12,0x803464c0
+  branchl r12, EXIAttach
 # Prepare to call EXILock (80346d80) r3: 0
-  li r3, CONST_MemSlot # slot
-  branchl r12,0x80346d80
+  li r3, STG_EXIIndex # slot
+  branchl r12, EXILock
 # Prepare to call EXISelect (80346688) r3: 0, r4: 0, r5: 4
-  li r3, CONST_MemSlot # slot
+  li r3, STG_EXIIndex # slot
   li r4, 0 # device
   li r5, 5 # freq
-  branchl r12,0x80346688
+  branchl r12, EXISelect
 
 # Step 2 - Write
 # Prepare to call EXIDma (80345e60)
-  li r3, CONST_MemSlot # slot
+  li r3, STG_EXIIndex # slot
   mr r4, REG_BufferPointer    #buffer location
   mr r5, REG_BufferLength     #length
   mr r6, REG_TransferBehavior # write mode input. 1 is write
   li r7, 0                # r7 is a callback address. Dunno what to use so just set to 0
-  branchl r12,0x80345e60
+  branchl r12, EXIDma
 # Prepare to call EXISync (80345f4c)
-  li r3, CONST_MemSlot # slot
-  branchl r12,0x80345f4c
+  li r3, STG_EXIIndex # slot
+  branchl r12, EXISync
 
 # Step 3 - Close slot
 # Prepare to call EXIDeselect (803467b4)
-  li r3, CONST_MemSlot # Load input param for slot
-  branchl r12,0x803467b4
+  li r3, STG_EXIIndex # Load input param for slot
+  branchl r12, EXIDeselect
 
 # Prepare to call EXIUnlock (80346e74)
-  li r3, CONST_MemSlot # Load input param for slot
-  branchl r12,0x80346e74
+  li r3, STG_EXIIndex # Load input param for slot
+  branchl r12, EXIUnlock
 
 # Prepare to call EXIDetach (803465cc) r3: 0
-  li r3, CONST_MemSlot # Load input param for slot
-  branchl r12,0x803465cc
+  li r3, STG_EXIIndex # Load input param for slot
+  branchl r12, EXIDetach
 
 FLUSH_READ_LOOP:
   cmpwi REG_TransferBehavior,CONST_ExiRead     # Check if writing or reading

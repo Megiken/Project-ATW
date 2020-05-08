@@ -297,7 +297,7 @@ addi    r1,r1,0x100    # release the space
 # Custom Stat Offsets
 ################################################################################
 
-.set Stats_length,0x54
+.set Stats_length,0x34
 
 .set Stats_stageID,0x0
 .set Stats_numofplayers,0x1
@@ -305,24 +305,18 @@ addi    r1,r1,0x100    # release the space
 
 
 .set Stats_charsLeft,0x4
-.set Stats_charId,0x8
-.set Stats_numitemspickedup,0xc
-.set Stats_longestdrought,0x10
-.set Stats_numofkills,0x14
-.set Stats_playerID,0x18
-.set Stats_hammerPickup,0x1c
-.set Stats_starmanPickup,0x20
-.set Stats_turboPickup,0x24
-.set Stats_lightningboltPickup,0x28
-.set Stats_heartcanisterPickup,0x2c
-.set Stats_screwattackPickup,0x30
-.set Stats_poisonmushroomTouch,0x34
-.set Stats_supermushroomTouch,0x38
-.set Stats_numofdeaths,0x3c
-.set Stats_numofSDs,0x40
+.set Stats_numitemspickedup,0x8
+.set Stats_longestdrought,0xc
+.set Stats_playerID,0x10
+.set Stats_hammerPickup,0x14
+.set Stats_starmanPickup,0x18
+.set Stats_turboPickup,0x1c
+.set Stats_lightningboltPickup,0x20
+.set Stats_heartcanisterPickup,0x24
+.set Stats_screwattackPickup,0x28
+.set Stats_poisonmushroomTouch,0x2c
+.set Stats_supermushroomTouch,0x30
 
-.set Stats_damageGiven,0x44
-.set Stats_damageTaken,0x4c
 
 
 ################################################################################
@@ -437,16 +431,19 @@ addi    r1,r1,0x100    # release the space
 
 
 
+.macro getMinorMajor reg
+lis \reg, 0x8048 # load address to offset from for scene controller
+lwz \reg, -0x62D0(\reg) # Load from 0x80479D30 (scene controller)
+rlwinm \reg, \reg, 8, 0xFFFF # Loads major and minor scene into bottom of reg
+.endm
+
 ################################################################################
 # Settings
 ################################################################################
 # STG_EXIIndex is now set during build with arg -defsym STG_EXIIndex=1
-.set STG_EXIIndex, 1 # 0 is SlotA, 1 is SlotB. Indicates which slot to use
+#.set STG_EXIIndex, 1 # 0 is SlotA, 1 is SlotB. Indicates which slot to use
 
 .set STG_DesyncDebug, 0 # Debug flag for OSReporting desyncs
-
-.set FN_EXITransferBuffer,0x800055f0
-.set FN_GetIsFollower,0x800055f8
 
 ################################################################################
 # Static Function Locations
@@ -584,3 +581,5 @@ addi    r1,r1,0x100    # release the space
 .set primaryDataBuffer,-0x49b4
 .set bufferOffset,-0x49b0
 .set frameIndex,-0x49ac
+
+.set STG_EXIIndex,1

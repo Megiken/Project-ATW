@@ -1,15 +1,20 @@
-#To be inserted at 80005600
-.include "../Common.s"
+################################################################################
+# Address: 801d45ec
+################################################################################
+.include "Common/Common.s"
+.include "Common/Preload Stadium Transformations/Transformation.s"
 
 .set PSData,31
 
-backup
-mr  PSData,r3
+#Check if Transformation is decided/loaded
+  lbz r3,isLoaded(PSData)
+  cmpwi r3,0
+  bne Original
 
 DecideTransformation:
 #Decide initial transformation
   li  r3,4
-  branchl r12,HSD_Randi
+  branchl r12, HSD_Randi
 #Check if something
   rlwinm	r0, r3, 2, 0, 29
   lha	r3, 0x00E2 (PSData)
@@ -18,7 +23,7 @@ DecideTransformation:
   cmpw r3,r4
   beq DecideTransformation
 #Store to 0xEC of PSData (stage GObjs are always 500-something bytes long, it has tons of extra space thankfully)
-  stw r4,0xEC(PSData)
+  stw r4,TransformationID(PSData)
 
 LoadTransformation:
 #Get other ID for transformation ID
@@ -41,6 +46,7 @@ LoadTransformation:
   bne-  Exit
   li	r4, 3
   b	GetFileString
+
 GetFileString:
 #Get transformation file string
   load r3,0x803e1248  #Static PS Struct
@@ -52,8 +58,11 @@ GetFileString:
   addi  r5,PSData,200 #unk
   load r6,0x801d4220  #callback
   li  r7,0
-  branchl r12,0x80016580
+  branchl r12, FileLoad_ToPreAllocatedSpace
 
-Exit:
-restore
-blr
+#Set as loaded
+  li  r3,1
+  stb r3,isLoaded(PSData)
+
+Original:
+  lwz	r3, 0x00D8 (r31)

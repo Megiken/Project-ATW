@@ -47,3 +47,4 @@ echo.
 echo Creating Slippi + Extras DAT...
 java -jar CodeConverter.jar -c "..\Output\Slippi + Extras.txt" -o "..\Files\Custom Code\S+E.dat"
 echo.
+

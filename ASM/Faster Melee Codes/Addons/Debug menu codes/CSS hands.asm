@@ -5,7 +5,7 @@
 load r15,defaultHandsFlag
 lwz r15,0(r15)
 cmpwi r15,1
-beq LOL
+bne LOL
 load r15,0x804DC47C
 load r16,0xC1AC0000
 stw r16,0(r15)

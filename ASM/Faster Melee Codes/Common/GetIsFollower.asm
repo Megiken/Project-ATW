@@ -1,4 +1,7 @@
-#To be inserted at 800055f8
+################################################################################
+# Address: FN_GetIsFollower # 0x800055f8 from Common.s
+################################################################################
+
 ################################################################################
 # Function: GetREG_IsFollower
 # Inject @ 800055f8
@@ -10,7 +13,7 @@
 # out
 #   r3 = REG_IsFollower
 ################################################################################
-.include "Common.s"
+.include "Common/Common.s"
 
 .set REG_IsFollower, 31
 .set REG_PlayerData, 30
@@ -28,7 +31,7 @@ mr  REG_PlayerData,r3
   beq	RETURN_IS_FOLLOWER
 #Check If Follower
   lbz r3,0xC(REG_PlayerData)
-  branchl r12,0x80032330     #Get External Character ID
+  branchl r12, PlayerBlock_LoadExternalCharID
   load	r4,0x803bcde0			   #pdLoadCommonData table
   mulli	r0, r3, 3			       #struct length
   add	r3,r4,r0			         #get characters entry

@@ -9,58 +9,48 @@
       "name": "Slippi + Extras",
       "build": [
         {
-          "type": "branchAndLink",
-          "address": "8016e74c",
-          "targetAddress": "8032ed94",
-          "annotation": "SendGameInfo [Fizzi]"
-        },
-        {
-          "type": "branchAndLink",
-          "address": "8006b0dc",
-          "targetAddress": "8032ed94",
-          "annotation": "SendGamePreFrame [Fizzi, Achilles]"
-        },
-        {
-          "type": "branchAndLink",
-          "address": "8006c5d4",
-          "targetAddress": "8032ed94",
-          "annotation": "SendGamePostFrame [Fizzi, Achilles]"
-        },
-        {
-          "type": "branchAndLink",
-          "address": "801a5b14",
-          "targetAddress": "8032ed94",
-          "annotation": "SendGameEnd [Fizzi]"
-        },
-        {
-          "type": "branchAndLink",
-          "address": "802fed3c",
-          "targetAddress": "8032ed94",
-          "annotation": "FlushFrameBuffer [Fizzi]"
-        },
-        {
-          "type": "replace",
-          "address": "801A4F84",
-          "value": "60000000",
-          "annotation": "Disable Screenshots 1/2"
-        },
-        {
-          "type": "replace",
-          "address": "801A5070",
-          "value": "60000000",
-          "annotation": "Disable Screenshots 2/2"
+          "type": "injectFolder",
+          "sourceFolder": "..\\ASM\\Faster Melee Codes/Recording",
+          "isRecursive": true,
+          "annotation": "Slippi Recording [Fizzi, Achilles, UnclePunch]"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8032ed94",
-          "sourceFile": "..\\ASM\\Faster Melee Codes/Recording/Recording.asm",
-          "annotation": "SlippiRecording [Fizzi, Achilles, UnclePunch]"
+          "address": "804D4D90",
+          "sourceFile": "..\\ASM\\Faster Melee Codes\\Addons\\Extended Name Tags\\7.s"
+        },
+        {
+          "type": "injectFolder",
+          "sourceFolder": "..\\ASM\\Faster Melee Codes/Common",
+          "isRecursive": false
         },
         {
           "type": "injectFolder",
           "sourceFolder": "..\\ASM\\Faster Melee Codes/Common/Preload Stadium Transformations",
           "isRecursive": true,
           "annotation": "Preload Stadium Transformations [UnclePunch]"
+        },
+        {
+          "type": "injectFolder",
+          "sourceFolder": "..\\ASM\\Faster Melee Codes/Common/Initialize Stage Data",
+          "isRecursive": true,
+          "annotation": "Initialize Stage Data [UnclePunch]"
+        },
+        {
+          "type": "injectFolder",
+          "sourceFolder": "..\\ASM\\Faster Melee Codes/Common/Initialize Player Data",
+          "isRecursive": true,
+          "annotation": "Initialize Player Data [UnclePunch]"
+        },
+        {
+          "type": "injectFolder",
+          "sourceFolder": "..\\ASM\\Faster Melee Codes/Common/CSS KO Stars",
+          "annotation": "Asign KO Stars Upon Exiting Dairantou [UnclePunch]"
+        },
+        {
+          "type": "injectFolder",
+          "sourceFolder": "..\\ASM\\Faster Melee Codes/Common/Gecko",
+          "annotation": "Static function to process Gecko codes [Fizzi]"
         },
         {
           "type": "injectFolder",
