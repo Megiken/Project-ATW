@@ -1,8 +1,9 @@
 
 public class ATWPlayer {
 	String name;
+	boolean wonPrevGame;
 	int gamesPlayed;
-	int[][] gameStats = new int[2][2];
+	int[][] gameStats = new int[3][2];
 	int damageDealt;
 	int damageRecieved;
 	int longestDrought;
@@ -11,6 +12,8 @@ public class ATWPlayer {
 	int[][] charStats = new int [26][2];
 	int currentCharsLeft;
 	int pastCharsLeft;
+	int currentCharacter;
+	int pastCharacter;
 	
 	
 	

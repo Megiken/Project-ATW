@@ -125,7 +125,6 @@ NEXT:
  bne LOOP
 
 
-
    #Copy Data
    lwz REG_Buffer,primaryDataBuffer(r13)
    li r3, 0x37
@@ -148,8 +147,12 @@ NEXT:
    li r4,Stats_length
    branchl r12,zeromem
 
-NORMALSLIP:
 
+
+
+
+NORMALSLIP:
+lwz REG_Buffer,primaryDataBuffer(r13)
 
 
 

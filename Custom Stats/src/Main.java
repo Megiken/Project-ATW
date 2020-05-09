@@ -9,6 +9,14 @@ public class Main {
 	public static String rayvaxTag = "";
 	public static String elliotTag = "4849505900000000";
 	
+	public static byte[] search = {0x39,2,-1};
+	public static byte[] search2 = {0x39,1,-1};
+	public static byte[] search3 = {0x39,3,-1};
+	
+    public static int gameType = 0;
+    public static int prevGameType = 0;
+
+	
 	public static ATWPlayer unknown = new ATWPlayer("Unknown");
 	public static ATWPlayer thomas = new ATWPlayer("Thomas");
 	public static ATWPlayer brett = new ATWPlayer("Brett");
@@ -44,6 +52,8 @@ public class Main {
 		for(int i = 0; i < files.length; i++){
 			parseFile(files[i]);
 		}
+		printStats();
+
 	}
 	
 	public static void parseFile(File file) throws IOException {
@@ -69,8 +79,6 @@ public class Main {
 			raf.skipBytes(8);
 		}
 		
-		byte[] search = {0x39,2,-1};
-		byte[] search2 = {0x39,1,-1};
 		byte[] fileData = new byte[(int) file.length()];
 	    DataInputStream dis = new DataInputStream(new FileInputStream(file));
 	    dis.readFully(fileData);
@@ -95,6 +103,15 @@ public class Main {
 	    
 	    int[] charsLeft = {p1charsLeft,p2charsLeft,p3charsLeft,p4charsLeft};
 	    
+	    
+	    if(timeoutBool != 0) {
+	    	gameType = 2;
+	    }else if(doublesBool != 0) {
+	    	gameType = 1;
+	    }else {
+	    	gameType = 0;
+	    }
+	    
 	    if((p1charsLeft + p2charsLeft + p3charsLeft + p4charsLeft) == 4) {
 	    	currentGame = 0;
 	    }
@@ -103,63 +120,91 @@ public class Main {
 	    }
 	    
 	    if(numOfPlayers < 4) {
-	    	return;
+			for(int i = 0; i < 4; i++) {
+		    	raf.seek(146 + (i * 36));
+				String temp = String.format("%02X", raf.readByte());
+				if(temp.equals("00")) {
+					setEndWinnings(ATWPlayers[players[i]]);	
+				}
+			}
+			return;
 	    }
-		
-		
-		for(int i = 0; i < 4; i++) {
-			raf.seek(146 + (i * 36));
-			String temp = "";
-			temp = String.format("%02X", raf.readByte());
+	    
+	    
+	    for(int i = 0; i < 4; i++) {
+			raf.seek(145 + (i * 36));
+			int charID = Integer.parseInt(String.format("%02X", raf.readByte()),16);
+			String temp = String.format("%02X", raf.readByte());
 			if(temp.equals("00")) {
 				raf.seek(statsOffset);
+				ATWPlayers[players[i]].currentCharacter = charID;
 				ATWPlayers[players[i]].currentCharsLeft = charsLeft[i];
-				writeStats(ATWPlayers[players[i]],file,raf,i,doublesBool);
+				writeStats(ATWPlayers[players[i]],file,raf,i);
 			}
 			raf.skipBytes(35);
 		}
 		
 		
+		prevGameType = gameType;
+		
 		
 		
 		
 	}
 	
-	public static void writeStats(ATWPlayer player, File file, RandomAccessFile raf, int port, int gameType) throws IOException {
-		boolean won = false;
+	public static void writeStats(ATWPlayer player, File file, RandomAccessFile raf, int port) throws IOException {
 		if(currentGame != 0) {
 			player.gamesPlayed++;
-			player.gameStats[gameType][0]++;
-			if(!(player.currentCharsLeft > player.pastCharsLeft)){
-				player.gameStats[gameType][1]++;
-				won = true;
+			player.gameStats[prevGameType][0]++;
+			player.charStats[player.pastCharacter][0]++;
+			if(player.currentCharsLeft == player.pastCharsLeft) {
+				player.gameStats[prevGameType][1]++;
+				player.charStats[player.pastCharacter][1]++;
+				player.wonPrevGame = true;
 			}
-			player.pastCharsLeft = player.currentCharsLeft;
+			else {
+				player.wonPrevGame = false;
+			}
 		}
 		else{
-			player.pastCharsLeft = 1;
-			player.currentCharsLeft = 1;
+			player.pastCharacter = player.currentCharacter;
+			player.pastCharsLeft = player.currentCharsLeft;
 		}
 		raf.skipBytes(8+port);
+		
 		player.numItemsPickedUp += Integer.parseInt(String.format("%02X", raf.readByte()),16);
 		raf.skipBytes(4);
 		player.longestDrought += Integer.parseInt(String.format("%02X", raf.readByte()),16);
+		raf.skipBytes(8);
 		for(int i = 0; i < 8; i++) {
-			raf.skipBytes(4);
-			int flag = Integer.parseInt(String.format("%02X", raf.readByte()),16);
-			if(flag != 0) {
+			int temp = 0;
+			temp = Integer.parseInt(String.format("%02X", raf.readByte()),16);
+			if(temp != 0) {
 				player.itemStats[i][0]++;
+				if(player.wonPrevGame) {
+					player.itemStats[i][1]++;
+				}
 			}
-			if(won) {
-				player.itemStats[i][1]++;
-			}
+			raf.skipBytes(4);
+			
 		}
-		
-
 	}
 	
-	public static void printStats(ATWPlayer player) {
-		
+	public static void printStats() {
+		for(int i = 0; i < ATWPlayers.length; i++) {
+			if(ATWPlayers[i].gamesPlayed != 0) {
+				System.out.println("Player's name: " + ATWPlayers[i].name);
+				System.out.println("	Games played: " + ATWPlayers[i].gamesPlayed);
+				System.out.println("	FFA games played: " + ATWPlayers[i].gameStats[0][0]);
+				System.out.println("	FFA games won: " + ATWPlayers[i].gameStats[0][1]);
+				System.out.println("	Doubles games played: " + ATWPlayers[i].gameStats[1][0]);
+				System.out.println("	Doubles games Won: " + ATWPlayers[i].gameStats[1][1]);
+				System.out.println("	Timout games played: " + ATWPlayers[i].gameStats[2][0]);
+				System.out.println("	Timeout games won: " + ATWPlayers[i].gameStats[2][1]);
+				System.out.println("	Average item pickups per game: " + ATWPlayers[i].numItemsPickedUp/ATWPlayers[i].gamesPlayed);
+				System.out.println("	Average longest drought per game: " + ATWPlayers[i].longestDrought/ATWPlayers[i].gamesPlayed);
+			}
+		}
 	}
 
 	public static long bytesIndexOf(byte[] source, byte[] search, byte[] search2, long fromIndex) {
@@ -169,7 +214,7 @@ public class Main {
 	        if (source[(int) i] == search[0] || source[(int) i] == search2[0]) {
 	            find = true;
 	            for (int j = 0; j < search.length; j++) {
-	                if (source[(int) (i + j)] != search[j] && source[(int) (i + j)] != search2[j]) {
+	                if (source[(int) (i + j)] != search[j] && source[(int) (i + j)] != search2[j] && source[(int) (i + j)] != search3[j]) {
 	                    find = false;
 	                }
 	            }
@@ -182,6 +227,16 @@ public class Main {
 	        return -1;
 	    }
 	    return i;
+	}
+	
+	public static void setEndWinnings(ATWPlayer player) {
+		player.gamesPlayed++;
+		player.gameStats[prevGameType][0]++;
+		player.charStats[player.pastCharacter][0]++;
+		if(player.currentCharsLeft == player.pastCharsLeft) {
+			player.gameStats[prevGameType][1]++;
+			player.charStats[player.pastCharacter][1]++;
+		}
 	}
 
 }
