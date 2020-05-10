@@ -8,15 +8,15 @@ public class Main {
 	public static String braedenTag = "4141410000000000";
 	public static String rayvaxTag = "";
 	public static String elliotTag = "4849505900000000";
-	
+
 	public static byte[] search = {0x39,2,-1};
 	public static byte[] search2 = {0x39,1,-1};
 	public static byte[] search3 = {0x39,3,-1};
-	
+
     public static int gameType = 0;
     public static int prevGameType = 0;
 
-	
+
 	public static ATWPlayer unknown = new ATWPlayer("Unknown");
 	public static ATWPlayer thomas = new ATWPlayer("Thomas");
 	public static ATWPlayer brett = new ATWPlayer("Brett");
@@ -24,26 +24,26 @@ public class Main {
 	public static ATWPlayer braeden = new ATWPlayer("Braeden");
 	public static ATWPlayer rayvax = new ATWPlayer("Rayvax");
 	public static ATWPlayer elliot = new ATWPlayer("Elliot");
-	
+
 	public static int currentGame = 0;
-	
+
 	public static int[] stageData = new int[29];
 
 	public static ATWPlayer[] ATWPlayers = {unknown,thomas,brett,bruno,braeden,rayvax,elliot};
-	
+
 	public static String[] tags = {thomasTag,brettTag,brunoTag,braedenTag,rayvaxTag,elliotTag};
-	
+
 	public static void main(String[] args) throws IOException {
-		
+
 		File slippiDir = new File("C:\\Users\\Thomas\\Downloads\\Dolphins\\FM-v5.9-Slippi-r18-Win\\FM-v5.9-Slippi-r18-Win\\Slippi");
-		
+
 		parseDirectory(slippiDir);
-		
-		
-		
-		
+
+
+
+
 	}
-	
+
 	public static void parseDirectory(File file) throws IOException {
 		if(!file.isDirectory()) {
 			return;
@@ -55,7 +55,7 @@ public class Main {
 		printStats();
 
 	}
-	
+
 	public static void parseFile(File file) throws IOException {
 		int player1ID = 0;
 		int player2ID = 0;
@@ -78,7 +78,7 @@ public class Main {
 			players[i] = found;
 			raf.skipBytes(8);
 		}
-		
+
 		byte[] fileData = new byte[(int) file.length()];
 	    DataInputStream dis = new DataInputStream(new FileInputStream(file));
 	    dis.readFully(fileData);
@@ -100,37 +100,37 @@ public class Main {
 	    int p2charsLeft = Integer.parseInt(String.format("%02X", raf.readByte()),16);
 	    int p3charsLeft = Integer.parseInt(String.format("%02X", raf.readByte()),16);
 	    int p4charsLeft = Integer.parseInt(String.format("%02X", raf.readByte()),16);
-	    
+
 	    int[] charsLeft = {p1charsLeft,p2charsLeft,p3charsLeft,p4charsLeft};
-	    
-	    
-	    if(timeoutBool != 0) {
-	    	gameType = 2;
-	    }else if(doublesBool != 0) {
+
+
+			if(doublesBool != 0) {
 	    	gameType = 1;
+	    }else if(timeoutBool != 0) {
+	    	gameType = 2;
 	    }else {
 	    	gameType = 0;
 	    }
-	    
+
 	    if((p1charsLeft + p2charsLeft + p3charsLeft + p4charsLeft) == 4) {
 	    	currentGame = 0;
 	    }
 	    else {
 	    	currentGame++;
 	    }
-	    
+
 	    if(numOfPlayers < 4) {
 			for(int i = 0; i < 4; i++) {
 		    	raf.seek(146 + (i * 36));
 				String temp = String.format("%02X", raf.readByte());
 				if(temp.equals("00")) {
-					setEndWinnings(ATWPlayers[players[i]]);	
+					setEndWinnings(ATWPlayers[players[i]]);
 				}
 			}
 			return;
 	    }
-	    
-	    
+
+
 	    for(int i = 0; i < 4; i++) {
 			raf.seek(145 + (i * 36));
 			int charID = Integer.parseInt(String.format("%02X", raf.readByte()),16);
@@ -143,15 +143,15 @@ public class Main {
 			}
 			raf.skipBytes(35);
 		}
-		
-		
+
+
 		prevGameType = gameType;
-		
-		
-		
-		
+
+
+
+
 	}
-	
+
 	public static void writeStats(ATWPlayer player, File file, RandomAccessFile raf, int port) throws IOException {
 		if(currentGame != 0) {
 			player.gamesPlayed++;
@@ -171,7 +171,7 @@ public class Main {
 			player.pastCharsLeft = player.currentCharsLeft;
 		}
 		raf.skipBytes(8+port);
-		
+
 		player.numItemsPickedUp += Integer.parseInt(String.format("%02X", raf.readByte()),16);
 		raf.skipBytes(4);
 		player.longestDrought += Integer.parseInt(String.format("%02X", raf.readByte()),16);
@@ -186,10 +186,10 @@ public class Main {
 				}
 			}
 			raf.skipBytes(4);
-			
+
 		}
 	}
-	
+
 	public static void printStats() {
 		for(int i = 0; i < ATWPlayers.length; i++) {
 			if(ATWPlayers[i].gamesPlayed != 0) {
@@ -228,7 +228,7 @@ public class Main {
 	    }
 	    return i;
 	}
-	
+
 	public static void setEndWinnings(ATWPlayer player) {
 		player.gamesPlayed++;
 		player.gameStats[prevGameType][0]++;

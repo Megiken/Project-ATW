@@ -63,21 +63,22 @@ public class Main{
 		generalCredits.menuItems[2] = new menuItem(0,"Big money is the coolest");
 		generalCredits.menuItems[3] = new menuItem(0,"Ill add more people later but no one is as cool as big money");
 
-		
+
 		generalVisuals.menuItems[0] = new menuItem(0,"Visual Settings");
 		generalVisuals.menuItems[1] = new menuItem(0);
 		generalVisuals.menuItems[2] = new menuItem(2,"Costume Dependent Marth Sword Colours: ",ende,1);
 		generalVisuals.menuItems[3] = new menuItem(2,"Night Dreamland: ",nightDreamland,1);
 
-		projectATW.menuItems[0] = new menuItem(0,"Hi, this is the temporaray debug menu!");
-		projectATW.menuItems[1] = new menuItem(0);
-		projectATW.menuItems[2] = generalMain;
-		projectATW.menuItems[3] = generalStages;
-		projectATW.menuItems[4] = generalItems;
-		projectATW.menuItems[5] = generalMechanics;
-		projectATW.menuItems[6] = generalGamemodes;
-		projectATW.menuItems[7] = generalVisuals;
-		projectATW.menuItems[8] = generalCredits;
+		projectATW.menuItems[0] = new menuItem(0,"Hi, this is an early version of the debug menu!");
+		projectATW.menuItems[1] = new menuItem(0,"Please be nice :3");
+		projectATW.menuItems[2] = new menuItem(0);
+		projectATW.menuItems[3] = generalMain;
+		projectATW.menuItems[4] = generalStages;
+		projectATW.menuItems[5] = generalItems;
+		projectATW.menuItems[6] = generalMechanics;
+		projectATW.menuItems[7] = generalGamemodes;
+		projectATW.menuItems[8] = generalVisuals;
+		projectATW.menuItems[9] = generalCredits;
 
 		generalMechanics.menuItems[0] = new menuItem(0,"Mechanics Settings");
 		generalMechanics.menuItems[1] = new menuItem(0);
@@ -239,11 +240,11 @@ public class Main{
 		ironManInfoR.menuItems[4] = new menuItem(0,"select screen, select a character, then hold L and press Y to");
 		ironManInfoR.menuItems[5] = new menuItem(0,"add it to your roster. Hold L and Z then press Y to add zelda");
 		ironManInfoR.menuItems[6] = new menuItem(0,"when zelda is selected, you will get sheik by default and you");
-		ironManInfoR.menuItems[7] = new menuItem(0,"cannot transform or hold A. Initializing and picking will happen");
-		ironManInfoR.menuItems[8] = new menuItem(0,"in an alternating order, so you have to wait for your opponent");
-		ironManInfoR.menuItems[9] = new menuItem(0,"to select their first character before you can initialize");
-		ironManInfoR.menuItems[10] = new menuItem(0,"yourself. Sound effects will play to let you know when you have");
-		ironManInfoR.menuItems[11] = new menuItem(0,"succeeded or failed to add a character to your roster.");
+		ironManInfoR.menuItems[7] = new menuItem(0,"cannot transform or hold A. You can hit down on the dpad at any");
+		ironManInfoR.menuItems[8] = new menuItem(0,"time to clear your roster and start over. Stocks automatically");
+		ironManInfoR.menuItems[9] = new menuItem(0,"get carried over between games, stage selection is up to you.");
+		ironManInfoR.menuItems[10] = new menuItem(0,"Sound effects will play to let you know when you have succeeded");
+		ironManInfoR.menuItems[11] = new menuItem(0,"or failed to add a character to your roster.");
 
 		subMenu ironManBuy = new subMenu(1,"Buy settings");
 
@@ -288,7 +289,7 @@ public class Main{
 		ironManInfoB.menuItems[1] = new menuItem(0);
 		ironManInfoB.menuItems[2] = new menuItem(0,"Similar to the regular mode where you build a roster of characters");
 		ironManInfoB.menuItems[3] = new menuItem(0,"but this time there are rounds of bans in between picking. Hold L");
-		ironManInfoB.menuItems[4] = new menuItem(0,"and hit X to ban a character for your opponent. Text over your");
+		ironManInfoB.menuItems[4] = new menuItem(0,"and hit X to ban a character for your opponent. The text over your");
 		ironManInfoB.menuItems[5] = new menuItem(0,"character select profile will tell you if you are picking or");
 		ironManInfoB.menuItems[6] = new menuItem(0,"banning.");
 
@@ -298,9 +299,8 @@ public class Main{
 	    ironManInfoM.menuItems[0] = new menuItem(0,"How to play money edition");
 	    ironManInfoM.menuItems[1] = new menuItem(0);
 	    ironManInfoM.menuItems[2] = new menuItem(0,"In this mode, every character costs a certain amount of money and");
-	    ironManInfoM.menuItems[3] = new menuItem(0,"you buy a roster. Same controls as regular mode but now you pick");
-	    ironManInfoM.menuItems[4] = new menuItem(0,"characters in any order, and you can hit down on the dpad to sell");
-	    ironManInfoM.menuItems[5] = new menuItem(0,"your roster and start over.");
+	    ironManInfoM.menuItems[3] = new menuItem(0,"you buy a roster. Same controls as regular mode, clearing your");
+	    ironManInfoM.menuItems[4] = new menuItem(0,"roster gives you your money back.");
 
 		subMenu ironManMain = new subMenu(1,"Iron Man");
 
@@ -369,7 +369,7 @@ public class Main{
 		tourneyMods.menuItems[7] = new menuItem(2,"Wobbling Fix: ",ende,1);
 		tourneyMods.menuItems[8] = new menuItem(2,"UCF",ende,0);
 		tourneyMods.menuItems[9] = new menuItem(2,"Decreased Dreamland Volume: ",ende,1);
-		
+
 		playerAttributes.menuItems[0] = new menuItem(0,"Player Attributes");
 		playerAttributes.menuItems[1] = new menuItem(0);
 		playerAttributes.menuItems[2] = new menuItem(0,"Player 1 Scales:");
@@ -392,9 +392,9 @@ public class Main{
 		playerAttributes.menuItems[19] = new menuItem(8,"Offense: ",1,3,0.0625);
 		playerAttributes.menuItems[20] = new menuItem(8,"Defense: ",1,3,0.0625);
 
-		
-		
-		
+
+
+
 		generalItems.menuItems[0] = new menuItem(0,"Items");
 		generalItems.menuItems[1] = new menuItem(0);
 		generalItems.menuItems[2] = new menuItem(2,"Custom item timer: ",ende,0);
@@ -674,7 +674,7 @@ public class Main{
 					data += "\n.long 0x" + functions[deep];
 				}
 				else {
-					data += "\n.long 0x" + menu.menuItems[i].functPointer;	
+					data += "\n.long 0x" + menu.menuItems[i].functPointer;
 				}
 				data += "\n.long 0x" + getTextPointer(menu.menuItems[i].text);
 				data += "\n.long 0";
@@ -716,7 +716,7 @@ public class Main{
 			}
 
 
-			
+
 
 			if(menu.menuItems[i+1] == null) {
 				newFile.createNewFile();
