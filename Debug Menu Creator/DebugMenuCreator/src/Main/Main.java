@@ -6,6 +6,10 @@ import java.util.Scanner;
 
 public class Main{
 	public static String[] functions = {"803001dc","8032C908","8032C908","8032C908","8032C908","8032C908"};
+	
+	final static String toCSS = "8032C90c";
+	final static String toCSSClear = "8032C910";
+	
 	public static int textSpace = 1651108;
 	public static int originalTextSpace = 1651108;
 	public static int subMenuSpace = 1662796;
@@ -88,14 +92,15 @@ public class Main{
 		generalMechanics.menuItems[5] = new menuItem(3,"Health per kill amount: ",25,50,1);
 
 
-		subMenu ATWstartMatch = new subMenu(1,"Starting Characters");
+		subMenu ATWstartMatch = new subMenu(1,"Start new atw");
 
-		ATWstartMatch.menuItems[0] = new menuItem(0,"Starting Characters");
+		ATWstartMatch.menuItems[0] = new menuItem(0,"New game");
 		ATWstartMatch.menuItems[1] = new menuItem(0);
-		ATWstartMatch.menuItems[2] = new menuItem(2,"Player 1 Character: ",chars,0);
-		ATWstartMatch.menuItems[3] = new menuItem(2,"Player 2 Character: ",chars,0);
-		ATWstartMatch.menuItems[4] = new menuItem(2,"Player 3 Character: ",chars,0);
-		ATWstartMatch.menuItems[5] = new menuItem(2,"Player 4 Character: ",chars,0);
+		ATWstartMatch.menuItems[2] = new menuItem(1,"8032C914","Start new game");
+		ATWstartMatch.menuItems[3] = new menuItem(2,"Player 1 Character: ",chars,0);
+		ATWstartMatch.menuItems[4] = new menuItem(2,"Player 2 Character: ",chars,0);
+		ATWstartMatch.menuItems[5] = new menuItem(2,"Player 3 Character: ",chars,0);
+		ATWstartMatch.menuItems[6] = new menuItem(2,"Player 4 Character: ",chars,0);
 
 
 		subMenu ATWmatchSettings = new subMenu(1,"ATW Game Settings");
@@ -148,7 +153,7 @@ public class Main{
 		ATWmainMenu.menuItems[6] = new menuItem(0,"1 $$  1 $$   1 $$   1 $$/   7  $$");
 		ATWmainMenu.menuItems[7] = new menuItem(0,"1__/  1__/   1__/   1__/     7__/");
 		ATWmainMenu.menuItems[8] = new menuItem(0);
-		ATWmainMenu.menuItems[9] = new menuItem(0);
+		ATWmainMenu.menuItems[9] = new menuItem(0,"8032C90c"," ");
 		ATWmainMenu.menuItems[10] = ATWstartMatch;
 		ATWmainMenu.menuItems[11] = ATWmatchSettings;
 		ATWmainMenu.menuItems[12] = ATWstageSettings;
@@ -184,8 +189,9 @@ public class Main{
 		DPMain.menuItems[6] = new menuItem(0,"1 $$$$$$$/1 $$      ");
 		DPMain.menuItems[7] = new menuItem(0,"1_______/ 1__/      ");
 		DPMain.menuItems[8] = new menuItem(0);
-		DPMain.menuItems[9]  = DPsettings;
-		DPMain.menuItems[10] = DPInfo;
+		DPMain.menuItems[9] = new menuItem(1,"8032C910","Play");
+		DPMain.menuItems[10] = DPsettings;
+		DPMain.menuItems[11] = DPInfo;
 
 
 		subMenu KOTHgameSettings = new subMenu(1,"KOTH Settings");
@@ -218,8 +224,9 @@ public class Main{
 		KOTHMain.menuItems[6] = new menuItem(0,"1 $$ 7  $$1  $$$$$$/   1 $$   1 $$  1 $$");
 		KOTHMain.menuItems[7] = new menuItem(0,"1__/  7__/ 7______/    1__/   1__/  1__/");
 		KOTHMain.menuItems[8] = new menuItem(0);
-		KOTHMain.menuItems[9] = KOTHgameSettings;
-		KOTHMain.menuItems[10] = KOTHInfo;
+		KOTHMain.menuItems[9] = new menuItem(1,"8032C90c","Play");
+		KOTHMain.menuItems[10] = KOTHgameSettings;
+		KOTHMain.menuItems[11] = KOTHInfo;
 
 		subMenu ironManSettings = new subMenu(1,"Iron Man Settings");
 
@@ -303,6 +310,20 @@ public class Main{
 	    ironManInfoM.menuItems[4] = new menuItem(0,"roster gives you your money back.");
 
 		subMenu ironManMain = new subMenu(1,"Iron Man");
+		
+		subMenu ironManPlay = new subMenu(1,"Start new game");
+		
+		ironManPlay.menuItems[0] = new menuItem(0,"New game");
+		ironManPlay.menuItems[1] = new menuItem(0);
+		ironManPlay.menuItems[2] = new menuItem(1,"8032C8c8","New regular iron man");
+		ironManPlay.menuItems[3] = ironManInfoR;
+		ironManPlay.menuItems[4] = new menuItem(0);
+		ironManPlay.menuItems[5] = new menuItem(1,"8032C8cc","New iron man with bans");
+		ironManPlay.menuItems[6] = ironManInfoB;
+		ironManPlay.menuItems[7] = new menuItem(0);
+		ironManPlay.menuItems[8] = new menuItem(1,"8032C8d0","New big money iron man");
+		ironManPlay.menuItems[9] = ironManInfoM;
+		
 
 		ironManMain.menuItems[0] = new menuItem(0,"/$$$$$$ /$$      /$$ ");
 		ironManMain.menuItems[1] = new menuItem(0,"1_  $$_/1 $$$    /$$$");
@@ -314,11 +335,10 @@ public class Main{
 		ironManMain.menuItems[7] = new menuItem(0,"1______/1__/     1__/");
 		ironManMain.menuItems[8] = new menuItem(0);
 		ironManMain.menuItems[9] = new menuItem(0);
-		ironManMain.menuItems[10] = ironManSettings;
-		ironManMain.menuItems[11] = ironManBuy;
-		ironManMain.menuItems[12] = ironManInfoR;
-		ironManMain.menuItems[13] = ironManInfoB;
-		ironManMain.menuItems[14] = ironManInfoM;
+		ironManMain.menuItems[10] = ironManPlay;
+		ironManMain.menuItems[11] = ironManSettings;
+		ironManMain.menuItems[12] = ironManBuy;
+		
 
 		subMenu specialMelee = new subMenu(1,"Special Melee");
 
@@ -659,7 +679,11 @@ public class Main{
 			switch (menu.menuItems[i].type) {
 			case 0:
 				data += "\n.long 0";
+				if(menu.menuItems[i].functPointer != null) {
+					data += "\n.long 0x" + menu.menuItems[i].functPointer;
+				}else {
 				data += "\n.long 0";
+				}
 				data += "\n.long 0x" + getTextPointer(menu.menuItems[i].text);
 				data += "\n.long 0";
 				data += "\n.long 0";

@@ -6,11 +6,6 @@
 
 lbz r20,0xc(r3)
 
-branchl r12,getATWstats
-mflr r21
-li r23,1
-addi r21,r21,Stats_starmanPickup
-stbx r23,r20,r21
 
 
 branchl r12,getItemVars

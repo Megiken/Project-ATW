@@ -23,12 +23,6 @@ backup
 lwz r20,0x2c(r29)
 lbz r20,0xc(r20)
 
-branchl r12,getATWstats
-mflr r21
-li r23,1
-addi r21,r21,Stats_screwattackPickup
-stbx r23,r20,r21
-
 
 branchl r12,getItemVars
 mflr r21
@@ -65,12 +59,6 @@ LIGHTNINGBOLT:
   ori r10, r10, 0x1
   stb r10, 15(r5)
   lbz r10, 12(r5)
-
-  branchl r12,getATWstats
-  mflr r21
-  li r23,1
-  addi r21,r21,Stats_lightningboltPickup
-  stbx r23,r10,r21
 
 
   mr r8, r7

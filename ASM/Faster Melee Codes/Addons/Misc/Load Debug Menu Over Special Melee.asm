@@ -61,7 +61,6 @@ STUFF:
 blrl
 .long 0x0c000c01
 .long 0x0c020c03
-.long 0x0c040c05
 .long 0x4154572e
 .long 0x64617400
 .long 0x44502e64
@@ -70,15 +69,11 @@ blrl
 .long 0x64617400
 .long 0x494d2e64
 .long 0x61740000
-.long 0x494d2e64
-.long 0x61740000
-.long 0x494d2e64
-.long 0x61740000
 
 
 END2:
 restoreall
-li r3,2
+li r3,6
 
 
 

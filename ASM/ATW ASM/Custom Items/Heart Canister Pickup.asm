@@ -4,11 +4,6 @@
 
 lbz r20, 12(r3)
 
-branchl r12,getATWstats
-mflr r21
-li r23,1
-addi r21,r21,Stats_heartcanisterPickup
-stbx r23,r20,r21
 
 
 branchl r12,getItemVars

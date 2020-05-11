@@ -9,9 +9,8 @@ public class Main {
 	public static String rayvaxTag = "";
 	public static String elliotTag = "4849505900000000";
 
-	public static byte[] search = {0x39,2,-1};
-	public static byte[] search2 = {0x39,1,-1};
-	public static byte[] search3 = {0x39,3,-1};
+	public static byte[] search = {0x37,0x69,0x42,0x00};
+
 
     public static int gameType = 0;
     public static int prevGameType = 0;
@@ -83,9 +82,8 @@ public class Main {
 	    DataInputStream dis = new DataInputStream(new FileInputStream(file));
 	    dis.readFully(fileData);
 	    dis.close();
-	    long statsOffset = bytesIndexOf(fileData,search,search2,file.length()-1200)-64;
+	    long statsOffset = bytesIndexOf(fileData,search,file.length()-1200)+4;
 	    raf.seek(statsOffset);
-	    raf.skipBytes(1);
 	    int stageID = Integer.parseInt(String.format("%02X", raf.readByte()),16);
 	    int numOfPlayers = Integer.parseInt(String.format("%02X", raf.readByte()),16);
 	    int timeoutBool = Integer.parseInt(String.format("%02X", raf.readByte()),16);
@@ -104,7 +102,7 @@ public class Main {
 	    int[] charsLeft = {p1charsLeft,p2charsLeft,p3charsLeft,p4charsLeft};
 
 
-			if(doublesBool != 0) {
+		if(doublesBool != 0) {
 	    	gameType = 1;
 	    }else if(timeoutBool != 0) {
 	    	gameType = 2;
@@ -173,21 +171,23 @@ public class Main {
 		raf.skipBytes(8+port);
 
 		player.numItemsPickedUp += Integer.parseInt(String.format("%02X", raf.readByte()),16);
-		raf.skipBytes(4);
+		raf.skipBytes(3);
 		player.longestDrought += Integer.parseInt(String.format("%02X", raf.readByte()),16);
-		raf.skipBytes(8);
-		for(int i = 0; i < 8; i++) {
-			int temp = 0;
-			temp = Integer.parseInt(String.format("%02X", raf.readByte()),16);
-			if(temp != 0) {
-				player.itemStats[i][0]++;
-				if(player.wonPrevGame) {
-					player.itemStats[i][1]++;
-				}
-			}
-			raf.skipBytes(4);
-
-		}
+		raf.skipBytes(3);
+		player.playersKilled += Integer.parseInt(String.format("%02X", raf.readByte()));
+		raf.skipBytes(3);
+		player.deaths += Integer.parseInt(String.format("%02X", raf.readByte()));
+		raf.skipBytes(3);
+		player.SDs += Integer.parseInt(String.format("%02X", raf.readByte()));
+		raf.skipBytes((3-port)+(port*2));
+		String temp = "" + Byte.toUnsignedInt(raf.readByte()) + Byte.toUnsignedInt(raf.readByte());
+		System.out.println(player.name);
+		System.out.println(temp);
+		player.damageDealt += Integer.parseInt(temp);
+		raf.skipBytes(6);
+		temp = "" + Byte.toUnsignedInt(raf.readByte()) + Byte.toUnsignedInt(raf.readByte());
+		player.damageRecieved += Integer.parseInt(temp);
+		System.out.println(temp);
 	}
 
 	public static void printStats() {
@@ -201,20 +201,25 @@ public class Main {
 				System.out.println("	Doubles games Won: " + ATWPlayers[i].gameStats[1][1]);
 				System.out.println("	Timout games played: " + ATWPlayers[i].gameStats[2][0]);
 				System.out.println("	Timeout games won: " + ATWPlayers[i].gameStats[2][1]);
+				System.out.println("	Total kills: " + ATWPlayers[i].playersKilled);
+				System.out.println("	Total deaths: " + ATWPlayers[i].deaths);
+				System.out.println("	Total SDs: " + ATWPlayers[i].SDs);
+				System.out.println("	Average damage dealt per game: " + ATWPlayers[i].damageDealt/ATWPlayers[i].gamesPlayed);
+				System.out.println("	Average damage recieved per game: " + ATWPlayers[i].damageRecieved/ATWPlayers[i].gamesPlayed);
 				System.out.println("	Average item pickups per game: " + ATWPlayers[i].numItemsPickedUp/ATWPlayers[i].gamesPlayed);
 				System.out.println("	Average longest drought per game: " + ATWPlayers[i].longestDrought/ATWPlayers[i].gamesPlayed);
 			}
 		}
 	}
 
-	public static long bytesIndexOf(byte[] source, byte[] search, byte[] search2, long fromIndex) {
+	public static long bytesIndexOf(byte[] source, byte[] search, long fromIndex) {
 	    boolean find = false;
 	    long i;
 	    for (i = fromIndex; i < (source.length - search.length); i++) {
-	        if (source[(int) i] == search[0] || source[(int) i] == search2[0]) {
+	        if (source[(int) i] == search[0]) {
 	            find = true;
 	            for (int j = 0; j < search.length; j++) {
-	                if (source[(int) (i + j)] != search[j] && source[(int) (i + j)] != search2[j] && source[(int) (i + j)] != search3[j]) {
+	                if (source[(int) (i + j)] != search[j]) {
 	                    find = false;
 	                }
 	            }

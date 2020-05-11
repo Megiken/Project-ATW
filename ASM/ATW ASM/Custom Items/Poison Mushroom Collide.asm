@@ -7,11 +7,6 @@ backup
 lwz r20,0x2c(r3)
 lbz r20,0xc(r20)
 
-branchl r12,getATWstats
-mflr r21
-li r23,1
-addi r21,r21,Stats_poisonmushroomTouch
-stbx r23,r20,r21
 
 restore
 

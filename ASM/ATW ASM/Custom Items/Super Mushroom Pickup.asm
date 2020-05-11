@@ -6,12 +6,6 @@ backup
 
 lbz r20, 12(r31)
 
-branchl r12,getATWstats
-mflr r21
-li r23,1
-addi r21,r21,Stats_supermushroomTouch
-stbx r23,r20,r21
-
 branchl r12,getItemVars
 mflr r21
 lbzx r23,r21,r20

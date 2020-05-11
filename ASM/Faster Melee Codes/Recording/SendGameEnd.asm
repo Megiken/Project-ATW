@@ -94,12 +94,14 @@ LOOP:
  addi r14,r15,Stats_numitemspickedup
  stbx r3,r14,r16
 
+ mr r3,r16
+ branchl r12,getPlayerStatic
+ mr r19,r3
+
 
 #Longest drought
 
- mr r3,r16
- branchl r12,getPlayerStatic
- lwz r22,0xdc0(r3)
+ lwz r22,0xdc0(r19)
  branchl r12,Int2Float
  fmr f7,f8
  li r22,60
@@ -109,14 +111,40 @@ LOOP:
  addi r14,r15,Stats_longestdrought
  stbx r23,r14,r16
 
- #Player IDs
+ #Kills deaths SDs
 
- addi r14,rtoc,playerIDs
- lbzx r17,r14,r16
- addi r14,r15,Stats_playerID
- stbx r17,r16,r14
+ li r14,0
+ addi r3,r19,0x70
+ li r5,0
+ LOOPAGAIN:
+ lwz r4,0(r3)
+ add r5,r5,r4
+ addi r14,r14,1
+ addi r3,r3,4
+ cmpwi r14,4
+ bne LOOPAGAIN
+ addi r14,r15,Stats_kills
+ stbx r5,r14,r16
 
+ lwz r3,0x68(r19)
+ addi r14,r15,Stats_deaths
+ stbx r3,r14,r16
 
+lhz r3,0x8c(r19)
+ addi r14,r15,Stats_SDs
+ stbx r3,r14,r16
+
+mr r3,r16
+branchl r12,0x80040bfc
+mulli r17,r16,2
+addi r14,r15,Stats_DamageTaken
+sthx r3,r14,r17
+
+#Get damage taken
+mr r3,r16
+branchl r12,0x80040b3c
+addi r14,r15,Stats_DamageGiven
+sthx r3,r14,r17
 
 
 NEXT:
@@ -129,7 +157,11 @@ NEXT:
    lwz REG_Buffer,primaryDataBuffer(r13)
    li r3, 0x37
    stb r3,0x0(REG_Buffer)
-   addi r3,REG_Buffer,1
+   li r3,0x69
+   stb r3,1(r29)
+   li r3,0x4200
+   sth r3,2(r29)
+   addi r3,REG_Buffer,4
    mr r4,r15
    li r5,Stats_length
    branchl r12,copymem

@@ -4,11 +4,13 @@
 
 cmpwi r3,1
 bne END
-mflr r0
-stw	r0, 0x0004 (sp)
-stwu	sp, -0x0008 (sp)
+lwz r20,gameID(rtoc)
+cmpwi r20,0
+beq END
+backup
 li r17,0
 stw r17,IMgameOverFlag(rtoc)
+stw r17,IMcount(rtoc)
 li r17,1
 stw r17,IMtype(rtoc)
 
@@ -26,12 +28,20 @@ cmpwi r20,0
 beq BANFIRST
 li r20,1
 stw r20,IMpickban(rtoc)
-li r17,0x6969
-branch r12,0x801b0a0c
+b GO
 BANFIRST:
 li r20,0
 stw r20,IMpickban(rtoc)
-li r17,0x6969
-branch r12,0x801b0a0c
+GO:
+li r3,1
+branchl r12,goToCSSClearChars
+branchl r12,IMgetFirst
+mflr r23,
+branchl r12,IMhardClearStruct
+
+branchl r12,IMgetSecond
+mflr r23,
+branchl r12,IMhardClearStruct
+restore
 END:
 blr

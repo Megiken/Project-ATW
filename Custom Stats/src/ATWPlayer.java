@@ -8,12 +8,14 @@ public class ATWPlayer {
 	int damageRecieved;
 	int longestDrought;
 	int numItemsPickedUp;
-	int[][] itemStats = new int [8][2];
 	int[][] charStats = new int [26][2];
 	int currentCharsLeft;
 	int pastCharsLeft;
 	int currentCharacter;
 	int pastCharacter;
+	int playersKilled;
+	int deaths;
+	int SDs;
 	
 	
 	

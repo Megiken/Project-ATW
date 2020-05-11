@@ -144,6 +144,8 @@ addi    r1,r1,0x100    # release the space
 .set removePlayerFromCSS,functSpace+0xb8
 .set getCustomEntityStruct,functSpace+0xbc
 .set secondLevelDebugMenu,functSpace+0xc0
+.set goToCSS,functSpace+0xc4
+.set goToCSSClearChars,functSpace+0xc8
 
 ################################################################################
 # Offsets
@@ -249,7 +251,7 @@ addi    r1,r1,0x100    # release the space
 .set playerCSSdata1,0x803F0E08
 .set playerCSSdata2,0x80480820
 .set cssID,0x804a04f3
-.set numOfFiles,0x6
+.set numOfFiles,0x4
 .set timerSeconds,0x8046b6c8
 .set timerMilli,0x8046b6cc #half
 .set ylDat,0x804d76bc
@@ -261,6 +263,9 @@ addi    r1,r1,0x100    # release the space
 .set digitalData,0x804C1FAC
 .set cssStruct2,0x8043208c
 .set frameRate,0x80432a2c
+
+.set ATWsubmenu,0x801970ec
+.set IMsubmenu,0x80197fac
 
 
 ################################################################################
@@ -297,7 +302,7 @@ addi    r1,r1,0x100    # release the space
 # Custom Stat Offsets
 ################################################################################
 
-.set Stats_length,0x34
+.set Stats_length,0x2c
 
 .set Stats_stageID,0x0
 .set Stats_numofplayers,0x1
@@ -307,15 +312,11 @@ addi    r1,r1,0x100    # release the space
 .set Stats_charsLeft,0x4
 .set Stats_numitemspickedup,0x8
 .set Stats_longestdrought,0xc
-.set Stats_playerID,0x10
-.set Stats_hammerPickup,0x14
-.set Stats_starmanPickup,0x18
-.set Stats_turboPickup,0x1c
-.set Stats_lightningboltPickup,0x20
-.set Stats_heartcanisterPickup,0x24
-.set Stats_screwattackPickup,0x28
-.set Stats_poisonmushroomTouch,0x2c
-.set Stats_supermushroomTouch,0x30
+.set Stats_kills,0x10
+.set Stats_deaths,0x14
+.set Stats_SDs,0x18
+.set Stats_DamageGiven,0x1c
+.set Stats_DamageTaken,0x24
 
 
 ################################################################################

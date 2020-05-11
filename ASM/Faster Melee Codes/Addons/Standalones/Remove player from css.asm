@@ -4,7 +4,8 @@
 
 
 .include "Common/common.s"
-
+backup
+load r24,0x8045acb8
 mulli r19,r20,0x24
 load r21,0x803f0e08
 add r21,r21,r19
@@ -20,4 +21,6 @@ load r21,playerCSSdata2
 mulli r19,r20,0x24
 li r22,0x1a03
 sthx r22,r19,r21
+sthx r22,r19,r24
+restore
 blr
