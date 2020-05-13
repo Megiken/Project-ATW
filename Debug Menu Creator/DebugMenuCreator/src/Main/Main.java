@@ -334,7 +334,7 @@ public class Main{
 		ironManMain.menuItems[6] = new menuItem(0," /$$$$$$1 $$ 7/  1 $$");
 		ironManMain.menuItems[7] = new menuItem(0,"1______/1__/     1__/");
 		ironManMain.menuItems[8] = new menuItem(0);
-		ironManMain.menuItems[9] = new menuItem(0);
+		ironManMain.menuItems[9] = new menuItem(0,"8032C90c"," ");
 		ironManMain.menuItems[10] = ironManPlay;
 		ironManMain.menuItems[11] = ironManSettings;
 		ironManMain.menuItems[12] = ironManBuy;

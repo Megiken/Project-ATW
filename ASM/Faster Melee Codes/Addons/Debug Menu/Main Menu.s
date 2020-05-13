@@ -58,7 +58,7 @@
 .long 0
 .long 1
 .long 0x803001dc
-.long 0x801958ec
+.long 0x801958f0
 .long 0
 .long 0
 .long 0x80196f8c
@@ -66,7 +66,7 @@
 .long 0
 .long 1
 .long 0x803001dc
-.long 0x8019593c
+.long 0x80195940
 .long 0
 .long 0
 .long 0x80198d2c
@@ -74,7 +74,7 @@
 .long 0
 .long 1
 .long 0x803001dc
-.long 0x801959a8
+.long 0x801959ac
 .long 0
 .long 0
 .long 0x80198dec

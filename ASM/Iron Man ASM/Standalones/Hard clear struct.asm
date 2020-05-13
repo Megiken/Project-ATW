@@ -7,7 +7,7 @@
 backupall
 
 addi r3,r23,0
-li r4,112
+li r4,116
 branchl r12,zeromem
 
 restoreall

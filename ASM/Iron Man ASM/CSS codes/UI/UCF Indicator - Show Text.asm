@@ -3,6 +3,10 @@
 ################################################################################
 .include "Common/Common.s"
 
+lwz r23,IMtype(rtoc)
+cmpwi r23,1
+bne original
+
 subi r3,r13,UCFTextPointers #get pointers
 mulli r4,r31,0x4 #get offset
 lwzx r3,r3,r4 #get players pointer

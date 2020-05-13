@@ -40,6 +40,11 @@ branchl r12,getPlayerStatic
 lwzx r4,r3,r10
 addi r4,r4,1
 stwx r4,r3,r10
+load r20,0x8046b970
+lbz r21,0xc(r31)
+mulli r21,r21,0xa8
+lwzx r4,r20,r21
+addi r4,r4,1
 
 load r20,KOTHgameType
 lwz r20,0(r20)

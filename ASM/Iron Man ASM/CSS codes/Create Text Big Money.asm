@@ -28,7 +28,7 @@ backup
 ## Create UCF Text ##
 #####################
 
-	#convert player number into float (f1)
+#convert player number into float (f1)
 		mr    r3,r29
 		bl	IntToFloat
 
@@ -40,14 +40,38 @@ backup
 		mr r3,text       #struct pointer
 		branchl r12,getMoneyText
 		mflr r4 #pointer to ASCII
+    branchl r12,IMgetFirst
+    mflr r20
+    lwz r20,IMmoneyOffset(r20)
+    cmpwi r20,0
+    beq NORMAL
+    mr r26,r20
+    b GO
+
+
+
+
+NORMAL:
     load r20,IMplayerMoney
     lwz r26,0(r20)
+GO:
     li r22,0
     branchl r12,storeAscii
     li r20,0x7c
     stbx r20,r16,r4
     add r4,r4,r16
     addi r4,r4,1
+    branchl r12,IMgetSecond
+    mflr r20
+    lwz r21,IMmoneyOffset(r20)
+    cmpwi r21,0
+    beq THERE
+    mr r26,r21
+    b NORMAL2
+    THERE:
+    load r20,IMplayerMoney
+    lwz r26,0(r20)
+NORMAL2:
     branchl r12,storeAscii
     branchl r12,getMoneyText
     mflr r4 #pointer to ASCII

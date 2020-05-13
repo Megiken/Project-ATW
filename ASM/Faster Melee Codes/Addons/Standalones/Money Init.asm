@@ -22,14 +22,25 @@ li r17,0
 stw r17,IMgameOverFlag(rtoc)
 stw r17,IMcount(rtoc)
 li r3,1
-branchl r12,goToCSSClearChars
+branchl r12,goToCSS
 branchl r12,IMgetFirst
-mflr r23,
+mflr r23
 branchl r12,IMhardClearStruct
 
 branchl r12,IMgetSecond
-mflr r23,
+mflr r23
 branchl r12,IMhardClearStruct
+
+load r20,IMsubmenu
+li r21,1
+stw r21,0x120(r20)
+bl THERE
+.long 0x52657375
+.long 0x6d650000
+THERE:
+mflr r21
+stw r21,0x128(r20)
+
 restore
 END:
 blr

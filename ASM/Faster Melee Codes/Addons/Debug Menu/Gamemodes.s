@@ -42,7 +42,7 @@
 .long 0
 .long 1
 .long 0x8032C908
-.long 0x8019572c
+.long 0x80195730
 .long 0
 .long 0
 .long 0x80197fac
@@ -58,7 +58,7 @@
 .long 0
 .long 1
 .long 0x8032C908
-.long 0x801958c8
+.long 0x801958cc
 .long 0
 .long 0
 .long 0x80198b8c
@@ -66,7 +66,7 @@
 .long 0
 .long 2
 .long 0
-.long 0x801958d8
+.long 0x801958dc
 .long 0x80193320
 .long 0x80193180
 .long 0
