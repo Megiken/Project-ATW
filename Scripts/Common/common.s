@@ -153,7 +153,7 @@ addi    r1,r1,0x100    # release the space
 
 #Debug menu
 
-.set debugSpace,0x80192f4c
+.set debugSpace,0x80199f4c
 
 .set IMmoneyOffset,0x70
 

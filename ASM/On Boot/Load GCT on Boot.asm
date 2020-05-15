@@ -22,7 +22,11 @@ mflr r20
 mr r3,r20
 branchl r12,0x800163D8
 add r25,r25,r3
-addi r25,r25,0x500
+addi r3,r20,8
+branchl r12,0x800163D8
+add r25,r25,r3
+mr r23,r3
+addi r25,r25,0xa00
 stw r25,newHeapStart(rtoc)
 mr r3,r24
 
@@ -37,17 +41,28 @@ mr r3,r24
   li	r3, 0
   mr	r4,REG_FileSize
   branchl	r12,0x80015BD0
-load r21,heapStart
 
+	load r4,heapStart
+	addi r3,r20,8
+	addi r5,sp,12
+	branchl r12,0x8001668C
+
+
+load r21,heapStart
+add r21,r21,r23
+addi r21,r21,0x500
 branchl r12,loadbackupstoreGCT
+
 
   mr	r3,r25
 	b END
 
 TEXT:
 blrl
-.string "S+E.dat"
-.align 2
+.long 0x532b452e
+.long 0x64617400
+.long 0x44424d2e
+.long 0x64617400
 
 END:
 

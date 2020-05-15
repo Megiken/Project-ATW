@@ -54,163 +54,18 @@
         },
         {
           "type": "replaceCodeBlock",
-          "address": "803fa4e0",
-          "sourceFile": "../ASM/Faster Melee Codes/Addons/Debug Menu/Main Menu.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "801960cc",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/General.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "8019624c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/Player Attributes.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "8019652c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/Tourney mods.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "801966ac",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/Stages.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "801969ec",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/Custom Stage Select Screen Builder.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "80196dcc",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/Items.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "80196e8c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/Mechanics.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "80196f8c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/Gamemodes.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "801970ec",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/Around the World.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "801972ec",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/Start new atw.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "8019740c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/ATW Game Settings.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "8019756c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/ATW Stage Settings.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "8019768c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/How to play ATW.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "8019782c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/Duelist Pro.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "801979ec",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/DP Settings.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "80197aec",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/How to play DP.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "80197bec",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/King of the hill.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "80197dac",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/KOTH Settings.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "80197e8c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/How to play KOTH.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "80197fac",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/Iron Man.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "8019818c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/Start new game.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "8019830c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/How to play regular.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "801984cc",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/How to play with bans.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "801985ec",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/How to play big money.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "801986cc",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/Iron Man Settings.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "801987ac",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/Buy settings.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "80198b8c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/Special Melee.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "80198d2c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/Visuals.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "80198dec",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/Credits.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "801931a4",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/Text.s"
-        },
-        {
-          "type": "replaceCodeBlock",
           "address": "80192f4c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/Variables.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Text.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "80199f4c",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Variables.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "803fa4e0",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Main Menu.s"
         }
 
 

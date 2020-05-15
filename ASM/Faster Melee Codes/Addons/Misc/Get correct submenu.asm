@@ -21,6 +21,5 @@ mulli r20,r20,4
 lwzx r5,r21,r20
 restore
 
-
 END:
 mflr r0

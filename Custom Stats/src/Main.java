@@ -4,9 +4,9 @@ public class Main {
 
 	public static String thomasTag = "8190819081908190";
 	public static String brettTag = "53544C4E00000000";
-	public static String brunoTag = "";
+	public static String brunoTag = "4A415A5A00000000";
 	public static String braedenTag = "4141410000000000";
-	public static String rayvaxTag = "";
+	public static String rayvaxTag = "4242420000000000";
 	public static String elliotTag = "4849505900000000";
 
 	public static byte[] search = {0x37,0x69,0x42,0x00};

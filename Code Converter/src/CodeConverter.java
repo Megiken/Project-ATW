@@ -9,19 +9,59 @@ public class CodeConverter
     public static void main(String[] args) throws Exception {
     	String path = "";
     	String path2 = "C:/Users/Thomas/Desktop/Project ATW/ATW.dat";
+    	boolean debug = false;
     	if(args[0].equals("-c")) {
     		path = args[1];
     	}
     	if(args[2].equals("-o")) {
     		path2 = args[3];
     	}
-    	
+    	if(args.length>4) {
+    		if(args[4].equals("-d")) {
+    			debug = true;
+    		}
+    	}
     	String temp = "";
         String code = "";
         int output = 0;
         File file = new File(path);
         DataOutputStream out = new DataOutputStream(new FileOutputStream(path2));
         Scanner sc = new Scanner(file);
+        
+        if(debug) {
+        	temp = "";
+            code = "";
+            output = 0;
+            int bytes = 0;
+            while (sc.hasNext()) {
+                temp = sc.nextLine();
+                if (temp.length() > 2) {
+                    code = temp.substring(0, 2);
+                }
+                if (code.equals("06")) {
+                    code = temp.substring(9, 17);
+                    output = (bytes = Integer.parseInt(code, 16));
+                    output /= 4;
+                    for (int i = 0; i < output; i += 2) {
+                        temp = sc.nextLine();
+                        code = temp.substring(0, 8);
+                        writeTo(out, code);
+                        if(code.equals("00000009")) {
+                        	break;
+                        }
+                        code = temp.substring(9, 17);
+                        if(i < output) {
+                        writeTo(out, code);
+                        }
+                    }
+                }
+        	
+            }
+        	sc.close();
+            out.close();
+        }else {
+        
+        
         code = Integer.toHexString(getlength(sc, "04"));
         code = ("00000000" + code).substring(code.length());
         writeTo(out, code);
@@ -37,7 +77,7 @@ public class CodeConverter
         write06data(out, sc);
         sc.close();
         out.close();
-    	
+        }
 
     }
     

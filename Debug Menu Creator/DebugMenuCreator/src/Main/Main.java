@@ -2,7 +2,6 @@ package Main;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Main{
 	public static String[] functions = {"803001dc","8032C908","8032C908","8032C908","8032C908","8032C908"};
@@ -10,18 +9,18 @@ public class Main{
 	final static String toCSS = "8032C90c";
 	final static String toCSSClear = "8032C910";
 	
-	public static int textSpace = 1651108;
-	public static int originalTextSpace = 1651108;
-	public static int subMenuSpace = 1662796;
-	public static int varSpace = 1650508;
-	public static int originalVarSpace = 1650508;
+	public static int textSpace = 1650508;
+	public static int originalTextSpace = 1650508;
+	public static int subMenuSpace = 6671456;
+	public static int varSpace = 1679180;
+	public static int originalVarSpace = 1679180;
 	public static int currentMenuSpace = subMenuSpace;
 	public static String[][] done = new String[100][100];
 	public static String[] doneoffset = new String[100];
 	public static int currentID = 0;
 	public static File currentFile = new File("");
 	public static String[] stages = {"Dummy","Test","Fountain Of Dreams","Pokemon Stadium","Peachs Castle","Kongo Jungle","Brinstar","Corneria","Yoshis Story","Onett","Mute City","Rainbow Cruise","Jungle Japes","Great Bay","Hyrule Temple","Brinstar Depths","Yoshis Island","Green Greens","Fourside","Mushroom Kingdom 1","Mushroom Kingdom 2","Akaneia","Venom","Poke Floats","Big Blue","Icicle Mountain","Icetop","Flatzone","Dreamland","Yoshis Island N64","Kongo Jungle N64","Battlefield","Final Destination","Mario Target Test","Captain Falcon Target Test","Young link Target Test","Donkey Kong Target Test","Dr Mario Target Test","Falco Target Test","Fox Target Test","Ice Climbers Target Test","Kirby Target Test","Bowser Target Test","Link Target Test","Luigi Target Test","Marth Target Test","Mewtwo Target Test","Ness Target Test","Peach Target Test","Pichu Target Test","Pikachu Target Test","Jigglypuff Target Test","Samus Target Test","Sheik Target Test","Yoshi Target Test","Zelda Target Test","Mr Game and watch Target Test","Roy Target Test","Ganondorf Target Test","Majoras Mask","Entei","Goomba","Mount Olympus","All star rest","Home run contest","Escape Shaft","Race to the finish","Duelist pro stage","Event 32 Corneria","Legal Green Greens","Legal big blue","Legal Peachs Castle","Legal Yoshis island","Legal Jungle Japes","Legal Great Bay","Legal Mushroom Kindom 2","Legal Yoshis Island N64","Legal Kongo Jungle","Smashville fourside","Skyrule","Kirby Ware","Lylat Cruise","Nintendo Gamecube","Kalos Pokemon League","Wario Ware Inc","Hyrule Castle","Suzaku Castle","Metal Cavern M","Metroid Lab","Battlefino Plaza","Smash 4 Battlefield","Miiverse","Splattlefino Plaza","Smash 4 FD","Saffron City","75m","Wario land"};
-	public static String myFile = "C:/Users/Thomas/Desktop/Project-ATW/ASM/Faster Melee Codes/Addons/Debug Menu/";
+	public static String myFile = "C:\\Users\\Thomas\\Desktop\\Project-ATW\\ASM\\Debug Menu\\";
 	public static String text = "";
 	public static String var = "";
 	public static String eighty = "80";
@@ -649,7 +648,7 @@ public class Main{
 				num++;
 			}
 		}
-		return (num+2)*4*8;
+		return (num*4*8)+4;
 	}
 
 
