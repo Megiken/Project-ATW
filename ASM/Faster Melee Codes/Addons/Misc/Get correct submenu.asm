@@ -5,10 +5,21 @@
 load r20,0x803fa4e0
 cmpw r20,r5
 bne END
+load r20,0x804a04f0
+lbz r20,0(r20)
+cmpwi r20,0xc
+bne END
+lwz r20,gameID(rtoc)
+cmpwi r20,0
+beq NEXT
+subi r20,r20,1
+b GOOD 
+NEXT:
 load r20,cssID
 lbz r20,0(r20)
 cmpwi r20,6
 bge END
+GOOD:
 backup
 bl THERE
 .long 0x8065e8d4

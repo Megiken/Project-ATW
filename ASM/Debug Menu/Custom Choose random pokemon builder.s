@@ -114,7 +114,7 @@
 .long 0x3dcccccd
 .long 8
 .long 0
-.long 0x80193744
+.long 0x80193754
 .long 0
 .long 0x8019a13c
 .long 0x0

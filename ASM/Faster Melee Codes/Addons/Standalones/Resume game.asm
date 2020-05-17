@@ -1,5 +1,7 @@
 #To be inserted at 8032c850
 
+.include "Common/common.s"
+
 backup
 
 cmpwi r3,1

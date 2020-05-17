@@ -11,7 +11,7 @@ cmpwi r3,1
 bne END
 lwz r22,gameID(rtoc)
 cmpwi r22,0
-beq END
+bne END
 
 stw r21,gameID(rtoc)
 cmpwi r20,0

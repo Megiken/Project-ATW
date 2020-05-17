@@ -35,7 +35,7 @@
 .long 2
 .long 0
 .long 0x80194728
-.long 0x801931bc
+.long 0x801945b4
 .long 0x8019a1c0
 .long 0
 .long 0x41d80000
@@ -43,7 +43,7 @@
 .long 2
 .long 0
 .long 0x80194740
-.long 0x801931bc
+.long 0x801945b4
 .long 0x8019a1c4
 .long 0
 .long 0x41d80000
@@ -51,7 +51,7 @@
 .long 2
 .long 0
 .long 0x80194758
-.long 0x801931bc
+.long 0x801945b4
 .long 0x8019a1c8
 .long 0
 .long 0x41d80000

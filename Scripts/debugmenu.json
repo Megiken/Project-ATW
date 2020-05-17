@@ -45,118 +45,178 @@
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065d9fc",
+          "address": "8065dadc",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Custom Choose Random Item Builder.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "8065de80",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Next Page .s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "8065e084",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Custom Choose random pokemon builder.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "8065e428",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Next page.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "8065e56c",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Mechanics.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065dac0",
+          "address": "8065e770",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Gamemodes.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065dbe4",
+          "address": "8065e8d4",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Around the World.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065dda8",
+          "address": "8065ea98",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Start new atw.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065de8c",
+          "address": "8065eb7c",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/ATW Game Settings.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065dfb0",
+          "address": "8065ec80",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/ATW Stage Settings.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065e094",
+          "address": "8065ece4",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/How to play ATW.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065e1f8",
+          "address": "8065ee48",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Duelist Pro.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065e37c",
+          "address": "8065efcc",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/DP Settings.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065e440",
+          "address": "8065f090",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/How to play DP.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065e504",
+          "address": "8065f154",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/King of the hill.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065e688",
+          "address": "8065f2d8",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/KOTH Settings.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065e72c",
+          "address": "8065f37c",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/How to play KOTH.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065e810",
+          "address": "8065f460",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Iron Man.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065e9b4",
+          "address": "8065f604",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Start new game.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065eaf8",
+          "address": "8065f748",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/How to play regular.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065ec7c",
+          "address": "8065f8cc",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/How to play with bans.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065ed60",
+          "address": "8065f9b0",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/How to play big money.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065ee04",
+          "address": "8065fa54",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Iron Man Settings.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065eea8",
+          "address": "8065faf8",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Buy settings.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065f24c",
+          "address": "8065fe9c",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Squad Strike.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "80660020",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Squad strike settings.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "80660084",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/How to play squad strike.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "806600e8",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Arms race.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "8066026c",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Arms race settings.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "806602d0",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/How to play arms race.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "80660334",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Special Melee.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065f3b0",
+          "address": "80660498",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Visuals.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065f434",
+          "address": "8066067c",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Credits.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "80192f4c",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Text.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "80199f4c",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Variables.s"
         }
 
 

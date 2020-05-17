@@ -73,7 +73,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x8032C90c
+.long 0x8032c850
 .long 0x8019457c
 .long 0
 .long 0

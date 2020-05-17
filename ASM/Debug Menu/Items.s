@@ -19,7 +19,7 @@
 .long 2
 .long 0
 .long 0x80193de4
-.long 0xnull
+.long 0x80193048
 .long 0x8019a070
 .long 0
 .long 0x40000000
@@ -42,7 +42,7 @@
 .long 0
 .long 1
 .long 0x8032C908
-.long 0x80193df8
+.long 0x80193e08
 .long 0
 .long 0
 .long 0x8065dadc
@@ -75,7 +75,7 @@
 .long 2
 .long 0
 .long 0x801942d8
-.long 0xnull
+.long 0x80193048
 .long 0x8019a17c
 .long 0
 .long 0x40000000
@@ -83,7 +83,7 @@
 .long 2
 .long 0
 .long 0x801942ec
-.long 0xnull
+.long 0x80193048
 .long 0x8019a180
 .long 0
 .long 0x40000000

@@ -174,7 +174,7 @@ public class Main{
 		ATWmainMenu.menuItems[6] = new menuItem(0,"1 $$  1 $$   1 $$   1 $$/   7  $$");
 		ATWmainMenu.menuItems[7] = new menuItem(0,"1__/  1__/   1__/   1__/     7__/");
 		ATWmainMenu.menuItems[8] = new menuItem(0);
-		ATWmainMenu.menuItems[9] = new menuItem(0,"8032C90c"," ");
+		ATWmainMenu.menuItems[9] = new menuItem(0,"8032c850"," ");
 		ATWmainMenu.menuItems[10] = ATWstartMatch;
 		ATWmainMenu.menuItems[11] = ATWmatchSettings;
 		ATWmainMenu.menuItems[12] = ATWstageSettings;
@@ -210,7 +210,7 @@ public class Main{
 		DPMain.menuItems[6] = new menuItem(0,"1 $$$$$$$/1 $$      ");
 		DPMain.menuItems[7] = new menuItem(0,"1_______/ 1__/      ");
 		DPMain.menuItems[8] = new menuItem(0);
-		DPMain.menuItems[9] = new menuItem(1,"8032C910","Play");
+		DPMain.menuItems[9] = new menuItem(1,"8032C918","Play");
 		DPMain.menuItems[10] = DPsettings;
 		DPMain.menuItems[11] = DPInfo;
 
@@ -245,7 +245,7 @@ public class Main{
 		KOTHMain.menuItems[6] = new menuItem(0,"1 $$ 7  $$1  $$$$$$/   1 $$   1 $$  1 $$");
 		KOTHMain.menuItems[7] = new menuItem(0,"1__/  7__/ 7______/    1__/   1__/  1__/");
 		KOTHMain.menuItems[8] = new menuItem(0);
-		KOTHMain.menuItems[9] = new menuItem(1,"8032C90c","Play");
+		KOTHMain.menuItems[9] = new menuItem(1,"8032C910","Play");
 		KOTHMain.menuItems[10] = KOTHgameSettings;
 		KOTHMain.menuItems[11] = KOTHInfo;
 
@@ -355,7 +355,7 @@ public class Main{
 		ironManMain.menuItems[6] = new menuItem(0," /$$$$$$1 $$ 7/  1 $$");
 		ironManMain.menuItems[7] = new menuItem(0,"1______/1__/     1__/");
 		ironManMain.menuItems[8] = new menuItem(0);
-		ironManMain.menuItems[9] = new menuItem(0,"8032C90c"," ");
+		ironManMain.menuItems[9] = new menuItem(0,"8032c850"," ");
 		ironManMain.menuItems[10] = ironManPlay;
 		ironManMain.menuItems[11] = ironManSettings;
 		ironManMain.menuItems[12] = ironManBuy;
@@ -395,9 +395,9 @@ public class Main{
 		ssMain.menuItems[6] = new menuItem(0,"|  $$$$$$/|  $$$$$$/");
 		ssMain.menuItems[7] = new menuItem(0," \\______/  \\______/ ");
 		ssMain.menuItems[8] = new menuItem(0);
-		ssMain.menuItems[8] = new menuItem(1,"8032C920","Play");
-		ssMain.menuItems[9] = ssSettings;
-		ssMain.menuItems[10] = ssInfo;
+		ssMain.menuItems[9] = new menuItem(1,"8032C920","Play");
+		ssMain.menuItems[10] = ssSettings;
+		ssMain.menuItems[11] = ssInfo;
 		
 		ssSettings.menuItems[0] = new menuItem(0,"Settings");
 		ssSettings.menuItems[1] = new menuItem(0);
@@ -416,9 +416,9 @@ public class Main{
 		amMain.menuItems[6] = new menuItem(0,"| $$  | $$| $$  | $$");
 		amMain.menuItems[7] = new menuItem(0,"|__/  |__/|__/  |__/");
 		amMain.menuItems[8] = new menuItem(0);
-		amMain.menuItems[8] = new menuItem(1,"8032C924","Play");
-		amMain.menuItems[9] = amSettings;
-		amMain.menuItems[10] = amInfo;
+		amMain.menuItems[9] = new menuItem(1,"8032C924","Play");
+		amMain.menuItems[10] = amSettings;
+		amMain.menuItems[11] = amInfo;
 		
 		amSettings.menuItems[0] = new menuItem(0,"Settings");
 		amSettings.menuItems[1] = new menuItem(0);
@@ -747,8 +747,8 @@ public class Main{
 	    
 	    
 		done2[currentID2] = message;
-		currentID2++;
 		doneoffset2[currentID2] = eighty + Integer.toHexString(textSpace);
+		currentID2++;
 	    
 		text += temp;
 		String returned = eighty + Integer.toHexString(textSpace);
@@ -780,8 +780,8 @@ public class Main{
 		}
 
 		done[currentID] = list;
-		currentID++;
 		doneoffset[currentID] = eighty + Integer.toHexString(backup);
+		currentID++;
 
 		return eighty + Integer.toHexString(backup);
 	}

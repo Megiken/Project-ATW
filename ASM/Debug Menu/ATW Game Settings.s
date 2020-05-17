@@ -42,7 +42,7 @@
 .long 0x3f800000
 .long 3
 .long 0
-.long 0x80193de4
+.long 0x80193df8
 .long 0
 .long 0x8019a1d8
 .long 0
@@ -59,7 +59,7 @@
 .long 2
 .long 0
 .long 0x8019489c
-.long 0xnull
+.long 0x80193048
 .long 0x8019a1e0
 .long 0
 .long 0x40000000
