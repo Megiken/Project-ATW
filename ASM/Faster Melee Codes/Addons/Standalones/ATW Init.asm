@@ -2,15 +2,13 @@
 
 .include "Common/common.s"
 
-cmpwi r3,1
-bne END
-
-lwz r20,gameID(rtoc)
-cmpwi r20,0
-beq END
-
 backup
+li r20,1
+li r21,1
+branchl r12,goToCSS
 
+cmpwi r14,1
+bne ENDLOL
 branchl r12,getCharData
 mflr r20
 load r21,0x01010101
@@ -28,10 +26,16 @@ bl THERE
 THERE:
 mflr r21
 stw r21,0x128(r20)
-li r3,1
-branchl r12,goToCSSClearChars
 
+bl THER
+.long 0x4154572e
+.long 0x64617400
+THER:
+mflr r20
+lwz r21,newHeapStart(rtoc)
+branchl r12,loadbackupstoreGCT
 
+ENDLOL:
 restore
 
 END:

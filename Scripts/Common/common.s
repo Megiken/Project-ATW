@@ -144,8 +144,14 @@ addi    r1,r1,0x100    # release the space
 .set removePlayerFromCSS,functSpace+0xb8
 .set getCustomEntityStruct,functSpace+0xbc
 .set secondLevelDebugMenu,functSpace+0xc0
+
 .set goToCSS,functSpace+0xc4
-.set goToCSSClearChars,functSpace+0xc8
+.set KOTHGameInit,functSpace+0xc8
+.set ATWInit,functSpace+0xcc
+.set DPInit,functSpace+0xd0
+.set IMinit,functSpace+0xd4
+.set SSinit,functSpace+0xd8
+.set ARinit,functSpace+0xdc
 
 ################################################################################
 # Offsets
@@ -264,7 +270,7 @@ addi    r1,r1,0x100    # release the space
 .set cssStruct2,0x8043208c
 .set frameRate,0x80432a2c
 
-.set ATWsubmenu,0x801970ec
+.set ATWsubmenu,0x8065e8d4
 .set IMsubmenu,0x80197fac
 
 

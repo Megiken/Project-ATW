@@ -10,6 +10,7 @@ public class menuItem {
 	double valToInc;
 	double defaultValue;
 	int injectSpot;
+	double minValue;
 	public menuItem() {
 		
 	}
@@ -49,23 +50,17 @@ public class menuItem {
 	}
 	
 	//8
-	public menuItem(int i, String j, double m,double k, double l) {
+	public menuItem(int i, String j, double m,double k, double l, double n) {
 		type = i;
 		text = j;
 		defaultValue = m;
 		LRItems = k;
 		valToInc = l;
 		functPointer = "0";
+		minValue = n;
 	}
 	
-	public menuItem(int i, String p, String j, double m,double k, double l) {
-		type = i;
-		text = j;
-		defaultValue = m;
-		LRItems = k;
-		valToInc = l;
-		functPointer = p;
-	}
+
 	
 	//9
 	

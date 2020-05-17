@@ -3,10 +3,6 @@
 .include "Common/common.s"
 
 backup
-load r20,dreamlandFlag
-lwz r20,0(r20)
-cmpwi r20,0
-bne END
 bl STRUCT
 mflr r20
 lwz r21,0x0(r20)

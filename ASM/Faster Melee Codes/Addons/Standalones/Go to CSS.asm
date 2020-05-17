@@ -2,22 +2,38 @@
 
 .include "Common/common.s"
 
+#input r20 = clear css flag, 0 = no, 1 = yes
+#input r21 = gameID to store
+
+backup
+li r14,0
 cmpwi r3,1
 bne END
-lwz r20,gameID(rtoc)
-cmpwi r20,0
+lwz r22,gameID(rtoc)
+cmpwi r22,0
 beq END
-mflr	r0
-stw	r0, 0x0004 (sp)
-stwu	sp, -0x0008 (sp)
+
+stw r21,gameID(rtoc)
+cmpwi r20,0
+beq GO
+
+li r20,0
+LOOP:
+mr r3,r20
+branchl r12,removePlayerFromCSS
+addi r20,r20,1
+cmpwi r20,4
+bne LOOP
+
+GO:
 li r3,1
 branchl r12,0x80024030
 li r3,2
 branchl r12,0x801a42f8
 branchl r12,0x801a4b60
 li r3,0
-lwz r0,0xc(sp)
-addi sp,sp,8
-mtlr r0
+li r14,1
+
+restore
 END:
 blr

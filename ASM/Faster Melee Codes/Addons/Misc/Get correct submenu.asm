@@ -5,16 +5,18 @@
 load r20,0x803fa4e0
 cmpw r20,r5
 bne END
-lwz r20,gameID(rtoc)
-cmpwi r20,0
-beq END
+load r20,cssID
+lbz r20,0(r20)
+cmpwi r20,6
+bge END
 backup
-subi r20,r20,1
 bl THERE
-.long 0x801970ec
-.long 0x8019782c
-.long 0x80197bec
-.long 0x80197f8c
+.long 0x8065e8d4
+.long 0x8065ee48
+.long 0x8065f154
+.long 0x8065f460
+.long 0x8065fe9c
+.long 0x806600c8
 THERE:
 mflr r21
 mulli r20,r20,4

@@ -1,8 +1,8 @@
-#To be inserted at 8065ec7c
+#To be inserted at 8065f8cc
 
 .long 0
 .long 0
-.long 0x80194ff4
+.long 0x8019541c
 .long 0
 .long 0
 .long 0
@@ -18,7 +18,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x8019500c
+.long 0x80195434
 .long 0
 .long 0
 .long 0
@@ -26,7 +26,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x80195050
+.long 0x80195478
 .long 0
 .long 0
 .long 0
@@ -34,7 +34,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x80195094
+.long 0x801954bc
 .long 0
 .long 0
 .long 0
@@ -42,7 +42,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x801950d8
+.long 0x80195500
 .long 0
 .long 0
 .long 0
@@ -50,7 +50,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x80195118
+.long 0x80195540
 .long 0
 .long 0
 .long 0

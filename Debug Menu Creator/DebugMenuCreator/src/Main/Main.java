@@ -8,16 +8,19 @@ public class Main{
 	
 	final static String toCSS = "8032C90c";
 	final static String toCSSClear = "8032C910";
-	
+	public static int spaceLOL = 0;
 	public static int textSpace = 1650508;
 	public static int originalTextSpace = 1650508;
 	public static int subMenuSpace = 6671456;
 	public static int varSpace = 1679180;
 	public static int originalVarSpace = 1679180;
 	public static int currentMenuSpace = subMenuSpace;
-	public static String[][] done = new String[100][100];
-	public static String[] doneoffset = new String[100];
+	public static String[][] done = new String[1000][1000];
+	public static String[] doneoffset = new String[1000];
+	public static String[] done2 = new String[1000];
+	public static String[] doneoffset2 = new String[1000];
 	public static int currentID = 0;
+	public static int currentID2 = 0;
 	public static File currentFile = new File("");
 	public static String[] stages = {"Dummy","Test","Fountain Of Dreams","Pokemon Stadium","Peachs Castle","Kongo Jungle","Brinstar","Corneria","Yoshis Story","Onett","Mute City","Rainbow Cruise","Jungle Japes","Great Bay","Hyrule Temple","Brinstar Depths","Yoshis Island","Green Greens","Fourside","Mushroom Kingdom 1","Mushroom Kingdom 2","Akaneia","Venom","Poke Floats","Big Blue","Icicle Mountain","Icetop","Flatzone","Dreamland","Yoshis Island N64","Kongo Jungle N64","Battlefield","Final Destination","Mario Target Test","Captain Falcon Target Test","Young link Target Test","Donkey Kong Target Test","Dr Mario Target Test","Falco Target Test","Fox Target Test","Ice Climbers Target Test","Kirby Target Test","Bowser Target Test","Link Target Test","Luigi Target Test","Marth Target Test","Mewtwo Target Test","Ness Target Test","Peach Target Test","Pichu Target Test","Pikachu Target Test","Jigglypuff Target Test","Samus Target Test","Sheik Target Test","Yoshi Target Test","Zelda Target Test","Mr Game and watch Target Test","Roy Target Test","Ganondorf Target Test","Majoras Mask","Entei","Goomba","Mount Olympus","All star rest","Home run contest","Escape Shaft","Race to the finish","Duelist pro stage","Event 32 Corneria","Legal Green Greens","Legal big blue","Legal Peachs Castle","Legal Yoshis island","Legal Jungle Japes","Legal Great Bay","Legal Mushroom Kindom 2","Legal Yoshis Island N64","Legal Kongo Jungle","Smashville fourside","Skyrule","Kirby Ware","Lylat Cruise","Nintendo Gamecube","Kalos Pokemon League","Wario Ware Inc","Hyrule Castle","Suzaku Castle","Metal Cavern M","Metroid Lab","Battlefino Plaza","Smash 4 Battlefield","Miiverse","Splattlefino Plaza","Smash 4 FD","Saffron City","75m","Wario land"};
 	public static String myFile = "C:\\Users\\Thomas\\Desktop\\Project-ATW\\ASM\\Debug Menu\\";
@@ -48,6 +51,7 @@ public class Main{
 	public static String[] lagreduction = {"Off","Half frame","Full frame"};
 	public static String[] yesno = {"Yes","No"};
 	public static String[] nightDreamland = {"Enabled","ATW Only","Disabled"};
+	public static String[] skins = {"Default","Custom 1","Custom 2","Custom 3"};
 
 	public static void main(String[] args) throws InterruptedException, IOException {
 		subMenu projectATW = new subMenu(1,"Main Menu");
@@ -69,8 +73,20 @@ public class Main{
 
 		generalVisuals.menuItems[0] = new menuItem(0,"Visual Settings");
 		generalVisuals.menuItems[1] = new menuItem(0);
-		generalVisuals.menuItems[2] = new menuItem(2,"Costume Dependent Marth Sword Colours: ",ende,1);
-		generalVisuals.menuItems[3] = new menuItem(2,"Night Dreamland: ",nightDreamland,1);
+		generalVisuals.menuItems[2] = new menuItem(0,"You can add your own skins to the iso and select them here.");
+		generalVisuals.menuItems[3] = new menuItem(0,"The files you want to replace end with .00t, .01t, etc.");
+		generalVisuals.menuItems[4] = new menuItem(0,"As long as your new files don't edit the model, it won't desync on netplay.");
+		generalVisuals.menuItems[5] = new menuItem(2,"Battlefield skin: ",skins,0);
+		generalVisuals.menuItems[6] = new menuItem(2,"FD skin: ",skins,0);
+		generalVisuals.menuItems[7] = new menuItem(2,"Pokemon stadium skin: ",skins,0);
+		generalVisuals.menuItems[8] = new menuItem(2,"Yoshis story skin: ",skins,0);
+		generalVisuals.menuItems[9] = new menuItem(2,"FOD skin: ",skins,0);
+		generalVisuals.menuItems[10] = new menuItem(2,"Dreamland skin: ",skins,0);
+		generalVisuals.menuItems[11] = new menuItem(0);
+		generalVisuals.menuItems[12] = new menuItem(2,"CSS skin: ",skins,0);
+		generalVisuals.menuItems[13] = new menuItem(0);
+		generalVisuals.menuItems[14] = new menuItem(2,"Costume Dependent Marth Sword Colours: ",ende,1);
+		
 
 		projectATW.menuItems[0] = new menuItem(0,"Hi, this is an early version of the debug menu!");
 		projectATW.menuItems[1] = new menuItem(0,"Please be nice :3");
@@ -85,11 +101,22 @@ public class Main{
 
 		generalMechanics.menuItems[0] = new menuItem(0,"Mechanics Settings");
 		generalMechanics.menuItems[1] = new menuItem(0);
-		generalMechanics.menuItems[2] = new menuItem(2,"Fancy Throwing: ",ende,1);
-		generalMechanics.menuItems[3] = new menuItem(2,"Invincibility After Bury: ",ende,1);
-		generalMechanics.menuItems[4] = new menuItem(2,"Health per kill: ",nightDreamland,1);
-		generalMechanics.menuItems[5] = new menuItem(3,"Health per kill amount: ",25,50,1);
-
+		generalMechanics.menuItems[2] = new menuItem(2,"Air grabs: ",ende,1);
+		generalMechanics.menuItems[3] = new menuItem(2,"Everyone can float: ",ende,1);
+		generalMechanics.menuItems[4] = new menuItem(2,"Aerial taunts: ",ende,1);
+		generalMechanics.menuItems[5] = new menuItem(2,"Fastfall whenever: ",ende,1);
+		generalMechanics.menuItems[6] = new menuItem(2,"Charagable tilts: ",ende,1);
+		generalMechanics.menuItems[7] = new menuItem(2,"Chargable aerials: ",ende,1);
+		generalMechanics.menuItems[8] = new menuItem(2,"Aerial smash attacks: ",ende,1);
+		generalMechanics.menuItems[9] = new menuItem(2,"Auto L cancel: ",ende,1);
+		generalMechanics.menuItems[10] = new menuItem(2,"Percent swap in doubles: ",ende,1);
+		generalMechanics.menuItems[11] = new menuItem(2,"Any colours in doubles: ",ende,1);
+		generalMechanics.menuItems[12] = new menuItem(2,"Everyone can walljump: ",ende,1);
+		generalMechanics.menuItems[13] = new menuItem(2,"Climber clone: ",ende,1);
+		generalMechanics.menuItems[14] = new menuItem(2,"Everyone is 2d: ",ende,1);
+		generalMechanics.menuItems[15] = new menuItem(2,"Ledge invincibility attrition: ",ende,1);
+		
+	
 
 		subMenu ATWstartMatch = new subMenu(1,"Start new atw");
 
@@ -108,21 +135,16 @@ public class Main{
 		ATWmatchSettings.menuItems[1] = new menuItem(0);
 		ATWmatchSettings.menuItems[2] = new menuItem(2,"Game Type: ",gameTypes,1);
 		ATWmatchSettings.menuItems[3] = new menuItem(2,"Teams: ",teams,5);
-		ATWmatchSettings.menuItems[4] = new menuItem(2,"Percent Swap: ",ende,0);
-		ATWmatchSettings.menuItems[5] = new menuItem(2,"Timer: ",timer,0);
-		ATWmatchSettings.menuItems[6] = new menuItem(3,"Custom Timer: ",100,480,5);
-		ATWmatchSettings.menuItems[7] = new menuItem(3,"Number of Characters: ",26,26,1);
-		ATWmatchSettings.menuItems[8] = new menuItem(2,"Save stocks (iron man):",ende,1);
+		ATWmatchSettings.menuItems[4] = new menuItem(2,"Timer: ",timer,0);
+		ATWmatchSettings.menuItems[5] = new menuItem(3,"Custom Timer: ",100,480,5);
+		ATWmatchSettings.menuItems[6] = new menuItem(3,"Number of Characters: ",26,26,1);
+		ATWmatchSettings.menuItems[7] = new menuItem(2,"Save stocks (iron man):",ende,1);
 
 
 		subMenu ATWstageSettings = new subMenu(1,"ATW Stage Settings");
 
 		ATWstageSettings.menuItems[0] = new menuItem(0,"Stage Settings");
 		ATWstageSettings.menuItems[1] = new menuItem(0);
-		ATWstageSettings.menuItems[2] = new menuItem(2,"Battlefield Ledges: ",onoff,1);
-		ATWstageSettings.menuItems[3] = new menuItem(2,"Slippery FD: ",onoff,0);
-		ATWstageSettings.menuItems[4] = new menuItem(2,"Shy guys: ",onoff,0);
-		ATWstageSettings.menuItems[5] = new menuItem(2,"Dreamland Redeads: ",onoff,0);
 		ATWstageSettings.menuItems[6] = new menuItem(3,"Redead Timer: ",900,1800,15);
 
 
@@ -353,16 +375,70 @@ public class Main{
 		specialMelee.menuItems[9] = new menuItem(2,"Speed: ",SM7,0);
 		specialMelee.menuItems[10] = new menuItem(2,"Camera: ",SM8,0);
 
+		
+		
+		subMenu ssMain = new subMenu(1,"Squad Strike");
+		subMenu amMain = new subMenu(1,"Arms race");
+		
+		subMenu amSettings = new subMenu(1,"Arms race settings");
+		subMenu amInfo = new subMenu(1,"How to play arms race");
+		
+		subMenu ssSettings = new subMenu(1,"Squad strike settings");
+		subMenu ssInfo = new subMenu(1,"How to play squad strike");
+		
+		ssMain.menuItems[0] = new menuItem(0,"  /$$$$$$   /$$$$$$ ");
+		ssMain.menuItems[1] = new menuItem(0," /$$__  $$ /$$__  $$");
+		ssMain.menuItems[2] = new menuItem(0,"| $$  \\__/| $$  \\__/");
+		ssMain.menuItems[3] = new menuItem(0,"|  $$$$$$ |  $$$$$$ ");
+		ssMain.menuItems[4] = new menuItem(0," \\____  $$ \\____  $$");
+		ssMain.menuItems[5] = new menuItem(0," /$$  \\ $$ /$$  \\ $$");
+		ssMain.menuItems[6] = new menuItem(0,"|  $$$$$$/|  $$$$$$/");
+		ssMain.menuItems[7] = new menuItem(0," \\______/  \\______/ ");
+		ssMain.menuItems[8] = new menuItem(0);
+		ssMain.menuItems[8] = new menuItem(1,"8032C920","Play");
+		ssMain.menuItems[9] = ssSettings;
+		ssMain.menuItems[10] = ssInfo;
+		
+		ssSettings.menuItems[0] = new menuItem(0,"Settings");
+		ssSettings.menuItems[1] = new menuItem(0);
+		ssSettings.menuItems[2] = new menuItem(3,"Number of characters: ",4,1,5,3);
 
+		ssInfo.menuItems[0] = new menuItem(0,"How to play");
+		ssInfo.menuItems[1] = new menuItem(0);
+		ssInfo.menuItems[2] = new menuItem(0,"IDK im tired and i just want this done aaaaaaaaaaaa");
+		
+		amMain.menuItems[0] = new menuItem(0,"  /$$$$$$  /$$$$$$$ ");
+		amMain.menuItems[1] = new menuItem(0," /$$__  $$| $$__  $$");
+		amMain.menuItems[2] = new menuItem(0,"| $$  \\ $$| $$  \\ $$");
+		amMain.menuItems[3] = new menuItem(0,"| $$$$$$$$| $$$$$$$/");
+		amMain.menuItems[4] = new menuItem(0,"| $$__  $$| $$__  $$");
+		amMain.menuItems[5] = new menuItem(0,"| $$  | $$| $$  \\ $$");
+		amMain.menuItems[6] = new menuItem(0,"| $$  | $$| $$  | $$");
+		amMain.menuItems[7] = new menuItem(0,"|__/  |__/|__/  |__/");
+		amMain.menuItems[8] = new menuItem(0);
+		amMain.menuItems[8] = new menuItem(1,"8032C924","Play");
+		amMain.menuItems[9] = amSettings;
+		amMain.menuItems[10] = amInfo;
+		
+		amSettings.menuItems[0] = new menuItem(0,"Settings");
+		amSettings.menuItems[1] = new menuItem(0);
+		amSettings.menuItems[2] = new menuItem(3,"Number of characters: ",4,1,5,3);
+
+		amInfo.menuItems[0] = new menuItem(0,"How to play");
+		amInfo.menuItems[1] = new menuItem(0);
+		amInfo.menuItems[2] = new menuItem(0,"IDK im tired and i just want this done aaaaaaaaaaaa");
+		
 		generalGamemodes.menuItems[0] = new menuItem(0,"Gamemodes");
 		generalGamemodes.menuItems[1] = new menuItem(0);
 		generalGamemodes.menuItems[2] = ATWmainMenu;
 		generalGamemodes.menuItems[3] = DPMain;
 		generalGamemodes.menuItems[4] = KOTHMain;
 		generalGamemodes.menuItems[5] = ironManMain;
-		generalGamemodes.menuItems[6] = new menuItem(0);
-		generalGamemodes.menuItems[7] = specialMelee;
-		generalGamemodes.menuItems[8] = new menuItem(2,"Custom gamemodes: ",ende,0);
+		generalGamemodes.menuItems[6] = ssMain;
+		generalGamemodes.menuItems[7] = amMain;
+		generalGamemodes.menuItems[8] = new menuItem(0);
+		generalGamemodes.menuItems[9] = specialMelee;
+		generalGamemodes.menuItems[10] = new menuItem(2,"Custom gamemodes: ",ende,0);
 
 		subMenu playerAttributes = new subMenu(1,"Player Attributes");
 		subMenu tourneyMods = new subMenu(1,"Tourney mods");
@@ -372,7 +448,7 @@ public class Main{
 		generalMain.menuItems[2] = playerAttributes;
 		generalMain.menuItems[3] = tourneyMods;
 		generalMain.menuItems[4] = new menuItem(0);
-		generalMain.menuItems[5] = new menuItem(8,"8032C904","Game speed mult: ",1,3,0.0625);
+		generalMain.menuItems[5] = new menuItem(8,"Game speed mult: ",1,3,0.0625,0.0625);
 		generalMain.menuItems[6] = new menuItem(2,"Disable Star KO: ",onoff,1);
 		generalMain.menuItems[7] = new menuItem(2,"Melee Version: ",versions,0) ;
 		generalMain.menuItems[8] = new menuItem(2,"Widescreen: ",onoff,1);
@@ -392,33 +468,132 @@ public class Main{
 		playerAttributes.menuItems[0] = new menuItem(0,"Player Attributes");
 		playerAttributes.menuItems[1] = new menuItem(0);
 		playerAttributes.menuItems[2] = new menuItem(0,"Player 1 Scales:");
-		playerAttributes.menuItems[3] = new menuItem(8,"Player: ",1,3,0.0625);
-		playerAttributes.menuItems[4] = new menuItem(8,"Offense: ",1,3,0.0625);
-		playerAttributes.menuItems[5] = new menuItem(8,"Defense: ",1,3,0.0625);
+		playerAttributes.menuItems[3] = new menuItem(8,"Player: ",1,3,0.0625,0.0625);
+		playerAttributes.menuItems[4] = new menuItem(8,"Offense: ",1,3,0.0625,0.0625);
+		playerAttributes.menuItems[5] = new menuItem(8,"Defense: ",1,3,0.0625,0.0625);
 		playerAttributes.menuItems[6] = new menuItem(0);
 		playerAttributes.menuItems[7] = new menuItem(0,"Player 2 Scales:");
-		playerAttributes.menuItems[8] = new menuItem(8,"Player: ",1,3,0.0625);
-		playerAttributes.menuItems[9] = new menuItem(8,"Offense: ",1,3,0.0625);
-		playerAttributes.menuItems[10] = new menuItem(8,"Defense: ",1,3,0.0625);
+		playerAttributes.menuItems[8] = new menuItem(8,"Player: ",1,3,0.0625,0.0625);
+		playerAttributes.menuItems[9] = new menuItem(8,"Offense: ",1,3,0.0625,0.0625);
+		playerAttributes.menuItems[10] = new menuItem(8,"Defense: ",1,3,0.0625,0.0625);
 		playerAttributes.menuItems[11] = new menuItem(0);
 		playerAttributes.menuItems[12] = new menuItem(0,"Player 3 Scales:");
-		playerAttributes.menuItems[13] = new menuItem(8,"Player: ",1,3,0.0625);
-		playerAttributes.menuItems[14] = new menuItem(8,"Offense: ",1,3,0.0625);
-		playerAttributes.menuItems[15] = new menuItem(8,"Defense: ",1,3,0.0625);
+		playerAttributes.menuItems[13] = new menuItem(8,"Player: ",1,3,0.0625,0.0625);
+		playerAttributes.menuItems[14] = new menuItem(8,"Offense: ",1,3,0.0625,0.0625);
+		playerAttributes.menuItems[15] = new menuItem(8,"Defense: ",1,3,0.0625,0.0625);
 		playerAttributes.menuItems[16] = new menuItem(0);
 		playerAttributes.menuItems[17] = new menuItem(0,"Player 4 Scales:");
-		playerAttributes.menuItems[18] = new menuItem(8,"Player: ",1,3,0.0625);
-		playerAttributes.menuItems[19] = new menuItem(8,"Offense: ",1,3,0.0625);
-		playerAttributes.menuItems[20] = new menuItem(8,"Defense: ",1,3,0.0625);
+		playerAttributes.menuItems[18] = new menuItem(8,"Player: ",1,3,0.0625,0.0625);
+		playerAttributes.menuItems[19] = new menuItem(8,"Offense: ",1,3,0.0625,0.0625);
+		playerAttributes.menuItems[20] = new menuItem(8,"Defense: ",1,3,0.0625,0.0625);
 
-
-
+		subMenu customItemSelectScreen = new subMenu(1,"Custom Choose Random Item Builder");
+		subMenu customPokemonSelectScreen = new subMenu(1,"Custom Choose random pokemon builder");
+		subMenu customItemSelectScreen2 = new subMenu(1,"Next Page ");
+		subMenu customPokemonSelectScreen2 = new subMenu(1,"Next page");
 
 		generalItems.menuItems[0] = new menuItem(0,"Items");
 		generalItems.menuItems[1] = new menuItem(0);
 		generalItems.menuItems[2] = new menuItem(2,"Custom item timer: ",ende,0);
 		generalItems.menuItems[3] = new menuItem(3,"Custom Timer: ",800,2000,5);
+		generalItems.menuItems[4] = new menuItem(0);
+		generalItems.menuItems[5] = customItemSelectScreen;
+		generalItems.menuItems[6] = customPokemonSelectScreen;
+		generalItems.menuItems[7] = new menuItem(0);
+		generalItems.menuItems[8] = new menuItem(3,"Max items on screen: ",40,100,1);
+		generalItems.menuItems[9] = new menuItem(2,"Fancy throwing: ",ende,1);
+		generalItems.menuItems[10] = new menuItem(2,"Taunt to gain item: ",ende,1);
+		
+		
+		customItemSelectScreen.menuItems[0] = new menuItem(0,"Custom Choose Random Item Builder");
+		customItemSelectScreen.menuItems[1] = new menuItem(0);
+		customItemSelectScreen.menuItems[2] = customItemSelectScreen2;
+		customItemSelectScreen.menuItems[3] = new menuItem(8,"Bob-omb",1,100,0.1,0);
+		customItemSelectScreen.menuItems[4] = new menuItem(8,"Mr saturn",1,100,0.1,0);
+		customItemSelectScreen.menuItems[5] = new menuItem(8,"Heart Canister",1,100,0.1,0);
+		customItemSelectScreen.menuItems[6] = new menuItem(8,"Maxim Tomato",1,100,0.1,0);
+		customItemSelectScreen.menuItems[7] = new menuItem(8,"Starman",1,100,0.1,0);
+		customItemSelectScreen.menuItems[8] = new menuItem(8,"Homerun bat",1,100,0.1,0);
+		customItemSelectScreen.menuItems[9] = new menuItem(8,"Beam sword",1,100,0.1,0);
+		customItemSelectScreen.menuItems[10] = new menuItem(8,"Parasol",1,100,0.1,0);
+		customItemSelectScreen.menuItems[11] = new menuItem(8,"Green shell",1,100,0.1,0);
+		customItemSelectScreen.menuItems[12] = new menuItem(8,"Red shell",1,100,0.1,0);
+		customItemSelectScreen.menuItems[13] = new menuItem(8,"Ray gun",1,100,0.1,0);
+		customItemSelectScreen.menuItems[14] = new menuItem(8,"Freezie",1,100,0.1,0);
+		customItemSelectScreen.menuItems[15] = new menuItem(8,"Food",1,100,0.1,0);
+		customItemSelectScreen.menuItems[16] = new menuItem(8,"Motion Mine",1,100,0.1,0);
+		customItemSelectScreen.menuItems[17] = new menuItem(8,"Flipper",1,100,0.1,0);
+		customItemSelectScreen.menuItems[18] = new menuItem(8,"Super scope",1,100,0.1,0);
+		customItemSelectScreen.menuItems[19] = new menuItem(8,"Star rod",1,100,0.1,0);
+		customItemSelectScreen.menuItems[20] = new menuItem(8,"Lips stick",1,100,0.1,0);
+		customItemSelectScreen.menuItems[21] = new menuItem(8,"Fan",1,100,0.1,0);
+		customItemSelectScreen.menuItems[22] = new menuItem(8,"Fire flower",1,100,0.1,0);
+		customItemSelectScreen.menuItems[23] = new menuItem(8,"Super mushroom",1,100,0.1,0);
+		customItemSelectScreen.menuItems[24] = new menuItem(8,"Poison Mushroom",1,100,0.1,0);
+		customItemSelectScreen.menuItems[25] = new menuItem(8,"Hammer",1,100,0.1,0);
+		customItemSelectScreen.menuItems[26] = new menuItem(8,"Warp star",1,100,0.1,0);
+		customItemSelectScreen.menuItems[27] = new menuItem(8,"Screw attack",1,100,0.1,0);
+		customItemSelectScreen.menuItems[28] = new menuItem(8,"Bunny hood",1,100,0.1,0);
+		
+		customItemSelectScreen2.menuItems[0] = new menuItem(0,"Custom Choose Random Item Builder");
+		customItemSelectScreen2.menuItems[1] = new menuItem(0);
+		customItemSelectScreen2.menuItems[2] = new menuItem(8,"Metal box",1,100,0.1,0);
+		customItemSelectScreen2.menuItems[3] = new menuItem(8,"Cloaking device",1,100,0.1,0);
+		customItemSelectScreen2.menuItems[4] = new menuItem(8,"Pokeball",1,100,0.1,0);
+		customItemSelectScreen2.menuItems[5] = new menuItem(8,"Yoshi egg",1,100,0.1,0);
+		customItemSelectScreen2.menuItems[6] = new menuItem(8,"Barrel cannon",1,100,0.1,0);
+		customItemSelectScreen2.menuItems[7] = new menuItem(8,"Party ball",1,100,0.1,0);
+		customItemSelectScreen2.menuItems[8] = new menuItem(8,"Egg",1,100,0.1,0);
+		customItemSelectScreen2.menuItems[9] = new menuItem(8,"Barrel",1,100,0.1,0);
+		customItemSelectScreen2.menuItems[10] = new menuItem(8,"Box",1,100,0.1,0);
+		customItemSelectScreen2.menuItems[11] = new menuItem(0);
+		customItemSelectScreen2.menuItems[12] = new menuItem(0,"Each of the numbers represents the % chance for the item to spawn.");
+		customItemSelectScreen2.menuItems[13] = new menuItem(0,"The chance for capsule to spawn is the remaining amount if your values");
+		customItemSelectScreen2.menuItems[14] = new menuItem(0,"add up to less than 100. If your values add up to over 100, the items");
+		customItemSelectScreen2.menuItems[15] = new menuItem(0,"at the end of the list cannot spawn, its up to you to do the math.");
 
+		customPokemonSelectScreen.menuItems[0] = new menuItem(0,"Custom Choose Random Pokemon Builder");
+		customPokemonSelectScreen.menuItems[1] = new menuItem(0);
+		customPokemonSelectScreen.menuItems[2] = customPokemonSelectScreen2;
+		customPokemonSelectScreen.menuItems[3] = new menuItem(8,"Chikorita",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[4] = new menuItem(8,"Snorlax",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[5] = new menuItem(8,"Blastoise",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[6] = new menuItem(8,"Weezing",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[7] = new menuItem(8,"Charizard",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[8] = new menuItem(8,"Moltres",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[9] = new menuItem(8,"Zapdos",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[10] = new menuItem(8,"Articuno",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[11] = new menuItem(8,"Wobuffet",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[12] = new menuItem(8,"Scizor",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[13] = new menuItem(8,"Unown",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[14] = new menuItem(8,"Entei",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[15] = new menuItem(8,"Raikou",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[16] = new menuItem(8,"Suicune",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[17] = new menuItem(8,"Bellossom",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[18] = new menuItem(8,"Voltorb",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[19] = new menuItem(8,"Lugia",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[20] = new menuItem(8,"Hooh",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[21] = new menuItem(8,"Ditto",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[22] = new menuItem(8,"Clefairy",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[23] = new menuItem(8,"Togepi",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[24] = new menuItem(8,"Mew",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[25] = new menuItem(8,"Celebi",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[26] = new menuItem(8,"Staryu",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[27] = new menuItem(8,"Chansey",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[28] = new menuItem(8,"Porygon",1,100,0.1,0);
+		
+		customPokemonSelectScreen2.menuItems[0] = new menuItem(0,"Custom Choose Random Pokemon Builder");
+		customPokemonSelectScreen2.menuItems[1] = new menuItem(0);
+		customPokemonSelectScreen2.menuItems[2] = new menuItem(8,"Cyndaquil",1,100,0.1,0);
+		customPokemonSelectScreen2.menuItems[3] = new menuItem(8,"Marill",1,100,0.1,0);
+		customPokemonSelectScreen2.menuItems[4] = new menuItem(8,"Venusaur",1,100,0.1,0);
+		customPokemonSelectScreen2.menuItems[5] = new menuItem(0);
+		customPokemonSelectScreen2.menuItems[6] = new menuItem(0,"Each of the numbers represents the % chance for the item to spawn.");
+		customPokemonSelectScreen2.menuItems[7] = new menuItem(0,"The chance for goldeen to spawn is the remaining amount if your values");
+		customPokemonSelectScreen2.menuItems[8] = new menuItem(0,"add up to less than 100. If your values add up to over 100, the pokemon");
+		customPokemonSelectScreen2.menuItems[9] = new menuItem(0,"at the end of the list cannot spawn, its up to you to do the math.");
+		
+		
 		subMenu customStageSelectScreen = new subMenu(1,"Custom Stage Select Screen Builder");
 
 		customStageSelectScreen.menuItems[0] = new menuItem(2,"Peachs Castle: ",stages,4);
@@ -481,9 +656,7 @@ public class Main{
 
 
 
-		generalMechanics.menuItems[0] = new menuItem(0,"General");
-		generalVisuals.menuItems[0] = new menuItem(0,"General");
-		generalCredits.menuItems[0] = new menuItem(0,"General");
+		
 
 		ArrayList<jsonObject> list = new ArrayList<jsonObject>();
 
@@ -532,6 +705,13 @@ public class Main{
 		if(message == null) {
 			return "0";
 		}
+		
+		for(int k = 0; k < currentID2; k++){
+			if(done2[k].equals(message)) {
+				return doneoffset2[k];
+			}
+		}
+		
 		int tempint = 0;
 		String temp = "";
 	    for(int i = 0; i < message.length() ; i+=4){   // while counting characters if less than the length add one
@@ -564,6 +744,12 @@ public class Main{
 	    	temp += "00";
 	    	times2 --;
 	    }
+	    
+	    
+		done2[currentID2] = message;
+		currentID2++;
+		doneoffset2[currentID2] = eighty + Integer.toHexString(textSpace);
+	    
 		text += temp;
 		String returned = eighty + Integer.toHexString(textSpace);
 		textSpace += (message.length()) + (times);
@@ -574,7 +760,7 @@ public class Main{
 		int backup = textSpace;
 
 
-		for(int k = 0; k <= currentID;k++) {
+		for(int k = 0; k < currentID;k++) {
 			if(done[k].equals(list)) {
 				return doneoffset[k];
 			}
@@ -593,8 +779,8 @@ public class Main{
 			getTextPointer(list[i]);
 		}
 
-		currentID++;
 		done[currentID] = list;
+		currentID++;
 		doneoffset[currentID] = eighty + Integer.toHexString(backup);
 
 		return eighty + Integer.toHexString(backup);
@@ -630,13 +816,15 @@ public class Main{
 	public static String getVarPointer(double value, menuItem menu) {
 		String returns = eighty + Integer.toHexString(varSpace);
 		varSpace += 4;
-		var += ".long 0x" + U32((int)value) + " #" + menu.text + "\n";
+		var += ".long 0x" + U32((int)value) + " # .set" + menu.text + ", debugSpace+" +  spaceLOL +"\n";
+		spaceLOL+=4;
 		return returns;
 	}
 	public static String getVarPointer(float value, menuItem menu) {
 		String returns = eighty + Integer.toHexString(varSpace);
 		varSpace += 4;
-		var += ".long 0x" + getFloat(value) + " #" + menu.text + "\n";
+		var += ".long 0x" + getFloat(value) + " # .set" + menu.text + ", debugSpace+"+spaceLOL+ "\n";
+		spaceLOL+=4;
 		return returns;
 	}
 
@@ -732,7 +920,7 @@ public class Main{
 				data += "\n.long 0x" + getTextPointer(menu.menuItems[i].text);
 				data += "\n.long 0";
 				data += "\n.long 0x" + getVarPointer((float)menu.menuItems[i].defaultValue, menu.menuItems[i]);
-				data += "\n.long 0x" + getFloat((float) menu.menuItems[i].valToInc);
+				data += "\n.long 0x" + getFloat((float) menu.menuItems[i].minValue);
 				data += "\n.long 0x" + getFloat((float) menu.menuItems[i].LRItems);
 				data += "\n.long 0x" + getFloat((float) menu.menuItems[i].valToInc);
 				break;
