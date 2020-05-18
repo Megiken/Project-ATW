@@ -13,7 +13,10 @@ lwz r20,gameID(rtoc)
 cmpwi r20,0
 beq NEXT
 subi r20,r20,1
-b GOOD 
+cmpwi r20,3
+ble GOOD
+subi r20,r20,2
+b GOOD
 NEXT:
 load r20,cssID
 lbz r20,0(r20)

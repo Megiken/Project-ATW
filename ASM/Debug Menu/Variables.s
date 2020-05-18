@@ -165,60 +165,61 @@
 .long 0x00000064 # .setCustom Timer: , debugSpace+652
 .long 0x0000001a # .setNumber of Characters: , debugSpace+656
 .long 0x00000001 # .setSave stocks (iron man):, debugSpace+660
-.long 0x0000000a # .setBomb Impact Damage: , debugSpace+664
-.long 0x0000000a # .setBomb Explosion Damage: , debugSpace+668
-.long 0x0000000b # .setGravity/100: , debugSpace+672
-.long 0x00000073 # .setTerminal Velocity/100: , debugSpace+676
-.long 0x00000000 # .setGame Type: , debugSpace+680
-.long 0x000009c4 # .setMax Score: , debugSpace+684
-.long 0x0000001e # .setTime per Hill: , debugSpace+688
-.long 0x00000005 # .setNumber of Characters: , debugSpace+692
-.long 0x00000000 # .setCharacter order: , debugSpace+696
-.long 0x00000000 # .setBan order: , debugSpace+700
-.long 0x000003e8 # .setMoney per person: , debugSpace+704
-.long 0x000000fa # .setCaptain Falcon cost: , debugSpace+708
-.long 0x00000096 # .setDonkey Kong cost: , debugSpace+712
-.long 0x000000fa # .setFox cost: , debugSpace+716
-.long 0x0000007d # .setMr Game and Watch cost: , debugSpace+720
-.long 0x00000064 # .setKirby cost: , debugSpace+724
-.long 0x00000064 # .setBowser cost: , debugSpace+728
-.long 0x00000096 # .setLink cost: , debugSpace+732
-.long 0x000000c8 # .setLuigi cost: , debugSpace+736
-.long 0x00000096 # .setMario cost: , debugSpace+740
-.long 0x000000fa # .setMarth cost: , debugSpace+744
-.long 0x00000064 # .setMewtwo cost: , debugSpace+748
-.long 0x00000064 # .setNess cost: , debugSpace+752
-.long 0x000000fa # .setPeach cost: , debugSpace+756
-.long 0x000000c8 # .setPikachu cost: , debugSpace+760
-.long 0x000000fa # .setIce Climbers cost: , debugSpace+764
-.long 0x000000fa # .setJigglypuff cost: , debugSpace+768
-.long 0x000000c8 # .setSamus cost: , debugSpace+772
-.long 0x000000af # .setYoshi cost: , debugSpace+776
-.long 0x0000007d # .setZelda cost: , debugSpace+780
-.long 0x000000fa # .setSheik cost: , debugSpace+784
-.long 0x000000fa # .setFalco cost: , debugSpace+788
-.long 0x00000096 # .setYoung Link cost: , debugSpace+792
-.long 0x000000c8 # .setDoctor Mario cost: , debugSpace+796
-.long 0x0000007d # .setRoy cost: , debugSpace+800
-.long 0x0000007d # .setPichu cost: , debugSpace+804
-.long 0x000000af # .setGanondorf cost: , debugSpace+808
-.long 0x00000004 # .setNumber of characters: , debugSpace+812
+.long 0x00000384 # .setRedead Timer: , debugSpace+664
+.long 0x0000000a # .setBomb Impact Damage: , debugSpace+668
+.long 0x0000000a # .setBomb Explosion Damage: , debugSpace+672
+.long 0x0000000b # .setGravity/100: , debugSpace+676
+.long 0x00000073 # .setTerminal Velocity/100: , debugSpace+680
+.long 0x00000000 # .setGame Type: , debugSpace+684
+.long 0x000009c4 # .setMax Score: , debugSpace+688
+.long 0x0000001e # .setTime per Hill: , debugSpace+692
+.long 0x00000005 # .setNumber of Characters: , debugSpace+696
+.long 0x00000000 # .setCharacter order: , debugSpace+700
+.long 0x00000000 # .setBan order: , debugSpace+704
+.long 0x000003e8 # .setMoney per person: , debugSpace+708
+.long 0x000000fa # .setCaptain Falcon cost: , debugSpace+712
+.long 0x00000096 # .setDonkey Kong cost: , debugSpace+716
+.long 0x000000fa # .setFox cost: , debugSpace+720
+.long 0x0000007d # .setMr Game and Watch cost: , debugSpace+724
+.long 0x00000064 # .setKirby cost: , debugSpace+728
+.long 0x00000064 # .setBowser cost: , debugSpace+732
+.long 0x00000096 # .setLink cost: , debugSpace+736
+.long 0x000000c8 # .setLuigi cost: , debugSpace+740
+.long 0x00000096 # .setMario cost: , debugSpace+744
+.long 0x000000fa # .setMarth cost: , debugSpace+748
+.long 0x00000064 # .setMewtwo cost: , debugSpace+752
+.long 0x00000064 # .setNess cost: , debugSpace+756
+.long 0x000000fa # .setPeach cost: , debugSpace+760
+.long 0x000000c8 # .setPikachu cost: , debugSpace+764
+.long 0x000000fa # .setIce Climbers cost: , debugSpace+768
+.long 0x000000fa # .setJigglypuff cost: , debugSpace+772
+.long 0x000000c8 # .setSamus cost: , debugSpace+776
+.long 0x000000af # .setYoshi cost: , debugSpace+780
+.long 0x0000007d # .setZelda cost: , debugSpace+784
+.long 0x000000fa # .setSheik cost: , debugSpace+788
+.long 0x000000fa # .setFalco cost: , debugSpace+792
+.long 0x00000096 # .setYoung Link cost: , debugSpace+796
+.long 0x000000c8 # .setDoctor Mario cost: , debugSpace+800
+.long 0x0000007d # .setRoy cost: , debugSpace+804
+.long 0x0000007d # .setPichu cost: , debugSpace+808
+.long 0x000000af # .setGanondorf cost: , debugSpace+812
 .long 0x00000004 # .setNumber of characters: , debugSpace+816
-.long 0x00000000 # .setPercent/Stamina, debugSpace+820
-.long 0x00000096 # .setStamina Amount, debugSpace+824
-.long 0x00000000 # .setSize: , debugSpace+828
-.long 0x00000000 # .setHead: , debugSpace+832
-.long 0x00000000 # .setBody: , debugSpace+836
-.long 0x00000000 # .setStatus: , debugSpace+840
-.long 0x00000000 # .setGravity: , debugSpace+844
-.long 0x00000000 # .setSpeed: , debugSpace+848
-.long 0x00000000 # .setCamera: , debugSpace+852
-.long 0x00000000 # .setCustom gamemodes: , debugSpace+856
-.long 0x00000000 # .setBattlefield skin: , debugSpace+860
-.long 0x00000000 # .setFD skin: , debugSpace+864
-.long 0x00000000 # .setPokemon stadium skin: , debugSpace+868
-.long 0x00000000 # .setYoshis story skin: , debugSpace+872
-.long 0x00000000 # .setFOD skin: , debugSpace+876
-.long 0x00000000 # .setDreamland skin: , debugSpace+880
-.long 0x00000000 # .setCSS skin: , debugSpace+884
-.long 0x00000001 # .setCostume Dependent Marth Sword Colours: , debugSpace+888
+.long 0x00000004 # .setNumber of characters: , debugSpace+820
+.long 0x00000000 # .setPercent/Stamina, debugSpace+824
+.long 0x00000096 # .setStamina Amount, debugSpace+828
+.long 0x00000000 # .setSize: , debugSpace+832
+.long 0x00000000 # .setHead: , debugSpace+836
+.long 0x00000000 # .setBody: , debugSpace+840
+.long 0x00000000 # .setStatus: , debugSpace+844
+.long 0x00000000 # .setGravity: , debugSpace+848
+.long 0x00000000 # .setSpeed: , debugSpace+852
+.long 0x00000000 # .setCamera: , debugSpace+856
+.long 0x00000000 # .setCustom gamemodes: , debugSpace+860
+.long 0x00000000 # .setBattlefield skin: , debugSpace+864
+.long 0x00000000 # .setFD skin: , debugSpace+868
+.long 0x00000000 # .setPokemon stadium skin: , debugSpace+872
+.long 0x00000000 # .setYoshis story skin: , debugSpace+876
+.long 0x00000000 # .setFOD skin: , debugSpace+880
+.long 0x00000000 # .setDreamland skin: , debugSpace+884
+.long 0x00000000 # .setCSS skin: , debugSpace+888
+.long 0x00000001 # .setCostume Dependent Marth Sword Colours: , debugSpace+892

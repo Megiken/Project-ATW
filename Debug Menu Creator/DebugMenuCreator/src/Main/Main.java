@@ -145,7 +145,7 @@ public class Main{
 
 		ATWstageSettings.menuItems[0] = new menuItem(0,"Stage Settings");
 		ATWstageSettings.menuItems[1] = new menuItem(0);
-		ATWstageSettings.menuItems[6] = new menuItem(3,"Redead Timer: ",900,1800,15);
+		ATWstageSettings.menuItems[2] = new menuItem(3,"Redead Timer: ",900,1800,15);
 
 
 		subMenu atwInfo = new subMenu(1,"How to play ATW");

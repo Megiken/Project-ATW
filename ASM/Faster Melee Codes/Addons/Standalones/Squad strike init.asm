@@ -10,8 +10,8 @@ cmpwi r14,1
 bne END
 
 bl THERE
-.long 0x4b54482e
-.long 0x64617400
+.long 0x53532e64
+.long 0x61740000
 THERE:
 
 mflr r20

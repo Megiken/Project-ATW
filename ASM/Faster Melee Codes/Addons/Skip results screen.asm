@@ -2,7 +2,7 @@
 
 .include "Common/common.s"
 
-load r20,idleScreenFlag
+load r20,skipResultsFlag
 lwz r20,0(r20)
 cmpwi r20,0
 beq LOL

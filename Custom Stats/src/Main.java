@@ -2,13 +2,16 @@ import java.io.*;
 
 public class Main {
 
+	public static boolean gameEnd = true;
+	
 	public static String thomasTag = "8190819081908190";
 	public static String brettTag = "53544C4E00000000";
 	public static String brunoTag = "4A415A5A00000000";
 	public static String braedenTag = "4141410000000000";
 	public static String rayvaxTag = "4242420000000000";
 	public static String elliotTag = "4849505900000000";
-
+	public static String jamesTag = "4D44510000000000";
+	
 	public static byte[] search = {0x37,0x69,0x42,0x00};
 
 
@@ -23,14 +26,15 @@ public class Main {
 	public static ATWPlayer braeden = new ATWPlayer("Braeden");
 	public static ATWPlayer rayvax = new ATWPlayer("Rayvax");
 	public static ATWPlayer elliot = new ATWPlayer("Elliot");
+	public static ATWPlayer james = new ATWPlayer("James");
 
 	public static int currentGame = 0;
 
 	public static int[] stageData = new int[29];
 
-	public static ATWPlayer[] ATWPlayers = {unknown,thomas,brett,bruno,braeden,rayvax,elliot};
+	public static ATWPlayer[] ATWPlayers = {unknown,thomas,brett,bruno,braeden,rayvax,elliot,james};
 
-	public static String[] tags = {thomasTag,brettTag,brunoTag,braedenTag,rayvaxTag,elliotTag};
+	public static String[] tags = {thomasTag,brettTag,brunoTag,braedenTag,rayvaxTag,elliotTag,jamesTag};
 
 	public static void main(String[] args) throws IOException {
 
@@ -50,6 +54,7 @@ public class Main {
 		File[] files = file.listFiles();
 		for(int i = 0; i < files.length; i++){
 			parseFile(files[i]);
+			System.out.println(files[i].getName());
 		}
 		printStats();
 
@@ -69,7 +74,7 @@ public class Main {
 				temp += String.format("%02X", raf.readByte());
 			}
 			int found = 0;
-			for(int j = 0; j < 6; j++) {
+			for(int j = 0; j < tags.length; j++) {
 				if(temp.contentEquals(tags[j])) {
 					found = j+1;
 				}
@@ -83,6 +88,9 @@ public class Main {
 	    dis.readFully(fileData);
 	    dis.close();
 	    long statsOffset = bytesIndexOf(fileData,search,file.length()-1200)+4;
+	    if(statsOffset < 20) {
+	    	return;
+	    }
 	    raf.seek(statsOffset);
 	    int stageID = Integer.parseInt(String.format("%02X", raf.readByte()),16);
 	    int numOfPlayers = Integer.parseInt(String.format("%02X", raf.readByte()),16);
@@ -104,8 +112,6 @@ public class Main {
 
 		if(doublesBool != 0) {
 	    	gameType = 1;
-	    }else if(timeoutBool != 0) {
-	    	gameType = 2;
 	    }else {
 	    	gameType = 0;
 	    }
@@ -118,13 +124,16 @@ public class Main {
 	    }
 
 	    if(numOfPlayers < 4) {
-			for(int i = 0; i < 4; i++) {
-		    	raf.seek(146 + (i * 36));
-				String temp = String.format("%02X", raf.readByte());
-				if(temp.equals("00")) {
-					setEndWinnings(ATWPlayers[players[i]]);
+	    	if(gameEnd == false && currentGame != 0) {
+	    		gameEnd = true;
+				for(int i = 0; i < 4; i++) {
+			    	raf.seek(146 + (i * 36));
+					String temp = String.format("%02X", raf.readByte());
+					if(temp.equals("00")) {
+						setEndWinnings(ATWPlayers[players[i]]);
+					}
 				}
-			}
+	    	}
 			return;
 	    }
 
@@ -133,12 +142,14 @@ public class Main {
 			raf.seek(145 + (i * 36));
 			int charID = Integer.parseInt(String.format("%02X", raf.readByte()),16);
 			String temp = String.format("%02X", raf.readByte());
+			long backup = raf.getFilePointer();
 			if(temp.equals("00")) {
 				raf.seek(statsOffset);
 				ATWPlayers[players[i]].currentCharacter = charID;
 				ATWPlayers[players[i]].currentCharsLeft = charsLeft[i];
 				writeStats(ATWPlayers[players[i]],file,raf,i);
 			}
+			raf.seek(backup);
 			raf.skipBytes(35);
 		}
 
@@ -151,18 +162,23 @@ public class Main {
 	}
 
 	public static void writeStats(ATWPlayer player, File file, RandomAccessFile raf, int port) throws IOException {
+		gameEnd = false;
 		if(currentGame != 0) {
 			player.gamesPlayed++;
 			player.gameStats[prevGameType][0]++;
 			player.charStats[player.pastCharacter][0]++;
+			System.out.println("Players name is " + player.name + ", he current has " + player.currentCharsLeft + " characters left, he had " + player.pastCharsLeft +" characters left last game");
 			if(player.currentCharsLeft == player.pastCharsLeft) {
 				player.gameStats[prevGameType][1]++;
 				player.charStats[player.pastCharacter][1]++;
 				player.wonPrevGame = true;
 			}
+			
 			else {
 				player.wonPrevGame = false;
 			}
+			player.pastCharacter = player.currentCharacter;
+			player.pastCharsLeft = player.currentCharsLeft;
 		}
 		else{
 			player.pastCharacter = player.currentCharacter;
@@ -181,13 +197,10 @@ public class Main {
 		player.SDs += Integer.parseInt(String.format("%02X", raf.readByte()));
 		raf.skipBytes((3-port)+(port*2));
 		String temp = "" + Byte.toUnsignedInt(raf.readByte()) + Byte.toUnsignedInt(raf.readByte());
-		System.out.println(player.name);
-		System.out.println(temp);
 		player.damageDealt += Integer.parseInt(temp);
 		raf.skipBytes(6);
 		temp = "" + Byte.toUnsignedInt(raf.readByte()) + Byte.toUnsignedInt(raf.readByte());
 		player.damageRecieved += Integer.parseInt(temp);
-		System.out.println(temp);
 	}
 
 	public static void printStats() {
@@ -199,13 +212,11 @@ public class Main {
 				System.out.println("	FFA games won: " + ATWPlayers[i].gameStats[0][1]);
 				System.out.println("	Doubles games played: " + ATWPlayers[i].gameStats[1][0]);
 				System.out.println("	Doubles games Won: " + ATWPlayers[i].gameStats[1][1]);
-				System.out.println("	Timout games played: " + ATWPlayers[i].gameStats[2][0]);
-				System.out.println("	Timeout games won: " + ATWPlayers[i].gameStats[2][1]);
 				System.out.println("	Total kills: " + ATWPlayers[i].playersKilled);
 				System.out.println("	Total deaths: " + ATWPlayers[i].deaths);
 				System.out.println("	Total SDs: " + ATWPlayers[i].SDs);
-				System.out.println("	Average damage dealt per game: " + ATWPlayers[i].damageDealt/ATWPlayers[i].gamesPlayed);
-				System.out.println("	Average damage recieved per game: " + ATWPlayers[i].damageRecieved/ATWPlayers[i].gamesPlayed);
+				System.out.println("	Total damage dealt: " + ATWPlayers[i].damageDealt);
+				System.out.println("	Total damage recieved: " + ATWPlayers[i].damageRecieved);
 				System.out.println("	Average item pickups per game: " + ATWPlayers[i].numItemsPickedUp/ATWPlayers[i].gamesPlayed);
 				System.out.println("	Average longest drought per game: " + ATWPlayers[i].longestDrought/ATWPlayers[i].gamesPlayed);
 			}

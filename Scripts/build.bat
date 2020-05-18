@@ -16,6 +16,10 @@ echo Building ironman.json...
 gecko build -c ironman.json
 echo.
 
+echo Building squadstrike.json...
+gecko build -c squadstrike.json
+echo.
+
 echo Building netplay.json...
 gecko build -c netplay.json
 echo.
@@ -46,6 +50,10 @@ echo.
 
 echo Creating Iron Man DAT...
 java -jar CodeConverter.jar -c "..\Output\ironman.txt" -o "..\Files\Custom Code\IM.dat"
+echo.
+
+echo Creating Squad Strike DAT...
+java -jar CodeConverter.jar -c "..\Output\Squad strike.txt" -o "..\Files\Custom Code\SS.dat"
 echo.
 
 echo Creating Slippi + Extras DAT...

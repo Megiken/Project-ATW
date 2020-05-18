@@ -2,20 +2,20 @@
 public class ATWPlayer {
 	String name;
 	boolean wonPrevGame;
-	int gamesPlayed;
+	double gamesPlayed;
 	int[][] gameStats = new int[3][2];
-	int damageDealt;
-	int damageRecieved;
-	int longestDrought;
-	int numItemsPickedUp;
+	double damageDealt;
+	double damageRecieved;
+	double longestDrought;
+	double numItemsPickedUp;
 	int[][] charStats = new int [26][2];
 	int currentCharsLeft;
 	int pastCharsLeft;
 	int currentCharacter;
 	int pastCharacter;
-	int playersKilled;
-	int deaths;
-	int SDs;
+	double playersKilled;
+	double deaths;
+	double SDs;
 	
 	
 	
