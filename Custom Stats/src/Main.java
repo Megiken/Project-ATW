@@ -11,6 +11,7 @@ public class Main {
 	public static String rayvaxTag = "4242420000000000";
 	public static String elliotTag = "4849505900000000";
 	public static String jamesTag = "4D44510000000000";
+	public static String zachbtag = "444B000000000000";
 	
 	public static byte[] search = {0x37,0x69,0x42,0x00};
 
@@ -27,14 +28,15 @@ public class Main {
 	public static ATWPlayer rayvax = new ATWPlayer("Rayvax");
 	public static ATWPlayer elliot = new ATWPlayer("Elliot");
 	public static ATWPlayer james = new ATWPlayer("James");
+	public static ATWPlayer zachb = new ATWPlayer("Zacb B");
 
 	public static int currentGame = 0;
 
 	public static int[] stageData = new int[29];
 
-	public static ATWPlayer[] ATWPlayers = {unknown,thomas,brett,bruno,braeden,rayvax,elliot,james};
+	public static ATWPlayer[] ATWPlayers = {unknown,thomas,brett,bruno,braeden,rayvax,elliot,james,zachb};
 
-	public static String[] tags = {thomasTag,brettTag,brunoTag,braedenTag,rayvaxTag,elliotTag,jamesTag};
+	public static String[] tags = {thomasTag,brettTag,brunoTag,braedenTag,rayvaxTag,elliotTag,jamesTag,zachbtag};
 
 	public static void main(String[] args) throws IOException {
 
@@ -207,18 +209,18 @@ public class Main {
 		for(int i = 0; i < ATWPlayers.length; i++) {
 			if(ATWPlayers[i].gamesPlayed != 0) {
 				System.out.println("Player's name: " + ATWPlayers[i].name);
-				System.out.println("	Games played: " + ATWPlayers[i].gamesPlayed);
-				System.out.println("	FFA games played: " + ATWPlayers[i].gameStats[0][0]);
-				System.out.println("	FFA games won: " + ATWPlayers[i].gameStats[0][1]);
-				System.out.println("	Doubles games played: " + ATWPlayers[i].gameStats[1][0]);
-				System.out.println("	Doubles games Won: " + ATWPlayers[i].gameStats[1][1]);
-				System.out.println("	Total kills: " + ATWPlayers[i].playersKilled);
-				System.out.println("	Total deaths: " + ATWPlayers[i].deaths);
-				System.out.println("	Total SDs: " + ATWPlayers[i].SDs);
-				System.out.println("	Total damage dealt: " + ATWPlayers[i].damageDealt);
-				System.out.println("	Total damage recieved: " + ATWPlayers[i].damageRecieved);
-				System.out.println("	Average item pickups per game: " + ATWPlayers[i].numItemsPickedUp/ATWPlayers[i].gamesPlayed);
-				System.out.println("	Average longest drought per game: " + ATWPlayers[i].longestDrought/ATWPlayers[i].gamesPlayed);
+				try {
+				System.out.println("	Games played: " + String.format("%.0f", ATWPlayers[i].gamesPlayed));	
+				System.out.println("	FFA Win Rate: " + String.format("%.2f", (ATWPlayers[i].gameStats[0][1]/ATWPlayers[i].gameStats[0][0])*100)+ "%");
+				System.out.println("	Doubles Win Rate: " +String.format("%.2f", (ATWPlayers[i].gameStats[1][1]/ATWPlayers[i].gameStats[1][0])*100)+ "%");
+				System.out.println("	KDR: " +String.format("%.2f", ATWPlayers[i].playersKilled/ATWPlayers[i].deaths));
+				System.out.println("	SD%: " + String.format("%.2f", (ATWPlayers[i].SDs/ATWPlayers[i].deaths)*100));
+				System.out.println("	Damage dealt/damage received: " + String.format("%.2f", ATWPlayers[i].damageDealt/ATWPlayers[i].damageRecieved));
+				System.out.println("	Average longest drought per game: " + String.format("%.2f", ATWPlayers[i].longestDrought/ATWPlayers[i].gamesPlayed));
+				}
+				catch (ArithmeticException e) {
+					System.out.println("Not enough data");
+				}
 			}
 		}
 	}

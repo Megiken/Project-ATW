@@ -3,7 +3,7 @@ public class ATWPlayer {
 	String name;
 	boolean wonPrevGame;
 	double gamesPlayed;
-	int[][] gameStats = new int[3][2];
+	double[][] gameStats = new double[3][2];
 	double damageDealt;
 	double damageRecieved;
 	double longestDrought;
