@@ -50,7 +50,11 @@ THERE:
   lwz r3, 224(r5)
   cmpwi r3, 0x0
   bne- loc_0xFC
-
+lbz r3,0xc(r5)
+branchl r12,getPlayerStatic
+lbz r4,0x8e(r3)
+cmpwi r4,0
+beq loc_0xFC
 addi r3,r5,0x1838
 li r4,0x38
 branchl r12,0x8000c160

@@ -17,24 +17,15 @@ li r18,0x0
 load r22,doublesByte
 lbz r22,0(r22)
 cmpwi r22,0
-beq ffaEndLoop
+beq ffaEndLooplol
 
 #Doubles get winning team ID
 DOUBLESLOOP:
 
-mulli r3,r18,168                #get offset
-add r3,r3,r19                    #get players match data
-lbz r3,0x5D(r3)                    #check if player won
-cmpwi r3,0x0                    #check if player won
-beq getTeamID
-addi r18,r18,1
-cmpwi r18,0x4
-blt DOUBLESLOOP
-
-getTeamID:
+load r3,0x8047c028
+branchl r12,0x801654a0
+mr r25,r3
 load r26,playerCSSdata1-2
-mulli r22,r18,0x24
-lbzx r25,r26,r22
 li r18,0
 
 doublesEndLoop:
@@ -71,6 +62,10 @@ li r20,0
 b NEXT2
 
 
+ffaEndLooplol:
+load r3,0x8047c028
+branchl r12,0x80165418
+mr r25,r3
 
 ffaEndLoop:
 
@@ -79,10 +74,7 @@ branchl r12,0x8003241c            #branch to PlayerBlock_LoadSlotType
 cmpwi r3,0x3                     #check if slot is empty
 beq NEXT
 
-mulli r3,r18,168                #get offset
-add r3,r3,r19                    #get players match data
-lbz r3,0x5D(r3)                    #check if player won
-cmpwi r3,0x0                    #check if player won
+cmpw r18,r25
 bne ffaLost
 
 #Win

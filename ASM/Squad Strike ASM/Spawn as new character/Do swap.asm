@@ -29,7 +29,7 @@ stb r22,3(r24)
 
 mulli r21,r21,0x100
 add r20,r21,r22
-load r21,0x804320bf
+load r21,0x8043208f
 subi r14,r14,1
 mulli r23,r14,8
 sthx r20,r23,r21
@@ -48,8 +48,13 @@ li r15, 0xFF
 stb r15, 7(r3)
 stb r15, 6(r3)
 mr r16,r3
+
+lwz r3,0x2c(r3)
+li r4,0x235c
+branchl r12,zeromem
+
 mr r3,r25
-branchl r12,0x8016e2bc
+branchl r12,0x80031ad0
 
 mr r3,r25
 branchl r12,getPlayerStatic
@@ -61,4 +66,5 @@ lbz r21, 8733(r3)
 rlwimi r21, r21, 3, 28, 28
 stb r21, 8733(r3)
 restoreall
-mflr r0
+addi sp,sp,8
+branch r12,0x8006ab88
