@@ -7,8 +7,8 @@ li r20,1
 li r21,1
 branchl r12,goToCSS
 
-cmpwi r14,1
-bne ENDLOL
+cmpwi r14,0
+beq ENDLOL
 branchl r12,getCharData
 mflr r20
 load r21,0x01010101
@@ -31,6 +31,8 @@ bl THER
 .long 0x4154572e
 .long 0x64617400
 THER:
+cmpwi r14,2
+beq ENDLOL
 mflr r20
 lwz r21,newHeapStart(rtoc)
 branchl r12,loadbackupstoreGCT

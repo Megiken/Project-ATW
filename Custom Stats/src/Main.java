@@ -169,7 +169,6 @@ public class Main {
 			player.gamesPlayed++;
 			player.gameStats[prevGameType][0]++;
 			player.charStats[player.pastCharacter][0]++;
-			System.out.println("Players name is " + player.name + ", he current has " + player.currentCharsLeft + " characters left, he had " + player.pastCharsLeft +" characters left last game");
 			if(player.currentCharsLeft == player.pastCharsLeft) {
 				player.gameStats[prevGameType][1]++;
 				player.charStats[player.pastCharacter][1]++;

@@ -2,4 +2,4 @@
 
 #Stage switch
 
-.long 0xf7ebfbff
+.long 0xffeafbff

@@ -9,11 +9,17 @@ backup
 li r14,0
 cmpwi r3,1
 bne END
+
+load r22,0x804a04f0
+li r23,0xc
+stb r23,0(r22)
+
 lwz r22,gameID(rtoc)
 cmpwi r22,0
-bne END
-
+bne ACTIVE
+li r14,1
 stw r21,gameID(rtoc)
+NORMAL:
 cmpwi r20,0
 beq GO
 
@@ -32,8 +38,12 @@ li r3,2
 branchl r12,0x801a42f8
 branchl r12,0x801a4b60
 li r3,0
-li r14,1
 
 restore
 END:
 blr
+
+
+ACTIVE:
+li r14,2
+b NORMAL

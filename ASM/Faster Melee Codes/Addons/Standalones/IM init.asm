@@ -27,8 +27,6 @@ BANFIRST:
 li r20,0
 stw r20,IMpickban(rtoc)
 GO:
-li r3,1
-branchl r12,goToCSS
 branchl r12,IMgetFirst
 mflr r23
 branchl r12,IMhardClearStruct
@@ -51,11 +49,12 @@ bl THER
 .long 0x494d2e64
 .long 0x61740000
 THER:
-
+cmpwi r14,2
+beq ENDLOL
 mflr r20
 lwz r21,newHeapStart(rtoc)
 branchl r12,loadbackupstoreGCT
-
+ENDLOL:
 restore
 END:
 blr

@@ -44,9 +44,9 @@
 .long 0x00000018 # .setBig Blue: , debugSpace+168
 .long 0x00000009 # .setOnett: , debugSpace+172
 .long 0x00000012 # .setFourside: , debugSpace+176
-.long 0x00000019 # .setIcicle Mountain: , debugSpace+180
-.long 0x00000013 # .setMushroom Kingdom 1: , debugSpace+184
-.long 0x00000014 # .setMushroom Kingdom 2: , debugSpace+188
+.long 0x00000013 # .setMushroom Kingdom 1: , debugSpace+180
+.long 0x00000014 # .setMushroom Kingdom 2: , debugSpace+184
+.long 0x00000019 # .setIcicle Mountain: , debugSpace+188
 .long 0x0000001b # .setFlatzone: , debugSpace+192
 .long 0x0000001f # .setBattlefield: , debugSpace+196
 .long 0x00000020 # .setFinal Destination: , debugSpace+200

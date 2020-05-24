@@ -388,12 +388,12 @@ public class Main{
 		
 		ssMain.menuItems[0] = new menuItem(0,"  /$$$$$$   /$$$$$$ ");
 		ssMain.menuItems[1] = new menuItem(0," /$$__  $$ /$$__  $$");
-		ssMain.menuItems[2] = new menuItem(0,"| $$  \\__/| $$  \\__/");
+		ssMain.menuItems[2] = new menuItem(0,"| $$  7__/| $$  7__/");
 		ssMain.menuItems[3] = new menuItem(0,"|  $$$$$$ |  $$$$$$ ");
-		ssMain.menuItems[4] = new menuItem(0," \\____  $$ \\____  $$");
-		ssMain.menuItems[5] = new menuItem(0," /$$  \\ $$ /$$  \\ $$");
+		ssMain.menuItems[4] = new menuItem(0," 7____  $$ 7____  $$");
+		ssMain.menuItems[5] = new menuItem(0," /$$  7 $$ /$$  7 $$");
 		ssMain.menuItems[6] = new menuItem(0,"|  $$$$$$/|  $$$$$$/");
-		ssMain.menuItems[7] = new menuItem(0," \\______/  \\______/ ");
+		ssMain.menuItems[7] = new menuItem(0," 7______/  7______/ ");
 		ssMain.menuItems[8] = new menuItem(0);
 		ssMain.menuItems[9] = new menuItem(1,"8032C920","Play");
 		ssMain.menuItems[10] = ssSettings;
@@ -616,9 +616,9 @@ public class Main{
 		customStageSelectScreen.menuItems[17] = new menuItem(2,"Big Blue: ",stages,24);
 		customStageSelectScreen.menuItems[18] = new menuItem(2,"Onett: ",stages,9);
 		customStageSelectScreen.menuItems[19] = new menuItem(2,"Fourside: ",stages,18);
-		customStageSelectScreen.menuItems[20] = new menuItem(2,"Icicle Mountain: ",stages,25);
-		customStageSelectScreen.menuItems[21] = new menuItem(2,"Mushroom Kingdom 1: ",stages,19);
-		customStageSelectScreen.menuItems[22] = new menuItem(2,"Mushroom Kingdom 2: ",stages,20);
+		customStageSelectScreen.menuItems[20] = new menuItem(2,"Mushroom Kingdom 1: ",stages,19);
+		customStageSelectScreen.menuItems[21] = new menuItem(2,"Mushroom Kingdom 2: ",stages,20);
+		customStageSelectScreen.menuItems[22] = new menuItem(2,"Icicle Mountain: ",stages,25);
 		customStageSelectScreen.menuItems[23] = new menuItem(2,"Flatzone: ",stages,27);
 		customStageSelectScreen.menuItems[24] = new menuItem(2,"Battlefield: ",stages,31);
 		customStageSelectScreen.menuItems[25] = new menuItem(2,"Final Destination: ",stages,32);
@@ -704,12 +704,6 @@ public class Main{
 	public static String getTextPointer(String message) {
 		if(message == null) {
 			return "0";
-		}
-		
-		for(int k = 0; k < currentID2; k++){
-			if(done2[k].equals(message)) {
-				return doneoffset2[k];
-			}
 		}
 		
 		int tempint = 0;
@@ -813,6 +807,7 @@ public class Main{
 	    return (temp.length()-tempint-1)/2;
 	}
 
+	
 	public static String getVarPointer(double value, menuItem menu) {
 		String returns = eighty + Integer.toHexString(varSpace);
 		varSpace += 4;
