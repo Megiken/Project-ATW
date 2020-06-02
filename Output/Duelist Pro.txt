@@ -105,6 +105,11 @@ C23641D4 00000008 #../ASM/Duelist Pro ASM/Disable CSS Puck Animations.asm
 040EBBE8 38600001 #../ASM/Duelist Pro ASM/Give jump back.asm
 043F09CC 021B1B2C #../ASM/Duelist Pro ASM/GrTLg on SSS.asm
 0425FB74 7DE37B78 #../ASM/Duelist Pro ASM/Load Custom Char.asm
+C2221C74 00000004 #../ASM/Duelist Pro ASM/Load camera and blastzones.asm
+3E808049 6294E6C8
+3EA0C2E0 92B4000C
+3EA0C320 92B40080
+8001000C 00000000
 043E8E44 4C672E72 #../ASM/Duelist Pro ASM/New GrTLg.asm
 043D1244 2E726174 #../ASM/Duelist Pro ASM/New PlCl.asm
 C21B0A0C 00000006 #../ASM/Duelist Pro ASM/To CSS.asm

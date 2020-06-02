@@ -152,6 +152,9 @@ addi    r1,r1,0x100    # release the space
 .set IMinit,functSpace+0xd4
 .set SSinit,functSpace+0xd8
 .set ARinit,functSpace+0xdc
+.set updateSFX,functSpace+0xe0
+.set loadCharacter,functSpace+0xe4
+.set getOppositeData,functSpace+0xe8
 
 ################################################################################
 # Offsets
@@ -159,7 +162,7 @@ addi    r1,r1,0x100    # release the space
 
 #Debug menu
 
-.set debugSpace,0x80199f4c
+.set debugSpace,2149162828
 
 .set IMmoneyOffset,0x70
 
@@ -317,6 +320,7 @@ addi    r1,r1,0x100    # release the space
 .set IMmoneyTextStruct,-0x7d0c
 .set tempStageAdr,-0x7cf0
 .set tempBackupAscii,-0x7cec
+.set SSdata,-0x7ce8
 
 ################################################################################
 # Values
