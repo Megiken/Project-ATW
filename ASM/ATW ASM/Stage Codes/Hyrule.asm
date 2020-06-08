@@ -7,19 +7,8 @@
   cmpwi r30, 0x0
   bne- loc_0x30
   cmpwi r20, 0xE
-  beq HYRULE
-  cmpwi r20,0x2
   bne loc_0x30
-  li r30, 0x1e
-  sthx r30, r29, r0
-  b loc_0x34
-
-HYRULE:
   li r30, 0x32
-  sthx r30, r29, r0
-  b loc_0x34
 
 loc_0x30:
   sthx r30, r29, r0
-
-loc_0x34:

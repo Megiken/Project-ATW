@@ -4,7 +4,7 @@
 
 backup
 li r20,0
-li r21,7
+li r21,5
 branchl r12,goToCSS
 cmpwi r14,0
 beq END

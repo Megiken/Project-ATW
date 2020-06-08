@@ -9,14 +9,7 @@ branchl r12,getCorrectData
 load r24,0x80480590
 mulli r15,r25,0x24
 add r24,r24,r15
-lhz r20,SSdata(rtoc)
-cmpwi r20,0
-beq HEHE
-load r20,0x804320af
-b HAHA
-HEHE:
-load r20,0x804320bf
-HAHA:
+load r21,0x804320bf
 mulli r21,r25,8
 add r20,r20,r21
 lbz r21,0(r20)

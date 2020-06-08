@@ -1,7 +1,10 @@
 import java.io.*;
+import java.util.Arrays;
 
 public class Main {
 
+	public static double[][] timeOuts = new double[3][2];
+	
 	public static boolean gameEnd = true;
 	
 	public static String thomasTag = "8190819081908190";
@@ -40,9 +43,11 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 
-		File slippiDir = new File("C:\\Users\\Thomas\\Downloads\\Dolphins\\FM-v5.9-Slippi-r18-Win\\FM-v5.9-Slippi-r18-Win\\Slippi");
+		File currentDir = new File("C:\\Users\\Thomas\\Downloads\\Dolphins\\FM-v5.9-Slippi-r18-Win\\FM-v5.9-Slippi-r18-Win\\Slippi");
 
-		parseDirectory(slippiDir);
+		File totalDir = new File("C:\\Users\\Thomas\\Desktop\\file backups");
+		
+		parseDirectory(totalDir);
 
 
 
@@ -111,12 +116,18 @@ public class Main {
 
 	    int[] charsLeft = {p1charsLeft,p2charsLeft,p3charsLeft,p4charsLeft};
 
-
+	    
 		if(doublesBool != 0) {
 	    	gameType = 1;
 	    }else {
 	    	gameType = 0;
 	    }
+		if(timeoutBool != 0) {
+			timeOuts[numOfPlayers-2][1]++;
+		}
+		else {
+			timeOuts[numOfPlayers-2][0]++;
+		}
 
 	    if((p1charsLeft + p2charsLeft + p3charsLeft + p4charsLeft) == 4) {
 	    	currentGame = 0;
@@ -222,6 +233,9 @@ public class Main {
 				}
 			}
 		}
+		System.out.println("Timeout % in 2 player games: " + (timeOuts[0][1]/timeOuts[0][0])*100);
+		System.out.println("Timeout % in 3 player games: " + (timeOuts[1][1]/timeOuts[1][0])*100);
+		System.out.println("Timeout % in 4 player games: " + (timeOuts[2][1]/timeOuts[2][0])*100);
 	}
 
 	public static long bytesIndexOf(byte[] source, byte[] search, long fromIndex) {
