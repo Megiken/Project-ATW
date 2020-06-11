@@ -1,8 +1,8 @@
-#To be inserted at 8065f460
+#To be inserted at 8065f4a0
 
 .long 0
 .long 0
-.long 0x801952a4
+.long 0x801952a8
 .long 0
 .long 0
 .long 0
@@ -10,7 +10,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x801952bc
+.long 0x801952c0
 .long 0
 .long 0
 .long 0
@@ -18,7 +18,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x801952d4
+.long 0x801952d8
 .long 0
 .long 0
 .long 0
@@ -26,7 +26,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x801952ec
+.long 0x801952f0
 .long 0
 .long 0
 .long 0
@@ -34,7 +34,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x80195304
+.long 0x80195308
 .long 0
 .long 0
 .long 0
@@ -42,7 +42,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x8019531c
+.long 0x80195320
 .long 0
 .long 0
 .long 0
@@ -50,7 +50,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x80195334
+.long 0x80195338
 .long 0
 .long 0
 .long 0
@@ -58,7 +58,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x8019534c
+.long 0x80195350
 .long 0
 .long 0
 .long 0
@@ -74,7 +74,7 @@
 .long 0
 .long 0
 .long 0x8032c850
-.long 0x80195364
+.long 0x80195368
 .long 0
 .long 0
 .long 0
@@ -82,26 +82,26 @@
 .long 0
 .long 1
 .long 0x8032C908
-.long 0x8019587c
+.long 0x80195880
 .long 0
 .long 0
-.long 0x8065f604
-.long 0
-.long 0
-.long 1
-.long 0x8032C908
-.long 0x80195920
-.long 0
-.long 0
-.long 0x8065fa54
+.long 0x8065f644
 .long 0
 .long 0
 .long 1
 .long 0x8032C908
-.long 0x80195b14
+.long 0x80195924
 .long 0
 .long 0
-.long 0x8065faf8
+.long 0x8065fa94
+.long 0
+.long 0
+.long 1
+.long 0x8032C908
+.long 0x80195b18
+.long 0
+.long 0
+.long 0x8065fb38
 .long 0
 .long 0
 .long 9

@@ -47,7 +47,7 @@ public class Main {
 
 		File totalDir = new File("C:\\Users\\Thomas\\Desktop\\file backups");
 		
-		parseDirectory(totalDir);
+		parseDirectory(currentDir);
 
 
 

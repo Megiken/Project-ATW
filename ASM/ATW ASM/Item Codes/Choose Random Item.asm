@@ -2,12 +2,6 @@
 
 .include "Common/common.s"
 
-lis r15,0x8046
-lwz r15,-0x3c84(r15)
-lis r16,0xfffb
-ori r16,r16,0xffff
-cmpw r16,r15
-bne END
 backup
 
 li r3,1000
@@ -136,6 +130,3 @@ li r3,Food
 FINISH:
 restore
 blr
-
-END:
-mflr r0

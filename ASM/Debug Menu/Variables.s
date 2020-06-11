@@ -74,70 +74,70 @@
 .long 0x00000000 # .setKongo Jungle 64 Barrel: , debugSpace+288
 .long 0x00000000 # .setCustom item timer: , debugSpace+292
 .long 0x00000320 # .setCustom Timer: , debugSpace+296
-.long 0x3f800000 # .setMetal box, debugSpace+300
-.long 0x3f800000 # .setCloaking device, debugSpace+304
-.long 0x3f800000 # .setPokeball, debugSpace+308
-.long 0x3f800000 # .setYoshi egg, debugSpace+312
-.long 0x3f800000 # .setBarrel cannon, debugSpace+316
-.long 0x3f800000 # .setParty ball, debugSpace+320
-.long 0x3f800000 # .setEgg, debugSpace+324
-.long 0x3f800000 # .setBarrel, debugSpace+328
-.long 0x3f800000 # .setBox, debugSpace+332
-.long 0x3f800000 # .setBob-omb, debugSpace+336
-.long 0x3f800000 # .setMr saturn, debugSpace+340
-.long 0x3f800000 # .setHeart Canister, debugSpace+344
-.long 0x3f800000 # .setMaxim Tomato, debugSpace+348
-.long 0x3f800000 # .setStarman, debugSpace+352
-.long 0x3f800000 # .setHomerun bat, debugSpace+356
-.long 0x3f800000 # .setBeam sword, debugSpace+360
-.long 0x3f800000 # .setParasol, debugSpace+364
-.long 0x3f800000 # .setGreen shell, debugSpace+368
-.long 0x3f800000 # .setRed shell, debugSpace+372
-.long 0x3f800000 # .setRay gun, debugSpace+376
-.long 0x3f800000 # .setFreezie, debugSpace+380
-.long 0x3f800000 # .setFood, debugSpace+384
-.long 0x3f800000 # .setMotion Mine, debugSpace+388
-.long 0x3f800000 # .setFlipper, debugSpace+392
-.long 0x3f800000 # .setSuper scope, debugSpace+396
-.long 0x3f800000 # .setStar rod, debugSpace+400
-.long 0x3f800000 # .setLips stick, debugSpace+404
-.long 0x3f800000 # .setFan, debugSpace+408
-.long 0x3f800000 # .setFire flower, debugSpace+412
-.long 0x3f800000 # .setSuper mushroom, debugSpace+416
-.long 0x3f800000 # .setPoison Mushroom, debugSpace+420
-.long 0x3f800000 # .setHammer, debugSpace+424
-.long 0x3f800000 # .setWarp star, debugSpace+428
-.long 0x3f800000 # .setScrew attack, debugSpace+432
-.long 0x3f800000 # .setBunny hood, debugSpace+436
-.long 0x3f800000 # .setCyndaquil, debugSpace+440
-.long 0x3f800000 # .setMarill, debugSpace+444
-.long 0x3f800000 # .setVenusaur, debugSpace+448
-.long 0x3f800000 # .setChikorita, debugSpace+452
-.long 0x3f800000 # .setSnorlax, debugSpace+456
-.long 0x3f800000 # .setBlastoise, debugSpace+460
-.long 0x3f800000 # .setWeezing, debugSpace+464
-.long 0x3f800000 # .setCharizard, debugSpace+468
-.long 0x3f800000 # .setMoltres, debugSpace+472
-.long 0x3f800000 # .setZapdos, debugSpace+476
-.long 0x3f800000 # .setArticuno, debugSpace+480
-.long 0x3f800000 # .setWobuffet, debugSpace+484
-.long 0x3f800000 # .setScizor, debugSpace+488
-.long 0x3f800000 # .setUnown, debugSpace+492
-.long 0x3f800000 # .setEntei, debugSpace+496
-.long 0x3f800000 # .setRaikou, debugSpace+500
-.long 0x3f800000 # .setSuicune, debugSpace+504
-.long 0x3f800000 # .setBellossom, debugSpace+508
-.long 0x3f800000 # .setVoltorb, debugSpace+512
-.long 0x3f800000 # .setLugia, debugSpace+516
-.long 0x3f800000 # .setHooh, debugSpace+520
-.long 0x3f800000 # .setDitto, debugSpace+524
-.long 0x3f800000 # .setClefairy, debugSpace+528
-.long 0x3f800000 # .setTogepi, debugSpace+532
-.long 0x3f800000 # .setMew, debugSpace+536
-.long 0x3f800000 # .setCelebi, debugSpace+540
-.long 0x3f800000 # .setStaryu, debugSpace+544
-.long 0x3f800000 # .setChansey, debugSpace+548
-.long 0x3f800000 # .setPorygon, debugSpace+552
+.long 0x3f800000 # .setBob-omb, debugSpace+300
+.long 0x3f800000 # .setMr saturn, debugSpace+304
+.long 0x3f800000 # .setHeart Canister, debugSpace+308
+.long 0x3f800000 # .setMaxim Tomato, debugSpace+312
+.long 0x3f800000 # .setStarman, debugSpace+316
+.long 0x3f800000 # .setHomerun bat, debugSpace+320
+.long 0x3f800000 # .setBeam sword, debugSpace+324
+.long 0x3f800000 # .setParasol, debugSpace+328
+.long 0x3f800000 # .setGreen shell, debugSpace+332
+.long 0x3f800000 # .setRed shell, debugSpace+336
+.long 0x3f800000 # .setRay gun, debugSpace+340
+.long 0x3f800000 # .setFreezie, debugSpace+344
+.long 0x3f800000 # .setFood, debugSpace+348
+.long 0x3f800000 # .setMotion Mine, debugSpace+352
+.long 0x3f800000 # .setFlipper, debugSpace+356
+.long 0x3f800000 # .setSuper scope, debugSpace+360
+.long 0x3f800000 # .setStar rod, debugSpace+364
+.long 0x3f800000 # .setLips stick, debugSpace+368
+.long 0x3f800000 # .setFan, debugSpace+372
+.long 0x3f800000 # .setFire flower, debugSpace+376
+.long 0x3f800000 # .setSuper mushroom, debugSpace+380
+.long 0x3f800000 # .setPoison Mushroom, debugSpace+384
+.long 0x3f800000 # .setHammer, debugSpace+388
+.long 0x3f800000 # .setWarp star, debugSpace+392
+.long 0x3f800000 # .setScrew attack, debugSpace+396
+.long 0x3f800000 # .setBunny hood, debugSpace+400
+.long 0x3f800000 # .setMetal box, debugSpace+404
+.long 0x3f800000 # .setCloaking device, debugSpace+408
+.long 0x3f800000 # .setPokeball, debugSpace+412
+.long 0x3f800000 # .setYoshi egg, debugSpace+416
+.long 0x3f800000 # .setBarrel cannon, debugSpace+420
+.long 0x3f800000 # .setParty ball, debugSpace+424
+.long 0x3f800000 # .setEgg, debugSpace+428
+.long 0x3f800000 # .setBarrel, debugSpace+432
+.long 0x3f800000 # .setBox, debugSpace+436
+.long 0x3f800000 # .setChikorita, debugSpace+440
+.long 0x3f800000 # .setSnorlax, debugSpace+444
+.long 0x3f800000 # .setBlastoise, debugSpace+448
+.long 0x3f800000 # .setWeezing, debugSpace+452
+.long 0x3f800000 # .setCharizard, debugSpace+456
+.long 0x3f800000 # .setMoltres, debugSpace+460
+.long 0x3f800000 # .setZapdos, debugSpace+464
+.long 0x3f800000 # .setArticuno, debugSpace+468
+.long 0x3f800000 # .setWobuffet, debugSpace+472
+.long 0x3f800000 # .setScizor, debugSpace+476
+.long 0x3f800000 # .setUnown, debugSpace+480
+.long 0x3f800000 # .setEntei, debugSpace+484
+.long 0x3f800000 # .setRaikou, debugSpace+488
+.long 0x3f800000 # .setSuicune, debugSpace+492
+.long 0x3f800000 # .setBellossom, debugSpace+496
+.long 0x3f800000 # .setVoltorb, debugSpace+500
+.long 0x3f800000 # .setLugia, debugSpace+504
+.long 0x3f800000 # .setHooh, debugSpace+508
+.long 0x3f800000 # .setDitto, debugSpace+512
+.long 0x3f800000 # .setClefairy, debugSpace+516
+.long 0x3f800000 # .setTogepi, debugSpace+520
+.long 0x3f800000 # .setMew, debugSpace+524
+.long 0x3f800000 # .setCelebi, debugSpace+528
+.long 0x3f800000 # .setStaryu, debugSpace+532
+.long 0x3f800000 # .setChansey, debugSpace+536
+.long 0x3f800000 # .setPorygon, debugSpace+540
+.long 0x3f800000 # .setCyndaquil, debugSpace+544
+.long 0x3f800000 # .setMarill, debugSpace+548
+.long 0x3f800000 # .setVenusaur, debugSpace+552
 .long 0x00000028 # .setMax items on screen: , debugSpace+556
 .long 0x00000001 # .setFancy throwing: , debugSpace+560
 .long 0x00000001 # .setTaunt to gain item: , debugSpace+564

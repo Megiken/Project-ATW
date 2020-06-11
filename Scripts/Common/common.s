@@ -5,8 +5,8 @@
 .macro branchl reg, address
 lis \reg, \address @h
 ori \reg,\reg,\address @l
-mtctr \reg
-bctrl
+mtlr \reg
+blrl
 .endm
 
 .macro branch reg, address
