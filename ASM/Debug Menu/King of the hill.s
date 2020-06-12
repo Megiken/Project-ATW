@@ -2,7 +2,7 @@
 
 .long 0
 .long 0
-.long 0x80194f58
+.long 0x80194f54
 .long 0
 .long 0
 .long 0
@@ -10,7 +10,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x80194f84
+.long 0x80194f80
 .long 0
 .long 0
 .long 0
@@ -18,7 +18,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x80194fb0
+.long 0x80194fac
 .long 0
 .long 0
 .long 0
@@ -26,7 +26,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x80194fdc
+.long 0x80194fd8
 .long 0
 .long 0
 .long 0
@@ -34,7 +34,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x80195008
+.long 0x80195004
 .long 0
 .long 0
 .long 0
@@ -42,7 +42,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x80195034
+.long 0x80195030
 .long 0
 .long 0
 .long 0
@@ -50,7 +50,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x80195060
+.long 0x8019505c
 .long 0
 .long 0
 .long 0
@@ -58,7 +58,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x8019508c
+.long 0x80195088
 .long 0
 .long 0
 .long 0
@@ -74,7 +74,7 @@
 .long 0
 .long 1
 .long 0x8032C910
-.long 0x801950b8
+.long 0x801950b4
 .long 0
 .long 0
 .long 0x8065f318
@@ -82,7 +82,7 @@
 .long 0
 .long 1
 .long 0x8032C908
-.long 0x80195120
+.long 0x8019511c
 .long 0
 .long 0
 .long 0x8065f318
@@ -90,7 +90,7 @@
 .long 0
 .long 1
 .long 0x8032C908
-.long 0x80195280
+.long 0x8019527c
 .long 0
 .long 0
 .long 0x8065f3bc

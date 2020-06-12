@@ -75,17 +75,18 @@ public class Main{
 		generalVisuals.menuItems[1] = new menuItem(0);
 		generalVisuals.menuItems[2] = new menuItem(0,"You can add your own skins to the iso and select them here.");
 		generalVisuals.menuItems[3] = new menuItem(0,"The files you want to replace end with .00t, .01t, etc.");
-		generalVisuals.menuItems[4] = new menuItem(0,"As long as your new files don't edit the model, it won't desync on netplay.");
-		generalVisuals.menuItems[5] = new menuItem(2,"Battlefield skin: ",skins,0);
-		generalVisuals.menuItems[6] = new menuItem(2,"FD skin: ",skins,0);
-		generalVisuals.menuItems[7] = new menuItem(2,"Pokemon stadium skin: ",skins,0);
-		generalVisuals.menuItems[8] = new menuItem(2,"Yoshis story skin: ",skins,0);
-		generalVisuals.menuItems[9] = new menuItem(2,"FOD skin: ",skins,0);
-		generalVisuals.menuItems[10] = new menuItem(2,"Dreamland skin: ",skins,0);
-		generalVisuals.menuItems[11] = new menuItem(0);
-		generalVisuals.menuItems[12] = new menuItem(2,"CSS skin: ",skins,0);
-		generalVisuals.menuItems[13] = new menuItem(0);
-		generalVisuals.menuItems[14] = new menuItem(2,"Costume Dependent Marth Sword Colours: ",ende,1);
+		generalVisuals.menuItems[4] = new menuItem(0,"As long as your new files dont edit the model, it wont even.");
+		generalVisuals.menuItems[5] = new menuItem(0,"cause desyncs on netplay.");
+		generalVisuals.menuItems[6] = new menuItem(2,"Battlefield skin: ",skins,0);
+		generalVisuals.menuItems[7] = new menuItem(2,"FD skin: ",skins,0);
+		generalVisuals.menuItems[8] = new menuItem(2,"Pokemon stadium skin: ",skins,0);
+		generalVisuals.menuItems[9] = new menuItem(2,"Yoshis story skin: ",skins,0);
+		generalVisuals.menuItems[10] = new menuItem(2,"FOD skin: ",skins,0);
+		generalVisuals.menuItems[11] = new menuItem(2,"Dreamland skin: ",skins,0);
+		generalVisuals.menuItems[12] = new menuItem(0);
+		generalVisuals.menuItems[13] = new menuItem(2,"CSS skin: ",skins,0);
+		generalVisuals.menuItems[14] = new menuItem(0);
+		generalVisuals.menuItems[15] = new menuItem(2,"Costume Dependent Marth Sword Colours: ",ende,1);
 		
 
 		projectATW.menuItems[0] = new menuItem(0,"Hi, this is an early version of the debug menu!");
@@ -102,12 +103,12 @@ public class Main{
 		generalMechanics.menuItems[0] = new menuItem(0,"Mechanics Settings");
 		generalMechanics.menuItems[1] = new menuItem(0);
 		generalMechanics.menuItems[2] = new menuItem(2,"Air grabs: ",ende,1);
-		generalMechanics.menuItems[3] = new menuItem(2,"Everyone can float: ",ende,1);
-		generalMechanics.menuItems[4] = new menuItem(2,"Aerial taunts: ",ende,1);
+		generalMechanics.menuItems[3] = new menuItem(2,"Aerial taunts: ",ende,1);
+		generalMechanics.menuItems[4] = new menuItem(2,"Taunt cancelling: ",ende,1);
 		generalMechanics.menuItems[5] = new menuItem(2,"Fastfall whenever: ",ende,1);
-		generalMechanics.menuItems[6] = new menuItem(2,"Charagable tilts: ",ende,1);
-		generalMechanics.menuItems[7] = new menuItem(2,"Chargable aerials: ",ende,1);
-		generalMechanics.menuItems[8] = new menuItem(2,"Aerial smash attacks: ",ende,1);
+		generalMechanics.menuItems[6] = new menuItem(2,"Invisible ceiling fix: ",ende,1);
+		generalMechanics.menuItems[7] = new menuItem(2,"Remove grab infinites: ",ende,1);
+		generalMechanics.menuItems[8] = new menuItem(2,"Wall bracing: ",ende,1);
 		generalMechanics.menuItems[9] = new menuItem(2,"Auto L cancel: ",ende,1);
 		generalMechanics.menuItems[10] = new menuItem(2,"Percent swap in doubles: ",ende,1);
 		generalMechanics.menuItems[11] = new menuItem(2,"Any colours in doubles: ",ende,1);

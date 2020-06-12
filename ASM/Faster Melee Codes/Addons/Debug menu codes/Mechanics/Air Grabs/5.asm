@@ -4,7 +4,7 @@
 
 loc_0x0:
 
-load r20,KOTHairGrabs
+load r20,airGrabs
 lwz r20,0(r20)
 cmpwi r20,0
 beq GO

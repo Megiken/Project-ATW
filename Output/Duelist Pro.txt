@@ -2,7 +2,7 @@
 
 [Gecko]
 $Duelist Pro [Big Money]
-043F115C 64617400 #../ASM/Duelist Pro ASM/Custom File.asm
+043F115C 6C617400 #../ASM/Duelist Pro ASM/Custom File.asm
 C2263250 00000056 #../ASM/Duelist Pro ASM/Custom Input Monitor.asm
 3DE08047 61EF9D30
 89EF0000 2C0F0002

@@ -1,13 +1,13 @@
-#To be inserted at 800DA214
+#To be inserted at 800DA2E0
 
 .include "Common/common.s"
 
 loc_0x0:
 
-load r20,KOTHairGrabs
+load r20,airGrabs
 lwz r20,0(r20)
 cmpwi r20,0
-bne END
+bne loc_0x18
 
   lwz r14, 224(r31)
   cmpwi r14, 0x1
@@ -17,5 +17,4 @@ bne END
   stw r14, 8612(r31)
 
 loc_0x18:
-END:
   lis r3, 0x800E

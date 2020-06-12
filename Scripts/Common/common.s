@@ -208,12 +208,12 @@ addi    r1,r1,0x100    # release the space
 .set fancyThrowingFlag, debugSpace+560
 .set tauntToGainItem, debugSpace+564
 .set airGrabs, debugSpace+568
-.set floatFlag, debugSpace+572
-.set airTaunts, debugSpace+576
+.set airTaunts, debugSpace+572
+.set tauntCancel, debugSpace+576
 .set fastFallFlag, debugSpace+580
-.set chargeTilts, debugSpace+584
-.set chargeAerials, debugSpace+588
-.set airSmashAttacks, debugSpace+592
+.set invisCeiling, debugSpace+584
+.set grabInfinites, debugSpace+588
+.set wallBracing, debugSpace+592
 .set autoLCancel, debugSpace+596
 .set percentSwapFlag , debugSpace+600
 .set doublesColours, debugSpace+604
@@ -305,8 +305,8 @@ addi    r1,r1,0x100    # release the space
 .set spawnVar,-0x7f98
 .set prevMenuFlag,-0x7f94
 .set playerIDs,-0x7e90
-.set colourRed,-0x7e8c
-.set colourBlue,-0x7e18
+.set free1,-0x7e8c
+.set free2,-0x7e18
 .set redTeamMate,-0x7e14
 .set gameID,-0x7DB0
 .set IMcount,-0x7dac

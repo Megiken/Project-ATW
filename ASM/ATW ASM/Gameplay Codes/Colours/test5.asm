@@ -4,6 +4,7 @@
 
 backupall
 
+
 load r20,doublesByte
 lbz r20,0(r20)
 cmpwi r20,0
@@ -26,7 +27,7 @@ lbz r22,-0x2(r21)
 mulli r22,r22,4
 bl STUFF
 mflr r5
-lwzx r5,r22,r5
+add r5,r22,r5
 
 
 lis r12,0x803a
@@ -37,9 +38,9 @@ b END
 
 STUFF:
 blrl
-.long 0x804D7B54
-.long 0x804D7BC8
-
+.long 0xff00007f
+.long 0x0000ff7f
+.long 0x00ff007f
 
 END:
 restoreall

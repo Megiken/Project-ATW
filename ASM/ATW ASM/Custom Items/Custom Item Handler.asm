@@ -38,10 +38,6 @@ load r20,doublesByte
 lbz r20,0(r20)
 cmpwi r20,1
 bne END
-load r20,percentSwapFlag
-lwz r20,0(r20)
-cmpwi r20,1
-beq END
 li r18,4
 branchl r12,checkInput
 lbz r18,0xc(r31)

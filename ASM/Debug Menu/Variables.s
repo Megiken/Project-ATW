@@ -142,12 +142,12 @@
 .long 0x00000001 # .setFancy throwing: , debugSpace+560
 .long 0x00000001 # .setTaunt to gain item: , debugSpace+564
 .long 0x00000001 # .setAir grabs: , debugSpace+568
-.long 0x00000001 # .setEveryone can float: , debugSpace+572
-.long 0x00000001 # .setAerial taunts: , debugSpace+576
+.long 0x00000001 # .setAerial taunts: , debugSpace+572
+.long 0x00000001 # .setTaunt cancelling: , debugSpace+576
 .long 0x00000001 # .setFastfall whenever: , debugSpace+580
-.long 0x00000001 # .setCharagable tilts: , debugSpace+584
-.long 0x00000001 # .setChargable aerials: , debugSpace+588
-.long 0x00000001 # .setAerial smash attacks: , debugSpace+592
+.long 0x00000001 # .setInvisible ceiling fix: , debugSpace+584
+.long 0x00000001 # .setRemove grab infinites: , debugSpace+588
+.long 0x00000001 # .setWall bracing: , debugSpace+592
 .long 0x00000001 # .setAuto L cancel: , debugSpace+596
 .long 0x00000001 # .setPercent swap in doubles: , debugSpace+600
 .long 0x00000001 # .setAny colours in doubles: , debugSpace+604
