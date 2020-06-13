@@ -3,6 +3,9 @@
 .include "Common/common.s"
 
 backupallnomflr
+lwz r20,gameID(rtoc)
+cmpwi r20,0
+bne END 
 load r20,BFSkin-4
 bl OFFSETS
 mflr r19

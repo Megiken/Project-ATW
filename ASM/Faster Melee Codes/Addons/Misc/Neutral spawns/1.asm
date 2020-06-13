@@ -1,0 +1,132 @@
+#To be inserted at 80263058
+
+loc_0x0:
+  li r15, 0x0
+  li r16, 0x0
+  lis r18, 0x8048
+  ori r19, r18, 0x7FD
+  stw r15, 1752(r18)
+  stw r15, 1756(r18)
+  lbz r17, 1992(r18)
+  ori r18, r18, 0x6D7
+  cmpwi r17, 0x1
+  beq- loc_0x70
+
+loc_0x28:
+  addi r15, r15, 0x1
+  lbzu r20, 36(r19)
+  cmpwi r20, 0x3
+  beq- loc_0x40
+  stb r16, 4(r19)
+  addi r16, r16, 0x1
+
+loc_0x40:
+  cmpwi r15, 0x4
+  blt- loc_0x28
+  b loc_0x178
+
+loc_0x4C:
+  li r15, 0x0
+  li r16, 0xFF
+  lis r18, 0x8048
+  ori r18, r18, 0x801
+
+loc_0x5C:
+  addi r15, r15, 0x1
+  stbu r16, 36(r18)
+  cmpwi r15, 0x4
+  blt- loc_0x5C
+  b loc_0x178
+
+loc_0x70:
+  lis r17, 0x8048
+  ori r17, r17, 0x6DC
+  addi r15, r15, 0x1
+  addi r18, r18, 0x1
+  lbzu r20, 36(r19)
+  lbz r14, 8(r19)
+  cmpwi r20, 0x3
+  beq- loc_0x4C
+  cmpwi r14, 0x0
+  bne- loc_0xA4
+  li r16, 0x0
+  lbz r20, 0(r17)
+  b loc_0xC4
+
+loc_0xA4:
+  cmpwi r14, 0x1
+  bne- loc_0xB8
+  li r16, 0x1
+  lbzu r20, 1(r17)
+  b loc_0xC4
+
+loc_0xB8:
+  li r16, 0x2
+  lbzu r20, 2(r17)
+  b loc_0xC4
+
+loc_0xC4:
+  addi r20, r20, 0x1
+  cmpwi r20, 0x3
+  bge- loc_0x4C
+  stb r20, 0(r17)
+  stb r16, 0(r18)
+  cmpwi r15, 0x4
+  blt- loc_0x70
+  li r15, 0x0
+  lis r17, 0x8048
+  ori r17, r17, 0x6DB
+  li r21, 0x0
+
+loc_0xF0:
+  addi r15, r15, 0x1
+  lbzu r20, 1(r17)
+  cmpwi r20, 0x1
+  bge- loc_0x104
+  b loc_0x110
+
+loc_0x104:
+  addi r21, r21, 0x1
+  cmpwi r21, 0x3
+  bge- loc_0x4C
+
+loc_0x110:
+  cmpwi r15, 0x3
+  blt- loc_0xF0
+  li r15, 0x0
+  addi r17, r17, 0x127
+  li r14, 0xFF
+  li r20, 0xFF
+
+loc_0x128:
+  addi r15, r15, 0x1
+  lbzu r16, 36(r17)
+  cmpwi r14, 0xFF
+  bne- loc_0x144
+  mr r18, r16
+  li r14, 0x0
+  b loc_0x16C
+
+loc_0x144:
+  cmpw r16, r18
+  bne- loc_0x154
+  li r14, 0x3
+  b loc_0x16C
+
+loc_0x154:
+  cmpwi r20, 0xFF
+  bne- loc_0x168
+  li r14, 0x1
+  li r20, 0x0
+  b loc_0x16C
+
+loc_0x168:
+  li r14, 0x2
+
+loc_0x16C:
+  stb r14, -4(r17)
+  cmpwi r15, 0x4
+  blt- loc_0x128
+
+loc_0x178:
+  addi r4, r4, 0x1

@@ -22,12 +22,12 @@ bge END
 GOOD:
 backup
 bl THERE
-.long 0x8065e8d4
-.long 0x8065ee48
-.long 0x8065f154
-.long 0x8065f460
-.long 0x8065fe9c
-.long 0x806600c8
+.long ATWsubmenu
+.long DPsubmenu
+.long KOTHsubmenu
+.long IMsubmenu
+.long squadStrikesubmenu
+.long allStarsubmenu
 THERE:
 mflr r21
 mulli r20,r20,4
