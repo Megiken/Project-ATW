@@ -26,12 +26,6 @@
         },
         {
           "type": "injectFolder",
-          "sourceFolder": "..\\ASM\\Faster Melee Codes/Common/Preload Stadium Transformations",
-          "isRecursive": true,
-          "annotation": "Preload Stadium Transformations [UnclePunch]"
-        },
-        {
-          "type": "injectFolder",
           "sourceFolder": "..\\ASM\\Faster Melee Codes/Common/Initialize Stage Data",
           "isRecursive": true,
           "annotation": "Initialize Stage Data [UnclePunch]"

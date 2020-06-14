@@ -18,10 +18,10 @@ addi r20,r20,36
   cmpwi r20, 0x1
   bne- NOSCREW
 SCREW:
-  cmpwi r3, 0x69
+  cmpw r3, r1
   b loc_0x2C
 
 NOSCREW:
-  cmpw r3, r3
+  cmpwi r3, 0
 
 loc_0x2C:

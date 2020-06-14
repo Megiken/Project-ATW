@@ -17,7 +17,6 @@ cmpwi r3, 0x0
 beq+ loc_0x28
 subi r3, r3, 0x1
 stw r3, 4200(r31)
-
 loc_0x28:
 END:
 lwz r3, 6544(r31)

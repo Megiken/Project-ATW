@@ -308,7 +308,7 @@ addi    r1,r1,0x100    # release the space
 .set spawnVar,-0x7f98
 .set prevMenuFlag,-0x7f94
 .set playerIDs,-0x7e90
-.set free1,-0x7e8c
+.set suddenDeathItem,-0x7e8c
 .set free2,-0x7e18
 .set redTeamMate,-0x7e14
 .set gameID,-0x7DB0

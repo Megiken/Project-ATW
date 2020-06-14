@@ -1,2 +1,2 @@
-#To be inserted at 801d59bc
-.long 0x4800003C
+#To be inserted at 801d591c
+li r3,69

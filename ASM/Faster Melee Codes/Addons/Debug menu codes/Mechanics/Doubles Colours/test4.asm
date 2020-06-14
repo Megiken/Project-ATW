@@ -4,7 +4,7 @@
 
 load r14,doublesColours
 lwz r14,0(r14)
-cmpwi r14,0
+cmpwi r14,1
 bne END
 cmplwi	r0, 0
 beq END
