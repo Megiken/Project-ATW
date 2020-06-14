@@ -207,16 +207,6 @@
           "type": "replaceCodeBlock",
           "address": "806606dc",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Credits.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "80192f4c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Text.s"
-        },
-        {
-          "type": "replaceCodeBlock",
-          "address": "80199f4c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Variables.s"
         }
 
 
