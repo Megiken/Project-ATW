@@ -17,7 +17,9 @@ stw r20,IMp2Stocks(rtoc)
 stw r20,IMgameOverFlag(rtoc)
 stw r20,IMtype(rtoc)
 stw r20,IMpickban(rtoc)
-
+load r21,ATWsubmenu
+stw r20,0x120(r21)
+stw r20,0x128(r21)
 
 END:
 li r3,1
