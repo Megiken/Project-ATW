@@ -9,6 +9,8 @@ cmpwi r20,0x3
 beq RC
 cmpwi r20,0x15
 beq FOURSIDE
+cmpwi r20,MuteCityinID
+beq MUTECITY
 b END
 FOURSIDE:
 lwz r4, 8(r3)
@@ -29,7 +31,6 @@ stb r3,0x1ce(r4)
 stb r3,0x1de(r4)
 b END
 RC:
-
 lwz r4, 8(r3)
 li r3, 0x1
 stb r3, 350(r4)
@@ -51,4 +52,9 @@ stb r3,0x16e(r4)
 stb r3,0x1be(r4)
 stb r3,0x1ee(r4)
 stb r3,0xfe(r4)
+b END
+MUTECITY:
+lwz r4, 8(r3)
+li r3,2
+stb r3,0xe(r4)
 END:

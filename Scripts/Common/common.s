@@ -308,7 +308,7 @@ addi    r1,r1,0x100    # release the space
 .set spawnVar,-0x7f98
 .set prevMenuFlag,-0x7f94
 .set playerIDs,-0x7e90
-.set suddenDeathItem,-0x7e8c
+.set free1,-0x7e8c
 .set free2,-0x7e18
 .set redTeamMate,-0x7e14
 .set gameID,-0x7DB0
@@ -323,7 +323,7 @@ addi    r1,r1,0x100    # release the space
 .set IMmoneyTextStruct,-0x7d0c
 .set tempStageAdr,-0x7cf0
 .set tempBackupAscii,-0x7cec
-.set SSdata,-0x7ce8
+.set suddenDeathItem,-0x7ce8
 
 ################################################################################
 # Values
@@ -356,8 +356,6 @@ addi    r1,r1,0x100    # release the space
 ################################################################################
 # Pokemon IDs
 ################################################################################
-
-
 
 .set GoldeenID,0
 .set ChikoritaID,1
@@ -433,9 +431,138 @@ addi    r1,r1,0x100    # release the space
 .set yoshiEgg,0x2a
 
 
+################################################################################
+# Character ex IDs
+################################################################################
 
+.set CaptainFalconexID,0x00
+.set DonkeyKongexID,0x01
+.set FoxexID,0x02
+.set MrGameNWatchexID,0x03
+.set KirbyexID,0x04
+.set BowserexID,0x05
+.set LinkexID,0x06
+.set LuigiexID,0x07
+.set MarioexID,0x08
+.set MarthexID,0x09
+.set MewtwoexID,0x0A
+.set NessexID,0x0B
+.set PeachexID,0x0C
+.set PikachuexID,0x0D
+.set IceClimbersexID,0x0E
+.set JigglypuffexID,0x0F
+.set SamusexID,0x10
+.set YoshiexID,0x11
+.set ZeldaexID,0x12
+.set SheikexID,0x13
+.set FalcoexID,0x14
+.set YoungLinkexID,0x15
+.set DrMarioexID,0x16
+.set RoyexID,0x17
+.set PichuexID,0x18
+.set GanondorfexID,0x19
 
+################################################################################
+# Character in IDs
+################################################################################
 
+.set MarioinID,0x00
+.set FoxinID,0x01
+.set CaptainFalconinID,0x02
+.set DonkeyKonginID,0x03
+.set KirbyinID,0x04
+.set BowserinID,0x05
+.set LinkinID,0x06
+.set SheikinID,0x07
+.set NessinID,0x08
+.set PeachinID,0x09
+.set PopoinID,0x0A
+.set NanainID,0x0B
+.set PikachuinID,0x0C
+.set SamusinID,0x0D
+.set YoshiinID,0x0E
+.set JigglypuffinID,0x0F
+.set MewtwoinID,0x10
+.set LuigiinID,0x11
+.set MarthinID,0x12
+.set ZeldainID,0x13
+.set YoungLinkinID,0x14
+.set DrMarioinID,0x15
+.set FalcoinID,0x16
+.set PichuinID,0x17
+.set MrGameNWatchinID,0x18
+.set GanondorfinID,0x19
+.set RoyinID,0x1A
+
+################################################################################
+# Stage ex IDs
+################################################################################
+
+.set FountainexID,0x002
+.set StadiumexID,0x003
+.set CastleexID,0x004
+.set KongoJungleexID,0x005
+.set BrinstarexID,0x006
+.set CorneriaexID,0x007
+.set YoshiStoryexID,0x008
+.set OnettexID,0x009
+.set MuteCityexID,0x00a
+.set RainbowCruiseexID,0x00b
+.set JungleJapesexID,0x00c
+.set GreatBayexID,0x00d
+.set TempleexID,0x00e
+.set DepthsexID,0x00f
+.set YoshiIslandexID,0x010
+.set GreensexID,0x011
+.set FoursideexID,0x012
+.set MK1exID,0x013
+.set MK2exID,0x014
+.set AkaneiexID,0x015
+.set VenomexID,0x016
+.set PokeFloatsexID,0x017
+.set BigBlueexID,0x018
+.set IcemntexID,0x019
+.set IcetopexID,0x01a
+.set FlatZoneexID,0x01b
+.set DreamLand64exID,0x01c
+.set YoshiIsland64exID,0x01d
+.set Kongo64exID,0x01e
+.set BattlefieldexID,0x01f
+.set FinalDestexID,0x020
+
+################################################################################
+# Stage in IDs
+################################################################################
+
+.set CastleinID,0x02
+.set RainbowCruiseinID,0x03
+.set KongoJungleinID,0x04
+.set JungleJapesinID,0x05
+.set GreatBayinID,0x06
+.set TempleinID,0x07
+.set BrinstarinID,0x08
+.set BrinstarDepthsinID,0x09
+.set YoshiStoryinID,0x0A
+.set YoshiIslandinID,0x0B
+.set FountaininID,0x0C
+.set GreenGreensinID,0x0D
+.set CorneriainID,0x0E
+.set VenominID,0x0F
+.set PokemonStadiuminID,0x10
+.set PokeFloatsinID,0x11
+.set MuteCityinID,0x12
+.set BigBlueinID,0x13
+.set OnettinID,0x14
+.set FoursideinID,0x15
+.set IcicleMountaininID,0x16
+.set MushroomKingdominID,0x18
+.set MushroomKingdomIIinID,0x19
+.set FlatZoneinID,0x1B
+.set DreamLandinID,0x1C
+.set YoshiIsland64inID,0x1D
+.set KongoJungle64inID,0x1E
+.set BattlefieldinID,0x24
+.set FinalDestinationinID,0x25
 
 
 

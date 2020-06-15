@@ -5,6 +5,7 @@
 lwz r20,suddenDeathItem(rtoc)
 cmpwi r20,0
 bne END
+NEW:
 li r3,60
 branchl r12,randomI
 li r4,10
@@ -17,5 +18,8 @@ mflr r21
 lbzx r20,r3,r21
 stw r20,suddenDeathItem(rtoc)
 END:
+lwz r20,suddenDeathItem(rtoc)
+cmpwi r20,0x22
+bgt NEW
 mr r0,r20
 li r5,0
