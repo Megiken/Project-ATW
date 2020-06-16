@@ -294,12 +294,12 @@ addi    r1,r1,0x100    # release the space
 .set cssStruct2,0x8043208c
 .set frameRate,0x80432a2c
 
-.set ATWsubmenu,0x8065e914
-.set DPsubmenu,0x8065ee88
-.set KOTHsubmenu,0x8065f194
-.set IMsubmenu,0x8065f4a0
-.set squadStrikesubmenu,0x8065fedc
-.set allStarsubmenu,0x80660128
+.set ATWsubmenu,0x8065ea14
+.set DPsubmenu,0x8065ef88
+.set KOTHsubmenu,0x8065f294
+.set IMsubmenu,0x8065f5a0
+.set squadStrikesubmenu,0x8065ffdc
+.set allStarsubmenu,0x80660228
 
 ################################################################################
 # Mytoc Offsets

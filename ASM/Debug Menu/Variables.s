@@ -204,7 +204,7 @@
 .long 0x0000007d # .setPichu cost: , debugSpace+808
 .long 0x000000af # .setGanondorf cost: , debugSpace+812
 .long 0x00000004 # .setNumber of characters: , debugSpace+816
-.long 0x00000004 # .setNumber of characters: , debugSpace+820
+.long 0x0000001a # .setNumber of characters: , debugSpace+820
 .long 0x00000000 # .setPercent/Stamina, debugSpace+824
 .long 0x00000096 # .setStamina Amount, debugSpace+828
 .long 0x00000000 # .setSize: , debugSpace+832

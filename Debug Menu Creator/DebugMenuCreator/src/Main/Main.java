@@ -89,16 +89,24 @@ public class Main{
 		generalVisuals.menuItems[15] = new menuItem(2,"Costume Dependent Marth Sword Colours: ",ende,1);
 		
 
-		projectATW.menuItems[0] = new menuItem(0,"Hi, this is an early version of the debug menu!");
-		projectATW.menuItems[1] = new menuItem(0,"Please be nice :3");
-		projectATW.menuItems[2] = new menuItem(0);
-		projectATW.menuItems[3] = generalMain;
-		projectATW.menuItems[4] = generalStages;
-		projectATW.menuItems[5] = generalItems;
-		projectATW.menuItems[6] = generalMechanics;
-		projectATW.menuItems[7] = generalGamemodes;
-		projectATW.menuItems[8] = generalVisuals;
-		projectATW.menuItems[9] = generalCredits;
+		projectATW.menuItems[0] = new menuItem(0,"        _____");
+		projectATW.menuItems[1] = new menuItem(0,"    ,-:` 71',`'-, ");
+		projectATW.menuItems[2] = new menuItem(0,"  .'-1_,1  ':-1_,'.");
+		projectATW.menuItems[3] = new menuItem(0," /1   '/    ,  _`.-7");
+		projectATW.menuItems[4] = new menuItem(0,"1 '`. (`     /` ` 7`1");
+		projectATW.menuItems[5] = new menuItem(0,"1:.  `7`-.   7_   / 1");
+		projectATW.menuItems[6] = new menuItem(0,"1     (   `,  .`7 1'1");
+		projectATW.menuItems[7] = new menuItem(0," 7     1 .'     `-'/");
+		projectATW.menuItems[8] = new menuItem(0,"  `.   1/        .'");
+		projectATW.menuItems[9] = new menuItem(0,"    `'-._____.");
+		projectATW.menuItems[10] = new menuItem(0);
+		projectATW.menuItems[11] = generalMain;
+		projectATW.menuItems[12] = generalStages;
+		projectATW.menuItems[13] = generalItems;
+		projectATW.menuItems[14] = generalMechanics;
+		projectATW.menuItems[15] = generalGamemodes;
+		projectATW.menuItems[16] = generalVisuals;
+		projectATW.menuItems[17] = generalCredits;
 
 		generalMechanics.menuItems[0] = new menuItem(0,"Mechanics Settings");
 		generalMechanics.menuItems[1] = new menuItem(0);
@@ -402,20 +410,20 @@ public class Main{
 		
 		ssSettings.menuItems[0] = new menuItem(0,"Settings");
 		ssSettings.menuItems[1] = new menuItem(0);
-		ssSettings.menuItems[2] = new menuItem(3,"Number of characters: ",4,1,5,3);
+		ssSettings.menuItems[2] = new menuItem(3,"Number of characters: ",4,5,1,3);
 
 		ssInfo.menuItems[0] = new menuItem(0,"How to play");
 		ssInfo.menuItems[1] = new menuItem(0);
 		ssInfo.menuItems[2] = new menuItem(0,"IDK im tired and i just want this done aaaaaaaaaaaa");
 		
-		amMain.menuItems[0] = new menuItem(0,"  /$$$$$$  /$$$$$$$ ");
-		amMain.menuItems[1] = new menuItem(0," /$$__  $$| $$__  $$");
-		amMain.menuItems[2] = new menuItem(0,"| $$  \\ $$| $$  \\ $$");
-		amMain.menuItems[3] = new menuItem(0,"| $$$$$$$$| $$$$$$$/");
-		amMain.menuItems[4] = new menuItem(0,"| $$__  $$| $$__  $$");
-		amMain.menuItems[5] = new menuItem(0,"| $$  | $$| $$  \\ $$");
-		amMain.menuItems[6] = new menuItem(0,"| $$  | $$| $$  | $$");
-		amMain.menuItems[7] = new menuItem(0,"|__/  |__/|__/  |__/");
+		amMain.menuItems[0] = new menuItem(0,"  /$$$$$$  /$$       /$$");
+		amMain.menuItems[1] = new menuItem(0," /$$__  $$1 $$      1 $$              /$$/$$");
+		amMain.menuItems[2] = new menuItem(0,"1 $$  7 $$1 $$      1 $$             1  $$$/");
+		amMain.menuItems[3] = new menuItem(0,"1 $$$$$$$$1 $$      1 $$             /$$$$$$$");
+		amMain.menuItems[4] = new menuItem(0,"1 $$__  $$1 $$      1 $$            1__ $$$_/");
+		amMain.menuItems[5] = new menuItem(0,"1 $$  1 $$1 $$      1 $$              /$$ $$");
+		amMain.menuItems[6] = new menuItem(0,"1 $$  1 $$1 $$$$$$$$1 $$$$$$$$       1__/__/");
+		amMain.menuItems[7] = new menuItem(0,"1__/  1__/1________/1________/");
 		amMain.menuItems[8] = new menuItem(0);
 		amMain.menuItems[9] = new menuItem(1,"8032C924","Play");
 		amMain.menuItems[10] = amSettings;
@@ -423,7 +431,7 @@ public class Main{
 		
 		amSettings.menuItems[0] = new menuItem(0,"Settings");
 		amSettings.menuItems[1] = new menuItem(0);
-		amSettings.menuItems[2] = new menuItem(3,"Number of characters: ",4,1,5,3);
+		amSettings.menuItems[2] = new menuItem(3,"Number of characters: ",26,26,1,0);
 
 		amInfo.menuItems[0] = new menuItem(0,"How to play");
 		amInfo.menuItems[1] = new menuItem(0);

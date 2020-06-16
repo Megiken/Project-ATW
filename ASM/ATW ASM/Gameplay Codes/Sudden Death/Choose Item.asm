@@ -2,6 +2,7 @@
 
 .include "Common/common.s"
 
+mr r23,r3
 lwz r20,suddenDeathItem(rtoc)
 cmpwi r20,0
 bne END
@@ -22,4 +23,5 @@ lwz r20,suddenDeathItem(rtoc)
 cmpwi r20,0x22
 bgt NEW
 mr r0,r20
+mr r3,r23
 li r5,0
