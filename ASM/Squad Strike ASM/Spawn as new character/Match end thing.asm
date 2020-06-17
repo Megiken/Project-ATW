@@ -15,8 +15,6 @@ stw r21,4(r20)
 branchl r12,IMgetSecond
 mflr r20
 stw r21,4(r20)
-li r20,0
-stw r20,SSdata(rtoc)
 END:
 restoreallnor0
 lwz	r31, 0x0034 (sp)

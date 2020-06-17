@@ -2,6 +2,9 @@
 
 .include "Common/common.s"
 lwz r31,0x2c(r3)
+lwz r20,4(r31)
+cmpwi r20,NanainID
+beq ENDLOL
 backupall
 lbz r25,0xc(r31)
 mr r3,r25
@@ -11,6 +14,17 @@ stw r20,IMmoneyOffset(r3)
 lhz r20,4(r3)
 addi r20,r20,1
 sth r20,4(r3)
+mr r3,r25
+branchl r12,getOppositeData
+lwz r21,IMmoneyOffset(r3)
+cmpwi r21,0
+beq NORMALLOL
+li r21,180
+stw r21,IMmoneyOffset(r3)
+mr r3,r25
+branchl r12,getCorrectData
+
+NORMALLOL:
 load r21,SSnumOfChars
 lwz r21,0(r21)
 cmpw r21,r20
@@ -83,3 +97,4 @@ stw r19,0x8c(r3)
 
 END:
 restoreall
+ENDLOL:

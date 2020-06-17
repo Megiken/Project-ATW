@@ -1,0 +1,21 @@
+#To be inserted at 800748DC
+
+loc_0x0:
+  subi r17, r6, 0x5EC
+  lbz r14, 7(r17)
+  cmpwi r14, 0x9
+  beq- loc_0x1C
+  cmpwi r14, 0x17
+  beq- loc_0x30
+  b loc_0x2C
+
+loc_0x1C:
+  lbz r14, 1561(r17)
+  cmpwi r14, 0x1
+  bne- loc_0x2C
+  b loc_0x30
+
+loc_0x2C:
+  li r4, 0x0
+
+loc_0x30:
