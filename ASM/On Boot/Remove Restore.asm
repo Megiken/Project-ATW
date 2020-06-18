@@ -2,12 +2,15 @@
 
 .include "Common/common.s"
 
+#input r15 = start of file
+
 backupall
 
-lwz r15,newHeapStart(rtoc)
 rlwinm.	r22, r15, 0, 27, 31
 sub r15,r15,r22
 lwz r16,0(r15)
+cmpwi r16,0
+beq DONE
 addi r15,r15,4
 add r16,r16,r15
 li r17,0

@@ -89,24 +89,22 @@ public class Main{
 		generalVisuals.menuItems[15] = new menuItem(2,"Costume Dependent Marth Sword Colours: ",ende,1);
 		
 
-		projectATW.menuItems[0] = new menuItem(0,"        _____");
-		projectATW.menuItems[1] = new menuItem(0,"    ,-:` 71',`'-, ");
-		projectATW.menuItems[2] = new menuItem(0,"  .'-1_,1  ':-1_,'.");
-		projectATW.menuItems[3] = new menuItem(0," /1   '/    ,  _`.-7");
-		projectATW.menuItems[4] = new menuItem(0,"1 '`. (`     /` ` 7`1");
-		projectATW.menuItems[5] = new menuItem(0,"1:.  `7`-.   7_   / 1");
-		projectATW.menuItems[6] = new menuItem(0,"1     (   `,  .`7 1'1");
-		projectATW.menuItems[7] = new menuItem(0," 7     1 .'     `-'/");
-		projectATW.menuItems[8] = new menuItem(0,"  `.   1/        .'");
-		projectATW.menuItems[9] = new menuItem(0,"    `'-._____.");
-		projectATW.menuItems[10] = new menuItem(0);
-		projectATW.menuItems[11] = generalMain;
-		projectATW.menuItems[12] = generalStages;
-		projectATW.menuItems[13] = generalItems;
-		projectATW.menuItems[14] = generalMechanics;
-		projectATW.menuItems[15] = generalGamemodes;
-		projectATW.menuItems[16] = generalVisuals;
-		projectATW.menuItems[17] = generalCredits;
+		projectATW.menuItems[0] = new menuItem(0,"  /$$$$$$  /$$$$$$$$ /$$      /$$");
+		projectATW.menuItems[1] = new menuItem(0," /$$__  $$1__  $$__/1 $$  /$ 1 $$");
+		projectATW.menuItems[2] = new menuItem(0,"1 $$  7 $$   1 $$   1 $$ /$$$1 $$");
+		projectATW.menuItems[3] = new menuItem(0,"1 $$$$$$$$   1 $$   1 $$/$$ $$ $$");
+		projectATW.menuItems[4] = new menuItem(0,"1 $$__  $$   1 $$   1 $$$$_  $$$$");
+		projectATW.menuItems[5] = new menuItem(0,"1 $$  1 $$   1 $$   1 $$$/ 7  $$$");
+		projectATW.menuItems[6] = new menuItem(0,"1 $$  1 $$   1 $$   1 $$/   7  $$");
+		projectATW.menuItems[7] = new menuItem(0,"1__/  1__/   1__/   1__/     7__/");
+		projectATW.menuItems[8] = new menuItem(0);
+		projectATW.menuItems[9] = generalMain;
+		projectATW.menuItems[10] = generalStages;
+		projectATW.menuItems[11] = generalItems;
+		projectATW.menuItems[12] = generalMechanics;
+		projectATW.menuItems[13] = generalGamemodes;
+		projectATW.menuItems[14] = generalVisuals;
+		projectATW.menuItems[15] = generalCredits;
 
 		generalMechanics.menuItems[0] = new menuItem(0,"Mechanics Settings");
 		generalMechanics.menuItems[1] = new menuItem(0);
@@ -150,13 +148,6 @@ public class Main{
 		ATWmatchSettings.menuItems[7] = new menuItem(2,"Save stocks (iron man):",ende,1);
 
 
-		subMenu ATWstageSettings = new subMenu(1,"ATW Stage Settings");
-
-		ATWstageSettings.menuItems[0] = new menuItem(0,"Stage Settings");
-		ATWstageSettings.menuItems[1] = new menuItem(0);
-		ATWstageSettings.menuItems[2] = new menuItem(3,"Redead Timer: ",900,1800,15);
-
-
 		subMenu atwInfo = new subMenu(1,"How to play ATW");
 
 		atwInfo.menuItems[0] = new menuItem(0,"How to play");
@@ -174,20 +165,12 @@ public class Main{
 
 
 		subMenu ATWmainMenu = new subMenu(1, "Around the World");
-		ATWmainMenu.menuItems[0] = new menuItem(0,"  /$$$$$$  /$$$$$$$$ /$$      /$$");
-		ATWmainMenu.menuItems[1] = new menuItem(0," /$$__  $$1__  $$__/1 $$  /$ 1 $$");
-		ATWmainMenu.menuItems[2] = new menuItem(0,"1 $$  7 $$   1 $$   1 $$ /$$$1 $$");
-		ATWmainMenu.menuItems[3] = new menuItem(0,"1 $$$$$$$$   1 $$   1 $$/$$ $$ $$");
-		ATWmainMenu.menuItems[4] = new menuItem(0,"1 $$__  $$   1 $$   1 $$$$_  $$$$");
-		ATWmainMenu.menuItems[5] = new menuItem(0,"1 $$  1 $$   1 $$   1 $$$/ 7  $$$");
-		ATWmainMenu.menuItems[6] = new menuItem(0,"1 $$  1 $$   1 $$   1 $$/   7  $$");
-		ATWmainMenu.menuItems[7] = new menuItem(0,"1__/  1__/   1__/   1__/     7__/");
-		ATWmainMenu.menuItems[8] = new menuItem(0);
-		ATWmainMenu.menuItems[9] = new menuItem(0,"8032c850"," ");
-		ATWmainMenu.menuItems[10] = ATWstartMatch;
-		ATWmainMenu.menuItems[11] = ATWmatchSettings;
-		ATWmainMenu.menuItems[12] = ATWstageSettings;
-		ATWmainMenu.menuItems[13] = atwInfo;
+		ATWmainMenu.menuItems[0] = new menuItem(0,"Around the world main menu");
+		ATWmainMenu.menuItems[1] = new menuItem(0);
+		ATWmainMenu.menuItems[2] = new menuItem(0,"8032c850"," ");
+		ATWmainMenu.menuItems[3] = ATWstartMatch;
+		ATWmainMenu.menuItems[4] = ATWmatchSettings;
+		ATWmainMenu.menuItems[5] = atwInfo;
 
 		subMenu DPsettings = new subMenu(1,"DP Settings");
 
@@ -210,14 +193,7 @@ public class Main{
 
 		subMenu DPMain = new subMenu(1,"Duelist Pro");
 
-		DPMain.menuItems[0] = new menuItem(0," /$$$$$$$  /$$$$$$$ ");
-		DPMain.menuItems[1] = new menuItem(0,"1 $$__  $$1 $$__  $$");
-		DPMain.menuItems[2] = new menuItem(0,"1 $$  7 $$1 $$  7 $$");
-		DPMain.menuItems[3] = new menuItem(0,"1 $$  1 $$1 $$$$$$$/");
-		DPMain.menuItems[4] = new menuItem(0,"1 $$  1 $$1 $$____/ ");
-		DPMain.menuItems[5] = new menuItem(0,"1 $$  1 $$1 $$      ");
-		DPMain.menuItems[6] = new menuItem(0,"1 $$$$$$$/1 $$      ");
-		DPMain.menuItems[7] = new menuItem(0,"1_______/ 1__/      ");
+		DPMain.menuItems[0] = new menuItem(0,"Duelist Pro");
 		DPMain.menuItems[8] = new menuItem(0);
 		DPMain.menuItems[9] = new menuItem(1,"8032C918","Play");
 		DPMain.menuItems[10] = DPsettings;
@@ -245,18 +221,11 @@ public class Main{
 
 		subMenu KOTHMain = new subMenu(1,"King of the hill");
 
-		KOTHMain.menuItems[0] = new menuItem(0," /$$   /$$  /$$$$$$  /$$$$$$$$ /$$   /$$");
-		KOTHMain.menuItems[1] = new menuItem(0,"1 $$  /$$/ /$$__  $$1__  $$__/1 $$  1 $$");
-		KOTHMain.menuItems[2] = new menuItem(0,"1 $$ /$$/ 1 $$  7 $$   1 $$   1 $$  1 $$");
-		KOTHMain.menuItems[3] = new menuItem(0,"1 $$$$$/  1 $$  1 $$   1 $$   1 $$$$$$$$");
-		KOTHMain.menuItems[4] = new menuItem(0,"1 $$  $$  1 $$  1 $$   1 $$   1 $$__  $$");
-		KOTHMain.menuItems[5] = new menuItem(0,"1 $$7  $$ 1 $$  1 $$   1 $$   1 $$  1 $$");
-		KOTHMain.menuItems[6] = new menuItem(0,"1 $$ 7  $$1  $$$$$$/   1 $$   1 $$  1 $$");
-		KOTHMain.menuItems[7] = new menuItem(0,"1__/  7__/ 7______/    1__/   1__/  1__/");
-		KOTHMain.menuItems[8] = new menuItem(0);
-		KOTHMain.menuItems[9] = new menuItem(1,"8032C910","Play");
-		KOTHMain.menuItems[10] = KOTHgameSettings;
-		KOTHMain.menuItems[11] = KOTHInfo;
+		KOTHMain.menuItems[0] = new menuItem(0,"King of the hill");
+		KOTHMain.menuItems[1] = new menuItem(0);
+		KOTHMain.menuItems[2] = new menuItem(1,"8032C910","Play");
+		KOTHMain.menuItems[3] = KOTHgameSettings;
+		KOTHMain.menuItems[4] = KOTHInfo;
 
 		subMenu ironManSettings = new subMenu(1,"Iron Man Settings");
 
@@ -355,19 +324,12 @@ public class Main{
 		ironManPlay.menuItems[9] = ironManInfoM;
 		
 
-		ironManMain.menuItems[0] = new menuItem(0,"/$$$$$$ /$$      /$$ ");
-		ironManMain.menuItems[1] = new menuItem(0,"1_  $$_/1 $$$    /$$$");
-		ironManMain.menuItems[2] = new menuItem(0,"  1 $$  1 $$$$  /$$$$");
-		ironManMain.menuItems[3] = new menuItem(0,"  1 $$  1 $$ $$/$$ $$");
-		ironManMain.menuItems[4] = new menuItem(0,"  1 $$  1 $$  $$$1 $$");
-		ironManMain.menuItems[5] = new menuItem(0,"  1 $$  1 $$7  $ 1 $$");
-		ironManMain.menuItems[6] = new menuItem(0," /$$$$$$1 $$ 7/  1 $$");
-		ironManMain.menuItems[7] = new menuItem(0,"1______/1__/     1__/");
-		ironManMain.menuItems[8] = new menuItem(0);
-		ironManMain.menuItems[9] = new menuItem(0,"8032c850"," ");
-		ironManMain.menuItems[10] = ironManPlay;
-		ironManMain.menuItems[11] = ironManSettings;
-		ironManMain.menuItems[12] = ironManBuy;
+		ironManMain.menuItems[0] = new menuItem(0,"Iron Man Main Menu");
+		ironManMain.menuItems[1] = new menuItem(0);
+		ironManMain.menuItems[2] = new menuItem(0,"8032c850"," ");
+		ironManMain.menuItems[3] = ironManPlay;
+		ironManMain.menuItems[4] = ironManSettings;
+		ironManMain.menuItems[5] = ironManBuy;
 		
 
 		subMenu specialMelee = new subMenu(1,"Special Melee");
@@ -395,18 +357,11 @@ public class Main{
 		subMenu ssSettings = new subMenu(1,"Squad strike settings");
 		subMenu ssInfo = new subMenu(1,"How to play squad strike");
 		
-		ssMain.menuItems[0] = new menuItem(0,"  /$$$$$$   /$$$$$$ ");
-		ssMain.menuItems[1] = new menuItem(0," /$$__  $$ /$$__  $$");
-		ssMain.menuItems[2] = new menuItem(0,"| $$  7__/| $$  7__/");
-		ssMain.menuItems[3] = new menuItem(0,"|  $$$$$$ |  $$$$$$ ");
-		ssMain.menuItems[4] = new menuItem(0," 7____  $$ 7____  $$");
-		ssMain.menuItems[5] = new menuItem(0," /$$  7 $$ /$$  7 $$");
-		ssMain.menuItems[6] = new menuItem(0,"|  $$$$$$/|  $$$$$$/");
-		ssMain.menuItems[7] = new menuItem(0," 7______/  7______/ ");
-		ssMain.menuItems[8] = new menuItem(0);
-		ssMain.menuItems[9] = new menuItem(1,"8032C920","Play");
-		ssMain.menuItems[10] = ssSettings;
-		ssMain.menuItems[11] = ssInfo;
+		ssMain.menuItems[0] = new menuItem(0,"Squad strike main menu");
+		ssMain.menuItems[1] = new menuItem(0);
+		ssMain.menuItems[2] = new menuItem(1,"8032C920","Play");
+		ssMain.menuItems[3] = ssSettings;
+		ssMain.menuItems[4] = ssInfo;
 		
 		ssSettings.menuItems[0] = new menuItem(0,"Settings");
 		ssSettings.menuItems[1] = new menuItem(0);
@@ -416,18 +371,11 @@ public class Main{
 		ssInfo.menuItems[1] = new menuItem(0);
 		ssInfo.menuItems[2] = new menuItem(0,"IDK im tired and i just want this done aaaaaaaaaaaa");
 		
-		amMain.menuItems[0] = new menuItem(0,"  /$$$$$$  /$$       /$$");
-		amMain.menuItems[1] = new menuItem(0," /$$__  $$1 $$      1 $$              /$$/$$");
-		amMain.menuItems[2] = new menuItem(0,"1 $$  7 $$1 $$      1 $$             1  $$$/");
-		amMain.menuItems[3] = new menuItem(0,"1 $$$$$$$$1 $$      1 $$             /$$$$$$$");
-		amMain.menuItems[4] = new menuItem(0,"1 $$__  $$1 $$      1 $$            1__ $$$_/");
-		amMain.menuItems[5] = new menuItem(0,"1 $$  1 $$1 $$      1 $$              /$$ $$");
-		amMain.menuItems[6] = new menuItem(0,"1 $$  1 $$1 $$$$$$$$1 $$$$$$$$       1__/__/");
-		amMain.menuItems[7] = new menuItem(0,"1__/  1__/1________/1________/");
-		amMain.menuItems[8] = new menuItem(0);
-		amMain.menuItems[9] = new menuItem(1,"8032C924","Play");
-		amMain.menuItems[10] = amSettings;
-		amMain.menuItems[11] = amInfo;
+		amMain.menuItems[0] = new menuItem(0,"All star main menu");
+		amMain.menuItems[1] = new menuItem(0);
+		amMain.menuItems[2] = new menuItem(1,"8032C924","Play");
+		amMain.menuItems[3] = amSettings;
+		amMain.menuItems[4] = amInfo;
 		
 		amSettings.menuItems[0] = new menuItem(0,"Settings");
 		amSettings.menuItems[1] = new menuItem(0);

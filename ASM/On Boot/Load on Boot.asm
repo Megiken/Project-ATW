@@ -22,12 +22,14 @@ mflr r20
 mr r3,r20
 branchl r12,0x800163D8
 add r25,r25,r3
+addi r25,r25,0x500
+stw r25,firstFileInHeap(rtoc)
 addi r3,r20,8
 branchl r12,0x800163D8
 add r25,r25,r3
 mr r23,r3
-addi r25,r25,0xa00
-stw r25,newHeapStart(rtoc)
+addi r25,r25,0x500
+stw r25,secondFileInHeap(rtoc)
 mr r3,r24
 
 	add	r25,r3,REG_FileSize			#ArenaHi = ArenaLo+ .gct size

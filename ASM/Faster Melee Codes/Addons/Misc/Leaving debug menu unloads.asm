@@ -8,7 +8,7 @@ beq END
 
 li r20,0
 stw r20,gameID(rtoc)
-
+lwz r15,secondFileInHeap(rtoc)
 branchl r12,removerestoreGCT
 li r20,0
 stw r20,IMcount(rtoc)

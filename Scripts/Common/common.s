@@ -144,6 +144,7 @@ addi    r1,r1,0x100    # release the space
 .set removePlayerFromCSS,functSpace+0xb8
 .set getCustomEntityStruct,functSpace+0xbc
 .set secondLevelDebugMenu,functSpace+0xc0
+.set ATWliteInit,functSpace+0xc4
 
 .set goToCSS,functSpace+0xc4
 .set KOTHGameInit,functSpace+0xc8
@@ -308,8 +309,8 @@ addi    r1,r1,0x100    # release the space
 .set spawnVar,-0x7f98
 .set prevMenuFlag,-0x7f94
 .set playerIDs,-0x7e90
-.set free1,-0x7e8c
-.set free2,-0x7e18
+.set firstFileInHeap,-0x7e8c
+.set thirdFileInHeap,-0x7e18
 .set redTeamMate,-0x7e14
 .set gameID,-0x7DB0
 .set IMcount,-0x7dac
@@ -319,7 +320,7 @@ addi    r1,r1,0x100    # release the space
 .set IMtype,-0x7d7c
 .set IMpickban,-0x7d38
 .set ATWstocks,-0x7d34
-.set newHeapStart,-0x7d10
+.set secondFileInHeap,-0x7d10
 .set IMmoneyTextStruct,-0x7d0c
 .set tempStageAdr,-0x7cf0
 .set tempBackupAscii,-0x7cec

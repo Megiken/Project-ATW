@@ -15,7 +15,7 @@ THERE:
 cmpwi r14,2
 beq END
 mflr r20
-lwz r21,newHeapStart(rtoc)
+lwz r21,secondFileInHeap(rtoc)
 branchl r12,loadbackupstoreGCT
 
 END:
