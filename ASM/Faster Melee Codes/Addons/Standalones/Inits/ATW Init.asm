@@ -3,6 +3,17 @@
 .include "Common/common.s"
 
 backup
+
+lwz r20,gameID(rtoc)
+cmpwi r20,0
+beq GOOD
+lwz r15,secondFileInHeap(rtoc)
+branchl r12,removerestoreGCT
+li r20,0
+stw r20,gameID(rtoc)
+
+GOOD:
+
 li r20,1
 li r21,1
 branchl r12,goToCSS

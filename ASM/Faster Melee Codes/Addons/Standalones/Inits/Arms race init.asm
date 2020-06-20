@@ -10,7 +10,7 @@ cmpwi r14,0
 beq END
 
 bl THERE
-.long 0x41522e64
+.long 0x41532e64
 .long 0x61740000
 THERE:
 cmpwi r14,2

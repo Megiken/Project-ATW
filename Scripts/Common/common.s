@@ -144,8 +144,6 @@ addi    r1,r1,0x100    # release the space
 .set removePlayerFromCSS,functSpace+0xb8
 .set getCustomEntityStruct,functSpace+0xbc
 .set secondLevelDebugMenu,functSpace+0xc0
-.set ATWliteInit,functSpace+0xc4
-
 .set goToCSS,functSpace+0xc4
 .set KOTHGameInit,functSpace+0xc8
 .set ATWInit,functSpace+0xcc
@@ -156,6 +154,11 @@ addi    r1,r1,0x100    # release the space
 .set updateSFX,functSpace+0xe0
 .set loadCharacter,functSpace+0xe4
 .set getOppositeData,functSpace+0xe8
+.set ATWliteInit,functSpace+0xec
+.set ATWfreeeInit,functSpace+0xf0
+.set Smash64Init,functSpace+0xf4
+.set BrawlInit,functSpace+0xf8
+
 
 ################################################################################
 # Offsets
@@ -295,12 +298,12 @@ addi    r1,r1,0x100    # release the space
 .set cssStruct2,0x8043208c
 .set frameRate,0x80432a2c
 
-.set ATWsubmenu,0x8065ea14
-.set DPsubmenu,0x8065ef88
-.set KOTHsubmenu,0x8065f294
-.set IMsubmenu,0x8065f5a0
-.set squadStrikesubmenu,0x8065ffdc
-.set allStarsubmenu,0x80660228
+.set ATWsubmenu,0x8065ea54
+.set IMsubmenu,0x8065ef04
+.set squadStrikesubmenu,0x8065f860
+.set allStarsubmenu,0x8065f9cc
+.set smash64submenu,0x8065fb38
+.set brawlsubmenu,0x8065fb9c
 
 ################################################################################
 # Mytoc Offsets

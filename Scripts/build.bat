@@ -4,6 +4,14 @@ echo Building atw.json...
 gecko build -c atw.json
 echo.
 
+echo Building ATWLite.json...
+gecko build -c ATWLite.json...
+echo.
+
+echo Building ATWFreestyle.json...
+gecko build -c ATWFreestyle.json...
+echo.
+
 echo Building duelist pro.json...
 gecko build -c duelistpro.json
 echo.
@@ -18,6 +26,18 @@ echo.
 
 echo Building squadstrike.json...
 gecko build -c squadstrike.json
+echo.
+
+echo Building allstar.json...
+gecko build -c allstar.json
+echo.
+
+echo Building Smash64.json...
+gecko build -c Smash64.json
+echo.
+
+echo Building Brawl.json...
+gecko build -c Brawl.json
 echo.
 
 echo Building netplay.json...
@@ -40,6 +60,14 @@ echo Creating ATW DAT...
 java -jar CodeConverter.jar -c "..\Output\ATW Codes.txt" -o "..\Files\Custom Code\ATW.dat"
 echo.
 
+echo Creating ATW Lite DAT...
+java -jar CodeConverter.jar -c "..\Output\ATW Lite.txt" -o "..\Files\Custom Code\AWL.dat"
+echo.
+
+echo Creating ATW Freestyle DAT...
+java -jar CodeConverter.jar -c "..\Output\ATW Freestyle.txt" -o "..\Files\Custom Code\AWF.dat"
+echo.
+
 echo Creating DP DAT...
 java -jar CodeConverter.jar -c "..\Output\Duelist Pro.txt" -o "..\Files\Custom Code\DP.dat"
 echo.
@@ -54,6 +82,18 @@ echo.
 
 echo Creating Squad Strike DAT...
 java -jar CodeConverter.jar -c "..\Output\Squad strike.txt" -o "..\Files\Custom Code\SS.dat"
+echo.
+
+echo Creating All Star DAT...
+java -jar CodeConverter.jar -c "..\Output\Allstar.txt" -o "..\Files\Custom Code\AS.dat"
+echo.
+
+echo Creating Smash 64 DAT...
+java -jar CodeConverter.jar -c "..\Output\Smash 64.txt" -o "..\Files\Custom Code\S64.dat"
+echo.
+
+echo Creating Brawl DAT...
+java -jar CodeConverter.jar -c "..\Output\Brawl.txt" -o "..\Files\Custom Code\BRL.dat"
 echo.
 
 echo Creating Slippi + Extras DAT...

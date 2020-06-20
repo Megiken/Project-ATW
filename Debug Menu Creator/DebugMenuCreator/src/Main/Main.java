@@ -129,11 +129,16 @@ public class Main{
 
 		ATWstartMatch.menuItems[0] = new menuItem(0,"New game");
 		ATWstartMatch.menuItems[1] = new menuItem(0);
-		ATWstartMatch.menuItems[2] = new menuItem(1,"8032C914","Start new game");
-		ATWstartMatch.menuItems[3] = new menuItem(2,"Player 1 Character: ",chars,0);
-		ATWstartMatch.menuItems[4] = new menuItem(2,"Player 2 Character: ",chars,0);
-		ATWstartMatch.menuItems[5] = new menuItem(2,"Player 3 Character: ",chars,0);
-		ATWstartMatch.menuItems[6] = new menuItem(2,"Player 4 Character: ",chars,0);
+		ATWstartMatch.menuItems[2] = new menuItem(1,"8032C914","Start new ATW");
+		ATWstartMatch.menuItems[3] = new menuItem(0);
+		ATWstartMatch.menuItems[4] = new menuItem(1,"8032C934","Start new ATW Lite");
+		ATWstartMatch.menuItems[5] = new menuItem(0);
+		ATWstartMatch.menuItems[6] = new menuItem(1,"8032C938","Start new ATW Freestyle");
+		ATWstartMatch.menuItems[7] = new menuItem(0);
+		ATWstartMatch.menuItems[8] = new menuItem(2,"Player 1 Character: ",chars,0);
+		ATWstartMatch.menuItems[9] = new menuItem(2,"Player 2 Character: ",chars,0);
+		ATWstartMatch.menuItems[10] = new menuItem(2,"Player 3 Character: ",chars,0);
+		ATWstartMatch.menuItems[11] = new menuItem(2,"Player 4 Character: ",chars,0);
 
 
 		subMenu ATWmatchSettings = new subMenu(1,"ATW Game Settings");
@@ -385,17 +390,60 @@ public class Main{
 		amInfo.menuItems[1] = new menuItem(0);
 		amInfo.menuItems[2] = new menuItem(0,"IDK im tired and i just want this done aaaaaaaaaaaa");
 		
+		subMenu Smash64Main = new subMenu(1,"Smash 64");
+		
+		Smash64Main.menuItems[0] = new menuItem(0,"Smash 64 Main Menu");
+		Smash64Main.menuItems[1] = new menuItem(0);
+		Smash64Main.menuItems[2] = new menuItem(1,"8032C93c","Play");
+		
+		subMenu brawlMain = new subMenu(1,"Brawl");
+		
+		brawlMain.menuItems[0] = new menuItem(0,"Brawl Main Menu");
+		brawlMain.menuItems[1] = new menuItem(0);
+		brawlMain.menuItems[2] = new menuItem(1,"8032C940","Play");
+		
+		subMenu sixPlayerMain = new subMenu(1,"6 Player Smash Main Menu");
+		
+		sixPlayerMain.menuItems[0] = new menuItem(0,"6 Player Smash Main Menu");
+		sixPlayerMain.menuItems[1] = new menuItem(0);
+		sixPlayerMain.menuItems[2] = new menuItem(0,"Soon");
+		
+		subMenu minigamesMain = new subMenu(1,"Minigames");
+		
+		minigamesMain.menuItems[0] = new menuItem(0,"Minigames");
+		minigamesMain.menuItems[1] = new menuItem(0);
+		minigamesMain.menuItems[2] = DPMain;
+		minigamesMain.menuItems[3] = KOTHMain;
+		
+		subMenu shuffleMain = new subMenu(1,"Shuffle");
+		
+		shuffleMain.menuItems[0] = new menuItem(0,"Shuffle");
+		shuffleMain.menuItems[1] = new menuItem(0);
+		shuffleMain.menuItems[2] = new menuItem(0,"Soon");
+		
+		subMenu extrasMain = new subMenu(1,"Extras");
+		
+		extrasMain.menuItems[0] = new menuItem(0,"Extras");
+		extrasMain.menuItems[1] = new menuItem(0);
+		extrasMain.menuItems[2] = new menuItem(0,"Soon");
+		
+		
+		
 		generalGamemodes.menuItems[0] = new menuItem(0,"Gamemodes");
 		generalGamemodes.menuItems[1] = new menuItem(0);
 		generalGamemodes.menuItems[2] = ATWmainMenu;
-		generalGamemodes.menuItems[3] = DPMain;
-		generalGamemodes.menuItems[4] = KOTHMain;
-		generalGamemodes.menuItems[5] = ironManMain;
-		generalGamemodes.menuItems[6] = ssMain;
-		generalGamemodes.menuItems[7] = amMain;
-		generalGamemodes.menuItems[8] = new menuItem(0);
-		generalGamemodes.menuItems[9] = specialMelee;
-		generalGamemodes.menuItems[10] = new menuItem(2,"Custom gamemodes: ",ende,0);
+		generalGamemodes.menuItems[3] = ironManMain;
+		generalGamemodes.menuItems[4] = ssMain;
+		generalGamemodes.menuItems[5] = amMain;
+		generalGamemodes.menuItems[6] = Smash64Main;
+		generalGamemodes.menuItems[7] = brawlMain;
+		generalGamemodes.menuItems[8] = sixPlayerMain;
+		generalGamemodes.menuItems[9] = minigamesMain;
+		generalGamemodes.menuItems[10] = shuffleMain;
+		generalGamemodes.menuItems[11] = extrasMain;
+		generalGamemodes.menuItems[12] = new menuItem(0);
+		generalGamemodes.menuItems[13] = specialMelee;
+		generalGamemodes.menuItems[14] = new menuItem(2,"Custom gamemodes: ",ende,0);
 
 		subMenu playerAttributes = new subMenu(1,"Player Attributes");
 		subMenu tourneyMods = new subMenu(1,"Tourney mods");

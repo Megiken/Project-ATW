@@ -23,11 +23,11 @@ GOOD:
 backup
 bl THERE
 .long ATWsubmenu
-.long DPsubmenu
-.long KOTHsubmenu
 .long IMsubmenu
 .long squadStrikesubmenu
 .long allStarsubmenu
+.long smash64submenu
+.long brawlsubmenu
 THERE:
 mflr r21
 mulli r20,r20,4
