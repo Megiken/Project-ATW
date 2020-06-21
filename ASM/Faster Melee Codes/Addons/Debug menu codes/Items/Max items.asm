@@ -2,6 +2,5 @@
 
 .include "Common/common.s"
 
-load r0,maxItemsOnScreen
-lwz r0,0(r0)
-lwz	r3,0x84(r5)
+load r20,maxItemsOnScreen
+lwz r0,0(r20)

@@ -199,10 +199,10 @@ public class Main{
 		subMenu DPMain = new subMenu(1,"Duelist Pro");
 
 		DPMain.menuItems[0] = new menuItem(0,"Duelist Pro");
-		DPMain.menuItems[8] = new menuItem(0);
-		DPMain.menuItems[9] = new menuItem(1,"8032C918","Play");
-		DPMain.menuItems[10] = DPsettings;
-		DPMain.menuItems[11] = DPInfo;
+		DPMain.menuItems[1] = new menuItem(0);
+		DPMain.menuItems[2] = new menuItem(1,"8032C918","Play");
+		DPMain.menuItems[3] = DPsettings;
+		DPMain.menuItems[4] = DPInfo;
 
 
 		subMenu KOTHgameSettings = new subMenu(1,"KOTH Settings");

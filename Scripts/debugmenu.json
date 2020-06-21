@@ -186,41 +186,51 @@
         {
           "type": "replaceCodeBlock",
           "address": "8065fd8c",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/DP Settings.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "8065fe50",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/How to play DP.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "8065ff14",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/King of the hill.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065fe30",
+          "address": "8065ffb8",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/KOTH Settings.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065fed4",
+          "address": "8066005c",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/How to play KOTH.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065ffb8",
+          "address": "80660140",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Shuffle.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8066001c",
+          "address": "806601a4",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Extras.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660080",
+          "address": "80660208",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Special Melee.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "806601e4",
+          "address": "8066036c",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Visuals.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "806603e8",
+          "address": "80660570",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Credits.s"
         },
         {

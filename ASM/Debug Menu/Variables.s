@@ -197,24 +197,28 @@
 .long 0x000000af # .setGanondorf cost: , debugSpace+780
 .long 0x00000004 # .setNumber of characters: , debugSpace+784
 .long 0x0000001a # .setNumber of characters: , debugSpace+788
-.long 0x00000000 # .setGame Type: , debugSpace+792
-.long 0x000009c4 # .setMax Score: , debugSpace+796
-.long 0x0000001e # .setTime per Hill: , debugSpace+800
-.long 0x00000000 # .setPercent/Stamina, debugSpace+804
-.long 0x00000096 # .setStamina Amount, debugSpace+808
-.long 0x00000000 # .setSize: , debugSpace+812
-.long 0x00000000 # .setHead: , debugSpace+816
-.long 0x00000000 # .setBody: , debugSpace+820
-.long 0x00000000 # .setStatus: , debugSpace+824
-.long 0x00000000 # .setGravity: , debugSpace+828
-.long 0x00000000 # .setSpeed: , debugSpace+832
-.long 0x00000000 # .setCamera: , debugSpace+836
-.long 0x00000000 # .setCustom gamemodes: , debugSpace+840
-.long 0x00000000 # .setBattlefield skin: , debugSpace+844
-.long 0x00000000 # .setFD skin: , debugSpace+848
-.long 0x00000000 # .setPokemon stadium skin: , debugSpace+852
-.long 0x00000000 # .setYoshis story skin: , debugSpace+856
-.long 0x00000000 # .setFOD skin: , debugSpace+860
-.long 0x00000000 # .setDreamland skin: , debugSpace+864
-.long 0x00000000 # .setCSS skin: , debugSpace+868
-.long 0x00000001 # .setCostume Dependent Marth Sword Colours: , debugSpace+872
+.long 0x0000000a # .setBomb Impact Damage: , debugSpace+792
+.long 0x0000000a # .setBomb Explosion Damage: , debugSpace+796
+.long 0x0000000b # .setGravity/100: , debugSpace+800
+.long 0x00000073 # .setTerminal Velocity/100: , debugSpace+804
+.long 0x00000000 # .setGame Type: , debugSpace+808
+.long 0x000009c4 # .setMax Score: , debugSpace+812
+.long 0x0000001e # .setTime per Hill: , debugSpace+816
+.long 0x00000000 # .setPercent/Stamina, debugSpace+820
+.long 0x00000096 # .setStamina Amount, debugSpace+824
+.long 0x00000000 # .setSize: , debugSpace+828
+.long 0x00000000 # .setHead: , debugSpace+832
+.long 0x00000000 # .setBody: , debugSpace+836
+.long 0x00000000 # .setStatus: , debugSpace+840
+.long 0x00000000 # .setGravity: , debugSpace+844
+.long 0x00000000 # .setSpeed: , debugSpace+848
+.long 0x00000000 # .setCamera: , debugSpace+852
+.long 0x00000000 # .setCustom gamemodes: , debugSpace+856
+.long 0x00000000 # .setBattlefield skin: , debugSpace+860
+.long 0x00000000 # .setFD skin: , debugSpace+864
+.long 0x00000000 # .setPokemon stadium skin: , debugSpace+868
+.long 0x00000000 # .setYoshis story skin: , debugSpace+872
+.long 0x00000000 # .setFOD skin: , debugSpace+876
+.long 0x00000000 # .setDreamland skin: , debugSpace+880
+.long 0x00000000 # .setCSS skin: , debugSpace+884
+.long 0x00000001 # .setCostume Dependent Marth Sword Colours: , debugSpace+888
