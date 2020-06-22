@@ -303,6 +303,10 @@ addi    r1,r1,0x100    # release the space
 .set allStarsubmenu,0x8065f9cc
 .set smash64submenu,0x8065fb38
 .set brawlsubmenu,0x8065fb9c
+.set sixPlayeMenu,0x8065fc00
+.set minigamesMenu,0x8065fc64
+.set shuffleMenu,0x80660140
+.set extrasMenu,0x806601a4
 
 ################################################################################
 # Mytoc Offsets

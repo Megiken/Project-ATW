@@ -4,22 +4,10 @@
 
 backup
 
-bl THER
-.long 0x494d2e64
-.long 0x61740000
-THER:
-cmpwi r14,2
-beq ENDLOL
-mflr r20
-lwz r21,secondFileInHeap(rtoc)
-branchl r12,loadbackupstoreGCT
-ENDLOL:
 
 li r17,0
 stw r17,IMgameOverFlag(rtoc)
 stw r17,IMcount(rtoc)
-
-
 
 branchl r12,IMgetFirstBans
 mflr r3
@@ -57,7 +45,5 @@ bl THERE
 THERE:
 mflr r21
 stw r21,0x128(r20)
-
 restore
-END:
 blr

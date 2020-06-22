@@ -13,11 +13,6 @@ lwz r20,0(r20)
 cmpwi r20,1
 beq END
 
-load r20,cssID
-lbz r20,0(r20)
-cmpwi r20,6
-bge END
-
 
 li r3,6
 

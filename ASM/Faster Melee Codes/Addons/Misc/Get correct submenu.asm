@@ -17,8 +17,6 @@ cmpwi r20,0xc
 bne END
 load r20,cssID
 lbz r20,0(r20)
-cmpwi r20,6
-bge END
 GOOD:
 backup
 bl THERE
@@ -28,6 +26,10 @@ bl THERE
 .long allStarsubmenu
 .long smash64submenu
 .long brawlsubmenu
+.long sixPlayeMenu
+.long minigamesMenu
+.long shuffleMenu
+.long extrasMenu
 THERE:
 mflr r21
 mulli r20,r20,4

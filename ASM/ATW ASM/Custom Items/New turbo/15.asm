@@ -4,6 +4,8 @@
 
 lwz r4, 44(r26)
 lwz r4, 1304(r4)
+cmpwi r4,0
+beq loc_0x38
 lwz r4, 44(r4)
 lbz r21, 12(r4)
 branchl r12,getItemVars

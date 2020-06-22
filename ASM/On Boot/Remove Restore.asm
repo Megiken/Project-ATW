@@ -9,11 +9,12 @@ backupall
 rlwinm.	r22, r15, 0, 27, 31
 sub r15,r15,r22
 lwz r16,0(r15)
+li r17,0
+stw r17,0(r15)
 cmpwi r16,0
 beq DONE
 addi r15,r15,4
 add r16,r16,r15
-li r17,0
 
 cmpw r16,r15
 beq TRYC2
