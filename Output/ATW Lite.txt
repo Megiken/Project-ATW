@@ -382,6 +382,12 @@ C23641D4 00000008 #../ASM/ATW Lite ASM/Misc/Disable CSS Puck Animations.asm
 04178228 2C000000 #../ASM/ATW Lite ASM/Misc/Results Screen/1.asm
 04178224 3C000010 #../ASM/ATW Lite ASM/Misc/Results Screen/2.asm
 041A5B00 3B640000 #../ASM/ATW Lite ASM/Misc/Results Screen/Dont Skip.asm
+0445C370 02000000 #../ASM/ATW Lite ASM/Misc/Settings/1.asm
+0445C37C FFFFFFFF #../ASM/ATW Lite ASM/Misc/Settings/2.asm
+0445C388 FFFFFFFF #../ASM/ATW Lite ASM/Misc/Settings/3.asm
+0445BF10 00350100 #../ASM/ATW Lite ASM/Misc/Settings/4.asm
+0445BF14 02000A01 #../ASM/ATW Lite ASM/Misc/Settings/5.asm
+0445BF18 02010000 #../ASM/ATW Lite ASM/Misc/Settings/6.asm
 C232C8A0 0000000B #../ASM/ATW Lite ASM/Standalones/Get ATW Stats.asm
 4E800021 00000000
 00000000 00000000

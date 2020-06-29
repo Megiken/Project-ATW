@@ -689,11 +689,13 @@ public class Main{
 		File json = new File("C:\\Users\\Thomas\\Desktop\\thing.txt");
 		writer = new FileWriter(json);
 		pr = new PrintWriter(writer);
-
+		String thing = "";
 		for(int i = 0; i < list.size(); i++) {
 			jsonObject temp = list.get(i);
-			pr.print("\n        {\n          \"type\": \"replaceCodeBlock\",\n          \"address\": \"" + temp.address + "\",\n          \"sourceFile\": \"" + temp.filelol + "\"\n        },");
+			thing += ("\n        {\n          \"type\": \"replaceCodeBlock\",\n          \"address\": \"" + temp.address + "\",\n          \"sourceFile\": \"" + temp.filelol + "\"\n        },");
 		}
+		thing = thing.replace("\\", "/");
+		pr.print(thing);
 		pr.close();
 
 
