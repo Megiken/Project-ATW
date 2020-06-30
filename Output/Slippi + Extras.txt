@@ -5468,6 +5468,12 @@ C21C0A48 0000001A #../ASM/Faster Melee Codes/Addons/Misc/Neutral spawns/2.asm
 960F4748 924F0004
 962F0040 924F0004
 7D8803A6 00000000
+C21A4DB4 00000003 #../ASM/Faster Melee Codes/Addons/Misc/Polling drift/1.asm
+901C0000 3D808001
+618C95FC 7D8903A6
+4E800421 00000000
+041A4DB4 60000000 #../ASM/Faster Melee Codes/Addons/Misc/Polling drift/2.asm
+04019860 4BFFFD9D #../ASM/Faster Melee Codes/Addons/Misc/Polling drift/3.asm
 041A4F84 60000000 #../ASM/Faster Melee Codes/Addons/Misc/Screenshot nops/1.asm
 041A5070 60000000 #../ASM/Faster Melee Codes/Addons/Misc/Screenshot nops/2.asm
 C232C874 00000007 #../ASM/Faster Melee Codes/Addons/Standalones/Absolute Value Byte.asm
