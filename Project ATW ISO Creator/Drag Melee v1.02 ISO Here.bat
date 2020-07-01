@@ -13,15 +13,16 @@ cd /d %~dp0
 cd Stuff
 
 echo Downloading xdelta patch...
-echo This may take however long it takes you to download 1 gb.
+echo This may take however long it takes you to download 400mb.
 echo.
 
-wget https://rebrand.ly/tbfuuhy -O patch.vcdiff
+wget https://tny.sh/o6pkzUd -O patch.vcdiff
+
 echo Applying patch...
 echo This may take 1-2 minutes.
 echo.
 
-xdelta3.exe -d -vfs %1 "patch.vcdiff" "../Stable Project ATW.iso"
+xdelta3.exe -d -vfs %1 "patch.vcdiff" "../Beta Project ATW.iso"
 
 del /f patch.vcdiff
 

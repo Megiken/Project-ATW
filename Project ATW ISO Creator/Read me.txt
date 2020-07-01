@@ -1,3 +1,2 @@
 Drag a vanilla 1.02 iso over your preferred bat file and that's it!
-The stable version is guaranteed to work properly, while the beta version is constantly being updated, and can potentially be very unstable. Be sure to read the dev feed channel in the project atw discord to know what is new in the beta version.
-You will always get the latest stable and beta version with these programs, the ISO creator will never need to be updated.
+You will always get the latest version with this program, the ISO creator will never need to be updated.

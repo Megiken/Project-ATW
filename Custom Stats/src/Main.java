@@ -7,14 +7,15 @@ public class Main {
 	
 	public static boolean gameEnd = true;
 	
-	public static String thomasTag = "8190819081908190";
-	public static String brettTag = "53544C4E00000000";
-	public static String brunoTag = "4A415A5A00000000";
-	public static String braedenTag = "4141410000000000";
-	public static String rayvaxTag = "4242420000000000";
-	public static String elliotTag = "4849505900000000";
-	public static String jamesTag = "4D44510000000000";
-	public static String zachbtag = "444B000000000000";
+	public static String thomasTag = "81908190";
+	public static String brettTag = "53544C4E";
+	public static String brunoTag = "4A415A5A";
+	public static String braedenTag = "41414100";
+	public static String rayvaxTag = "42424200";
+	public static String elliotTag = "48495059";
+	public static String jamesTag = "4D445100";
+	public static String zachbtag = "444B0000";
+	public static String noottag = "4E4F4F54";
 	
 	public static byte[] search = {0x37,0x69,0x42,0x00};
 
@@ -32,18 +33,19 @@ public class Main {
 	public static ATWPlayer elliot = new ATWPlayer("Elliot");
 	public static ATWPlayer james = new ATWPlayer("James");
 	public static ATWPlayer zachb = new ATWPlayer("Zacb B");
-
+	public static ATWPlayer noot = new ATWPlayer("NOOT");
+	
 	public static int currentGame = 0;
 
 	public static int[] stageData = new int[29];
 
-	public static ATWPlayer[] ATWPlayers = {unknown,thomas,brett,bruno,braeden,rayvax,elliot,james,zachb};
+	public static ATWPlayer[] ATWPlayers = {unknown,thomas,brett,bruno,braeden,rayvax,elliot,james,zachb,noot};
 
-	public static String[] tags = {thomasTag,brettTag,brunoTag,braedenTag,rayvaxTag,elliotTag,jamesTag,zachbtag};
+	public static String[] tags = {thomasTag,brettTag,brunoTag,braedenTag,rayvaxTag,elliotTag,jamesTag,zachbtag,noottag};
 
 	public static void main(String[] args) throws IOException {
 
-		File currentDir = new File("C:\\Users\\Thomas\\Downloads\\Dolphins\\FM-v5.9-Slippi-r18-Win\\FM-v5.9-Slippi-r18-Win\\Slippi");
+		File currentDir = new File("C:\\Users\\Thomas\\Documents\\Slippi");
 
 		File totalDir = new File("C:\\Users\\Thomas\\Desktop\\file backups");
 		
@@ -77,7 +79,7 @@ public class Main {
 		raf.seek(397);
 		for(int i = 0; i < 4; i++) {
 			String temp = "";
-			for(int j = 0; j < 8;j++) {
+			for(int j = 0; j < 4;j++) {
 				temp += String.format("%02X", raf.readByte());
 			}
 			int found = 0;
@@ -87,7 +89,7 @@ public class Main {
 				}
 			}
 			players[i] = found;
-			raf.skipBytes(8);
+			raf.skipBytes(12);
 		}
 
 		byte[] fileData = new byte[(int) file.length()];

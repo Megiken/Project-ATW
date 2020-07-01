@@ -158,7 +158,11 @@ addi    r1,r1,0x100    # release the space
 .set ATWfreeeInit,functSpace+0xf0
 .set Smash64Init,functSpace+0xf4
 .set BrawlInit,functSpace+0xf8
-
+.set BBWInit,functSpace+0xfc
+.set MRSSInit,functSpace+0x100
+.set SBInit,functSpace+0x104
+.set OITCInit,functSpace+0x108
+.set IJZInit,functSpace+0x10c
 
 ################################################################################
 # Offsets
