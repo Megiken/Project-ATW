@@ -180,57 +180,82 @@
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065fce8",
+          "address": "8065fd88",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Duelist Pro.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065fd8c",
+          "address": "8065fe2c",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/DP Settings.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065fe50",
+          "address": "8065fef0",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/How to play DP.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065ff14",
+          "address": "8065ffb4",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/King of the hill.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065ffb8",
+          "address": "80660058",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/KOTH Settings.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8066005c",
+          "address": "806600fc",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/How to play KOTH.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660140",
+          "address": "806601e0",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Bretts blastzone warp.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "80660244",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Mr Saturn Soccer.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "806602a8",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Snowbrawl.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "8066030c",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/One in the chamber.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "80660370",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Infinite Jump Zone.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "806603d4",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Shuffle.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "806601a4",
+          "address": "80660438",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Extras.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660208",
+          "address": "8066049c",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Special Melee.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8066036c",
+          "address": "80660600",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Visuals.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660570",
+          "address": "80660804",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Credits.s"
         },
         {

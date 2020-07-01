@@ -40,6 +40,26 @@ echo Building Brawl.json...
 gecko build -c Brawl.json
 echo.
 
+echo Building brettsblastzonewarp.json...
+gecko build -c brettsblastzonewarp.json
+echo.
+
+echo Building mrsaturnsoccer.json...
+gecko build -c mrsaturnsoccer.json
+echo.
+
+echo Building snowbrawl.json...
+gecko build -c snowbrawl.json
+echo.
+
+echo Building oneinthechamber.json...
+gecko build -c oneinthechamber.json
+echo.
+
+echo Building infinitejumpzone.json...
+gecko build -c infinitejumpzone.json
+echo.
+
 echo Building netplay.json...
 gecko build -c netplay.json
 echo.
@@ -94,6 +114,26 @@ echo.
 
 echo Creating Brawl DAT...
 java -jar CodeConverter.jar -c "..\Output\Brawl.txt" -o "..\Files\Custom Code\BRL.dat"
+echo.
+
+echo Creating Bretts Blastzone Warp DAT...
+java -jar CodeConverter.jar -c "..\Output\brett.txt" -o "..\Files\Custom Code\BBW.dat"
+echo.
+
+echo Creating Mr Saturn Soccer DAT...
+java -jar CodeConverter.jar -c "..\Output\soccer.txt" -o "..\Files\Custom Code\MSS.dat"
+echo.
+
+echo Creating Snowbrawl DAT...
+java -jar CodeConverter.jar -c "..\Output\snowbrawl.txt" -o "..\Files\Custom Code\SB.dat"
+echo.
+
+echo Creating One in the Chamber DAT...
+java -jar CodeConverter.jar -c "..\Output\chamber.txt" -o "..\Files\Custom Code\OTC.dat"
+echo.
+
+echo Creating Infinite Jump Zone DAT...
+java -jar CodeConverter.jar -c "..\Output\infinitejumps.txt" -o "..\Files\Custom Code\IJZ.dat"
 echo.
 
 echo Creating Slippi + Extras DAT...

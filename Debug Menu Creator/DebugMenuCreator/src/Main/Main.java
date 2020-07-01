@@ -408,12 +408,6 @@ public class Main{
 		sixPlayerMain.menuItems[1] = new menuItem(0);
 		sixPlayerMain.menuItems[2] = new menuItem(0,"Soon");
 		
-		subMenu minigamesMain = new subMenu(1,"Minigames");
-		
-		minigamesMain.menuItems[0] = new menuItem(0,"Minigames");
-		minigamesMain.menuItems[1] = new menuItem(0);
-		minigamesMain.menuItems[2] = DPMain;
-		minigamesMain.menuItems[3] = KOTHMain;
 		
 		subMenu shuffleMain = new subMenu(1,"Shuffle");
 		
@@ -427,7 +421,48 @@ public class Main{
 		extrasMain.menuItems[1] = new menuItem(0);
 		extrasMain.menuItems[2] = new menuItem(0,"Soon");
 		
+		subMenu BBWMain = new subMenu(1,"Bretts blastzone warp");
 		
+		BBWMain.menuItems[0] = new menuItem(0,"Bretts blastzone warp main menu");
+		BBWMain.menuItems[1] = new menuItem(0);
+		BBWMain.menuItems[2] = new menuItem(1,"8032C944","Play");
+		
+		subMenu MRSSMain = new subMenu(1,"Mr Saturn Soccer");
+		
+		MRSSMain.menuItems[0] = new menuItem(0,"Mr saturn soccer main menu");
+		MRSSMain.menuItems[1] = new menuItem(0);
+		MRSSMain.menuItems[2] = new menuItem(1,"8032C948","Play");
+		
+
+		subMenu SBMain = new subMenu(1,"Snowbrawl");
+		
+		SBMain.menuItems[0] = new menuItem(0,"Snowbrawl main menu");
+		SBMain.menuItems[1] = new menuItem(0);
+		SBMain.menuItems[2] = new menuItem(1,"8032C94c","Play");
+		
+		subMenu OITCMain = new subMenu(1,"One in the chamber");
+		
+		OITCMain.menuItems[0] = new menuItem(0,"One in the chamber main menu");
+		OITCMain.menuItems[1] = new menuItem(0);
+		OITCMain.menuItems[2] = new menuItem(1,"8032C950","Play");
+		
+		subMenu IJZMain = new subMenu(1,"Infinite Jump Zone");
+		
+		IJZMain.menuItems[0] = new menuItem(0,"Infinite Jump Zone main menu");
+		IJZMain.menuItems[1] = new menuItem(0);
+		IJZMain.menuItems[2] = new menuItem(1,"8032C954","Play");
+		
+		subMenu minigamesMain = new subMenu(1,"Minigames");
+		
+		minigamesMain.menuItems[0] = new menuItem(0,"Minigames");
+		minigamesMain.menuItems[1] = new menuItem(0);
+		minigamesMain.menuItems[2] = DPMain;
+		minigamesMain.menuItems[3] = KOTHMain;
+		minigamesMain.menuItems[4] = BBWMain;
+		minigamesMain.menuItems[5] = MRSSMain;
+		minigamesMain.menuItems[6] = SBMain;
+		minigamesMain.menuItems[7] = OITCMain;
+		minigamesMain.menuItems[8] = IJZMain;
 		
 		generalGamemodes.menuItems[0] = new menuItem(0,"Gamemodes");
 		generalGamemodes.menuItems[1] = new menuItem(0);

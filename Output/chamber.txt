@@ -1,0 +1,10 @@
+# GALJ01 - Super Smash Bros. Melee NTSC 1.02
+
+[Gecko]
+$All Star [Big Money]
+0445C370 FF000000 #../ASM/One in the Chamber ASM/Settings/1.asm
+0445C37C 00000000 #../ASM/One in the Chamber ASM/Settings/2.asm
+0445C388 E0204002 #../ASM/One in the Chamber ASM/Settings/3.asm
+0445BF10 00340063 #../ASM/One in the Chamber ASM/Settings/4.asm
+0445BF14 01000A01 #../ASM/One in the Chamber ASM/Settings/5.asm
+0445BF18 08010101 #../ASM/One in the Chamber ASM/Settings/6.asm

@@ -1,0 +1,9 @@
+# GALJ01 - Super Smash Bros. Melee NTSC 1.02
+
+[Gecko]
+$All Star [Big Money]
+C20D1138 00000004 #../ASM/Infinite Jump Zone ASM/Infinite Jumps.asm
+48000009 41200000
+7E8802A6 82940000
+929E0168 C0029584
+60000000 00000000

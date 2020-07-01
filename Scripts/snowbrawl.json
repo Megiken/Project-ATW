@@ -1,0 +1,31 @@
+{
+  "settings": {
+    "areIncludesRelativeFromFile": true
+  },
+  "outputFiles": [
+    {
+      "file": "../Output/snowbrawl.txt",
+      "header": [
+        "# GALJ01 - Super Smash Bros. Melee NTSC 1.02",
+        "",
+        "[Gecko]"
+      ]
+    }
+  ],
+  "codes": [
+    {
+      "name": "All Star",
+      "authors": [
+        "Big Money"
+      ],
+      "build": [
+        {
+          "type": "injectFolder",
+          "sourceFolder": "..\\ASM\\Snowbrawl ASM\\",
+          "isRecursive": true
+        }
+
+      ]
+    }
+  ]
+}
