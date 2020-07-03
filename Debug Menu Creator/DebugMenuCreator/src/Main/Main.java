@@ -159,14 +159,15 @@ public class Main{
 		atwInfo.menuItems[1] = new menuItem(0);
 		atwInfo.menuItems[2] = new menuItem(0,"Around the world is a game where you play through every character");
 		atwInfo.menuItems[3] = new menuItem(0,"on random stages with items. It can be played 1v1, free for all,");
-		atwInfo.menuItems[4] = new menuItem(0,"2v2, and even free for all with a mix of 2v2. Your character is");
-		atwInfo.menuItems[5] = new menuItem(0,"automatically changed after each game, and you will automatically");
-		atwInfo.menuItems[6] = new menuItem(0,"be taken out of when you are out of characters. On the character");
-		atwInfo.menuItems[7] = new menuItem(0,"select screen, you can hit A to put yourself in the game, L to");
-		atwInfo.menuItems[8] = new menuItem(0,"bring up the nametag screen, and R to bring up the rules. Its");
-		atwInfo.menuItems[9] = new menuItem(0,"recommended that you do not change the item settings, ");
-		atwInfo.menuItems[10] = new menuItem(0,"everything else should be ok to change though.");
-
+		atwInfo.menuItems[4] = new menuItem(0,"2v2, and even free for all with a mix of 2v2.");
+		atwInfo.menuItems[5] = new menuItem(0,"On the character select screen, you can hit A to put yourself in");
+		atwInfo.menuItems[6] = new menuItem(0,"the game, L to bring up the nametag screen, and R to bring up the");
+		atwInfo.menuItems[7] = new menuItem(0,"rules.");
+		atwInfo.menuItems[8] = new menuItem(0,"The regular ATW mode has set rules, changing the items does nothing");
+		atwInfo.menuItems[9] = new menuItem(0,"ATW lite only changes your character after each match, it has none");
+		atwInfo.menuItems[10] = new menuItem(0,"of the mods that change items, stages, etc. ATW Freestyle has all");
+		atwInfo.menuItems[11] = new menuItem(0,"the item and stage mods, but gives you full access to the character");
+		atwInfo.menuItems[12] = new menuItem(0,"select screen and rules.");
 
 
 		subMenu ATWmainMenu = new subMenu(1, "Around the World");

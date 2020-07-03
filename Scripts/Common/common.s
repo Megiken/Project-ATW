@@ -302,15 +302,15 @@ addi    r1,r1,0x100    # release the space
 .set frameRate,0x80432a2c
 
 .set ATWsubmenu,0x8065ea54
-.set IMsubmenu,0x8065ef04
-.set squadStrikesubmenu,0x8065f860
-.set allStarsubmenu,0x8065f9cc
-.set smash64submenu,0x8065fb38
-.set brawlsubmenu,0x8065fb9c
-.set sixPlayeMenu,0x8065fc00
-.set minigamesMenu,0x8065fc64
-.set shuffleMenu,0x806603d4
-.set extrasMenu,0x80660438
+.set IMsubmenu,0x8065ef44
+.set squadStrikesubmenu,0x8065f8a0
+.set allStarsubmenu,0x8065fa0c
+.set smash64submenu,0x8065fb78
+.set brawlsubmenu,0x8065fbdc
+.set sixPlayeMenu,0x8065fc40
+.set minigamesMenu,0x8065fca4
+.set shuffleMenu,0x80660414
+.set extrasMenu,0x80660478
 
 ################################################################################
 # Mytoc Offsets
@@ -335,6 +335,11 @@ addi    r1,r1,0x100    # release the space
 .set tempStageAdr,-0x7cf0
 .set tempBackupAscii,-0x7cec
 .set suddenDeathItem,-0x7ce8
+.set free1,-0x7c78
+.set free2,-0x7c7c
+.set free3,-0x7c40
+.set free4,-0x7c3c
+
 
 ################################################################################
 # Values
@@ -726,7 +731,7 @@ rlwinm \reg, \reg, 8, 0xFFFF # Loads major and minor scene into bottom of reg
 .set CONST_ExiRead, 0 # arg value to make an EXI read
 .set CONST_ExiWrite, 1 # arg value to make an EXI write
 
-.set GeckoCodeSectionStart,0x801910E8
+.set GeckoCodeSectionStart,0x800028c0
 
 .set RtocAddress, 0x804df9e0
 

@@ -1,8 +1,8 @@
-#To be inserted at 8065f374
+#To be inserted at 8065f3b4
 
 .long 0
 .long 0
-.long 0x80195138
+.long 0x80195174
 .long 0
 .long 0
 .long 0
@@ -18,7 +18,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x80195154
+.long 0x80195190
 .long 0
 .long 0
 .long 0
@@ -26,7 +26,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x80195198
+.long 0x801951d4
 .long 0
 .long 0
 .long 0
@@ -34,7 +34,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x801951d8
+.long 0x80195214
 .long 0
 .long 0
 .long 0
