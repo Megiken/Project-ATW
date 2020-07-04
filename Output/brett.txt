@@ -2,6 +2,7 @@
 
 [Gecko]
 $All Star [Big Money]
+0445BF14 02000A00 #../ASM/Bretts Blastzone Warping ASM/5.asm
 C20D32E8 00000016 #../ASM/Bretts Blastzone Warping ASM/Blastzone warps/Bottom.asm
 887E000C 3D808032
 618CC870 7D8803A6

@@ -4,6 +4,12 @@
 
 backupall
 mr r31,r3
+load r23,doublesByte
+lbz r23,0(r23)
+cmpwi r23,0
+beq NODOUBLES
+lbz r24,0x61b(r31)
+NODOUBLES:
 lbz r22,0xc(r31)
 lwz r20,0x1868(r31)
 lhz r21,0(r20)
@@ -18,16 +24,36 @@ lwz r20,0x2c(r20)
 lbz r3,0xc(r20)
 cmpw r3,r22
 beq END
-
-
-
+cmpwi r23,0
+beq REAL
+lbz r25,0x61b(r20)
+cmpw r25,r24
+beq END
+REAL:
+cmpwi r23,0
+beq GETLOL
+li r26,0
+LOOP:
+mr r3,r26
+branchl r12,getPlayerData
+lbz r27,0x61b(r3)
+cmpw r27,r25
+bne FOUND
+addi r26,r26,1
+b LOOP
+FOUND:
+mulli r26,r26,4
+addi r10,r26,0x70
+lbz r3,0xc(r20)
+b STORE
+GETLOL:
 cmpwi r3,1
-beq P1
-li r10,0x74
-b DONE
-P1:
+bne P1
 li r10,0x70
-DONE:
+b STORE
+P1:
+li r10,0x74
+STORE:
 branchl r12,getPlayerStatic
 lwzx r4,r3,r10
 addi r4,r4,1

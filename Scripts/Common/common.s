@@ -164,6 +164,10 @@ addi    r1,r1,0x100    # release the space
 .set OITCInit,functSpace+0x108
 .set IJZInit,functSpace+0x10c
 
+
+
+.set prim.new,0x804dd84c
+.set prim.close,0x804dd848
 ################################################################################
 # Offsets
 ################################################################################
