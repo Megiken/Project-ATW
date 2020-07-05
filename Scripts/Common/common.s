@@ -339,7 +339,7 @@ addi    r1,r1,0x100    # release the space
 .set tempStageAdr,-0x7cf0
 .set tempBackupAscii,-0x7cec
 .set suddenDeathItem,-0x7ce8
-.set free1,-0x7c78
+.set mrsaturndata,-0x7c78
 .set free2,-0x7c7c
 .set free3,-0x7c40
 .set free4,-0x7c3c

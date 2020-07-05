@@ -1,3 +1,3 @@
 #To be inserted at 8045bf18
 
-.long 0x08010101
+.long 0x05010000

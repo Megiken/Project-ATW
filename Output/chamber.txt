@@ -2,9 +2,24 @@
 
 [Gecko]
 $All Star [Big Money]
+0428E754 38800001 #../ASM/One in the Chamber ASM/Ammo.asm
+0426ABD8 4E800020 #../ASM/One in the Chamber ASM/Dont drop.asm
+C2069388 0000000E #../ASM/One in the Chamber ASM/Spawn ray gun.asm
+7C0802A6 90010004
+9421FF50 BE810008
+3D808032 618CC904
+7D8803A6 4E800021
+7C6802A6 38800010
+90830008 38800001
+3D808026 618C8B18
+7D8803A6 4E800021
+7C641B78 7FE3FB78
+3D808009 618C48A8
+7D8803A6 4E800021
+BA810008 800100B4
+382100B0 7C0803A6
+7FE3FB78 00000000
 0445C370 FF000000 #../ASM/One in the Chamber ASM/Settings/1.asm
-0445C37C 00000000 #../ASM/One in the Chamber ASM/Settings/2.asm
-0445C388 E0204002 #../ASM/One in the Chamber ASM/Settings/3.asm
-0445BF10 00340063 #../ASM/One in the Chamber ASM/Settings/4.asm
-0445BF14 01000A01 #../ASM/One in the Chamber ASM/Settings/5.asm
-0445BF18 08010101 #../ASM/One in the Chamber ASM/Settings/6.asm
+0445BF10 00350100 #../ASM/One in the Chamber ASM/Settings/4.asm
+0445BF14 0A000A01 #../ASM/One in the Chamber ASM/Settings/5.asm
+0445BF18 05010000 #../ASM/One in the Chamber ASM/Settings/6.asm
