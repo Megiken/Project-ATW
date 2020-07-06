@@ -29,13 +29,22 @@ bgt END
 #Add points
 
 lbz r3,0xc(r31)
-cmpwi r3,1
-beq P1
-li r10,0x74
-b DONE
-P1:
+li r20,0
+load r21,0x80453080
 li r10,0x70
-DONE:
+LOOP:
+cmpw r20,r3
+beq NEXT
+mulli r22,r20,0xe90
+add r22,r22,r21
+lwz r23,0(r22)
+cmpwi r23,2
+beq FOUND
+NEXT:
+addi r20,r20,1
+addi r10,r10,4
+b LOOP
+FOUND:
 branchl r12,getPlayerStatic
 lwzx r4,r3,r10
 addi r4,r4,1

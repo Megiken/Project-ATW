@@ -47,12 +47,22 @@ addi r10,r26,0x70
 lbz r3,0xc(r20)
 b STORE
 GETLOL:
-cmpwi r3,1
-bne P1
+li r20,0
+load r21,0x80453080
 li r10,0x70
-b STORE
-P1:
-li r10,0x74
+LOOP:
+cmpw r20,r3
+beq NEXT
+mulli r22,r20,0xe90
+add r22,r22,r21
+lwz r23,0(r22)
+cmpwi r23,2
+beq FOUND
+NEXT:
+addi r20,r20,1
+addi r10,r10,4
+b LOOP
+FOUND:
 STORE:
 branchl r12,getPlayerStatic
 lwzx r4,r3,r10
