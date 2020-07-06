@@ -91,6 +91,7 @@ addi    r1,r1,0x100    # release the space
 .set setStageGObj,0x801c2bbc
 .set GObjRemove,0x8038fed4
 
+
 .set functSpace,0x8032C848
 
 #0x218 bytes avaiable, 134 custom functions before I need new space
@@ -163,6 +164,7 @@ addi    r1,r1,0x100    # release the space
 .set SBInit,functSpace+0x104
 .set OITCInit,functSpace+0x108
 .set IJZInit,functSpace+0x10c
+.set createGObj,functSpace+0x110
 
 
 
