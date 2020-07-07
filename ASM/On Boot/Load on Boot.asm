@@ -29,6 +29,10 @@ branchl r12,0x800163D8
 add r25,r25,r3
 mr r23,r3
 addi r25,r25,0x500
+li r3,-1
+rlwinm.	r4, r25, 0, 27, 31
+subi r4,r25,r4
+stw r3,0(r4)
 stw r25,secondFileInHeap(rtoc)
 mr r3,r24
 

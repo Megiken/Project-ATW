@@ -24,11 +24,11 @@ bl THERE
 .float -10
 .long 0x89cff0ff
 .float 80
-.float -20
+.float -25
 .float -10
 .long 0x89cff0ff
 .float -80
-.float -20
+.float -25
 .float -10
 .long 0x89cff0ff
 .float -80

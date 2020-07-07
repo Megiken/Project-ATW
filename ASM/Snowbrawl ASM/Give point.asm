@@ -50,19 +50,19 @@ GETLOL:
 li r20,0
 load r21,0x80453080
 li r10,0x70
-LOOP:
+LOOP2:
 cmpw r20,r3
 beq NEXT
 mulli r22,r20,0xe90
 add r22,r22,r21
 lwz r23,0(r22)
 cmpwi r23,2
-beq FOUND
+beq FOUND2
 NEXT:
 addi r20,r20,1
 addi r10,r10,4
-b LOOP
-FOUND:
+b LOOP2
+FOUND2:
 STORE:
 branchl r12,getPlayerStatic
 lwzx r4,r3,r10

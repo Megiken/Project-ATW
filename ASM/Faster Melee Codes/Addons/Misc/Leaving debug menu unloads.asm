@@ -2,10 +2,6 @@
 
 .include "Common/common.s"
 
-lwz r20,gameID(rtoc)
-cmpwi r20,0
-beq END
-
 li r20,0
 stw r20,gameID(rtoc)
 lwz r15,secondFileInHeap(rtoc)
@@ -21,5 +17,4 @@ load r21,ATWsubmenu
 stw r20,0x120(r21)
 stw r20,0x128(r21)
 
-END:
 li r3,1
