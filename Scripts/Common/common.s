@@ -90,7 +90,13 @@ addi    r1,r1,0x100    # release the space
 .set getStageGObj,0x801c2ba4
 .set setStageGObj,0x801c2bbc
 .set GObjRemove,0x8038fed4
-
+.set sin,0x803263d4
+.set cos,0x80326240
+.set tan,0x803261bc
+.set asin,0x80022dbc
+.set acos,0x80022d1c
+.set atan,0x80022e68
+.set log,0x803265a8
 
 .set functSpace,0x8032C848
 
@@ -165,6 +171,7 @@ addi    r1,r1,0x100    # release the space
 .set OITCInit,functSpace+0x108
 .set IJZInit,functSpace+0x10c
 .set createGObj,functSpace+0x110
+.set spawnMrSaturn,functSpace+0x114
 
 
 
@@ -354,6 +361,7 @@ addi    r1,r1,0x100    # release the space
 .set rtocone,-0x76ac
 .set rtocnegone,-0x7658
 .set rtoctwo,-0x3C30
+.set rtocrad,-0x7510
 
 ################################################################################
 # Values

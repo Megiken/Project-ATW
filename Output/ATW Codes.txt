@@ -3638,11 +3638,15 @@ C20D14E4 00000015 #../ASM/ATW ASM/Custom Items/Super Mushroom Pickup.asm
 7C0803A6 4E800020
 60000000 00000000
 040CBBF0 60000000 #../ASM/ATW ASM/Custom Items/Bunny hood/Jumps work properly.asm
+040CC264 60000000 #../ASM/ATW ASM/Custom Items/Bunny hood/Mewtwo jump.asm
+040CBD64 60000000 #../ASM/ATW ASM/Custom Items/Bunny hood/Ness jump.asm
+040CC114 60000000 #../ASM/ATW ASM/Custom Items/Bunny hood/Peach jump.asm
 C20D120C 00000004 #../ASM/ATW ASM/Custom Items/Bunny hood/Stats.asm
 829E0168 3A940001
 929E0168 3D80800D
 618C1324 7D8903A6
 4E800420 00000000
+040CBEC8 60000000 #../ASM/ATW ASM/Custom Items/Bunny hood/Yoshi jump.asm
 C20D1E84 00000002 #../ASM/ATW ASM/Custom Items/Saftey Spawns/1.asm
 7C0802A6 90010004
 60000000 00000000
