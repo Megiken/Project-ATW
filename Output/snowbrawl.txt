@@ -114,6 +114,16 @@ C2268B18 00000003 #../ASM/Snowbrawl ASM/Test.asm
 042894A4 38600000 #../ASM/Snowbrawl ASM/Remove explosions + items/No explosion the third.asm
 04289408 38600000 #../ASM/Snowbrawl ASM/Remove explosions + items/No explosion.asm
 042895DC 38600000 #../ASM/Snowbrawl ASM/Remove explosions + items/lol.asm
+04178228 2C000000 #../ASM/Snowbrawl ASM/Results Screen/1.asm
+04178224 3C000010 #../ASM/Snowbrawl ASM/Results Screen/2.asm
+040BECD8 C0228E58 #../ASM/Snowbrawl ASM/Results Screen/3.asm
+040BECE0 C0629220 #../ASM/Snowbrawl ASM/Results Screen/4.asm
+040BEDB0 C0228E58 #../ASM/Snowbrawl ASM/Results Screen/5.asm
+040BEDB8 C0629220 #../ASM/Snowbrawl ASM/Results Screen/6.asm
+040BEF28 C0228E58 #../ASM/Snowbrawl ASM/Results Screen/7.asm
+040BEF30 C0629220 #../ASM/Snowbrawl ASM/Results Screen/8.asm
+04179214 60000000 #../ASM/Snowbrawl ASM/Results Screen/9.asm
+041A5B00 3B640000 #../ASM/Snowbrawl ASM/Results Screen/Dont Skip.asm
 0445BF10 00350002 #../ASM/Snowbrawl ASM/Settings/4.asm
 0445BF14 04000A00 #../ASM/Snowbrawl ASM/Settings/5.asm
 0445BF18 08010101 #../ASM/Snowbrawl ASM/Settings/6.asm

@@ -2,6 +2,8 @@
 
 .include "Common/common.s"
 backup
+li r22,0
+stw r22,0xc9c(r29)
 lwz r22,0xcac(r29)
 branchl r12,Int2Float
 lfs f7,rtocrad(rtoc)
@@ -10,7 +12,7 @@ fmr f1,f8
 branchl r12,sin
 fmr f12,f1
 bl THERE
-.float 2
+.float 1
 .float 8
 .float 0.5
 THERE:
@@ -28,6 +30,8 @@ branchl r12,log
 fdiv f6,f5,f1
 fmul f9,f6,f10
 fmul f1,f12,f9
+lfs f13,rtoctwo(rtoc)
+fmul f1,f1,f13
 fabs f4,f1
 lfs f3,8(r23)
 fcmpo 0,f4,f3
@@ -40,14 +44,18 @@ b STOREY
 NEGA:
 fneg f1,f3
 STOREY:
-stfs f1,0x44(r29)
+lfs f0,0x44(r29)
+fadd f0,f0,f1
+stfs f0,0x44(r29)
 fmr f1,f11
 branchl r12,cos
 fmul f1,f1,f9
 lfs f2,0xccc(r29)
 fneg f2,f2
 fmul f1,f2,f1
-stfs f1,0x40(r29)
+lfs f0,0x40(r29)
+fadd f0,f0,f1
+stfs f0,0x40(r29)
 b END
 NORMAL:
 restore

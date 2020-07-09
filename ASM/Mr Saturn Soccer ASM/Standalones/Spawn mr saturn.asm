@@ -11,6 +11,18 @@ stw r4,0x18(r3)
 stw r4,0x24(r3)
 li r4,MrSaturn
 stw r4,8(r3)
+cmpwi r11,0
+blt GO
+beq PLUS
+load r4,0xC1C80000
+stw r4,0x14(r3)
+stw r4,0x20(r3)
+b GO
+PLUS:
+load r4,0x41C80000
+stw r4,0x14(r3)
+stw r4,0x20(r3)
+GO:
 branchl r12,EntityItemSpawn
 stw r3,mrsaturndata(rtoc)
 lwz r20,0x2c(r3)
@@ -28,6 +40,7 @@ ori r12, r12, 0x9044
 mtctr r12
 bctrl
 stw r3, 1312(r20)
+
 
 restore
 

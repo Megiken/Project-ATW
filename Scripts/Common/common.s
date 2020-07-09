@@ -97,6 +97,7 @@ addi    r1,r1,0x100    # release the space
 .set acos,0x80022d1c
 .set atan,0x80022e68
 .set log,0x803265a8
+.set createCamera,0x80029020
 
 .set functSpace,0x8032C848
 
@@ -172,7 +173,8 @@ addi    r1,r1,0x100    # release the space
 .set IJZInit,functSpace+0x10c
 .set createGObj,functSpace+0x110
 .set spawnMrSaturn,functSpace+0x114
-
+.set resetpos,functSpace+0x118
+.set scoregoal,functSpace+0x11c
 
 
 .set prim.new,0x804dd84c
