@@ -1,8 +1,8 @@
-#To be inserted at 8065e66c
+#To be inserted at 8065e6ac
 
 .long 0
 .long 0
-.long 0x8019457c
+.long 0x801945bc
 .long 0
 .long 0
 .long 0
@@ -18,23 +18,7 @@
 .long 0
 .long 2
 .long 0
-.long 0x80194590
-.long 0x801931a4
-.long 0x8019a184
-.long 0
-.long 0x40000000
-.long 0x3f800000
-.long 2
-.long 0
-.long 0x8019459c
-.long 0x801931a4
-.long 0x8019a188
-.long 0
-.long 0x40000000
-.long 0x3f800000
-.long 2
-.long 0
-.long 0x801945ac
+.long 0x801945d0
 .long 0x801931a4
 .long 0x8019a18c
 .long 0
@@ -42,7 +26,7 @@
 .long 0x3f800000
 .long 2
 .long 0
-.long 0x801945c0
+.long 0x801945dc
 .long 0x801931a4
 .long 0x8019a190
 .long 0
@@ -50,7 +34,7 @@
 .long 0x3f800000
 .long 2
 .long 0
-.long 0x801945d4
+.long 0x801945ec
 .long 0x801931a4
 .long 0x8019a194
 .long 0
@@ -58,7 +42,7 @@
 .long 0x3f800000
 .long 2
 .long 0
-.long 0x801945ec
+.long 0x80194600
 .long 0x801931a4
 .long 0x8019a198
 .long 0
@@ -66,7 +50,7 @@
 .long 0x3f800000
 .long 2
 .long 0
-.long 0x80194604
+.long 0x80194614
 .long 0x801931a4
 .long 0x8019a19c
 .long 0
@@ -74,7 +58,7 @@
 .long 0x3f800000
 .long 2
 .long 0
-.long 0x80194614
+.long 0x8019462c
 .long 0x801931a4
 .long 0x8019a1a0
 .long 0
@@ -82,7 +66,7 @@
 .long 0x3f800000
 .long 2
 .long 0
-.long 0x80194624
+.long 0x80194644
 .long 0x801931a4
 .long 0x8019a1a4
 .long 0
@@ -90,7 +74,7 @@
 .long 0x3f800000
 .long 2
 .long 0
-.long 0x80194640
+.long 0x80194654
 .long 0x801931a4
 .long 0x8019a1a8
 .long 0
@@ -98,7 +82,7 @@
 .long 0x3f800000
 .long 2
 .long 0
-.long 0x8019465c
+.long 0x80194664
 .long 0x801931a4
 .long 0x8019a1ac
 .long 0
@@ -106,7 +90,7 @@
 .long 0x3f800000
 .long 2
 .long 0
-.long 0x80194674
+.long 0x80194680
 .long 0x801931a4
 .long 0x8019a1b0
 .long 0
@@ -114,7 +98,7 @@
 .long 0x3f800000
 .long 2
 .long 0
-.long 0x80194684
+.long 0x8019469c
 .long 0x801931a4
 .long 0x8019a1b4
 .long 0
@@ -122,9 +106,25 @@
 .long 0x3f800000
 .long 2
 .long 0
-.long 0x80194698
+.long 0x801946b4
 .long 0x801931a4
 .long 0x8019a1b8
+.long 0
+.long 0x40000000
+.long 0x3f800000
+.long 2
+.long 0
+.long 0x801946c4
+.long 0x801931a4
+.long 0x8019a1bc
+.long 0
+.long 0x40000000
+.long 0x3f800000
+.long 2
+.long 0
+.long 0x801946d8
+.long 0x801931a4
+.long 0x8019a1c0
 .long 0
 .long 0x40000000
 .long 0x3f800000

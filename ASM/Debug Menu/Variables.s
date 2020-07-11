@@ -74,151 +74,153 @@
 .long 0x00000000 # .setKongo Jungle 64 Barrel: , debugSpace+288
 .long 0x00000000 # .setCustom item timer: , debugSpace+292
 .long 0x00000320 # .setCustom Timer: , debugSpace+296
-.long 0x3f800000 # .setBob-omb, debugSpace+300
-.long 0x3f800000 # .setMr saturn, debugSpace+304
-.long 0x3f800000 # .setHeart Canister, debugSpace+308
-.long 0x3f800000 # .setMaxim Tomato, debugSpace+312
-.long 0x3f800000 # .setStarman, debugSpace+316
-.long 0x3f800000 # .setHomerun bat, debugSpace+320
-.long 0x3f800000 # .setBeam sword, debugSpace+324
-.long 0x3f800000 # .setParasol, debugSpace+328
-.long 0x3f800000 # .setGreen shell, debugSpace+332
-.long 0x3f800000 # .setRed shell, debugSpace+336
-.long 0x3f800000 # .setRay gun, debugSpace+340
-.long 0x3f800000 # .setFreezie, debugSpace+344
-.long 0x3f800000 # .setFood, debugSpace+348
-.long 0x3f800000 # .setMotion Mine, debugSpace+352
-.long 0x3f800000 # .setFlipper, debugSpace+356
-.long 0x3f800000 # .setSuper scope, debugSpace+360
-.long 0x3f800000 # .setStar rod, debugSpace+364
-.long 0x3f800000 # .setLips stick, debugSpace+368
-.long 0x3f800000 # .setFan, debugSpace+372
-.long 0x3f800000 # .setFire flower, debugSpace+376
-.long 0x3f800000 # .setSuper mushroom, debugSpace+380
-.long 0x3f800000 # .setPoison Mushroom, debugSpace+384
-.long 0x3f800000 # .setHammer, debugSpace+388
-.long 0x3f800000 # .setWarp star, debugSpace+392
-.long 0x3f800000 # .setScrew attack, debugSpace+396
-.long 0x3f800000 # .setBunny hood, debugSpace+400
-.long 0x3f800000 # .setMetal box, debugSpace+404
-.long 0x3f800000 # .setCloaking device, debugSpace+408
-.long 0x3f800000 # .setPokeball, debugSpace+412
-.long 0x3f800000 # .setYoshi egg, debugSpace+416
-.long 0x3f800000 # .setBarrel cannon, debugSpace+420
-.long 0x3f800000 # .setParty ball, debugSpace+424
-.long 0x3f800000 # .setEgg, debugSpace+428
-.long 0x3f800000 # .setBarrel, debugSpace+432
-.long 0x3f800000 # .setBox, debugSpace+436
-.long 0x3f800000 # .setChikorita, debugSpace+440
-.long 0x3f800000 # .setSnorlax, debugSpace+444
-.long 0x3f800000 # .setBlastoise, debugSpace+448
-.long 0x3f800000 # .setWeezing, debugSpace+452
-.long 0x3f800000 # .setCharizard, debugSpace+456
-.long 0x3f800000 # .setMoltres, debugSpace+460
-.long 0x3f800000 # .setZapdos, debugSpace+464
-.long 0x3f800000 # .setArticuno, debugSpace+468
-.long 0x3f800000 # .setWobuffet, debugSpace+472
-.long 0x3f800000 # .setScizor, debugSpace+476
-.long 0x3f800000 # .setUnown, debugSpace+480
-.long 0x3f800000 # .setEntei, debugSpace+484
-.long 0x3f800000 # .setRaikou, debugSpace+488
-.long 0x3f800000 # .setSuicune, debugSpace+492
-.long 0x3f800000 # .setBellossom, debugSpace+496
-.long 0x3f800000 # .setVoltorb, debugSpace+500
-.long 0x3f800000 # .setLugia, debugSpace+504
-.long 0x3f800000 # .setHooh, debugSpace+508
-.long 0x3f800000 # .setDitto, debugSpace+512
-.long 0x3f800000 # .setClefairy, debugSpace+516
-.long 0x3f800000 # .setTogepi, debugSpace+520
-.long 0x3f800000 # .setMew, debugSpace+524
-.long 0x3f800000 # .setCelebi, debugSpace+528
-.long 0x3f800000 # .setStaryu, debugSpace+532
-.long 0x3f800000 # .setChansey, debugSpace+536
-.long 0x3f800000 # .setPorygon, debugSpace+540
-.long 0x3f800000 # .setCyndaquil, debugSpace+544
-.long 0x3f800000 # .setMarill, debugSpace+548
-.long 0x3f800000 # .setVenusaur, debugSpace+552
-.long 0x00000028 # .setMax items on screen: , debugSpace+556
-.long 0x00000001 # .setFancy throwing: , debugSpace+560
-.long 0x00000001 # .setTaunt to gain item: , debugSpace+564
-.long 0x00000001 # .setAir grabs: , debugSpace+568
-.long 0x00000001 # .setAerial taunts: , debugSpace+572
-.long 0x00000001 # .setTaunt cancelling: , debugSpace+576
-.long 0x00000001 # .setFastfall whenever: , debugSpace+580
-.long 0x00000001 # .setInvisible ceiling fix: , debugSpace+584
-.long 0x00000001 # .setRemove grab infinites: , debugSpace+588
-.long 0x00000001 # .setWall bracing: , debugSpace+592
-.long 0x00000001 # .setAuto L cancel: , debugSpace+596
-.long 0x00000001 # .setPercent swap in doubles: , debugSpace+600
-.long 0x00000001 # .setAny colours in doubles: , debugSpace+604
-.long 0x00000001 # .setEveryone can walljump: , debugSpace+608
-.long 0x00000001 # .setClimber clone: , debugSpace+612
-.long 0x00000001 # .setEveryone is 2d: , debugSpace+616
-.long 0x00000001 # .setLedge invincibility attrition: , debugSpace+620
-.long 0x00000000 # .setPlayer 1 Character: , debugSpace+624
-.long 0x00000000 # .setPlayer 2 Character: , debugSpace+628
-.long 0x00000000 # .setPlayer 3 Character: , debugSpace+632
-.long 0x00000000 # .setPlayer 4 Character: , debugSpace+636
-.long 0x00000001 # .setGame Type: , debugSpace+640
-.long 0x00000005 # .setTeams: , debugSpace+644
-.long 0x00000000 # .setTimer: , debugSpace+648
-.long 0x00000064 # .setCustom Timer: , debugSpace+652
-.long 0x0000001a # .setNumber of Characters: , debugSpace+656
-.long 0x00000001 # .setSave stocks (iron man):, debugSpace+660
-.long 0x00000005 # .setNumber of Characters: , debugSpace+664
-.long 0x00000000 # .setCharacter order: , debugSpace+668
-.long 0x00000000 # .setBan order: , debugSpace+672
-.long 0x000003e8 # .setMoney per person: , debugSpace+676
-.long 0x000000fa # .setCaptain Falcon cost: , debugSpace+680
-.long 0x00000096 # .setDonkey Kong cost: , debugSpace+684
-.long 0x000000fa # .setFox cost: , debugSpace+688
-.long 0x0000007d # .setMr Game and Watch cost: , debugSpace+692
-.long 0x00000064 # .setKirby cost: , debugSpace+696
-.long 0x00000064 # .setBowser cost: , debugSpace+700
-.long 0x00000096 # .setLink cost: , debugSpace+704
-.long 0x000000c8 # .setLuigi cost: , debugSpace+708
-.long 0x00000096 # .setMario cost: , debugSpace+712
-.long 0x000000fa # .setMarth cost: , debugSpace+716
-.long 0x00000064 # .setMewtwo cost: , debugSpace+720
-.long 0x00000064 # .setNess cost: , debugSpace+724
-.long 0x000000fa # .setPeach cost: , debugSpace+728
-.long 0x000000c8 # .setPikachu cost: , debugSpace+732
-.long 0x000000fa # .setIce Climbers cost: , debugSpace+736
-.long 0x000000fa # .setJigglypuff cost: , debugSpace+740
-.long 0x000000c8 # .setSamus cost: , debugSpace+744
-.long 0x000000af # .setYoshi cost: , debugSpace+748
-.long 0x0000007d # .setZelda cost: , debugSpace+752
-.long 0x000000fa # .setSheik cost: , debugSpace+756
-.long 0x000000fa # .setFalco cost: , debugSpace+760
-.long 0x00000096 # .setYoung Link cost: , debugSpace+764
-.long 0x000000c8 # .setDoctor Mario cost: , debugSpace+768
-.long 0x0000007d # .setRoy cost: , debugSpace+772
-.long 0x0000007d # .setPichu cost: , debugSpace+776
-.long 0x000000af # .setGanondorf cost: , debugSpace+780
-.long 0x00000004 # .setNumber of characters: , debugSpace+784
-.long 0x0000001a # .setNumber of characters: , debugSpace+788
-.long 0x0000000a # .setBomb Impact Damage: , debugSpace+792
-.long 0x0000000a # .setBomb Explosion Damage: , debugSpace+796
-.long 0x0000000b # .setGravity/100: , debugSpace+800
-.long 0x00000073 # .setTerminal Velocity/100: , debugSpace+804
-.long 0x00000000 # .setGame Type: , debugSpace+808
-.long 0x000009c4 # .setMax Score: , debugSpace+812
-.long 0x0000001e # .setTime per Hill: , debugSpace+816
-.long 0x00000000 # .setPercent/Stamina, debugSpace+820
-.long 0x00000096 # .setStamina Amount, debugSpace+824
-.long 0x00000000 # .setSize: , debugSpace+828
-.long 0x00000000 # .setHead: , debugSpace+832
-.long 0x00000000 # .setBody: , debugSpace+836
-.long 0x00000000 # .setStatus: , debugSpace+840
-.long 0x00000000 # .setGravity: , debugSpace+844
-.long 0x00000000 # .setSpeed: , debugSpace+848
-.long 0x00000000 # .setCamera: , debugSpace+852
-.long 0x00000000 # .setCustom gamemodes: , debugSpace+856
-.long 0x00000000 # .setBattlefield skin: , debugSpace+860
-.long 0x00000000 # .setFD skin: , debugSpace+864
-.long 0x00000000 # .setPokemon stadium skin: , debugSpace+868
-.long 0x00000000 # .setYoshis story skin: , debugSpace+872
-.long 0x00000000 # .setFOD skin: , debugSpace+876
-.long 0x00000000 # .setDreamland skin: , debugSpace+880
-.long 0x00000000 # .setCSS skin: , debugSpace+884
-.long 0x00000001 # .setCostume Dependent Marth Sword Colours: , debugSpace+888
+.long 0x00000001 # .setUse Custom Item Spawn Rate: , debugSpace+300
+.long 0x3f800000 # .setBob-omb, debugSpace+304
+.long 0x3f800000 # .setMr saturn, debugSpace+308
+.long 0x3f800000 # .setHeart Canister, debugSpace+312
+.long 0x3f800000 # .setMaxim Tomato, debugSpace+316
+.long 0x3f800000 # .setStarman, debugSpace+320
+.long 0x3f800000 # .setHomerun bat, debugSpace+324
+.long 0x3f800000 # .setBeam sword, debugSpace+328
+.long 0x3f800000 # .setParasol, debugSpace+332
+.long 0x3f800000 # .setGreen shell, debugSpace+336
+.long 0x3f800000 # .setRed shell, debugSpace+340
+.long 0x3f800000 # .setRay gun, debugSpace+344
+.long 0x3f800000 # .setFreezie, debugSpace+348
+.long 0x3f800000 # .setFood, debugSpace+352
+.long 0x3f800000 # .setMotion Mine, debugSpace+356
+.long 0x3f800000 # .setFlipper, debugSpace+360
+.long 0x3f800000 # .setSuper scope, debugSpace+364
+.long 0x3f800000 # .setStar rod, debugSpace+368
+.long 0x3f800000 # .setLips stick, debugSpace+372
+.long 0x3f800000 # .setFan, debugSpace+376
+.long 0x3f800000 # .setFire flower, debugSpace+380
+.long 0x3f800000 # .setSuper mushroom, debugSpace+384
+.long 0x3f800000 # .setPoison Mushroom, debugSpace+388
+.long 0x3f800000 # .setHammer, debugSpace+392
+.long 0x3f800000 # .setWarp star, debugSpace+396
+.long 0x3f800000 # .setScrew attack, debugSpace+400
+.long 0x3f800000 # .setBunny hood, debugSpace+404
+.long 0x3f800000 # .setMetal box, debugSpace+408
+.long 0x3f800000 # .setCloaking device, debugSpace+412
+.long 0x3f800000 # .setPokeball, debugSpace+416
+.long 0x3f800000 # .setYoshi egg, debugSpace+420
+.long 0x3f800000 # .setBarrel cannon, debugSpace+424
+.long 0x3f800000 # .setParty ball, debugSpace+428
+.long 0x3f800000 # .setEgg, debugSpace+432
+.long 0x3f800000 # .setBarrel, debugSpace+436
+.long 0x3f800000 # .setBox, debugSpace+440
+.long 0x00000001 # .setUse Custom Pokemon Spawn Rate: , debugSpace+444
+.long 0x3f800000 # .setChikorita, debugSpace+448
+.long 0x3f800000 # .setSnorlax, debugSpace+452
+.long 0x3f800000 # .setBlastoise, debugSpace+456
+.long 0x3f800000 # .setWeezing, debugSpace+460
+.long 0x3f800000 # .setCharizard, debugSpace+464
+.long 0x3f800000 # .setMoltres, debugSpace+468
+.long 0x3f800000 # .setZapdos, debugSpace+472
+.long 0x3f800000 # .setArticuno, debugSpace+476
+.long 0x3f800000 # .setWobuffet, debugSpace+480
+.long 0x3f800000 # .setScizor, debugSpace+484
+.long 0x3f800000 # .setUnown, debugSpace+488
+.long 0x3f800000 # .setEntei, debugSpace+492
+.long 0x3f800000 # .setRaikou, debugSpace+496
+.long 0x3f800000 # .setSuicune, debugSpace+500
+.long 0x3f800000 # .setBellossom, debugSpace+504
+.long 0x3f800000 # .setVoltorb, debugSpace+508
+.long 0x3f800000 # .setLugia, debugSpace+512
+.long 0x3f800000 # .setHooh, debugSpace+516
+.long 0x3f800000 # .setDitto, debugSpace+520
+.long 0x3f800000 # .setClefairy, debugSpace+524
+.long 0x3f800000 # .setTogepi, debugSpace+528
+.long 0x3f800000 # .setMew, debugSpace+532
+.long 0x3f800000 # .setCelebi, debugSpace+536
+.long 0x3f800000 # .setStaryu, debugSpace+540
+.long 0x3f800000 # .setChansey, debugSpace+544
+.long 0x3f800000 # .setPorygon, debugSpace+548
+.long 0x3f800000 # .setCyndaquil, debugSpace+552
+.long 0x3f800000 # .setMarill, debugSpace+556
+.long 0x3f800000 # .setVenusaur, debugSpace+560
+.long 0x00000028 # .setMax items on screen: , debugSpace+564
+.long 0x00000001 # .setFancy throwing: , debugSpace+568
+.long 0x00000001 # .setTaunt to gain item: , debugSpace+572
+.long 0x00000001 # .setAir grabs: , debugSpace+576
+.long 0x00000001 # .setAerial taunts: , debugSpace+580
+.long 0x00000001 # .setTaunt cancelling: , debugSpace+584
+.long 0x00000001 # .setFastfall whenever: , debugSpace+588
+.long 0x00000001 # .setInvisible ceiling fix: , debugSpace+592
+.long 0x00000001 # .setRemove grab infinites: , debugSpace+596
+.long 0x00000001 # .setWall bracing: , debugSpace+600
+.long 0x00000001 # .setAuto L cancel: , debugSpace+604
+.long 0x00000001 # .setPercent swap in doubles: , debugSpace+608
+.long 0x00000001 # .setAny colours in doubles: , debugSpace+612
+.long 0x00000001 # .setEveryone can walljump: , debugSpace+616
+.long 0x00000001 # .setClimber clone: , debugSpace+620
+.long 0x00000001 # .setEveryone is 2d: , debugSpace+624
+.long 0x00000001 # .setLedge invincibility attrition: , debugSpace+628
+.long 0x00000000 # .setPlayer 1 Character: , debugSpace+632
+.long 0x00000000 # .setPlayer 2 Character: , debugSpace+636
+.long 0x00000000 # .setPlayer 3 Character: , debugSpace+640
+.long 0x00000000 # .setPlayer 4 Character: , debugSpace+644
+.long 0x00000001 # .setGame Type: , debugSpace+648
+.long 0x00000005 # .setTeams: , debugSpace+652
+.long 0x00000000 # .setTimer: , debugSpace+656
+.long 0x00000064 # .setCustom Timer: , debugSpace+660
+.long 0x0000001a # .setNumber of Characters: , debugSpace+664
+.long 0x00000001 # .setSave stocks (iron man):, debugSpace+668
+.long 0x00000005 # .setNumber of Characters: , debugSpace+672
+.long 0x00000000 # .setCharacter order: , debugSpace+676
+.long 0x00000000 # .setBan order: , debugSpace+680
+.long 0x000003e8 # .setMoney per person: , debugSpace+684
+.long 0x000000fa # .setCaptain Falcon cost: , debugSpace+688
+.long 0x00000096 # .setDonkey Kong cost: , debugSpace+692
+.long 0x000000fa # .setFox cost: , debugSpace+696
+.long 0x0000007d # .setMr Game and Watch cost: , debugSpace+700
+.long 0x00000064 # .setKirby cost: , debugSpace+704
+.long 0x00000064 # .setBowser cost: , debugSpace+708
+.long 0x00000096 # .setLink cost: , debugSpace+712
+.long 0x000000c8 # .setLuigi cost: , debugSpace+716
+.long 0x00000096 # .setMario cost: , debugSpace+720
+.long 0x000000fa # .setMarth cost: , debugSpace+724
+.long 0x00000064 # .setMewtwo cost: , debugSpace+728
+.long 0x00000064 # .setNess cost: , debugSpace+732
+.long 0x000000fa # .setPeach cost: , debugSpace+736
+.long 0x000000c8 # .setPikachu cost: , debugSpace+740
+.long 0x000000fa # .setIce Climbers cost: , debugSpace+744
+.long 0x000000fa # .setJigglypuff cost: , debugSpace+748
+.long 0x000000c8 # .setSamus cost: , debugSpace+752
+.long 0x000000af # .setYoshi cost: , debugSpace+756
+.long 0x0000007d # .setZelda cost: , debugSpace+760
+.long 0x000000fa # .setSheik cost: , debugSpace+764
+.long 0x000000fa # .setFalco cost: , debugSpace+768
+.long 0x00000096 # .setYoung Link cost: , debugSpace+772
+.long 0x000000c8 # .setDoctor Mario cost: , debugSpace+776
+.long 0x0000007d # .setRoy cost: , debugSpace+780
+.long 0x0000007d # .setPichu cost: , debugSpace+784
+.long 0x000000af # .setGanondorf cost: , debugSpace+788
+.long 0x00000004 # .setNumber of characters: , debugSpace+792
+.long 0x0000001a # .setNumber of characters: , debugSpace+796
+.long 0x0000000a # .setBomb Impact Damage: , debugSpace+800
+.long 0x0000000a # .setBomb Explosion Damage: , debugSpace+804
+.long 0x0000000b # .setGravity/100: , debugSpace+808
+.long 0x00000073 # .setTerminal Velocity/100: , debugSpace+812
+.long 0x00000000 # .setGame Type: , debugSpace+816
+.long 0x000009c4 # .setMax Score: , debugSpace+820
+.long 0x0000001e # .setTime per Hill: , debugSpace+824
+.long 0x00000000 # .setPercent/Stamina, debugSpace+828
+.long 0x00000096 # .setStamina Amount, debugSpace+832
+.long 0x00000000 # .setSize: , debugSpace+836
+.long 0x00000000 # .setHead: , debugSpace+840
+.long 0x00000000 # .setBody: , debugSpace+844
+.long 0x00000000 # .setStatus: , debugSpace+848
+.long 0x00000000 # .setGravity: , debugSpace+852
+.long 0x00000000 # .setSpeed: , debugSpace+856
+.long 0x00000000 # .setCamera: , debugSpace+860
+.long 0x00000000 # .setCustom gamemodes: , debugSpace+864
+.long 0x00000000 # .setBattlefield skin: , debugSpace+868
+.long 0x00000000 # .setFD skin: , debugSpace+872
+.long 0x00000000 # .setPokemon stadium skin: , debugSpace+876
+.long 0x00000000 # .setYoshis story skin: , debugSpace+880
+.long 0x00000000 # .setFOD skin: , debugSpace+884
+.long 0x00000000 # .setDreamland skin: , debugSpace+888
+.long 0x00000000 # .setCSS skin: , debugSpace+892
+.long 0x00000001 # .setCostume Dependent Marth Sword Colours: , debugSpace+896

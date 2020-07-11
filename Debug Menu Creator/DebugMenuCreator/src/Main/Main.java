@@ -422,11 +422,44 @@ public class Main{
 		extrasMain.menuItems[1] = new menuItem(0);
 		extrasMain.menuItems[2] = new menuItem(0,"Soon");
 		
+		subMenu BBWSettings = new subMenu(1,"BBW Settings");
+		
+		BBWSettings.menuItems[0] = new menuItem(0,"Bretts blastzone warp settings");
+		BBWSettings.menuItems[1] = new menuItem(0);
+		BBWSettings.menuItems[2] = new menuItem(3,"Damage per warp",20,100,1,0);
+		BBWSettings.menuItems[3] = new menuItem(3,"Kill percent",1000,1000,5);
+		
+		subMenu BBWInfo = new subMenu(1,"How to play BBW");
+		
+		BBWInfo.menuItems[0] = new menuItem(0,"Bretts blastzone warp info");
+		BBWInfo.menuItems[1] = new menuItem(0);
+		BBWInfo.menuItems[2] = new menuItem(0,"This is a very simple minigame, touching a blastzone warps you to");
+		BBWInfo.menuItems[3] = new menuItem(0,"opposite blastzone, and gives you some percent. Once you reach the");
+		BBWInfo.menuItems[4] = new menuItem(0,"kill percent, you lose your stock.");
+		
 		subMenu BBWMain = new subMenu(1,"Bretts blastzone warp");
 		
 		BBWMain.menuItems[0] = new menuItem(0,"Bretts blastzone warp main menu");
 		BBWMain.menuItems[1] = new menuItem(0);
 		BBWMain.menuItems[2] = new menuItem(1,"8032C944","Play");
+		BBWMain.menuItems[3] = BBWSettings;
+		BBWMain.menuItems[4] = BBWInfo;
+		
+		
+		subMenu MRSSSettings = new subMenu(1,"Soccer Settings");
+		
+		MRSSSettings.menuItems[0] = new menuItem(0,"Mr saturn soccer settings");
+		MRSSSettings.menuItems[1] = new menuItem(0);
+		MRSSSettings.menuItems[2] = new menuItem(2,"Game type: ",kothgame,0);
+		MRSSSettings.menuItems[3] = new menuItem(3,"Max score: ",7,50,1);
+		MRSSSettings.menuItems[4] = new menuItem(8,"Mr saturn speed constant: ",1.1,4,0.01,0);
+		
+		subMenu MRSSInfo = new subMenu(1, "How to play soccer");
+		
+		MRSSInfo.menuItems[0] = new menuItem(0,"How to play mr saturn soccer");
+		MRSSInfo.menuItems[1] = new menuItem(0);
+		MRSSInfo.menuItems[2] = new menuItem(0,"Knock mr saturn into your opponents goal to score.");
+		MRSSInfo.menuItems[3] = new menuItem(0,"By default, the first team to 7 points wins!");
 		
 		subMenu MRSSMain = new subMenu(1,"Mr Saturn Soccer");
 		
@@ -538,55 +571,57 @@ public class Main{
 		generalItems.menuItems[2] = new menuItem(2,"Custom item timer: ",ende,0);
 		generalItems.menuItems[3] = new menuItem(3,"Custom Timer: ",800,2000,5);
 		generalItems.menuItems[4] = new menuItem(0);
-		generalItems.menuItems[5] = customItemSelectScreen;
-		generalItems.menuItems[6] = customPokemonSelectScreen;
-		generalItems.menuItems[7] = new menuItem(0);
-		generalItems.menuItems[8] = new menuItem(3,"Max items on screen: ",40,100,1);
-		generalItems.menuItems[9] = new menuItem(2,"Fancy throwing: ",ende,1);
-		generalItems.menuItems[10] = new menuItem(2,"Taunt to gain item: ",ende,1);
+		generalItems.menuItems[5] = new menuItem(2,"Use Custom Item Spawn Rate: ", ende,1);
+		generalItems.menuItems[6] = customItemSelectScreen;
+		generalItems.menuItems[7] = new menuItem(2,"Use Custom Pokemon Spawn Rate: ", ende,1);
+		generalItems.menuItems[8] = customPokemonSelectScreen;
+		generalItems.menuItems[9] = new menuItem(0);
+		generalItems.menuItems[10] = new menuItem(3,"Max items on screen: ",40,100,1);
+		generalItems.menuItems[11] = new menuItem(2,"Fancy throwing: ",ende,1);
+		generalItems.menuItems[12] = new menuItem(2,"Taunt to gain item: ",ende,1);
 		
 		
 		customItemSelectScreen.menuItems[0] = new menuItem(0,"Custom Choose Random Item Builder");
 		customItemSelectScreen.menuItems[1] = new menuItem(0);
 		customItemSelectScreen.menuItems[2] = customItemSelectScreen2;
-		customItemSelectScreen.menuItems[3] = new menuItem(8,"Red shell",1,100,0.1,0);
-		customItemSelectScreen.menuItems[4] = new menuItem(8,"Ray gun",1,100,0.1,0);
-		customItemSelectScreen.menuItems[5] = new menuItem(8,"Freezie",1,100,0.1,0);
-		customItemSelectScreen.menuItems[6] = new menuItem(8,"Food",1,100,0.1,0);
-		customItemSelectScreen.menuItems[7] = new menuItem(8,"Motion Mine",1,100,0.1,0);
-		customItemSelectScreen.menuItems[8] = new menuItem(8,"Flipper",1,100,0.1,0);
-		customItemSelectScreen.menuItems[9] = new menuItem(8,"Super scope",1,100,0.1,0);
-		customItemSelectScreen.menuItems[10] = new menuItem(8,"Star rod",1,100,0.1,0);
-		customItemSelectScreen.menuItems[11] = new menuItem(8,"Lips stick",1,100,0.1,0);
-		customItemSelectScreen.menuItems[12] = new menuItem(8,"Fan",1,100,0.1,0);
-		customItemSelectScreen.menuItems[13] = new menuItem(8,"Fire flower",1,100,0.1,0);
-		customItemSelectScreen.menuItems[14] = new menuItem(8,"Super mushroom",1,100,0.1,0);
-		customItemSelectScreen.menuItems[15] = new menuItem(8,"Poison Mushroom",1,100,0.1,0);
-		customItemSelectScreen.menuItems[16] = new menuItem(8,"Hammer",1,100,0.1,0);
-		customItemSelectScreen.menuItems[17] = new menuItem(8,"Warp star",1,100,0.1,0);
-		customItemSelectScreen.menuItems[18] = new menuItem(8,"Screw attack",1,100,0.1,0);
-		customItemSelectScreen.menuItems[19] = new menuItem(8,"Bunny hood",1,100,0.1,0);
-		customItemSelectScreen.menuItems[20] = new menuItem(8,"Metal box",1,100,0.1,0);
-		customItemSelectScreen.menuItems[21] = new menuItem(8,"Cloaking device",1,100,0.1,0);
-		customItemSelectScreen.menuItems[22] = new menuItem(8,"Pokeball",1,100,0.1,0);
-		customItemSelectScreen.menuItems[23] = new menuItem(8,"Yoshi egg",1,100,0.1,0);
-		customItemSelectScreen.menuItems[24] = new menuItem(8,"Barrel cannon",1,100,0.1,0);
-		customItemSelectScreen.menuItems[25] = new menuItem(8,"Party ball",1,100,0.1,0);
-		customItemSelectScreen.menuItems[26] = new menuItem(8,"Egg",1,100,0.1,0);
-		customItemSelectScreen.menuItems[27] = new menuItem(8,"Barrel",1,100,0.1,0);
-		customItemSelectScreen.menuItems[28] = new menuItem(8,"Box",1,100,0.1,0);
+		customItemSelectScreen.menuItems[3] = new menuItem(8,"Red shell",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[4] = new menuItem(8,"Ray gun",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[5] = new menuItem(8,"Freezie",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[6] = new menuItem(8,"Food",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[7] = new menuItem(8,"Motion Mine",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[8] = new menuItem(8,"Flipper",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[9] = new menuItem(8,"Super scope",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[10] = new menuItem(8,"Star rod",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[11] = new menuItem(8,"Lips stick",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[12] = new menuItem(8,"Fan",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[13] = new menuItem(8,"Fire flower",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[14] = new menuItem(8,"Super mushroom",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[15] = new menuItem(8,"Poison Mushroom",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[16] = new menuItem(8,"Hammer",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[17] = new menuItem(8,"Warp star",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[18] = new menuItem(8,"Screw attack",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[19] = new menuItem(8,"Bunny hood",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[20] = new menuItem(8,"Metal box",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[21] = new menuItem(8,"Cloaking device",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[22] = new menuItem(8,"Pokeball",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[23] = new menuItem(8,"Yoshi egg",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[24] = new menuItem(8,"Barrel cannon",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[25] = new menuItem(8,"Party ball",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[26] = new menuItem(8,"Egg",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[27] = new menuItem(8,"Barrel",1,100,0.1,-0.1);
+		customItemSelectScreen.menuItems[28] = new menuItem(8,"Box",1,100,0.1,-0.1);
 		
 		customItemSelectScreen2.menuItems[0] = new menuItem(0,"Custom Choose Random Item Builder");
 		customItemSelectScreen2.menuItems[1] = new menuItem(0);
-		customItemSelectScreen2.menuItems[2] = new menuItem(8,"Bob-omb",1,100,0.1,0);
-		customItemSelectScreen2.menuItems[3] = new menuItem(8,"Mr saturn",1,100,0.1,0);
-		customItemSelectScreen2.menuItems[4] = new menuItem(8,"Heart Canister",1,100,0.1,0);
-		customItemSelectScreen2.menuItems[5] = new menuItem(8,"Maxim Tomato",1,100,0.1,0);
-		customItemSelectScreen2.menuItems[6] = new menuItem(8,"Starman",1,100,0.1,0);
-		customItemSelectScreen2.menuItems[7] = new menuItem(8,"Homerun bat",1,100,0.1,0);
-		customItemSelectScreen2.menuItems[8] = new menuItem(8,"Beam sword",1,100,0.1,0);
-		customItemSelectScreen2.menuItems[9] = new menuItem(8,"Parasol",1,100,0.1,0);
-		customItemSelectScreen2.menuItems[10] = new menuItem(8,"Green shell",1,100,0.1,0);
+		customItemSelectScreen2.menuItems[2] = new menuItem(8,"Bob-omb",1,100,0.1,-0.1);
+		customItemSelectScreen2.menuItems[3] = new menuItem(8,"Mr saturn",1,100,0.1,-0.1);
+		customItemSelectScreen2.menuItems[4] = new menuItem(8,"Heart Canister",1,100,0.1,-0.1);
+		customItemSelectScreen2.menuItems[5] = new menuItem(8,"Maxim Tomato",1,100,0.1,-0.1);
+		customItemSelectScreen2.menuItems[6] = new menuItem(8,"Starman",1,100,0.1,-0.1);
+		customItemSelectScreen2.menuItems[7] = new menuItem(8,"Homerun bat",1,100,0.1,-0.1);
+		customItemSelectScreen2.menuItems[8] = new menuItem(8,"Beam sword",1,100,0.1,-0.1);
+		customItemSelectScreen2.menuItems[9] = new menuItem(8,"Parasol",1,100,0.1,-0.1);
+		customItemSelectScreen2.menuItems[10] = new menuItem(8,"Green shell",1,100,0.1,-0.1);
 
 		customItemSelectScreen2.menuItems[11] = new menuItem(0);
 		customItemSelectScreen2.menuItems[12] = new menuItem(0,"Each of the numbers represents the % chance for the item to spawn.");
@@ -598,38 +633,38 @@ public class Main{
 		customPokemonSelectScreen.menuItems[0] = new menuItem(0,"Custom Choose Random Pokemon Builder");
 		customPokemonSelectScreen.menuItems[1] = new menuItem(0);
 		customPokemonSelectScreen.menuItems[2] = customPokemonSelectScreen2;
-		customPokemonSelectScreen.menuItems[3] = new menuItem(8,"Weezing",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[4] = new menuItem(8,"Charizard",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[5] = new menuItem(8,"Moltres",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[6] = new menuItem(8,"Zapdos",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[7] = new menuItem(8,"Articuno",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[8] = new menuItem(8,"Wobuffet",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[9] = new menuItem(8,"Scizor",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[10] = new menuItem(8,"Unown",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[11] = new menuItem(8,"Entei",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[12] = new menuItem(8,"Raikou",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[13] = new menuItem(8,"Suicune",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[14] = new menuItem(8,"Bellossom",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[15] = new menuItem(8,"Voltorb",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[16] = new menuItem(8,"Lugia",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[17] = new menuItem(8,"Hooh",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[18] = new menuItem(8,"Ditto",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[19] = new menuItem(8,"Clefairy",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[20] = new menuItem(8,"Togepi",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[21] = new menuItem(8,"Mew",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[22] = new menuItem(8,"Celebi",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[23] = new menuItem(8,"Staryu",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[24] = new menuItem(8,"Chansey",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[25] = new menuItem(8,"Porygon",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[26] = new menuItem(8,"Cyndaquil",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[27] = new menuItem(8,"Marill",1,100,0.1,0);
-		customPokemonSelectScreen.menuItems[28] = new menuItem(8,"Venusaur",1,100,0.1,0);
+		customPokemonSelectScreen.menuItems[3] = new menuItem(8,"Weezing",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[4] = new menuItem(8,"Charizard",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[5] = new menuItem(8,"Moltres",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[6] = new menuItem(8,"Zapdos",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[7] = new menuItem(8,"Articuno",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[8] = new menuItem(8,"Wobuffet",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[9] = new menuItem(8,"Scizor",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[10] = new menuItem(8,"Unown",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[11] = new menuItem(8,"Entei",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[12] = new menuItem(8,"Raikou",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[13] = new menuItem(8,"Suicune",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[14] = new menuItem(8,"Bellossom",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[15] = new menuItem(8,"Voltorb",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[16] = new menuItem(8,"Lugia",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[17] = new menuItem(8,"Hooh",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[18] = new menuItem(8,"Ditto",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[19] = new menuItem(8,"Clefairy",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[20] = new menuItem(8,"Togepi",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[21] = new menuItem(8,"Mew",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[22] = new menuItem(8,"Celebi",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[23] = new menuItem(8,"Staryu",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[24] = new menuItem(8,"Chansey",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[25] = new menuItem(8,"Porygon",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[26] = new menuItem(8,"Cyndaquil",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[27] = new menuItem(8,"Marill",1,100,0.1,-0.1);
+		customPokemonSelectScreen.menuItems[28] = new menuItem(8,"Venusaur",1,100,0.1,-0.1);
 		
 		customPokemonSelectScreen2.menuItems[0] = new menuItem(0,"Custom Choose Random Pokemon Builder");
 		customPokemonSelectScreen2.menuItems[1] = new menuItem(0);
-		customPokemonSelectScreen2.menuItems[2] = new menuItem(8,"Chikorita",1,100,0.1,0);
-		customPokemonSelectScreen2.menuItems[3] = new menuItem(8,"Snorlax",1,100,0.1,0);
-		customPokemonSelectScreen2.menuItems[4] = new menuItem(8,"Blastoise",1,100,0.1,0);
+		customPokemonSelectScreen2.menuItems[2] = new menuItem(8,"Chikorita",1,100,0.1,-0.1);
+		customPokemonSelectScreen2.menuItems[3] = new menuItem(8,"Snorlax",1,100,0.1,-0.1);
+		customPokemonSelectScreen2.menuItems[4] = new menuItem(8,"Blastoise",1,100,0.1,-0.1);
 		customPokemonSelectScreen2.menuItems[5] = new menuItem(0);
 		customPokemonSelectScreen2.menuItems[6] = new menuItem(0,"Each of the numbers represents the % chance for the item to spawn.");
 		customPokemonSelectScreen2.menuItems[7] = new menuItem(0,"The chance for goldeen to spawn is the remaining amount if your");

@@ -12,9 +12,9 @@ fmr f1,f8
 branchl r12,sin
 fmr f12,f1
 bl THERE
+.float 1.14
+.float 6
 .float 1
-.float 8
-.float 0.5
 THERE:
 mflr r23
 lfs f10,0(r23)
@@ -44,18 +44,14 @@ b STOREY
 NEGA:
 fneg f1,f3
 STOREY:
-lfs f0,0x44(r29)
-fadd f0,f0,f1
-stfs f0,0x44(r29)
+stfs f1,0x44(r29)
 fmr f1,f11
 branchl r12,cos
 fmul f1,f1,f9
 lfs f2,0xccc(r29)
 fneg f2,f2
 fmul f1,f2,f1
-lfs f0,0x40(r29)
-fadd f0,f0,f1
-stfs f0,0x40(r29)
+stfs f1,0x40(r29)
 b END
 NORMAL:
 restore
