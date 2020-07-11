@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Main{
 	public static String[] functions = {"803001dc","8032C908","8032C908","8032C908","8032C908","8032C908"};
-	
+
 	final static String toCSS = "8032C90c";
 	final static String toCSSClear = "8032C910";
 	public static int spaceLOL = 0;
@@ -87,7 +87,7 @@ public class Main{
 		generalVisuals.menuItems[13] = new menuItem(2,"CSS skin: ",skins,0);
 		generalVisuals.menuItems[14] = new menuItem(0);
 		generalVisuals.menuItems[15] = new menuItem(2,"Costume Dependent Marth Sword Colours: ",ende,1);
-		
+
 
 		projectATW.menuItems[0] = new menuItem(0,"  /$$$$$$  /$$$$$$$$ /$$      /$$");
 		projectATW.menuItems[1] = new menuItem(0," /$$__  $$1__  $$__/1 $$  /$ 1 $$");
@@ -122,8 +122,8 @@ public class Main{
 		generalMechanics.menuItems[13] = new menuItem(2,"Climber clone: ",ende,1);
 		generalMechanics.menuItems[14] = new menuItem(2,"Everyone is 2d: ",ende,1);
 		generalMechanics.menuItems[15] = new menuItem(2,"Ledge invincibility attrition: ",ende,1);
-		
-	
+
+
 
 		subMenu ATWstartMatch = new subMenu(1,"Start new atw");
 
@@ -315,9 +315,9 @@ public class Main{
 	    ironManInfoM.menuItems[4] = new menuItem(0,"roster gives you your money back.");
 
 		subMenu ironManMain = new subMenu(1,"Iron Man");
-		
+
 		subMenu ironManPlay = new subMenu(1,"Start new game");
-		
+
 		ironManPlay.menuItems[0] = new menuItem(0,"New game");
 		ironManPlay.menuItems[1] = new menuItem(0);
 		ironManPlay.menuItems[2] = new menuItem(1,"8032C8c8","New regular iron man");
@@ -328,7 +328,7 @@ public class Main{
 		ironManPlay.menuItems[7] = new menuItem(0);
 		ironManPlay.menuItems[8] = new menuItem(1,"8032C8d0","New big money iron man");
 		ironManPlay.menuItems[9] = ironManInfoM;
-		
+
 
 		ironManMain.menuItems[0] = new menuItem(0,"Iron Man Main Menu");
 		ironManMain.menuItems[1] = new menuItem(0);
@@ -336,7 +336,7 @@ public class Main{
 		ironManMain.menuItems[3] = ironManPlay;
 		ironManMain.menuItems[4] = ironManSettings;
 		ironManMain.menuItems[5] = ironManBuy;
-		
+
 
 		subMenu specialMelee = new subMenu(1,"Special Melee");
 
@@ -352,23 +352,23 @@ public class Main{
 		specialMelee.menuItems[9] = new menuItem(2,"Speed: ",SM7,0);
 		specialMelee.menuItems[10] = new menuItem(2,"Camera: ",SM8,0);
 
-		
-		
+
+
 		subMenu ssMain = new subMenu(1,"Squad Strike");
 		subMenu amMain = new subMenu(1,"Arms race");
-		
+
 		subMenu amSettings = new subMenu(1,"Arms race settings");
 		subMenu amInfo = new subMenu(1,"How to play arms race");
-		
+
 		subMenu ssSettings = new subMenu(1,"Squad strike settings");
 		subMenu ssInfo = new subMenu(1,"How to play squad strike");
-		
+
 		ssMain.menuItems[0] = new menuItem(0,"Squad strike main menu");
 		ssMain.menuItems[1] = new menuItem(0);
 		ssMain.menuItems[2] = new menuItem(1,"8032C920","Play");
 		ssMain.menuItems[3] = ssSettings;
 		ssMain.menuItems[4] = ssInfo;
-		
+
 		ssSettings.menuItems[0] = new menuItem(0,"Settings");
 		ssSettings.menuItems[1] = new menuItem(0);
 		ssSettings.menuItems[2] = new menuItem(3,"Number of characters: ",4,5,1,3);
@@ -376,13 +376,13 @@ public class Main{
 		ssInfo.menuItems[0] = new menuItem(0,"How to play");
 		ssInfo.menuItems[1] = new menuItem(0);
 		ssInfo.menuItems[2] = new menuItem(0,"IDK im tired and i just want this done aaaaaaaaaaaa");
-		
+
 		amMain.menuItems[0] = new menuItem(0,"All star main menu");
 		amMain.menuItems[1] = new menuItem(0);
 		amMain.menuItems[2] = new menuItem(1,"8032C924","Play");
 		amMain.menuItems[3] = amSettings;
 		amMain.menuItems[4] = amInfo;
-		
+
 		amSettings.menuItems[0] = new menuItem(0,"Settings");
 		amSettings.menuItems[1] = new menuItem(0);
 		amSettings.menuItems[2] = new menuItem(3,"Number of characters: ",26,26,1,0);
@@ -390,104 +390,164 @@ public class Main{
 		amInfo.menuItems[0] = new menuItem(0,"How to play");
 		amInfo.menuItems[1] = new menuItem(0);
 		amInfo.menuItems[2] = new menuItem(0,"IDK im tired and i just want this done aaaaaaaaaaaa");
-		
+
 		subMenu Smash64Main = new subMenu(1,"Smash 64");
-		
+
 		Smash64Main.menuItems[0] = new menuItem(0,"Smash 64 Main Menu");
 		Smash64Main.menuItems[1] = new menuItem(0);
 		Smash64Main.menuItems[2] = new menuItem(1,"8032C93c","Play");
-		
+
 		subMenu brawlMain = new subMenu(1,"Brawl");
-		
+
 		brawlMain.menuItems[0] = new menuItem(0,"Brawl Main Menu");
 		brawlMain.menuItems[1] = new menuItem(0);
 		brawlMain.menuItems[2] = new menuItem(1,"8032C940","Play");
-		
+
 		subMenu sixPlayerMain = new subMenu(1,"6 Player Smash Main Menu");
-		
+
 		sixPlayerMain.menuItems[0] = new menuItem(0,"6 Player Smash Main Menu");
 		sixPlayerMain.menuItems[1] = new menuItem(0);
 		sixPlayerMain.menuItems[2] = new menuItem(0,"Soon");
-		
-		
+
+
 		subMenu shuffleMain = new subMenu(1,"Shuffle");
-		
+
 		shuffleMain.menuItems[0] = new menuItem(0,"Shuffle");
 		shuffleMain.menuItems[1] = new menuItem(0);
 		shuffleMain.menuItems[2] = new menuItem(0,"Soon");
-		
+
 		subMenu extrasMain = new subMenu(1,"Extras");
-		
+
 		extrasMain.menuItems[0] = new menuItem(0,"Extras");
 		extrasMain.menuItems[1] = new menuItem(0);
 		extrasMain.menuItems[2] = new menuItem(0,"Soon");
-		
-		subMenu BBWSettings = new subMenu(1,"BBW Settings");
-		
+
+		subMenu BBWSettings = new subMenu(1,"Bretts blastzone warp Settings");
+
 		BBWSettings.menuItems[0] = new menuItem(0,"Bretts blastzone warp settings");
 		BBWSettings.menuItems[1] = new menuItem(0);
 		BBWSettings.menuItems[2] = new menuItem(3,"Damage per warp",20,100,1,0);
 		BBWSettings.menuItems[3] = new menuItem(3,"Kill percent",1000,1000,5);
-		
-		subMenu BBWInfo = new subMenu(1,"How to play BBW");
-		
-		BBWInfo.menuItems[0] = new menuItem(0,"Bretts blastzone warp info");
+
+		subMenu BBWInfo = new subMenu(1,"How to play bretts blastzone warp");
+
+		BBWInfo.menuItems[0] = new menuItem(0,"how to play bretts blastzone warp");
 		BBWInfo.menuItems[1] = new menuItem(0);
 		BBWInfo.menuItems[2] = new menuItem(0,"This is a very simple minigame, touching a blastzone warps you to");
 		BBWInfo.menuItems[3] = new menuItem(0,"opposite blastzone, and gives you some percent. Once you reach the");
 		BBWInfo.menuItems[4] = new menuItem(0,"kill percent, you lose your stock.");
-		
+
 		subMenu BBWMain = new subMenu(1,"Bretts blastzone warp");
-		
+
 		BBWMain.menuItems[0] = new menuItem(0,"Bretts blastzone warp main menu");
 		BBWMain.menuItems[1] = new menuItem(0);
 		BBWMain.menuItems[2] = new menuItem(1,"8032C944","Play");
 		BBWMain.menuItems[3] = BBWSettings;
 		BBWMain.menuItems[4] = BBWInfo;
-		
-		
+
+
 		subMenu MRSSSettings = new subMenu(1,"Soccer Settings");
-		
+
 		MRSSSettings.menuItems[0] = new menuItem(0,"Mr saturn soccer settings");
 		MRSSSettings.menuItems[1] = new menuItem(0);
 		MRSSSettings.menuItems[2] = new menuItem(2,"Game type: ",kothgame,0);
 		MRSSSettings.menuItems[3] = new menuItem(3,"Max score: ",7,50,1);
 		MRSSSettings.menuItems[4] = new menuItem(8,"Mr saturn speed constant: ",1.1,4,0.01,0);
-		
+
 		subMenu MRSSInfo = new subMenu(1, "How to play soccer");
-		
+
 		MRSSInfo.menuItems[0] = new menuItem(0,"How to play mr saturn soccer");
 		MRSSInfo.menuItems[1] = new menuItem(0);
 		MRSSInfo.menuItems[2] = new menuItem(0,"Knock mr saturn into your opponents goal to score.");
 		MRSSInfo.menuItems[3] = new menuItem(0,"By default, the first team to 7 points wins!");
-		
+
 		subMenu MRSSMain = new subMenu(1,"Mr Saturn Soccer");
-		
+
 		MRSSMain.menuItems[0] = new menuItem(0,"Mr saturn soccer main menu");
 		MRSSMain.menuItems[1] = new menuItem(0);
 		MRSSMain.menuItems[2] = new menuItem(1,"8032C948","Play");
-		
+		MRSSMain.menuItems[3] = MRSSSettings;
+		MRSSMain.menuItems[4] = MRSSInfo;
+
+		subMenu SBSettings = new subMenu(1,"Snowbrawl settings");
+
+		SBSettings.menuItems[0] = new menuItem(0,"Mr saturn soccer settings");
+		SBSettings.menuItems[1] = new menuItem(0);
+		SBSettings.menuItems[2] = new menuItem(2,"Game type: ",kothgame,1);
+		SBSettings.menuItems[3] = new menuItem(3,"Max score: ",50,500,5,0);
+		SBSettings.menuItems[4] = new menuItem(3,"Penalty per death: ",4,15,1,0);
+		SBSettings.menuItems[5] = new menuItem(2,"Special moves: ",ende,0);
+
+		subMenu SBInfo = new menuItem(1,"How to play snowbrawl");
+
+		SBInfo.menuItems[0] = new menuItem(0,"How to play snowbrawl");
+		SBInfo.menuItems[1] = new menuItem(0);
+		SBInfo.menuItems[2] = new menuItem(0,"Throw snowballs (eggs) at your oppoents for points");
+		SBInfo.menuItems[3] = new menuItem(0,"The person with the most points at the end of the match");
+		SBInfo.menuItems[4] = new menuItem(0,"wins!");
 
 		subMenu SBMain = new subMenu(1,"Snowbrawl");
-		
+
 		SBMain.menuItems[0] = new menuItem(0,"Snowbrawl main menu");
 		SBMain.menuItems[1] = new menuItem(0);
 		SBMain.menuItems[2] = new menuItem(1,"8032C94c","Play");
-		
+		SBMain.menuItems[3] = SBSettings;
+		SBMain.menuItems[4] = SBInfo;
+
+		subMenu OITCSettings = new subMenu(1,"One in the chamber settings");
+
+		OITCSettings.menuItems[0] = new menuItem(0,"One in the chamber settings");
+		OITCSettings.menuItems[1] = new menuItem(0);
+		OITCSettings.menuItems[2] = new menuItem(2,"Infinite ammo: ",ende,1);
+		OITCSettings.menuItems[3] = new menuItem(3,"Kill reward: ",1,5,1,0);
+		OITCSettings.menuItems[4] = new menuItem(2,"Ledge grabs: ",ende,0);
+		OITCSettings.menuItems[5] = new menuItem(2,"Special moves: ",ende,0);
+
+		subMenu OITCInfo = new subMenu(1,"How to play one in the chamber");
+
+		OITCInfo.menuItems[0] = new menuItem(0,"How to play one in the chamber");
+		OITCInfo.menuItems[1] = new menuItem(0);
+		OITCInfo.menuItems[2] = new menuItem(0,"You spawn with a ray gun with one shot, the only thing");
+		OITCInfo.menuItems[3] = new menuItem(0,"you can do is shoot or grab. Ray gun shots and pummels");
+		OITCInfo.menuItems[4] = new menuItem(0,"instantly kill and give you an extra shot for you ray gun.");
+
+
 		subMenu OITCMain = new subMenu(1,"One in the chamber");
-		
+
 		OITCMain.menuItems[0] = new menuItem(0,"One in the chamber main menu");
 		OITCMain.menuItems[1] = new menuItem(0);
 		OITCMain.menuItems[2] = new menuItem(1,"8032C950","Play");
-		
+		OITCMain.menuItems[3] = OITCSettings;
+		OITCMain.menuItems[4] = OITCInfo;
+
+		subMenu IJZSettings = new subMenu(1,"Infinite jump zone settings");
+
+		IJZSettings.menuItems[0] = new menuItem(0,"Infinite jump zone settings");
+		IJZSettings.menuItems[1] = new menuItem(0);
+		IJZSettings.menuItems[2] = new menuItem(3,"box x1:",-80,200,5,-100);
+		IJZSettings.menuItems[3] = new menuItem(3,"box x2:",80,200,5,0);
+		IJZSettings.menuItems[4] = new menuItem(3,"box y1:",80,200,5,0);
+		IJZSettings.menuItems[5] = new menuItem(3,"box y2:",-25,200,5,-100);
+
+		subMenu IJZInfo = new subMenu(1,"How to play infinite jump zone");
+
+		IJZInfo.menuItems[0] = new menuItem(0,"How to play infinite jump zone");
+		IJZInfo.menuItems[1] = new menuItem(0);
+		IJZInfo.menuItems[2] = new menuItem(0,"Stay inside the box to receive infinite jumps, as well as");
+		IJZInfo.menuItems[3] = new menuItem(0,"to get out of freefall. Leaving the box leaves you with");
+		IJZInfo.menuItems[4] = new menuItem(0,"only one jump.");
+
+
 		subMenu IJZMain = new subMenu(1,"Infinite Jump Zone");
-		
+
 		IJZMain.menuItems[0] = new menuItem(0,"Infinite Jump Zone main menu");
 		IJZMain.menuItems[1] = new menuItem(0);
 		IJZMain.menuItems[2] = new menuItem(1,"8032C954","Play");
-		
+		IJZMain.menuItems[3] = IJZSettings;
+		IJZMain.menuItems[4] = IJZInfo;
+
 		subMenu minigamesMain = new subMenu(1,"Minigames");
-		
+
 		minigamesMain.menuItems[0] = new menuItem(0,"Minigames");
 		minigamesMain.menuItems[1] = new menuItem(0);
 		minigamesMain.menuItems[2] = DPMain;
@@ -497,7 +557,7 @@ public class Main{
 		minigamesMain.menuItems[6] = SBMain;
 		minigamesMain.menuItems[7] = OITCMain;
 		minigamesMain.menuItems[8] = IJZMain;
-		
+
 		generalGamemodes.menuItems[0] = new menuItem(0,"Gamemodes");
 		generalGamemodes.menuItems[1] = new menuItem(0);
 		generalGamemodes.menuItems[2] = ATWmainMenu;
@@ -579,8 +639,8 @@ public class Main{
 		generalItems.menuItems[10] = new menuItem(3,"Max items on screen: ",40,100,1);
 		generalItems.menuItems[11] = new menuItem(2,"Fancy throwing: ",ende,1);
 		generalItems.menuItems[12] = new menuItem(2,"Taunt to gain item: ",ende,1);
-		
-		
+
+
 		customItemSelectScreen.menuItems[0] = new menuItem(0,"Custom Choose Random Item Builder");
 		customItemSelectScreen.menuItems[1] = new menuItem(0);
 		customItemSelectScreen.menuItems[2] = customItemSelectScreen2;
@@ -610,7 +670,7 @@ public class Main{
 		customItemSelectScreen.menuItems[26] = new menuItem(8,"Egg",1,100,0.1,-0.1);
 		customItemSelectScreen.menuItems[27] = new menuItem(8,"Barrel",1,100,0.1,-0.1);
 		customItemSelectScreen.menuItems[28] = new menuItem(8,"Box",1,100,0.1,-0.1);
-		
+
 		customItemSelectScreen2.menuItems[0] = new menuItem(0,"Custom Choose Random Item Builder");
 		customItemSelectScreen2.menuItems[1] = new menuItem(0);
 		customItemSelectScreen2.menuItems[2] = new menuItem(8,"Bob-omb",1,100,0.1,-0.1);
@@ -659,7 +719,7 @@ public class Main{
 		customPokemonSelectScreen.menuItems[26] = new menuItem(8,"Cyndaquil",1,100,0.1,-0.1);
 		customPokemonSelectScreen.menuItems[27] = new menuItem(8,"Marill",1,100,0.1,-0.1);
 		customPokemonSelectScreen.menuItems[28] = new menuItem(8,"Venusaur",1,100,0.1,-0.1);
-		
+
 		customPokemonSelectScreen2.menuItems[0] = new menuItem(0,"Custom Choose Random Pokemon Builder");
 		customPokemonSelectScreen2.menuItems[1] = new menuItem(0);
 		customPokemonSelectScreen2.menuItems[2] = new menuItem(8,"Chikorita",1,100,0.1,-0.1);
@@ -671,7 +731,7 @@ public class Main{
 		customPokemonSelectScreen2.menuItems[8] = new menuItem(0,"values add up to less than 100. If your values add up to over 100,");
 		customPokemonSelectScreen2.menuItems[9] = new menuItem(0,"the pokemon at the end of the list cannot spawn.");
 		customPokemonSelectScreen2.menuItems[10] = new menuItem(0,"Its up to you to do the math.");
-		
+
 		subMenu customStageSelectScreen = new subMenu(1,"Custom Stage Select Screen Builder");
 
 		customStageSelectScreen.menuItems[0] = new menuItem(2,"Peachs Castle: ",stages,4);
@@ -734,7 +794,7 @@ public class Main{
 
 
 
-		
+
 
 		ArrayList<jsonObject> list = new ArrayList<jsonObject>();
 
@@ -785,7 +845,7 @@ public class Main{
 		if(message == null) {
 			return "0";
 		}
-		
+
 		int tempint = 0;
 		String temp = "";
 	    for(int i = 0; i < message.length() ; i+=4){   // while counting characters if less than the length add one
@@ -818,12 +878,12 @@ public class Main{
 	    	temp += "00";
 	    	times2 --;
 	    }
-	    
-	    
+
+
 		done2[currentID2] = message;
 		doneoffset2[currentID2] = eighty + Integer.toHexString(textSpace);
 		currentID2++;
-	    
+
 		text += temp;
 		String returned = eighty + Integer.toHexString(textSpace);
 		textSpace += (message.length()) + (times);
@@ -887,7 +947,7 @@ public class Main{
 	    return (temp.length()-tempint-1)/2;
 	}
 
-	
+
 	public static String getVarPointer(double value, menuItem menu) {
 		String returns = eighty + Integer.toHexString(varSpace);
 		varSpace += 4;
