@@ -6,7 +6,7 @@ lfs f0,0x5d0(r30)
 b END
 GO:
 li r22, 0x7
-  lfd f3, -29808(r2)
+  lfd f3, -0x8000(r2)
   stfd f3, 32(r2)
   sth r22, 38(r2)
   lfd f0, 32(r2)

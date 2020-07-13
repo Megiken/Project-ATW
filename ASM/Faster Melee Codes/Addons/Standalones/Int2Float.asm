@@ -3,7 +3,7 @@
 #input r22
 #output f8
 
-lfd    f3,-0x7F60(rtoc)    # 4d8570. loads magic double for int to float conversion
+lfd    f3,-0x8000(rtoc)    # 4d8570. loads magic double for int to float conversion
 stfd    f3,0x20(r2)
 sth    r22,0x26(r2)    # 0x43300000800000xx. put 1st int at end of magic double
 lfd    f8,0x20(r2)

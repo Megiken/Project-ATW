@@ -1,0 +1,6 @@
+$thing [Big Money]
+04069420 386D8360 #../ASM/Temp ASM/Code/temp1.asm
+04069420 386D8360 #../ASM/Temp ASM/Code/temp2.asm
+04069420 386D8360 #../ASM/Temp ASM/Code/temp3.asm
+04069420 386D8360 #../ASM/Temp ASM/Code/temp4.asm
+04069420 386D8360 #../ASM/Temp ASM/Code/temp5.asm

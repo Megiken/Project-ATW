@@ -23,7 +23,7 @@ public class Main{
 	public static int currentID2 = 0;
 	public static File currentFile = new File("");
 	public static String[] stages = {"Dummy","Test","Fountain Of Dreams","Pokemon Stadium","Peachs Castle","Kongo Jungle","Brinstar","Corneria","Yoshis Story","Onett","Mute City","Rainbow Cruise","Jungle Japes","Great Bay","Hyrule Temple","Brinstar Depths","Yoshis Island","Green Greens","Fourside","Mushroom Kingdom 1","Mushroom Kingdom 2","Akaneia","Venom","Poke Floats","Big Blue","Icicle Mountain","Icetop","Flatzone","Dreamland","Yoshis Island N64","Kongo Jungle N64","Battlefield","Final Destination","Mario Target Test","Captain Falcon Target Test","Young link Target Test","Donkey Kong Target Test","Dr Mario Target Test","Falco Target Test","Fox Target Test","Ice Climbers Target Test","Kirby Target Test","Bowser Target Test","Link Target Test","Luigi Target Test","Marth Target Test","Mewtwo Target Test","Ness Target Test","Peach Target Test","Pichu Target Test","Pikachu Target Test","Jigglypuff Target Test","Samus Target Test","Sheik Target Test","Yoshi Target Test","Zelda Target Test","Mr Game and watch Target Test","Roy Target Test","Ganondorf Target Test","Majoras Mask","Entei","Goomba","Mount Olympus","All star rest","Home run contest","Escape Shaft","Race to the finish","Duelist pro stage","Event 32 Corneria","Legal Green Greens","Legal big blue","Legal Peachs Castle","Legal Yoshis island","Legal Jungle Japes","Legal Great Bay","Legal Mushroom Kindom 2","Legal Yoshis Island N64","Legal Kongo Jungle","Smashville fourside","Skyrule","Kirby Ware","Lylat Cruise","Nintendo Gamecube","Kalos Pokemon League","Wario Ware Inc","Hyrule Castle","Suzaku Castle","Metal Cavern M","Metroid Lab","Battlefino Plaza","Smash 4 Battlefield","Miiverse","Splattlefino Plaza","Smash 4 FD","Saffron City","75m","Wario land"};
-	public static String myFile = "C:\\Users\\Thomas\\Desktop\\Project-ATW\\ASM\\Debug Menu\\";
+	public static String myFile = "C:\\Users\\Thomas\\Desktop\\Project-ATW\\ASM\\Debug Menu\\Submenus\\";
 	public static String text = "";
 	public static String var = "";
 	public static String eighty = "80";
@@ -122,6 +122,7 @@ public class Main{
 		generalMechanics.menuItems[13] = new menuItem(2,"Climber clone: ",ende,1);
 		generalMechanics.menuItems[14] = new menuItem(2,"Everyone is 2d: ",ende,1);
 		generalMechanics.menuItems[15] = new menuItem(2,"Ledge invincibility attrition: ",ende,1);
+		generalMechanics.menuItems[16] = new menuItem(2,"Random hit effects: ",ende,1);
 
 
 
@@ -478,11 +479,11 @@ public class Main{
 		SBSettings.menuItems[4] = new menuItem(3,"Penalty per death: ",4,15,1,0);
 		SBSettings.menuItems[5] = new menuItem(2,"Special moves: ",ende,0);
 
-		subMenu SBInfo = new menuItem(1,"How to play snowbrawl");
+		subMenu SBInfo = new subMenu(1,"How to play snowbrawl");
 
 		SBInfo.menuItems[0] = new menuItem(0,"How to play snowbrawl");
 		SBInfo.menuItems[1] = new menuItem(0);
-		SBInfo.menuItems[2] = new menuItem(0,"Throw snowballs (eggs) at your oppoents for points");
+		SBInfo.menuItems[2] = new menuItem(0,"Throw snowballs (eggs) at your oppoents for points.");
 		SBInfo.menuItems[3] = new menuItem(0,"The person with the most points at the end of the match");
 		SBInfo.menuItems[4] = new menuItem(0,"wins!");
 
@@ -524,10 +525,10 @@ public class Main{
 
 		IJZSettings.menuItems[0] = new menuItem(0,"Infinite jump zone settings");
 		IJZSettings.menuItems[1] = new menuItem(0);
-		IJZSettings.menuItems[2] = new menuItem(3,"box x1:",-80,200,5,-100);
-		IJZSettings.menuItems[3] = new menuItem(3,"box x2:",80,200,5,0);
-		IJZSettings.menuItems[4] = new menuItem(3,"box y1:",80,200,5,0);
-		IJZSettings.menuItems[5] = new menuItem(3,"box y2:",-25,200,5,-100);
+		IJZSettings.menuItems[2] = new menuItem(8,"box x1:",-80,200,5,-200);
+		IJZSettings.menuItems[3] = new menuItem(8,"box x2:",80,200,5,-200);
+		IJZSettings.menuItems[4] = new menuItem(8,"box y1:",80,200,5,-200);
+		IJZSettings.menuItems[5] = new menuItem(8,"box y2:",-25,200,5,-200);
 
 		subMenu IJZInfo = new subMenu(1,"How to play infinite jump zone");
 

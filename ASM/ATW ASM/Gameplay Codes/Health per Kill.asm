@@ -23,7 +23,7 @@ lwz r20,0xb0(r28)
 lwz r20,0x2c(r20)
 lfs f10,0x1830(r20)
 
-lfd    f3,-29808(r2)
+lfd    f3,-0x8000(r2)
 stfd    f3,0x20(r2)
 sth    r22,0x26(r2)
 lfd    f1,0x20(r2)

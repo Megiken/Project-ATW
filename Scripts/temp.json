@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "areIncludesRelativeFromFile": true
+  },
+  "outputFiles": [
+    {
+      "file": "../Output/temp codes.txt"
+    }
+  ],
+  "codes": [
+    {
+      "name": "thing",
+      "authors": [
+        "Big Money"
+      ],
+      "build": [
+        {
+          "type": "injectFolder",
+          "sourceFolder": "..\\ASM\\Temp ASM\\",
+          "isRecursive": true
+        }
+
+      ]
+    }
+  ]
+}

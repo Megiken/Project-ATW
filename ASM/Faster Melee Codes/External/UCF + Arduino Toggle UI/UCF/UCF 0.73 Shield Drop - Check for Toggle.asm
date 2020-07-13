@@ -38,7 +38,7 @@ loc_0x34:
   xoris r4, r4, 32768
   stw r4, -24(r1)
   lfd f0, -28(r1)
-  lfd f1, -29808(r2)
+  lfd f1, -0x8000(r2)
   fsubs f0, f0, f1
   lfs f1, -12(r1)
   fdivs f0, f0, f1

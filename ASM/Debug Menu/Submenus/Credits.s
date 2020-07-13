@@ -1,0 +1,35 @@
+#To be inserted at 8066106c
+
+.long 0
+.long 0
+.long 0x801965b4
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0x0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0x801965bc
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0x801965d8
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 9

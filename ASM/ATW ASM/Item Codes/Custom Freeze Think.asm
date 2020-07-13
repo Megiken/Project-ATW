@@ -14,7 +14,7 @@ cmpwi r20,0x23
 bne NORMAL
 CUSTOM:
 li r22, 17
-  lfd f3, -29808(r2)
+  lfd f3, -0x8000(r2)
   stfd f3, 32(r2)
   sth r22, 38(r2)
   lfd f1, 32(r2)

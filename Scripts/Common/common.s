@@ -71,6 +71,46 @@ lwz r0, 0x104(r1)
 addi    r1,r1,0x100    # release the space
 .endm
 
+.macro loadfloat regf,reg,address
+lis \reg, \address @h
+ori \reg, \reg, \address @l
+stw \reg,-0x4(sp)
+lfs \regf,-0x4(sp)
+.endm
+
+.macro loadwz reg, address
+lis \reg, \address @h
+ori \reg, \reg, \address @l
+lwz \reg, 0(\reg)
+.endm
+
+.macro loadhz reg, address
+lis \reg, \address @h
+ori \reg, \reg, \address @l
+lhz \reg, 0(\reg)
+.endm
+
+.macro loadbz reg, address
+lis \reg, \address @h
+ori \reg, \reg, \address @l
+lbz \reg, 0(\reg)
+.endm
+
+.macro convToFloat reg, freg
+lfd f19,-0x8000(rtoc)
+stfd f19,0x20(rtoc)
+sth \reg,0x26(rtoc)
+lfd \freg,0x20(rtoc)
+fsubs \freg,\freg,f19
+.endm
+
+.macro convToInt reg, freg
+fctiwz \freg, \freg
+stfd \freg,0x20(rtoc)
+lwz \reg,0x24(rtoc)
+.endm
+
+
 ################################################################################
 # Static Function Locations
 ################################################################################
@@ -203,86 +243,103 @@ addi    r1,r1,0x100    # release the space
 .set meleeVersion, debugSpace+88
 .set wideScreenFlag, debugSpace+92
 .set lagReduction, debugSpace+96
-.set customStageData, debugSpace+100
-.set yoshisFlag, debugSpace+216
-.set frozenPokemon, debugSpace+220
-.set dreamLandWind, debugSpace+224
-.set brinstarLava, debugSpace+228
-.set FODflag, debugSpace+232
-.set corneriaShips, debugSpace+236
-.set corneriaGun, debugSpace+240
-.set greenGreensBlocks, debugSpace+244
-.set greenGreensTree, debugSpace+248
-.set peachCastle, debugSpace+252
-.set fdBackground, debugSpace+256
-.set mushroomKingdom1Levers, debugSpace+260
-.set mushroomKingdom1Blocks, debugSpace+264
-.set jungleJapesFlag, debugSpace+268
-.set onettCars, debugSpace+272
-.set onettDrugstore, debugSpace+276
-.set muteCityCars, debugSpace+280
-.set kongoJungleBarrel, debugSpace+284
-.set kongoJungle64Barrel, debugSpace+288
-.set customItemSpawnFlag, debugSpace+292
-.set itemSpawnRate, debugSpace+296
-.set itemRates, debugSpace+300
-.set pokemonRates, debugSpace+440
-.set maxItemsOnScreen, debugSpace+556
-.set fancyThrowingFlag, debugSpace+560
-.set tauntToGainItem, debugSpace+564
-.set airGrabs, debugSpace+568
-.set airTaunts, debugSpace+572
-.set tauntCancel, debugSpace+576
-.set fastFallFlag, debugSpace+580
-.set invisCeiling, debugSpace+584
-.set grabInfinites, debugSpace+588
-.set wallBracing, debugSpace+592
-.set autoLCancel, debugSpace+596
-.set percentSwapFlag , debugSpace+600
-.set doublesColours, debugSpace+604
-.set walljumpFlag, debugSpace+608
-.set climberCloneFlag, debugSpace+612
-.set TWODFlag, debugSpace+616
-.set ledgeInvincibility, debugSpace+620
-.set firstChars, debugSpace+624
-.set gameType, debugSpace+640
-.set doublesType, debugSpace+644
-.set timerVar, debugSpace+648
-.set customTimer, debugSpace+652
-.set numOfChars, debugSpace+656
-.set saveStocks, debugSpace+660
-.set IMnumOfChars, debugSpace+664
-.set IMcharOrder, debugSpace+668
-.set IMbanOrder, debugSpace+672
-.set IMplayerMoney, debugSpace+676
-.set IMcharCost, debugSpace+680
-.set SSnumOfChars, debugSpace+784
-.set ARnumOfChars, debugSpace+788
-.set bombImpact, debugSpace+792
-.set bombExplosion, debugSpace+796
-.set gravity, debugSpace+800
-.set terminalVelocity, debugSpace+804
-.set KOTHgameType, debugSpace+808
-.set KOTHmaxScore, debugSpace+812
-.set KOTHhillTime, debugSpace+816
-.set percentStaminaFlag, debugSpace+820
-.set staminaAmount, debugSpace+824
-.set sizeFlag, debugSpace+828
-.set headFlag, debugSpace+832
-.set bodyFlag, debugSpace+836
-.set statusFlag, debugSpace+840
-.set gravityFlag, debugSpace+844
-.set speedFlag, debugSpace+848
-.set cameraFlag, debugSpace+852
-.set customGamemodeFlag, debugSpace+856
-.set BFSkin, debugSpace+860
-.set FDSkin, debugSpace+864
-.set PSSkin, debugSpace+868
-.set YSSkin, debugSpace+872
-.set FODSkin, debugSpace+876
-.set DreamlandSkin, debugSpace+880
-.set CSSSkin, debugSpace+884
-.set swordColoursFlag, debugSpace+888
+.set customStageData,  debugSpace+100
+.set yoshisFlag,  debugSpace+216
+.set frozenPokemon,  debugSpace+220
+.set dreamLandWind,  debugSpace+224
+.set brinstarLava,  debugSpace+228
+.set FODflag,  debugSpace+232
+.set corneriaShips,  debugSpace+236
+.set corneriaGun,  debugSpace+240
+.set greenGreensBlocks,  debugSpace+244
+.set greenGreensTree,  debugSpace+248
+.set peachCastle,  debugSpace+252
+.set fdBackground,  debugSpace+256
+.set mushroomKingdom1Levers,  debugSpace+260
+.set mushroomKingdom1Blocks,  debugSpace+264
+.set jungleJapesFlag,  debugSpace+268
+.set onettCars,  debugSpace+272
+.set onettDrugstore,  debugSpace+276
+.set muteCityCars,  debugSpace+280
+.set kongoJungleBarrel,  debugSpace+284
+.set kongoJungle64Barrel,  debugSpace+288
+.set customItemSpawnFlag,  debugSpace+292
+.set itemSpawnRate,  debugSpace+296
+.set customItemFlag, debugSpace+300
+.set itemRates,  debugSpace+304
+.set customPokemonFlag, debugSpace+444
+.set pokemonRates,  debugSpace+448
+.set maxItemsOnScreen,  debugSpace+564
+.set fancyThrowingFlag,  debugSpace+568
+.set tauntToGainItem,  debugSpace+572
+.set airGrabs,  debugSpace+576
+.set airTaunts,  debugSpace+580
+.set tauntCancel,  debugSpace+584
+.set fastFallFlag,  debugSpace+588
+.set invisCeiling,  debugSpace+592
+.set grabInfinites,  debugSpace+596
+.set wallBracing,  debugSpace+600
+.set autoLCancel,  debugSpace+604
+.set percentSwapFlag ,  debugSpace+608
+.set doublesColours,  debugSpace+612
+.set walljumpFlag,  debugSpace+616
+.set climberCloneFlag,  debugSpace+620
+.set TWODFlag,  debugSpace+624
+.set ledgeInvincibility,  debugSpace+628
+.set randomEffects, debugSpace+632
+.set firstChars,  debugSpace+636
+.set gameType,  debugSpace+652
+.set doublesType,  debugSpace+656
+.set timerVar,  debugSpace+660
+.set customTimer,  debugSpace+664
+.set numOfChars,  debugSpace+668
+.set saveStocks,  debugSpace+672
+.set IMnumOfChars,  debugSpace+676
+.set IMcharOrder,  debugSpace+680
+.set IMbanOrder,  debugSpace+684
+.set IMplayerMoney,  debugSpace+688
+.set IMcharCost,  debugSpace+692
+.set SSnumOfChars,  debugSpace+796
+.set ARnumOfChars,  debugSpace+800
+.set bombImpact,  debugSpace+804
+.set bombExplosion,  debugSpace+808
+.set gravity,  debugSpace+812
+.set terminalVelocity,  debugSpace+816
+.set KOTHgameType,  debugSpace+820
+.set KOTHmaxScore,  debugSpace+824
+.set KOTHhillTime,  debugSpace+828
+.set warpDamage, debugSpace+832
+.set killPercent, debugSpace+836
+.set mrssType, debugSpace+840
+.set mrssMaxScore, debugSpace+844
+.set saturnSpeed, debugSpace+848
+.set sbType, debugSpace+852
+.set sbMaxScore, debugSpace+856
+.set sbPenalty, debugSpace+860
+.set sbSpecialMoves, debugSpace+864
+.set infiniteAmmo, debugSpace+868
+.set oitcReward, debugSpace+872
+.set oitcLedge, debugSpace+876
+.set oitcSpecialMoves, debugSpace+880
+.set boxCoordinates, debugSpace+884
+.set percentStaminaFlag,  debugSpace+900
+.set staminaAmount,  debugSpace+904
+.set sizeFlag,  debugSpace+908
+.set headFlag,  debugSpace+912
+.set bodyFlag,  debugSpace+916
+.set statusFlag,  debugSpace+920
+.set gravityFlag,  debugSpace+924
+.set speedFlag,  debugSpace+928
+.set cameraFlag,  debugSpace+932
+.set customGamemodeFlag,  debugSpace+936
+.set BFSkin,  debugSpace+940
+.set FDSkin,  debugSpace+944
+.set PSSkin,  debugSpace+948
+.set YSSkin,  debugSpace+952
+.set FODSkin,  debugSpace+956
+.set DreamlandSkin,  debugSpace+960
+.set CSSSkin,  debugSpace+964
+.set swordColoursFlag, debugSpace+968
 
 
 
@@ -316,16 +373,16 @@ addi    r1,r1,0x100    # release the space
 .set cssStruct2,0x8043208c
 .set frameRate,0x80432a2c
 
-.set ATWsubmenu,0x8065ea54
-.set IMsubmenu,0x8065ef44
-.set squadStrikesubmenu,0x8065f8a0
-.set allStarsubmenu,0x8065fa0c
-.set smash64submenu,0x8065fb78
-.set brawlsubmenu,0x8065fbdc
-.set sixPlayeMenu,0x8065fc40
-.set minigamesMenu,0x8065fca4
-.set shuffleMenu,0x80660414
-.set extrasMenu,0x80660478
+.set ATWsubmenu,0x8065eab4
+.set IMsubmenu,0x8065efa4
+.set squadStrikesubmenu,0x8065f900
+.set allStarsubmenu,0x8065fa6c
+.set smash64submenu,0x8065fbd8
+.set brawlsubmenu,0x8065fc3c
+.set sixPlayeMenu,0x8065fca0
+.set minigamesMenu,0x8065fd04
+.set shuffleMenu,0x80660c3c
+.set extrasMenu,0x80660ca0
 
 ################################################################################
 # Mytoc Offsets
