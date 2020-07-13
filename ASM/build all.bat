@@ -1,7 +1,7 @@
 @echo off
 
 cd /d %~dp0
-cd "Scripts"
+cd "../Scripts"
 
 echo Building atw.json...
 gecko build -c atw.json

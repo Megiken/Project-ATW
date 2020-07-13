@@ -28,7 +28,7 @@ stwu r1,-0xB0(r1)	# make space for 12 registers
 stmw r20,0x8(r1)
 .endm
 
- .macro restore
+.macro restore
 lmw r20,0x8(r1)
 lwz r0, 0xB4(r1)
 addi r1,r1,0xB0	# release the space
@@ -78,6 +78,12 @@ stw \reg,-0x4(sp)
 lfs \regf,-0x4(sp)
 .endm
 
+.macro loadfz regf,reg,address
+lis \reg, \address @h
+ori \reg, \reg, \address @l
+lfs \regf,0(\reg)
+.endm
+
 .macro loadwz reg, address
 lis \reg, \address @h
 ori \reg, \reg, \address @l
@@ -118,8 +124,12 @@ lwz \reg,0x24(rtoc)
 .set randomI,0x80380580
 .set copymem,0x80003244
 .set zeromem,0x8000c160
-.set playsfx,0x8038cff4
+.set allocateMem,0x8037f1e4
+.set playsfx,0x801c53ec
 .set countPlayersInMatch,0x8016b558
+.set applyInvincibility,0x8007b7a4
+.set removeColourOverlay,0x800c0200
+.set applyColourOverlay,0x800bffd0
 .set getCharID,0x80032330
 .set PlayerBlock_LoadSlotType,0x8003241c
 .set PlayerBlock_LoadFalls,0x80034d78
@@ -127,9 +137,17 @@ lwz \reg,0x24(rtoc)
 .set CSS_UpdateCSPInfo,0x8025db34
 .set DestroyItem,0x8026a8ec
 .set EntityItemSpawn,0x80268B18
-.set getStageGObj,0x801c2ba4
-.set setStageGObj,0x801c2bbc
+.set GObjCreate,0x803901f0
+.set GObjaddProc,0x8038fd54
+.set GObjaddMem,0x80390b68
 .set GObjRemove,0x8038fed4
+.set createTextStruct,0x803a6754
+.set initSubtext,0x803a6b98
+.set updateSubtextSize,0x803a7548
+.set updateSubtextPos,0x803a746c
+.set updateSubtextContent,0x803a70a0
+.set changeTextColor,0x803a74f0
+.set removeText,0x803a5cc4
 .set sin,0x803263d4
 .set cos,0x80326240
 .set tan,0x803261bc
@@ -138,6 +156,7 @@ lwz \reg,0x24(rtoc)
 .set atan,0x80022e68
 .set log,0x803265a8
 .set createCamera,0x80029020
+.set removeCamera,0x800290d4
 
 .set functSpace,0x8032C848
 
@@ -661,6 +680,401 @@ lwz \reg,0x24(rtoc)
 .set BattlefieldinID,0x24
 .set FinalDestinationinID,0x25
 
+################################################################################
+# Action state IDs
+################################################################################
+
+.set AS_DeadDown, 0x00
+.set AS_DeadLeft, 0x01
+.set AS_DeadRight, 0x02
+.set AS_DeadUp, 0x03
+.set AS_DeadUpStar, 0x04
+.set AS_DeadUpStarIce, 0x05
+.set AS_DeadUpFall, 0x06
+.set AS_DeadUpFallHitCamera, 0x07
+.set AS_DeadUpFallHitCameraFlat, 0x08
+.set AS_DeadUpFallIce, 0x09
+.set AS_DeadUpFallHitCameraIce, 0x0A
+.set AS_Sleep, 0x0B
+.set AS_Rebirth, 0x0C
+.set AS_RebirthWait, 0x0D
+.set AS_Wait, 0x0E
+.set AS_WalkSlow, 0x0F
+.set AS_WalkMiddle, 0x10
+.set AS_WalkFast, 0x11
+.set AS_Turn, 0x12
+.set AS_TurnRun, 0x13
+.set AS_Dash, 0x14
+.set AS_Run, 0x15
+.set AS_RunDirect, 0x16
+.set AS_RunBrake, 0x17
+.set AS_KneeBend, 0x18
+.set AS_JumpF, 0x19
+.set AS_JumpB, 0x1A
+.set AS_JumpAerialF, 0x1B
+.set AS_JumpAerialB, 0x1C
+.set AS_Fall, 0x1D
+.set AS_FallF, 0x1E
+.set AS_FallB, 0x1F
+.set AS_FallAerial, 0x20
+.set AS_FallAerialF, 0x21
+.set AS_FallAerialB, 0x22
+.set AS_FallSpecial, 0x23
+.set AS_FallSpecialF, 0x24
+.set AS_FallSpecialB, 0x25
+.set AS_DamageFall, 0x26
+.set AS_Squat, 0x27
+.set AS_SquatWait, 0x28
+.set AS_SquatRv, 0x29
+.set AS_Landing, 0x2A
+.set AS_LandingFallSpecial, 0x2B
+.set AS_Attack11, 0x2C
+.set AS_Attack12, 0x2D
+.set AS_Attack13, 0x2E
+.set AS_Attack100Start, 0x2F
+.set AS_Attack100Loop, 0x30
+.set AS_Attack100End, 0x31
+.set AS_AttackDash, 0x32
+.set AS_AttackS3Hi, 0x33
+.set AS_AttackS3HiS, 0x34
+.set AS_AttackS3S, 0x35
+.set AS_AttackS3LwS, 0x36
+.set AS_AttackS3Lw, 0x37
+.set AS_AttackHi3, 0x38
+.set AS_AttackLw3, 0x39
+.set AS_AttackS4Hi, 0x3A
+.set AS_AttackS4HiS, 0x3B
+.set AS_AttackS4S, 0x3C
+.set AS_AttackS4LwS, 0x3D
+.set AS_AttackS4Lw, 0x3E
+.set AS_AttackHi4, 0x3F
+.set AS_AttackLw4, 0x40
+.set AS_AttackAirN, 0x41
+.set AS_AttackAirF, 0x42
+.set AS_AttackAirB, 0x43
+.set AS_AttackAirHi, 0x44
+.set AS_AttackAirLw, 0x45
+.set AS_LandingAirN, 0x46
+.set AS_LandingAirF, 0x47
+.set AS_LandingAirB, 0x48
+.set AS_LandingAirHi, 0x49
+.set AS_LandingAirLw, 0x4A
+.set AS_DamageHi1, 0x4B
+.set AS_DamageHi2, 0x4C
+.set AS_DamageHi3, 0x4D
+.set AS_DamageN1, 0x4E
+.set AS_DamageN2, 0x4F
+.set AS_DamageN3, 0x50
+.set AS_DamageLw1, 0x51
+.set AS_DamageLw2, 0x52
+.set AS_DamageLw3, 0x53
+.set AS_DamageAir1, 0x54
+.set AS_DamageAir2, 0x55
+.set AS_DamageAir3, 0x56
+.set AS_DamageFlyHi, 0x57
+.set AS_DamageFlyN, 0x58
+.set AS_DamageFlyLw, 0x59
+.set AS_DamageFlyTop, 0x5A
+.set AS_DamageFlyRoll, 0x5B
+.set AS_LightGet, 0x5C
+.set AS_HeavyGet, 0x5D
+.set AS_LightThrowF, 0x5E
+.set AS_LightThrowB, 0x5F
+.set AS_LightThrowHi, 0x60
+.set AS_LightThrowLw, 0x61
+.set AS_LightThrowDash, 0x62
+.set AS_LightThrowDrop, 0x63
+.set AS_LightThrowAirF, 0x64
+.set AS_LightThrowAirB, 0x65
+.set AS_LightThrowAirHi, 0x66
+.set AS_LightThrowAirLw, 0x67
+.set AS_HeavyThrowF, 0x68
+.set AS_HeavyThrowB, 0x69
+.set AS_HeavyThrowHi, 0x6A
+.set AS_HeavyThrowLw, 0x6B
+.set AS_LightThrowF4, 0x6C
+.set AS_LightThrowB4, 0x6D
+.set AS_LightThrowHi4, 0x6E
+.set AS_LightThrowLw4, 0x6F
+.set AS_LightThrowAirF4, 0x70
+.set AS_LightThrowAirB4, 0x71
+.set AS_LightThrowAirHi4, 0x72
+.set AS_LightThrowAirLw4, 0x73
+.set AS_HeavyThrowF4, 0x74
+.set AS_HeavyThrowB4, 0x75
+.set AS_HeavyThrowHi4, 0x76
+.set AS_HeavyThrowLw4, 0x77
+.set AS_SwordSwing1, 0x78
+.set AS_SwordSwing3, 0x79
+.set AS_SwordSwing4, 0x7A
+.set AS_SwordSwingDash, 0x7B
+.set AS_BatSwing1, 0x7C
+.set AS_BatSwing3, 0x7D
+.set AS_BatSwing4, 0x7E
+.set AS_BatSwingDash, 0x7F
+.set AS_ParasolSwing1, 0x80
+.set AS_ParasolSwing3, 0x81
+.set AS_ParasolSwing4, 0x82
+.set AS_ParasolSwingDash, 0x83
+.set AS_HarisenSwing1, 0x84
+.set AS_HarisenSwing3, 0x85
+.set AS_HarisenSwing4, 0x86
+.set AS_HarisenSwingDash, 0x87
+.set AS_StarRodSwing1, 0x88
+.set AS_StarRodSwing3, 0x89
+.set AS_StarRodSwing4, 0x8A
+.set AS_StarRodSwingDash, 0x8B
+.set AS_LipStickSwing1, 0x8C
+.set AS_LipStickSwing3, 0x8D
+.set AS_LipStickSwing4, 0x8E
+.set AS_LipStickSwingDash, 0x8F
+.set AS_ItemParasolOpen, 0x90
+.set AS_ItemParasolFall, 0x91
+.set AS_ItemParasolFallSpecial, 0x92
+.set AS_ItemParasolDamageFall, 0x93
+.set AS_LGunShoot, 0x94
+.set AS_LGunShootAir, 0x95
+.set AS_LGunShootEmpty, 0x96
+.set AS_LGunShootAirEmpty, 0x97
+.set AS_FireFlowerShoot, 0x98
+.set AS_FireFlowerShootAir, 0x99
+.set AS_ItemScrew, 0x9A
+.set AS_ItemScrewAir, 0x9B
+.set AS_DamageScrew, 0x9C
+.set AS_DamageScrewAir, 0x9D
+.set AS_ItemScopeStart, 0x9E
+.set AS_ItemScopeRapid, 0x9F
+.set AS_ItemScopeFire, 0xA0
+.set AS_ItemScopeEnd, 0xA1
+.set AS_ItemScopeAirStart, 0xA2
+.set AS_ItemScopeAirRapid, 0xA3
+.set AS_ItemScopeAirFire, 0xA4
+.set AS_ItemScopeAirEnd, 0xA5
+.set AS_ItemScopeStartEmpty, 0xA6
+.set AS_ItemScopeRapidEmpty, 0xA7
+.set AS_ItemScopeFireEmpty, 0xA8
+.set AS_ItemScopeEndEmpty, 0xA9
+.set AS_ItemScopeAirStartEmpty, 0xAA
+.set AS_ItemScopeAirRapidEmpty, 0xAB
+.set AS_ItemScopeAirFireEmpty, 0xAC
+.set AS_ItemScopeAirEndEmpty, 0xAD
+.set AS_LiftWait, 0xAE
+.set AS_LiftWalk1, 0xAF
+.set AS_LiftWalk2, 0xB0
+.set AS_LiftTurn, 0xB1
+.set AS_GuardOn, 0xB2
+.set AS_Guard, 0xB3
+.set AS_GuardOff, 0xB4
+.set AS_GuardSetOff, 0xB5
+.set AS_GuardReflect, 0xB6
+.set AS_DownBoundU, 0xB7
+.set AS_DownWaitU, 0xB8
+.set AS_DownDamageU, 0xB9
+.set AS_DownStandU, 0xBA
+.set AS_DownAttackU, 0xBB
+.set AS_DownFowardU, 0xBC
+.set AS_DownBackU, 0xBD
+.set AS_DownSpotU, 0xBE
+.set AS_DownBoundD, 0xBF
+.set AS_DownWaitD, 0xC0
+.set AS_DownDamageD, 0xC1
+.set AS_DownStandD, 0xC2
+.set AS_DownAttackD, 0xC3
+.set AS_DownFowardD, 0xC4
+.set AS_DownBackD, 0xC5
+.set AS_DownSpotD, 0xC6
+.set AS_Passive, 0xC7
+.set AS_PassiveStandF, 0xC8
+.set AS_PassiveStandB, 0xC9
+.set AS_PassiveWall, 0xCA
+.set AS_PassiveWallJump, 0xCB
+.set AS_PassiveCeil, 0xCC
+.set AS_ShieldBreakFly, 0xCD
+.set AS_ShieldBreakFall, 0xCE
+.set AS_ShieldBreakDownU, 0xCF
+.set AS_ShieldBreakDownD, 0xD0
+.set AS_ShieldBreakStandU, 0xD1
+.set AS_ShieldBreakStandD, 0xD2
+.set AS_FuraFura, 0xD3
+.set AS_Catch, 0xD4
+.set AS_CatchPull, 0xD5
+.set AS_CatchDash, 0xD6
+.set AS_CatchDashPull, 0xD7
+.set AS_CatchWait, 0xD8
+.set AS_CatchAttack, 0xD9
+.set AS_CatchCut, 0xDA
+.set AS_ThrowF, 0xDB
+.set AS_ThrowB, 0xDC
+.set AS_ThrowHi, 0xDD
+.set AS_ThrowLw, 0xDE
+.set AS_CapturePulledHi, 0xDF
+.set AS_CaptureWaitHi, 0xE0
+.set AS_CaptureDamageHi, 0xE1
+.set AS_CapturePulledLw, 0xE2
+.set AS_CaptureWaitLw, 0xE3
+.set AS_CaptureDamageLw, 0xE4
+.set AS_CaptureCut, 0xE5
+.set AS_CaptureJump, 0xE6
+.set AS_CaptureNeck, 0xE7
+.set AS_CaptureFoot, 0xE8
+.set AS_EscapeF, 0xE9
+.set AS_EscapeB, 0xEA
+.set AS_Escape, 0xEB
+.set AS_EscapeAir, 0xEC
+.set AS_ReboundStop, 0xED
+.set AS_Rebound, 0xEE
+.set AS_ThrownF, 0xEF
+.set AS_ThrownB, 0xF0
+.set AS_ThrownHi, 0xF1
+.set AS_ThrownLw, 0xF2
+.set AS_ThrownLwWomen, 0xF3
+.set AS_Pass, 0xF4
+.set AS_Ottotto, 0xF5
+.set AS_OttottoWait, 0xF6
+.set AS_FlyReflectWall, 0xF7
+.set AS_FlyReflectCeil, 0xF8
+.set AS_StopWall, 0xF9
+.set AS_StopCeil, 0xFA
+.set AS_MissFoot, 0xFB
+.set AS_CliffCatch, 0xFC
+.set AS_CliffWait, 0xFD
+.set AS_CliffClimbSlow, 0xFE
+.set AS_CliffClimbQuick, 0xFF
+.set AS_CliffAttackSlow, 0x100
+.set AS_CliffAttackQuick, 0x101
+.set AS_CliffEscapeSlow, 0x102
+.set AS_CliffEscapeQuick, 0x103
+.set AS_CliffJumpSlow1, 0x104
+.set AS_CliffJumpSlow2, 0x105
+.set AS_CliffJumpQuick1, 0x106
+.set AS_CliffJumpQuick2, 0x107
+.set AS_AppealR, 0x108
+.set AS_AppealL, 0x109
+.set AS_ShoulderedWait, 0x10A
+.set AS_ShoulderedWalkSlow, 0x10B
+.set AS_ShoulderedWalkMiddle, 0x10C
+.set AS_ShoulderedWalkFast, 0x10D
+.set AS_ShoulderedTurn, 0x10E
+.set AS_ThrownFF, 0x10F
+.set AS_ThrownFB, 0x110
+.set AS_ThrownFHi, 0x111
+.set AS_ThrownFLw, 0x112
+.set AS_CaptureCaptain, 0x113
+.set AS_CaptureYoshi, 0x114
+.set AS_YoshiEgg, 0x115
+.set AS_CaptureKoopa, 0x116
+.set AS_CaptureDamageKoopa, 0x117
+.set AS_CaptureWaitKoopa, 0x118
+.set AS_ThrownKoopaF, 0x119
+.set AS_ThrownKoopaB, 0x11A
+.set AS_CaptureKoopaAir, 0x11B
+.set AS_CaptureDamageKoopaAir, 0x11C
+.set AS_CaptureWaitKoopaAir, 0x11D
+.set AS_ThrownKoopaAirF, 0x11E
+.set AS_ThrownKoopaAirB, 0x11F
+.set AS_CaptureKirby, 0x120
+.set AS_CaptureWaitKirby, 0x121
+.set AS_ThrownKirbyStar, 0x122
+.set AS_ThrownCopyStar, 0x123
+.set AS_ThrownKirby, 0x124
+.set AS_BarrelWait, 0x125
+.set AS_Bury, 0x126
+.set AS_BuryWait, 0x127
+.set AS_BuryJump, 0x128
+.set AS_DamageSong, 0x129
+.set AS_DamageSongWait, 0x12A
+.set AS_DamageSongRv, 0x12B
+.set AS_DamageBind, 0x12C
+.set AS_CaptureMewtwo, 0x12D
+.set AS_CaptureMewtwoAir, 0x12E
+.set AS_ThrownMewtwo, 0x12F
+.set AS_ThrownMewtwoAir, 0x130
+.set AS_WarpStarJump, 0x131
+.set AS_WarpStarFall, 0x132
+.set AS_HammerWait, 0x133
+.set AS_HammerWalk, 0x134
+.set AS_HammerTurn, 0x135
+.set AS_HammerKneeBend, 0x136
+.set AS_HammerFall, 0x137
+.set AS_HammerJump, 0x138
+.set AS_HammerLanding, 0x139
+.set AS_KinokoGiantStart, 0x13A
+.set AS_KinokoGiantStartAir, 0x13B
+.set AS_KinokoGiantEnd, 0x13C
+.set AS_KinokoGiantEndAir, 0x13D
+.set AS_KinokoSmallStart, 0x13E
+.set AS_KinokoSmallStartAir, 0x13F
+.set AS_KinokoSmallEnd, 0x140
+.set AS_KinokoSmallEndAir, 0x141
+.set AS_Entry, 0x142
+.set AS_EntryStart, 0x143
+.set AS_EntryEnd, 0x144
+.set AS_DamageIce, 0x145
+.set AS_DamageIceJump, 0x146
+.set AS_CaptureMasterhand, 0x147
+.set AS_CapturedamageMasterhand, 0x148
+.set AS_CapturewaitMasterhand, 0x149
+.set AS_ThrownMasterhand, 0x14A
+.set AS_CaptureKirbyYoshi, 0x14B
+.set AS_KirbyYoshiEgg, 0x14C
+.set AS_CaptureLeadead, 0x14D
+.set AS_CaptureLikelike, 0x14E
+.set AS_DownReflect, 0x14F
+.set AS_CaptureCrazyhand, 0x150
+.set AS_CapturedamageCrazyhand, 0x151
+.set AS_CapturewaitCrazyhand, 0x152
+.set AS_ThrownCrazyhand, 0x153
+.set AS_BarrelCannonWait, 0x154
+
+################################################################################
+# Scene IDs
+################################################################################
+
+.set titleScreenID,0x00
+.set mainMenuID,0x01
+.set VSModeID,0x02
+.set classicModeID,0x03
+.set adventureModeID,0x04
+.set allStarModeID,0x05
+.set mainDebugMenuID,0x06
+.set soundTestDebugMenuID,0x07
+.set hanyuTestCSSID,0x08
+.set hanyuTestSSSID,0x09
+.set cameraModeMemcardPromptID,0x0A
+.set trophyGalleryID,0x0B
+.set trophyLotteryID,0x0C
+.set trophyCollectionID,0x0D
+.set debugDiarantouID,0x0E
+.set targetTestID,0x0F
+.set superSuddenDeathID,0x10
+.set invisibleMeleeID,0x11
+.set sloMoMeleeID,0x12
+.set lightningMeleeID,0x13
+.set challengerApproachingID,0x14
+.set classicModeEndingID,0x15
+.set adventureModeEndingID,0x16
+.set allStarModeEndingID,0x17
+.set openingMovieID,0x18
+.set visualSceneDebugID,0x19
+.set onePEndingDebugID,0x1A
+.set tournamentModeID,0x1B
+.set trainingModeID,0x1C
+.set tinyMeleeID,0x1D
+.set giantMeleeID,0x1E
+.set staminaModeID,0x1F
+.set homeRunContestID,0x20
+.set tenManMeleeID,0x21
+.set hundredManMeleeID,0x22
+.set threeMinuteMeleeID,0x23
+.set fifteenMinuteMeleeID,0x24
+.set endlessMeleeID,0x25
+.set cruelMeleeID,0x26
+.set progressiveScanPromptID,0x27
+.set bootUpID,0x28
+.set memcardPropmtID,0x29
+.set fixedCameraID,0x2A
+.set eventModeID,0x2B
+.set singleButtonID,0x2C
 
 
 
@@ -688,6 +1102,215 @@ lwz \reg,0x24(rtoc)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Slippi stuff lol
 
 .macro getMinorMajor reg
 lis \reg, 0x8048 # load address to offset from for scene controller

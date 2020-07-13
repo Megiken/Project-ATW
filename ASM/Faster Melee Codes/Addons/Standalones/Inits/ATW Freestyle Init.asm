@@ -25,13 +25,13 @@ branchl r12,zeromem
 
 load r20,ATWsubmenu
 li r21,1
-stw r21,0x120(r20)
+stw r21,0x40(r20)
 bl THERE
 .long 0x52657375
 .long 0x6d650000
 THERE:
 mflr r21
-stw r21,0x128(r20)
+stw r21,0x48(r20)
 
 
 ENDLOL:
