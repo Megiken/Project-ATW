@@ -13,6 +13,9 @@ cmpwi r19,0
 ble NEXT
 mr r3,r20
 branchl r12,getPlayerStatic
+lwz r22,0(r3)
+cmpwi r22,2
+bne NEXT
 lbz r22,0x47(r21)
 lbz r23,0x47(r3)
 cmpw r22,r23
@@ -25,7 +28,11 @@ bne LOOP
 li r19,0
 END:
 mr r3,r19
-cmpwi r3,7
+loadwz r20,mrssType
+cmpwi r20,0
+bne LOL
+loadwz r20,mrssMaxScore
+cmpw r3,r20
 bne LOL
 load r14,timerSeconds
 li r12,0

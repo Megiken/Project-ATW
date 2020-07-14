@@ -14,6 +14,8 @@ li r20,0
 LOOP:
 mr r3,r20
 branchl r12,getPlayerData
+cmpwi r3,-1
+beq NEXT
 lbz r21,0x61b(r3)
 cmpw r21,r11
 bne NEXT

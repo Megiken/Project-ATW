@@ -68,11 +68,17 @@ branchl r12,getPlayerStatic
 lwzx r4,r3,r10
 addi r4,r4,1
 stwx r4,r3,r10
-load r20,0x8046b970
-lbz r21,0xc(r31)
-mulli r21,r21,0xa8
-lwzx r4,r20,r21
-addi r4,r4,1
+loadwz r20,sbType
+cmpwi r20,0
+beq END
+loadwz r20,sbMaxScore
+cmpw r4,r20
+blt END
+load r14,timerSeconds
+li r12,0
+stw r12,0(r14)
+li r12,59
+sth r12,4(r14)
 END:
 restoreall
 mflr r0

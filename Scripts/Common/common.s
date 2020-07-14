@@ -230,7 +230,7 @@ lwz \reg,0x24(rtoc)
 .set SBInit,functSpace+0x104
 .set OITCInit,functSpace+0x108
 .set IJZInit,functSpace+0x10c
-.set createGObj,functSpace+0x110
+.set createCustomGObj,functSpace+0x110
 .set spawnMrSaturn,functSpace+0x114
 .set resetpos,functSpace+0x118
 .set scoregoal,functSpace+0x11c
@@ -335,11 +335,11 @@ lwz \reg,0x24(rtoc)
 .set sbType, debugSpace+852
 .set sbMaxScore, debugSpace+856
 .set sbPenalty, debugSpace+860
-.set sbSpecialMoves, debugSpace+864
+.set sbReflections, debugSpace+864
 .set infiniteAmmo, debugSpace+868
 .set oitcReward, debugSpace+872
 .set oitcLedge, debugSpace+876
-.set oitcSpecialMoves, debugSpace+880
+.set oitcReflections, debugSpace+880
 .set boxCoordinates, debugSpace+884
 .set percentStaminaFlag,  debugSpace+900
 .set staminaAmount,  debugSpace+904
@@ -360,16 +360,6 @@ lwz \reg,0x24(rtoc)
 .set CSSSkin,  debugSpace+964
 .set swordColoursFlag, debugSpace+968
 
-
-
-
-
-
-
-
-
-
-
 #Other
 
 .set heapStart,0x8065cc60
@@ -379,7 +369,6 @@ lwz \reg,0x24(rtoc)
 .set playerCSSdata1,0x803F0E08
 .set playerCSSdata2,0x80480820
 .set cssID,0x804a04f3
-.set numOfFiles,0x4
 .set timerSeconds,0x8046b6c8
 .set timerMilli,0x8046b6cc #half
 .set ylDat,0x804d76bc

@@ -17,7 +17,7 @@ bl THERE
 .float 1
 THERE:
 mflr r23
-lfs f10,0(r23)
+loadfz f10,r20,saturnSpeed
 fmr f11,f8
 lwz r22,0xca8(r29)
 branchl r12,Int2Float

@@ -19,7 +19,8 @@ lwz r20,0x2c(r20)
 lwz r20,0x1974(r20)
 lwz r20,0x2c(r20)
 lwz r21,0xd4c(r20)
-addi r21,r21,1
+loadwz r23,oitcReward
+add r21,r21,r23
 stw r21,0xd4c(r20)
 branchl r12,0x800d40b8
 restore

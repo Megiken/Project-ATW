@@ -211,15 +211,15 @@
 .long 0x000003e8 # .setKill percent, debugSpace+836
 .long 0x00000000 # .setGame type: , debugSpace+840
 .long 0x00000007 # .setMax score: , debugSpace+844
-.long 0x3f8ccccd # .setMr saturn speed constant: , debugSpace+848
+.long 0x3f5eb852 # .setMr saturn speed constant: , debugSpace+848
 .long 0x00000001 # .setGame type: , debugSpace+852
 .long 0x00000032 # .setMax score: , debugSpace+856
 .long 0x00000004 # .setPenalty per death: , debugSpace+860
-.long 0x00000000 # .setSpecial moves: , debugSpace+864
+.long 0x00000001 # .setReflections: , debugSpace+864
 .long 0x00000001 # .setInfinite ammo: , debugSpace+868
 .long 0x00000001 # .setKill reward: , debugSpace+872
 .long 0x00000000 # .setLedge grabs: , debugSpace+876
-.long 0x00000000 # .setSpecial moves: , debugSpace+880
+.long 0x00000000 # .setReflections: , debugSpace+880
 .long 0xffffffffc2a00000 # .setbox x1:, debugSpace+884
 .long 0x42a00000 # .setbox x2:, debugSpace+888
 .long 0x42a00000 # .setbox y1:, debugSpace+892

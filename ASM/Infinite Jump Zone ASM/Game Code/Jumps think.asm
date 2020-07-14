@@ -6,17 +6,14 @@ backupall
 
 lfs f6,0xb0(r31)
 lfs f7,0xb4(r31)
-li r22,80
-branchl r12,Int2Float
-fmr f9,f8
+loadfz f9,r20,boxCoordinates
+loadfz f8,r20,boxCoordinates+8
 fcmpo 0,f6,f9
 bgt NOTIN
 fcmpo 0,f7,f8
 bgt NOTIN
-li r22,25
-branchl r12,Int2Float
-fneg f8,f8
-fneg f9,f9
+loadfz f9,r20,boxCoordinates+4
+loadfz f8,r20,boxCoordinates+12
 fcmpo 0,f6,f9
 blt NOTIN
 fcmpo 0,f7,f8

@@ -453,7 +453,7 @@ public class Main{
 		MRSSSettings.menuItems[1] = new menuItem(0);
 		MRSSSettings.menuItems[2] = new menuItem(2,"Game type: ",kothgame,0);
 		MRSSSettings.menuItems[3] = new menuItem(3,"Max score: ",7,50,1);
-		MRSSSettings.menuItems[4] = new menuItem(8,"Mr saturn speed constant: ",1.1,4,0.01,0);
+		MRSSSettings.menuItems[4] = new menuItem(8,"Mr saturn speed constant: ",0.87,4,0.01,0);
 
 		subMenu MRSSInfo = new subMenu(1, "How to play soccer");
 
@@ -477,7 +477,7 @@ public class Main{
 		SBSettings.menuItems[2] = new menuItem(2,"Game type: ",kothgame,1);
 		SBSettings.menuItems[3] = new menuItem(3,"Max score: ",50,500,5,0);
 		SBSettings.menuItems[4] = new menuItem(3,"Penalty per death: ",4,15,1,0);
-		SBSettings.menuItems[5] = new menuItem(2,"Special moves: ",ende,0);
+		SBSettings.menuItems[5] = new menuItem(2,"Reflections: ",ende,1);
 
 		subMenu SBInfo = new subMenu(1,"How to play snowbrawl");
 
@@ -502,7 +502,7 @@ public class Main{
 		OITCSettings.menuItems[2] = new menuItem(2,"Infinite ammo: ",ende,1);
 		OITCSettings.menuItems[3] = new menuItem(3,"Kill reward: ",1,5,1,0);
 		OITCSettings.menuItems[4] = new menuItem(2,"Ledge grabs: ",ende,0);
-		OITCSettings.menuItems[5] = new menuItem(2,"Special moves: ",ende,0);
+		OITCSettings.menuItems[5] = new menuItem(2,"Reflections: ",ende,0);
 
 		subMenu OITCInfo = new subMenu(1,"How to play one in the chamber");
 
