@@ -21,7 +21,7 @@
       "build": [
         {
           "type": "injectFolder",
-          "sourceFolder": "..\\ASM\\Iron Man ASM\\",
+          "sourceFolder": "..\\ASM\\Gamemodes\\Iron Man ASM\\",
           "isRecursive": true
         }
 

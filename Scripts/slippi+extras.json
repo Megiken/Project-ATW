@@ -10,28 +10,28 @@
       "build": [
         {
           "type": "binary",
-          "sourceFile": "..\\ASM\\Faster Melee Codes/Binary/FasterMeleeSettings/UnlockAllTrophies.bin",
+          "sourceFile": "..\\ASM\\Misc/Faster Melee Codes/Binary/FasterMeleeSettings/UnlockAllTrophies.bin",
           "annotation": "Unlock All 293 Trophies [Datel]"
         },
         {
           "type": "injectFolder",
           "isRecursive": true,
-          "sourceFolder": "..\\ASM\\Faster Melee Codes/Addons"
+          "sourceFolder": "..\\ASM\\Misc/Faster Melee Codes/Addons"
         },
         {
           "type": "replaceCodeBlock",
           "address": "80192f4c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Text.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Text.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "80199f4c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Variables.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Variables.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "803FA4E0",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Main Menu.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Main Menu.s"
         }
 
 

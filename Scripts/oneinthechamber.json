@@ -21,7 +21,7 @@
       "build": [
         {
           "type": "injectFolder",
-          "sourceFolder": "..\\ASM\\One in the Chamber ASM\\",
+          "sourceFolder": "..\\ASM\\Minigames\\One in the Chamber ASM\\",
           "isRecursive": true
         }
 

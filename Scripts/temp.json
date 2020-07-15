@@ -16,7 +16,7 @@
       "build": [
         {
           "type": "injectFolder",
-          "sourceFolder": "..\\ASM\\Temp ASM\\",
+          "sourceFolder": "..\\ASM\\Misc/Temp ASM\\",
           "isRecursive": true
         }
 

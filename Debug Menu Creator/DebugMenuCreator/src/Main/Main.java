@@ -23,7 +23,7 @@ public class Main{
 	public static int currentID2 = 0;
 	public static File currentFile = new File("");
 	public static String[] stages = {"Dummy","Test","Fountain Of Dreams","Pokemon Stadium","Peachs Castle","Kongo Jungle","Brinstar","Corneria","Yoshis Story","Onett","Mute City","Rainbow Cruise","Jungle Japes","Great Bay","Hyrule Temple","Brinstar Depths","Yoshis Island","Green Greens","Fourside","Mushroom Kingdom 1","Mushroom Kingdom 2","Akaneia","Venom","Poke Floats","Big Blue","Icicle Mountain","Icetop","Flatzone","Dreamland","Yoshis Island N64","Kongo Jungle N64","Battlefield","Final Destination","Mario Target Test","Captain Falcon Target Test","Young link Target Test","Donkey Kong Target Test","Dr Mario Target Test","Falco Target Test","Fox Target Test","Ice Climbers Target Test","Kirby Target Test","Bowser Target Test","Link Target Test","Luigi Target Test","Marth Target Test","Mewtwo Target Test","Ness Target Test","Peach Target Test","Pichu Target Test","Pikachu Target Test","Jigglypuff Target Test","Samus Target Test","Sheik Target Test","Yoshi Target Test","Zelda Target Test","Mr Game and watch Target Test","Roy Target Test","Ganondorf Target Test","Majoras Mask","Entei","Goomba","Mount Olympus","All star rest","Home run contest","Escape Shaft","Race to the finish","Duelist pro stage","Event 32 Corneria","Legal Green Greens","Legal big blue","Legal Peachs Castle","Legal Yoshis island","Legal Jungle Japes","Legal Great Bay","Legal Mushroom Kindom 2","Legal Yoshis Island N64","Legal Kongo Jungle","Smashville fourside","Skyrule","Kirby Ware","Lylat Cruise","Nintendo Gamecube","Kalos Pokemon League","Wario Ware Inc","Hyrule Castle","Suzaku Castle","Metal Cavern M","Metroid Lab","Battlefino Plaza","Smash 4 Battlefield","Miiverse","Splattlefino Plaza","Smash 4 FD","Saffron City","75m","Wario land"};
-	public static String myFile = "C:\\Users\\Thomas\\Desktop\\Project-ATW\\ASM\\Debug Menu\\Submenus\\";
+	public static String myFile = "C:\\Users\\Thomas\\Desktop\\Project-ATW\\ASM\\Misc\\Debug Menu\\Submenus\\";
 	public static String text = "";
 	public static String var = "";
 	public static String eighty = "80";
@@ -546,7 +546,13 @@ public class Main{
 		IJZMain.menuItems[2] = new menuItem(1,"8032C954","Play");
 		IJZMain.menuItems[3] = IJZSettings;
 		IJZMain.menuItems[4] = IJZInfo;
-
+		
+		subMenu CYOPMain = new subMenu(1,"Create your own platforms");
+		
+		CYOPMain.menuItems[0] = new menuItem(0,"Create your own platforms main menu");
+		CYOPMain.menuItems[1] = new menuItem(0);
+		CYOPMain.menuItems[2] = new menuItem(1,"8032C968","Play");
+		
 		subMenu minigamesMain = new subMenu(1,"Minigames");
 
 		minigamesMain.menuItems[0] = new menuItem(0,"Minigames");
@@ -558,6 +564,7 @@ public class Main{
 		minigamesMain.menuItems[6] = SBMain;
 		minigamesMain.menuItems[7] = OITCMain;
 		minigamesMain.menuItems[8] = IJZMain;
+		minigamesMain.menuItems[9] = CYOPMain;
 
 		generalGamemodes.menuItems[0] = new menuItem(0,"Gamemodes");
 		generalGamemodes.menuItems[1] = new menuItem(0);

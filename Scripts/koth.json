@@ -21,7 +21,7 @@
       "build": [
         {
           "type": "injectFolder",
-          "sourceFolder": "..\\ASM\\KOTH ASM\\",
+          "sourceFolder": "..\\ASM\\Minigames\\KOTH ASM\\",
           "isRecursive": true
         }
 

@@ -134,13 +134,16 @@ lwz \reg,0x24(rtoc)
 .set PlayerBlock_LoadSlotType,0x8003241c
 .set PlayerBlock_LoadFalls,0x80034d78
 .set PlayerBlock_LoadSDs,0x8003521c
+.set getPlayerHeldInputs,0x801a3680
+.set getPlayerInstantInputs,0x801a36a0
 .set CSS_UpdateCSPInfo,0x8025db34
 .set DestroyItem,0x8026a8ec
 .set EntityItemSpawn,0x80268B18
 .set GObjCreate,0x803901f0
 .set GObjaddProc,0x8038fd54
 .set GObjaddMem,0x80390b68
-.set GObjRemove,0x8038fed4
+.set GObjremoveProc,0x8038fed4
+.set GObjDestroy,0x80390228
 .set createTextStruct,0x803a6754
 .set initSubtext,0x803a6b98
 .set updateSubtextSize,0x803a7548
@@ -234,6 +237,7 @@ lwz \reg,0x24(rtoc)
 .set spawnMrSaturn,functSpace+0x114
 .set resetpos,functSpace+0x118
 .set scoregoal,functSpace+0x11c
+.set CYOPInit,functSpace+0x120
 
 
 .set prim.new,0x804dd84c
@@ -416,7 +420,7 @@ lwz \reg,0x24(rtoc)
 .set tempBackupAscii,-0x7cec
 .set suddenDeathItem,-0x7ce8
 .set mrsaturndata,-0x7c78
-.set free2,-0x7c7c
+.set numOfPlatforms,-0x7c7c
 .set free3,-0x7c40
 .set free4,-0x7c3c
 

@@ -2,8 +2,8 @@
 
 [Gecko]
 $All Star [Big Money]
-0445C388 E7000030 #../ASM/Infinite Jump Zone ASM/Game Code/Disable pokemon.asm
-C2081104 00000025 #../ASM/Infinite Jump Zone ASM/Game Code/Draw box.asm
+0445C388 E7000030 #../ASM/Minigames/Infinite Jump Zone ASM/Game Code/Disable pokemon.asm
+C2081104 00000025 #../ASM/Minigames/Infinite Jump Zone ASM/Game Code/Draw box.asm
 7C0802A6 90010004
 9421FF50 BE810008
 838DBFBC 3C608045
@@ -41,7 +41,7 @@ C2081104 00000025 #../ASM/Infinite Jump Zone ASM/Game Code/Draw box.asm
 800100B4 382100B0
 7C0803A6 BB61008C
 60000000 00000000
-C2046F54 00000034 #../ASM/Infinite Jump Zone ASM/Game Code/Freefall think.asm
+C2046F54 00000034 #../ASM/Minigames/Infinite Jump Zone ASM/Game Code/Freefall think.asm
 7C0802A6 90010004
 9421FF50 BE810008
 829A0000 8254002C
@@ -94,7 +94,7 @@ C04289A8 FC020840
 BA810008 800100B4
 382100B0 7C0803A6
 7EC3B378 00000000
-C206CA9C 00000011 #../ASM/Infinite Jump Zone ASM/Game Code/Jumps think.asm
+C206CA9C 00000011 #../ASM/Minigames/Infinite Jump Zone ASM/Game Code/Jumps think.asm
 7C0802A6 90010004
 9421FF00 BC610008
 C0DF00B0 C0FF00B4
@@ -112,7 +112,7 @@ FC074040 4180000C
 B8610008 80010104
 38210100 7C0803A6
 881F221E 00000000
-C21C0A50 0000003D #../ASM/Infinite Jump Zone ASM/Game Code/Remove stage.asm
+C21C0A50 0000003D #../ASM/Minigames/Infinite Jump Zone ASM/Game Code/Remove stage.asm
 48000089 48000001
 48000001 480000F5
 4800012D 48000001

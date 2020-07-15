@@ -2,7 +2,7 @@
 
 [Gecko]
 $ATW Freestyle [Big Money]
-C226688C 0000003D #../ASM/ATW Freestyle ASM/CSS Codes/CSS Init.asm
+C226688C 0000003D #../ASM/Gamemodes/ATW Freestyle ASM/CSS Codes/CSS Init.asm
 7C0802A6 90010004
 9421FF00 BC610008
 3E20803E 62316742
@@ -64,9 +64,9 @@ C226688C 0000003D #../ASM/ATW Freestyle ASM/CSS Codes/CSS Init.asm
 B8610008 80010104
 38210100 7C0803A6
 7C0802A6 00000000
-0425D22C 3BA00000 #../ASM/ATW Freestyle ASM/CSS Codes/Disable KO Stars.asm
-043E6740 702E6461 #../ASM/ATW Freestyle ASM/CSS Codes/Safe Dreamland.asm
-C2260280 0000000C #../ASM/ATW Freestyle ASM/CSS Codes/colours.asm
+0425D22C 3BA00000 #../ASM/Gamemodes/ATW Freestyle ASM/CSS Codes/Disable KO Stars.asm
+043E6740 702E6461 #../ASM/Gamemodes/ATW Freestyle ASM/CSS Codes/Safe Dreamland.asm
+C2260280 0000000C #../ASM/Gamemodes/ATW Freestyle ASM/CSS Codes/colours.asm
 7C0802A6 90010004
 9421FF50 BE810008
 3E80803F 62940E08
@@ -79,7 +79,7 @@ BA810008 800100B4
 3D808025 618CDB34
 7D8803A6 4E800021
 60000000 00000000
-C2094658 00000009 #../ASM/ATW Freestyle ASM/Custom Items/Cloaking Device Pickup.asm
+C2094658 00000009 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Cloaking Device Pickup.asm
 8283002C 8AB4000C
 8283002C 8A94000C
 3D808032 618CC87C
@@ -89,7 +89,7 @@ C2094658 00000009 #../ASM/ATW Freestyle ASM/Custom Items/Cloaking Device Pickup.
 3AB50004 1E940002
 7ED4AA2E 3AD60258
 7ED4AB2E 00000000
-C206CA9C 0000002F #../ASM/ATW Freestyle ASM/Custom Items/Custom Item Handler.asm
+C206CA9C 0000002F #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Custom Item Handler.asm
 90010004 9421FF00
 BC610008 821F0004
 2C10000B 4182014C
@@ -137,7 +137,7 @@ B2F50060 B2C30060
 B8610008 80010104
 38210100 881F221E
 60000000 00000000
-C216E870 00000B36 #../ASM/ATW Freestyle ASM/Custom Items/Dat patcher.asm
+C216E870 00000B36 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Dat patcher.asm
 48005971 0000238C
 40000040 0000275C
 0000003C 000029D4
@@ -3008,7 +3008,7 @@ FB23FB80 FFFFFFFF
 3D808002 618C785C
 7D8803A6 4E800021
 60000000 00000000
-C2294C3C 00000011 #../ASM/ATW Freestyle ASM/Custom Items/Destroy Healing Sprout When Used Up.asm
+C2294C3C 00000011 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Destroy Healing Sprout When Used Up.asm
 7C0802A6 90010004
 9421FF00 BC610008
 3D808032 618CC87C
@@ -3026,11 +3026,11 @@ C2294C3C 00000011 #../ASM/ATW Freestyle ASM/Custom Items/Destroy Healing Sprout 
 80010104 38210100
 7C0803A6 7C0802A6
 60000000 00000000
-C226DE5C 00000003 #../ASM/ATW Freestyle ASM/Custom Items/Destroy Item On Ground Think.asm
+C226DE5C 00000003 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Destroy Item On Ground Think.asm
 829F0010 2C14001E
 40820008 38600000
 2C030000 00000000
-C228FD7C 00000034 #../ASM/ATW Freestyle ASM/Custom Items/Food Pickup.asm
+C228FD7C 00000034 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Food Pickup.asm
 3E808049 6294E6C8
 82940088 2C14000A
 41820188 829F0DD4
@@ -3083,8 +3083,8 @@ BE810008 8083002C
 3821003C 8001FFFC
 7C0803A6 4E800020
 60000000 00000000
-0414C538 60000000 #../ASM/ATW Freestyle ASM/Custom Items/Gnw dont spawn food.asm
-C20D2FE4 00000008 #../ASM/ATW Freestyle ASM/Custom Items/Healing Sprout Hit.asm
+0414C538 60000000 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Gnw dont spawn food.asm
+C20D2FE4 00000008 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Healing Sprout Hit.asm
 7C0802A6 90010004
 9421FF00 BC610008
 7C832378 38800019
@@ -3093,14 +3093,14 @@ C20D2FE4 00000008 #../ASM/ATW Freestyle ASM/Custom Items/Healing Sprout Hit.asm
 B8610008 80010104
 38210100 7C0803A6
 60000000 00000000
-C2294BE4 00000006 #../ASM/ATW Freestyle ASM/Custom Items/Healing Sprout Pickup.asm
+C2294BE4 00000006 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Healing Sprout Pickup.asm
 7C0802A6 3D808032
 618CC87C 7D8803A6
 4E800021 7DE802A6
 39EF0030 821D002C
 8A10000C 3A600001
 7E7079AE 00000000
-C2094570 00000010 #../ASM/ATW Freestyle ASM/Custom Items/Heart Canister Pickup.asm
+C2094570 00000010 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Heart Canister Pickup.asm
 8A83000C 3D808032
 618CC87C 7D8803A6
 4E800021 7EA802A6
@@ -3117,7 +3117,7 @@ C2094570 00000010 #../ASM/ATW Freestyle ASM/Custom Items/Heart Canister Pickup.a
 3AE00000 7EF5A1AE
 3AB50004 1E940002
 7EF4AB2E 00000000
-C206B090 0000006F #../ASM/ATW Freestyle ASM/Custom Items/Old turbo.asm
+C206B090 0000006F #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Old turbo.asm
 C03F0650 8298002C
 8AB4000C 3D808032
 618CC87C 7D8803A6
@@ -3229,7 +3229,7 @@ BBC10010 38210018
 83E10008 38210010
 80010004 7C0803A6
 4E800020 00000000
-C20BF8D0 0000000C #../ASM/ATW Freestyle ASM/Custom Items/Poison Colour Effect Think.asm
+C20BF8D0 0000000C #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Poison Colour Effect Think.asm
 90010004 9421FF00
 BC610008 3D808032
 618CC87C 7D8803A6
@@ -3242,7 +3242,7 @@ B8610008 80010104
 B8610008 80010104
 38210100 8003002C
 60000000 00000000
-C20D1E80 00000008 #../ASM/ATW Freestyle ASM/Custom Items/Poison Mushroom Collide.asm
+C20D1E80 00000008 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Poison Mushroom Collide.asm
 7C0802A6 90010004
 9421FF50 BE810008
 8283002C 8A94000C
@@ -3251,7 +3251,7 @@ BA810008 800100B4
 3D80800C 618C318C
 7D8903A6 4E800420
 60000000 00000000
-C2295524 00000024 #../ASM/ATW Freestyle ASM/Custom Items/Pow Block Pickup.asm
+C2295524 00000024 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Pow Block Pickup.asm
 7C0802A6 90010004
 9421FFF4 8083002C
 2C040000 418200F8
@@ -3288,7 +3288,7 @@ C2295524 00000024 #../ASM/ATW Freestyle ASM/Custom Items/Pow Block Pickup.asm
 4082FF54 80010010
 3821000C 7C0803A6
 4E800020 00000000
-C22953F8 00000008 #../ASM/ATW Freestyle ASM/Custom Items/Pow Block Set Stuff.asm
+C22953F8 00000008 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Pow Block Set Stuff.asm
 7EC802A6 38600000
 90650614 90650DCC
 90650D24 806500B8
@@ -3297,7 +3297,7 @@ C22953F8 00000008 #../ASM/ATW Freestyle ASM/Custom Items/Pow Block Set Stuff.asm
 7D8903A6 4E800421
 7EC803A6 4E800020
 60000000 00000000
-C228FC10 0000000D #../ASM/ATW Freestyle ASM/Custom Items/Random Food ID.asm
+C228FC10 0000000D #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Random Food ID.asm
 38600014 3D808038
 618C0580 7D8903A6
 4E800421 2C03000A
@@ -3311,13 +3311,13 @@ C228FC10 0000000D #../ASM/ATW Freestyle ASM/Custom Items/Random Food ID.asm
 2C030016 4182FFE8
 2C030017 4182FFE0
 60000000 00000000
-C206D374 00000005 #../ASM/ATW Freestyle ASM/Custom Items/Screw Effect Does No Damage.asm
+C206D374 00000005 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Screw Effect Does No Damage.asm
 C3FE1838 829E1860
 2C14000E 40820014
 3D808006 618CD380
 7D8903A6 4E800420
 60000000 00000000
-C2077D24 00000008 #../ASM/ATW Freestyle ASM/Custom Items/Starman Pickup.asm
+C2077D24 00000008 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Starman Pickup.asm
 8A83000C 3D808032
 618CC87C 7D8803A6
 4E800021 7EA802A6
@@ -3326,7 +3326,7 @@ C2077D24 00000008 #../ASM/ATW Freestyle ASM/Custom Items/Starman Pickup.asm
 1E940002 7ED5A22E
 3AD6021C 7ED5A32E
 60000000 00000000
-C20D14E4 00000015 #../ASM/ATW Freestyle ASM/Custom Items/Super Mushroom Pickup.asm
+C20D14E4 00000015 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Super Mushroom Pickup.asm
 7C0802A6 90010004
 9421FF50 BE810008
 8A9F000C 3D808032
@@ -3348,29 +3348,29 @@ C20D14E4 00000015 #../ASM/ATW Freestyle ASM/Custom Items/Super Mushroom Pickup.a
 800100B4 382100B0
 7C0803A6 4E800020
 60000000 00000000
-040CBBF0 60000000 #../ASM/ATW Freestyle ASM/Custom Items/Bunny hood/Jumps work properly.asm
-040CC264 60000000 #../ASM/ATW Freestyle ASM/Custom Items/Bunny hood/Mewtwo jump.asm
-040CBD64 60000000 #../ASM/ATW Freestyle ASM/Custom Items/Bunny hood/Ness jump.asm
-040CC114 60000000 #../ASM/ATW Freestyle ASM/Custom Items/Bunny hood/Peach jump.asm
-C20D120C 00000004 #../ASM/ATW Freestyle ASM/Custom Items/Bunny hood/Stats.asm
+040CBBF0 60000000 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Bunny hood/Jumps work properly.asm
+040CC264 60000000 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Bunny hood/Mewtwo jump.asm
+040CBD64 60000000 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Bunny hood/Ness jump.asm
+040CC114 60000000 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Bunny hood/Peach jump.asm
+C20D120C 00000004 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Bunny hood/Stats.asm
 829E0168 3A940001
 929E0168 3D80800D
 618C1324 7D8903A6
 4E800420 00000000
-040CBEC8 60000000 #../ASM/ATW Freestyle ASM/Custom Items/Bunny hood/Yoshi jump.asm
-C20D1E84 00000002 #../ASM/ATW Freestyle ASM/Custom Items/Saftey Spawns/1.asm
+040CBEC8 60000000 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Bunny hood/Yoshi jump.asm
+C20D1E84 00000002 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Saftey Spawns/1.asm
 7C0802A6 90010004
 60000000 00000000
-C228FD80 00000002 #../ASM/ATW Freestyle ASM/Custom Items/Saftey Spawns/2.asm
+C228FD80 00000002 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Saftey Spawns/2.asm
 7C0802A6 90010004
 60000000 00000000
-C20945B0 00000005 #../ASM/ATW Freestyle ASM/Custom Items/Saftey Spawns/disable something.asm
+C20945B0 00000005 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Saftey Spawns/disable something.asm
 3E808049 6294E6C8
 82940088 2C14000A
 40820014 3D808006
 618CCF5C 7D8803A6
 4E800021 00000000
-C20CB9EC 0000000A #../ASM/ATW Freestyle ASM/Custom Items/Screw Attack Jumps/1.asm
+C20CB9EC 0000000A #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Screw Attack Jumps/1.asm
 3E808019 6294A2E4
 82940000 2C140001
 4182002C 3D808032
@@ -3381,7 +3381,7 @@ C20CB9EC 0000000A #../ASM/ATW Freestyle ASM/Custom Items/Screw Attack Jumps/1.as
 4082000C 7C030800
 48000008 7C031800
 60000000 00000000
-C20CB56C 0000000A #../ASM/ATW Freestyle ASM/Custom Items/Screw Attack Jumps/2.asm
+C20CB56C 0000000A #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Screw Attack Jumps/2.asm
 3E808019 6294A2E4
 82940000 2C140001
 41820030 3D808032
@@ -3392,7 +3392,7 @@ C20CB56C 0000000A #../ASM/ATW Freestyle ASM/Custom Items/Screw Attack Jumps/2.as
 2C140001 4082000C
 7C030800 48000008
 7C031800 00000000
-C20D738C 0000000A #../ASM/ATW Freestyle ASM/Custom Items/Screw Attack Jumps/3.asm
+C20D738C 0000000A #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Screw Attack Jumps/3.asm
 3E808019 6294A2E4
 82940000 2C140001
 4182002C 3D808032
@@ -3403,7 +3403,7 @@ C20D738C 0000000A #../ASM/ATW Freestyle ASM/Custom Items/Screw Attack Jumps/3.as
 4082000C 7C030800
 48000008 7C031800
 60000000 00000000
-C232C894 00000022 #../ASM/ATW Freestyle ASM/Custom Items/Standalones/CI Healing Sprout.asm
+C232C894 00000022 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Standalones/CI Healing Sprout.asm
 7C0802A6 90010004
 9421FF00 BC610008
 7E038378 3D808032
@@ -3438,7 +3438,7 @@ C232C894 00000022 #../ASM/ATW Freestyle ASM/Custom Items/Standalones/CI Healing 
 80010104 38210100
 7C0803A6 4E800020
 60000000 00000000
-C232C884 00000030 #../ASM/ATW Freestyle ASM/Custom Items/Standalones/CI Healing.asm
+C232C884 00000030 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Standalones/CI Healing.asm
 7C0802A6 90010004
 9421FF00 BC610008
 7E6F80AE 2C1300F0
@@ -3487,7 +3487,7 @@ B0830060 B8610008
 80010104 38210100
 7C0803A6 4E800020
 60000000 00000000
-C232C890 00000011 #../ASM/ATW Freestyle ASM/Custom Items/Standalones/CI Screw Attack.asm
+C232C890 00000011 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Standalones/CI Screw Attack.asm
 7C0802A6 90010004
 9421FF00 BC610008
 39EF0004 1E500002
@@ -3505,7 +3505,7 @@ C232C890 00000011 #../ASM/ATW Freestyle ASM/Custom Items/Standalones/CI Screw At
 80010104 38210100
 7C0803A6 4E800020
 60000000 00000000
-C232C88C 00000010 #../ASM/ATW Freestyle ASM/Custom Items/Standalones/CI Turbo.asm
+C232C88C 00000010 #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Standalones/CI Turbo.asm
 7C0802A6 90010004
 9421FF00 BC610008
 39EF0004 1E500002
@@ -3522,7 +3522,7 @@ C232C88C 00000010 #../ASM/ATW Freestyle ASM/Custom Items/Standalones/CI Turbo.as
 B8610008 80010104
 38210100 7C0803A6
 4E800020 00000000
-C232C888 0000001D #../ASM/ATW Freestyle ASM/Custom Items/Standalones/CI Yoshi Armor.asm
+C232C888 0000001D #../ASM/Gamemodes/ATW Freestyle ASM/Custom Items/Standalones/CI Yoshi Armor.asm
 7C0802A6 90010004
 9421FF00 BC610008
 39EF0004 1E500002
@@ -3552,7 +3552,7 @@ D10318B4 48000028
 80010104 38210100
 7C0803A6 4E800020
 60000000 00000000
-C22F6B18 00000015 #../ASM/ATW Freestyle ASM/Gameplay Codes/Health per Kill.asm
+C22F6B18 00000015 #../ASM/Gamemodes/ATW Freestyle ASM/Gameplay Codes/Health per Kill.asm
 7C0802A6 90010004
 9421FF00 BC610008
 9BE3000D 3E808048
@@ -3574,8 +3574,8 @@ C162E3AC FC0B5040
 D1541830 B8610008
 80010104 38210100
 7C0803A6 00000000
-040C1444 60000000 #../ASM/ATW Freestyle ASM/Gameplay Codes/Invincibility After Bury.asm
-C216E480 00000010 #../ASM/ATW Freestyle ASM/Gameplay Codes/Random Spawns.asm
+040C1444 60000000 #../ASM/Gamemodes/ATW Freestyle ASM/Gameplay Codes/Invincibility After Bury.asm
+C216E480 00000010 #../ASM/Gamemodes/ATW Freestyle ASM/Gameplay Codes/Random Spawns.asm
 7C000774 2C00FFFF
 40820070 9421FF00
 BC610008 3D808016
@@ -3592,10 +3592,10 @@ B8610008 38210100
 7C601B78 B8610008
 38210100 981E003B
 60000000 00000000
-0426196C 60000000 #../ASM/ATW Freestyle ASM/Gameplay Codes/Colours/test2.asm
-04261980 60000000 #../ASM/ATW Freestyle ASM/Gameplay Codes/Colours/test3.asm
-0425EDC4 60000000 #../ASM/ATW Freestyle ASM/Gameplay Codes/Colours/test4.asm
-C23A746C 00000015 #../ASM/ATW Freestyle ASM/Gameplay Codes/Colours/test5.asm
+0426196C 60000000 #../ASM/Gamemodes/ATW Freestyle ASM/Gameplay Codes/Colours/test2.asm
+04261980 60000000 #../ASM/Gamemodes/ATW Freestyle ASM/Gameplay Codes/Colours/test3.asm
+0425EDC4 60000000 #../ASM/Gamemodes/ATW Freestyle ASM/Gameplay Codes/Colours/test4.asm
+C23A746C 00000015 #../ASM/Gamemodes/ATW Freestyle ASM/Gameplay Codes/Colours/test5.asm
 7C0802A6 90010004
 9421FF00 BC610008
 3E808048 629407C8
@@ -3617,7 +3617,7 @@ FF00007F 0000FF7F
 00FF007F B8610008
 80010104 38210100
 7C0803A6 00000000
-C2294DCC 0000000C #../ASM/ATW Freestyle ASM/Gameplay Codes/Sudden Death/Choose Item.asm
+C2294DCC 0000000C #../ASM/Gamemodes/ATW Freestyle ASM/Gameplay Codes/Sudden Death/Choose Item.asm
 7C771B78 82828318
 2C140000 40820038
 3860003C 3D808038
@@ -3630,9 +3630,9 @@ C2294DCC 0000000C #../ASM/ATW Freestyle ASM/Gameplay Codes/Sudden Death/Choose I
 2C140022 4181FFC4
 7E80A378 7EE3BB78
 38A00000 00000000
-041C0EB0 2C030000 #../ASM/ATW Freestyle ASM/Gameplay Codes/Sudden Death/Choose Timer.asm
-0426BEC0 3800001F #../ASM/ATW Freestyle ASM/Gameplay Codes/Sudden Death/Custom Item Rain.asm
-C228F42C 0000000B #../ASM/ATW Freestyle ASM/Item Codes/Attacking Freezie Freezes You.asm
+041C0EB0 2C030000 #../ASM/Gamemodes/ATW Freestyle ASM/Gameplay Codes/Sudden Death/Choose Timer.asm
+0426BEC0 3800001F #../ASM/Gamemodes/ATW Freestyle ASM/Gameplay Codes/Sudden Death/Custom Item Rain.asm
+C228F42C 0000000B #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Attacking Freezie Freezes You.asm
 7C0802A6 90010004
 9421FF00 BC610008
 807F0CEC A1E30000
@@ -3644,8 +3644,8 @@ C228F42C 0000000B #../ASM/ATW Freestyle ASM/Item Codes/Attacking Freezie Freezes
 80010104 38210100
 7C0803A6 38600001
 60000000 00000000
-040C88D4 4E800020 #../ASM/ATW Freestyle ASM/Item Codes/Cloaking Device blr.asm
-C2090BCC 0000000B #../ASM/ATW Freestyle ASM/Item Codes/Custom Freeze Think.asm
+040C88D4 4E800020 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Cloaking Device blr.asm
+C2090BCC 0000000B #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Custom Freeze Think.asm
 829D1838 2C140000
 4182002C 829D1868
 A2B40000 2C150006
@@ -3657,13 +3657,13 @@ C8628000 D8620020
 B2C20026 C8220020
 EC211828 48000008
 C03D1838 00000000
-C22699C4 00000005 #../ASM/ATW Freestyle ASM/Item Codes/Don't Destory Freezie.asm
+C22699C4 00000005 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Don't Destory Freezie.asm
 801F0010 2C000011
 40820008 48000014
 3D808026 618CA8EC
 7D8903A6 4E800421
 60000000 00000000
-C206CE98 0000000A #../ASM/ATW Freestyle ASM/Item Codes/Drop Item Think.asm
+C206CE98 0000000A #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Drop Item Think.asm
 829D0010 2C140133
 41800014 2C140139
 4181000C 3860FFFF
@@ -3674,10 +3674,10 @@ C206CE98 0000000A #../ASM/ATW Freestyle ASM/Item Codes/Drop Item Think.asm
 82940010 2C14001E
 40820008 3860FFFF
 2C03001E 00000000
-C22912E8 00000002 #../ASM/ATW Freestyle ASM/Item Codes/Flipper Lasts Longer.asm
+C22912E8 00000002 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Flipper Lasts Longer.asm
 3E804496 929F0D44
 60000000 00000000
-C22699BC 0000000C #../ASM/ATW Freestyle ASM/Item Codes/Freezie Keeps Sliding After Being Thrown.asm
+C22699BC 0000000C #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Freezie Keeps Sliding After Being Thrown.asm
 807F0010 2C030011
 40820050 3C608028
 6063EFB0 907F0D1C
@@ -3690,23 +3690,23 @@ C1630000 FD4B02B2
 D15F0040 48000010
 4E800021 3ECCCCCC
 901F0000 00000000
-04293DFC 48000020 #../ASM/ATW Freestyle ASM/Item Codes/Hammer Head Doesn't Fall Off.asm
-04283F28 4E800020 #../ASM/ATW Freestyle ASM/Item Codes/Heart Canister blr.asm
-040871A8 4E800020 #../ASM/ATW Freestyle ASM/Item Codes/Metal blr.asm
-0428B01C 60000000 #../ASM/ATW Freestyle ASM/Item Codes/Party Ball Activates After Getting Hit.asm
-C2279A34 00000006 #../ASM/ATW Freestyle ASM/Item Codes/Party Ball Activates Instantly.asm
+04293DFC 48000020 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Hammer Head Doesn't Fall Off.asm
+04283F28 4E800020 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Heart Canister blr.asm
+040871A8 4E800020 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Metal blr.asm
+0428B01C 60000000 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Party Ball Activates After Getting Hit.asm
+C2279A34 00000006 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Party Ball Activates Instantly.asm
 82DE0010 2C160004
 4182000C C01E05D0
 4800001C 3AC00007
 C8628000 D8620020
 B2C20026 C8020020
 EC001828 00000000
-C228A18C 00000002 #../ASM/ATW Freestyle ASM/Item Codes/Party Ball Doesn't Explode.asm
+C228A18C 00000002 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Party Ball Doesn't Explode.asm
 38600001 4E800020
 60000000 00000000
-04289D64 38600050 #../ASM/ATW Freestyle ASM/Item Codes/Party Ball Drops Random Items.asm
-0428E754 38800003 #../ASM/ATW Freestyle ASM/Item Codes/Ray Gun Has 3 Ammo.asm
-C228DC80 00000008 #../ASM/ATW Freestyle ASM/Item Codes/Red Shell Timer.asm
+04289D64 38600050 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Party Ball Drops Random Items.asm
+0428E754 38800003 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Ray Gun Has 3 Ammo.asm
+C228DC80 00000008 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Red Shell Timer.asm
 C01E0DD4 829E0010
 2C14000F 4082002C
 829E0DD4 3EA043F0
@@ -3715,7 +3715,7 @@ C01E0DD4 829E0010
 618CC848 7D8803A6
 4E800021 FC004090
 60000000 00000000
-C2094C60 00000010 #../ASM/ATW Freestyle ASM/Item Codes/Redirect heart canister.asm
+C2094C60 00000010 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Redirect heart canister.asm
 8A83000C 3D808032
 618CC87C 7D8803A6
 4E800021 7EA802A6
@@ -3732,12 +3732,12 @@ C2094C60 00000010 #../ASM/ATW Freestyle ASM/Item Codes/Redirect heart canister.a
 3AE00000 7EF5A1AE
 3AB50004 1E940002
 7EF4AB2E 00000000
-040C5318 3800012C #../ASM/ATW Freestyle ASM/Item Codes/Reduced Hammer Timer.asm
-C206A580 00000003 #../ASM/ATW Freestyle ASM/Item Codes/Shrink Nerf.asm
+040C5318 3800012C #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Reduced Hammer Timer.asm
+C206A580 00000003 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Shrink Nerf.asm
 2C0301E0 41800008
 386000F0 3803FFFF
 60000000 00000000
-C22969C0 00000007 #../ASM/ATW Freestyle ASM/Item Codes/Throwing Barrel Cannon Puts You Inside.asm
+C22969C0 00000007 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Throwing Barrel Cannon Puts You Inside.asm
 7FC3F378 931F0D00
 3D808029 618C5ED4
 7D8903A6 4E800421
@@ -3745,10 +3745,10 @@ C22969C0 00000007 #../ASM/ATW Freestyle ASM/Item Codes/Throwing Barrel Cannon Pu
 3D80800C 618C9078
 7D8903A6 4E800421
 80010024 00000000
-04283C48 4E800020 #../ASM/ATW Freestyle ASM/Item Codes/Unknown blr 1.asm
-04284324 4E800020 #../ASM/ATW Freestyle ASM/Item Codes/Unknown blr 2.asm
-04268A90 60000000 #../ASM/ATW Freestyle ASM/Item Codes/Yoshi egg no camera box.asm
-C20CE010 0000000C #../ASM/ATW Freestyle ASM/Item Codes/360 No Scopes/1.asm
+04283C48 4E800020 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Unknown blr 1.asm
+04284324 4E800020 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Unknown blr 2.asm
+04268A90 60000000 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Yoshi egg no camera box.asm
+C20CE010 0000000C #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/360 No Scopes/1.asm
 7C0802A6 8283002C
 8AB40676 3AC00014
 7C15B000 40800044
@@ -3761,7 +3761,7 @@ C0028BE8 FC000800
 56B507FF 4082000C
 FC000850 D014002C
 60000000 00000000
-C20CE480 0000000C #../ASM/ATW Freestyle ASM/Item Codes/360 No Scopes/2.asm
+C20CE480 0000000C #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/360 No Scopes/2.asm
 7C0802A6 8283002C
 8AB40676 3AC00014
 7C15B000 40800044
@@ -3774,7 +3774,7 @@ C0028BE8 FC000800
 56B507FF 4082000C
 FC000850 D014002C
 60000000 00000000
-C20D7770 0000000C #../ASM/ATW Freestyle ASM/Item Codes/360 No Scopes/3.asm
+C20D7770 0000000C #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/360 No Scopes/3.asm
 7C0802A6 8283002C
 8AB40676 3AC00014
 7C15B000 40800044
@@ -3787,22 +3787,22 @@ C0028BE8 FC000800
 56B507FF 4082000C
 FC000850 D014002C
 60000000 00000000
-04286F60 60000000 #../ASM/ATW Freestyle ASM/Item Codes/Containers/1.asm
-04288870 38600001 #../ASM/ATW Freestyle ASM/Item Codes/Containers/10.asm
-0427D39C 38600001 #../ASM/ATW Freestyle ASM/Item Codes/Containers/11.asm
-04289258 38600001 #../ASM/ATW Freestyle ASM/Item Codes/Containers/12.asm
-04288DF0 38600001 #../ASM/ATW Freestyle ASM/Item Codes/Containers/13.asm
-C2288AF8 00000002 #../ASM/ATW Freestyle ASM/Item Codes/Containers/2.asm
+04286F60 60000000 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Containers/1.asm
+04288870 38600001 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Containers/10.asm
+0427D39C 38600001 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Containers/11.asm
+04289258 38600001 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Containers/12.asm
+04288DF0 38600001 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Containers/13.asm
+C2288AF8 00000002 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Containers/2.asm
 4C411382 38000000
 2C000001 00000000
-04288B74 38600000 #../ASM/ATW Freestyle ASM/Item Codes/Containers/3.asm
-0427CF8C 48000018 #../ASM/ATW Freestyle ASM/Item Codes/Containers/4.asm
-04288B28 60000000 #../ASM/ATW Freestyle ASM/Item Codes/Containers/5.asm
-0428639C 38600001 #../ASM/ATW Freestyle ASM/Item Codes/Containers/6.asm
-04286898 38600001 #../ASM/ATW Freestyle ASM/Item Codes/Containers/7.asm
-04286928 38600001 #../ASM/ATW Freestyle ASM/Item Codes/Containers/8.asm
-04063990 38600001 #../ASM/ATW Freestyle ASM/Item Codes/Containers/9.asm
-C216733C 0000000C #../ASM/ATW Freestyle ASM/Misc/Clear Data on Death.asm
+04288B74 38600000 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Containers/3.asm
+0427CF8C 48000018 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Containers/4.asm
+04288B28 60000000 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Containers/5.asm
+0428639C 38600001 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Containers/6.asm
+04286898 38600001 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Containers/7.asm
+04286928 38600001 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Containers/8.asm
+04063990 38600001 #../ASM/Gamemodes/ATW Freestyle ASM/Item Codes/Containers/9.asm
+C216733C 0000000C #../ASM/Gamemodes/ATW Freestyle ASM/Misc/Clear Data on Death.asm
 3BA30000 90010004
 9421FF00 BC610008
 3D808032 618CC87C
@@ -3815,8 +3815,8 @@ C216733C 0000000C #../ASM/ATW Freestyle ASM/Misc/Clear Data on Death.asm
 41820008 4BFFFFE4
 B8610008 80010104
 38210100 00000000
-0422C340 60000000 #../ASM/ATW Freestyle ASM/Misc/Disable Custom Rules Texture.asm
-C216E920 0000000B #../ASM/ATW Freestyle ASM/Misc/End of Start Melee Do Things.asm
+0422C340 60000000 #../ASM/Gamemodes/ATW Freestyle ASM/Misc/Disable Custom Rules Texture.asm
+C216E920 0000000B #../ASM/Gamemodes/ATW Freestyle ASM/Misc/End of Start Melee Do Things.asm
 90010004 9421FF00
 BC610008 3D808032
 618CC87C 7D8803A6
@@ -3828,43 +3828,43 @@ BC610008 3D808032
 B8610008 80010104
 38210100 83E1001C
 60000000 00000000
-0445C370 02000000 #../ASM/ATW Freestyle ASM/Misc/Settings/1.asm
-0445C37C FFFBFFFF #../ASM/ATW Freestyle ASM/Misc/Settings/2.asm
-0445C388 FFEAFBFF #../ASM/ATW Freestyle ASM/Misc/Settings/3.asm
-0445BF10 00350100 #../ASM/ATW Freestyle ASM/Misc/Settings/4.asm
-0445BF14 01000A01 #../ASM/ATW Freestyle ASM/Misc/Settings/5.asm
-0445BF18 02010100 #../ASM/ATW Freestyle ASM/Misc/Settings/6.asm
-C22D3F34 00000003 #../ASM/ATW Freestyle ASM/Pokemon Codes/Celebi.asm
+0445C370 02000000 #../ASM/Gamemodes/ATW Freestyle ASM/Misc/Settings/1.asm
+0445C37C FFFBFFFF #../ASM/Gamemodes/ATW Freestyle ASM/Misc/Settings/2.asm
+0445C388 FFEAFBFF #../ASM/Gamemodes/ATW Freestyle ASM/Misc/Settings/3.asm
+0445BF10 00350100 #../ASM/Gamemodes/ATW Freestyle ASM/Misc/Settings/4.asm
+0445BF14 01000A01 #../ASM/Gamemodes/ATW Freestyle ASM/Misc/Settings/5.asm
+0445BF18 02010100 #../ASM/Gamemodes/ATW Freestyle ASM/Misc/Settings/6.asm
+C22D3F34 00000003 #../ASM/Gamemodes/ATW Freestyle ASM/Pokemon Codes/Celebi.asm
 3E808043 3EA00007
 62B5B98A 92B42A2C
 8001001C 00000000
-042D572C 38000022 #../ASM/ATW Freestyle ASM/Pokemon Codes/Chancey 2.asm
-04288CB0 38000022 #../ASM/ATW Freestyle ASM/Pokemon Codes/Chancey.asm
-C22D3054 00000003 #../ASM/ATW Freestyle ASM/Pokemon Codes/Ditto.asm
+042D572C 38000022 #../ASM/Gamemodes/ATW Freestyle ASM/Pokemon Codes/Chancey 2.asm
+04288CB0 38000022 #../ASM/Gamemodes/ATW Freestyle ASM/Pokemon Codes/Chancey.asm
+C22D3054 00000003 #../ASM/Gamemodes/ATW Freestyle ASM/Pokemon Codes/Ditto.asm
 3E808046 6294B6C8
 3AA00006 92B40000
 8001001C 00000000
-C22D102C 00000002 #../ASM/ATW Freestyle ASM/Pokemon Codes/Electrode.asm
+C22D102C 00000002 #../ASM/Gamemodes/ATW Freestyle ASM/Pokemon Codes/Electrode.asm
 38800004 98830DCA
 387E0000 00000000
-C22D3B54 00000003 #../ASM/ATW Freestyle ASM/Pokemon Codes/Mew.asm
+C22D3B54 00000003 #../ASM/Gamemodes/ATW Freestyle ASM/Pokemon Codes/Mew.asm
 3E808043 3EA00014
 62B59970 92B42A2C
 8001001C 00000000
-C22D5AFC 00000002 #../ASM/ATW Freestyle ASM/Pokemon Codes/Porygon.asm
+C22D5AFC 00000002 #../ASM/Gamemodes/ATW Freestyle ASM/Pokemon Codes/Porygon.asm
 38000042 98040524
 8001001C 00000000
-C22D44F4 00000002 #../ASM/ATW Freestyle ASM/Pokemon Codes/Staryu.asm
+C22D44F4 00000002 #../ASM/Gamemodes/ATW Freestyle ASM/Pokemon Codes/Staryu.asm
 C002E694 D01F0E58
 60000000 00000000
-042CD480 38800A8C #../ASM/ATW Freestyle ASM/Pokemon Codes/Wobbuffet.asm
-C2219D50 00000005 #../ASM/ATW Freestyle ASM/Stage Codes/Battlefield.asm
+042CD480 38800A8C #../ASM/Gamemodes/ATW Freestyle ASM/Pokemon Codes/Wobbuffet.asm
+C2219D50 00000005 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/Battlefield.asm
 3FE08049 63FFED74
 83FF0000 83FF0008
 3BA00000 9BBF000E
 9BBF005E 4E800020
 60000000 00000000
-C21D8518 00000012 #../ASM/ATW Freestyle ASM/Stage Codes/Brinstar.asm
+C21D8518 00000012 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/Brinstar.asm
 38600008 3D800000
 618C0000 7D8803A6
 4E800021 38800000
@@ -3880,10 +3880,10 @@ C0340000 3D80801C
 4E800021 38600008
 3D800000 618C0000
 7D8803A6 4E800021
-3D808038 618CFED4
+3D800000 618C0000
 7D8803A6 4E800021
 8001000C 00000000
-C21C60DC 0000001B #../ASM/ATW Freestyle ASM/Stage Codes/Custom Collisions.asm
+C21C60DC 0000001B #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/Custom Collisions.asm
 907E06AC 3E808049
 6294E6C8 82940088
 2C140003 4182005C
@@ -3911,7 +3911,7 @@ C21C60DC 0000001B #../ASM/ATW Freestyle ASM/Stage Codes/Custom Collisions.asm
 986400FE 48000010
 80830008 38600002
 9864000E 00000000
-C22109D0 00000021 #../ASM/ATW Freestyle ASM/Stage Codes/Dreamland.asm
+C22109D0 00000021 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/Dreamland.asm
 7C0802A6 90010004
 9421FF50 BE810008
 4800007D 7E8802A6
@@ -3945,13 +3945,13 @@ C22109D0 00000021 #../ASM/ATW Freestyle ASM/Stage Codes/Dreamland.asm
 BA810008 800100B4
 382100B0 7C0803A6
 4E800020 00000000
-C221A7C0 00000005 #../ASM/ATW Freestyle ASM/Stage Codes/FD.asm
+C221A7C0 00000005 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/FD.asm
 3FE08049 63FFED74
 83FF0000 83FF0008
 3BA0000F 9BBF000F
 9BBF001F 9BBF002F
 4E800020 00000000
-C20D32E8 00000015 #../ASM/ATW Freestyle ASM/Stage Codes/FOD.asm
+C20D32E8 00000015 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/FOD.asm
 3E808049 6294E6C8
 82940088 2C14000C
 40820090 887E000C
@@ -3973,38 +3973,38 @@ D0230000 4200FFF4
 3C60800D 606331A4
 7C6903A6 4E800420
 7FE3FB78 00000000
-042171D4 4E800020 #../ASM/ATW Freestyle ASM/Stage Codes/Flatzone.asm
-C20343B4 00000006 #../ASM/ATW Freestyle ASM/Stage Codes/Hyrule.asm
+042171D4 4E800020 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/Flatzone.asm
+C20343B4 00000006 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/Hyrule.asm
 2C000060 40820024
 3E808046 6294B6A0
 A29424D6 2C1E0000
 40820010 2C14000E
 40820008 3BC00032
 7FDD032E 00000000
-041FAB7C 60000000 #../ASM/ATW Freestyle ASM/Stage Codes/MK1.asm
-041E3794 60000000 #../ASM/ATW Freestyle ASM/Stage Codes/Onett drugstore.asm
-041CFBBC 60000000 #../ASM/ATW Freestyle ASM/Stage Codes/Peachs castle.asm
-041FE54C 38607FFF #../ASM/ATW Freestyle ASM/Stage Codes/Brinstar Depths/1.asm
-041FE650 60000000 #../ASM/ATW Freestyle ASM/Stage Codes/Brinstar Depths/2.asm
-041D591C 38600045 #../ASM/ATW Freestyle ASM/Stage Codes/Kongo Jungle/Barrel 1.asm
-041D81FC 38C00096 #../ASM/ATW Freestyle ASM/Stage Codes/Kongo Jungle/Kongo Jungle.asm
-0420FA28 38600045 #../ASM/ATW Freestyle ASM/Stage Codes/Kongo Jungle 64/Barrel 1.asm
-0421051C 38C00096 #../ASM/ATW Freestyle ASM/Stage Codes/Kongo Jungle 64/Kongo Jungle 64.asm
-041D4F3C 3B800000 #../ASM/ATW Freestyle ASM/Stage Codes/Pokemon Stadium/1.asm
-041D4FA8 3B800708 #../ASM/ATW Freestyle ASM/Stage Codes/Pokemon Stadium/2.asm
-041D14A0 3B600001 #../ASM/ATW Freestyle ASM/Stage Codes/Pokemon Stadium/3.asm
-041D1548 48003001 #../ASM/ATW Freestyle ASM/Stage Codes/Pokemon Stadium/Unfrozen.asm
-C21E3348 00000003 #../ASM/ATW Freestyle ASM/Stage Codes/Shy Guys/1.asm
+041FAB7C 60000000 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/MK1.asm
+041E3794 60000000 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/Onett drugstore.asm
+041CFBBC 60000000 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/Peachs castle.asm
+041FE54C 38607FFF #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/Brinstar Depths/1.asm
+041FE650 60000000 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/Brinstar Depths/2.asm
+041D591C 38600045 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/Kongo Jungle/Barrel 1.asm
+041D81FC 38C00096 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/Kongo Jungle/Kongo Jungle.asm
+0420FA28 38600045 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/Kongo Jungle 64/Barrel 1.asm
+0421051C 38C00096 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/Kongo Jungle 64/Kongo Jungle 64.asm
+041D4F3C 3B800000 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/Pokemon Stadium/1.asm
+041D4FA8 3B800708 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/Pokemon Stadium/2.asm
+041D14A0 3B600001 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/Pokemon Stadium/3.asm
+041D1548 48003001 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/Pokemon Stadium/Unfrozen.asm
+C21E3348 00000003 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/Shy Guys/1.asm
 3D80801E 618C3418
 7D8803A6 4E800021
 60000000 00000000
-041E3448 2C030020 #../ASM/ATW Freestyle ASM/Stage Codes/Shy Guys/2.asm
-041E344C 418101F8 #../ASM/ATW Freestyle ASM/Stage Codes/Shy Guys/3.asm
-0420ED3C 4800005C #../ASM/ATW Freestyle ASM/Stage Codes/YIN64/1.asm
-0420ECEC 60000000 #../ASM/ATW Freestyle ASM/Stage Codes/YIN64/2.asm
-0420EC78 7C011000 #../ASM/ATW Freestyle ASM/Stage Codes/YIN64/3.asm
-0420EE38 7C020800 #../ASM/ATW Freestyle ASM/Stage Codes/YIN64/4.asm
-C220E814 00000008 #../ASM/ATW Freestyle ASM/Stage Codes/YIN64/5.asm
+041E3448 2C030020 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/Shy Guys/2.asm
+041E344C 418101F8 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/Shy Guys/3.asm
+0420ED3C 4800005C #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/YIN64/1.asm
+0420ECEC 60000000 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/YIN64/2.asm
+0420EC78 7C011000 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/YIN64/3.asm
+0420EE38 7C020800 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/YIN64/4.asm
+C220E814 00000008 #../ASM/Gamemodes/ATW Freestyle ASM/Stage Codes/YIN64/5.asm
 3E808049 6294E6C8
 3EA04314 62B50000
 92B40004 3EA0C314
@@ -4013,12 +4013,12 @@ C220E814 00000008 #../ASM/ATW Freestyle ASM/Stage Codes/YIN64/5.asm
 92B40078 3EA0C355
 62B50000 92B40074
 8001000C 00000000
-C232C880 00000004 #../ASM/ATW Freestyle ASM/Standalones/Get Item Functions.asm
+C232C880 00000004 #../ASM/Gamemodes/ATW Freestyle ASM/Standalones/Get Item Functions.asm
 4E800021 8032C884
 8032C888 8032C88C
 8032C890 8032C894
 60000000 00000000
-C232C87C 00000009 #../ASM/ATW Freestyle ASM/Standalones/Get Item Vars.asm
+C232C87C 00000009 #../ASM/Gamemodes/ATW Freestyle ASM/Standalones/Get Item Vars.asm
 4E800021 00000000
 00000000 00000000
 00000000 00000000

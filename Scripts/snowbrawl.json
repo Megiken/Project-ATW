@@ -21,7 +21,7 @@
       "build": [
         {
           "type": "injectFolder",
-          "sourceFolder": "..\\ASM\\Snowbrawl ASM\\",
+          "sourceFolder": "..\\ASM\\Minigames\\Snowbrawl ASM\\",
           "isRecursive": true
         }
 

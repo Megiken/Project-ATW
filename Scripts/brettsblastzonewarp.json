@@ -21,7 +21,7 @@
       "build": [
         {
           "type": "injectFolder",
-          "sourceFolder": "..\\ASM\\Bretts Blastzone Warping ASM\\",
+          "sourceFolder": "..\\ASM\\Minigames\\Bretts Blastzone Warping ASM\\",
           "isRecursive": true
         }
 

@@ -21,7 +21,7 @@
       "build": [
         {
           "type": "injectFolder",
-          "sourceFolder": "..\\ASM\\Mr Saturn Soccer ASM\\",
+          "sourceFolder": "..\\ASM\\Minigames\\Mr Saturn Soccer ASM\\",
           "isRecursive": true
         }
 

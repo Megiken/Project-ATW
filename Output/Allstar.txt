@@ -2,22 +2,22 @@
 
 [Gecko]
 $All Star [Big Money]
-C2096728 00000006 #../ASM/All star ASM/Disable Transformations/1.asm
+C2096728 00000006 #../ASM/Gamemodes/All star ASM/Disable Transformations/1.asm
 81FF0004 2C0F0013
 4182000C 2C0F0007
 40820018 3C608009
 606368B0 7C6903A6
 38600000 4E800420
 387E0000 00000000
-C20D68D8 00000006 #../ASM/All star ASM/Disable Transformations/2.asm
+C20D68D8 00000006 #../ASM/Gamemodes/All star ASM/Disable Transformations/2.asm
 81E50004 2C0F0013
 4182000C 2C0F0007
 40820018 3C60800D
 60636918 7C6903A6
 38600000 4E800420
 80850004 00000000
-0416D97C 7C000800 #../ASM/All star ASM/Disable Transformations/ways Holding A on Stage Load.asm
-C216E91C 0000000C #../ASM/All star ASM/Game setup.asm/Load stocks.asm
+0416D97C 7C000800 #../ASM/Gamemodes/All star ASM/Disable Transformations/ways Holding A on Stage Load.asm
+C216E91C 0000000C #../ASM/Gamemodes/All star ASM/Game setup.asm/Load stocks.asm
 7C0802A6 90010004
 9421FF00 BC610008
 3E808019 6294A26C
@@ -30,13 +30,13 @@ C216E91C 0000000C #../ASM/All star ASM/Game setup.asm/Load stocks.asm
 80010104 38210100
 7C0803A6 80010024
 60000000 00000000
-0445C370 FF000000 #../ASM/All star ASM/Settings/1.asm
-0445C37C 00000000 #../ASM/All star ASM/Settings/2.asm
-0445C388 E8000000 #../ASM/All star ASM/Settings/3.asm
-0445BF10 00350100 #../ASM/All star ASM/Settings/4.asm
-0445BF14 04000A01 #../ASM/All star ASM/Settings/5.asm
-0445BF18 08010100 #../ASM/All star ASM/Settings/6.asm
-C20BFD9C 0000001B #../ASM/All star ASM/Spawn as new character/Do swap.asm
+0445C370 FF000000 #../ASM/Gamemodes/All star ASM/Settings/1.asm
+0445C37C 00000000 #../ASM/Gamemodes/All star ASM/Settings/2.asm
+0445C388 E8000000 #../ASM/Gamemodes/All star ASM/Settings/3.asm
+0445BF10 00350100 #../ASM/Gamemodes/All star ASM/Settings/4.asm
+0445BF14 04000A01 #../ASM/Gamemodes/All star ASM/Settings/5.asm
+0445BF18 08010100 #../ASM/Gamemodes/All star ASM/Settings/6.asm
+C20BFD9C 0000001B #../ASM/Gamemodes/All star ASM/Spawn as new character/Do swap.asm
 7C0802A6 90010004
 9421FF00 BC610008
 8B3F000C 3D808032
@@ -64,11 +64,11 @@ C20BFD9C 0000001B #../ASM/All star ASM/Spawn as new character/Do swap.asm
 80010104 38210100
 7C0803A6 7C0802A6
 60000000 00000000
-C2017BE4 00000003 #../ASM/All star ASM/Spawn as new character/Extra length lol.asm
+C2017BE4 00000003 #../ASM/Gamemodes/All star ASM/Spawn as new character/Extra length lol.asm
 2C116969 4082000C
 3C600021 60634D00
 907A000C 00000000
-C216D310 0000000C #../ASM/All star ASM/Spawn as new character/Match end thing.asm
+C216D310 0000000C #../ASM/Gamemodes/All star ASM/Spawn as new character/Match end thing.asm
 9421FF00 BC610008
 3E808046 6294B6A0
 8A940008 2C140000
@@ -81,7 +81,7 @@ C216D310 0000000C #../ASM/All star ASM/Spawn as new character/Match end thing.as
 7E8802A6 92B40004
 B8610008 38210100
 83E10034 00000000
-C20D3338 00000037 #../ASM/All star ASM/Spawn as new character/Preload files.asm
+C20D3338 00000037 #../ASM/Gamemodes/All star ASM/Spawn as new character/Preload files.asm
 83E3002C 829F0004
 2C14000B 418201A8
 7C0802A6 90010004
@@ -137,7 +137,7 @@ B2830004 7F23CB78
 9263008C B8610008
 80010104 38210100
 7C0803A6 00000000
-C216D9C8 00000007 #../ASM/All star ASM/Spawn as new character/Sheik Think Again.asm
+C216D9C8 00000007 #../ASM/Gamemodes/All star ASM/Spawn as new character/Sheik Think Again.asm
 3D808032 618CC84C
 7D8803A6 4E800021
 7E8802A6 3A94006C
@@ -145,7 +145,7 @@ C216D9C8 00000007 #../ASM/All star ASM/Spawn as new character/Sheik Think Again.
 4082000C 38800013
 48000008 38800012
 60000000 00000000
-C216D9B8 00000007 #../ASM/All star ASM/Spawn as new character/Sheik Think.asm
+C216D9B8 00000007 #../ASM/Gamemodes/All star ASM/Spawn as new character/Sheik Think.asm
 3D808032 618CC84C
 7D8803A6 4E800021
 7E8802A6 3A94006C
@@ -153,13 +153,13 @@ C216D9B8 00000007 #../ASM/All star ASM/Spawn as new character/Sheik Think.asm
 4082000C 38800013
 48000008 38800012
 60000000 00000000
-C2068EC4 00000005 #../ASM/All star ASM/Spawn as new character/Skip GObj.asm
+C2068EC4 00000005 #../ASM/Gamemodes/All star ASM/Spawn as new character/Skip GObj.asm
 2C116969 41820018
 3D808039 618C01F0
 7D8903A6 4E800421
 48000008 7E038378
 60000000 00000000
-C206919C 00000007 #../ASM/All star ASM/Spawn as new character/Skip camera box.asm
+C206919C 00000007 #../ASM/Gamemodes/All star ASM/Spawn as new character/Skip camera box.asm
 2C116969 41820018
 3D808002 618C9020
 7D8903A6 4E800421
@@ -167,25 +167,25 @@ C206919C 00000007 #../ASM/All star ASM/Spawn as new character/Skip camera box.as
 3D808002 618C90D4
 7D8803A6 4E800021
 4BFFFFD8 00000000
-C2068EE8 00000005 #../ASM/All star ASM/Spawn as new character/Skip data.asm
+C2068EE8 00000005 #../ASM/Gamemodes/All star ASM/Spawn as new character/Skip data.asm
 2C116969 41820018
 3D808037 618CABC8
 7D8903A6 4E800421
 48000008 807F002C
 60000000 00000000
-C20691C0 00000006 #../ASM/All star ASM/Spawn as new character/Skip procs.asm
+C20691C0 00000006 #../ASM/Gamemodes/All star ASM/Spawn as new character/Skip procs.asm
 2C116969 41820018
 3D808038 618CFD54
 7D8903A6 4E800421
 48000014 3D808006
 618C92DC 7D8903A6
 4E800421 00000000
-C2068EDC 00000004 #../ASM/All star ASM/Spawn as new character/Skip texture init.asm
+C2068EDC 00000004 #../ASM/Gamemodes/All star ASM/Spawn as new character/Skip texture init.asm
 2C116969 41820014
 3D808039 618C069C
 7D8903A6 4E800421
 60000000 00000000
-C20D3930 00000009 #../ASM/All star ASM/Spawn as new character/Wait again.asm
+C20D3930 00000009 #../ASM/Gamemodes/All star ASM/Spawn as new character/Wait again.asm
 9421FF00 BC610008
 8865000C 3D808032
 618CC8BC 7D8803A6
@@ -195,7 +195,7 @@ C20D3930 00000009 #../ASM/All star ASM/Spawn as new character/Wait again.asm
 7E80A378 B8610008
 38210100 2C000000
 60000000 00000000
-C20D3E20 00000009 #../ASM/All star ASM/Spawn as new character/Wait for files.asm
+C20D3E20 00000009 #../ASM/Gamemodes/All star ASM/Spawn as new character/Wait for files.asm
 9421FF00 BC610008
 8865000C 3D808032
 618CC8BC 7D8803A6
@@ -205,7 +205,7 @@ C20D3E20 00000009 #../ASM/All star ASM/Spawn as new character/Wait for files.asm
 7E80A378 B8610008
 38210100 2C000000
 60000000 00000000
-C232C860 0000001C #../ASM/All star ASM/Standalones/Remove Character.asm
+C232C860 0000001C #../ASM/Gamemodes/All star ASM/Standalones/Remove Character.asm
 7C0802A6 90010004
 9421FF50 BE810008
 3EA08019 62B5A26C

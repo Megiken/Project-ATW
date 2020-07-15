@@ -13,85 +13,85 @@
       "build": [
         {
           "type": "injectFolder",
-          "sourceFolder": "..\\ASM\\Faster Melee Codes/External/Skip Memcard Prompt",
+          "sourceFolder": "..\\ASM\\Misc/Faster Melee Codes/External/Skip Memcard Prompt",
           "isRecursive": true,
           "annotation": "Skip Memcard Prompt [UnclePunch]"
         },
         {
           "type": "binary",
-          "sourceFile": "..\\ASM\\Faster Melee Codes/Binary/FasterMeleeSettings/DisableSpecialMessages.bin",
+          "sourceFile": "..\\ASM\\Misc/Faster Melee Codes/Binary/FasterMeleeSettings/DisableSpecialMessages.bin",
           "annotation": "Disable Special Messages [Most]"
         },
         {
           "type": "binary",
-          "sourceFile": "..\\ASM\\Faster Melee Codes/Binary/FasterMeleeSettings/DisableTrophyMessages.bin",
+          "sourceFile": "..\\ASM\\Misc/Faster Melee Codes/Binary/FasterMeleeSettings/DisableTrophyMessages.bin",
           "annotation": "Disable Trophy Messages [Achilles]"
         },
         {
           "type": "binary",
-          "sourceFile": "..\\ASM\\Faster Melee Codes/Binary/FasterMeleeSettings/DebugMenu.bin",
+          "sourceFile": "..\\ASM\\Misc/Faster Melee Codes/Binary/FasterMeleeSettings/DebugMenu.bin",
           "annotation": "Debug Menu [Magus, donny2112]"
         },
         {
           "type": "binary",
-          "sourceFile": "..\\ASM\\Faster Melee Codes/Binary/FasterMeleeSettings/FasterCssLoad.bin",
+          "sourceFile": "..\\ASM\\Misc/Faster Melee Codes/Binary/FasterMeleeSettings/FasterCssLoad.bin",
           "annotation": "Faster CSS Load [UnclePunch]"
         },
         {
           "type": "binary",
-          "sourceFile": "..\\ASM\\Faster Melee Codes/Binary/FasterMeleeSettings/CStickPanWhilePaused.bin",
+          "sourceFile": "..\\ASM\\Misc/Faster Melee Codes/Binary/FasterMeleeSettings/CStickPanWhilePaused.bin",
           "annotation": "C-Stick Panning while Paused [Achilles]"
         },
         {
           "type": "binary",
-          "sourceFile": "..\\ASM\\Faster Melee Codes/Binary/FasterMeleeSettings/LaglessFod.bin",
+          "sourceFile": "..\\ASM\\Misc/Faster Melee Codes/Binary/FasterMeleeSettings/LaglessFod.bin",
           "annotation": "Lagless FoD [Achilles, Myougi, Dan Salvato]"
         },
         {
           "type": "binary",
-          "sourceFile": "..\\ASM\\Faster Melee Codes/Binary/FasterMeleeSettings/RandomStageMusic.bin",
+          "sourceFile": "..\\ASM\\Misc/Faster Melee Codes/Binary/FasterMeleeSettings/RandomStageMusic.bin",
           "annotation": "Random Stage Music [UnclePunch]"
         },
         {
           "type": "binary",
-          "sourceFile": "..\\ASM\\Faster Melee Codes/Binary/FasterMeleeSettings/RandomCssMusic.bin",
+          "sourceFile": "..\\ASM\\Misc/Faster Melee Codes/Binary/FasterMeleeSettings/RandomCssMusic.bin",
           "annotation": "Random CSS Music v3 [UnclePunch]"
         },{
           "type": "injectFolder",
-          "sourceFolder": "..\\ASM\\Faster Melee Codes/Recording",
+          "sourceFolder": "..\\ASM\\Misc/Faster Melee Codes/Recording",
           "isRecursive": true,
           "annotation": "Slippi Recording [Fizzi, Achilles, UnclePunch]"
         },
         {
           "type": "replaceCodeBlock",
           "address": "804D4D90",
-          "sourceFile": "..\\ASM\\Faster Melee Codes\\Addons\\Misc\\Extended Name Tags\\7.s"
+          "sourceFile": "..\\ASM\\Misc/Faster Melee Codes\\Addons\\Misc\\Extended Name Tags\\7.s"
         },
         {
           "type": "injectFolder",
-          "sourceFolder": "..\\ASM\\Faster Melee Codes/Common",
+          "sourceFolder": "..\\ASM\\Misc/Faster Melee Codes/Common",
           "isRecursive": false
         },
         {
           "type": "injectFolder",
-          "sourceFolder": "..\\ASM\\Faster Melee Codes/Common/Initialize Stage Data",
+          "sourceFolder": "..\\ASM\\Misc/Faster Melee Codes/Common/Initialize Stage Data",
           "isRecursive": true,
           "annotation": "Initialize Stage Data [UnclePunch]"
         },
         {
           "type": "injectFolder",
-          "sourceFolder": "..\\ASM\\Faster Melee Codes/Common/Initialize Player Data",
+          "sourceFolder": "..\\ASM\\Misc/Faster Melee Codes/Common/Initialize Player Data",
           "isRecursive": true,
           "annotation": "Initialize Player Data [UnclePunch]"
         },
         {
           "type": "injectFolder",
-          "sourceFolder": "..\\ASM\\Faster Melee Codes/Common/Gecko",
+          "sourceFolder": "..\\ASM\\Misc/Faster Melee Codes/Common/Gecko",
           "annotation": "Static function to process Gecko codes [Fizzi]"
         }
         ,{
           "type": "injectFolder",
-          "sourceFolder": "..\\ASM\\On Boot",
+          "sourceFolder": "..\\ASM\\Misc/On Boot",
           "isRecursive": true
         }
       ]

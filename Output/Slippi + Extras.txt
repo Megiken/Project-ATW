@@ -1,13 +1,13 @@
 $Slippi + Extras []
 0245C390 00000125 #Unlock All 293 Trophies [Datel]
 0245C395 01266363
-C216B480 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/C Stick in 1p.asm
+C216B480 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/C Stick in 1p.asm
 3E808019 62949F7C
 82940000 2C140000
 41820014 3D808016
 618CB488 7D8903A6
 4E800420 00000000
-C2261A6C 0000000D #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/CSS hands.asm
+C2261A6C 0000000D #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/CSS hands.asm
 3DE08019 61EF9F80
 81EF0000 2C0F0001
 40820038 3DE0804D
@@ -21,14 +21,14 @@ C2261A6C 0000000D #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/CSS
 3E00C020 62100000
 920F0000 1C130024
 60000000 00000000
-C2023FFC 00000006 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Dreamland volume.asm
+C2023FFC 00000006 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Dreamland volume.asm
 3880007F 3E808019
 62949F98 82940000
 2C140000 40820014
 80A1002C 2C05003A
 40820000 38800060
 60000000 00000000
-C21A584C 00000034 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Game speed mult.asm
+C21A584C 00000034 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Game speed mult.asm
 3BA40000 3DE08045
 61EFACB8 3A000000
 1E300024 3A31000C
@@ -81,7 +81,7 @@ C21A584C 00000034 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Gam
 7E717B2E 2C100003
 4182000C 3A100001
 4BFFFFD8 00000000
-C2165C48 00000037 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Ledgegrab limit.asm
+C2165C48 00000037 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Ledgegrab limit.asm
 7C0802A6 90010004
 9421FF00 BC610008
 7C7F1B78 887F0004
@@ -137,7 +137,7 @@ C2165C48 00000037 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Led
 80010104 38210100
 7C0803A6 8803000F
 60000000 00000000
-C2068424 0000001E #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Set Scales.asm
+C2068424 0000001E #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Set Scales.asm
 3E808047 62949D30
 8A940003 2C140004
 418200D8 3E808019
@@ -168,20 +168,20 @@ C2068424 0000001E #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Set
 92C30054 3AB50004
 7ED4A82E 92C30058
 7FC3F378 00000000
-C21A5B00 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Skip results screen.asm
+C21A5B00 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Skip results screen.asm
 3E808019 62949F84
 82940000 2C140000
 4182000C 3B640000
 48000008 3B600000
 60000000 00000000
-C20D3258 00000006 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Star KOs.asm
+C20D3258 00000006 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Star KOs.asm
 3E808019 62949FA0
 82940000 2C140000
 4182001C 2C030000
 40820014 3D80800D
 618C3268 7D8903A6
 4E800420 00000000
-C2068F30 0000009E #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Game version/PAL/Character DAT Patcher.asm
+C2068F30 0000009E #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Game version/PAL/Character DAT Patcher.asm
 3E808019 62949FA4
 82940000 2C140001
 408204D4 7C0802A6
@@ -340,17 +340,17 @@ B4800C90 000000FF
 800100B4 382100B0
 7C0803A6 3C60803C
 60000000 00000000
-C20796E0 00000004 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Game version/PAL/Detection Hitboxes Does Not Skip Hurtbox Collision Check.asm
+C20796E0 00000004 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Game version/PAL/Detection Hitboxes Does Not Skip Hurtbox Collision Check.asm
 3D808019 618C9FA4
 818C0000 2C0C0001
 41820008 3A400001
 39800000 00000000
-C21239A8 00000004 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Game version/PAL/Fix Freeze Glitch.asm
+C21239A8 00000004 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Game version/PAL/Fix Freeze Glitch.asm
 3E808019 62949FA4
 82940000 2C140001
 41820008 901F1A5C
 60000000 00000000
-C22F9A3C 00000009 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Game version/PAL/PAL Stock Icons.asm
+C22F9A3C 00000009 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Game version/PAL/PAL Stock Icons.asm
 3E808019 62949FA4
 82940000 2C140001
 40820030 48000021
@@ -360,37 +360,37 @@ C22F9A3C 00000009 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Gam
 48000010 4E800021
 3F59999A C1A80000
 801D0014 00000000
-C23CE4D4 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Game version/PAL/Samus Cant Bomb Jump Out of Grapple.asm
+C23CE4D4 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Game version/PAL/Samus Cant Bomb Jump Out of Grapple.asm
 3E808019 62949FA4
 82940000 2C140001
 4082000C 00240464
 48000008 00200000
 60000000 00000000
-C210FC48 00000004 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Game version/PAL/DK - Keep Up B Charge After Getting Hit out of Up B/Keep Charge Aerial Up B.asm
+C210FC48 00000004 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Game version/PAL/DK - Keep Up B Charge After Getting Hit out of Up B/Keep Charge Aerial Up B.asm
 3E808019 62949FA4
 82940000 2C140001
 41820008 900521DC
 60000000 00000000
-C210FB68 00000004 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Game version/PAL/DK - Keep Up B Charge After Getting Hit out of Up B/Keep Charge Grounded Up B.asm
+C210FB68 00000004 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Game version/PAL/DK - Keep Up B Charge After Getting Hit out of Up B/Keep Charge Grounded Up B.asm
 3E808019 62949FA4
 82940000 2C140001
 41820008 900521DC
 60000000 00000000
-C22B7E54 00000006 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Game version/PAL/Samus - Disable Extender/Disable Initial Extender Polling.asm
+C22B7E54 00000006 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Game version/PAL/Samus - Disable Extender/Disable Initial Extender Polling.asm
 3E808019 62949FA4
 82940000 2C140001
 40820014 3D80802B
 618C7EDC 7D8903A6
 4E800420 887F2240
 60000000 00000000
-C22B808C 00000006 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Game version/PAL/Samus - Disable Extender/Disable Secondary Extender Polling.asm
+C22B808C 00000006 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Game version/PAL/Samus - Disable Extender/Disable Secondary Extender Polling.asm
 3E808019 62949FA4
 82940000 2C140001
 40820014 3D80802B
 618C8110 7D8903A6
 4E800420 2C030002
 60000000 00000000
-C2068F48 00000B0E #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Game version/SD Remix/Big one.asm
+C2068F48 00000B0E #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Game version/SD Remix/Big one.asm
 3E808019 62949FA4
 82940000 2C140002
 40825858 7C0802A6
@@ -3221,7 +3221,7 @@ BA810008 80010104
 38210100 7C0803A6
 807E0004 48000008
 807E0004 00000000
-C2073338 000000B5 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Game version/SD Remix/Not as big one.asm
+C2073338 000000B5 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Game version/SD Remix/Not as big one.asm
 3E808019 62949FA4
 82940000 2C140002
 40820590 7C0802A6
@@ -3403,7 +3403,7 @@ FFFFFFFF 1800003C
 BA810008 80010104
 38210100 7C0803A6
 BB610014 00000000
-C214B96C 00000012 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Game version/SD Remix/GNW/1.asm
+C214B96C 00000012 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Game version/SD Remix/GNW/1.asm
 3E808019 62949FA4
 82940000 2C140002
 40820074 901F21BC
@@ -3422,7 +3422,7 @@ EC220824 EC200824
 4E800021 3DCCCCCD
 48000008 901F21BC
 60000000 00000000
-C214B810 00000012 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Game version/SD Remix/GNW/2.asm
+C214B810 00000012 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Game version/SD Remix/GNW/2.asm
 3E808019 62949FA4
 82940000 2C140002
 40820074 901F21BC
@@ -3441,7 +3441,7 @@ EC220824 EC200824
 4E800021 3DCCCCCD
 48000008 901F21BC
 60000000 00000000
-C214BAC8 00000012 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Game version/SD Remix/GNW/3.asm
+C214BAC8 00000012 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Game version/SD Remix/GNW/3.asm
 3E808019 62949FA4
 82940000 2C140002
 40820074 901F21BC
@@ -3460,20 +3460,20 @@ EC220824 EC200824
 4E800021 3DCCCCCD
 48000008 901F21BC
 60000000 00000000
-C23761EC 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Lag reduction/1.asm
+C23761EC 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Lag reduction/1.asm
 3E808019 62949FAC
 82940000 2C140001
 41820014 3D808037
 618C6208 7D8903A6
 4E800420 00000000
-C2376238 00000006 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Lag reduction/2.asm
+C2376238 00000006 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Lag reduction/2.asm
 3E808019 62949FAC
 82940000 2C140001
 41820014 3D808037
 618C6250 7D8903A6
 4E800420 2C000003
 4182FFEC 00000000
-C20C9A44 00000025 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/UCF/1.asm
+C20C9A44 00000025 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/UCF/1.asm
 3E808019 62949F94
 82940000 2C140001
 4182010C A09F03E8
@@ -3511,7 +3511,7 @@ C044003C FC011040
 4800000C 38A0007F
 98A40006 D01F002C
 60000000 00000000
-C20998A4 00000021 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/UCF/2.asm
+C20998A4 00000021 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/UCF/2.asm
 3E808019 62949F94
 82940000 2C140001
 418200EC 8063002C
@@ -3545,7 +3545,7 @@ FC000840 4080001C
 7C6803A6 4E800020
 7FC3F378 8083002C
 60000000 00000000
-C236A4A8 00000023 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Widescreen/1.asm
+C236A4A8 00000023 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Widescreen/1.asm
 C03F0034 3E808019
 62949FA8 82940000
 2C140001 41820094
@@ -3581,7 +3581,7 @@ EC2100B2 EC211824
 3EA043A0 62B50000
 92B40000 2C1E0000
 60000000 00000000
-C22FCFC4 00000007 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Widescreen/2.asm
+C22FCFC4 00000007 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Widescreen/2.asm
 3E808019 62949FA8
 82940000 2C140001
 4182001C 48000011
@@ -3589,7 +3589,7 @@ C22FCFC4 00000007 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Wid
 48000010 4E800021
 40F00000 C002E19C
 60000000 00000000
-C20DA9DC 00000007 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Wobbling fix.asm/1.asm
+C20DA9DC 00000007 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Wobbling fix.asm/1.asm
 3E808019 62949F90
 82940000 2C140001
 4182001C 38600000
@@ -3597,7 +3597,7 @@ C20DA9DC 00000007 #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Wob
 B07C2352 7F43D378
 48000008 C02296E8
 60000000 00000000
-C208F090 0000001F #../ASM/Faster Melee Codes/Addons/Debug menu codes/General/Wobbling fix.asm/2.asm
+C208F090 0000001F #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/General/Wobbling fix.asm/2.asm
 3E808019 62949F90
 82940000 2C140001
 418200E0 807B0010
@@ -3629,7 +3629,7 @@ A09B2352 7C032000
 3D808008 618CF0C8
 7D8903A6 4E800420
 801B0010 00000000
-C226C888 00000020 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Items/Custom Choose Random Item.asm
+C226C888 00000020 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Items/Custom Choose Random Item.asm
 7C0802A6 90010004
 9421FF50 BE810008
 386003E8 3D808038
@@ -3662,7 +3662,7 @@ C5340004 FD290232
 800100B4 382100B0
 7C0803A6 4E800020
 60000000 00000000
-C227A77C 00000014 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Items/Custom Choose Random Pokemon.asm
+C227A77C 00000014 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Items/Custom Choose Random Pokemon.asm
 7C0802A6 90010004
 9421FF50 BE810008
 386003E8 3D808038
@@ -3683,7 +3683,7 @@ C5340004 FD290232
 800100B4 382100B0
 7C0803A6 4E800020
 60000000 00000000
-C226AD20 0000002A #../ASM/Faster Melee Codes/Addons/Debug menu codes/Items/Fancy Throwing.asm
+C226AD20 0000002A #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Items/Fancy Throwing.asm
 7C0802A6 3DE08019
 61EFA184 81EF0000
 2C0F0001 41820138
@@ -3726,10 +3726,10 @@ C9010008 FD083828
 60631FAC 7C636214
 4E800020 38600000
 4E800020 00000000
-C226787C 00000002 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Items/Max items.asm
+C226787C 00000002 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Items/Max items.asm
 3E808019 6294A180
 80140000 00000000
-C20DED18 0000005B #../ASM/Faster Melee Codes/Addons/Debug menu codes/Items/Taunt to gain item.asm
+C20DED18 0000005B #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Items/Taunt to gain item.asm
 3D808008 618CA2BC
 7D8903A6 4E800421
 3D808019 618CA188
@@ -3821,21 +3821,21 @@ BB210074 80010094
 4E800020 80010040
 7C0803A6 BA810008
 38210100 00000000
-C226C9F4 00000006 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Items/Item Spawn Rate/1.asm
+C226C9F4 00000006 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Items/Item Spawn Rate/1.asm
 3DE08019 61EFA070
 81EF0000 2C0F0000
 40820018 3DE08019
 61EFA074 81EF0000
 91FF0000 48000008
 901F0000 00000000
-C226D204 00000006 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Items/Item Spawn Rate/2.asm
+C226D204 00000006 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Items/Item Spawn Rate/2.asm
 3DE08019 61EFA070
 81EF0000 2C0F0000
 40820018 3DE08019
 61EFA074 81EF0000
 91FF0000 48000008
 901F0000 00000000
-C206B620 00000007 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Auto L cancel.asm
+C206B620 00000007 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Auto L cancel.asm
 3DC08019 61CEA1A8
 81CE0000 2C0E0000
 41820020 801F0668
@@ -3843,7 +3843,7 @@ C206B620 00000007 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/A
 3D808006 618CB630
 7D8903A6 4E800420
 60000000 00000000
-C2031BCC 00000015 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Climber clone.asm
+C2031BCC 00000015 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Climber clone.asm
 907E00B0 3DC08019
 61CEA1B8 81CE0000
 2C0E0000 40820090
@@ -3865,28 +3865,28 @@ C2031BCC 00000015 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/C
 4E800021 907E00B4
 8063002C 38800006
 90831A94 00000000
-C20816C4 00000006 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Everyone can walljump.asm
+C20816C4 00000006 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Everyone can walljump.asm
 41820018 3DC08019
 61CEA1B4 81CE0000
 2C0E0000 40820014
 3D808008 618C1918
 7D8903A6 4E800420
 60000000 00000000
-C2068FE4 00000006 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Everyone is 2d.asm
+C2068FE4 00000006 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Everyone is 2d.asm
 3DC08019 61CEA1BC
 81CE0000 2C0E0000
 40820014 3D808006
 618C8FEC 7D8903A6
 4E800420 2C00001B
 60000000 00000000
-C207D54C 00000006 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Fastfall whenever.asm
+C207D54C 00000006 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Fastfall whenever.asm
 3DC08019 61CEA198
 81CE0000 2C0E0000
 4182001C FC010040
 41800014 3D808007
 618CD5A8 7D8903A6
 4E800420 00000000
-C208EE48 0000000E #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Grab Infinites.asm
+C208EE48 0000000E #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Grab Infinites.asm
 3DC08019 61CEA1A0
 81CE0000 2C0E0000
 40820058 807B0010
@@ -3901,13 +3901,13 @@ C01D1A4C 38600000
 FC000840 4C401382
 40820008 38000000
 2C000000 00000000
-C206BB14 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Invisible ceiling.asm
+C206BB14 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Invisible ceiling.asm
 3DC08019 61CEA19C
 81CE0000 2C0E0000
 4082000C D01D0004
 48000008 D01E0004
 60000000 00000000
-C206CA9C 00000025 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Percent swap.asm
+C206CA9C 00000025 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Percent swap.asm
 90010004 9421FF00
 BC610008 821F0004
 2C10000B 41820100
@@ -3945,7 +3945,19 @@ B2C30060 82FF1830
 4082FF58 B8610008
 80010104 38210100
 881F221E 00000000
-C208DFAC 0000000B #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Wall bracing.asm
+C20715B0 0000000B #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Random hit effects.asm
+3E808019 6294A1C4
+82940000 2C140000
+40820044 38600010
+3C808038 60840580
+7C8903A6 4E800421
+2C030004 41A2FFE8
+2C030007 41A2FFE0
+2C030008 41A2FFD8
+2C03000B 41A2FFD0
+907E0030 7DE07B78
+28000009 00000000
+C208DFAC 0000000B #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Wall bracing.asm
 3DC08019 61CEA1A4
 81CE0000 2C0E0000
 4082003C 2C1C0003
@@ -3957,7 +3969,7 @@ C208DFAC 0000000B #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/W
 38600000 2C030000
 48000008 2C1C0003
 60000000 00000000
-C20DA10C 0000000C #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air Grabs/1.asm
+C20DA10C 0000000C #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air Grabs/1.asm
 3E808019 6294A18C
 82940000 2C140000
 4082003C 81DE00E0
@@ -3970,7 +3982,7 @@ C20DA10C 0000000C #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/A
 4E800420 3DC0800D
 61CEA120 7DC903A6
 4E800420 00000000
-C208CE08 0000000F #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air Grabs/2.asm
+C208CE08 0000000F #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air Grabs/2.asm
 3E808019 6294A18C
 82940000 2C140000
 40820060 7F03C378
@@ -3986,7 +3998,7 @@ C208CE08 0000000F #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/A
 91CF21A0 80010000
 7C0803A6 38210004
 4E800020 00000000
-C20DA214 00000007 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air Grabs/3.asm
+C20DA214 00000007 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air Grabs/3.asm
 3E808019 6294A18C
 82940000 2C140000
 4082001C 81DF00E0
@@ -3994,14 +4006,14 @@ C20DA214 00000007 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/A
 3DC08012 61CEDC50
 91DF21A4 3C60800E
 60000000 00000000
-C209B598 00000006 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air Grabs/4.asm
+C209B598 00000006 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air Grabs/4.asm
 3E808019 6294A18C
 82940000 2C140000
 40820018 81CF00E0
 2C0E0001 4082000C
 38800166 48000008
 80840004 00000000
-C20DA42C 00000011 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air Grabs/5.asm
+C20DA42C 00000011 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air Grabs/5.asm
 3E808019 6294A18C
 82940000 2C140000
 41820018 3DC08008
@@ -4019,7 +4031,7 @@ C20DA42C 00000011 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/A
 4E800421 48000004
 80010000 7C0803A6
 38210004 00000000
-C20DA2E0 00000007 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air Grabs/6.asm
+C20DA2E0 00000007 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air Grabs/6.asm
 3E808019 6294A18C
 82940000 2C140000
 4082001C 81DF00E0
@@ -4027,7 +4039,7 @@ C20DA2E0 00000007 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/A
 3DC08012 61CEDC50
 91DF21A4 3C60800E
 60000000 00000000
-C20DA4E0 00000008 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air Grabs/7.asm
+C20DA4E0 00000008 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air Grabs/7.asm
 3E808019 6294A18C
 82940000 2C140000
 40820028 3DC0800D
@@ -4036,7 +4048,7 @@ C20DA4E0 00000008 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/A
 40820010 3DC08012
 61CEDC50 91DF21A4
 38600001 00000000
-C20DA380 0000000E #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air Grabs/8.asm
+C20DA380 0000000E #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air Grabs/8.asm
 3E808019 6294A18C
 82940000 2C140000
 40820058 2C030000
@@ -4051,7 +4063,7 @@ C20DA380 0000000E #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/A
 91DF21A8 3DC08012
 61CEDC50 91DF21A4
 2C030000 00000000
-C20D9E44 00000008 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air Grabs/9.asm
+C20D9E44 00000008 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air Grabs/9.asm
 3E808019 6294A18C
 82940000 2C140000
 40820028 3DC0800D
@@ -4060,7 +4072,7 @@ C20D9E44 00000008 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/A
 40820010 3DC08012
 61CEDC50 91DF21A4
 3C60800E 00000000
-C20DECDC 0000000B #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air taunts/1.asm
+C20DECDC 0000000B #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air taunts/1.asm
 3DC08019 61CEA18C
 81CE0000 2C0E0000
 40820040 81DF00E0
@@ -4072,7 +4084,7 @@ C20DECDC 0000000B #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/A
 91DF219C 3DC08008
 61CED010 91DF21A0
 80010024 00000000
-C20CCAAC 00000007 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air taunts/2.asm
+C20CCAAC 00000007 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air taunts/2.asm
 3DC08019 61CEA18C
 81CE0000 2C0E0000
 40820020 89DF066B
@@ -4080,7 +4092,7 @@ C20CCAAC 00000007 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/A
 3DC0800D 61CEEBD0
 7DC903A6 4E800420
 7C0802A6 00000000
-C20CB334 00000007 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air taunts/3.asm
+C20CB334 00000007 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air taunts/3.asm
 3DC08019 61CEA18C
 81CE0000 2C0E0000
 40820020 89DF066B
@@ -4088,7 +4100,7 @@ C20CB334 00000007 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/A
 3DC0800D 61CEEBD0
 7DC903A6 4E800420
 7C0802A6 00000000
-C20CC4F8 00000007 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air taunts/4.asm
+C20CC4F8 00000007 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Air taunts/4.asm
 3DC08019 61CEA18C
 81CE0000 2C0E0000
 40820020 89DF066B
@@ -4096,28 +4108,28 @@ C20CC4F8 00000007 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/A
 3DC0800D 61CEEBD0
 7DC903A6 4E800420
 7C0802A6 00000000
-C226196C 00000006 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Doubles Colours/test2.asm
+C226196C 00000006 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Doubles Colours/test2.asm
 3DC08019 61CEA1B0
 81CE0000 2C0E0001
 4082001C 28000000
 41820014 3D808026
 618C198C 7D8903A6
 4E800420 00000000
-C2261980 00000006 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Doubles Colours/test3.asm
+C2261980 00000006 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Doubles Colours/test3.asm
 3DC08019 61CEA1B0
 81CE0000 2C0E0001
 4082001C 28000003
 40820014 3D808026
 618C198C 7D8903A6
 4E800420 00000000
-C225EDC4 00000006 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Doubles Colours/test4.asm
+C225EDC4 00000006 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Doubles Colours/test4.asm
 3DC08019 61CEA1B0
 81CE0000 2C0E0001
 4082001C 28000000
 41820014 3D808025
 618CEDD4 7D8903A6
 4E800420 00000000
-C23A746C 00000018 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Doubles Colours/test5.asm
+C23A746C 00000018 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Doubles Colours/test5.asm
 7C0802A6 90010004
 9421FF00 BC610008
 3DC08019 61CEA1B0
@@ -4142,7 +4154,7 @@ C23A746C 00000018 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/D
 B8610008 80010104
 38210100 7C0803A6
 60000000 00000000
-C209A8AC 0000000D #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Ledge invin/1.asm
+C209A8AC 0000000D #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Ledge invin/1.asm
 3DC08019 61CEA1C0
 81CE0000 2C0E0000
 40820050 7C671B78
@@ -4156,7 +4168,7 @@ C209A8AC 0000000D #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/L
 48000008 7C862050
 7CE33B78 48000008
 8084049C 00000000
-C206A414 00000009 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Ledge invin/2.asm
+C206A414 00000009 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Ledge invin/2.asm
 3DC08019 61CEA1C0
 81CE0000 2C0E0000
 4082002C 807F198C
@@ -4166,7 +4178,7 @@ C206A414 00000009 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/L
 41A2000C 3863FFFF
 907F1068 807F1990
 60000000 00000000
-C20CA4CC 00000009 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Taunt Cancelling/1.asm
+C20CA4CC 00000009 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Taunt Cancelling/1.asm
 3DC08019 61CEA194
 81CE0000 2C0E0000
 4082001C 2C030000
@@ -4176,7 +4188,7 @@ C20CA4CC 00000009 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/T
 41820014 3D80800C
 618CA500 7D8903A6
 4E800420 00000000
-C20DEE70 00000008 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Taunt Cancelling/2.asm
+C20DEE70 00000008 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Mechanics/Taunt Cancelling/2.asm
 3DC08019 61CEA194
 81CE0000 2C0E0000
 40820018 3D808008
@@ -4185,38 +4197,38 @@ C20DEE70 00000008 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Mechanics/T
 3D808008 618C4104
 7D8803A6 4E800021
 60000000 00000000
-C206A684 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/Always do flower.asm
+C206A684 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/Always do flower.asm
 3E808019 6294A2DC
 82940000 2C140001
 4082000C 38000001
 48000008 801F1980
 60000000 00000000
-C20D1200 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/Bunny hood.asm
+C20D1200 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/Bunny hood.asm
 3E808019 6294A2DC
 82940000 2C140002
 4082000C 38000001
 48000008 801E197C
 60000000 00000000
-C20D3460 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/Dont kill flower.asm
+C20D3460 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/Dont kill flower.asm
 3E808019 6294A2DC
 82940000 2C140001
 40820010 829F2000
 38000000 48000008
 801F1980 00000000
-C206A6EC 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/Drop item crash fix.asm
+C206A6EC 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/Drop item crash fix.asm
 3E808019 6294A2DC
 82940000 2C140001
 4082000C 38000001
 48000008 801F2018
 60000000 00000000
-C202F474 00000006 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/Fixed camera.asm
+C202F474 00000006 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/Fixed camera.asm
 3E808019 6294A2F0
 82940000 2C140001
 40820014 3D808002
 618CF8F4 7D8903A6
 4E800420 3C608045
 60000000 00000000
-C20D14C8 0000000C #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/Gravity.asm
+C20D14C8 0000000C #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/Gravity.asm
 3E808019 6294A2E8
 82940000 2C140000
 41820048 2C140001
@@ -4229,7 +4241,7 @@ FD4A0272 D15E016C
 7E8802A6 C1340000
 FD4A0272 D15E016C
 8001004C 00000000
-C2069388 00000018 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/Head.asm
+C2069388 00000018 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/Head.asm
 3E808019 6294A2DC
 82940000 2C140000
 418200A4 7C0802A6
@@ -4254,20 +4266,20 @@ BC610008 2C140001
 80010104 38210100
 7C0803A6 7FE3FB78
 60000000 00000000
-C207FB3C 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/Skip bunny hood thing.asm
+C207FB3C 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/Skip bunny hood thing.asm
 3E808019 6294A2DC
 82940000 2C140002
 41820014 3D808026
 618CABD8 7D8803A6
 4E800021 00000000
-C206B798 00000006 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/1.asm
+C206B798 00000006 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/1.asm
 3DC08019 61CEA2E4
 81CE0000 2C0E0002
 40820018 881F2293
 2C000028 4182000C
 38000000 48000008
 881F2219 00000000
-C2077254 00000007 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/10.asm
+C2077254 00000007 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/10.asm
 3DC08019 61CEA2E4
 81CE0000 2C0E0002
 40820020 81DA0010
@@ -4275,21 +4287,21 @@ C2077254 00000007 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Mel
 39C00000 99DA2293
 81DA0010 B1DA2290
 931A1914 00000000
-C2076DC8 00000006 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/11.asm
+C2076DC8 00000006 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/11.asm
 3DC08019 61CEA2E4
 81CE0000 2C0E0002
 40820014 39C00000
 99DD2293 81DD0010
 B1DD2290 907F19A4
 60000000 00000000
-C22705A8 00000006 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/12.asm
+C22705A8 00000006 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/12.asm
 3DC08019 61CEA2E4
 81CE0000 2C0E0002
 40820014 39C00000
 99DC2293 81DC0010
 B1DC2290 92BC1914
 60000000 00000000
-C2079970 00000009 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/14.asm
+C2079970 00000009 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/14.asm
 3DC08019 61CEA2E4
 81CE0000 2C0E0002
 4082002C 88970042
@@ -4299,7 +4311,7 @@ C2079970 00000009 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Mel
 98A42293 80A40010
 B0A42290 1C75004C
 60000000 00000000
-C2079820 00000009 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/15.asm
+C2079820 00000009 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/15.asm
 3DC08019 61CEA2E4
 81CE0000 2C0E0002
 4082002C 88970042
@@ -4309,7 +4321,7 @@ C2079820 00000009 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Mel
 98A42293 80A40010
 B0A42290 5460DFFF
 60000000 00000000
-C20966D0 0000001D #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/2.asm
+C20966D0 0000001D #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/2.asm
 3DC08019 61CEA2E4
 81CE0000 2C0E0002
 408200CC 881F2292
@@ -4339,7 +4351,7 @@ C20966D0 0000001D #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Mel
 A01F2290 7C007000
 41820008 4E800021
 60000000 00000000
-C20D69A4 0000000C #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/3.asm
+C20D69A4 0000000C #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/3.asm
 3DC08019 61CEA2E4
 81CE0000 2C0E0002
 40820044 88052292
@@ -4352,7 +4364,7 @@ C20D69A4 0000000C #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Mel
 A0052290 7C007000
 41820008 4E800021
 60000000 00000000
-C20C9724 0000000E #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/4.asm
+C20C9724 0000000E #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/4.asm
 3DC08019 61CEA2E4
 81CE0000 2C0E0002
 40820058 88052292
@@ -4367,7 +4379,7 @@ A0052290 81C50010
 3DC0800C 61CE9754
 7DC903A6 4E800420
 7FE3FB78 00000000
-C20693AC 00000022 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/5.asm
+C20693AC 00000022 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/5.asm
 3DC08019 61CEA2E4
 81CE0000 2C0E0002
 408200F4 81E3002C
@@ -4402,7 +4414,7 @@ C0610018 8001001C
 B08F2290 3800FFFF
 B00F2290 7C0802A6
 60000000 00000000
-C206B7F8 00000016 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/6.asm
+C206B7F8 00000016 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/6.asm
 3DC08019 61CEA2E4
 81CE0000 2C0E0002
 40820070 89DF2293
@@ -4425,7 +4437,7 @@ C206B7F8 00000016 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Mel
 3DC08006 61CEB80C
 7DC903A6 4E800420
 4E800021 00000000
-C2068684 00000007 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/7.asm
+C2068684 00000007 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/7.asm
 3DC08019 61CEA2E4
 81CE0000 2C0E0002
 4082001C 3800FFFF
@@ -4433,42 +4445,42 @@ B0062290 38000000
 98062292 38000028
 98062293 887F000C
 60000000 00000000
-C206CB14 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/8.asm
+C206CB14 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/8.asm
 3DC08019 61CEA2E4
 81CE0000 2C0E0002
 40820010 81C3002C
 38000028 980E2293
 4E800021 00000000
-C2081370 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/9.asm
+C2081370 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/New turbo/9.asm
 3DC08019 61CEA2E4
 81CE0000 2C0E0002
 40820010 81C3002C
 38000028 980E2293
 7C0802A6 00000000
-C20CB9EC 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/Screw Attack Jumps/1.asm
+C20CB9EC 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/Screw Attack Jumps/1.asm
 3E808019 6294A2E4
 82940000 2C140001
 4082000C 7C030800
 48000008 2C030000
 60000000 00000000
-C20CB56C 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/Screw Attack Jumps/2.asm
+C20CB56C 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/Screw Attack Jumps/2.asm
 3E808019 6294A2E4
 82940000 2C140001
 4082000C 7C030800
 48000008 2C030000
 60000000 00000000
-C20D738C 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Special Melee/Screw Attack Jumps/3.asm
+C20D738C 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Special Melee/Screw Attack Jumps/3.asm
 3E808019 6294A2E4
 82940000 2C140001
 4082000C 7C030800
 48000008 2C030000
 60000000 00000000
-C21D99E0 00000004 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Brinstar lava.asm
+C21D99E0 00000004 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Brinstar lava.asm
 3E808019 6294A030
 82940000 2C140001
 40820008 4E800020
 7C0802A6 00000000
-C21E1390 0000000A #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Corneria gun.asm
+C21E1390 0000000A #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Corneria gun.asm
 3E808019 6294A03C
 82940000 2C140000
 4182001C 2C000000
@@ -4479,137 +4491,137 @@ C21E1390 0000000A #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/
 3D80801E 618C13A8
 7D8903A6 4E800420
 60000000 00000000
-C2211444 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Dreamland wind.asm
+C2211444 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Dreamland wind.asm
 3E808019 6294A02C
 82940000 2C140000
 40820014 3D808021
 618C19E0 7D8903A6
 4E800420 00000000
-C221AAE4 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/FD transitions.asm
+C221AAE4 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/FD transitions.asm
 3E800000 62940000
 82940000 2C140000
 40820014 3D808021
 618CB2E8 7D8803A6
 4E800021 00000000
-C21D1548 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Frozen Pokemon.asm
+C21D1548 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Frozen Pokemon.asm
 3E808019 6294A028
 82940000 2C140000
 40820014 3D80801D
 618C4548 7D8803A6
 4E800021 00000000
-C225BB44 00000004 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Get custom stage.asm
+C225BB44 00000004 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Get custom stage.asm
 89E40009 3D808032
 618CC8FC 7D8803A6
 4E800021 B1E3001E
 60000000 00000000
-C2202B7C 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Jungle Japes.asm
+C2202B7C 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Jungle Japes.asm
 3E808019 6294A058
 82940000 2C140000
 40820014 3D80801C
 618C49F8 7D8803A6
 4E800021 00000000
-C220F4C0 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Kongo Jungle 64 barrel.asm
+C220F4C0 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Kongo Jungle 64 barrel.asm
 3E808019 6294A06C
 82940000 2C140000
 40820014 3D808020
 618CF52C 7D8803A6
 4E800021 00000000
-C21D5290 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Kongo jungle barrel.asm
+C21D5290 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Kongo jungle barrel.asm
 3E808019 6294A068
 82940000 2C140000
 40820014 3D80801D
 618C5340 7D8803A6
 4E800021 00000000
-C21F0188 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Mute city.asm
+C21F0188 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Mute city.asm
 3E808019 6294A064
 82940000 2C140000
 40820014 3D80801F
 618C1A34 7D8803A6
 4E800021 00000000
-C21E379C 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Onett cars.asm
+C21E379C 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Onett cars.asm
 3E808019 6294A05C
 82940000 2C140000
 40820014 3D80801E
 618C37F4 7D8803A6
 4E800021 00000000
-C21E3794 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Onett drugstore.asm
+C21E3794 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Onett drugstore.asm
 3E808019 6294A060
 82940000 2C140000
 40820014 3D80801E
 618C37F4 7D8803A6
 4E800021 00000000
-C21CD8A8 00000004 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Peachs Castle stuff.asm
+C21CD8A8 00000004 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Peachs Castle stuff.asm
 3E808019 6294A048
 82940000 2C140001
 40820008 4E800020
 7C0802A6 00000000
-C21A5C14 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Revert stage regular end.asm
+C21A5C14 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Revert stage regular end.asm
 82828310 2C140000
 41820018 82A28314
 92B40000 3AC00000
 92C28310 92C28314
 7F63DB78 00000000
-C21B1688 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Revert stage sudden death end.asm
+C21B1688 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Revert stage sudden death end.asm
 82828310 2C140000
 41820018 82A28314
 92B40000 3AC00000
 92C28310 92C28314
 7C0802A6 00000000
-C21E3348 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Shy guys.asm
+C21E3348 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Shy guys.asm
 3E808019 6294A024
 82940000 2C140000
 40820014 3D80801E
 618C3418 7D8803A6
 4E800021 00000000
-C21DDA48 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/corneria ships.asm
+C21DDA48 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/corneria ships.asm
 3E808019 6294A038
 82940000 2C140000
 40820014 3D80801D
 618CCE1C 7D8803A6
 4E800021 00000000
-C21CC8AC 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/FOD/1.asm
+C21CC8AC 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/FOD/1.asm
 3E808019 6294A034
 82940000 2C140000
 4082000C EC0007FA
 48000008 FC000028
 60000000 00000000
-C21CC8B4 00000006 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/FOD/2.asm
+C21CC8B4 00000006 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/FOD/2.asm
 3E808019 6294A034
 82940000 2C140000
 4082000C 801B0014
 48000014 3D80801C
 618CC9F0 7D8903A6
 4E800420 00000000
-C22146EC 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Green Greens/1.asm
+C22146EC 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Green Greens/1.asm
 3E808019 6294A040
 82940000 2C140000
 40820014 3D808021
 618C4B58 7D8803A6
 4E800021 00000000
-C2216B24 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Green Greens/2.asm
+C2216B24 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Green Greens/2.asm
 3E808019 6294A040
 82940000 2C140000
 40820014 3D808021
 618C5ED8 7D8803A6
 4E800021 00000000
-C2213C10 00000004 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Green Greens/3.asm
+C2213C10 00000004 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/Green Greens/3.asm
 3E808019 6294A044
 82940000 2C140001
 40820008 4E800020
 7C0802A6 00000000
-C21FA918 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/MK1/1.asm
+C21FA918 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/MK1/1.asm
 3E808019 6294A050
 82940000 2C140000
 40820014 3D80801C
 618C49F8 7D8803A6
 4E800021 00000000
-C21FAB7C 00000005 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/MK1/2.asm
+C21FAB7C 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Stage Mods/MK1/2.asm
 3E808019 6294A054
 82940000 2C140000
 40820014 3D80801F
 618CB3F0 7D8803A6
 4E800021 00000000
-C2266890 00000023 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Visuals/Load files.asm
+C2266890 00000023 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Visuals/Load files.asm
 90010004 9421FF00
 BC610008 82828250
 2C140000 408200EC
@@ -4645,7 +4657,7 @@ BC610008 82828250
 B8610008 80010104
 38210100 3C80803F
 60000000 00000000
-C2136510 00000011 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Visuals/Marth Sword Colours.asm
+C2136510 00000011 #../ASM/Misc/Faster Melee Codes/Addons/Debug menu codes/Visuals/Marth Sword Colours.asm
 3DC08019 61CEA314
 81CE0000 2C0E0001
 41820070 3DC0FF00
@@ -4663,7 +4675,7 @@ C2136510 00000011 #../ASM/Faster Melee Codes/Addons/Debug menu codes/Visuals/Mar
 3C60FF00 60637D77
 3C00C800 6000FFFF
 94650008 00000000
-C23A684C 00000021 #../ASM/Faster Melee Codes/Addons/Misc/Add Symbols to ASCII-Menu Text Lookup Table.asm
+C23A684C 00000021 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Add Symbols to ASCII-Menu Text Lookup Table.asm
 7C0802A6 90010004
 9421FF00 BE810008
 4800009D 7FC802A6
@@ -4697,8 +4709,8 @@ FF000000 BA810008
 7C0803A6 3C008040
 6000C8C0 280A0020
 60000000 00000000
-041A45A0 38000000 #../ASM/Faster Melee Codes/Addons/Misc/Boot to title screen.asm
-C2268B58 0000000A #../ASM/Faster Melee Codes/Addons/Misc/Clear custom item spawn struct.asm
+041A45A0 38000000 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Boot to title screen.asm
+C2268B58 0000000A #../ASM/Misc/Faster Melee Codes/Addons/Misc/Clear custom item spawn struct.asm
 7C0802A6 90010004
 9421FF00 BC610008
 3D808032 618CC904
@@ -4709,11 +4721,11 @@ C2268B58 0000000A #../ASM/Faster Melee Codes/Addons/Misc/Clear custom item spawn
 B8610008 80010104
 38210100 7C0803A6
 4E800020 00000000
-C2345F4C 00000002 #../ASM/Faster Melee Codes/Addons/Misc/Crash fix 2.asm
+C2345F4C 00000002 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Crash fix 2.asm
 39C00000 7C0802A6
 60000000 00000000
-044D5A34 25332E32 #../ASM/Faster Melee Codes/Addons/Misc/Debug menu decimals.asm
-C23039A8 0000001C #../ASM/Faster Melee Codes/Addons/Misc/Debugmenu changer.asm
+044D5A34 25332E32 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Debug menu decimals.asm
+C23039A8 0000001C #../ASM/Misc/Faster Melee Codes/Addons/Misc/Debugmenu changer.asm
 3DC080C0 61CE5260
 81EE0008 3E00803F
 6210A4E0 7C0F8000
@@ -4742,10 +4754,10 @@ C23039A8 0000001C #../ASM/Faster Melee Codes/Addons/Misc/Debugmenu changer.asm
 9910FEFE 48000004
 39000000 4E800020
 60000000 00000000
-041A1C58 38000000 #../ASM/Faster Melee Codes/Addons/Misc/Disable Start Screen Transitions.asm
-04302E00 4E800020 #../ASM/Faster Melee Codes/Addons/Misc/Don't Run Functions Without A Press.asm
-042F2094 4E800020 #../ASM/Faster Melee Codes/Addons/Misc/Dont spawn trophys.asm
-C23039A4 00000015 #../ASM/Faster Melee Codes/Addons/Misc/Everyone can control debug menu.asm
+041A1C58 38000000 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Disable Start Screen Transitions.asm
+04302E00 4E800020 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Don't Run Functions Without A Press.asm
+042F2094 4E800020 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Dont spawn trophys.asm
+C23039A4 00000015 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Everyone can control debug menu.asm
 39400000 39000000
 38E00008 3C80804C
 608420BC 1CAA0044
@@ -4767,12 +4779,12 @@ C23039A4 00000015 #../ASM/Faster Melee Codes/Addons/Misc/Everyone can control de
 98EDB7AC 4800000C
 38600000 986DB7AC
 7D034378 00000000
-C21A4B70 00000004 #../ASM/Faster Melee Codes/Addons/Misc/Flush cache on scene.asm
+C21A4B70 00000004 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Flush cache on scene.asm
 3C608000 3C80003C
 3D808000 618C543C
 7D8903A6 4E800420
 60000000 00000000
-C2263064 0000000C #../ASM/Faster Melee Codes/Addons/Misc/Force to SSS.asm
+C2263064 0000000C #../ASM/Misc/Faster Melee Codes/Addons/Misc/Force to SSS.asm
 7C0802A6 90010004
 9421FF00 BE810008
 7C9F2378 3D808015
@@ -4785,7 +4797,7 @@ C2263064 0000000C #../ASM/Faster Melee Codes/Addons/Misc/Force to SSS.asm
 BA810008 80010104
 38210100 7C0803A6
 60000000 00000000
-C2303FD4 00000015 #../ASM/Faster Melee Codes/Addons/Misc/Get correct submenu.asm
+C2303FD4 00000015 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Get correct submenu.asm
 3E80803F 6294A4E0
 7C142800 40820090
 82828250 2C140000
@@ -4807,14 +4819,14 @@ BE810008 4800002D
 800100B4 382100B0
 7C0803A6 7C0802A6
 60000000 00000000
-0425B8BC 38600002 #../ASM/Faster Melee Codes/Addons/Misc/LRA Start to CSS.asm
-04266BE4 38600006 #../ASM/Faster Melee Codes/Addons/Misc/LRA Start to debug menu2.asm
-C21A56B0 00000004 #../ASM/Faster Melee Codes/Addons/Misc/Leaving CSS Loads Debug Menu.asm
+0425B8BC 38600002 #../ASM/Misc/Faster Melee Codes/Addons/Misc/LRA Start to CSS.asm
+04266BE4 38600006 #../ASM/Misc/Faster Melee Codes/Addons/Misc/LRA Start to debug menu2.asm
+C21A56B0 00000004 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Leaving CSS Loads Debug Menu.asm
 82828250 2C140000
 4182000C 38600006
 48000008 38600001
 60000000 00000000
-C21B0A14 0000000A #../ASM/Faster Melee Codes/Addons/Misc/Leaving debug menu unloads.asm
+C21B0A14 0000000A #../ASM/Misc/Faster Melee Codes/Addons/Misc/Leaving debug menu unloads.asm
 3A800000 92828250
 81E282F0 3D808032
 618CC89C 7D8803A6
@@ -4825,14 +4837,14 @@ C21B0A14 0000000A #../ASM/Faster Melee Codes/Addons/Misc/Leaving debug menu unlo
 3EA08065 62B5EAB4
 92950120 92950128
 38600001 00000000
-C2303FF8 00000006 #../ASM/Faster Melee Codes/Addons/Misc/Load Custom Submenu.asm
+C2303FF8 00000006 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Load Custom Submenu.asm
 3DE0803F 61EFA790
 7C0F2800 40820018
 81E40008 80A2806C
 1CA50020 38A50014
 7CAF282E 90A40008
 60000000 00000000
-C21B139C 00000007 #../ASM/Faster Melee Codes/Addons/Misc/Load Debug Menu Over Special Melee.asm
+C21B139C 00000007 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Load Debug Menu Over Special Melee.asm
 3E80804A 629404F0
 8A940000 2C14000C
 40820020 3E808019
@@ -4840,7 +4852,7 @@ C21B139C 00000007 #../ASM/Faster Melee Codes/Addons/Misc/Load Debug Menu Over Sp
 2C140001 4182000C
 38600006 48000008
 88630000 00000000
-C22FCCE8 00000013 #../ASM/Faster Melee Codes/Addons/Misc/Name Tag Shadow Box Automatically Scales to Tag Length.asm
+C22FCCE8 00000013 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Name Tag Shadow Box Automatically Scales to Tag Length.asm
 3C608003 6063556C
 7C6803A6 887F0000
 4E800021 5460063E
@@ -4860,18 +4872,18 @@ C9E1FFEC EDEF8028
 EDEF8824 807E0010
 D1E3002C 807E0010
 60000000 00000000
-042641B0 38000001 #../ASM/Faster Melee Codes/Addons/Misc/No start delay.asm
-0425AA18 38000001 #../ASM/Faster Melee Codes/Addons/Misc/No start delay2.asm
-04397878 4800020C #../ASM/Faster Melee Codes/Addons/Misc/OSReport.asm
-0416CC1C 60000000 #../ASM/Faster Melee Codes/Addons/Misc/Pause during game start1.asm
-0416CA9C 60000000 #../ASM/Faster Melee Codes/Addons/Misc/Pause during game start2.asm
-C2346130 00000005 #../ASM/Faster Melee Codes/Addons/Misc/Possible crash fix.asm
+042641B0 38000001 #../ASM/Misc/Faster Melee Codes/Addons/Misc/No start delay.asm
+0425AA18 38000001 #../ASM/Misc/Faster Melee Codes/Addons/Misc/No start delay2.asm
+04397878 4800020C #../ASM/Misc/Faster Melee Codes/Addons/Misc/OSReport.asm
+0416CC1C 60000000 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Pause during game start1.asm
+0416CA9C 60000000 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Pause during game start2.asm
+C2346130 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Possible crash fix.asm
 801F000C 39CE0001
 2C0E2710 40820014
 3D808034 618C613C
 7D8903A6 4E800420
 60000000 00000000
-C21A4160 00000008 #../ASM/Faster Melee Codes/Addons/Misc/Salty runback.asm
+C21A4160 00000008 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Salty runback.asm
 39C00000 3DE08046
 61EFB108 820F0000
 5611018D 41820010
@@ -4880,54 +4892,54 @@ C21A4160 00000008 #../ASM/Faster Melee Codes/Addons/Misc/Salty runback.asm
 2C0E0004 4080000C
 39EF000C 4BFFFFD8
 981F0003 00000000
-C21AF6F4 00000006 #../ASM/Faster Melee Codes/Addons/Misc/Skip Memcard Prompt.asm
+C21AF6F4 00000006 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Skip Memcard Prompt.asm
 2C1D000F 41820010
 2C1D000D 41820008
 48000014 3D80801B
 618C01AC 7D8903A6
 4E800420 2C1D0000
 60000000 00000000
-040C8CDC 4800B3DD #../ASM/Faster Melee Codes/Addons/Misc/Stamina die thing.asm
-C23001DC 00000003 #../ASM/Faster Melee Codes/Addons/Misc/Store Current Menu.asm
+040C8CDC 4800B3DD #../ASM/Misc/Faster Melee Codes/Addons/Misc/Stamina die thing.asm
+C23001DC 00000003 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Store Current Menu.asm
 881F0000 81FF0008
 980FFEFC 7C0802A6
 60000000 00000000
-C23041A0 00000003 #../ASM/Faster Melee Codes/Addons/Misc/Store Previous Menu.asm
+C23041A0 00000003 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Store Previous Menu.asm
 88A50004 3E8080C0
 62945260 8A940000
 9282806C 00000000
-C236E8D8 00000003 #../ASM/Faster Melee Codes/Addons/Misc/Toggle PObjs.asm
+C236E8D8 00000003 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Toggle PObjs.asm
 A0E3000C 70E00800
 41A20008 60E7C000
 60000000 00000000
-044D5A08 00000000 #../ASM/Faster Melee Codes/Addons/Misc/Colours/1.asm
-044D5A0C 0096FFFF #../ASM/Faster Melee Codes/Addons/Misc/Colours/2.asm
-044D5A10 FFFFFFFF #../ASM/Faster Melee Codes/Addons/Misc/Colours/3.asm
-044D5A14 715CF0FF #../ASM/Faster Melee Codes/Addons/Misc/Colours/4.asm
-04304254 38600000 #../ASM/Faster Melee Codes/Addons/Misc/Debug resembles normal/1.asm
-0430425C 38A00006 #../ASM/Faster Melee Codes/Addons/Misc/Debug resembles normal/2.asm
-043030DC 3C000000 #../ASM/Faster Melee Codes/Addons/Misc/Debug resembles normal/3.asm
-04303158 3C000000 #../ASM/Faster Melee Codes/Addons/Misc/Debug resembles normal/4.asm
-043031D4 3C000000 #../ASM/Faster Melee Codes/Addons/Misc/Debug resembles normal/5.asm
-04303244 3C000000 #../ASM/Faster Melee Codes/Addons/Misc/Debug resembles normal/6.asm
-C223C718 00000004 #../ASM/Faster Melee Codes/Addons/Misc/Extended Name Tags/1.asm
+044D5A08 00000000 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Colours/1.asm
+044D5A0C 0096FFFF #../ASM/Misc/Faster Melee Codes/Addons/Misc/Colours/2.asm
+044D5A10 FFFFFFFF #../ASM/Misc/Faster Melee Codes/Addons/Misc/Colours/3.asm
+044D5A14 715CF0FF #../ASM/Misc/Faster Melee Codes/Addons/Misc/Colours/4.asm
+04304254 38600000 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Debug resembles normal/1.asm
+0430425C 38A00006 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Debug resembles normal/2.asm
+043030DC 3C000000 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Debug resembles normal/3.asm
+04303158 3C000000 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Debug resembles normal/4.asm
+043031D4 3C000000 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Debug resembles normal/5.asm
+04303244 3C000000 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Debug resembles normal/6.asm
+C223C718 00000004 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Extended Name Tags/1.asm
 1CC30003 7CC6F214
 88060001 2C000000
 7C601B78 41820008
 38030001 00000000
-C223C270 00000003 #../ASM/Faster Melee Codes/Addons/Misc/Extended Name Tags/2.asm
+C223C270 00000003 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Extended Name Tags/2.asm
 88C30000 2C060000
 41820008 38630001
 98030000 00000000
-C223C710 00000005 #../ASM/Faster Melee Codes/Addons/Misc/Extended Name Tags/3.asm
+C223C710 00000005 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Extended Name Tags/3.asm
 28030003 4180001C
 1CC30003 7CC6F214
 88060001 2C000000
 40820008 38600002
 28030003 00000000
-0423CDD4 7C7E032E #../ASM/Faster Melee Codes/Addons/Misc/Extended Name Tags/4.asm
-0423CDB0 B0040000 #../ASM/Faster Melee Codes/Addons/Misc/Extended Name Tags/5.asm
-C223C5A0 0000000F #../ASM/Faster Melee Codes/Addons/Misc/Extended Name Tags/6.asm
+0423CDD4 7C7E032E #../ASM/Misc/Faster Melee Codes/Addons/Misc/Extended Name Tags/4.asm
+0423CDB0 B0040000 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Extended Name Tags/5.asm
+C223C5A0 0000000F #../ASM/Misc/Faster Melee Codes/Addons/Misc/Extended Name Tags/6.asm
 5460056B 41820068
 88BC0050 28050002
 4082005C 3CA0804D
@@ -4943,11 +4955,11 @@ C223C5A0 0000000F #../ASM/Faster Melee Codes/Addons/Misc/Extended Name Tags/6.as
 618CC7EC 7D8903A6
 4E800420 546005AD
 60000000 00000000
-04259D54 38600002 #../ASM/Faster Melee Codes/Addons/Misc/Load faster/1.asm
-04259D58 38000000 #../ASM/Faster Melee Codes/Addons/Misc/Load faster/2.asm
-042641B0 38000001 #../ASM/Faster Melee Codes/Addons/Misc/Load faster/3.asm
-0425AA18 38000001 #../ASM/Faster Melee Codes/Addons/Misc/Load faster/4.asm
-C2263058 00000030 #../ASM/Faster Melee Codes/Addons/Misc/Neutral spawns/1.asm
+04259D54 38600002 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Load faster/1.asm
+04259D58 38000000 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Load faster/2.asm
+042641B0 38000001 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Load faster/3.asm
+0425AA18 38000001 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Load faster/4.asm
+C2263058 00000030 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Neutral spawns/1.asm
 39E00000 3A000000
 3E408048 625307FD
 91F206D8 91F206DC
@@ -4996,7 +5008,7 @@ C2263058 00000030 #../ASM/Faster Melee Codes/Addons/Misc/Neutral spawns/1.asm
 39C00002 99D1FFFC
 2C0F0004 41A0FFB4
 38840001 00000000
-C21C0A48 0000001A #../ASM/Faster Melee Codes/Addons/Misc/Neutral spawns/2.asm
+C21C0A48 0000001A #../ASM/Misc/Faster Melee Codes/Addons/Misc/Neutral spawns/2.asm
 3DE0801B 61EFFFA8
 7C0F6000 418200BC
 3DC08048 A1CE0686
@@ -5023,9 +5035,21 @@ C21C0A48 0000001A #../ASM/Faster Melee Codes/Addons/Misc/Neutral spawns/2.asm
 960F4748 924F0004
 962F0040 924F0004
 7D8803A6 00000000
-041A4F84 60000000 #../ASM/Faster Melee Codes/Addons/Misc/Screenshot nops/1.asm
-041A5070 60000000 #../ASM/Faster Melee Codes/Addons/Misc/Screenshot nops/2.asm
-C232C874 00000007 #../ASM/Faster Melee Codes/Addons/Standalones/Absolute Value Byte.asm
+041A4F84 60000000 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Screenshot nops/1.asm
+041A5070 60000000 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Screenshot nops/2.asm
+04224C24 39E00000 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Unrestricted pause camera/1.asm
+0402F5BC 91FF02FC #../ASM/Misc/Faster Melee Codes/Addons/Misc/Unrestricted pause camera/10.asm
+04224C44 3DE04700 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Unrestricted pause camera/11.asm
+0402F5B0 91FF02F8 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Unrestricted pause camera/12.asm
+0402F59C 91FF02F0 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Unrestricted pause camera/2.asm
+04224CA4 3DE04700 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Unrestricted pause camera/3.asm
+0402F5A4 91FF02F4 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Unrestricted pause camera/4.asm
+04224C8C 3DE04700 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Unrestricted pause camera/5.asm
+0402F594 91FF02EC #../ASM/Misc/Faster Melee Codes/Addons/Misc/Unrestricted pause camera/6.asm
+04224C74 3DE04700 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Unrestricted pause camera/7.asm
+0402F58C 91FF02E8 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Unrestricted pause camera/8.asm
+04224C5C 3DE04700 #../ASM/Misc/Faster Melee Codes/Addons/Misc/Unrestricted pause camera/9.asm
+C232C874 00000007 #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Absolute Value Byte.asm
 3AA00000 2C1400F0
 41800020 2C140100
 41810018 3A940001
@@ -5033,7 +5057,7 @@ C232C874 00000007 #../ASM/Faster Melee Codes/Addons/Standalones/Absolute Value B
 4082FFF4 48000008
 7E95A378 4E800020
 60000000 00000000
-C232C854 0000000C #../ASM/Faster Melee Codes/Addons/Standalones/Check Input.asm
+C232C854 0000000C #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Check Input.asm
 39E00004 7DE903A6
 3E00804C 621020BC
 3A200000 3E60804A
@@ -5046,38 +5070,45 @@ C232C854 0000000C #../ASM/Faster Melee Codes/Addons/Standalones/Check Input.asm
 3A310001 4200FFD0
 3A20FFFF 4E800020
 60000000 00000000
-C232C958 0000001A #../ASM/Faster Melee Codes/Addons/Standalones/Create GObj.asm
+C232C958 00000021 #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Create GObj.asm
 7C0802A6 90010004
 9421FF50 BE810008
 7C741B78 7C952378
-38600016 38800017
-38A00000 3D808039
-618C01F0 7D8803A6
-4E800021 7C781B78
-2C150000 41820058
-7EA3AB78 3D808037
-618CF1E4 7D8803A6
-4E800021 7C791B78
-7F23CB78 7EA4AB78
+7CB62B78 7CD73378
+7CF83B78 7E83A378
+7EA4AB78 38A00050
+3D808039 618C01F0
+7D8803A6 4E800021
+7C791B78 2C180000
+41820054 7F03C378
+3D808037 618CF1E4
+7D8803A6 4E800021
+7C7A1B78 7F04C378
 3D808000 618CC160
 7D8803A6 4E800021
-7F03C378 3880000E
+7F23CB78 38800003
 3CA08037 60A5F1B0
-7F26CB78 3D808039
+7F46D378 3D808039
 618C0B68 7D8803A6
-4E800021 7F03C378
-7E84A378 38A00017
+4E800021 2C160000
+41820020 7F23CB78
+7EC4B378 38A00003
 3D808038 618CFD54
 7D8803A6 4E800021
-7F03C378 7F24CB78
+2C170000 41820024
+7F23CB78 7EE4BB78
+38A00007 38C00001
+3D808039 618C069C
+7D8803A6 4E800021
+7F23CB78 7F44D378
 BA810008 800100B4
 382100B0 7C0803A6
 4E800020 00000000
-C232C878 00000003 #../ASM/Faster Melee Codes/Addons/Standalones/Float to Int.asm
+C232C878 00000003 #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Float to Int.asm
 FD20481E D9220020
 82E20024 4E800020
 60000000 00000000
-C232C84C 0000000F #../ASM/Faster Melee Codes/Addons/Standalones/Get Character Data.asm
+C232C84C 0000000F #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Get Character Data.asm
 4E800021 01010101
 00000000 00000000
 00000000 00000000
@@ -5093,7 +5124,7 @@ C232C84C 0000000F #../ASM/Faster Melee Codes/Addons/Standalones/Get Character Da
 00000000 00000000
 00000000 00000000
 00000000 00000000
-C232C904 0000000C #../ASM/Faster Melee Codes/Addons/Standalones/Get Entity Struct.asm
+C232C904 0000000C #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Get Entity Struct.asm
 4E800021 00000000
 00000000 00000000
 00000000 00000000
@@ -5106,7 +5137,7 @@ C232C904 0000000C #../ASM/Faster Melee Codes/Addons/Standalones/Get Entity Struc
 80000000 00000000
 00000000 00000000
 00000000 00000000
-C232C868 00000007 #../ASM/Faster Melee Codes/Addons/Standalones/Get Player Data.asm
+C232C868 00000007 #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Get Player Data.asm
 38800E90 7C8419D6
 3CA08045 60A53080
 7C642A14 806300B0
@@ -5114,17 +5145,17 @@ C232C868 00000007 #../ASM/Faster Melee Codes/Addons/Standalones/Get Player Data.
 3860FFFF 48000008
 8063002C 4E800020
 60000000 00000000
-C232C86C 00000004 #../ASM/Faster Melee Codes/Addons/Standalones/Get Player Entity.asm
+C232C86C 00000004 #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Get Player Entity.asm
 38800E90 7C8419D6
 3CA08045 60A53080
 7C642A14 806300B0
 4E800020 00000000
-C232C870 00000004 #../ASM/Faster Melee Codes/Addons/Standalones/Get Player Static.asm
+C232C870 00000004 #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Get Player Static.asm
 38800E90 7C8419D6
 3CA08045 60A53080
 7C642A14 4E800020
 60000000 00000000
-C232C8A4 0000000C #../ASM/Faster Melee Codes/Addons/Standalones/Get Players Inited on CSS.asm
+C232C8A4 0000000C #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Get Players Inited on CSS.asm
 7C0802A6 90010004
 9421FF50 BE810008
 3E808048 62940821
@@ -5137,7 +5168,7 @@ C232C8A4 0000000C #../ASM/Faster Melee Codes/Addons/Standalones/Get Players Init
 800100B4 382100B0
 7C0803A6 4E800020
 60000000 00000000
-C232C8FC 0000008C #../ASM/Faster Melee Codes/Addons/Standalones/Get Stage byte and update ascii.asm
+C232C8FC 0000008C #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Get Stage byte and update ascii.asm
 3E808019 62949FB0
 1EAF0004 7E95A02E
 2C14003A 4181005C
@@ -5278,7 +5309,7 @@ C232C8FC 0000008C #../ASM/Faster Melee Codes/Addons/Standalones/Get Stage byte a
 800100B4 382100B0
 7C0803A6 4E800020
 60000000 00000000
-C232C90C 0000001C #../ASM/Faster Melee Codes/Addons/Standalones/Go to CSS.asm
+C232C90C 0000001C #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Go to CSS.asm
 7C0802A6 90010004
 9421FF50 BE810008
 39C00000 2C030001
@@ -5307,12 +5338,12 @@ C232C90C 0000001C #../ASM/Faster Melee Codes/Addons/Standalones/Go to CSS.asm
 BA810008 800100B4
 382100B0 7C0803A6
 4E800020 00000000
-C232C848 00000004 #../ASM/Faster Melee Codes/Addons/Standalones/Int2Float.asm
+C232C848 00000004 #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Int2Float.asm
 C8628000 D8620020
 B2C20026 C9020020
 ED081828 4E800020
 60000000 00000000
-C232C900 0000000F #../ASM/Faster Melee Codes/Addons/Standalones/Remove player from css.asm
+C232C900 0000000F #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Remove player from css.asm
 7C0802A6 90010004
 9421FF50 BE810008
 3F008045 6318ACB8
@@ -5328,7 +5359,7 @@ C232C900 0000000F #../ASM/Faster Melee Codes/Addons/Standalones/Remove player fr
 BA810008 800100B4
 382100B0 7C0803A6
 4E800020 00000000
-C232C850 0000000F #../ASM/Faster Melee Codes/Addons/Standalones/Resume game.asm
+C232C850 0000000F #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Resume game.asm
 7C0802A6 90010004
 9421FF50 BE810008
 2C030001 4082004C
@@ -5344,7 +5375,7 @@ C232C850 0000000F #../ASM/Faster Melee Codes/Addons/Standalones/Resume game.asm
 BA810008 800100B4
 382100B0 7C0803A6
 4E800020 00000000
-C232C908 00000008 #../ASM/Faster Melee Codes/Addons/Standalones/Second Level Debugmenu.asm
+C232C908 00000008 #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Second Level Debugmenu.asm
 7C0802A6 80840014
 90010004 9421FFF8
 3CA08030 60A51C80
@@ -5353,7 +5384,7 @@ C232C908 00000008 #../ASM/Faster Melee Codes/Addons/Standalones/Second Level Deb
 38600000 8001000C
 38210008 7C0803A6
 4E800020 00000000
-C232C8DC 00000011 #../ASM/Faster Melee Codes/Addons/Standalones/Store ascii.asm
+C232C8DC 00000011 #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Store ascii.asm
 7C0802A6 90010004
 9421FF50 BE810008
 3AE00000 3B602710
@@ -5371,7 +5402,7 @@ C232C8DC 00000011 #../ASM/Faster Melee Codes/Addons/Standalones/Store ascii.asm
 800100B4 382100B0
 7C0803A6 4E800020
 60000000 00000000
-C232C8C0 00000008 #../ASM/Faster Melee Codes/Addons/Standalones/check overall input.asm
+C232C8C0 00000008 #../ASM/Misc/Faster Melee Codes/Addons/Standalones/check overall input.asm
 3E80804C 62941FAC
 3A200004 7E2903A6
 3A200000 82B40000
@@ -5380,7 +5411,7 @@ C232C8C0 00000008 #../ASM/Faster Melee Codes/Addons/Standalones/check overall in
 3A940044 4200FFE8
 3A20FFFF 4E800020
 60000000 00000000
-C232C938 00000017 #../ASM/Faster Melee Codes/Addons/Standalones/Inits/ATW Freestyle Init.asm
+C232C938 00000017 #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Inits/ATW Freestyle Init.asm
 7C0802A6 90010004
 9421FF50 BE810008
 4800000D 4157462E
@@ -5404,7 +5435,7 @@ C232C938 00000017 #../ASM/Faster Melee Codes/Addons/Standalones/Inits/ATW Freest
 800100B4 382100B0
 7C0803A6 4E800020
 60000000 00000000
-C232C914 00000017 #../ASM/Faster Melee Codes/Addons/Standalones/Inits/ATW Init.asm
+C232C914 00000017 #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Inits/ATW Init.asm
 7C0802A6 90010004
 9421FF50 BE810008
 4800000D 4154572E
@@ -5428,7 +5459,7 @@ C232C914 00000017 #../ASM/Faster Melee Codes/Addons/Standalones/Inits/ATW Init.a
 800100B4 382100B0
 7C0803A6 4E800020
 60000000 00000000
-C232C934 00000017 #../ASM/Faster Melee Codes/Addons/Standalones/Inits/ATW Lite init.asm
+C232C934 00000017 #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Inits/ATW Lite init.asm
 7C0802A6 90010004
 9421FF50 BE810008
 4800000D 41574C2E
@@ -5452,7 +5483,7 @@ C232C934 00000017 #../ASM/Faster Melee Codes/Addons/Standalones/Inits/ATW Lite i
 800100B4 382100B0
 7C0803A6 4E800020
 60000000 00000000
-C232C924 0000000A #../ASM/Faster Melee Codes/Addons/Standalones/Inits/Arms race init.asm
+C232C924 0000000A #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Inits/Arms race init.asm
 7C0802A6 90010004
 9421FF50 BE810008
 4800000D 41532E64
@@ -5463,7 +5494,7 @@ C232C924 0000000A #../ASM/Faster Melee Codes/Addons/Standalones/Inits/Arms race 
 BA810008 800100B4
 382100B0 7C0803A6
 4E800020 00000000
-C232C944 0000000A #../ASM/Faster Melee Codes/Addons/Standalones/Inits/BBW Init.asm
+C232C944 0000000A #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Inits/BBW Init.asm
 7C0802A6 90010004
 9421FF50 BE810008
 4800000D 4242572E
@@ -5474,7 +5505,7 @@ C232C944 0000000A #../ASM/Faster Melee Codes/Addons/Standalones/Inits/BBW Init.a
 BA810008 800100B4
 382100B0 7C0803A6
 4E800020 00000000
-C232C8CC 0000000E #../ASM/Faster Melee Codes/Addons/Standalones/Inits/Bans init.asm
+C232C8CC 0000000E #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Inits/Bans init.asm
 7C0802A6 90010004
 9421FF50 BE810008
 4800000D 494D2E64
@@ -5489,7 +5520,7 @@ C232C8CC 0000000E #../ASM/Faster Melee Codes/Addons/Standalones/Inits/Bans init.
 BA810008 800100B4
 382100B0 7C0803A6
 4E800020 00000000
-C232C940 0000000A #../ASM/Faster Melee Codes/Addons/Standalones/Inits/Brawl Init.asm
+C232C940 0000000A #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Inits/Brawl Init.asm
 7C0802A6 90010004
 9421FF50 BE810008
 4800000D 42524C2E
@@ -5500,7 +5531,18 @@ C232C940 0000000A #../ASM/Faster Melee Codes/Addons/Standalones/Inits/Brawl Init
 BA810008 800100B4
 382100B0 7C0803A6
 4E800020 00000000
-C232C918 0000000A #../ASM/Faster Melee Codes/Addons/Standalones/Inits/DPInit.asm
+C232C968 0000000A #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Inits/CYOP Init.asm
+7C0802A6 90010004
+9421FF50 BE810008
+4800000D 4359502E
+64617400 7EC802A6
+3A800000 3AA00008
+3D808032 618CC90C
+7D8803A6 4E800021
+BA810008 800100B4
+382100B0 7C0803A6
+4E800020 00000000
+C232C918 0000000A #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Inits/DPInit.asm
 7C0802A6 90010004
 9421FF50 BE810008
 4800000D 44502E64
@@ -5511,7 +5553,7 @@ C232C918 0000000A #../ASM/Faster Melee Codes/Addons/Standalones/Inits/DPInit.asm
 BA810008 800100B4
 382100B0 7C0803A6
 4E800020 00000000
-C232C954 0000000A #../ASM/Faster Melee Codes/Addons/Standalones/Inits/IJZ Init.asm
+C232C954 0000000A #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Inits/IJZ Init.asm
 7C0802A6 90010004
 9421FF50 BE810008
 4800000D 494A5A2E
@@ -5522,7 +5564,7 @@ C232C954 0000000A #../ASM/Faster Melee Codes/Addons/Standalones/Inits/IJZ Init.a
 BA810008 800100B4
 382100B0 7C0803A6
 4E800020 00000000
-C232C91C 00000023 #../ASM/Faster Melee Codes/Addons/Standalones/Inits/IM init.asm
+C232C91C 00000023 #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Inits/IM init.asm
 7C0802A6 90010004
 9421FF50 BE810008
 3A200000 92228280
@@ -5558,7 +5600,7 @@ C232C91C 00000023 #../ASM/Faster Melee Codes/Addons/Standalones/Inits/IM init.as
 BA810008 800100B4
 382100B0 7C0803A6
 4E800020 00000000
-C232C910 0000000A #../ASM/Faster Melee Codes/Addons/Standalones/Inits/KOTH game init.asm
+C232C910 0000000A #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Inits/KOTH game init.asm
 7C0802A6 90010004
 9421FF50 BE810008
 4800000D 4B54482E
@@ -5569,7 +5611,7 @@ C232C910 0000000A #../ASM/Faster Melee Codes/Addons/Standalones/Inits/KOTH game 
 BA810008 800100B4
 382100B0 7C0803A6
 4E800020 00000000
-C232C948 0000000A #../ASM/Faster Melee Codes/Addons/Standalones/Inits/MRSS Init.asm
+C232C948 0000000A #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Inits/MRSS Init.asm
 7C0802A6 90010004
 9421FF50 BE810008
 4800000D 4D53532E
@@ -5580,7 +5622,7 @@ C232C948 0000000A #../ASM/Faster Melee Codes/Addons/Standalones/Inits/MRSS Init.
 BA810008 800100B4
 382100B0 7C0803A6
 4E800020 00000000
-C232C8D0 0000000E #../ASM/Faster Melee Codes/Addons/Standalones/Inits/Money Init.asm
+C232C8D0 0000000E #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Inits/Money Init.asm
 7C0802A6 90010004
 9421FF50 BE810008
 4800000D 494D2E64
@@ -5595,7 +5637,7 @@ C232C8D0 0000000E #../ASM/Faster Melee Codes/Addons/Standalones/Inits/Money Init
 BA810008 800100B4
 382100B0 7C0803A6
 4E800020 00000000
-C232C950 0000000A #../ASM/Faster Melee Codes/Addons/Standalones/Inits/OITC Init.asm
+C232C950 0000000A #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Inits/OITC Init.asm
 7C0802A6 90010004
 9421FF50 BE810008
 4800000D 4F54432E
@@ -5606,7 +5648,7 @@ C232C950 0000000A #../ASM/Faster Melee Codes/Addons/Standalones/Inits/OITC Init.
 BA810008 800100B4
 382100B0 7C0803A6
 4E800020 00000000
-C232C8C8 0000000E #../ASM/Faster Melee Codes/Addons/Standalones/Inits/Regular Init.asm
+C232C8C8 0000000E #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Inits/Regular Init.asm
 7C0802A6 90010004
 9421FF50 BE810008
 4800000D 494D2E64
@@ -5621,7 +5663,7 @@ C232C8C8 0000000E #../ASM/Faster Melee Codes/Addons/Standalones/Inits/Regular In
 BA810008 800100B4
 382100B0 7C0803A6
 4E800020 00000000
-C232C93C 0000000A #../ASM/Faster Melee Codes/Addons/Standalones/Inits/Smash 64 Init.asm
+C232C93C 0000000A #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Inits/Smash 64 Init.asm
 7C0802A6 90010004
 9421FF50 BE810008
 4800000D 5336342E
@@ -5632,7 +5674,7 @@ C232C93C 0000000A #../ASM/Faster Melee Codes/Addons/Standalones/Inits/Smash 64 I
 BA810008 800100B4
 382100B0 7C0803A6
 4E800020 00000000
-C232C94C 0000000A #../ASM/Faster Melee Codes/Addons/Standalones/Inits/Snowbrawl Init.asm
+C232C94C 0000000A #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Inits/Snowbrawl Init.asm
 7C0802A6 90010004
 9421FF50 BE810008
 4800000D 53422E64
@@ -5643,7 +5685,7 @@ C232C94C 0000000A #../ASM/Faster Melee Codes/Addons/Standalones/Inits/Snowbrawl 
 BA810008 800100B4
 382100B0 7C0803A6
 4E800020 00000000
-C232C920 0000000A #../ASM/Faster Melee Codes/Addons/Standalones/Inits/Squad strike init.asm
+C232C920 0000000A #../ASM/Misc/Faster Melee Codes/Addons/Standalones/Inits/Squad strike init.asm
 7C0802A6 90010004
 9421FF50 BE810008
 4800000D 53532E64
@@ -5654,7 +5696,7 @@ C232C920 0000000A #../ASM/Faster Melee Codes/Addons/Standalones/Inits/Squad stri
 BA810008 800100B4
 382100B0 7C0803A6
 4E800020 00000000
-06192F4C 000036D4
+06192F4C 0000371C
 20202F24 24242424
 2420202F 24242424
 24242424 202F2424
@@ -7275,7 +7317,16 @@ BA810008 800100B4
 70207A6F 6E650000
 496E6669 6E697465
 204A756D 70205A6F
-6E650000 4D696E69
+6E650000 43726561
+74652079 6F757220
+6F776E20 706C6174
+666F726D 73206D61
+696E206D 656E7500
+506C6179 00000000
+43726561 74652079
+6F757220 6F776E20
+706C6174 666F726D
+73000000 4D696E69
 67616D65 73000000
 53687566 666C6500
 536F6F6E 00000000
@@ -7287,50 +7338,50 @@ BA810008 800100B4
 4D656C65 65000000
 50657263 656E742F
 5374616D 696E6100
-8019625C 80196260
-80196268 00000000
+801962A4 801962A8
+801962B0 00000000
 4F666600 33303025
 00000000 5374616D
 696E6100 5374616D
 696E6120 416D6F75
 6E740000 53697A65
-3A200000 80196298
-8019629C 801962A4
+3A200000 801962E0
+801962E4 801962EC
 00000000 4F666600
 4D656761 00000000
 4D696E69 00000000
 48656164 3A200000
-801962C4 801962C8
-801962D0 00000000
+8019630C 80196310
+80196318 00000000
 4F666600 466C6F77
 65720000 42756E6E
 7920686F 6F640000
 426F6479 3A200000
-801962F4 801962F8
-80196300 00000000
+8019633C 80196340
+80196348 00000000
 4F666600 4D657461
 6C000000 496E7669
 7369626C 65000000
 53746174 75733A20
-00000000 80196328
-8019632C 80196334
+00000000 80196370
+80196374 8019637C
 00000000 4F666600
 53637265 77000000
 54757262 6F000000
 47726176 6974793A
-20000000 80196358
-8019635C 80196364
+20000000 801963A0
+801963A4 801963AC
 00000000 4F666600
 4C696768 74000000
 48656176 79000000
 53706565 643A2000
-80196384 80196388
-80196390 00000000
+801963CC 801963D0
+801963D8 00000000
 4F666600 536C6F77
 00000000 46617374
 00000000 43616D65
 72613A20 00000000
-801963B0 801963B4
+801963F8 801963FC
 00000000 4F666600
 46697865 64000000
 53706563 69616C20
@@ -7369,9 +7420,9 @@ BA810008 800100B4
 706C6179 2E000000
 42617474 6C656669
 656C6420 736B696E
-3A200000 801964F4
-801964FC 80196508
-80196514 00000000
+3A200000 8019653C
+80196544 80196550
+8019655C 00000000
 44656661 756C7400
 43757374 6F6D2031
 00000000 43757374
@@ -7517,7 +7568,7 @@ BA810008 800100B4
 000009C4 0000001E
 00000014 000003E8
 00000000 00000007
-3F8CCCCD 00000001
+3F5EB852 00000001
 00000032 00000004
 00000001 00000001
 00000001 00000000
@@ -7587,15 +7638,15 @@ C1C80000 00000000
 00000000 8065E6AC
 00000000 00000000
 00000001 803001DC
-801963E0 00000000
+80196428 00000000
 00000000 8065E8D0
 00000000 00000000
 00000001 803001DC
-801965AC 00000000
-00000000 80660E68
+801965F4 00000000
+00000000 80660EEC
 00000000 00000000
 00000001 803001DC
-80196618 00000000
-00000000 8066106C
+80196660 00000000
+00000000 806610F0
 00000000 00000000
 00000009 00000000

@@ -21,7 +21,7 @@
       "build": [
         {
           "type": "injectFolder",
-          "sourceFolder": "..\\ASM\\Squad Strike ASM\\",
+          "sourceFolder": "..\\ASM\\Gamemodes\\Squad Strike ASM\\",
           "isRecursive": true
         }
 

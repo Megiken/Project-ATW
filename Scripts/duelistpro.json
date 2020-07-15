@@ -21,7 +21,7 @@
       "build": [
         {
           "type": "injectFolder",
-          "sourceFolder": "..\\ASM\\Duelist Pro ASM\\",
+          "sourceFolder": "..\\ASM\\Minigames\\Duelist Pro ASM\\",
           "isRecursive": true
         }
 

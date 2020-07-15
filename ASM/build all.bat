@@ -43,6 +43,10 @@ echo Building Brawl.json...
 gecko build -c Brawl.json
 echo.
 
+echo Building createyourownplatforms.json...
+gecko build -c createyourownplatforms.json
+echo.
+
 echo Building brettsblastzonewarp.json...
 gecko build -c brettsblastzonewarp.json
 echo.
@@ -113,6 +117,10 @@ echo.
 
 echo Creating Brawl DAT...
 java -jar CodeConverter.jar -c "..\Output\Brawl.txt" -o "..\Files\Custom Code\BRL.dat"
+echo.
+
+echo Creating Create your own Platforms DAT...
+java -jar CodeConverter.jar -c "..\Output\cyop.txt" -o "..\Files\Custom Code\CYP.dat"
 echo.
 
 echo Creating Bretts Blastzone Warp DAT...

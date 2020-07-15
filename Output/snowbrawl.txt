@@ -2,8 +2,11 @@
 
 [Gecko]
 $All Star [Big Money]
-040D3518 38A50004 #../ASM/Snowbrawl ASM/Game Code/Death penalty.asm
-C226AD20 0000002A #../ASM/Snowbrawl ASM/Game Code/Fancy Throwing.asm
+C20D3518 00000003 #../ASM/Minigames/Snowbrawl ASM/Game Code/Death penalty.asm
+3E808019 6294A2A8
+82940000 7CA5A214
+60000000 00000000
+C226AD20 0000002A #../ASM/Minigames/Snowbrawl ASM/Game Code/Fancy Throwing.asm
 7C0802A6 39E00000
 81EF0000 2C0F0001
 41820138 90010004
@@ -46,7 +49,7 @@ FD083828 81810014
 7C636214 4E800020
 38600000 4E800020
 60000000 00000000
-C206CC7C 00000028 #../ASM/Snowbrawl ASM/Game Code/Give point.asm
+C206CC7C 0000002D #../ASM/Minigames/Snowbrawl ASM/Game Code/Give point.asm
 7C0802A6 90010004
 9421FF00 BC610008
 7C7F1B78 3EE08048
@@ -54,14 +57,14 @@ C206CC7C 00000028 #../ASM/Snowbrawl ASM/Game Code/Give point.asm
 2C170000 41820008
 8B1F061B 8ADF000C
 829F1868 A2B40000
-2C150006 408200EC
+2C150006 40820114
 8294002C 82B40010
-2C150003 408200DC
+2C150003 40820104
 82940518 8294002C
 8874000C 7C03B000
-418200C8 2C170000
+418200F0 2C170000
 41820010 8B34061B
-7C19C000 418200B4
+7C19C000 418200DC
 2C170000 41820040
 3B400000 7F43D378
 3D808032 618CC868
@@ -81,14 +84,25 @@ C206CC7C 00000028 #../ASM/Snowbrawl ASM/Game Code/Give point.asm
 618CC870 7D8803A6
 4E800021 7C83502E
 38840001 7C83512E
-3E808046 6294B970
-8ABF000C 1EB500A8
-7C94A82E 38840001
+3E808019 6294A2A0
+82940000 2C140000
+41820030 3E808019
+6294A2A4 82940000
+7C04A000 4180001C
+3DC08046 61CEB6C8
+39800000 918E0000
+3980003B B18E0004
 B8610008 80010104
 38210100 7C0803A6
 7C0802A6 00000000
-04079534 38600000 #../ASM/Snowbrawl ASM/Game Code/Remove reflections.asm
-C206CA9C 00000010 #../ASM/Snowbrawl ASM/Game Code/Spawn egg.asm
+C2079534 00000006 #../ASM/Minigames/Snowbrawl ASM/Game Code/Remove reflections.asm
+3E808019 6294A2AC
+82940000 2C140000
+40820018 3D808000
+618C7BCC 7D8803A6
+4E800021 48000008
+38600000 00000000
+C206CA9C 00000010 #../ASM/Minigames/Snowbrawl ASM/Game Code/Spawn egg.asm
 7C0802A6 90010004
 9421FF00 BC610008
 829F1974 2C140000
@@ -105,25 +119,25 @@ C206CA9C 00000010 #../ASM/Snowbrawl ASM/Game Code/Spawn egg.asm
 80010104 38210100
 7C0803A6 881F221E
 60000000 00000000
-C2268B18 00000003 #../ASM/Snowbrawl ASM/Game Code/Test.asm
+C2268B18 00000003 #../ASM/Minigames/Snowbrawl ASM/Game Code/Test.asm
 7C0802A6 82830008
 2C140003 41820008
 60000000 00000000
-042892B0 60000000 #../ASM/Snowbrawl ASM/Remove explosions + items/Dont spawn item.asm
-04289258 38600001 #../ASM/Snowbrawl ASM/Remove explosions + items/No explosion the second.asm
-042894A4 38600000 #../ASM/Snowbrawl ASM/Remove explosions + items/No explosion the third.asm
-04289408 38600000 #../ASM/Snowbrawl ASM/Remove explosions + items/No explosion.asm
-042895DC 38600000 #../ASM/Snowbrawl ASM/Remove explosions + items/lol.asm
-04178228 2C000000 #../ASM/Snowbrawl ASM/Results Screen/1.asm
-04178224 3C000010 #../ASM/Snowbrawl ASM/Results Screen/2.asm
-040BECD8 C0228E58 #../ASM/Snowbrawl ASM/Results Screen/3.asm
-040BECE0 C0629220 #../ASM/Snowbrawl ASM/Results Screen/4.asm
-040BEDB0 C0228E58 #../ASM/Snowbrawl ASM/Results Screen/5.asm
-040BEDB8 C0629220 #../ASM/Snowbrawl ASM/Results Screen/6.asm
-040BEF28 C0228E58 #../ASM/Snowbrawl ASM/Results Screen/7.asm
-040BEF30 C0629220 #../ASM/Snowbrawl ASM/Results Screen/8.asm
-04179214 60000000 #../ASM/Snowbrawl ASM/Results Screen/9.asm
-041A5B00 3B640000 #../ASM/Snowbrawl ASM/Results Screen/Dont Skip.asm
-0445BF10 00350002 #../ASM/Snowbrawl ASM/Settings/4.asm
-0445BF14 04000A00 #../ASM/Snowbrawl ASM/Settings/5.asm
-0445BF18 08010101 #../ASM/Snowbrawl ASM/Settings/6.asm
+042892B0 60000000 #../ASM/Minigames/Snowbrawl ASM/Remove explosions + items/Dont spawn item.asm
+04289258 38600001 #../ASM/Minigames/Snowbrawl ASM/Remove explosions + items/No explosion the second.asm
+042894A4 38600000 #../ASM/Minigames/Snowbrawl ASM/Remove explosions + items/No explosion the third.asm
+04289408 38600000 #../ASM/Minigames/Snowbrawl ASM/Remove explosions + items/No explosion.asm
+042895DC 38600000 #../ASM/Minigames/Snowbrawl ASM/Remove explosions + items/lol.asm
+04178228 2C000000 #../ASM/Minigames/Snowbrawl ASM/Results Screen/1.asm
+04178224 3C000010 #../ASM/Minigames/Snowbrawl ASM/Results Screen/2.asm
+040BECD8 C0228E58 #../ASM/Minigames/Snowbrawl ASM/Results Screen/3.asm
+040BECE0 C0629220 #../ASM/Minigames/Snowbrawl ASM/Results Screen/4.asm
+040BEDB0 C0228E58 #../ASM/Minigames/Snowbrawl ASM/Results Screen/5.asm
+040BEDB8 C0629220 #../ASM/Minigames/Snowbrawl ASM/Results Screen/6.asm
+040BEF28 C0228E58 #../ASM/Minigames/Snowbrawl ASM/Results Screen/7.asm
+040BEF30 C0629220 #../ASM/Minigames/Snowbrawl ASM/Results Screen/8.asm
+04179214 60000000 #../ASM/Minigames/Snowbrawl ASM/Results Screen/9.asm
+041A5B00 3B640000 #../ASM/Minigames/Snowbrawl ASM/Results Screen/Dont Skip.asm
+0445BF10 00350002 #../ASM/Minigames/Snowbrawl ASM/Settings/4.asm
+0445BF14 04000A00 #../ASM/Minigames/Snowbrawl ASM/Settings/5.asm
+0445BF18 08010101 #../ASM/Minigames/Snowbrawl ASM/Settings/6.asm

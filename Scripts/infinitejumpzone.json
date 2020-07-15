@@ -21,7 +21,7 @@
       "build": [
         {
           "type": "injectFolder",
-          "sourceFolder": "..\\ASM\\Infinite Jump Zone ASM\\",
+          "sourceFolder": "..\\ASM\\Minigames\\Infinite Jump Zone ASM\\",
           "isRecursive": true
         }
 

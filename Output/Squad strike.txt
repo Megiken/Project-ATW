@@ -2,7 +2,7 @@
 
 [Gecko]
 $Squad strike [Big Money]
-C216D9B8 0000000A #../ASM/Squad Strike ASM/Auto Character Switcher/Sheik.asm
+C216D9B8 0000000A #../ASM/Gamemodes/Squad Strike ASM/Auto Character Switcher/Sheik.asm
 3D808032 618CC8B4
 7D8803A6 4E800021
 7E8802A6 8AB40003
@@ -13,7 +13,7 @@ C216D9B8 0000000A #../ASM/Squad Strike ASM/Auto Character Switcher/Sheik.asm
 2C150001 4082000C
 38800013 48000008
 38800012 00000000
-C216D9C8 0000000A #../ASM/Squad Strike ASM/Auto Character Switcher/Sheik2.asm
+C216D9C8 0000000A #../ASM/Gamemodes/Squad Strike ASM/Auto Character Switcher/Sheik2.asm
 3D808032 618CC8B4
 7D8803A6 4E800021
 7E8802A6 8AB40003
@@ -24,7 +24,7 @@ C216D9C8 0000000A #../ASM/Squad Strike ASM/Auto Character Switcher/Sheik2.asm
 2C150001 4082000C
 38800013 48000008
 38800012 00000000
-C2263250 00000079 #../ASM/Squad Strike ASM/CSS codes/Custom input monitor.asm
+C2263250 00000079 #../ASM/Gamemodes/Squad Strike ASM/CSS codes/Custom input monitor.asm
 9421FF00 BC610008
 3DE08047 61EF9D30
 89EF0000 2C0F0002
@@ -146,8 +146,8 @@ A2940006 7C14A800
 4E800021 48000004
 B8610008 38210100
 60000000 00000000
-0425D22C 3BA00000 #../ASM/Squad Strike ASM/CSS codes/Disable KO Stars.asm
-C22601AC 0000000D #../ASM/Squad Strike ASM/CSS codes/Disable colours when L.asm
+0425D22C 3BA00000 #../ASM/Gamemodes/Squad Strike ASM/CSS codes/Disable KO Stars.asm
+C22601AC 0000000D #../ASM/Gamemodes/Squad Strike ASM/CSS codes/Disable colours when L.asm
 7C0802A6 90010004
 9421FF00 BC610008
 3A400040 3D808032
@@ -161,7 +161,7 @@ C22601AC 0000000D #../ASM/Squad Strike ASM/CSS codes/Disable colours when L.asm
 80010104 38210100
 7C0803A6 3BC303B4
 60000000 00000000
-C22600E0 0000000D #../ASM/Squad Strike ASM/CSS codes/Disable colours when R.asm
+C22600E0 0000000D #../ASM/Gamemodes/Squad Strike ASM/CSS codes/Disable colours when R.asm
 7C0802A6 90010004
 9421FF00 BC610008
 3A400040 3D808032
@@ -175,8 +175,8 @@ C22600E0 0000000D #../ASM/Squad Strike ASM/CSS codes/Disable colours when R.asm
 80010104 38210100
 7C0803A6 3BC303B4
 60000000 00000000
-042617D0 60000000 #../ASM/Squad Strike ASM/CSS codes/Disable doubles.asm
-C2260740 00000009 #../ASM/Squad Strike ASM/CSS codes/Disable hands X.asm
+042617D0 60000000 #../ASM/Gamemodes/Squad Strike ASM/CSS codes/Disable doubles.asm
+C2260740 00000009 #../ASM/Gamemodes/Squad Strike ASM/CSS codes/Disable hands X.asm
 7C0802A6 90010004
 9421FF00 BC610008
 C0BF0010 3AC001F4
@@ -186,7 +186,7 @@ FC054040 41820008
 D01F000C B8610008
 80010104 38210100
 7C0803A6 00000000
-C22616FC 00000007 #../ASM/Squad Strike ASM/CSS codes/Disable rules when high hand.asm
+C22616FC 00000007 #../ASM/Gamemodes/Squad Strike ASM/CSS codes/Disable rules when high hand.asm
 3AC0001A 3D808032
 618CC848 7D8803A6
 4E800021 FC080840
@@ -194,7 +194,7 @@ C22616FC 00000007 #../ASM/Squad Strike ASM/CSS codes/Disable rules when high han
 618C1768 7D8903A6
 4E800420 38600001
 60000000 00000000
-C2260890 00000016 #../ASM/Squad Strike ASM/CSS codes/Moving hands.asm
+C2260890 00000016 #../ASM/Gamemodes/Squad Strike ASM/CSS codes/Moving hands.asm
 7C0802A6 90010004
 9421FF00 BC610008
 8AC30019 7EC3B378
@@ -217,22 +217,22 @@ D11F0010 FC010840
 B8610008 80010104
 38210100 7C0803A6
 60000000 00000000
-C2096728 00000006 #../ASM/Squad Strike ASM/Disable Transformations/1.asm
+C2096728 00000006 #../ASM/Gamemodes/Squad Strike ASM/Disable Transformations/1.asm
 81FF0004 2C0F0013
 4182000C 2C0F0007
 40820018 3C608009
 606368B0 7C6903A6
 38600000 4E800420
 387E0000 00000000
-C20D68D8 00000006 #../ASM/Squad Strike ASM/Disable Transformations/2.asm
+C20D68D8 00000006 #../ASM/Gamemodes/Squad Strike ASM/Disable Transformations/2.asm
 81E50004 2C0F0013
 4182000C 2C0F0007
 40820018 3C60800D
 60636918 7C6903A6
 38600000 4E800420
 80850004 00000000
-0416D97C 7C000800 #../ASM/Squad Strike ASM/Disable Transformations/ways Holding A on Stage Load.asm
-C20BFD9C 00000013 #../ASM/Squad Strike ASM/Spawn as new character/Do swap.asm
+0416D97C 7C000800 #../ASM/Gamemodes/Squad Strike ASM/Disable Transformations/ways Holding A on Stage Load.asm
+C20BFD9C 00000013 #../ASM/Gamemodes/Squad Strike ASM/Spawn as new character/Do swap.asm
 7C0802A6 90010004
 9421FF00 BC610008
 8B3F000C 7F23CB78
@@ -252,11 +252,11 @@ C20BFD9C 00000013 #../ASM/Squad Strike ASM/Spawn as new character/Do swap.asm
 B8610008 80010104
 38210100 7C0803A6
 7C0802A6 00000000
-C2017BE4 00000003 #../ASM/Squad Strike ASM/Spawn as new character/Extra length lol.asm
+C2017BE4 00000003 #../ASM/Gamemodes/Squad Strike ASM/Spawn as new character/Extra length lol.asm
 2C116969 4082000C
 3C600021 60634D00
 907A000C 00000000
-C216D310 0000000C #../ASM/Squad Strike ASM/Spawn as new character/Match end thing.asm
+C216D310 0000000C #../ASM/Gamemodes/Squad Strike ASM/Spawn as new character/Match end thing.asm
 9421FF00 BC610008
 3E808046 6294B6A0
 8A940008 2C140000
@@ -269,7 +269,7 @@ C216D310 0000000C #../ASM/Squad Strike ASM/Spawn as new character/Match end thin
 7E8802A6 92B40004
 B8610008 38210100
 83E10034 00000000
-C20D3338 00000037 #../ASM/Squad Strike ASM/Spawn as new character/Preload files.asm
+C20D3338 00000037 #../ASM/Gamemodes/Squad Strike ASM/Spawn as new character/Preload files.asm
 83E3002C 829F0004
 2C14000B 418201A8
 7C0802A6 90010004
@@ -325,13 +325,13 @@ B2830004 7F23CB78
 9263008C B8610008
 80010104 38210100
 7C0803A6 00000000
-C2068EC4 00000005 #../ASM/Squad Strike ASM/Spawn as new character/Skip GObj.asm
+C2068EC4 00000005 #../ASM/Gamemodes/Squad Strike ASM/Spawn as new character/Skip GObj.asm
 2C116969 41820018
 3D808039 618C01F0
 7D8903A6 4E800421
 48000008 7E038378
 60000000 00000000
-C206919C 00000007 #../ASM/Squad Strike ASM/Spawn as new character/Skip camera box.asm
+C206919C 00000007 #../ASM/Gamemodes/Squad Strike ASM/Spawn as new character/Skip camera box.asm
 2C116969 41820018
 3D808002 618C9020
 7D8903A6 4E800421
@@ -339,25 +339,25 @@ C206919C 00000007 #../ASM/Squad Strike ASM/Spawn as new character/Skip camera bo
 3D808002 618C90D4
 7D8803A6 4E800021
 4BFFFFD8 00000000
-C2068EE8 00000005 #../ASM/Squad Strike ASM/Spawn as new character/Skip data.asm
+C2068EE8 00000005 #../ASM/Gamemodes/Squad Strike ASM/Spawn as new character/Skip data.asm
 2C116969 41820018
 3D808037 618CABC8
 7D8903A6 4E800421
 48000008 807F002C
 60000000 00000000
-C20691C0 00000006 #../ASM/Squad Strike ASM/Spawn as new character/Skip procs.asm
+C20691C0 00000006 #../ASM/Gamemodes/Squad Strike ASM/Spawn as new character/Skip procs.asm
 2C116969 41820018
 3D808038 618CFD54
 7D8903A6 4E800421
 48000014 3D808006
 618C92DC 7D8903A6
 4E800421 00000000
-C2068EDC 00000004 #../ASM/Squad Strike ASM/Spawn as new character/Skip texture init.asm
+C2068EDC 00000004 #../ASM/Gamemodes/Squad Strike ASM/Spawn as new character/Skip texture init.asm
 2C116969 41820014
 3D808039 618C069C
 7D8903A6 4E800421
 60000000 00000000
-C20D3930 00000009 #../ASM/Squad Strike ASM/Spawn as new character/Wait again.asm
+C20D3930 00000009 #../ASM/Gamemodes/Squad Strike ASM/Spawn as new character/Wait again.asm
 9421FF00 BC610008
 8865000C 3D808032
 618CC8BC 7D8803A6
@@ -367,7 +367,7 @@ C20D3930 00000009 #../ASM/Squad Strike ASM/Spawn as new character/Wait again.asm
 7E80A378 B8610008
 38210100 2C000000
 60000000 00000000
-C20D3E20 00000009 #../ASM/Squad Strike ASM/Spawn as new character/Wait for files.asm
+C20D3E20 00000009 #../ASM/Gamemodes/Squad Strike ASM/Spawn as new character/Wait for files.asm
 9421FF00 BC610008
 8865000C 3D808032
 618CC8BC 7D8803A6
@@ -377,7 +377,7 @@ C20D3E20 00000009 #../ASM/Squad Strike ASM/Spawn as new character/Wait for files
 7E80A378 B8610008
 38210100 2C000000
 60000000 00000000
-C232C8D4 00000013 #../ASM/Squad Strike ASM/Standalones/Clear Struct.asm
+C232C8D4 00000013 #../ASM/Gamemodes/Squad Strike ASM/Standalones/Clear Struct.asm
 7C0802A6 90010004
 9421FF00 BC610008
 38770004 38800070
@@ -397,7 +397,7 @@ C232C8D4 00000013 #../ASM/Squad Strike ASM/Standalones/Clear Struct.asm
 80010104 38210100
 7C0803A6 4E800020
 60000000 00000000
-C232C930 00000012 #../ASM/Squad Strike ASM/Standalones/Get opposite data.asm
+C232C930 00000012 #../ASM/Gamemodes/Squad Strike ASM/Standalones/Get opposite data.asm
 7C0802A6 90010004
 9421FF50 BE810008
 3D808032 618CC8B4
@@ -416,7 +416,7 @@ C232C930 00000012 #../ASM/Squad Strike ASM/Standalones/Get opposite data.asm
 800100B4 382100B0
 7C0803A6 4E800020
 60000000 00000000
-C232C8D8 00000008 #../ASM/Squad Strike ASM/Standalones/Hard clear struct.asm
+C232C8D8 00000008 #../ASM/Gamemodes/Squad Strike ASM/Standalones/Hard clear struct.asm
 7C0802A6 90010004
 9421FF00 BC610008
 38770000 38800074
@@ -425,7 +425,7 @@ C232C8D8 00000008 #../ASM/Squad Strike ASM/Standalones/Hard clear struct.asm
 B8610008 80010104
 38210100 7C0803A6
 4E800020 00000000
-C232C92C 00000021 #../ASM/Squad Strike ASM/Standalones/Load character.asm
+C232C92C 00000021 #../ASM/Gamemodes/Squad Strike ASM/Standalones/Load character.asm
 7C0802A6 90010004
 9421FF00 BC610008
 7C791B78 7C9C2378
@@ -459,7 +459,7 @@ C232C92C 00000021 #../ASM/Squad Strike ASM/Standalones/Load character.asm
 80010104 38210100
 7C0803A6 4E800020
 60000000 00000000
-C232C928 00000016 #../ASM/Squad Strike ASM/Standalones/Update SFXs.asm
+C232C928 00000016 #../ASM/Gamemodes/Squad Strike ASM/Standalones/Update SFXs.asm
 7C0802A6 90010004
 9421FF50 BE810008
 3B200000 3B600000
@@ -482,7 +482,7 @@ C232C928 00000016 #../ASM/Squad Strike ASM/Standalones/Update SFXs.asm
 BA810008 800100B4
 382100B0 7C0803A6
 4E800020 00000000
-C232C8C4 00000008 #../ASM/Squad Strike ASM/Standalones/check for clone.asm
+C232C8C4 00000008 #../ASM/Gamemodes/Squad Strike ASM/Standalones/check for clone.asm
 81E30004 2C0F0000
 40810020 7DE903A6
 3A030008 8A300000
@@ -491,7 +491,7 @@ C232C8C4 00000008 #../ASM/Squad Strike ASM/Standalones/check for clone.asm
 3A200001 48000008
 3A20FFFF 4E800020
 60000000 00000000
-C232C8BC 00000012 #../ASM/Squad Strike ASM/Standalones/get correct data.asm
+C232C8BC 00000012 #../ASM/Gamemodes/Squad Strike ASM/Standalones/get correct data.asm
 7C0802A6 90010004
 9421FF50 BE810008
 3D808032 618CC8B4
@@ -510,7 +510,7 @@ C232C8BC 00000012 #../ASM/Squad Strike ASM/Standalones/get correct data.asm
 800100B4 382100B0
 7C0803A6 4E800020
 60000000 00000000
-C232C8B4 00000010 #../ASM/Squad Strike ASM/Standalones/get first data.asm
+C232C8B4 00000010 #../ASM/Gamemodes/Squad Strike ASM/Standalones/get first data.asm
 4E800021 00000000
 00000000 00000000
 00000000 00000000
@@ -527,7 +527,7 @@ C232C8B4 00000010 #../ASM/Squad Strike ASM/Standalones/get first data.asm
 00000000 00000000
 00000000 00000000
 60000000 00000000
-C232C8B8 00000010 #../ASM/Squad Strike ASM/Standalones/get second data.asm
+C232C8B8 00000010 #../ASM/Gamemodes/Squad Strike ASM/Standalones/get second data.asm
 4E800021 00000000
 00000000 00000000
 00000000 00000000

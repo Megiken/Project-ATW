@@ -21,7 +21,7 @@
       "build": [
         {
           "type": "injectFolder",
-          "sourceFolder": "..\\ASM\\All star ASM\\",
+          "sourceFolder": "..\\ASM\\Gamemodes\\All star ASM\\",
           "isRecursive": true
         }
 

@@ -9,304 +9,319 @@
       "name": "Debug Menu",
       "build": [
         {
-          "type": "replaceCodeBlock",
-          "address": "8065cc60",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Main Menu.s"
-        },
-        {
+         "type": "replaceCodeBlock",
+         "address": "8065cc60",
+         "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Main Menu.s"
+       },
+       {
           "type": "replaceCodeBlock",
           "address": "8065ce64",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/General.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/General.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065cfa8",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Player Attributes.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Player Attributes.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065d24c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Tourney mods.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Tourney mods.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065d390",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Stages.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Stages.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065d694",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Custom Stage Select Screen Builder.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Custom Stage Select Screen Builder.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065da38",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Items.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Items.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065dbdc",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Custom Choose Random Item Builder.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Custom Choose Random Item Builder.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065df80",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Next Page .s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Next Page .s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065e1a4",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Custom Choose random pokemon builder.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Custom Choose random pokemon builder.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065e548",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Next page.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Next page.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065e6ac",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Mechanics.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Mechanics.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065e8d0",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Gamemodes.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Gamemodes.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065eab4",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Around the World.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Around the World.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065eb78",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Start new atw.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Start new atw.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065ecfc",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/ATW Game Settings.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/ATW Game Settings.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065ee00",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/How to play ATW.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/How to play ATW.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065efa4",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Iron Man.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Iron Man.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065f068",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Start new game.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Start new game.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065f1ac",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/How to play regular.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/How to play regular.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065f330",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/How to play with bans.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/How to play with bans.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065f414",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/How to play big money.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/How to play big money.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065f4b8",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Iron Man Settings.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Iron Man Settings.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065f55c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Buy settings.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Buy settings.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065f900",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Squad Strike.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Squad Strike.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065f9a4",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Squad strike settings.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Squad strike settings.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065fa08",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/How to play squad strike.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/How to play squad strike.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065fa6c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Arms race.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Arms race.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065fb10",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Arms race settings.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Arms race settings.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065fb74",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/How to play arms race.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/How to play arms race.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065fbd8",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Smash 64.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Smash 64.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065fc3c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Brawl.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Brawl.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065fca0",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/6 Player Smash Main Menu.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/6 Player Smash Main Menu.s"
         },
         {
           "type": "replaceCodeBlock",
           "address": "8065fd04",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Minigames.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Minigames.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065fe28",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Duelist Pro.s"
+          "address": "8065fe48",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Duelist Pro.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065fecc",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/DP Settings.s"
+          "address": "8065feec",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/DP Settings.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8065ff90",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/How to play DP.s"
+          "address": "8065ffb0",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/How to play DP.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660054",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/King of the hill.s"
+          "address": "80660074",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/King of the hill.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "806600f8",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/KOTH Settings.s"
+          "address": "80660118",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/KOTH Settings.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8066019c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/How to play KOTH.s"
+          "address": "806601bc",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/How to play KOTH.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660280",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Bretts blastzone warp.s"
+          "address": "806602a0",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Bretts blastzone warp.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660324",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Bretts blastzone warp Settings.s"
+          "address": "80660344",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Bretts blastzone warp Settings.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "806603a8",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/How to play bretts blastzone warp.s"
+          "address": "806603c8",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/How to play bretts blastzone warp.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8066044c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Mr Saturn Soccer.s"
+          "address": "8066046c",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Mr Saturn Soccer.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "806604f0",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Soccer Settings.s"
+          "address": "80660510",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Soccer Settings.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660594",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/How to play soccer.s"
+          "address": "806605b4",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/How to play soccer.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660618",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Snowbrawl.s"
+          "address": "80660638",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Snowbrawl.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "806606bc",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Snowbrawl settings.s"
+          "address": "806606dc",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Snowbrawl settings.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660780",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/How to play snowbrawl.s"
+          "address": "806607a0",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/How to play snowbrawl.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660824",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/One in the chamber.s"
+          "address": "80660844",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/One in the chamber.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "806608c8",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/One in the chamber settings.s"
+          "address": "806608e8",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/One in the chamber settings.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8066098c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/How to play one in the chamber.s"
+          "address": "806609ac",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/How to play one in the chamber.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660a30",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Infinite Jump Zone.s"
+          "address": "80660a50",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Infinite Jump Zone.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660ad4",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Infinite jump zone settings.s"
+          "address": "80660af4",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Infinite jump zone settings.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660b98",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/How to play infinite jump zone.s"
+          "address": "80660bb8",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/How to play infinite jump zone.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660c3c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Shuffle.s"
+          "address": "80660c5c",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Create your own platforms.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660ca0",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Extras.s"
+          "address": "80660cc0",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Shuffle.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660d04",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Special Melee.s"
+          "address": "80660d24",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Extras.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660e68",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Visuals.s"
+          "address": "80660d88",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Special Melee.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "8066106c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Debug Menu/Submenus/Credits.s"
+          "address": "80660eec",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Visuals.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "806610f0",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Credits.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "80192f4c",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Text.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "80199f4c",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Variables.s"
         }
 
 

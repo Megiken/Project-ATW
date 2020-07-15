@@ -21,7 +21,7 @@
       "build": [
         {
           "type": "injectFolder",
-          "sourceFolder": "..\\ASM\\Brawl ASM\\",
+          "sourceFolder": "..\\ASM\\Gamemodes\\Brawl ASM\\",
           "isRecursive": true
         }
 

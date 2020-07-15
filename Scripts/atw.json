@@ -21,7 +21,7 @@
       "build": [
         {
           "type": "injectFolder",
-          "sourceFolder": "..\\ASM\\ATW ASM\\",
+          "sourceFolder": "..\\ASM\\Gamemodes\\ATW ASM\\",
           "isRecursive": true
         }
 
