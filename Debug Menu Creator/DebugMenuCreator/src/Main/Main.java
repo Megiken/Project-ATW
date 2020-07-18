@@ -417,11 +417,6 @@ public class Main{
 		shuffleMain.menuItems[1] = new menuItem(0);
 		shuffleMain.menuItems[2] = new menuItem(0,"Soon");
 
-		subMenu extrasMain = new subMenu(1,"Extras");
-
-		extrasMain.menuItems[0] = new menuItem(0,"Extras");
-		extrasMain.menuItems[1] = new menuItem(0);
-		extrasMain.menuItems[2] = new menuItem(0,"Soon");
 
 		subMenu BBWSettings = new subMenu(1,"Bretts blastzone warp Settings");
 
@@ -553,19 +548,67 @@ public class Main{
 		CYOPMain.menuItems[1] = new menuItem(0);
 		CYOPMain.menuItems[2] = new menuItem(1,"8032C968","Play");
 		
+		subMenu VolleyballMain = new subMenu(1,"Volleyball");
+		
+		VolleyballMain.menuItems[0] = new menuItem(0,"Volleyball main menu");
+		VolleyballMain.menuItems[1] = new menuItem(0);
+		VolleyballMain.menuItems[2] = new menuItem(1,"8032C978","Play");
+		
+		
+		subMenu BasketballMain = new subMenu(1,"Basketball");
+		
+		BasketballMain.menuItems[0] = new menuItem(0,"Basketball main menu");
+		BasketballMain.menuItems[1] = new menuItem(0);
+		BasketballMain.menuItems[2] = new menuItem(1,"8032C97c","Play");
+		
+		subMenu CTFMain = new subMenu(1,"Capture the flag");
+		
+		CTFMain.menuItems[0] = new menuItem(0,"Capture the flag platforms main menu");
+		CTFMain.menuItems[1] = new menuItem(0);
+		CTFMain.menuItems[2] = new menuItem(1,"8032C980","Play");
+		
+		subMenu ChessMain = new subMenu(1,"Chess Melee");
+		
+		ChessMain.menuItems[0] = new menuItem(0,"Chess melee main menu");
+		ChessMain.menuItems[1] = new menuItem(0);
+		ChessMain.menuItems[2] = new menuItem(1,"8032C96c","Play");
+		
+		subMenu DualMain = new subMenu(1,"Dual 1v1");
+		
+		DualMain.menuItems[0] = new menuItem(0,"Dual 1v1 main menu");
+		DualMain.menuItems[1] = new menuItem(0);
+		DualMain.menuItems[2] = new menuItem(1,"8032C970","Play");
+		
+		subMenu TauntMain = new subMenu(1,"Taunt battle");
+		
+		TauntMain.menuItems[0] = new menuItem(0,"Taunt Battle main menu");
+		TauntMain.menuItems[1] = new menuItem(0);
+		TauntMain.menuItems[2] = new menuItem(1,"8032C974","Play");
+		
 		subMenu minigamesMain = new subMenu(1,"Minigames");
 
 		minigamesMain.menuItems[0] = new menuItem(0,"Minigames");
 		minigamesMain.menuItems[1] = new menuItem(0);
 		minigamesMain.menuItems[2] = DPMain;
 		minigamesMain.menuItems[3] = KOTHMain;
-		minigamesMain.menuItems[4] = BBWMain;
-		minigamesMain.menuItems[5] = MRSSMain;
-		minigamesMain.menuItems[6] = SBMain;
-		minigamesMain.menuItems[7] = OITCMain;
-		minigamesMain.menuItems[8] = IJZMain;
-		minigamesMain.menuItems[9] = CYOPMain;
+		minigamesMain.menuItems[4] = MRSSMain;
+		minigamesMain.menuItems[5] = SBMain;
+		minigamesMain.menuItems[6] = OITCMain;
+		minigamesMain.menuItems[7] = IJZMain;
+		minigamesMain.menuItems[8] = CYOPMain;
+		minigamesMain.menuItems[9] = VolleyballMain;
+		minigamesMain.menuItems[10] = BasketballMain;
+		minigamesMain.menuItems[11] = CTFMain;
 
+		subMenu extrasMain = new subMenu(1,"Extras");
+
+		extrasMain.menuItems[0] = new menuItem(0,"Extras");
+		extrasMain.menuItems[1] = new menuItem(0);
+		extrasMain.menuItems[2] = ChessMain;
+		extrasMain.menuItems[3] = DualMain;
+		extrasMain.menuItems[4] = TauntMain;
+		extrasMain.menuItems[5] = BBWMain;
+		
 		generalGamemodes.menuItems[0] = new menuItem(0,"Gamemodes");
 		generalGamemodes.menuItems[1] = new menuItem(0);
 		generalGamemodes.menuItems[2] = ATWmainMenu;

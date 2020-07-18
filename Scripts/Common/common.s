@@ -238,6 +238,12 @@ lwz \reg,0x24(rtoc)
 .set resetpos,functSpace+0x118
 .set scoregoal,functSpace+0x11c
 .set CYOPInit,functSpace+0x120
+.set ChessInit,functSpace+0x124
+.set DualInit,functSpace+0x128
+.set TauntInit,functSpace+0x12c
+.set VolleyballInit,functSpace+0x130
+.set BasketballInit,functSpace+0x134
+.set CTFInit,functSpace+0x138
 
 
 .set prim.new,0x804dd84c
@@ -331,20 +337,20 @@ lwz \reg,0x24(rtoc)
 .set KOTHgameType,  debugSpace+820
 .set KOTHmaxScore,  debugSpace+824
 .set KOTHhillTime,  debugSpace+828
-.set warpDamage, debugSpace+832
-.set killPercent, debugSpace+836
-.set mrssType, debugSpace+840
-.set mrssMaxScore, debugSpace+844
-.set saturnSpeed, debugSpace+848
-.set sbType, debugSpace+852
-.set sbMaxScore, debugSpace+856
-.set sbPenalty, debugSpace+860
-.set sbReflections, debugSpace+864
-.set infiniteAmmo, debugSpace+868
-.set oitcReward, debugSpace+872
-.set oitcLedge, debugSpace+876
-.set oitcReflections, debugSpace+880
-.set boxCoordinates, debugSpace+884
+.set mrssType, debugSpace+832
+.set mrssMaxScore, debugSpace+836
+.set saturnSpeed, debugSpace+840
+.set sbType, debugSpace+844
+.set sbMaxScore, debugSpace+848
+.set sbPenalty, debugSpace+852
+.set sbReflections, debugSpace+856
+.set infiniteAmmo, debugSpace+860
+.set oitcReward, debugSpace+864
+.set oitcLedge, debugSpace+868
+.set oitcReflections, debugSpace+872
+.set boxCoordinates, debugSpace+876
+.set warpDamage, debugSpace+892
+.set killPercent, debugSpace+896
 .set percentStaminaFlag,  debugSpace+900
 .set staminaAmount,  debugSpace+904
 .set sizeFlag,  debugSpace+908
@@ -393,8 +399,8 @@ lwz \reg,0x24(rtoc)
 .set brawlsubmenu,0x8065fc3c
 .set sixPlayeMenu,0x8065fca0
 .set minigamesMenu,0x8065fd04
-.set shuffleMenu,0x80660c3c
-.set extrasMenu,0x80660ca0
+.set shuffleMenu,0x80660c60
+.set extrasMenu,0x80660cc4
 
 ################################################################################
 # Mytoc Offsets

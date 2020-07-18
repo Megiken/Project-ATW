@@ -67,6 +67,30 @@ echo Building infinitejumpzone.json...
 gecko build -c infinitejumpzone.json
 echo.
 
+echo Building volleyball.json...
+gecko build -c volleyball.json
+echo.
+
+echo Building basketball.json...
+gecko build -c basketball.json
+echo.
+
+echo Building capturetheflag.json...
+gecko build -c capturetheflag.json
+echo.
+
+echo Building chessmelee.json...
+gecko build -c chessmelee.json
+echo.
+
+echo Building dual1v1.json...
+gecko build -c dual1v1.json
+echo.
+
+echo Building tauntbattle.json...
+gecko build -c tauntbattle.json
+echo.
+
 echo Building slippi+extras.json...
 gecko build -c slippi+extras.json...
 echo.
@@ -141,6 +165,30 @@ echo.
 
 echo Creating Infinite Jump Zone DAT...
 java -jar CodeConverter.jar -c "..\Output\infinitejumps.txt" -o "..\Files\Custom Code\IJZ.dat"
+echo.
+
+echo Creating Volleyball DAT...
+java -jar CodeConverter.jar -c "..\Output\volleyball.txt" -o "..\Files\Custom Code\VB.dat"
+echo.
+
+echo Creating Basketball DAT...
+java -jar CodeConverter.jar -c "..\Output\basketball.txt" -o "..\Files\Custom Code\BB.dat"
+echo.
+
+echo Creating Capture the Flag DAT...
+java -jar CodeConverter.jar -c "..\Output\capturetheflag.txt" -o "..\Files\Custom Code\CTF.dat"
+echo.
+
+echo Creating Chess Melee DAT...
+java -jar CodeConverter.jar -c "..\Output\chess melee.txt" -o "..\Files\Custom Code\CM.dat"
+echo.
+
+echo Creating Dual 1v1 DAT...
+java -jar CodeConverter.jar -c "..\Output\dual 1v1.txt" -o "..\Files\Custom Code\1v1.dat"
+echo.
+
+echo Creating Taunt Battle DAT...
+java -jar CodeConverter.jar -c "..\Output\taunt battle.txt" -o "..\Files\Custom Code\TB.dat"
 echo.
 
 echo Creating Slippi + Extras DAT...

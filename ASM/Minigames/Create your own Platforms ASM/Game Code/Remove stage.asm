@@ -146,9 +146,151 @@ lwz r3,-0x51EC (r13)
 lwz r3,0x4(r3)
 mulli r5,r3,4*6
 lwz r3,-0x51E8 (r13)
-li  r4,0x45
+li  r4,0
 branchl r12,memset
 
+bl TABLE
+mflr r20
+bl SPOTS
+mflr r21
+stw r21,0(r20)
+bl AREAS
+mflr r29
+stw r29,36(r20)
+bl THING
+mflr r21
+stw r29,4(r21)
+stw r21,-0x51dc(r13)
+bl LINKS
+mflr r21
+stw r21,8(r20)
+
+
+
+stw r20,-0x51ec(r13)
+lwz r20,-0x51E4(r13)
+li r0,8
+mtctr r0
+subi r20,r20,4
+load r19,0x00050001
+LOOPLOL:
+stwu r21,4(r20)
+addi r21,r21,0x10
+stwu r19,4(r20)
+bdnz LOOPLOL
+b END
+
+THING:
+blrl
+.long 0
+.long 0
+.long 0x00010100
+.long 0x00060000
+.float -1000
+.float -1000
+.float 1000
+.float 1000
+
+TABLE:
+blrl
+.long 0
+.long 16
+.long 0
+.long 8
+.long 8
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 1
+.long 0
+
+SPOTS:
+blrl
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+
+AREAS:
+blrl
+.long 8
+.long 0
+.long 0
+.long 0
+.long 0
+.float -1000
+.float -1000
+.float 1000
+.float 1000
+.long 0
+.long 16
+
+LINKS:
+blrl
+.long 0x00000001
+.long -1
+.long -1
+.long 0x00810100
+.long 0x00020003
+.long -1
+.long -1
+.long 0x00810100
+.long 0x00040005
+.long -1
+.long -1
+.long 0x00810100
+.long 0x00060007
+.long -1
+.long -1
+.long 0x00810100
+.long 0x00080009
+.long -1
+.long -1
+.long 0x00810100
+.long 0x000a000b
+.long -1
+.long -1
+.long 0x00810100
+.long 0x000c000d
+.long -1
+.long -1
+.long 0x00810100
+.long 0x000e000f
+.long -1
+.long -1
+.long 0x00810100
+
+END:
 SkyBattle_InitExit:
 #draw box
 

@@ -4,8 +4,11 @@
 .include "Global/Globals.s"
 
 bl THERE
-mflr r3
-li r4,64
+li r3,22
+li r4,23
+mflr r5
+li r6,0
+li r7,64
 branchl r12,createCustomGObj
 b END
 

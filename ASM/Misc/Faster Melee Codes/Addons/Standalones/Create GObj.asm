@@ -3,7 +3,7 @@
 .include "Common/common.s"
 
 #input r3 = GObj Type
-#input r4 = When to run?
+#input r4 = When to run? Sub type?
 #input r5 = proc function
 #input r6 = gx function
 #input r7 = amount of mem

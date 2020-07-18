@@ -1,0 +1,39 @@
+# GALJ01 - Super Smash Bros. Melee NTSC 1.02
+
+[Gecko]
+$Duelist Pro [Big Money]
+C226688C 00000003 #../ASM/Extras/Dual 1v1 ASM/Addons/Auto doubles.asm
+7C0802A6 3E808048
+629407C8 3AA00001
+9AB40000 00000000
+0445BF18 08000100 #../ASM/Extras/Dual 1v1 ASM/Addons/FF Off.asm
+04078D10 60000000 #../ASM/Extras/Dual 1v1 ASM/Code/Check attacks.asm
+04078AA4 60000000 #../ASM/Extras/Dual 1v1 ASM/Code/Check grabs.asm
+042707A8 60000000 #../ASM/Extras/Dual 1v1 ASM/Code/Check projectiles.asm
+040792CC 88780020 #../ASM/Extras/Dual 1v1 ASM/Code/Check team projectiles.asm
+042617D0 60000000 #../ASM/Extras/Dual 1v1 ASM/Code/Disable doubles.asm
+C2082E74 00000005 #../ASM/Extras/Dual 1v1 ASM/Code/Ledge grabs.asm
+89FC067B 8A1D067B
+7C0F8000 41820014
+3DE08008 61EF2EF4
+7DE903A6 4E800420
+7C1DE040 00000000
+040792D0 2C0300FF #../ASM/Extras/Dual 1v1 ASM/Code/Neutral projectile.asm
+C207DDC8 00000004 #../ASM/Extras/Dual 1v1 ASM/Code/Nudging.asm
+89FE061B 8A1D067B
+7C0F8000 41820008
+38600001 2C030000
+60000000 00000000
+042707C0 60000000 #../ASM/Extras/Dual 1v1 ASM/Code/Self damage 1.asm
+042707CC 60000000 #../ASM/Extras/Dual 1v1 ASM/Code/Self damage 2.asm
+040792EC 60000000 #../ASM/Extras/Dual 1v1 ASM/Code/Self damage 3.asm
+040792D4 418207B4 #../ASM/Extras/Dual 1v1 ASM/Code/Skip neutral attacks.asm
+04078D50 00000040 #../ASM/Extras/Dual 1v1 ASM/Code/Swap attacks.asm
+04078AC0 00000040 #../ASM/Extras/Dual 1v1 ASM/Code/Swap grabs.asm
+042707DC 00000040 #../ASM/Extras/Dual 1v1 ASM/Code/Swap projectile v projectile.asm
+040792FC 00000040 #../ASM/Extras/Dual 1v1 ASM/Code/Swap projectiles.asm
+C216C094 00000004 #../ASM/Extras/Dual 1v1 ASM/Code/Switch mode.asm
+7C1FE850 2C000003
+40800010 38000001
+3DC08047 980EDB69
+381DFFFF 00000000

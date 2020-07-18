@@ -1,0 +1,7 @@
+# GALJ01 - Super Smash Bros. Melee NTSC 1.02
+
+[Gecko]
+$Duelist Pro [Big Money]
+C225B880 00000002 #../ASM/Minigames/Basketball ASM/Always all star.asm
+38000055 B004001E
+60000000 00000000
