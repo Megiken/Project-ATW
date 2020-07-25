@@ -19,6 +19,6 @@ branchl r12,0x801c438c
 
 li r3,8
 branchl r12,0x801c2ba4
-branchl r12,GObjDestroy
+branchl r12,GObjremoveProc
 
 lwz	r0, 0x000C (sp)

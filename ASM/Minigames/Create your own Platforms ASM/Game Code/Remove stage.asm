@@ -194,10 +194,10 @@ blrl
 TABLE:
 blrl
 .long 0
-.long 16
+.long 24
 .long 0
-.long 8
-.long 8
+.long 12
+.long 12
 .long 0
 .long 0
 .long 0
@@ -240,10 +240,26 @@ blrl
 .long 0
 .long 0
 .long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
 
 AREAS:
 blrl
-.long 8
+.long 12
 .long 0
 .long 0
 .long 0
@@ -253,7 +269,7 @@ blrl
 .float 1000
 .float 1000
 .long 0
-.long 16
+.long 24
 
 LINKS:
 blrl
@@ -286,6 +302,22 @@ blrl
 .long -1
 .long 0x00810100
 .long 0x000e000f
+.long -1
+.long -1
+.long 0x00810100
+.long 0x00100011
+.long -1
+.long -1
+.long 0x00810100
+.long 0x00120013
+.long -1
+.long -1
+.long 0x00810100
+.long 0x00140015
+.long -1
+.long -1
+.long 0x00810100
+.long 0x00160017
 .long -1
 .long -1
 .long 0x00810100

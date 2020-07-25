@@ -44,7 +44,7 @@ lbz r3,0xc(r31)
 stw r3,0xc(r29)
 stw r31,0x14(r29)
 lwz r20,numOfPlatforms(rtoc)
-cmpwi r20,8
+cmpwi r20,12
 bne STORE
 li r20,0
 STORE:
