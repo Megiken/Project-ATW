@@ -49,7 +49,7 @@ public class Main {
 
 		File totalDir = new File("C:\\Users\\Thomas\\Desktop\\file backups");
 		
-		parseDirectory(currentDir);
+		parseDirectory(totalDir);
 
 
 
@@ -66,10 +66,14 @@ public class Main {
 			System.out.println(files[i].getName());
 		}
 		printStats();
+		printCharStats();
 
 	}
 
 	public static void parseFile(File file) throws IOException {
+		if(!(file.length()>397)) {
+			return;
+		}
 		int player1ID = 0;
 		int player2ID = 0;
 		int player3ID = 0;
@@ -272,4 +276,43 @@ public class Main {
 		}
 	}
 
-}
+	public static void printCharStats() {
+		for(int i = 0; i < ATWPlayers.length; i++) {
+			if(ATWPlayers[i].gamesPlayed != 0) {
+				System.out.println("Player's name: " + ATWPlayers[i].name);
+				try {
+					System.out.println("	Falcon games played: " + String.format("%.0f", ATWPlayers[i].charStats[0][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[0][1]/ATWPlayers[i].charStats[0][0]) );	
+					System.out.println("	DK games played: " + String.format("%.0f", ATWPlayers[i].charStats[1][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[1][1]/ATWPlayers[i].charStats[1][0]));	
+					System.out.println("	Fox games played: " + String.format("%.0f", ATWPlayers[i].charStats[2][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[2][1]/ATWPlayers[i].charStats[2][0]));
+					System.out.println("	Mr game and watch games played: " + String.format("%.0f", ATWPlayers[i].charStats[3][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[3][1]/ATWPlayers[i].charStats[3][0]));
+					System.out.println("	Kirby games played: " + String.format("%.0f", ATWPlayers[i].charStats[4][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[4][1]/ATWPlayers[i].charStats[4][0]));
+					System.out.println("	Bowser games played: " + String.format("%.0f", ATWPlayers[i].charStats[5][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[5][1]/ATWPlayers[i].charStats[5][0]));
+					System.out.println("	Link games played: " + String.format("%.0f", ATWPlayers[i].charStats[6][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[6][1]/ATWPlayers[i].charStats[6][0]));
+					System.out.println("	Luigi games played: " + String.format("%.0f", ATWPlayers[i].charStats[7][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[7][1]/ATWPlayers[i].charStats[7][0]));
+					System.out.println("	Mario games played: " + String.format("%.0f", ATWPlayers[i].charStats[8][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[8][1]/ATWPlayers[i].charStats[8][0]));
+					System.out.println("	Marth games played: " + String.format("%.0f", ATWPlayers[i].charStats[9][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[9][1]/ATWPlayers[i].charStats[9][0]));
+					System.out.println("	Mewtwo games played: " + String.format("%.0f", ATWPlayers[i].charStats[10][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[10][1]/ATWPlayers[i].charStats[10][0]));
+					System.out.println("	Ness games played: " + String.format("%.0f", ATWPlayers[i].charStats[11][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[11][1]/ATWPlayers[i].charStats[11][0]));
+					System.out.println("	Peach games played: " + String.format("%.0f", ATWPlayers[i].charStats[12][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[12][1]/ATWPlayers[i].charStats[12][0]));
+					System.out.println("	Pikachu games played: " + String.format("%.0f", ATWPlayers[i].charStats[13][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[13][1]/ATWPlayers[i].charStats[13][0]));
+					System.out.println("	Ice Climbers games played: " + String.format("%.0f", ATWPlayers[i].charStats[14][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[14][1]/ATWPlayers[i].charStats[14][0]));
+					System.out.println("	Jigglypuff games played: " + String.format("%.0f", ATWPlayers[i].charStats[15][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[15][1]/ATWPlayers[i].charStats[15][0]));
+					System.out.println("	Samus games played: " + String.format("%.0f", ATWPlayers[i].charStats[16][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[16][1]/ATWPlayers[i].charStats[16][0]));
+					System.out.println("	Yoshi games played: " + String.format("%.0f", ATWPlayers[i].charStats[17][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[17][1]/ATWPlayers[i].charStats[17][0]));
+					System.out.println("	Zelda/Sheik games played: " + String.format("%.0f", ATWPlayers[i].charStats[18][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[18][1]/ATWPlayers[i].charStats[18][0]));
+					System.out.println("	Falco games played: " + String.format("%.0f", ATWPlayers[i].charStats[20][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[20][1]/ATWPlayers[i].charStats[20][0]));
+					System.out.println("	Young Link games played: " + String.format("%.0f", ATWPlayers[i].charStats[21][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[21][1]/ATWPlayers[i].charStats[21][0]));
+					System.out.println("	Dr Mario games played: " + String.format("%.0f", ATWPlayers[i].charStats[22][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[22][1]/ATWPlayers[i].charStats[22][0]));
+					System.out.println("	Roy games played: " + String.format("%.0f", ATWPlayers[i].charStats[23][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[23][1]/ATWPlayers[i].charStats[23][0]));
+					System.out.println("	Pichu games played: " + String.format("%.0f", ATWPlayers[i].charStats[24][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[24][1]/ATWPlayers[i].charStats[24][0]));
+					System.out.println("	Ganondorf games played: " + String.format("%.0f", ATWPlayers[i].charStats[25][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].charStats[25][1]/ATWPlayers[i].charStats[25][0]));
+				
+				}
+				catch (ArithmeticException e) {
+					System.out.println("Not enough data");
+				}
+			}
+		}
+		}
+	}
+

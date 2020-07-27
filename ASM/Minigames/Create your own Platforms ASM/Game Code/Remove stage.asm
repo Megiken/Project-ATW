@@ -169,7 +169,7 @@ stw r21,8(r20)
 
 stw r20,-0x51ec(r13)
 lwz r20,-0x51E4(r13)
-li r0,8
+li r0,12
 mtctr r0
 subi r20,r20,4
 load r19,0x00050001

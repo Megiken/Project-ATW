@@ -8,7 +8,7 @@ public class ATWPlayer {
 	double damageRecieved;
 	double longestDrought;
 	double numItemsPickedUp;
-	int[][] charStats = new int [26][2];
+	double[][] charStats = new double [26][2];
 	int currentCharsLeft;
 	int pastCharsLeft;
 	int currentCharacter;

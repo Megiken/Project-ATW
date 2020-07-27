@@ -1,0 +1,31 @@
+{
+  "outputFiles": [
+    {
+      "file": "..\\Output\\Dependencies.txt"
+    }
+  ],
+  "codes": [
+    {
+      "name": "Slightly Modified Faster Melee Netplay Settings",
+      "authors": [
+        "A bunch of people who aren't big money :("
+      ],
+      "build": [
+        {
+          "type": "injectFolder",
+          "sourceFolder": "..\\ASM\\Misc\\General Codes\\Standalones",
+          "isRecursive": false
+        }
+        ,{
+          "type": "binary",
+          "sourceFile": "..\\ASM\\Misc\\On Boot\\PRIM Lite\\main.bin"
+        },{
+          "type": "replaceCodeBlock",
+          "address": "80199f4c",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Variables.s"
+        }
+      ]
+    }
+
+  ]
+}

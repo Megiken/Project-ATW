@@ -9,14 +9,14 @@
       "name": "Slippi + Extras",
       "build": [
         {
-          "type": "binary",
-          "sourceFile": "..\\ASM\\Misc/Faster Melee Codes/Binary/FasterMeleeSettings/UnlockAllTrophies.bin",
-          "annotation": "Unlock All 293 Trophies [Datel]"
+          "type": "injectFolder",
+          "isRecursive": true,
+          "sourceFolder": "..\\ASM\\Misc/General Codes"
         },
         {
           "type": "injectFolder",
           "isRecursive": true,
-          "sourceFolder": "..\\ASM\\Misc/Faster Melee Codes/Addons"
+          "sourceFolder": "..\\ASM\\Misc\\On Boot\\Slippi\\External\\Extended Nametag Box"
         },
         {
           "type": "replaceCodeBlock",
@@ -32,8 +32,12 @@
           "type": "replaceCodeBlock",
           "address": "803FA4E0",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Main Menu.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "804D4D90",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM\\Misc\\General Codes\\Misc\\Extended Name Tags\\7.s"
         }
-
 
 
       ]

@@ -65,7 +65,7 @@ branchl r12,loadbackupstoreGCT
 
 TEXT:
 blrl
-.long 0x532b452e
+.long 0x474e4c2e
 .long 0x64617400
 .long 0x44424d2e
 .long 0x64617400

@@ -92,7 +92,7 @@ CONVERT_INT_TO_FLOAT:
 
 #r4 = input, f15 = output
 lis r18,0x4330
-lfd f16,-0x73a8(rtoc)
+lfd f16,-0x8000(rtoc)
 stw r18,-0x14(sp)
 stw r4,-0x10(sp)
 lfd f15,-0x14(sp)

@@ -1,6 +1,7 @@
 #To be inserted at 800d3338
 
 .include "Common/common.s"
+
 lwz r31,0x2c(r3)
 lwz r20,4(r31)
 cmpwi r20,NanainID
@@ -21,10 +22,9 @@ cmpwi r21,0
 beq NORMALLOL
 li r21,180
 stw r21,IMmoneyOffset(r3)
+NORMALLOL:
 mr r3,r25
 branchl r12,getCorrectData
-
-NORMALLOL:
 load r21,SSnumOfChars
 lwz r21,0(r21)
 cmpw r21,r20
@@ -58,7 +58,7 @@ branchl r12,0x80018254
 
 
 load r20,0x8043208f
-mulli r21,r25,8
+mulli r21,r14,8
 add r20,r20,r21
 lbz r21,0(r20)
 stb r21,0(r24)

@@ -124,6 +124,7 @@ lwz \reg,0x24(rtoc)
 .set randomI,0x80380580
 .set copymem,0x80003244
 .set zeromem,0x8000c160
+.set memset,0x80003100
 .set allocateMem,0x8037f1e4
 .set playsfx,0x801c53ec
 .set countPlayersInMatch,0x8016b558

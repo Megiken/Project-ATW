@@ -6,11 +6,12 @@ backupall
 lbz r25,0xc(r31)
 mr r3,r25
 branchl r12,getCorrectData
+subi r14,r14,1
 load r24,0x80480590
 mulli r15,r25,0x24
 add r24,r24,r15
 load r20,0x804320bf
-mulli r21,r25,8
+mulli r21,r14,8
 add r20,r20,r21
 lbz r21,0(r20)
 stb r21,0(r24)

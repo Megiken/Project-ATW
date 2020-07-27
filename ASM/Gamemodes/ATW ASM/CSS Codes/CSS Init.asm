@@ -109,9 +109,6 @@ NEXT:
 
 
 END:
-lwz r22,prevMenuFlag(rtoc)
-li r15,0
-stw r15,0(r22)
 lis r15,0x804d
 li r16,0
 stw r16,0x6730(r15)
