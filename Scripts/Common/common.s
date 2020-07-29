@@ -245,6 +245,7 @@ lwz \reg,0x24(rtoc)
 .set VolleyballInit,functSpace+0x130
 .set BasketballInit,functSpace+0x134
 .set CTFInit,functSpace+0x138
+.set getSSramInfo,functSpace+0x13c
 
 
 .set prim.new,0x804dd84c
@@ -428,7 +429,7 @@ lwz \reg,0x24(rtoc)
 .set suddenDeathItem,-0x7ce8
 .set mrsaturndata,-0x7c78
 .set numOfPlatforms,-0x7c7c
-.set free3,-0x7c40
+.set SScurrentChar,-0x7c40
 .set free4,-0x7c3c
 
 ################################################################################
