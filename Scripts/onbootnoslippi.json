@@ -1,0 +1,98 @@
+{
+  "outputFiles": [
+    {
+      "file": "..\\Output\\On Boot No Slippi.txt"
+    }
+  ],
+  "codes": [
+    {
+      "name": "Slightly Modified Faster Melee Netplay Settings",
+      "authors": [
+        "A bunch of people who aren't big money :("
+      ],
+      "build": [
+        {
+          "type": "binary",
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/UnlockAllTrophies.bin",
+          "annotation": "Unlock All 293 Trophies [Datel]"
+        },
+        {
+          "type": "injectFolder",
+          "sourceFolder": "..\\ASM\\Misc/On Boot/Slippi/External/Skip Memcard Prompt",
+          "isRecursive": true,
+          "annotation": "Skip Memcard Prompt [UnclePunch]"
+        },
+        {
+          "type": "binary",
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/DisableSpecialMessages.bin",
+          "annotation": "Disable Special Messages [Most]"
+        },
+        {
+          "type": "binary",
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/DisableTrophyMessages.bin",
+          "annotation": "Disable Trophy Messages [Achilles]"
+        },
+        {
+          "type": "binary",
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/DebugMenu.bin",
+          "annotation": "Debug Menu [Magus, donny2112]"
+        },
+        {
+          "type": "binary",
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/FasterCssLoad.bin",
+          "annotation": "Faster CSS Load [UnclePunch]"
+        },
+        {
+          "type": "binary",
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/CStickPanWhilePaused.bin",
+          "annotation": "C-Stick Panning while Paused [Achilles]"
+        },
+        {
+          "type": "binary",
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/LaglessFod.bin",
+          "annotation": "Lagless FoD [Achilles, Myougi, Dan Salvato]"
+        },
+        {
+          "type": "binary",
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/RandomStageMusic.bin",
+          "annotation": "Random Stage Music [UnclePunch]"
+        },
+        {
+          "type": "binary",
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/RandomCssMusic.bin",
+          "annotation": "Random CSS Music v3 [UnclePunch]"
+        },
+        {
+          "type": "injectFolder",
+          "sourceFolder": "..\\ASM\\Misc/On Boot/Slippi/Common",
+          "isRecursive": false
+        },
+        {
+          "type": "injectFolder",
+          "sourceFolder": "..\\ASM\\Misc/On Boot/Slippi/Common/Initialize Stage Data",
+          "isRecursive": true,
+          "annotation": "Initialize Stage Data [UnclePunch]"
+        },
+        {
+          "type": "injectFolder",
+          "sourceFolder": "..\\ASM\\Misc/On Boot/Slippi/Common/Initialize Player Data",
+          "isRecursive": true,
+          "annotation": "Initialize Player Data [UnclePunch]"
+        },
+        {
+          "type": "injectFolder",
+          "sourceFolder": "..\\ASM\\Misc/On Boot/Code Loading",
+          "isRecursive": true
+        }
+        ,{
+          "type": "binary",
+          "sourceFile": "..\\ASM\\Misc\\On Boot\\Mytoc\\mytoc.bin"
+        },{
+          "type": "binary",
+          "sourceFile": "..\\ASM\\Misc\\On Boot\\PRIM Lite\\main.bin"
+        }
+      ]
+    }
+
+  ]
+}

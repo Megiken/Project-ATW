@@ -16,6 +16,7 @@ public class Main {
 	public static String jamesTag = "4D445100";
 	public static String zachbtag = "444B0000";
 	public static String noottag = "4E4F4F54";
+	public static String megitag = "47454d49";
 	
 	public static byte[] search = {0x37,0x69,0x42,0x00};
 
@@ -34,14 +35,15 @@ public class Main {
 	public static ATWPlayer james = new ATWPlayer("James");
 	public static ATWPlayer zachb = new ATWPlayer("Zacb B");
 	public static ATWPlayer noot = new ATWPlayer("NOOT");
+	public static ATWPlayer megi = new ATWPlayer("Bryce");
 	
 	public static int currentGame = 0;
 
 	public static int[] stageData = new int[29];
 
-	public static ATWPlayer[] ATWPlayers = {unknown,thomas,brett,bruno,braeden,rayvax,elliot,james,zachb,noot};
+	public static ATWPlayer[] ATWPlayers = {unknown,thomas,brett,bruno,braeden,rayvax,elliot,james,zachb,noot,megi};
 
-	public static String[] tags = {thomasTag,brettTag,brunoTag,braedenTag,rayvaxTag,elliotTag,jamesTag,zachbtag,noottag};
+	public static String[] tags = {thomasTag,brettTag,brunoTag,braedenTag,rayvaxTag,elliotTag,jamesTag,zachbtag,noottag,megitag};
 
 	public static void main(String[] args) throws IOException {
 
@@ -49,7 +51,7 @@ public class Main {
 
 		File totalDir = new File("C:\\Users\\Thomas\\Desktop\\file backups");
 		
-		parseDirectory(totalDir);
+		parseDirectory(currentDir);
 
 
 

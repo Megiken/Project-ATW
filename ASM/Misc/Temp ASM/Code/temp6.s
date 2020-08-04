@@ -1,5 +1,18 @@
-#To be inserted at 80069420
+#To be inserted at 80015184
 
 .include "Common/common.s"
 
-subi	r3, r13, 31904
+backup
+bl THERE
+.long 0
+THERE:
+mflr r14
+lwz r14,0(r14)
+
+restore
+cmpwi r14,0
+beq END
+
+blr
+END:
+mflr r0

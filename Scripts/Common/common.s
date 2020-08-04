@@ -145,6 +145,7 @@ lwz \reg,0x24(rtoc)
 .set GObjaddMem,0x80390b68
 .set GObjremoveProc,0x8038fed4
 .set GObjDestroy,0x80390228
+.set compareGameCache,0x80018254
 .set createTextStruct,0x803a6754
 .set initSubtext,0x803a6b98
 .set updateSubtextSize,0x803a7548
@@ -245,7 +246,6 @@ lwz \reg,0x24(rtoc)
 .set VolleyballInit,functSpace+0x130
 .set BasketballInit,functSpace+0x134
 .set CTFInit,functSpace+0x138
-.set getSSramInfo,functSpace+0x13c
 
 
 .set prim.new,0x804dd84c
