@@ -43,6 +43,10 @@ echo Building Brawl.json...
 gecko build -c Brawl.json
 echo.
 
+echo Building tagteam.json...
+gecko build -c tagteam.json
+echo.
+
 echo Building createyourownplatforms.json...
 gecko build -c createyourownplatforms.json
 echo.
@@ -141,6 +145,10 @@ echo.
 
 echo Creating Brawl DAT...
 java -jar CodeConverter.jar -c "..\Output\Brawl.txt" -o "..\Files\Custom Code\BRL.dat"
+echo.
+
+echo Creating Tag Team DAT...
+java -jar CodeConverter.jar -c "..\Output\tagteam.txt" -o "..\Files\Custom Code\TT.dat"
 echo.
 
 echo Creating Create your own Platforms DAT...

@@ -15,8 +15,6 @@ stw r21,4(r20)
 branchl r12,IMgetSecond
 mflr r20
 stw r21,4(r20)
-li r20,-1
-stw r20,SScurrentChar(rtoc)
 END:
 restoreallnor0
 lwz	r31, 0x0034 (sp)

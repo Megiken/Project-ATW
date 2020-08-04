@@ -10,12 +10,16 @@ subi r14,r14,1
 load r24,0x80480590
 mulli r15,r25,0x24
 add r24,r24,r15
-load r20,0x8043208f
 
 
-mulli r21,r14,0x10
+lhz r21,6(r3)
+addi r21,r21,1
+sth r21,6(r3)
+li r22,4
+sub r21,r22,r21
+mulli r21,r21,4
 addi r21,r21,8
-add r20,r20,r21
+add r20,r3,r21
 lbz r21,0(r20)
 stb r21,0(r24)
 lbz r21,1(r20)
