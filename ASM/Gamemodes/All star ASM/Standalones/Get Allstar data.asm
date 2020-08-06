@@ -3,7 +3,7 @@
 .include "Common/common.s"
 
 blrl
-.long 0
+.long 0x00050000
 .long 0
 .long 0
 .long 0

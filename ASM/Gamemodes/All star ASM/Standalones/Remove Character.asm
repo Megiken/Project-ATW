@@ -9,7 +9,7 @@ cmpwi r21,0
 beq SWAPCHARACTER
 cmpwi r17,0x12
 bne GOHERE
-lbzx r20,27(r14)
+lbz r20,27(r14)
 cmpwi r20,1
 bne GOHERE
 li r17,0x13
@@ -29,7 +29,7 @@ cmpwi r3,0x13
 bne NOTSHEIK
 li r3,0x12
 li r21,1
-stbx r21,27(r14)
+stb r21,27(r14)
 NOTSHEIK:
 stb r3,0(r16)
 li r3,4

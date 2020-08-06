@@ -15,7 +15,7 @@ beq END
 li r3,180
 stw r3,AStimer(rtoc)
 mr r3,r25
-branchl r12,getPlayerEntity
+branchl r12,getPlayerStatic
 lwz r17,4(r3)
 load r16,0x804320bf
 addi r14,r14,4

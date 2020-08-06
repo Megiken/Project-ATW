@@ -27,7 +27,7 @@ branchl r12,getASdata
 mflr r14
 lhz r20,0(r14)
 cmpwi r20,4
-bgt CHECKSTART
+blt CHECKSTART
 
 li r18,0x100
 branchl r12,checkInput
@@ -81,9 +81,20 @@ lbzx r20,r21,r20
 cmpwi r20,0x1a
 beq CHECKDPAD
 sth r17,2(r14)
+load r20,playerCSSdata1
+mulli r21,r17,0x24
+li r22,0
+stbx r22,r21,r20
+load r20,playerCSSdata2
+addi r20,r20,1
+stbx r22,r21,r20
 mr r3,r17
 mr r4,r3
 branchl r12,0x8025fb50
+mr r3,r17
+branchl r12,0x8025db34
+
+
 li r0,0
 b END
 

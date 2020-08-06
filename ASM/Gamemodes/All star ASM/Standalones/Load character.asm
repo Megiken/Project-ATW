@@ -10,7 +10,7 @@ mr r25,r3
 mr r28,r4
 branchl r12,getPlayerStatic
 lwz r19,0x8c(r3)
-mr r3,r25
+addi r3,r25,0
 branchl r12,getPlayerData
 lwz r18,0x890(r3)
 mr r3,r25
@@ -37,7 +37,6 @@ branchl r12,getPlayerStatic
 stw r19,0x8c(r3)
 mr r3,r25
 branchl r12,getPlayerData
-stw r18,0x890(r3)
 lbz r21, 8733(r3)
 rlwimi r21, r21, 3, 28, 28
 stb r21, 8733(r3)

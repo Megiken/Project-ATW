@@ -107,6 +107,11 @@ cmpw \reg, \reg2
 ble \spot
 .endm
 
+.macro movetctr value
+li r0,\value
+mtctr r0
+.endm
+
 .macro branch reg, address
 lis \reg, \address @h
 ori \reg,\reg,\address @l
