@@ -9,6 +9,104 @@ mtlr \reg
 blrl
 .endm
 
+.macro branchlr reg, address
+lis \reg, \address @h
+ori \reg,\reg,\address @l
+mtlr \reg
+blrl
+mflr \reg
+.endm
+
+.macro compareieq reg, value, spot
+cmpwi \reg, \value
+beq \spot
+.endm
+
+.macro compareine reg, value, spot
+cmpwi \reg, \value
+bne \spot
+.endm
+
+.macro compareilt reg, value, spot
+cmpwi \reg, \value
+blt \spot
+.endm
+
+.macro compareigt reg, value, spot
+cmpwi \reg, \value
+bgt \spot
+.endm
+
+.macro compareige reg, value, spot
+cmpwi \reg, \value
+bge \spot
+.endm
+
+.macro compareile reg, value, spot
+cmpwi \reg, \value
+ble \spot
+.endm
+
+.macro fcompareeq reg, reg2, spot
+fcpmo 0, \reg, \reg2
+beq \spot
+.endm
+
+.macro fcomparene reg, reg2, spot
+fcpmo 0, \reg, \reg2
+bne \spot
+.endm
+
+.macro fcomparelt reg, reg2, spot
+fcpmo 0, \reg, \reg2
+blt \spot
+.endm
+
+.macro fcomparegt reg, reg2, spot
+fcpmo 0, \reg, \reg2
+bgt \spot
+.endm
+
+.macro fcomparege reg, reg2, spot
+fcpmo 0, \reg, \reg2
+bge \spot
+.endm
+
+.macro fcomparele reg, reg2, spot
+fcpmo 0, \reg, \reg2
+ble \spot
+.endm
+
+.macro compareeq reg, reg2, spot
+cmpw \reg, \reg2
+beq \spot
+.endm
+
+.macro comparene reg, reg2, spot
+cmpw \reg, \reg2
+bne \spot
+.endm
+
+.macro comparelt reg, reg2, spot
+cmpw \reg, \reg2
+blt \spot
+.endm
+
+.macro comparegt reg, reg2, spot
+cmpw \reg, \reg2
+bgt \spot
+.endm
+
+.macro comparege reg, reg2, spot
+cmpw \reg, \reg2
+bge \spot
+.endm
+
+.macro comparele reg, reg2, spot
+cmpw \reg, \reg2
+ble \spot
+.endm
+
 .macro branch reg, address
 lis \reg, \address @h
 ori \reg,\reg,\address @l
@@ -165,7 +263,7 @@ lwz \reg,0x24(rtoc)
 
 .set functSpace,0x8032C848
 
-#0x218 bytes avaiable, 134 custom functions before I need new space
+# 0x218 bytes avaiable, 134 custom functions before I need new space
 
 .set Int2Float,functSpace+0x0
 .set getCharData,functSpace+0x4
@@ -431,7 +529,7 @@ lwz \reg,0x24(rtoc)
 .set suddenDeathItem,-0x7ce8
 .set mrsaturndata,-0x7c78
 .set numOfPlatforms,-0x7c7c
-.set SScurrentChar,-0x7c40
+.set AStimer,-0x7c40
 .set free4,-0x7c3c
 
 ################################################################################

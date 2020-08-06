@@ -22,5 +22,7 @@ mulli r19,r20,0x24
 li r22,0x1a03
 sthx r22,r19,r21
 sthx r22,r19,r24
+mr r3,r20
+branchl r12,CSS_UpdateCSPInfo
 restore
 blr

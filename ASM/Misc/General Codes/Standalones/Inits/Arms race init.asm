@@ -11,5 +11,9 @@ mflr r22
 li r20,1
 li r21,4
 branchl r12,goToCSS
+branchl r12,getASdata
+mflr r21
+li r20,5
+sth r20,0(r21)
 restore
 blr

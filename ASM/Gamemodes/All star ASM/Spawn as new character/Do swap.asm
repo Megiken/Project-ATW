@@ -7,7 +7,7 @@ lbz r25,0xc(r31)
 mr r3,r25
 branchl r12,getASdata
 mflr r14
-lwz r20,0(r14)
+lhz r20,0(r14)
 cmpw r20,r25
 beq END
 load r24,0x80480590

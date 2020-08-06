@@ -9,9 +9,11 @@ backupall
 lbz r25,0xc(r31)
 branchl r12,getASdata
 mflr r14
-lwz r20,0(r14)
+lhz r20,0(r14)
 cmpw r20,r25
 beq END
+li r3,180
+stw r3,AStimer(rtoc)
 mr r3,r25
 branchl r12,getPlayerEntity
 lwz r17,4(r3)
