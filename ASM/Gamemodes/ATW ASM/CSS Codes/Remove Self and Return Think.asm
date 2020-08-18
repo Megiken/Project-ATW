@@ -14,6 +14,9 @@ sth r19,0xa(r31)
 
 branchl r12,removePlayerFromCSS
 
+lbz r20,0x4(r31)
+branchl r12,CSS_UpdateCSPInfo
+
 branchl r12,getCharData
 mflr r15
 load r16,numOfChars

@@ -23,6 +23,9 @@ ExiTransferBuffer:
 # Store stack frame
   backup
 
+  li r20,1
+  stw r20,slippiOn(rtoc)
+
 # Backup buffer pointer
   mr REG_BufferPointer,r3
 # Backup buffer length

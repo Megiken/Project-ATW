@@ -534,7 +534,7 @@ lwz \reg,0x24(rtoc)
 .set suddenDeathItem,-0x7ce8
 .set mrsaturndata,-0x7c78
 .set numOfPlatforms,-0x7c7c
-.set AStimer,-0x7c40
+.set slippiOn,-0x7c40
 .set free4,-0x7c3c
 
 ################################################################################

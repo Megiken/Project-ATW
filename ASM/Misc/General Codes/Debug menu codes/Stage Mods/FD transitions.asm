@@ -2,7 +2,7 @@
 
 .include "Common/common.s"
 
-load r20,fdFlag
+load r20,fdBackground
 lwz r20,0(r20)
 cmpwi r20,0
 bne END

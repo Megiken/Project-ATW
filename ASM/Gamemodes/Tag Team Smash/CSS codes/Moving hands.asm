@@ -4,10 +4,18 @@
 backupall
 
 
-branchlr r14,getASdata
-lhz r20,0(r14)
 lbz r22,0x19(r3)
-comparene r20,r22,HIGH
+mr r3,r22
+branchl r12,getCorrectData
+cmpwi r3,-1
+beq HIGH
+
+lhz r20,0x6(r3)
+load r21,SSnumOfChars
+lwz r21,0(r21)
+cmpw r21,r20
+beq HIGH
+
 
 NORMAL:
 li r22,500

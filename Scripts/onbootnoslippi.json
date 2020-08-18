@@ -13,54 +13,44 @@
       "build": [
         {
           "type": "binary",
-          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/UnlockAllTrophies.bin",
-          "annotation": "Unlock All 293 Trophies [Datel]"
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/UnlockAllTrophies.bin"
         },
         {
           "type": "injectFolder",
           "sourceFolder": "..\\ASM\\Misc/On Boot/Slippi/External/Skip Memcard Prompt",
-          "isRecursive": true,
-          "annotation": "Skip Memcard Prompt [UnclePunch]"
+          "isRecursive": true
         },
         {
           "type": "binary",
-          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/DisableSpecialMessages.bin",
-          "annotation": "Disable Special Messages [Most]"
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/DisableSpecialMessages.bin"
         },
         {
           "type": "binary",
-          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/DisableTrophyMessages.bin",
-          "annotation": "Disable Trophy Messages [Achilles]"
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/DisableTrophyMessages.bin"
         },
         {
           "type": "binary",
-          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/DebugMenu.bin",
-          "annotation": "Debug Menu [Magus, donny2112]"
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/DebugMenu.bin"
         },
         {
           "type": "binary",
-          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/FasterCssLoad.bin",
-          "annotation": "Faster CSS Load [UnclePunch]"
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/FasterCssLoad.bin"
         },
         {
           "type": "binary",
-          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/CStickPanWhilePaused.bin",
-          "annotation": "C-Stick Panning while Paused [Achilles]"
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/CStickPanWhilePaused.bin"
         },
         {
           "type": "binary",
-          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/LaglessFod.bin",
-          "annotation": "Lagless FoD [Achilles, Myougi, Dan Salvato]"
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/LaglessFod.bin"
         },
         {
           "type": "binary",
-          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/RandomStageMusic.bin",
-          "annotation": "Random Stage Music [UnclePunch]"
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/RandomStageMusic.bin"
         },
         {
           "type": "binary",
-          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/RandomCssMusic.bin",
-          "annotation": "Random CSS Music v3 [UnclePunch]"
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/RandomCssMusic.bin"
         },
         {
           "type": "injectFolder",
@@ -70,14 +60,12 @@
         {
           "type": "injectFolder",
           "sourceFolder": "..\\ASM\\Misc/On Boot/Slippi/Common/Initialize Stage Data",
-          "isRecursive": true,
-          "annotation": "Initialize Stage Data [UnclePunch]"
+          "isRecursive": true
         },
         {
           "type": "injectFolder",
           "sourceFolder": "..\\ASM\\Misc/On Boot/Slippi/Common/Initialize Player Data",
-          "isRecursive": true,
-          "annotation": "Initialize Player Data [UnclePunch]"
+          "isRecursive": true
         },
         {
           "type": "injectFolder",

@@ -31,10 +31,6 @@ echo Building squadstrike.json...
 gecko build -c squadstrike.json
 echo.
 
-echo Building allstar.json...
-gecko build -c allstar.json
-echo.
-
 echo Building Smash64.json...
 gecko build -c Smash64.json
 echo.
@@ -133,10 +129,6 @@ echo.
 
 echo Creating Squad Strike DAT...
 java -jar CodeConverter.jar -c "..\Output\Squad strike.txt" -o "..\Files\Custom Code\SS.dat"
-echo.
-
-echo Creating All Star DAT...
-java -jar CodeConverter.jar -c "..\Output\Allstar.txt" -o "..\Files\Custom Code\AS.dat"
 echo.
 
 echo Creating Smash 64 DAT...

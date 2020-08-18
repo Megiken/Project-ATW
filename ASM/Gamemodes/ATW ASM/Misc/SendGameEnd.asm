@@ -19,6 +19,9 @@
 
 backup
 
+lwz r3,slippiOn(rtoc)
+cmpwi r3,1
+bne Injection_Exit
 # check if VS Mode
   branchl r12,FN_ShouldRecord
   cmpwi r3,0x0
