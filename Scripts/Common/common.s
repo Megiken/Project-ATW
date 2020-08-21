@@ -436,7 +436,7 @@ lwz \reg,0x24(rtoc)
 .set IMplayerMoney,  debugSpace+688
 .set IMcharCost,  debugSpace+692
 .set SSnumOfChars,  debugSpace+796
-.set ARnumOfChars,  debugSpace+800
+.set ttDuplicates,  debugSpace+800
 .set bombImpact,  debugSpace+804
 .set bombExplosion,  debugSpace+808
 .set gravity,  debugSpace+812
@@ -501,13 +501,13 @@ lwz \reg,0x24(rtoc)
 .set ATWsubmenu,0x8065eab4
 .set IMsubmenu,0x8065efa4
 .set squadStrikesubmenu,0x8065f900
-.set allStarsubmenu,0x8065fa6c
-.set smash64submenu,0x8065fbd8
-.set brawlsubmenu,0x8065fc3c
-.set sixPlayeMenu,0x8065fca0
-.set minigamesMenu,0x8065fd04
-.set shuffleMenu,0x80660c60
-.set extrasMenu,0x80660cc4
+.set tagTeamsubmenu,0x8065fa6c
+.set synergysubmenu,0x8065fb54
+.set smash64submenu,0x8065fbb8
+.set brawlsubmenu,0x8065fc1c
+.set minigamesMenu,0x8065fc80
+.set shuffleMenu,0x80660bdc
+.set extrasMenu,0x80660c40
 
 ################################################################################
 # Mytoc Offsets

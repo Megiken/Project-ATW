@@ -21,7 +21,7 @@ public class Main{
 	public static int currentID = 0;
 	public static int currentID2 = 0;
 	public static File currentFile = new File("");
-	public static String atwFile = "C:\\Users\\Thomas\\Desktop\\Project-ATW\\ASM\\Misc\\Debug Menu\\Submenus\\";
+	public static String atwFilee = "C:\\Users\\Thomas\\Desktop\\Project-ATW\\ASM\\Misc\\Debug Menu\\Submenus\\ ";
 	public static String text = "";
 	public static String var = "";
 	public static String eighty = "80";
@@ -29,12 +29,9 @@ public class Main{
 	public static void main(String[] args) throws InterruptedException, IOException {
 		
 		subMenu projectATW = ProjectATW.getProjectATW();
-		
-		
 		ArrayList<jsonObject> list = new ArrayList<jsonObject>();
 
-		printMenu(projectATW,atwFile,list,0);
-		
+		createDebugMenu(projectATW,atwFilee,list);
 
 
 	}
@@ -180,6 +177,42 @@ public class Main{
 		}
 		return (num*4*8)+4;
 	}
+	
+	public static void createDebugMenu(subMenu menu, String filename, ArrayList<jsonObject> list) throws IOException, InterruptedException {
+
+		printMenu(menu,filename,list,0);
+		
+		
+		String data2 = "#To be inserted at " + eighty + Integer.toHexString(originalTextSpace) + "\n";
+		File newFile = new File(filename + "Text" + ".s");
+		FileWriter writer = new FileWriter(newFile);
+		PrintWriter pr = new PrintWriter(writer);
+		pr.print(data2 + text);
+		pr.close();
+
+		list.add(new jsonObject((eighty + Integer.toHexString(originalTextSpace)),newFile));
+
+		data2 = "#To be inserted at " + eighty + Integer.toHexString(originalVarSpace) + "\n";
+		newFile = new File(filename + "Variables" + ".s");
+		writer = new FileWriter(newFile);
+		pr = new PrintWriter(writer);
+		pr.print(data2 + var);
+		pr.close();
+
+		list.add(new jsonObject((eighty + Integer.toHexString(originalVarSpace)),newFile));
+
+		File json = new File("C:\\Users\\Thomas\\Desktop\\thing.txt");
+		writer = new FileWriter(json);
+		pr = new PrintWriter(writer);
+		String thing = "";
+		for(int i = 0; i < list.size(); i++) {
+			jsonObject temp = list.get(i);
+			thing += ("\n        {\n          \"type\": \"replaceCodeBlock\",\n          \"address\": \"" + temp.address + "\",\n          \"sourceFile\": \"" + temp.filelol + "\"\n        },");
+		}
+		thing = thing.replace("\\", "/");
+		pr.print(thing);
+		pr.close();
+	}
 
 
 	public static void printMenu(subMenu menu, String filename, ArrayList<jsonObject> list, int deep) throws InterruptedException, IOException {
@@ -195,7 +228,7 @@ public class Main{
 				data = "#To be inserted at " + eighty + Integer.toHexString(currentMenuSpace) + "\n";
 				newFile = new File(backupFile + menu.text + ".s");
 				list.add(new jsonObject((eighty + Integer.toHexString(currentMenuSpace)),newFile));
-				//System.out.println(menu.text + " : " + data);
+				System.out.println(menu.text + " : " + data);
 				currentMenuSpace+=getNumOfMenuItems(menu);
 				backup = currentMenuSpace;
 			}
@@ -220,7 +253,7 @@ public class Main{
 				data += "\n.long 0";
 				data += "\n.long 0";
 				data += "\n.long 0";
-				return;
+				break;
 			case 1:
 
 				data += "\n.long 1";
@@ -236,7 +269,7 @@ public class Main{
 				data += "\n.long 0x" + eighty + Integer.toHexString(menu.menuItems[i].injectSpot);
 				data += "\n.long 0";
 				data += "\n.long 0";
-				return;
+				break;
 			case 2:
 				data += "\n.long 2";
 				data += "\n.long 0";
@@ -246,7 +279,7 @@ public class Main{
 				data += "\n.long 0";
 				data += "\n.long 0x" + getFloat((float) menu.menuItems[i].listPointer.length);
 				data += "\n.long 0x" + getFloat((float) 1);
-				return;
+				break;
 			case 3:
 				data += "\n.long 3";
 				data += "\n.long 0";
@@ -256,7 +289,7 @@ public class Main{
 				data += "\n.long 0";
 				data += "\n.long 0x" + getFloat((float) menu.menuItems[i].LRItems);
 				data += "\n.long 0x" + getFloat((float) menu.menuItems[i].valToInc);
-				return;
+				break;
 			case 8:
 				data += "\n.long 8";
 				data += "\n.long 0";
@@ -266,7 +299,7 @@ public class Main{
 				data += "\n.long 0x" + getFloat((float) menu.menuItems[i].minValue);
 				data += "\n.long 0x" + getFloat((float) menu.menuItems[i].LRItems);
 				data += "\n.long 0x" + getFloat((float) menu.menuItems[i].valToInc);
-				return;
+				break;
 			}
 
 
@@ -282,36 +315,6 @@ public class Main{
 			}
 
 		}
-		System.out.println("Hit");
-		String data2 = "#To be inserted at " + eighty + Integer.toHexString(originalTextSpace) + "\n";
-		newFile = new File(backupFile + "Text" + ".s");
-		FileWriter writer = new FileWriter(newFile);
-		PrintWriter pr = new PrintWriter(writer);
-		pr.print(data2 + text);
-		pr.close();
-
-		list.add(new jsonObject((eighty + Integer.toHexString(originalTextSpace)),newFile));
-
-		data2 = "#To be inserted at " + eighty + Integer.toHexString(originalVarSpace) + "\n";
-		newFile = new File(backupFile + "Variables" + ".s");
-		writer = new FileWriter(newFile);
-		pr = new PrintWriter(writer);
-		pr.print(data2 + var);
-		pr.close();
-
-		list.add(new jsonObject((eighty + Integer.toHexString(originalVarSpace)),newFile));
-
-		File json = new File("C:\\Users\\Thomas\\Desktop\\thing.txt");
-		writer = new FileWriter(json);
-		pr = new PrintWriter(writer);
-		String thing = "";
-		for(int i = 0; i < list.size(); i++) {
-			jsonObject temp = list.get(i);
-			thing += ("\n        {\n          \"type\": \"replaceCodeBlock\",\n          \"address\": \"" + temp.address + "\",\n          \"sourceFile\": \"" + temp.filelol + "\"\n        },");
-		}
-		thing = thing.replace("\\", "/");
-		pr.print(thing);
-		pr.close();
 
 	}
 

@@ -8,8 +8,8 @@ bl THERE
 .long 0x61740000
 THERE:
 mflr r22
-li r20,0
-li r21,7
+li r20,1
+li r21,4
 branchl r12,goToCSS
 restore
 blr

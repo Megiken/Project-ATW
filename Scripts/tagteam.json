@@ -21,7 +21,7 @@
       "build": [
         {
           "type": "injectFolder",
-          "sourceFolder": "..\\ASM\\Minigames\\Tag Team Smash ASM\\",
+          "sourceFolder": "..\\ASM\\Gamemodes\\Tag Team Smash ASM\\",
           "isRecursive": true
         }
 

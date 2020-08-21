@@ -4243,7 +4243,6 @@ C23641D4 00000008 #../ASM/Gamemodes/ATW ASM/Misc/Disable CSS Puck Animations.asm
 618C4324 7D8903A6
 4E800420 901F0000
 60000000 00000000
-0422C340 60000000 #../ASM/Gamemodes/ATW ASM/Misc/Disable Custom Rules Texture.asm
 041A4160 981F0003 #../ASM/Gamemodes/ATW ASM/Misc/Disable salty runback.asm
 C216E920 0000000B #../ASM/Gamemodes/ATW ASM/Misc/End of Start Melee Do Things.asm
 90010004 9421FF00

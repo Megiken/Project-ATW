@@ -23,10 +23,10 @@ bl THERE
 .long ATWsubmenu
 .long IMsubmenu
 .long squadStrikesubmenu
-.long allStarsubmenu
+.long tagTeamsubmenu
+.long synergysubmenu
 .long smash64submenu
 .long brawlsubmenu
-.long sixPlayeMenu
 .long minigamesMenu
 .long shuffleMenu
 .long extrasMenu

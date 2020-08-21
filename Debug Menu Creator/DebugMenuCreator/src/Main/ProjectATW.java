@@ -331,10 +331,6 @@ public class ProjectATW extends subMenu{
 
 
 		subMenu ssMain = new subMenu(1,"Squad Strike");
-		subMenu amMain = new subMenu(1,"Arms race");
-
-		subMenu amSettings = new subMenu(1,"Arms race settings");
-		subMenu amInfo = new subMenu(1,"How to play arms race");
 
 		subMenu ssSettings = new subMenu(1,"Squad strike settings");
 		subMenu ssInfo = new subMenu(1,"How to play squad strike");
@@ -353,19 +349,25 @@ public class ProjectATW extends subMenu{
 		ssInfo.menuItems[1] = new menuItem(0);
 		ssInfo.menuItems[2] = new menuItem(0,"IDK im tired and i just want this done aaaaaaaaaaaa");
 
-		amMain.menuItems[0] = new menuItem(0,"All star main menu");
-		amMain.menuItems[1] = new menuItem(0);
-		amMain.menuItems[2] = new menuItem(1,"8032C924","Play");
-		amMain.menuItems[3] = amSettings;
-		amMain.menuItems[4] = amInfo;
-
-		amSettings.menuItems[0] = new menuItem(0,"Settings");
-		amSettings.menuItems[1] = new menuItem(0);
-		amSettings.menuItems[2] = new menuItem(3,"Number of characters: ",26,26,1,0);
-
-		amInfo.menuItems[0] = new menuItem(0,"How to play");
-		amInfo.menuItems[1] = new menuItem(0);
-		amInfo.menuItems[2] = new menuItem(0,"IDK im tired and i just want this done aaaaaaaaaaaa");
+		subMenu ttMain = new subMenu(1,"Tag team");
+		subMenu ttSettings = new subMenu(1,"Tag team settings");
+		
+		ttMain.menuItems[0] = new menuItem(0,"Tag Team");
+		ttMain.menuItems[1] = new menuItem(0);
+		ttMain.menuItems[2] = new menuItem(1,"8032C984","Play");
+		ttMain.menuItems[3] = ttSettings;
+		
+		ttSettings.menuItems[0] = new menuItem(0,"Tag Team Settings");
+		ttSettings.menuItems[1] = new menuItem(0);
+		ttSettings.menuItems[2] = new menuItem(2,"Allow duplicates",yesno,1);
+		
+		subMenu synMain = new subMenu(1,"Synergy Singles");
+		
+		synMain.menuItems[0] = new menuItem(0,"Synergy Singles");
+		synMain.menuItems[1] = new menuItem(0);
+		synMain.menuItems[2] = new menuItem(1,"8032C924","Play");
+		
+		
 
 		subMenu Smash64Main = new subMenu(1,"Smash 64");
 
@@ -378,12 +380,6 @@ public class ProjectATW extends subMenu{
 		brawlMain.menuItems[0] = new menuItem(0,"Brawl Main Menu");
 		brawlMain.menuItems[1] = new menuItem(0);
 		brawlMain.menuItems[2] = new menuItem(1,"8032C940","Play");
-
-		subMenu sixPlayerMain = new subMenu(1,"6 Player Smash Main Menu");
-
-		sixPlayerMain.menuItems[0] = new menuItem(0,"6 Player Smash Main Menu");
-		sixPlayerMain.menuItems[1] = new menuItem(0);
-		sixPlayerMain.menuItems[2] = new menuItem(0,"Soon");
 
 
 		subMenu shuffleMain = new subMenu(1,"Shuffle");
@@ -589,10 +585,10 @@ public class ProjectATW extends subMenu{
 		generalGamemodes.menuItems[2] = ATWmainMenu;
 		generalGamemodes.menuItems[3] = ironManMain;
 		generalGamemodes.menuItems[4] = ssMain;
-		generalGamemodes.menuItems[5] = amMain;
-		generalGamemodes.menuItems[6] = Smash64Main;
-		generalGamemodes.menuItems[7] = brawlMain;
-		generalGamemodes.menuItems[8] = sixPlayerMain;
+		generalGamemodes.menuItems[5] = ttMain;
+		generalGamemodes.menuItems[6] = synMain;
+		generalGamemodes.menuItems[7] = Smash64Main;
+		generalGamemodes.menuItems[8] = brawlMain;
 		generalGamemodes.menuItems[9] = minigamesMain;
 		generalGamemodes.menuItems[10] = shuffleMain;
 		generalGamemodes.menuItems[11] = extrasMain;

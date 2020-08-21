@@ -1,0 +1,35 @@
+#To be inserted at 806603a4
+
+.long 0
+.long 0
+.long 0x80195b20
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0x0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0x80195b40
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0x80195b74
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 9
