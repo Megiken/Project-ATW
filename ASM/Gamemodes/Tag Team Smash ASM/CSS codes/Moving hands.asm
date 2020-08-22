@@ -11,9 +11,7 @@ cmpwi r3,-1
 beq HIGH
 
 lhz r20,0x6(r3)
-load r21,SSnumOfChars
-lwz r21,0(r21)
-cmpw r21,r20
+cmpwi r20,2
 beq HIGH
 
 

@@ -19,7 +19,14 @@ cmpwi r20,324
 ble END
 GO:
 #swap nana and player
-
+lwz r20,0x1a94(r31)
+lbz r3,0xc(r31)
+branchl r12,getPlayerStatic
+lwz r21,0xb4(r3)
+lwz r21,0x2c(r21)
+lwz r22,0x1a94(r21)
+stw r22,0x1a94(r31)
+stw r20,0x1a94(r21)
 
 END:
 restoreall
