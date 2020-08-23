@@ -61,7 +61,7 @@ public class ProjectATW extends subMenu{
 		generalVisuals.menuItems[12] = new menuItem(0);
 		generalVisuals.menuItems[13] = new menuItem(2,"CSS skin: ",skins,0);
 		generalVisuals.menuItems[14] = new menuItem(0);
-		generalVisuals.menuItems[15] = new menuItem(2,"Costume Dependent Marth Sword Colours: ",ende,1);
+		generalVisuals.menuItems[15] = new menuItem(2,"Costume Dependent Marth Sword Colours: ",ende,0);
 
 
 		projectATW.menuItems[0] = new menuItem(0,"  /$$$$$$  /$$$$$$$$ /$$      /$$");

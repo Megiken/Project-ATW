@@ -241,4 +241,4 @@
 .long 0x00000000 # .setFOD skin: , debugSpace+956
 .long 0x00000000 # .setDreamland skin: , debugSpace+960
 .long 0x00000000 # .setCSS skin: , debugSpace+964
-.long 0x00000001 # .setCostume Dependent Marth Sword Colours: , debugSpace+968
+.long 0x00000000 # .setCostume Dependent Marth Sword Colours: , debugSpace+968
