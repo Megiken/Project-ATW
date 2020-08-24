@@ -435,7 +435,7 @@ lwz \reg,0x24(rtoc)
 .set IMplayerMoney,  debugSpace+688
 .set IMcharCost,  debugSpace+692
 .set SSnumOfChars,  debugSpace+796
-.set ttDuplicates,  debugSpace+800
+.set synTeams,  debugSpace+800
 .set bombImpact,  debugSpace+804
 .set bombExplosion,  debugSpace+808
 .set gravity,  debugSpace+812
@@ -501,7 +501,7 @@ lwz \reg,0x24(rtoc)
 .set IMsubmenu,0x8065efa4
 .set squadStrikesubmenu,0x8065f900
 .set tagTeamsubmenu,0x8065fa6c
-.set synergysubmenu,0x8065fb54
+.set synergysubmenu,0x8065fad0
 .set smash64submenu,0x8065fbb8
 .set brawlsubmenu,0x8065fc1c
 .set minigamesMenu,0x8065fc80

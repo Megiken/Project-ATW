@@ -27,8 +27,9 @@ backup
 #####################
 
 	#convert player number into float (f1)
-		mr    r3,r29
-		bl	IntToFloat
+  mr    r22,r29
+  branchl r12,Int2Float
+  fmr r1,f8
 
 	#Get Correct Y Offset
 		lfs f2,0xC(textProperties) #distance between players
@@ -105,7 +106,7 @@ stwu	r1,-0x100(r1)	# make space for 12 registers
 stfs  f2,0x8(r1)
 
 lis	r0, 0x4330
-lfd	f2, -0x6758 (rtoc)
+lfd	f2, -0x8000(rtoc)
 xoris	r3, r3,0x8000
 stw	r0,0xF0(sp)
 stw	r3,0xF4(sp)

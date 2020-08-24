@@ -2,7 +2,7 @@
 
 .long 0
 .long 0
-.long 0x8019609c
+.long 0x801960b4
 .long 0
 .long 0
 .long 0
@@ -18,7 +18,7 @@
 .long 0
 .long 1
 .long 0x8032C980
-.long 0x801960c4
+.long 0x801960dc
 .long 0
 .long 0
 .long 0x80660bdc

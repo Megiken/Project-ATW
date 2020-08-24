@@ -199,7 +199,7 @@
 .long 0x0000007d # .setPichu cost: , debugSpace+788
 .long 0x000000af # .setGanondorf cost: , debugSpace+792
 .long 0x00000004 # .setNumber of characters: , debugSpace+796
-.long 0x00000001 # .setAllow duplicates, debugSpace+800
+.long 0x00000000 # .setTeams: , debugSpace+800
 .long 0x0000000a # .setBomb Impact Damage: , debugSpace+804
 .long 0x0000000a # .setBomb Explosion Damage: , debugSpace+808
 .long 0x0000000b # .setGravity/100: , debugSpace+812

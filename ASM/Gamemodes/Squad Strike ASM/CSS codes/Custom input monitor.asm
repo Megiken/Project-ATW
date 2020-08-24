@@ -250,3 +250,4 @@ b END
 END:
 restoreallnor0
 TRUEEND:
+lbz	r0, -0x49AE (r13)

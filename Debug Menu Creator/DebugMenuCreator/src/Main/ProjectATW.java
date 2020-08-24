@@ -27,6 +27,7 @@ public class ProjectATW extends subMenu{
 	public static String[] yesno = {"Yes","No"};
 	public static String[] nightDreamland = {"Enabled","ATW Only","Disabled"};
 	public static String[] skins = {"Default","Custom 1","Custom 2","Custom 3"};
+	public static String[] synTeams = {"P1 + P2","P1 + P3","P1 + P4"};
 	
 	public static subMenu getProjectATW() {
 		subMenu projectATW = new subMenu(1,"Main Menu");
@@ -350,22 +351,22 @@ public class ProjectATW extends subMenu{
 		ssInfo.menuItems[2] = new menuItem(0,"IDK im tired and i just want this done aaaaaaaaaaaa");
 
 		subMenu ttMain = new subMenu(1,"Tag team");
-		subMenu ttSettings = new subMenu(1,"Tag team settings");
+		subMenu synSettings = new subMenu(1,"Synergy Singles settings");
 		
 		ttMain.menuItems[0] = new menuItem(0,"Tag Team");
 		ttMain.menuItems[1] = new menuItem(0);
 		ttMain.menuItems[2] = new menuItem(1,"8032C984","Play");
-		ttMain.menuItems[3] = ttSettings;
 		
-		ttSettings.menuItems[0] = new menuItem(0,"Tag Team Settings");
-		ttSettings.menuItems[1] = new menuItem(0);
-		ttSettings.menuItems[2] = new menuItem(2,"Allow duplicates",yesno,1);
+		synSettings.menuItems[0] = new menuItem(0,"Synergy Singles Settings");
+		synSettings.menuItems[1] = new menuItem(0);
+		synSettings.menuItems[2] = new menuItem(2,"Teams: ",synTeams,0);
 		
 		subMenu synMain = new subMenu(1,"Synergy Singles");
 		
 		synMain.menuItems[0] = new menuItem(0,"Synergy Singles");
 		synMain.menuItems[1] = new menuItem(0);
 		synMain.menuItems[2] = new menuItem(1,"8032C924","Play");
+		synMain.menuItems[3] = synSettings;
 		
 		
 

@@ -106,7 +106,7 @@
 .long 0
 .long 1
 .long 0x803001dc
-.long 0x801964e0
+.long 0x801964f8
 .long 0
 .long 0
 .long 0x8065e8d0
@@ -114,7 +114,7 @@
 .long 0
 .long 1
 .long 0x803001dc
-.long 0x801966ac
+.long 0x801966c4
 .long 0
 .long 0
 .long 0x80661160
@@ -122,7 +122,7 @@
 .long 0
 .long 1
 .long 0x803001dc
-.long 0x80196718
+.long 0x80196730
 .long 0
 .long 0
 .long 0x80661364
