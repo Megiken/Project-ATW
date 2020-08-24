@@ -43,6 +43,10 @@ echo Building tagteam.json...
 gecko build -c tagteam.json
 echo.
 
+echo Building synergysingles.json
+gecko build -c synergysingles.json
+echo.
+
 echo Building createyourownplatforms.json...
 gecko build -c createyourownplatforms.json
 echo.
@@ -141,6 +145,10 @@ echo.
 
 echo Creating Tag Team DAT...
 java -jar CodeConverter.jar -c "..\Output\tagteam.txt" -o "..\Files\Custom Code\TT.dat"
+echo.
+
+echo Creating Synergy Singles DAT...
+java -jar CodeConverter.jar -c "..\Output\synergysingles.txt" -o "..\Files\Custom Code\SYN.dat"
 echo.
 
 echo Creating Create your own Platforms DAT...

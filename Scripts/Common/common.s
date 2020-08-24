@@ -534,7 +534,7 @@ lwz \reg,0x24(rtoc)
 .set mrsaturndata,-0x7c78
 .set numOfPlatforms,-0x7c7c
 .set slippiOn,-0x7c40
-.set free4,-0x7c3c
+.set SynData,-0x7c3c
 
 ################################################################################
 # rtoc Offsets
