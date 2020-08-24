@@ -192,7 +192,7 @@ java -jar CodeConverter.jar -c "..\Output\taunt battle.txt" -o "..\Files\Custom 
 echo.
 
 echo Creating Slippi + Extras DAT...
-java -jar CodeConverter.jar -c "..\Output\Slippi + Extras.txt" -o "..\Files\Custom Code\S+E.dat"
+java -jar CodeConverter.jar -c "..\Output\Slippi + Extras.txt" -o "..\Files\Custom Code\GNL.dat"
 echo.
 
 echo Creating Debug Menu DAT...

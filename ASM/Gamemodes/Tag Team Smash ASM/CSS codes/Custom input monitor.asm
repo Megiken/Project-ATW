@@ -45,11 +45,14 @@ lbz r21,3(r3)
 mulli r22,r21,0x24
 lbzx r21,r22,r20
 cmpwi r21,0x1a
-beq CHECKA
+bge CHECKA
 
 
 cmpwi r21,0x12
 bne GOCHECKCLONE
+
+lhz r20,6(r3)
+compareine r20,0,CHECKA
 
 load r23,digitalData
 lbz r24,3(r3)
@@ -79,6 +82,8 @@ beq NOTSHEIK
 lwzx r21,r22,r20
 lis r24,0x0100
 add r21,r21,r24
+li r24,1
+stb r24,2(r3)
 b STORE
 
 

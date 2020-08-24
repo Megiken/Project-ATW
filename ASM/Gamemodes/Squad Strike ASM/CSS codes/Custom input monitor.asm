@@ -47,7 +47,7 @@ lbz r21,3(r3)
 mulli r22,r21,0x24
 lbzx r21,r22,r20
 cmpwi r21,0x1a
-beq CHECKA
+bge CHECKA
 
 
 cmpwi r21,0x12

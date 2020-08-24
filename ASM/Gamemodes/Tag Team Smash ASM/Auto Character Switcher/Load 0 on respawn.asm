@@ -9,6 +9,10 @@ lwz r20,0xb0(r3)
 lwz r20,0x2c(r20)
 li r0,5
 stw r0,0x1a94(r20)
+lbz r0,0x221f(r20)
+ori r0,r0,8
+xori r0,r0,8
+stb r0,0x221f(r20)
 lwz r21,0xb4(r3)
 lwz r21,0x2c(r21)
 li r0,6

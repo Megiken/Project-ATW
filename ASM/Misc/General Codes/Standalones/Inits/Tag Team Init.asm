@@ -11,5 +11,17 @@ mflr r22
 li r20,1
 li r21,4
 branchl r12,goToCSS
+
+branchl r12,IMgetFirst
+mflr r23
+branchl r12,IMhardClearStruct
+
+branchl r12,IMgetSecond
+mflr r23
+branchl r12,IMhardClearStruct
+
+li r20,0
+stw r20,IMcount(rtoc)
+
 restore
 blr

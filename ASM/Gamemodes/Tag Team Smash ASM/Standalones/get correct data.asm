@@ -10,20 +10,22 @@ backup
 
 branchl r12,IMgetFirst
 mflr r20
+lhz r22,0(r20)
+compareine r22,0x6969,NEXT
 li r14,1
-lwz r22,0(r20)
-lis r21,0x6969
-add r21,r21,r3
-cmpw r21,r22
+lbz r22,3(r20)
+cmpw r3,r22
 beq YES
+NEXT:
 branchl r12,IMgetSecond
 mflr r20
+lhz r22,0(r20)
+compareine r22,0x6969,NO
 li r14,2
-lwz r22,0(r20)
-lis r21,0x6969
-add r21,r21,r3
-cmpw r21,r22
+lbz r22,3(r20)
+cmpw r3,r22
 beq YES
+NO:
 li r3,-1
 b END
 

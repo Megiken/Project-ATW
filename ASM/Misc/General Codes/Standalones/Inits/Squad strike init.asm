@@ -20,5 +20,8 @@ branchl r12,IMgetSecond
 mflr r23
 branchl r12,IMhardClearStruct
 
+li r20,0
+stw r20,IMcount(rtoc)
+
 restore
 blr
