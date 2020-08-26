@@ -473,12 +473,13 @@ lwz \reg,0x24(rtoc)
 .set customGamemodeFlag,  debugSpace+988
 .set BFSkin,  debugSpace+992
 .set FDSkin,  debugSpace+996
-.set PSSkin,  debugSpace+1000
-.set YSSkin,  debugSpace+1004
-.set FODSkin,  debugSpace+1008
-.set DreamlandSkin,  debugSpace+1012
+.set YSSkin,  debugSpace+1000
+.set FODSkin,  debugSpace+1004
+.set DreamlandSkin,  debugSpace+1008
+.set PSSkin,  debugSpace+1012
 .set CSSSkin,  debugSpace+1016
 .set swordColoursFlag, debugSpace+1020
+.set playlistFlag,debugSpace+1024
 
 #Other
 
@@ -501,16 +502,16 @@ lwz \reg,0x24(rtoc)
 .set cssStruct2,0x8043208c
 .set frameRate,0x80432a2c
 
-.set ATWsubmenu,0x8065eab4
-.set IMsubmenu,0x8065efa4
-.set squadStrikesubmenu,0x8065f900
-.set tagTeamsubmenu,0x8065fa6c
-.set synergysubmenu,0x8065fad0
-.set smash64submenu,0x8065fbb8
-.set brawlsubmenu,0x8065fc1c
-.set minigamesMenu,0x8065fc80
-.set shuffleMenu,0x80660bdc
-.set extrasMenu,0x80660e44
+.set ATWsubmenu,0x8065ead4
+.set IMsubmenu,0x8065efc4
+.set squadStrikesubmenu,0x8065f920
+.set tagTeamsubmenu,0x8065fa8c
+.set synergysubmenu,0x8065faf0
+.set smash64submenu,0x8065fbd8
+.set brawlsubmenu,0x8065fc3c
+.set minigamesMenu,0x8065fca0
+.set shuffleMenu,0x80660bfc
+.set extrasMenu,0x80660e64
 
 ################################################################################
 # Mytoc Offsets
@@ -539,6 +540,16 @@ lwz \reg,0x24(rtoc)
 .set numOfPlatforms,-0x7c7c
 .set slippiOn,-0x7c40
 .set SynData,-0x7c3c
+.set shuffleID,-0x7bf8
+.set numOfSongs,-0x7bf4
+.set free2,-0x7bc0
+.set free3,-0x7bbc
+.set free4,-0x7aa0
+.set free5,-0x7a9c
+.set free6,-0x7a98
+.set free7,-0x7a94
+.set free8,-0x7a80
+.set free9,-0x7a7c
 
 ################################################################################
 # rtoc Offsets

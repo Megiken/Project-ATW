@@ -13,6 +13,9 @@ branchl r12,randomI
 mulli r23,r3,4
 lwzx r21,r20,r23
 compareine r21,0,LOOP
+lwz r19,shuffleID(rtoc)
+compareeq r19,r3,LOOP
+stw r3,shuffleID(rtoc)
 lwz r15,thirdFileInHeap(rtoc)
 branchl r12,removerestoreGCT
 bl THERE
@@ -50,6 +53,20 @@ mulli r23,r23,2
 add r20,r20,r23
 lwz r21,thirdFileInHeap(rtoc)
 branchl r12,loadbackupstoreGCT
+
+li r21,0
+LOOP2:
+mr r20,r21
+branchl r12,removePlayerFromCSS
+addi r21,r21,1
+compareine r21,4,LOOP2
+load r20,doublesByte
+li r21,0
+stb r21,0(r20)
+
+
+
+
 
 
 END:

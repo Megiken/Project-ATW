@@ -249,9 +249,10 @@
 .long 0x00000000 # .setCustom gamemodes: , debugSpace+988
 .long 0x00000000 # .setBattlefield skin: , debugSpace+992
 .long 0x00000000 # .setFD skin: , debugSpace+996
-.long 0x00000000 # .setPokemon stadium skin: , debugSpace+1000
-.long 0x00000000 # .setYoshis story skin: , debugSpace+1004
-.long 0x00000000 # .setFOD skin: , debugSpace+1008
-.long 0x00000000 # .setDreamland skin: , debugSpace+1012
+.long 0x00000000 # .setYoshis story skin: , debugSpace+1000
+.long 0x00000000 # .setFOD skin: , debugSpace+1004
+.long 0x00000000 # .setDreamland skin: , debugSpace+1008
+.long 0x00000000 # .setPokemon stadium skin: , debugSpace+1012
 .long 0x00000000 # .setCSS skin: , debugSpace+1016
 .long 0x00000001 # .setCostume Dependent Marth Sword Colours: , debugSpace+1020
+.long 0x00000001 # .setCustom Playlist: , debugSpace+1024

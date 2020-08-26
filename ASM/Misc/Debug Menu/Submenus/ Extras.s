@@ -1,4 +1,4 @@
-#To be inserted at 80660e44
+#To be inserted at 80660e64
 
 .long 0
 .long 0
@@ -21,7 +21,7 @@
 .long 0x8019624c
 .long 0
 .long 0
-.long 0x80660f28
+.long 0x80660f48
 .long 0
 .long 0
 .long 1
@@ -29,7 +29,7 @@
 .long 0x80196274
 .long 0
 .long 0
-.long 0x80660f8c
+.long 0x80660fac
 .long 0
 .long 0
 .long 1
@@ -37,7 +37,7 @@
 .long 0x801962a0
 .long 0
 .long 0
-.long 0x80660ff0
+.long 0x80661010
 .long 0
 .long 0
 .long 1
@@ -45,7 +45,7 @@
 .long 0x8019642c
 .long 0
 .long 0
-.long 0x80661054
+.long 0x80661074
 .long 0
 .long 0
 .long 1
@@ -53,7 +53,7 @@
 .long 0x80196468
 .long 0
 .long 0
-.long 0x80661220
+.long 0x80661240
 .long 0
 .long 0
 .long 9

@@ -26,7 +26,7 @@ public class ProjectATW extends subMenu{
 	public static String[] lagreduction = {"Off","Half frame","Full frame"};
 	public static String[] yesno = {"Yes","No"};
 	public static String[] nightDreamland = {"Enabled","ATW Only","Disabled"};
-	public static String[] skins = {"Default","Custom 1","Custom 2","Custom 3"};
+	public static String[] skins = {"Default","Custom 1","Custom 2","Custom 3","Custom 4","Custom 5","Shuffle"};
 	public static String[] synTeams = {"P1 + P2","P1 + P3","P1 + P4"};
 	
 	public static subMenu getProjectATW() {
@@ -39,8 +39,21 @@ public class ProjectATW extends subMenu{
 		subMenu generalMechanics = new subMenu(1,"Mechanics");
 		subMenu generalGamemodes = new subMenu(1,"Gamemodes");
 		subMenu generalVisuals = new subMenu(1,"Visuals");
+		subMenu generalAudio = new subMenu(1,"Audio");
 		subMenu generalCredits = new subMenu(1,"Credits");
+		
+		generalAudio.menuItems[0] = new menuItem(0,"Audio Settings");
+		generalAudio.menuItems[1] = new menuItem(0);
+		generalAudio.menuItems[2] = new menuItem(2,"Custom Playlist: ",ende,1);
+		generalAudio.menuItems[3] = new menuItem(0);
+		generalAudio.menuItems[4] = new menuItem(0,"You can find a CustomAudio folder inside of the project");
+		generalAudio.menuItems[5] = new menuItem(0,"ATW ISO, on boot the game will find all of the custom songs");
+		generalAudio.menuItems[6] = new menuItem(0,"labled from 000.hps to 999.hps, and randomly shuffle them");
+		generalAudio.menuItems[7] = new menuItem(0,"when a song is set to play on the main menu, css, or vs mode.");
+		generalAudio.menuItems[8] = new menuItem(0,"You can swap out the first 000.hps, and the rest of the files");
+		generalAudio.menuItems[9] = new menuItem(0,"you will have to add to the iso yourself.");
 
+		
 		generalCredits.menuItems[0] = new menuItem(0,"Credits");
 		generalCredits.menuItems[1] = new menuItem(0);
 		generalCredits.menuItems[2] = new menuItem(0,"Big money is the coolest");
@@ -49,20 +62,23 @@ public class ProjectATW extends subMenu{
 
 		generalVisuals.menuItems[0] = new menuItem(0,"Visual Settings");
 		generalVisuals.menuItems[1] = new menuItem(0);
-		generalVisuals.menuItems[2] = new menuItem(0,"You can add your own skins to the iso and select them here.");
-		generalVisuals.menuItems[3] = new menuItem(0,"The files you want to replace end with .00t, .01t, etc.");
-		generalVisuals.menuItems[4] = new menuItem(0,"As long as your new files dont edit the model, it wont even.");
-		generalVisuals.menuItems[5] = new menuItem(0,"cause desyncs on netplay.");
-		generalVisuals.menuItems[6] = new menuItem(2,"Battlefield skin: ",skins,0);
-		generalVisuals.menuItems[7] = new menuItem(2,"FD skin: ",skins,0);
+		generalVisuals.menuItems[2] = new menuItem(0,"cause desyncs on netplay.");
+		generalVisuals.menuItems[3] = new menuItem(2,"Battlefield skin: ",skins,0);
+		generalVisuals.menuItems[4] = new menuItem(2,"FD skin: ",skins,0);
+		generalVisuals.menuItems[5] = new menuItem(2,"Yoshis story skin: ",skins,0);
+		generalVisuals.menuItems[6] = new menuItem(2,"FOD skin: ",skins,0);
+		generalVisuals.menuItems[7] = new menuItem(2,"Dreamland skin: ",skins,0);
 		generalVisuals.menuItems[8] = new menuItem(2,"Pokemon stadium skin: ",skins,0);
-		generalVisuals.menuItems[9] = new menuItem(2,"Yoshis story skin: ",skins,0);
-		generalVisuals.menuItems[10] = new menuItem(2,"FOD skin: ",skins,0);
-		generalVisuals.menuItems[11] = new menuItem(2,"Dreamland skin: ",skins,0);
-		generalVisuals.menuItems[12] = new menuItem(0);
-		generalVisuals.menuItems[13] = new menuItem(2,"CSS skin: ",skins,0);
-		generalVisuals.menuItems[14] = new menuItem(0);
-		generalVisuals.menuItems[15] = new menuItem(2,"Costume Dependent Marth Sword Colours: ",ende,1);
+		generalVisuals.menuItems[9] = new menuItem(0);
+		generalVisuals.menuItems[10] = new menuItem(2,"CSS skin: ",skins,0);
+		generalVisuals.menuItems[11] = new menuItem(0);
+		generalVisuals.menuItems[12] = new menuItem(2,"Costume Dependent Marth Sword Colours: ",ende,1);
+		generalVisuals.menuItems[13] = new menuItem(0);
+		generalVisuals.menuItems[14] = new menuItem(0,"You can add your own custom stages to your iso and select them");
+		generalVisuals.menuItems[15] = new menuItem(0,"here. Add your files to the disk and give them the extension");
+		generalVisuals.menuItems[16] = new menuItem(0,".00t through .04t. For example, GrOy.00t, MnSlChr.03t etc etc.");	
+		generalVisuals.menuItems[17] = new menuItem(0,"The only exception is pokemon stadium, which needs to be named");
+		generalVisuals.menuItems[18] = new menuItem(0,"GrP0.usd through GrP4.usd.");
 
 
 		projectATW.menuItems[0] = new menuItem(0,"  /$$$$$$  /$$$$$$$$ /$$      /$$");
@@ -80,7 +96,8 @@ public class ProjectATW extends subMenu{
 		projectATW.menuItems[12] = generalMechanics;
 		projectATW.menuItems[13] = generalGamemodes;
 		projectATW.menuItems[14] = generalVisuals;
-		projectATW.menuItems[15] = generalCredits;
+		projectATW.menuItems[15] = generalAudio;
+		projectATW.menuItems[16] = generalCredits;
 
 		generalMechanics.menuItems[0] = new menuItem(0,"Mechanics Settings");
 		generalMechanics.menuItems[1] = new menuItem(0);

@@ -28,6 +28,11 @@ stb r0,0x221f(r20)
 branchlr r14,IMgetSecond
 bdnz LOOP
 
+branchl r12,updateSFX
+
+
+
+
 restore
 
 

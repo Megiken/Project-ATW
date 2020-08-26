@@ -1,4 +1,4 @@
-#To be inserted at 8065d390
+#To be inserted at 8065d3b0
 
 .long 0
 .long 0
@@ -21,7 +21,7 @@
 .long 0x80193ce4
 .long 0
 .long 0
-.long 0x8065d694
+.long 0x8065d6b4
 .long 0
 .long 0
 .long 0

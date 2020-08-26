@@ -9,7 +9,7 @@ bl THER
 THER:
 mflr r22
 li r20,1
-li r21,4
+li r21,2
 
 branchl r12,goToCSS
 cmpwi r14,0

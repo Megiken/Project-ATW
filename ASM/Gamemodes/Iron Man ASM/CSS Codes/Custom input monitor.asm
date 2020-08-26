@@ -51,6 +51,12 @@ lbzx r21,r22,r20
 cmpwi r21,0x1a
 bge CHECKAA
 
+load r15,0x8043208f
+lbz r16,3(r3)
+mulli r16,r16,8
+lbzx r14,r16,r15
+compareieq r14,0x21,CHECKAA
+
 
 cmpwi r21,0x12
 bne GOCHECKCLONE2
@@ -189,6 +195,11 @@ lbzx r21,r22,r20
 cmpwi r21,0x1a
 bge CHECKA
 
+load r15,0x8043208f
+lbz r16,3(r3)
+mulli r16,r16,8
+lbzx r14,r16,r15
+compareieq r14,0x21,CHECKA
 
 cmpwi r21,0x12
 bne GOCHECKCLONE
