@@ -11,13 +11,13 @@ lfs f7,0xb4(r18)
 loadfz f9,r20,boxCoordinates
 loadfz f8,r20,boxCoordinates+8
 fcmpo 0,f6,f9
-bgt NOTIN
+blt NOTIN
 fcmpo 0,f7,f8
 bgt NOTIN
 loadfz f9,r20,boxCoordinates+4
 loadfz f8,r20,boxCoordinates+12
 fcmpo 0,f6,f9
-blt NOTIN
+bgt NOTIN
 fcmpo 0,f7,f8
 blt NOTIN
 

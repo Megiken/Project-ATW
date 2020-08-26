@@ -77,7 +77,7 @@ b end
 #**************************************************#
 TEXTPROPERTIES:
 blrl
-.float -510
+.float -520
 .long 0x43EA0000 #y offset of "UCF" (464)
 .long 0x3D3851EC #text scaling
 .long 0x43AC8000 #distance between players (350)

@@ -62,7 +62,7 @@ public class ProjectATW extends subMenu{
 		generalVisuals.menuItems[12] = new menuItem(0);
 		generalVisuals.menuItems[13] = new menuItem(2,"CSS skin: ",skins,0);
 		generalVisuals.menuItems[14] = new menuItem(0);
-		generalVisuals.menuItems[15] = new menuItem(2,"Costume Dependent Marth Sword Colours: ",ende,0);
+		generalVisuals.menuItems[15] = new menuItem(2,"Costume Dependent Marth Sword Colours: ",ende,1);
 
 
 		projectATW.menuItems[0] = new menuItem(0,"  /$$$$$$  /$$$$$$$$ /$$      /$$");
@@ -382,13 +382,36 @@ public class ProjectATW extends subMenu{
 		brawlMain.menuItems[1] = new menuItem(0);
 		brawlMain.menuItems[2] = new menuItem(1,"8032C940","Play");
 
+		
+		subMenu shuffleSettings = new subMenu(1,"Shuffle Settings");
+		
+		shuffleSettings.menuItems[0] = new menuItem(0,"Shuffle Settings");
+		shuffleSettings.menuItems[1] = new menuItem(0);
+		shuffleSettings.menuItems[2] = new menuItem(2,"Squad Strike: ",onoff,1);
+		shuffleSettings.menuItems[3] = new menuItem(2,"Tag team: ",onoff,0);
+		shuffleSettings.menuItems[4] = new menuItem(2,"Smash 64: ",onoff,0);
+		shuffleSettings.menuItems[5] = new menuItem(2,"Brawl: ",onoff,0);
+		shuffleSettings.menuItems[6] = new menuItem(2,"Duelist Pro: ",onoff,0);
+		shuffleSettings.menuItems[7] = new menuItem(2,"King of the hill: ",onoff,0);
+		shuffleSettings.menuItems[8] = new menuItem(2,"Snowbrawl: ",onoff,0);
+		shuffleSettings.menuItems[9] = new menuItem(2,"One in the chamber: ",onoff,0);
+		shuffleSettings.menuItems[10] = new menuItem(2,"Infinite Jump Zone: ",onoff,0);
+		shuffleSettings.menuItems[11] = new menuItem(2,"Create your own platforms: ",onoff,0);
+		shuffleSettings.menuItems[12] = new menuItem(2,"Mr saturn soccer: ",onoff,0);
+		shuffleSettings.menuItems[13] = new menuItem(2,"Volleyball: ",onoff,1);
+		shuffleSettings.menuItems[14] = new menuItem(2,"Basketball: ",onoff,1);
+		
+		
+		
+		
+		
 
 		subMenu shuffleMain = new subMenu(1,"Shuffle");
 
 		shuffleMain.menuItems[0] = new menuItem(0,"Shuffle");
 		shuffleMain.menuItems[1] = new menuItem(0);
-		shuffleMain.menuItems[2] = new menuItem(0,"Soon");
-
+		shuffleMain.menuItems[2] = new menuItem(1,"8032C990","Play");
+		shuffleMain.menuItems[3] = shuffleSettings;
 
 		subMenu BBWSettings = new subMenu(1,"Bretts blastzone warp Settings");
 
@@ -557,6 +580,12 @@ public class ProjectATW extends subMenu{
 		TauntMain.menuItems[1] = new menuItem(0);
 		TauntMain.menuItems[2] = new menuItem(1,"8032C974","Play");
 		
+		subMenu ShineMain = new subMenu(1,"Super Shine Bros");
+		
+		ShineMain.menuItems[0] = new menuItem(0,"Super shine bros main menu");
+		ShineMain.menuItems[1] = new menuItem(0);
+		ShineMain.menuItems[2] = new menuItem(1,"8032C98c","Play");
+		
 		subMenu minigamesMain = new subMenu(1,"Minigames");
 
 		minigamesMain.menuItems[0] = new menuItem(0,"Minigames");
@@ -580,6 +609,7 @@ public class ProjectATW extends subMenu{
 		extrasMain.menuItems[3] = DualMain;
 		extrasMain.menuItems[4] = TauntMain;
 		extrasMain.menuItems[5] = BBWMain;
+		extrasMain.menuItems[6] = ShineMain;
 		
 		generalGamemodes.menuItems[0] = new menuItem(0,"Gamemodes");
 		generalGamemodes.menuItems[1] = new menuItem(0);

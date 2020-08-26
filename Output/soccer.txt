@@ -5,8 +5,8 @@ $All Star [Big Money]
 C225B880 00000002 #../ASM/Minigames/Mr Saturn Soccer ASM/CSS Codes/Always all star.asm
 38000055 B004001E
 60000000 00000000
-C226688C 00000003 #../ASM/Minigames/Mr Saturn Soccer ASM/CSS Codes/Auto doubles.asm
-7C0802A6 3E808048
+C22668A8 00000003 #../ASM/Minigames/Mr Saturn Soccer ASM/CSS Codes/Auto doubles.asm
+3BC30000 3E808048
 629407C8 3AA00001
 9AB40000 00000000
 042617D0 60000000 #../ASM/Minigames/Mr Saturn Soccer ASM/CSS Codes/Disable doubles.asm

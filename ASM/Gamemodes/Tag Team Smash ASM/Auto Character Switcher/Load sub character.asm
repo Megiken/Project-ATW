@@ -8,12 +8,13 @@ li	r3,5
 stw	r3,0x1a94(r4)
 lbz r3,0xc(r4)
 branchl r12,getCorrectData
-lbz r4,8(r3)
-lbz r5,12(r3)
+lwz r4,8(r3)
+lwz r5,12(r3)
 comparene r4,r5,NOTSAME
 li	r0,2
 stb	r0,0x46(r30)	# store sub color (dark)
 NOTSAME:
+lbz r4,8(r3)
 mulli r4,r4,3
 lis	r5, 0x803C
 subi	r0, r5, 12832

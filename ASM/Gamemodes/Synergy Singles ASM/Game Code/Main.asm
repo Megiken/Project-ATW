@@ -4,6 +4,8 @@
 
 lfs f29, -5168(r2)
 backup
+lwz r20,SynStop(rtoc)
+compareieq r20,1,END
 lbz r21,SynData(rtoc)
 lbz r22,SynData+1(rtoc)
 bl THING

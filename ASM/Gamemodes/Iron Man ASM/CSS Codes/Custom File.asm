@@ -1,7 +1,9 @@
-#To be inserted at 8026688c
-mflr r0
+#To be inserted at 802668a8
+
 
 .include "Common/common.s"
+
+addi	r30, r3, 0
 
 lwz r20,IMtype(rtoc)
 cmpwi r20,2

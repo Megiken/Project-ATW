@@ -2,8 +2,8 @@
 
 [Gecko]
 $Duelist Pro [Big Money]
-C226688C 00000003 #../ASM/Extras/Taunt Battle ASM/Addons/Auto doubles.asm
-7C0802A6 3E808048
+C22668A8 00000003 #../ASM/Extras/Taunt Battle ASM/Addons/Auto doubles.asm
+3BC30000 3E808048
 629407C8 3AA00001
 9AB40000 00000000
 043F115C 6C617400 #../ASM/Extras/Taunt Battle ASM/Addons/Custom File.asm

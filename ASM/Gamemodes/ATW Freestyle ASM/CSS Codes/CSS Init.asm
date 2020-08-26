@@ -1,9 +1,9 @@
-#To be inserted at 8026688C
+#To be inserted at 802668a8
 
 .include "Common/common.s"
 
-
-backupall
+addi	r30, r3, 0
+backup
 
 lis r17,0x803e
 ori r17,r17,0x6742
@@ -115,5 +115,4 @@ stw r15,0(r22)
 lis r15,0x804d
 li r16,0
 stw r16,0x6730(r15)
-restoreall
-mflr r0
+restore

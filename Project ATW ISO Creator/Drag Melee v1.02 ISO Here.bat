@@ -22,7 +22,7 @@ echo Applying patch...
 echo This may take 1-2 minutes.
 echo.
 
-xdelta3.exe -d -vfs %1 "patch.vcdiff" "../Beta Project ATW.iso"
+xdelta3.exe -d -vfs %1 "patch.vcdiff" "../Project ATW.iso"
 
 del /f patch.vcdiff
 

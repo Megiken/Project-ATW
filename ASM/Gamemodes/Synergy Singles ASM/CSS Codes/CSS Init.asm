@@ -1,8 +1,10 @@
-#To be inserted at 8026688C
+#To be inserted at 802668a8
 
 .include "Common/common.s"
-
-backupall
+addi	r30, r3, 0
+backup
+li r20,0
+stw r20,SynStop(rtoc)
 lwz r20,SynData(rtoc)
 cmpwi r20,0
 bne END
@@ -19,5 +21,4 @@ load r20,0x00020103
 STORE:
 stw r20,SynData(rtoc)
 END:
-restoreall
-mflr r0
+restore

@@ -290,52 +290,62 @@
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660c40",
+          "address": "80660c60",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/ Shuffle Settings.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "80660e44",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/ Extras.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660d04",
+          "address": "80660f28",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/ Chess Melee.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660d68",
+          "address": "80660f8c",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/ Dual 1v1.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660dcc",
+          "address": "80660ff0",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/ Taunt battle.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660e30",
+          "address": "80661054",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/ Bretts blastzone warp.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660ed4",
+          "address": "806610f8",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/ Bretts blastzone warp Settings.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660f58",
+          "address": "8066117c",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/ How to play bretts blastzone warp.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80660ffc",
+          "address": "80661220",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/ Super Shine Bros.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "80661284",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/ Special Melee.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80661160",
+          "address": "806613e8",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/ Visuals.s"
         },
         {
           "type": "replaceCodeBlock",
-          "address": "80661364",
+          "address": "806615ec",
           "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/ Credits.s"
         }
 

@@ -1,0 +1,31 @@
+{
+  "settings": {
+    "areIncludesRelativeFromFile": true
+  },
+  "outputFiles": [
+    {
+      "file": "../Output/shinebros.txt",
+      "header": [
+        "# GALJ01 - Super Smash Bros. Melee NTSC 1.02",
+        "",
+        "[Gecko]"
+      ]
+    }
+  ],
+  "codes": [
+    {
+      "name": "Super Shine Bros",
+      "authors": [
+        "Uncle Punch"
+      ],
+      "build": [
+        {
+          "type": "injectFolder",
+          "sourceFolder": "..\\ASM\\Extras\\Super Shine Bros ASM\\",
+          "isRecursive": true
+        }
+
+      ]
+    }
+  ]
+}

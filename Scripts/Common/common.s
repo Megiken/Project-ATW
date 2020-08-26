@@ -351,6 +351,9 @@ lwz \reg,0x24(rtoc)
 .set CTFInit,functSpace+0x138
 .set tagTeamInit,functSpace+0x13c
 .set swapNana,functSpace+0x140
+.set shineBrosInit,functSpace+0x144
+.set shuffleInit,functSpace+0x148
+
 
 .set prim.new,0x804dd84c
 .set prim.close,0x804dd848
@@ -455,26 +458,27 @@ lwz \reg,0x24(rtoc)
 .set oitcLedge, debugSpace+868
 .set oitcReflections, debugSpace+872
 .set boxCoordinates, debugSpace+876
-.set warpDamage, debugSpace+892
-.set killPercent, debugSpace+896
-.set percentStaminaFlag,  debugSpace+900
-.set staminaAmount,  debugSpace+904
-.set sizeFlag,  debugSpace+908
-.set headFlag,  debugSpace+912
-.set bodyFlag,  debugSpace+916
-.set statusFlag,  debugSpace+920
-.set gravityFlag,  debugSpace+924
-.set speedFlag,  debugSpace+928
-.set cameraFlag,  debugSpace+932
-.set customGamemodeFlag,  debugSpace+936
-.set BFSkin,  debugSpace+940
-.set FDSkin,  debugSpace+944
-.set PSSkin,  debugSpace+948
-.set YSSkin,  debugSpace+952
-.set FODSkin,  debugSpace+956
-.set DreamlandSkin,  debugSpace+960
-.set CSSSkin,  debugSpace+964
-.set swordColoursFlag, debugSpace+968
+.set shuffleSettings,debugSpace+892
+.set warpDamage, debugSpace+944
+.set killPercent, debugSpace+948
+.set percentStaminaFlag,  debugSpace+952
+.set staminaAmount,  debugSpace+956
+.set sizeFlag,  debugSpace+960
+.set headFlag,  debugSpace+964
+.set bodyFlag,  debugSpace+968
+.set statusFlag,  debugSpace+972
+.set gravityFlag,  debugSpace+976
+.set speedFlag,  debugSpace+980
+.set cameraFlag,  debugSpace+984
+.set customGamemodeFlag,  debugSpace+988
+.set BFSkin,  debugSpace+992
+.set FDSkin,  debugSpace+996
+.set PSSkin,  debugSpace+1000
+.set YSSkin,  debugSpace+1004
+.set FODSkin,  debugSpace+1008
+.set DreamlandSkin,  debugSpace+1012
+.set CSSSkin,  debugSpace+1016
+.set swordColoursFlag, debugSpace+1020
 
 #Other
 
@@ -506,7 +510,7 @@ lwz \reg,0x24(rtoc)
 .set brawlsubmenu,0x8065fc1c
 .set minigamesMenu,0x8065fc80
 .set shuffleMenu,0x80660bdc
-.set extrasMenu,0x80660c40
+.set extrasMenu,0x80660e44
 
 ################################################################################
 # Mytoc Offsets
@@ -514,7 +518,7 @@ lwz \reg,0x24(rtoc)
 
 .set spawnVar,-0x7f98
 .set prevMenuFlag,-0x7f94
-.set playerIDs,-0x7e90
+.set SynStop,-0x7e90
 .set firstFileInHeap,-0x7e8c
 .set thirdFileInHeap,-0x7e18
 .set redTeamMate,-0x7e14
