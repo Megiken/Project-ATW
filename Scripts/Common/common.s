@@ -437,49 +437,59 @@ lwz \reg,0x24(rtoc)
 .set IMbanOrder,  debugSpace+684
 .set IMplayerMoney,  debugSpace+688
 .set IMcharCost,  debugSpace+692
-.set SSnumOfChars,  debugSpace+796
-.set synTeams,  debugSpace+800
-.set bombImpact,  debugSpace+804
-.set bombExplosion,  debugSpace+808
-.set gravity,  debugSpace+812
-.set terminalVelocity,  debugSpace+816
-.set KOTHgameType,  debugSpace+820
-.set KOTHmaxScore,  debugSpace+824
-.set KOTHhillTime,  debugSpace+828
-.set mrssType, debugSpace+832
-.set mrssMaxScore, debugSpace+836
-.set saturnSpeed, debugSpace+840
-.set sbType, debugSpace+844
-.set sbMaxScore, debugSpace+848
-.set sbPenalty, debugSpace+852
-.set sbReflections, debugSpace+856
-.set infiniteAmmo, debugSpace+860
-.set oitcReward, debugSpace+864
-.set oitcLedge, debugSpace+868
-.set oitcReflections, debugSpace+872
-.set boxCoordinates, debugSpace+876
-.set shuffleSettings,debugSpace+892
-.set warpDamage, debugSpace+944
-.set killPercent, debugSpace+948
-.set percentStaminaFlag,  debugSpace+952
-.set staminaAmount,  debugSpace+956
-.set sizeFlag,  debugSpace+960
-.set headFlag,  debugSpace+964
-.set bodyFlag,  debugSpace+968
-.set statusFlag,  debugSpace+972
-.set gravityFlag,  debugSpace+976
-.set speedFlag,  debugSpace+980
-.set cameraFlag,  debugSpace+984
-.set customGamemodeFlag,  debugSpace+988
-.set BFSkin,  debugSpace+992
-.set FDSkin,  debugSpace+996
-.set YSSkin,  debugSpace+1000
-.set FODSkin,  debugSpace+1004
-.set DreamlandSkin,  debugSpace+1008
-.set PSSkin,  debugSpace+1012
-.set CSSSkin,  debugSpace+1016
-.set swordColoursFlag, debugSpace+1020
-.set playlistFlag,debugSpace+1024
+.set allowDuplicates,debugSpace+796
+.set showNanaPercent,debugSpace+800
+.set synTeams,  debugSpace+804
+.set airdodge64Flag,debugSpace+808
+.set DI64Flag,debugSpace+812
+.set throws64Flag,debugSpace+816
+.set sideB64Flag,debugSpace+820
+.set brawlUCF,debugSpace+824
+.set tripChance,debugSpace+828
+.set bombImpact,  debugSpace+832
+.set bombExplosion,  debugSpace+836
+.set gravity,  debugSpace+840
+.set terminalVelocity,  debugSpace+844
+.set KOTHgameType,  debugSpace+848
+.set KOTHmaxScore,  debugSpace+852
+.set KOTHhillTime,  debugSpace+856
+.set mrssType, debugSpace+860
+.set mrssMaxScore, debugSpace+864
+.set saturnSpeed, debugSpace+868
+.set sbType, debugSpace+872
+.set sbMaxScore, debugSpace+876
+.set sbPenalty, debugSpace+880
+.set sbReflections, debugSpace+884
+.set infiniteAmmo, debugSpace+888
+.set oitcReward, debugSpace+892
+.set oitcLedge, debugSpace+896
+.set oitcReflections, debugSpace+900
+.set boxCoordinates, debugSpace+904
+.set cyopPlatforms,debugSpace+920
+.set timePerPlatform,debugSpace+924
+.set shuffleSettings,debugSpace+928
+.set warpDamage, debugSpace+980
+.set killPercent, debugSpace+984
+.set percentStaminaFlag,  debugSpace+988
+.set staminaAmount,  debugSpace+992
+.set sizeFlag,  debugSpace+996
+.set headFlag,  debugSpace+1000
+.set bodyFlag,  debugSpace+1004
+.set statusFlag,  debugSpace+1008
+.set gravityFlag,  debugSpace+1012
+.set speedFlag,  debugSpace+1016
+.set cameraFlag,  debugSpace+1020
+.set customGamemodeFlag,  debugSpace+1024
+.set BFSkin,  debugSpace+1028
+.set FDSkin,  debugSpace+1032
+.set YSSkin,  debugSpace+1036
+.set FODSkin,  debugSpace+1040
+.set DreamlandSkin,  debugSpace+1044
+.set PSSkin,  debugSpace+1048
+.set CSSSkin,  debugSpace+1052
+.set gamemodeTextures,debugSpace+1056
+.set swordColoursFlag, debugSpace+1060
+.set playlistFlag,debugSpace+1064
 
 #Other
 
@@ -504,14 +514,14 @@ lwz \reg,0x24(rtoc)
 
 .set ATWsubmenu,0x8065ead4
 .set IMsubmenu,0x8065efc4
-.set squadStrikesubmenu,0x8065f920
-.set tagTeamsubmenu,0x8065fa8c
-.set synergysubmenu,0x8065faf0
-.set smash64submenu,0x8065fbd8
-.set brawlsubmenu,0x8065fc3c
-.set minigamesMenu,0x8065fca0
-.set shuffleMenu,0x80660bfc
-.set extrasMenu,0x80660e64
+.set squadStrikesubmenu,0x8065f9a4
+.set tagTeamsubmenu,0x8065fae8
+.set synergysubmenu,0x8065fdb4
+.set smash64submenu,0x8065ffc0
+.set brawlsubmenu,0x8066020c
+.set minigamesMenu,0x80660418
+.set shuffleMenu,0x806614dc
+.set extrasMenu,0x80661744
 
 ################################################################################
 # Mytoc Offsets

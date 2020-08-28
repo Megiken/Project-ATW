@@ -19,7 +19,8 @@ cmpwi r20,324
 ble END
 GO:
 lwz r20,0x2600(r31)
-cmpwi r20,2
+loadwz r12,cyopPlatforms
+cmpw r20,r12
 bge END
 addi r20,r20,1
 stw r20,0x2600(r31)
@@ -106,7 +107,8 @@ mr r31,r3
 lwz r30,0x2c(r31)
 
 lwz r20,0x10(r30)
-cmpwi r20,900
+loadwz r12,timePerPlatform
+cmpw r20,r12
 beq DELETE
 cmpwi r20,773
 blt NORMAL

@@ -1,8 +1,8 @@
-#To be inserted at 8066027c
+#To be inserted at 806609f4
 
 .long 0
 .long 0
-.long 0x80195ab4
+.long 0x80196448
 .long 0
 .long 0
 .long 0
@@ -18,26 +18,26 @@
 .long 0
 .long 1
 .long 0x8032C948
-.long 0x80195ad0
+.long 0x80196464
 .long 0
 .long 0
-.long 0x80660320
-.long 0
-.long 0
-.long 1
-.long 0x8032C908
-.long 0x80195b28
-.long 0
-.long 0
-.long 0x80660320
+.long 0x80660a98
 .long 0
 .long 0
 .long 1
 .long 0x8032C908
-.long 0x80195bbc
+.long 0x801964bc
 .long 0
 .long 0
-.long 0x806603c4
+.long 0x80660a98
+.long 0
+.long 0
+.long 1
+.long 0x8032C908
+.long 0x80196550
+.long 0
+.long 0
+.long 0x80660b3c
 .long 0
 .long 0
 .long 9

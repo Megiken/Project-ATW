@@ -69,16 +69,18 @@ public class ProjectATW extends subMenu{
 		generalVisuals.menuItems[6] = new menuItem(2,"FOD skin: ",skins,0);
 		generalVisuals.menuItems[7] = new menuItem(2,"Dreamland skin: ",skins,0);
 		generalVisuals.menuItems[8] = new menuItem(2,"Pokemon stadium skin: ",skins,0);
-		generalVisuals.menuItems[9] = new menuItem(0);
-		generalVisuals.menuItems[10] = new menuItem(2,"CSS skin: ",skins,0);
-		generalVisuals.menuItems[11] = new menuItem(0);
+		generalVisuals.menuItems[9] = new menuItem(2,"CSS skin: ",skins,0);
+		generalVisuals.menuItems[10] = new menuItem(0);
+		generalVisuals.menuItems[11] = new menuItem(2,"Custom textures in gamemodes: ",ende,1);
 		generalVisuals.menuItems[12] = new menuItem(2,"Costume Dependent Marth Sword Colours: ",ende,1);
 		generalVisuals.menuItems[13] = new menuItem(0);
 		generalVisuals.menuItems[14] = new menuItem(0,"You can add your own custom stages to your iso and select them");
 		generalVisuals.menuItems[15] = new menuItem(0,"here. Add your files to the disk and give them the extension");
 		generalVisuals.menuItems[16] = new menuItem(0,".00t through .04t. For example, GrOy.00t, MnSlChr.03t etc etc.");	
 		generalVisuals.menuItems[17] = new menuItem(0,"The only exception is pokemon stadium, which needs to be named");
-		generalVisuals.menuItems[18] = new menuItem(0,"GrP0.usd through GrP4.usd.");
+		generalVisuals.menuItems[18] = new menuItem(0,"GrP0.usd through GrP4.usd. Some gamemodes use custom textures,");
+		generalVisuals.menuItems[19] = new menuItem(0,"only turn on custom textures in gamemodes if you aren't replacing");
+		generalVisuals.menuItems[20] = new menuItem(0,"anything important.");
 
 
 		projectATW.menuItems[0] = new menuItem(0,"  /$$$$$$  /$$$$$$$$ /$$      /$$");
@@ -349,34 +351,74 @@ public class ProjectATW extends subMenu{
 
 
 		subMenu ssMain = new subMenu(1,"Squad Strike");
-
-		subMenu ssSettings = new subMenu(1,"Squad strike settings");
 		subMenu ssInfo = new subMenu(1,"How to play squad strike");
 
 		ssMain.menuItems[0] = new menuItem(0,"Squad strike main menu");
 		ssMain.menuItems[1] = new menuItem(0);
 		ssMain.menuItems[2] = new menuItem(1,"8032C920","Play");
-		ssMain.menuItems[3] = ssSettings;
-		ssMain.menuItems[4] = ssInfo;
+		ssMain.menuItems[3] = ssInfo;
 
-		ssSettings.menuItems[0] = new menuItem(0,"Settings");
-		ssSettings.menuItems[1] = new menuItem(0);
-		ssSettings.menuItems[2] = new menuItem(3,"Number of characters: ",4,5,1,3);
 
-		ssInfo.menuItems[0] = new menuItem(0,"How to play");
+		ssInfo.menuItems[0] = new menuItem(0,"How to play squad strike");
 		ssInfo.menuItems[1] = new menuItem(0);
-		ssInfo.menuItems[2] = new menuItem(0,"IDK im tired and i just want this done aaaaaaaaaaaa");
-
+		ssInfo.menuItems[2] = new menuItem(0,"Just like in ultimate, squad strike has you building a roster");
+		ssInfo.menuItems[3] = new menuItem(0,"of multiple characters and playing them all in a single match.");
+		ssInfo.menuItems[4] = new menuItem(0,"To start, hit A on the character select screen to initialize");
+		ssInfo.menuItems[5] = new menuItem(0,"yourself, select a character, then hold L and hit Y to add the");
+		ssInfo.menuItems[6] = new menuItem(0,"character to your roster. If you want to add zelda, hold L and");
+		ssInfo.menuItems[7] = new menuItem(0,"Z then hit Y, sheik will be added by default. You can hit down");
+		ssInfo.menuItems[8] = new menuItem(0,"on the dpad at any time to clear your roster. SFX will let you");
+		ssInfo.menuItems[9] = new menuItem(0,"know when you have succeeded or failed to add a character.");
+		
+		
 		subMenu ttMain = new subMenu(1,"Tag team");
 		subMenu synSettings = new subMenu(1,"Synergy Singles settings");
+		
+		subMenu ttSettings = new subMenu(1,"Tag Team Settings");
+		
+		ttSettings.menuItems[0] = new menuItem(0,"Tag team settings");
+		ttSettings.menuItems[1] = new menuItem(0);
+		ttSettings.menuItems[2] = new menuItem(2,"Allow duplicates: ",ende,1);
+		ttSettings.menuItems[3] = new menuItem(2,"Show nana percent: ",ende,1);
+		
+		subMenu ttInfo = new subMenu(1,"How to play tag team");
+		
+		
+		ttInfo.menuItems[0] = new menuItem(0,"How to play tag team");
+		ttInfo.menuItems[1] = new menuItem(0);
+		ttInfo.menuItems[2] = new menuItem(0,"In this mode, you select two characters and play as one. Hit A");
+		ttInfo.menuItems[3] = new menuItem(0,"to initialize yourself on the character select screen. Start by");
+		ttInfo.menuItems[4] = new menuItem(0,"selecting your secondary character by holding L and hitting Y,");
+		ttInfo.menuItems[5] = new menuItem(0,"then pick another character and do the same for your main. SFX");
+		ttInfo.menuItems[6] = new menuItem(0,"will play to let you know when you have succeeded or failed to");
+		ttInfo.menuItems[7] = new menuItem(0,"select a character. You can hit down on the dpad to reset your");
+		ttInfo.menuItems[8] = new menuItem(0,"character. If you want to play zelda, hold Z and L and hit Y,");
+		ttInfo.menuItems[9] = new menuItem(0,"sheik will be chosen by default, neither sheik or zelda can be");
+		ttInfo.menuItems[10] = new menuItem(0,"selected as your main character. In game hit start to swap");
+		ttInfo.menuItems[11] = new menuItem(0,"which character you control, you will automatically swap when");
+		ttInfo.menuItems[12] = new menuItem(0,"nana dies and on respawn.");
 		
 		ttMain.menuItems[0] = new menuItem(0,"Tag Team");
 		ttMain.menuItems[1] = new menuItem(0);
 		ttMain.menuItems[2] = new menuItem(1,"8032C984","Play");
+		ttMain.menuItems[3] = ttSettings;
+		ttMain.menuItems[4] = ttInfo;
+		
 		
 		synSettings.menuItems[0] = new menuItem(0,"Synergy Singles Settings");
 		synSettings.menuItems[1] = new menuItem(0);
 		synSettings.menuItems[2] = new menuItem(2,"Teams: ",synTeams,0);
+		
+		subMenu synInfo = new subMenu(1,"how to play synergy singles");
+		
+		synInfo.menuItems[0] = new menuItem(0,"How to play synergy singles");
+		synInfo.menuItems[1] = new menuItem(0);
+		synInfo.menuItems[2] = new menuItem(0,"This is a four player mode where two people control one");
+		synInfo.menuItems[3] = new menuItem(0,"character. Teams are chosen in the debug menu settings, and each");
+		synInfo.menuItems[4] = new menuItem(0,"player gets one half of a controller. On the character select");
+		synInfo.menuItems[5] = new menuItem(0,"screen, the player that is controlling the left half can hit down");
+		synInfo.menuItems[6] = new menuItem(0,"on the dpad to swap sides with their teammate. All players can hit");
+		synInfo.menuItems[7] = new menuItem(0,"start.");
 		
 		subMenu synMain = new subMenu(1,"Synergy Singles");
 		
@@ -384,21 +426,57 @@ public class ProjectATW extends subMenu{
 		synMain.menuItems[1] = new menuItem(0);
 		synMain.menuItems[2] = new menuItem(1,"8032C924","Play");
 		synMain.menuItems[3] = synSettings;
-		
-		
+		synMain.menuItems[4] = synInfo;
 
+		subMenu S64Settings = new subMenu(1,"Smash 64 Settings");
+		subMenu S64Info = new subMenu(1,"How to play smash 64");
+		
+		subMenu BrawlSettings = new subMenu(1,"Brawl Settings");
+		subMenu BrawlInfo = new subMenu(1,"How to play brawl");
+		
+		S64Settings.menuItems[0] = new menuItem(0,"Smash 64 Settings");
+		S64Settings.menuItems[1] = new menuItem(0);
+		S64Settings.menuItems[2] = new menuItem(2,"Airdodge: ",ende,1);
+		S64Settings.menuItems[3] = new menuItem(2,"Direction influence: ",ende,1);
+		S64Settings.menuItems[4] = new menuItem(2,"Up and down throws: ",ende,1);
+		S64Settings.menuItems[5] = new menuItem(2,"Side specials: ",ende,1);
+		
+		S64Info.menuItems[0] = new menuItem(0,"How to play smash 64"); 
+		S64Info.menuItems[1] = new menuItem(0); 
+		S64Info.menuItems[2] = new menuItem(0,"This is a physics and gameplay modpack that makes melee very"); 
+		S64Info.menuItems[3] = new menuItem(0,"similar to smash 64. The hitstun multiplier, shieldstun formula,"); 
+		S64Info.menuItems[4] = new menuItem(0,"and Z cancel properties and exactly the same as smash 64, but not"); 
+		S64Info.menuItems[5] = new menuItem(0,"all of the subtle dash and jump mechanics are present as melee"); 
+		S64Info.menuItems[6] = new menuItem(0,"and 64 have different engines."); 
+		
 		subMenu Smash64Main = new subMenu(1,"Smash 64");
 
 		Smash64Main.menuItems[0] = new menuItem(0,"Smash 64 Main Menu");
 		Smash64Main.menuItems[1] = new menuItem(0);
 		Smash64Main.menuItems[2] = new menuItem(1,"8032C93c","Play");
+		Smash64Main.menuItems[3] = S64Settings;
+		Smash64Main.menuItems[4] = S64Info;
+		
+		BrawlSettings.menuItems[0] = new menuItem(0,"Brawl settings");
+		BrawlSettings.menuItems[1] = new menuItem(0);
+		BrawlSettings.menuItems[2] = new menuItem(2,"UCF: ",ende,1);
+		BrawlSettings.menuItems[3] = new menuItem(3,"Percent chance to trip: ",1,100,1);
+		
+		BrawlInfo.menuItems[0] = new menuItem(0,"How to play brawl");
+		BrawlInfo.menuItems[1] = new menuItem(0);
+		BrawlInfo.menuItems[2] = new menuItem(0,"This is a physics and gameplay modpack that makes melee very");
+		BrawlInfo.menuItems[3] = new menuItem(0,"similar to brawl. Many of the mechanics from brawl such as b");
+		BrawlInfo.menuItems[4] = new menuItem(0,"reversing, DACUS, and even tripping have been added, but not");
+		BrawlInfo.menuItems[5] = new menuItem(0,"all of the subtle dash and jump mechanics are present as melee");
+		BrawlInfo.menuItems[6] = new menuItem(0,"and brawl have different engines.");
 
 		subMenu brawlMain = new subMenu(1,"Brawl");
 
 		brawlMain.menuItems[0] = new menuItem(0,"Brawl Main Menu");
 		brawlMain.menuItems[1] = new menuItem(0);
 		brawlMain.menuItems[2] = new menuItem(1,"8032C940","Play");
-
+		brawlMain.menuItems[3] = BrawlSettings;
+		brawlMain.menuItems[4] = BrawlInfo;
 		
 		subMenu shuffleSettings = new subMenu(1,"Shuffle Settings");
 		
@@ -554,11 +632,28 @@ public class ProjectATW extends subMenu{
 		IJZMain.menuItems[3] = IJZSettings;
 		IJZMain.menuItems[4] = IJZInfo;
 		
+		subMenu CYOPSettings = new subMenu(1,"Create your own platforms settings");
+		subMenu CYOPInfo = new subMenu(1,"How to play Create your own platforms");
+		
+		CYOPSettings.menuItems[0] = new menuItem(0,"Create your own platforms settings");
+		CYOPSettings.menuItems[1] = new menuItem(0);
+		CYOPSettings.menuItems[2] = new menuItem(3,"Max number of platforms: ",2,3,1,1);
+		CYOPSettings.menuItems[3] = new menuItem(3,"Time per platform: ",900,1800,15);
+		
+		CYOPInfo.menuItems[0] = new menuItem(0,"how to play Create your own platforms");
+		CYOPInfo.menuItems[1] = new menuItem(0);
+		CYOPInfo.menuItems[2] = new menuItem(0,"There is no stage, to stay alive you need to make the stage. Hit");
+		CYOPInfo.menuItems[3] = new menuItem(0,"start and a platform will be created under your feet, by default, you");
+		CYOPInfo.menuItems[4] = new menuItem(0,"can have 2 platforms active at once, and they go away after 15 seconds.");
+
+		
 		subMenu CYOPMain = new subMenu(1,"Create your own platforms");
 		
 		CYOPMain.menuItems[0] = new menuItem(0,"Create your own platforms main menu");
 		CYOPMain.menuItems[1] = new menuItem(0);
 		CYOPMain.menuItems[2] = new menuItem(1,"8032C968","Play");
+		CYOPMain.menuItems[3] = CYOPSettings;
+		CYOPMain.menuItems[4] = CYOPInfo;
 		
 		subMenu VolleyballMain = new subMenu(1,"Volleyball");
 		
@@ -698,7 +793,7 @@ public class ProjectATW extends subMenu{
 
 		generalItems.menuItems[0] = new menuItem(0,"Items");
 		generalItems.menuItems[1] = new menuItem(0);
-		generalItems.menuItems[2] = new menuItem(2,"Custom item timer: ",ende,0);
+		generalItems.menuItems[2] = new menuItem(2,"Custom item timer: ",ende,1);
 		generalItems.menuItems[3] = new menuItem(3,"Custom Timer: ",800,2000,5);
 		generalItems.menuItems[4] = new menuItem(0);
 		generalItems.menuItems[5] = new menuItem(2,"Use Custom Item Spawn Rate: ", ende,1);

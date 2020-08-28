@@ -23,6 +23,8 @@ cmpwi r20,0
 beq BANFIRST
 li r20,1
 stw r20,IMpickban(rtoc)
+stb r20,IMpickban(rtoc)
+stb r20,IMpickban+1(rtoc)
 b GO
 BANFIRST:
 li r20,0

@@ -90,7 +90,20 @@ public class CodeConverter
             if (temp.length() > 2) {
                 code = temp.substring(0, 2);
             }
-            if (code.equals("C2")) {
+            if(code.equals("06")) {
+            	String thing = temp.substring(9,17);
+            	int other = Integer.parseInt(thing,16);
+            	if(other%8 != 0) {
+            		other = (other/8)+1;
+            	}else {
+            		other = other/8;
+            	}
+            	for(int i = 0;i<other;i++) {
+                    temp = sc.nextLine();
+            	}
+
+            }
+            else if (code.equals("C2")) {
             	String thing = temp.substring(9, 17);
             	int other = Integer.parseInt(thing, 16);
             	for(int i = 0; i < other; i++) {
@@ -130,15 +143,30 @@ public class CodeConverter
                 code = temp.substring(9, 17);
                 writeTo(out, code);
             }
-            if (code.equals("C2")) {
+            else if(code.equals("06")) {
+            	String thing = temp.substring(9,17);
+            	int other = Integer.parseInt(thing,16);
+            	if(other%8 != 0) {
+            		other = (other/8)+1;
+            	}else {
+            		other = other/8;
+            	}
+            	for(int i = 0;i<other;i++) {
+                    temp = sc.nextLine();
+            	}
+
+            }
+            
+        	else if (code.equals("C2")) {
             	String thing = temp.substring(9, 17);
             	int other = Integer.parseInt(thing, 16);
             	for(int i = 0; i < other; i++) {
                     temp = sc.nextLine();
             	}
             }
-            }
+            
         }
+    }
     
     public static void writeC2data( DataOutputStream out,  Scanner sc) throws Exception {
         String temp = "";
@@ -150,7 +178,20 @@ public class CodeConverter
             if (temp.length() > 2) {
                 code = temp.substring(0, 2);
             }
-            if (code.equals("C2")) {
+            if(code.equals("06")) {
+            	String thing = temp.substring(9,17);
+            	int other = Integer.parseInt(thing,16);
+            	if(other%8 != 0) {
+            		other = (other/8)+1;
+            	}else {
+            		other = other/8;
+            	}
+            	for(int i = 0;i<other;i++) {
+                    temp = sc.nextLine();
+            	}
+
+            }
+            else if (code.equals("C2")) {
                 code = "80";
                 code = String.valueOf(code) + temp.substring(2, 8);
                 writeTo(out, code);
@@ -183,7 +224,20 @@ public class CodeConverter
             if (temp.length() > 2) {
                 code = temp.substring(0, 2);
             }
-            if (code.equals("C2")) {
+            if(code.equals("06")) {
+            	String thing = temp.substring(9,17);
+            	int other = Integer.parseInt(thing,16);
+            	if(other%8 != 0) {
+            		other = (other/8)+1;
+            	}else {
+            		other = other/8;
+            	}
+            	for(int i = 0;i<other;i++) {
+                    temp = sc.nextLine();
+            	}
+
+            }
+            else if (code.equals("C2")) {
                 code = temp.substring(9, 17);
                 output = Integer.parseInt(code, 16);
                 bytes += output * 8;
@@ -244,7 +298,14 @@ public class CodeConverter
             if (temp.length() > 2) {
                 code = temp.substring(0, 2);
             }
-            if (code.equals("06")) {
+            if (code.equals("C2")) {
+            	String thing = temp.substring(9, 17);
+            	int other = Integer.parseInt(thing, 16);
+            	for(int i = 0; i < other; i++) {
+                    temp = sc.nextLine();
+            	}
+            }
+            else if (code.equals("06")) {
                 code = "80";
                 code = String.valueOf(code) + temp.substring(2, 8);
                 writeTo(out, code);
@@ -262,13 +323,6 @@ public class CodeConverter
                     code = temp.substring(9, 17);
                     writeTo(out, code);
                 }
-            }
-            if (code.equals("C2")) {
-            	String thing = temp.substring(9, 17);
-            	int other = Integer.parseInt(thing, 16);
-            	for(int i = 0; i < other; i++) {
-                    temp = sc.nextLine();
-            	}
             }
         }
     }

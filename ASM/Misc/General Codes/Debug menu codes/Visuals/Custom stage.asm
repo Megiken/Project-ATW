@@ -3,6 +3,11 @@
 .include "Common/common.s"
 
 mr r14,r3
+loadwz r20,gamemodeTextures
+compareieq r20,0,GONORMAL
+lwz r20,gameID(rtoc)
+compareine r20,0,END
+GONORMAL:
 li r19,0
 compareieq r31,0x24,GOOD
 addi r19,r19,1

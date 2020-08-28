@@ -3,7 +3,8 @@
 .include "Common/common.s"
 
 backup
-
+loadwz r20,customItemFlag
+compareieq r20,1,LOL
 li r3,1000
 branchl r12,randomI
 load r20,itemRates-4
@@ -44,5 +45,6 @@ bdnz LOOP2
 li r5,0
 FOUND:
 mr r3,r5
+LOL:
 restore
 blr

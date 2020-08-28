@@ -2,6 +2,11 @@
 
 .include "Common/common.s"
 
+loadwz r20,gamemodeTextures
+compareieq r20,0,GONORMAL
+lwz r20,gameID(rtoc)
+compareine r20,0,END
+GONORMAL:
 loadwz r20,CSSSkin
 compareieq r20,0,END
 compareieq r20,6,RANDOM

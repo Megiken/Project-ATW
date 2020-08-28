@@ -3,6 +3,15 @@
 .include "Common/common.s"
 
 backupall
+load r21,0x804ddc28
+loadwz r20,showNanaPercent
+compareieq r20,1,GONORMAL
+lis r20,0x40c0
+b LOLNORMAL
+GONORMAL:
+load r20,0x404ccccd
+LOLNORMAL:
+stw r20,0(r21)
 load r21,0x8043208f
 branchl r12,IMgetFirst
 mflr r20

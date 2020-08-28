@@ -72,7 +72,7 @@
 .long 0x00000000 # .setMute city cars: , debugSpace+280
 .long 0x00000000 # .setKongo Jungle Barrel: , debugSpace+284
 .long 0x00000000 # .setKongo Jungle 64 Barrel: , debugSpace+288
-.long 0x00000000 # .setCustom item timer: , debugSpace+292
+.long 0x00000001 # .setCustom item timer: , debugSpace+292
 .long 0x00000320 # .setCustom Timer: , debugSpace+296
 .long 0x00000001 # .setUse Custom Item Spawn Rate: , debugSpace+300
 .long 0x3f800000 # .setBob-omb, debugSpace+304
@@ -198,61 +198,71 @@
 .long 0x0000007d # .setRoy cost: , debugSpace+784
 .long 0x0000007d # .setPichu cost: , debugSpace+788
 .long 0x000000af # .setGanondorf cost: , debugSpace+792
-.long 0x00000004 # .setNumber of characters: , debugSpace+796
-.long 0x00000000 # .setTeams: , debugSpace+800
-.long 0x0000000a # .setBomb Impact Damage: , debugSpace+804
-.long 0x0000000a # .setBomb Explosion Damage: , debugSpace+808
-.long 0x0000000b # .setGravity/100: , debugSpace+812
-.long 0x00000073 # .setTerminal Velocity/100: , debugSpace+816
-.long 0x00000000 # .setGame Type: , debugSpace+820
-.long 0x000009c4 # .setMax Score: , debugSpace+824
-.long 0x0000001e # .setTime per Hill: , debugSpace+828
-.long 0x00000000 # .setGame type: , debugSpace+832
-.long 0x00000007 # .setMax score: , debugSpace+836
-.long 0x3f5eb852 # .setMr saturn speed constant: , debugSpace+840
-.long 0x00000001 # .setGame type: , debugSpace+844
-.long 0x00000032 # .setMax score: , debugSpace+848
-.long 0x00000004 # .setPenalty per death: , debugSpace+852
-.long 0x00000001 # .setReflections: , debugSpace+856
-.long 0x00000001 # .setInfinite ammo: , debugSpace+860
-.long 0x00000001 # .setKill reward: , debugSpace+864
-.long 0x00000000 # .setLedge grabs: , debugSpace+868
-.long 0x00000000 # .setReflections: , debugSpace+872
-.long 0xffffffffc2a00000 # .setbox x1:, debugSpace+876
-.long 0x42a00000 # .setbox x2:, debugSpace+880
-.long 0x42a00000 # .setbox y1:, debugSpace+884
-.long 0xffffffffc1c80000 # .setbox y2:, debugSpace+888
-.long 0x00000001 # .setSquad Strike: , debugSpace+892
-.long 0x00000000 # .setTag team: , debugSpace+896
-.long 0x00000000 # .setSmash 64: , debugSpace+900
-.long 0x00000000 # .setBrawl: , debugSpace+904
-.long 0x00000000 # .setDuelist Pro: , debugSpace+908
-.long 0x00000000 # .setKing of the hill: , debugSpace+912
-.long 0x00000000 # .setSnowbrawl: , debugSpace+916
-.long 0x00000000 # .setOne in the chamber: , debugSpace+920
-.long 0x00000000 # .setInfinite Jump Zone: , debugSpace+924
-.long 0x00000000 # .setCreate your own platforms: , debugSpace+928
-.long 0x00000000 # .setMr saturn soccer: , debugSpace+932
-.long 0x00000001 # .setVolleyball: , debugSpace+936
-.long 0x00000001 # .setBasketball: , debugSpace+940
-.long 0x00000014 # .setDamage per warp, debugSpace+944
-.long 0x000003e8 # .setKill percent, debugSpace+948
-.long 0x00000000 # .setPercent/Stamina, debugSpace+952
-.long 0x00000096 # .setStamina Amount, debugSpace+956
-.long 0x00000000 # .setSize: , debugSpace+960
-.long 0x00000000 # .setHead: , debugSpace+964
-.long 0x00000000 # .setBody: , debugSpace+968
-.long 0x00000000 # .setStatus: , debugSpace+972
-.long 0x00000000 # .setGravity: , debugSpace+976
-.long 0x00000000 # .setSpeed: , debugSpace+980
-.long 0x00000000 # .setCamera: , debugSpace+984
-.long 0x00000000 # .setCustom gamemodes: , debugSpace+988
-.long 0x00000000 # .setBattlefield skin: , debugSpace+992
-.long 0x00000000 # .setFD skin: , debugSpace+996
-.long 0x00000000 # .setYoshis story skin: , debugSpace+1000
-.long 0x00000000 # .setFOD skin: , debugSpace+1004
-.long 0x00000000 # .setDreamland skin: , debugSpace+1008
-.long 0x00000000 # .setPokemon stadium skin: , debugSpace+1012
-.long 0x00000000 # .setCSS skin: , debugSpace+1016
-.long 0x00000001 # .setCostume Dependent Marth Sword Colours: , debugSpace+1020
-.long 0x00000001 # .setCustom Playlist: , debugSpace+1024
+.long 0x00000001 # .setAllow duplicates: , debugSpace+796
+.long 0x00000001 # .setShow nana percent: , debugSpace+800
+.long 0x00000000 # .setTeams: , debugSpace+804
+.long 0x00000001 # .setAirdodge: , debugSpace+808
+.long 0x00000001 # .setDirection influence: , debugSpace+812
+.long 0x00000001 # .setUp and down throws: , debugSpace+816
+.long 0x00000001 # .setSide specials: , debugSpace+820
+.long 0x00000001 # .setUCF: , debugSpace+824
+.long 0x00000001 # .setPercent chance to trip: , debugSpace+828
+.long 0x0000000a # .setBomb Impact Damage: , debugSpace+832
+.long 0x0000000a # .setBomb Explosion Damage: , debugSpace+836
+.long 0x0000000b # .setGravity/100: , debugSpace+840
+.long 0x00000073 # .setTerminal Velocity/100: , debugSpace+844
+.long 0x00000000 # .setGame Type: , debugSpace+848
+.long 0x000009c4 # .setMax Score: , debugSpace+852
+.long 0x0000001e # .setTime per Hill: , debugSpace+856
+.long 0x00000000 # .setGame type: , debugSpace+860
+.long 0x00000007 # .setMax score: , debugSpace+864
+.long 0x3f5eb852 # .setMr saturn speed constant: , debugSpace+868
+.long 0x00000001 # .setGame type: , debugSpace+872
+.long 0x00000032 # .setMax score: , debugSpace+876
+.long 0x00000004 # .setPenalty per death: , debugSpace+880
+.long 0x00000001 # .setReflections: , debugSpace+884
+.long 0x00000001 # .setInfinite ammo: , debugSpace+888
+.long 0x00000001 # .setKill reward: , debugSpace+892
+.long 0x00000000 # .setLedge grabs: , debugSpace+896
+.long 0x00000000 # .setReflections: , debugSpace+900
+.long 0xffffffffc2a00000 # .setbox x1:, debugSpace+904
+.long 0x42a00000 # .setbox x2:, debugSpace+908
+.long 0x42a00000 # .setbox y1:, debugSpace+912
+.long 0xffffffffc1c80000 # .setbox y2:, debugSpace+916
+.long 0x00000002 # .setMax number of platforms: , debugSpace+920
+.long 0x00000384 # .setTime per platform: , debugSpace+924
+.long 0x00000001 # .setSquad Strike: , debugSpace+928
+.long 0x00000000 # .setTag team: , debugSpace+932
+.long 0x00000000 # .setSmash 64: , debugSpace+936
+.long 0x00000000 # .setBrawl: , debugSpace+940
+.long 0x00000000 # .setDuelist Pro: , debugSpace+944
+.long 0x00000000 # .setKing of the hill: , debugSpace+948
+.long 0x00000000 # .setSnowbrawl: , debugSpace+952
+.long 0x00000000 # .setOne in the chamber: , debugSpace+956
+.long 0x00000000 # .setInfinite Jump Zone: , debugSpace+960
+.long 0x00000000 # .setCreate your own platforms: , debugSpace+964
+.long 0x00000000 # .setMr saturn soccer: , debugSpace+968
+.long 0x00000001 # .setVolleyball: , debugSpace+972
+.long 0x00000001 # .setBasketball: , debugSpace+976
+.long 0x00000014 # .setDamage per warp, debugSpace+980
+.long 0x000003e8 # .setKill percent, debugSpace+984
+.long 0x00000000 # .setPercent/Stamina, debugSpace+988
+.long 0x00000096 # .setStamina Amount, debugSpace+992
+.long 0x00000000 # .setSize: , debugSpace+996
+.long 0x00000000 # .setHead: , debugSpace+1000
+.long 0x00000000 # .setBody: , debugSpace+1004
+.long 0x00000000 # .setStatus: , debugSpace+1008
+.long 0x00000000 # .setGravity: , debugSpace+1012
+.long 0x00000000 # .setSpeed: , debugSpace+1016
+.long 0x00000000 # .setCamera: , debugSpace+1020
+.long 0x00000000 # .setCustom gamemodes: , debugSpace+1024
+.long 0x00000000 # .setBattlefield skin: , debugSpace+1028
+.long 0x00000000 # .setFD skin: , debugSpace+1032
+.long 0x00000000 # .setYoshis story skin: , debugSpace+1036
+.long 0x00000000 # .setFOD skin: , debugSpace+1040
+.long 0x00000000 # .setDreamland skin: , debugSpace+1044
+.long 0x00000000 # .setPokemon stadium skin: , debugSpace+1048
+.long 0x00000000 # .setCSS skin: , debugSpace+1052
+.long 0x00000001 # .setCustom textures in gamemodes: , debugSpace+1056
+.long 0x00000001 # .setCostume Dependent Marth Sword Colours: , debugSpace+1060
+.long 0x00000001 # .setCustom Playlist: , debugSpace+1064

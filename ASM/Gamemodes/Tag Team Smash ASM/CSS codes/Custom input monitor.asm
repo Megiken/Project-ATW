@@ -47,6 +47,16 @@ lbzx r21,r22,r20
 cmpwi r21,0x1a
 bge CHECKA
 
+loadwz r15,allowDuplicates
+compareieq r15,0,FIRSTONE
+
+lhz r15,6(r3)
+compareieq r15,0,FIRSTONE
+lbz r15,8(r3)
+compareeq r15,r21,CHECKA
+
+FIRSTONE:
+
 load r15,0x8043208f
 lbz r16,3(r3)
 mulli r16,r16,8
