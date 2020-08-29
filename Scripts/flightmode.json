@@ -1,0 +1,31 @@
+{
+  "settings": {
+    "areIncludesRelativeFromFile": true
+  },
+  "outputFiles": [
+    {
+      "file": "../Output/flightmode.txt",
+      "header": [
+        "# GALJ01 - Super Smash Bros. Melee NTSC 1.02",
+        "",
+        "[Gecko]"
+      ]
+    }
+  ],
+  "codes": [
+    {
+      "name": "Flight Mode",
+      "authors": [
+        "Big Money"
+      ],
+      "build": [
+        {
+          "type": "injectFolder",
+          "sourceFolder": "..\\ASM\\Extras\\Flight Mode ASM\\",
+          "isRecursive": true
+        }
+
+      ]
+    }
+  ]
+}

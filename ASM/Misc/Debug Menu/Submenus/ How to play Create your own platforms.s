@@ -34,7 +34,15 @@
 .long 0
 .long 0
 .long 0
-.long 0x80196b00
+.long 0x80196afc
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0
+.long 0x80196b3c
 .long 0
 .long 0
 .long 0

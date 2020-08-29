@@ -353,6 +353,7 @@ lwz \reg,0x24(rtoc)
 .set swapNana,functSpace+0x140
 .set shineBrosInit,functSpace+0x144
 .set shuffleInit,functSpace+0x148
+.set flightModeInit,functSpace+0x14c
 
 
 .set prim.new,0x804dd84c
@@ -468,28 +469,30 @@ lwz \reg,0x24(rtoc)
 .set cyopPlatforms,debugSpace+920
 .set timePerPlatform,debugSpace+924
 .set shuffleSettings,debugSpace+928
-.set warpDamage, debugSpace+980
-.set killPercent, debugSpace+984
-.set percentStaminaFlag,  debugSpace+988
-.set staminaAmount,  debugSpace+992
-.set sizeFlag,  debugSpace+996
-.set headFlag,  debugSpace+1000
-.set bodyFlag,  debugSpace+1004
-.set statusFlag,  debugSpace+1008
-.set gravityFlag,  debugSpace+1012
-.set speedFlag,  debugSpace+1016
-.set cameraFlag,  debugSpace+1020
-.set customGamemodeFlag,  debugSpace+1024
-.set BFSkin,  debugSpace+1028
-.set FDSkin,  debugSpace+1032
-.set YSSkin,  debugSpace+1036
-.set FODSkin,  debugSpace+1040
-.set DreamlandSkin,  debugSpace+1044
-.set PSSkin,  debugSpace+1048
-.set CSSSkin,  debugSpace+1052
-.set gamemodeTextures,debugSpace+1056
-.set swordColoursFlag, debugSpace+1060
-.set playlistFlag,debugSpace+1064
+.set tauntPoints,debugSpace+980
+.set warpDamage, debugSpace+984
+.set killPercent, debugSpace+988
+.set flightModeFloats,debugSpace+992
+.set percentStaminaFlag,  debugSpace+1008
+.set staminaAmount,  debugSpace+1012
+.set sizeFlag,  debugSpace+1016
+.set headFlag,  debugSpace+1020
+.set bodyFlag,  debugSpace+1024
+.set statusFlag,  debugSpace+1028
+.set gravityFlag,  debugSpace+1032
+.set speedFlag,  debugSpace+1036
+.set cameraFlag,  debugSpace+1040
+.set customGamemodeFlag,  debugSpace+1044
+.set BFSkin,  debugSpace+1048
+.set FDSkin,  debugSpace+1052
+.set YSSkin,  debugSpace+1056
+.set FODSkin,  debugSpace+1060
+.set DreamlandSkin,  debugSpace+1064
+.set PSSkin,  debugSpace+1068
+.set CSSSkin,  debugSpace+1072
+.set gamemodeTextures,debugSpace+1076
+.set swordColoursFlag, debugSpace+1080
+.set playlistFlag,debugSpace+1084
 
 #Other
 
@@ -520,8 +523,8 @@ lwz \reg,0x24(rtoc)
 .set smash64submenu,0x8065ffc0
 .set brawlsubmenu,0x8066020c
 .set minigamesMenu,0x80660418
-.set shuffleMenu,0x806614dc
-.set extrasMenu,0x80661744
+.set shuffleMenu,0x806614fc
+.set extrasMenu,0x80661848
 
 ################################################################################
 # Mytoc Offsets

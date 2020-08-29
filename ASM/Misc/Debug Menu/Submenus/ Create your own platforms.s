@@ -34,7 +34,7 @@
 .long 0
 .long 1
 .long 0x8032C908
-.long 0x80196b48
+.long 0x80196b4c
 .long 0
 .long 0
 .long 0x8066130c

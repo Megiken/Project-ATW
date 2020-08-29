@@ -496,9 +496,14 @@ public class ProjectATW extends subMenu{
 		shuffleSettings.menuItems[13] = new menuItem(2,"Volleyball: ",onoff,1);
 		shuffleSettings.menuItems[14] = new menuItem(2,"Basketball: ",onoff,1);
 		
+		subMenu shuffleInfo = new subMenu(1,"How to play shuffle");
 		
-		
-		
+		shuffleInfo.menuItems[0] = new menuItem(0,"how to play shuffle");
+		shuffleInfo.menuItems[1] = new menuItem(0);
+		shuffleInfo.menuItems[2] = new menuItem(0,"In shuffle mode, you will get to play a new minigame every time");
+		shuffleInfo.menuItems[3] = new menuItem(0,"you enter the character select screen. Select which minigames");
+		shuffleInfo.menuItems[4] = new menuItem(0,"You want to play in the settings, you cannot get the same");
+		shuffleInfo.menuItems[5] = new menuItem(0,"minigame two times in a row.");
 		
 
 		subMenu shuffleMain = new subMenu(1,"Shuffle");
@@ -507,6 +512,7 @@ public class ProjectATW extends subMenu{
 		shuffleMain.menuItems[1] = new menuItem(0);
 		shuffleMain.menuItems[2] = new menuItem(1,"8032C990","Play");
 		shuffleMain.menuItems[3] = shuffleSettings;
+		shuffleMain.menuItems[4] = shuffleInfo;
 
 		subMenu BBWSettings = new subMenu(1,"Bretts blastzone warp Settings");
 
@@ -643,9 +649,9 @@ public class ProjectATW extends subMenu{
 		CYOPInfo.menuItems[0] = new menuItem(0,"how to play Create your own platforms");
 		CYOPInfo.menuItems[1] = new menuItem(0);
 		CYOPInfo.menuItems[2] = new menuItem(0,"There is no stage, to stay alive you need to make the stage. Hit");
-		CYOPInfo.menuItems[3] = new menuItem(0,"start and a platform will be created under your feet, by default, you");
-		CYOPInfo.menuItems[4] = new menuItem(0,"can have 2 platforms active at once, and they go away after 15 seconds.");
-
+		CYOPInfo.menuItems[3] = new menuItem(0,"start and a platform will be created under your feet, by default,");
+		CYOPInfo.menuItems[4] = new menuItem(0,"you can have 2 platforms active at once, and they go away after");
+		CYOPInfo.menuItems[5] = new menuItem(0," 15 seconds.");
 		
 		subMenu CYOPMain = new subMenu(1,"Create your own platforms");
 		
@@ -674,29 +680,105 @@ public class ProjectATW extends subMenu{
 		CTFMain.menuItems[1] = new menuItem(0);
 		CTFMain.menuItems[2] = new menuItem(1,"8032C980","Play");
 		
+		subMenu chessInfo = new subMenu(1,"How to play chess melee");
+		subMenu dualInfo = new subMenu(1,"How to play dual 1v1");
+		subMenu tauntInfo = new subMenu(1,"How to play taunt battle");
+		subMenu shineInfo = new subMenu(1,"How to play shine bros");
+		
+		chessInfo.menuItems[0] = new menuItem(0,"How to play chess melee");
+		chessInfo.menuItems[1] = new menuItem(0);
+		chessInfo.menuItems[2] = new menuItem(0,"Chess melee is a gamemode originally created by achilles and");
+		chessInfo.menuItems[3] = new menuItem(0,"recreated by unclepunch. Its just like regular melee except when");
+		chessInfo.menuItems[4] = new menuItem(0,"someone loses a stock, all players respawn with 0 percent.");
+		
+		CYOPInfo.menuItems[2] = new menuItem(0," There is no stage, to stay alive you need to make the stage. Hit");
+		
+		shineInfo.menuItems[0] = new menuItem(0,"How to play shine bros");
+		shineInfo.menuItems[1] = new menuItem(0);
+		shineInfo.menuItems[2] = new menuItem(0,"Super shine bros is a gamemode originally created by unclepunch.");
+		shineInfo.menuItems[3] = new menuItem(0,"In this mode, every characters down special gets swapped out for");
+		shineInfo.menuItems[4] = new menuItem(0,"either fox or falcos shine. You can hit left and right on the");
+		shineInfo.menuItems[5] = new menuItem(0,"dpad when on the character select screen to choose which shine");
+		shineInfo.menuItems[6] = new menuItem(0,"you want your character to have.");
+		
+		
+		subMenu tauntSettings = new subMenu(1,"taunt battle settings");
+		
+		tauntSettings.menuItems[0] = new menuItem(0,"taunt battle settings");
+		tauntSettings.menuItems[1] = new menuItem(0);
+		tauntSettings.menuItems[2] = new menuItem(3,"Points to win: ",5,100,1);
+		
+		
+		tauntInfo.menuItems[0] = new menuItem(0,"How to play taunt battle");
+		tauntInfo.menuItems[1] = new menuItem(0);
+		tauntInfo.menuItems[2] = new menuItem(0,"Taunt battle is a minigame originally created by dan salvato.");
+		tauntInfo.menuItems[3] = new menuItem(0,"You can only play as mario, and you get points for taunting.");
+		tauntInfo.menuItems[4] = new menuItem(0,"If you successfully finish a taunt, you will get a point, but");
+		tauntInfo.menuItems[5] = new menuItem(0,"players on the other team can cape you to steal the point.");
+		tauntInfo.menuItems[6] = new menuItem(0,"colour overlays will let you know who is going to recieve the");
+		tauntInfo.menuItems[7] = new menuItem(0,"point. By default, the first team to five points wins.");
+		
+		dualInfo.menuItems[0] = new menuItem(0,"How to play dual 1v1");
+		dualInfo.menuItems[1] = new menuItem(0);
+		dualInfo.menuItems[2] = new menuItem(0,"Dual 1v1 is a gamemode originally created by achilles and zauron");
+		dualInfo.menuItems[3] = new menuItem(0,"where two singles matches can be played at the same time. You");
+		dualInfo.menuItems[4] = new menuItem(0,"can only interact with players who are on the same team as you.");
+		
+		
 		subMenu ChessMain = new subMenu(1,"Chess Melee");
 		
 		ChessMain.menuItems[0] = new menuItem(0,"Chess melee main menu");
 		ChessMain.menuItems[1] = new menuItem(0);
 		ChessMain.menuItems[2] = new menuItem(1,"8032C96c","Play");
+		ChessMain.menuItems[3] = chessInfo;
 		
 		subMenu DualMain = new subMenu(1,"Dual 1v1");
 		
 		DualMain.menuItems[0] = new menuItem(0,"Dual 1v1 main menu");
 		DualMain.menuItems[1] = new menuItem(0);
 		DualMain.menuItems[2] = new menuItem(1,"8032C970","Play");
+		DualMain.menuItems[3] = dualInfo;
 		
 		subMenu TauntMain = new subMenu(1,"Taunt battle");
 		
 		TauntMain.menuItems[0] = new menuItem(0,"Taunt Battle main menu");
 		TauntMain.menuItems[1] = new menuItem(0);
 		TauntMain.menuItems[2] = new menuItem(1,"8032C974","Play");
+		TauntMain.menuItems[3] = tauntSettings;
+		TauntMain.menuItems[4] = tauntInfo;
 		
 		subMenu ShineMain = new subMenu(1,"Super Shine Bros");
 		
 		ShineMain.menuItems[0] = new menuItem(0,"Super shine bros main menu");
 		ShineMain.menuItems[1] = new menuItem(0);
 		ShineMain.menuItems[2] = new menuItem(1,"8032C98c","Play");
+		ShineMain.menuItems[3] = shineInfo;
+		
+		subMenu flightSettings = new subMenu(1,"Flight mode settings");
+		subMenu flightInfo = new subMenu(1,"how to play flight mode");
+		
+		flightSettings.menuItems[0] = new menuItem(0,"Flight mode settings");
+		flightSettings.menuItems[1] = new menuItem(0);
+		flightSettings.menuItems[2] = new menuItem(8,"Max speed H: ",2,5,0.05,0);
+		flightSettings.menuItems[3] = new menuItem(8,"Max speed V: ",2,5,0.05,0);
+		flightSettings.menuItems[4] = new menuItem(8,"Acceleration H: ",1,5,0.05,0);
+		flightSettings.menuItems[5] = new menuItem(8,"Acceleration V: ",1,5,0.05,0);
+		
+		flightInfo.menuItems[0] = new menuItem(0,"how to play flight mode");
+		flightInfo.menuItems[1] = new menuItem(0);
+		flightInfo.menuItems[2] = new menuItem(0,"Flight mode is a gamemode originally created by the PM dev team.");
+		flightInfo.menuItems[3] = new menuItem(0,"In flight mode, your horizontal and vertical speed and acceleration");
+		flightInfo.menuItems[4] = new menuItem(0,"are increased to crazy numbers, allowing you to essentially fly");
+		flightInfo.menuItems[5] = new menuItem(0,"around the stage.");
+		
+		subMenu flightMain = new subMenu(1,"Flight mode");
+		
+		flightMain.menuItems[0] = new menuItem(0,"Flight mode");
+		flightMain.menuItems[1] = new menuItem(0);
+		flightMain.menuItems[2] = new menuItem(1,"8032C994","Play");
+		flightMain.menuItems[3] = flightSettings;
+		flightMain.menuItems[4] = flightInfo;
+		
 		
 		subMenu minigamesMain = new subMenu(1,"Minigames");
 
@@ -722,6 +804,7 @@ public class ProjectATW extends subMenu{
 		extrasMain.menuItems[4] = TauntMain;
 		extrasMain.menuItems[5] = BBWMain;
 		extrasMain.menuItems[6] = ShineMain;
+		extrasMain.menuItems[7] = flightMain;
 		
 		generalGamemodes.menuItems[0] = new menuItem(0,"Gamemodes");
 		generalGamemodes.menuItems[1] = new menuItem(0);

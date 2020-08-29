@@ -1,8 +1,9 @@
 #To be inserted at 8016C348
 
-lis r30, 0x8045
-ori r30, r30, 0xBF14
-lbz r0, 0(r30)
+.include "Common/common.s"
+
+loadwz r20,tauntPoints
+mr r0,r20
 lis r31, 0x803C
 ori r31, r31, 0x6630
 lwz r29, 0(r31)

@@ -28,10 +28,10 @@ C207DDC8 00000004 #../ASM/Extras/Dual 1v1 ASM/Code/Nudging.asm
 042707CC 60000000 #../ASM/Extras/Dual 1v1 ASM/Code/Self damage 2.asm
 040792EC 60000000 #../ASM/Extras/Dual 1v1 ASM/Code/Self damage 3.asm
 040792D4 418207B4 #../ASM/Extras/Dual 1v1 ASM/Code/Skip neutral attacks.asm
-04078D50 00000040 #../ASM/Extras/Dual 1v1 ASM/Code/Swap attacks.asm
-04078AC0 00000040 #../ASM/Extras/Dual 1v1 ASM/Code/Swap grabs.asm
-042707DC 00000040 #../ASM/Extras/Dual 1v1 ASM/Code/Swap projectile v projectile.asm
-040792FC 00000040 #../ASM/Extras/Dual 1v1 ASM/Code/Swap projectiles.asm
+04078D50 408204E8 #../ASM/Extras/Dual 1v1 ASM/Code/Swap attacks.asm
+04078AC0 4082018C #../ASM/Extras/Dual 1v1 ASM/Code/Swap grabs.asm
+042707DC 408204D4 #../ASM/Extras/Dual 1v1 ASM/Code/Swap projectile v projectile.asm
+040792FC 4082078C #../ASM/Extras/Dual 1v1 ASM/Code/Swap projectiles.asm
 C216C094 00000004 #../ASM/Extras/Dual 1v1 ASM/Code/Switch mode.asm
 7C1FE850 2C000003
 40800010 38000001
