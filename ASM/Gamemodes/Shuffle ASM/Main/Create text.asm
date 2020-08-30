@@ -8,6 +8,8 @@
 
 cmpwi r29,1
 bge TRUEEND
+lwz r22,shuffleID(rtoc)
+compareieq r22,0x69,TRUEEND
 backup
 bl TEXTPROPERTIES
 mflr textProperties

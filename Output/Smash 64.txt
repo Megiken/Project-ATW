@@ -2,6 +2,10 @@
 
 [Gecko]
 $Smash 64 [Big Money]
+C2073008 00000003 #../ASM/Gamemodes/64 ASM/Mechanics/Disable charge.asm
+80A40008 38A50008
+90A40008 4E800020
+60000000 00000000
 C209F15C 0000000D #../ASM/Gamemodes/64 ASM/Mechanics/Disable jab reset.asm
 4800004D 7D8802A6
 800C0000 7C001120

@@ -51,7 +51,7 @@ THERE:
   cmpwi r3, 0x0
   bne- loc_0xFC
   lwz r3,0x10(r5)
-  compareile r3,0x13,loc_0xFC
+  compareile r3,AS_RebirthWait,loc_0xFC
 lbz r3,0xc(r5)
 branchl r12,getPlayerStatic
 lbz r4,0x8e(r3)

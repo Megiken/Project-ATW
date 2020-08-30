@@ -6,7 +6,7 @@ backupall
 li r22,0
 LOOP:
 addi r22,r22,1
-compareieq r22,10000,END
+compareieq r22,10000,ENDLOL
 load r20,shuffleSettings
 li r3,13
 branchl r12,randomI
@@ -63,8 +63,11 @@ compareine r21,4,LOOP2
 load r20,doublesByte
 li r21,0
 stb r21,0(r20)
-
-
+stw r21,IMcount(rtoc)
+b END
+ENDLOL:
+li r20,0x69
+stw r20,shuffleID(rtoc)
 
 
 
