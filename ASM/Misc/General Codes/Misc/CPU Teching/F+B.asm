@@ -7,6 +7,8 @@ lbz r3,0xc(r31)
 branchl r12,getPlayerStatic
 lwz r4,8(r3)
 compareine r4,1,END
+loadbz r4,0x80479d30
+compareine r4,2,END
 li r3,100
 branchl r12,randomI
 compareigt r3,25,NEXT

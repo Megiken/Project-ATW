@@ -101,6 +101,14 @@ C23641D4 00000008 #../ASM/Minigames/Duelist Pro ASM/CSS Codes/Disable CSS Puck A
 0426074C 60000000 #../ASM/Minigames/Duelist Pro ASM/CSS Codes/Disable Moving Hands.asm
 043F09CC 021B1B2C #../ASM/Minigames/Duelist Pro ASM/CSS Codes/GrTLg on SSS.asm
 0425FB74 7DE37B78 #../ASM/Minigames/Duelist Pro ASM/CSS Codes/Load Custom Char.asm
+C20C23D4 00000003 #../ASM/Minigames/Duelist Pro ASM/Give Jumps Back/1.asm
+7FE3FB78 829F002C
+3AA00001 9AB41968
+60000000 00000000
+C20C1D78 00000003 #../ASM/Minigames/Duelist Pro ASM/Give Jumps Back/2.asm
+7FC3F378 829D002C
+3AA00001 9AB41968
+60000000 00000000
 043F115C 6C617400 #../ASM/Minigames/Duelist Pro ASM/New Files/Custom File.asm
 043E8E44 4C672E72 #../ASM/Minigames/Duelist Pro ASM/New Files/New GrTLg.asm
 043D1244 2E726174 #../ASM/Minigames/Duelist Pro ASM/New Files/New PlCl.asm
@@ -112,7 +120,6 @@ C23641D4 00000008 #../ASM/Minigames/Duelist Pro ASM/CSS Codes/Disable CSS Puck A
 0445BF18 08010100 #../ASM/Minigames/Duelist Pro ASM/Settings/6.asm
 041C42AC 4E800020 #../ASM/Minigames/Duelist Pro ASM/Stage Codes/Disable Flippers.asm
 041C4210 4E800020 #../ASM/Minigames/Duelist Pro ASM/Stage Codes/Disable targets.asm
-040EBBE8 38600001 #../ASM/Minigames/Duelist Pro ASM/Stage Codes/Give jump back.asm
 C2221C74 00000004 #../ASM/Minigames/Duelist Pro ASM/Stage Codes/Load camera and blastzones.asm
 3E808049 6294E6C8
 3EA0C2E0 92B4000C

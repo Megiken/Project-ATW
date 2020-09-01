@@ -3640,6 +3640,7 @@ C20D14E4 00000015 #../ASM/Gamemodes/ATW ASM/Custom Items/Super Mushroom Pickup.a
 800100B4 382100B0
 7C0803A6 4E800020
 60000000 00000000
+040851D8 7C010800 #../ASM/Gamemodes/ATW ASM/Custom Items/Bunny hood/Disable dumb jumps.asm
 040CBBF0 60000000 #../ASM/Gamemodes/ATW ASM/Custom Items/Bunny hood/Jumps work properly.asm
 040CC264 60000000 #../ASM/Gamemodes/ATW ASM/Custom Items/Bunny hood/Mewtwo jump.asm
 040CBD64 60000000 #../ASM/Gamemodes/ATW ASM/Custom Items/Bunny hood/Ness jump.asm

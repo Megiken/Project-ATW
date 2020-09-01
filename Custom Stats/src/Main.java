@@ -16,7 +16,7 @@ public class Main {
 	public static String jamesTag = "4D445100";
 	public static String zachbtag = "444B0000";
 	public static String noottag = "4E4F4F54";
-	public static String megitag = "47454d49";
+	public static String megitag = "47454D49";
 	
 	public static byte[] search = {0x37,0x69,0x42,0x00};
 
@@ -33,13 +33,15 @@ public class Main {
 	public static ATWPlayer rayvax = new ATWPlayer("Rayvax");
 	public static ATWPlayer elliot = new ATWPlayer("Elliot");
 	public static ATWPlayer james = new ATWPlayer("James");
-	public static ATWPlayer zachb = new ATWPlayer("Zacb B");
+	public static ATWPlayer zachb = new ATWPlayer("Zach B");
 	public static ATWPlayer noot = new ATWPlayer("NOOT");
 	public static ATWPlayer megi = new ATWPlayer("Bryce");
 	
 	public static int currentGame = 0;
 
-	public static int[] stageData = new int[29];
+	public static int currentStage = 0;
+	public static int pastStage = 0;
+	
 
 	public static ATWPlayer[] ATWPlayers = {unknown,thomas,brett,bruno,braeden,rayvax,elliot,james,zachb,noot,megi};
 
@@ -51,7 +53,7 @@ public class Main {
 
 		File totalDir = new File("C:\\Users\\Thomas\\Desktop\\file backups");
 		
-		parseDirectory(currentDir);
+		parseDirectory(totalDir);
 
 
 
@@ -69,6 +71,7 @@ public class Main {
 		}
 		printStats();
 		printCharStats();
+		printStageStats();
 
 	}
 
@@ -111,6 +114,9 @@ public class Main {
 	    int numOfPlayers = Integer.parseInt(String.format("%02X", raf.readByte()),16);
 	    int timeoutBool = Integer.parseInt(String.format("%02X", raf.readByte()),16);
 	    int doublesBool = Integer.parseInt(String.format("%02X", raf.readByte()),16);
+	    
+	    currentStage = stageID;
+	    
 	    if(doublesBool != 255) {
 	    	doublesBool = 1;
 	    }
@@ -174,7 +180,7 @@ public class Main {
 			raf.skipBytes(35);
 		}
 
-
+	    pastStage = currentStage;
 		prevGameType = gameType;
 
 
@@ -188,9 +194,11 @@ public class Main {
 			player.gamesPlayed++;
 			player.gameStats[prevGameType][0]++;
 			player.charStats[player.pastCharacter][0]++;
+			player.stageStats[pastStage][0]++;
 			if(player.currentCharsLeft == player.pastCharsLeft) {
 				player.gameStats[prevGameType][1]++;
 				player.charStats[player.pastCharacter][1]++;
+				player.stageStats[pastStage][1]++;
 				player.wonPrevGame = true;
 			}
 			
@@ -245,6 +253,45 @@ public class Main {
 		System.out.println("Timeout % in 3 player games: " + (timeOuts[1][1]/timeOuts[1][0])*100);
 		System.out.println("Timeout % in 4 player games: " + (timeOuts[2][1]/timeOuts[2][0])*100);
 	}
+	
+	public static void printStageStats() {
+		for(int i = 0; i < ATWPlayers.length; i++) {
+			if(ATWPlayers[i].gamesPlayed != 0) {
+				System.out.println("Player's name: " + ATWPlayers[i].name);
+				try {
+					System.out.println("	Peachs castle games played: " + String.format("%.0f", ATWPlayers[i].stageStats[2][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[2][1]/ATWPlayers[i].stageStats[2][0]) );	
+					System.out.println("	Rainbow cruise games played: " + String.format("%.0f", ATWPlayers[i].stageStats[3][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[3][1]/ATWPlayers[i].stageStats[3][0]) );	
+					System.out.println("	Kongo jungle games played: " + String.format("%.0f", ATWPlayers[i].stageStats[4][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[4][1]/ATWPlayers[i].stageStats[4][0]) );	
+					System.out.println("	Jungle japes games played: " + String.format("%.0f", ATWPlayers[i].stageStats[5][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[5][1]/ATWPlayers[i].stageStats[5][0]) );	
+					System.out.println("	Great bay games played: " + String.format("%.0f", ATWPlayers[i].stageStats[6][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[6][1]/ATWPlayers[i].stageStats[6][0]) );	
+					System.out.println("	Temple games played: " + String.format("%.0f", ATWPlayers[i].stageStats[7][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[7][1]/ATWPlayers[i].stageStats[7][0]) );	
+					System.out.println("	Brinstar games played: " + String.format("%.0f", ATWPlayers[i].stageStats[8][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[8][1]/ATWPlayers[i].stageStats[8][0]) );	
+					System.out.println("	Brinstar depths games played: " + String.format("%.0f", ATWPlayers[i].stageStats[9][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[9][1]/ATWPlayers[i].stageStats[9][0]) );	
+					System.out.println("	Yoshis story games played: " + String.format("%.0f", ATWPlayers[i].stageStats[10][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[10][1]/ATWPlayers[i].stageStats[10][0]) );
+					System.out.println("	FOD games played: " + String.format("%.0f", ATWPlayers[i].stageStats[12][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[12][1]/ATWPlayers[i].stageStats[12][0]) );	
+					System.out.println("	Green greens games played: " + String.format("%.0f", ATWPlayers[i].stageStats[13][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[13][1]/ATWPlayers[i].stageStats[13][0]) );	
+					System.out.println("	Corneria games played: " + String.format("%.0f", ATWPlayers[i].stageStats[14][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[14][1]/ATWPlayers[i].stageStats[14][0]) );	
+					System.out.println("	Pokemon stadium games played: " + String.format("%.0f", ATWPlayers[i].stageStats[16][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[16][1]/ATWPlayers[i].stageStats[16][0]) );
+					System.out.println("	Pokefloats games played: " + String.format("%.0f", ATWPlayers[i].stageStats[17][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[17][1]/ATWPlayers[i].stageStats[17][0]) );	
+					System.out.println("	Mute city games played: " + String.format("%.0f", ATWPlayers[i].stageStats[18][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[18][1]/ATWPlayers[i].stageStats[18][0]) );		
+					System.out.println("	Onett games played: " + String.format("%.0f", ATWPlayers[i].stageStats[20][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[20][1]/ATWPlayers[i].stageStats[20][0]) );	
+					System.out.println("	Fourside games played: " + String.format("%.0f", ATWPlayers[i].stageStats[21][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[21][1]/ATWPlayers[i].stageStats[21][0]) );
+					System.out.println("	Mushroom kingdom 1 games played: " + String.format("%.0f", ATWPlayers[i].stageStats[24][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[24][1]/ATWPlayers[i].stageStats[24][0]) );
+					System.out.println("	Mushroom kingdom 2 games played: " + String.format("%.0f", ATWPlayers[i].stageStats[25][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[25][1]/ATWPlayers[i].stageStats[25][0]) );
+					System.out.println("	Flatzone games played: " + String.format("%.0f", ATWPlayers[i].stageStats[27][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[27][1]/ATWPlayers[i].stageStats[27][0]) );	
+					System.out.println("	Dreamland games played: " + String.format("%.0f", ATWPlayers[i].stageStats[28][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[28][1]/ATWPlayers[i].stageStats[28][0]) );	
+					System.out.println("	Yoshis island 64 games played: " + String.format("%.0f", ATWPlayers[i].stageStats[29][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[29][1]/ATWPlayers[i].stageStats[29][0]) );	
+					System.out.println("	Kongo jungle 64 games played: " + String.format("%.0f", ATWPlayers[i].stageStats[30][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[30][1]/ATWPlayers[i].stageStats[30][0]) );	
+					System.out.println("	Battlefield games played: " + String.format("%.0f", ATWPlayers[i].stageStats[36][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[36][1]/ATWPlayers[i].stageStats[36][0]) );	
+					System.out.println("	FD games played: " + String.format("%.0f", ATWPlayers[i].stageStats[37][0]) + ", win rate: " + String.format("%.2f", ATWPlayers[i].stageStats[37][1]/ATWPlayers[i].stageStats[37][0]) );	
+				}
+				catch (ArithmeticException e) {
+					System.out.println("Not enough data");
+				}
+			}
+		}
+	}
+	
 
 	public static long bytesIndexOf(byte[] source, byte[] search, long fromIndex) {
 	    boolean find = false;
@@ -313,6 +360,9 @@ public class Main {
 				catch (ArithmeticException e) {
 					System.out.println("Not enough data");
 				}
+			}
+			else {
+				System.out.println(ATWPlayers[i].gamesPlayed + ATWPlayers[i].name);
 			}
 		}
 		}
