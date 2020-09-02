@@ -2,21 +2,16 @@
 
 .include "Common/common.s"
 
-backup
 li r20,0
 li r21,2
-movetctr 4
 LOOP:
-mr r3,r20
-li r4,0xe90
-mullw r4,r4,r3
+mulli r4,r20,0xe90
 lis r5,0x8045
 ori r5,r5,0x3080
-add r3,r4,r5
-stb r21,0x8e(r3)
+add r4,r4,r5
+stb r21,0x8e(r4)
 addi r20,r20,1
-bdnz LOOP
+cmpwi r20,4
+bne LOOP
 
-
-restore
 lwz	r0, 0x0024 (sp)

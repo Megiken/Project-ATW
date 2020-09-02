@@ -58,7 +58,7 @@ bne \spot
 .endm
 
 .macro fcomparelt reg, reg2, spot
-fcpmo 0, \reg, \reg2
+fcmpo 0, \reg, \reg2
 blt \spot
 .endm
 
@@ -354,6 +354,7 @@ lwz \reg,0x24(rtoc)
 .set shineBrosInit,functSpace+0x144
 .set shuffleInit,functSpace+0x148
 .set flightModeInit,functSpace+0x14c
+.set calcCustomKnockback,functSpace+0x150
 
 
 .set prim.new,0x804dd84c
