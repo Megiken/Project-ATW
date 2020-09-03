@@ -544,7 +544,7 @@ public class ProjectATW extends subMenu{
 		MRSSSettings.menuItems[1] = new menuItem(0);
 		MRSSSettings.menuItems[2] = new menuItem(2,"Game type: ",kothgame,0);
 		MRSSSettings.menuItems[3] = new menuItem(3,"Max score: ",7,50,1);
-		MRSSSettings.menuItems[4] = new menuItem(8,"Mr saturn speed constant: ",0.87,4,0.01,0);
+		MRSSSettings.menuItems[4] = new menuItem(3,"Mr saturn percent: ",25,100,1,0);
 
 		subMenu MRSSInfo = new subMenu(1, "How to play soccer");
 

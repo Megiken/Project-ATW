@@ -32,12 +32,12 @@
 .long 0
 .long 0x42480000
 .long 0x3f800000
-.long 8
+.long 3
 .long 0
 .long 0x801964a0
 .long 0
 .long 0x8019a2b0
-.long 0x0
-.long 0x40800000
-.long 0x3c23d70a
+.long 0
+.long 0x42c80000
+.long 0x3f800000
 .long 9

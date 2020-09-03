@@ -216,7 +216,7 @@
 .long 0x0000001e # .setTime per Hill: , debugSpace+856
 .long 0x00000000 # .setGame type: , debugSpace+860
 .long 0x00000007 # .setMax score: , debugSpace+864
-.long 0x3f5eb852 # .setMr saturn speed constant: , debugSpace+868
+.long 0x00000019 # .setMr saturn percent: , debugSpace+868
 .long 0x00000001 # .setGame type: , debugSpace+872
 .long 0x00000032 # .setMax score: , debugSpace+876
 .long 0x00000004 # .setPenalty per death: , debugSpace+880

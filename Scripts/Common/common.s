@@ -48,7 +48,7 @@ ble \spot
 .endm
 
 .macro fcompareeq reg, reg2, spot
-fcpmo 0, \reg, \reg2
+fcmpo 0, \reg, \reg2
 beq \spot
 .endm
 

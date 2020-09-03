@@ -20,7 +20,8 @@ b LOOP
 FOUND:
 lwz r4,0x2c(r3)
 lwz r5,0x24(r3)
-li r6,10
+lwz r8,0x28(r3)
+loadwz r6,saturnSpeed
 li r7,70
 lfs f10,0xc(r3)
 lwz r3,8(r3)
@@ -47,7 +48,16 @@ ble PAST
 fmr f1,f5
 PAST:
 fmr f21,f1
-b STORE
+fmr f1,f21
+branchl r12,cos
+fmul f26,f20,f1
+stfs f26,0x40(r29)
+fmr f1,f21
+branchl r12,sin
+fmul f26,f20,f1
+stfs f26,0x44(r29)
+b END
+
 
 
 NOSAK:

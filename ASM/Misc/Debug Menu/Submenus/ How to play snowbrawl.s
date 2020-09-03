@@ -2,7 +2,7 @@
 
 .long 0
 .long 0
-.long 0x80196600
+.long 0x801965f8
 .long 0
 .long 0
 .long 0
@@ -18,7 +18,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x80196618
+.long 0x80196610
 .long 0
 .long 0
 .long 0
@@ -26,7 +26,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x8019664c
+.long 0x80196644
 .long 0
 .long 0
 .long 0
@@ -34,7 +34,7 @@
 .long 0
 .long 0
 .long 0
-.long 0x80196684
+.long 0x8019667c
 .long 0
 .long 0
 .long 0

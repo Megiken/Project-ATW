@@ -106,7 +106,7 @@
 .long 0
 .long 1
 .long 0x803001dc
-.long 0x80197940
+.long 0x80197938
 .long 0
 .long 0
 .long 0x8065e8f0
@@ -114,7 +114,7 @@
 .long 0
 .long 1
 .long 0x803001dc
-.long 0x80197c3c
+.long 0x80197c34
 .long 0
 .long 0
 .long 0x8066246c
@@ -122,7 +122,7 @@
 .long 0
 .long 1
 .long 0x803001dc
-.long 0x80197dc4
+.long 0x80197dbc
 .long 0
 .long 0
 .long 0x80662710
@@ -130,7 +130,7 @@
 .long 0
 .long 1
 .long 0x803001dc
-.long 0x80197e30
+.long 0x80197e28
 .long 0
 .long 0
 .long 0x80662854
