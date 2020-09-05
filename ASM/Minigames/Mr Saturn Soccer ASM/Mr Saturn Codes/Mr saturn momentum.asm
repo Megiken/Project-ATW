@@ -26,12 +26,12 @@ li r7,70
 lfs f10,0xc(r3)
 lwz r3,8(r3)
 branchl r12,calcCustomKnockback
-loadfloat f21,r21,0x3CF5C28F
-fmul f20,f20,f21
 lwz r3,0xcac(r29)
 compareine r3,361,NOSAK
 loadfloat f3,r20,0x42000000
 fmr f1,f20
+loadfloat f21,r21,0x3CF5C28F
+fmul f20,f20,f21
 loadfloat f0,r20,0x42006666
 loadfloat f4,r20,0x42300000
 fsubs	f2,f1,f3
@@ -48,19 +48,13 @@ ble PAST
 fmr f1,f5
 PAST:
 fmr f21,f1
-fmr f1,f21
-branchl r12,cos
-fmul f26,f20,f1
-stfs f26,0x40(r29)
-fmr f1,f21
-branchl r12,sin
-fmul f26,f20,f1
-stfs f26,0x44(r29)
-b END
+b STORE
 
 
 
 NOSAK:
+loadfloat f21,r21,0x3CF5C28F
+fmul f20,f20,f21
 convToFloat r3,f1
 lfs f2,rtocrad(rtoc)
 fmul f21,f1,f2
@@ -75,6 +69,12 @@ stfs f26,0x40(r29)
 fmr f1,f21
 branchl r12,sin
 fmul f26,f20,f1
+lfs f10,0x44(r29)
+lfs f9,rtoczero(rtoc)
+fcomparene f9,f10,NOTGROUND
+fcomparelt f9,f26,NOTGROUND
+fneg f26,f26
+NOTGROUND:
 stfs f26,0x44(r29)
 b END
 

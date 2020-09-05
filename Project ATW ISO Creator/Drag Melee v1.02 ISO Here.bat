@@ -1,4 +1,5 @@
 @echo off
+setlocal EnableDelayedExpansion
 
 echo ###############################
 echo ##                           ##
@@ -12,23 +13,21 @@ echo.
 cd /d %~dp0
 cd Stuff
 
-echo Downloading xdelta patch...
-echo This may take however long it takes you to download 400mb.
+for /f "delims=" %%a in ('call ini.cmd ini.ini Path path') do (
+    set val=%%a
+
+)
+
+
+set empty=""
+if !val! == !empty! (
+set pwshcmd=powershell -noprofile -command "&{[System.Reflection.Assembly]::LoadWithPartialName('System.windows.forms') | Out-Null;$OpenFileDialog = New-Object System.Windows.Forms.OpenFileDialog; $OpenFileDialog.ShowDialog()|out-null; $OpenFileDialog.FileName}"
+for /f "delims=" %%I in ('%pwshcmd%') do set "FileName=%%I"
+)
 echo.
 
-wget https://tny.sh/o6pkzUd -O patch.vcdiff
 
-echo Applying patch...
-echo This may take 1-2 minutes.
-echo.
 
-xdelta3.exe -d -vfs %1 "patch.vcdiff" "../Project ATW.iso"
 
-del /f patch.vcdiff
-
-echo.
-echo Done!
-echo The file is located in the folder. Enjoy!
-echo You can close this window.
 
 pause

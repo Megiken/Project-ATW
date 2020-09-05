@@ -48,23 +48,23 @@ mtctr r20
 bctr
 
 ONE:
-load r15,0xC2C80000
-load r16,0x41200000
+load r15,0xc36af0d4
+load r16,0x3f8b7d41
 load r17,0x3f800000
 b END
 TWO:
-load r15,0xC2480000
-load r16,0x41200000
+load r15,0xC351F0D4
+load r16,0x3f8b7d41
 load r17,0x3f800000
 b END
 THREE:
-load r15,0x42480000
-load r16,0x41200000
+load r15,0xc2be7e14
+load r16,0x3f8b7d41
 load r17,0xbf800000
 b END
 FOUR:
-load r15,0x42C80000
-load r16,0x41200000
+load r15,0xC2F07E14
+load r16,0x3f8b7d41
 load r17,0xbf800000
 b END
 END:
