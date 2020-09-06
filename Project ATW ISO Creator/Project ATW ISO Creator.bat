@@ -48,7 +48,7 @@ echo [Path]> ini.ini
 echo path=!val2!>> ini.ini
 
 wget https://tny.sh/o6pkzUd -O patch.vcdiff
-xdelta3.exe -d -vfs %val2% "patch.vcdiff" "../Project ATW.iso"
+xdelta3.exe -d -vfs "%val2%" "patch.vcdiff" "../Project ATW.iso"
 del /f patch.vcdiff
 
 echo The program has finished, a Project ATW.iso should be placed in the main ISO creator folder.
