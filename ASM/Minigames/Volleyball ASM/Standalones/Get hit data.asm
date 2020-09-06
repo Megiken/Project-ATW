@@ -6,3 +6,7 @@
 blrl
 .long 0
 .long 0
+.long 0
+.long 0
+.long 0
+.long 0

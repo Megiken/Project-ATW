@@ -48,12 +48,12 @@ mtctr r20
 bctr
 
 ONE:
-load r15,0xc36af0d4
+load r15,0xC351F0D4
 load r16,0x3f8b7d41
 load r17,0x3f800000
 b END
 TWO:
-load r15,0xC351F0D4
+load r15,0xc36af0d4
 load r16,0x3f8b7d41
 load r17,0x3f800000
 b END

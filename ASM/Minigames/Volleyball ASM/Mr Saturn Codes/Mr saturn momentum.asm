@@ -4,10 +4,10 @@
 backup
 lwz r22,0xcac(r29)
 lwz r20,0xcec(r29)
+lwz r28,0x2c(r20)
 lwz r20,0x2c(r20)
-li r21,0
-stw r21,0xc9c(r29)
 addi r3,r20,0x914
+li r21,0
 LOOP:
 lwz r4,0x20(r3)
 compareeq r4,r22,FOUND
@@ -18,10 +18,40 @@ add r3,r4,r20
 addi r3,r3,0x914
 b LOOP
 FOUND:
+branchlr r14,getHitData
+lbz r20,0xc(r28)
+mulli r20,r20,4
+lwzx r22,r20,r14
+lwz r21,0x10(r28)
+compareeq r21,r22,SAME
+stwx r21,r20,r14
+lbz r21,0x61b(r28)
+compareieq r21,0,RED
+li r19,0
+b LOL2
+RED:
+li r19,1
+LOL2:
+mulli r20,r21,4
+addi r20,r20,0x10
+lwzx r22,r20,r14
+compareine r22,3,NOGOAL
+mr r11,r21
+branchl r12,scoregoal
+b END
+NOGOAL:
+addi r22,r22,1
+stwx r22,r20,r14
+mulli r19,r19,4
+addi r19,r19,0x10
+li r22,0
+stwx r22,r19,r14
+
+SAME:
 lwz r4,0x2c(r3)
 lwz r5,0x24(r3)
 lwz r8,0x28(r3)
-loadwz r6,saturnSpeed
+lwz r6,0xc9c(r29)
 li r7,70
 lfs f10,0xc(r3)
 lwz r3,8(r3)

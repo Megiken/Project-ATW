@@ -14,18 +14,20 @@ stw r4,8(r3)
 cmpwi r11,0
 blt GO
 beq PLUS
-load r4,0xC1C80000
+load r4,0xC35EF0D4
 stw r4,0x14(r3)
 stw r4,0x20(r3)
 b GO
 PLUS:
-load r4,0x41C80000
+load r4,0xC2D87E14
 stw r4,0x14(r3)
 stw r4,0x20(r3)
 GO:
 branchl r12,EntityItemSpawn
 stw r3,mrsaturndata(rtoc)
 lwz r20,0x2c(r3)
+li r3,20
+stw r3,0xc9c(r20)
 lbz r3, 3536(r20)
 li r4, 0x1
 rlwimi r3, r4, 4, 27, 27

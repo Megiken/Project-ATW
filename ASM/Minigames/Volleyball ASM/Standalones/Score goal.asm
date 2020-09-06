@@ -4,7 +4,7 @@
 
 #input r11 = team ID
 
-backup
+backupall
 
 lwz r3,mrsaturndata(rtoc)
 li r18,0x6969
@@ -95,5 +95,5 @@ li r5,0x80
 li r7,7
 branchl r12,playsfx
 
-restore
+restoreall
 blr
