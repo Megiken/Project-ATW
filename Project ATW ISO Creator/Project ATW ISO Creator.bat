@@ -21,7 +21,7 @@ for /f "delims=" %%a in ('call ini.cmd ini.ini Path path') do (
 
 )
 
-set empty=
+set empty=""
 if !val! == !empty! (
   echo Path is empty, please choose your Melee V1.02 ISO
   echo.
@@ -42,18 +42,16 @@ if !val! == !empty! (
 
 echo Using file !val2!
 echo If the process fails from here, make sure that this file is a 1.02 version of melee.
-echo.
 
 
 echo [Path]> ini.ini
 echo path=!val2!>> ini.ini
-echo.
 
 wget https://tny.sh/o6pkzUd -O patch.vcdiff
 xdelta3.exe -d -vfs %val2% "patch.vcdiff" "../Project ATW.iso"
 del /f patch.vcdiff
 
-
+echo The program has finished, a Project ATW.iso should be placed in the main ISO creator folder.
 
 
 pause
