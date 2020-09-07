@@ -2,6 +2,12 @@
 
 .include "Common/common.s"
 
+lwz r20,0x10(r31)
+compareieq r20,MrSaturn,SATURN
+stw	r4, 0x0040 (r31)
+b END
+SATURN:
+
 lfs f10,0x40(r31)
 loadfloat f11,r21,0x3DA3D70A
 fsub f13,f10,f11

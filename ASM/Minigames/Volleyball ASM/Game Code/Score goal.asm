@@ -5,10 +5,8 @@
 backupall
 lwz r31,0x2c(r3)
 branchlr r14,getHitData
-lwz r20,0x10(r14)
-lwz r21,0x14(r14)
-comparene r20,r21,GOAL
-compareieq r20,0,END
+lwz r20,0xc9c(r31)
+compareieq r20,27,END 
 GOAL:
 li r20,0
 subi r14,r14,4

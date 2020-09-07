@@ -4,6 +4,9 @@
 backup
 lwz r22,0xcac(r29)
 lwz r20,0xcec(r29)
+compareine r20,0,NVM
+lwz r20,0xcf0(r29)
+NVM:
 lwz r20,0x2c(r20)
 li r21,0
 stw r21,0xc9c(r29)
@@ -12,7 +15,7 @@ LOOP:
 lwz r4,0x20(r3)
 compareeq r4,r22,FOUND
 addi r21,r21,1
-compareieq r21,4,NORMAL
+compareieq r21,4,END
 mulli r4,r21,0x138
 add r3,r4,r20
 addi r3,r3,0x914

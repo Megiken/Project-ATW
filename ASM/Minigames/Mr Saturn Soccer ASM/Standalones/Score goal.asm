@@ -62,6 +62,12 @@ branchl r12,getPlayerStatic
 lwz r20,0(r3)
 cmpwi r20,2
 bne NEXTPOS
+
+mr r3,r31
+branchl r12,getPlayerEntity
+li r4,0
+branchl r12,0x800d4f24
+
 mr r14,r31
 branchl r12,resetpos
 mr r3,r31

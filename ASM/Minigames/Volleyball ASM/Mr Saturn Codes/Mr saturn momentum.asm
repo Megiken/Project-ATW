@@ -4,6 +4,11 @@
 backup
 lwz r22,0xcac(r29)
 lwz r20,0xcec(r29)
+compareine r20,0,NVM
+lwz r20,0xcf0(r29)
+
+
+NVM:
 lwz r28,0x2c(r20)
 lwz r20,0x2c(r20)
 addi r3,r20,0x914
@@ -12,7 +17,7 @@ LOOP:
 lwz r4,0x20(r3)
 compareeq r4,r22,FOUND
 addi r21,r21,1
-compareieq r21,4,NORMAL
+compareieq r21,4,END
 mulli r4,r21,0x138
 add r3,r4,r20
 addi r3,r3,0x914
@@ -36,8 +41,14 @@ mulli r20,r21,4
 addi r20,r20,0x10
 lwzx r22,r20,r14
 compareine r22,3,NOGOAL
-mr r11,r21
+mr r19,r21
 branchl r12,scoregoal
+subi r14,r14,4
+li r20,0
+movetctr 6
+LOLOLOL:
+stwu r20,4(r14)
+bdnz LOLOLOL
 b END
 NOGOAL:
 addi r22,r22,1
@@ -55,6 +66,10 @@ lwz r6,0xc9c(r29)
 li r7,70
 lfs f10,0xc(r3)
 lwz r3,8(r3)
+li r20,3
+divw r20,r3,r20
+sub r6,r6,r20
+stw r6,0xc9c(r29)
 branchl r12,calcCustomKnockback
 lwz r3,0xcac(r29)
 compareine r3,361,NOSAK

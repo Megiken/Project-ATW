@@ -2,6 +2,12 @@
 
 .include "Common/common.s"
 
+lwz r20,0x10(r31)
+compareieq r20,MrSaturn,SATURN
+lfs	f2, 0x005C (r30)
+b DONE
+SATURN:
+
 bl THERE
 .long 0
 THERE:
@@ -18,3 +24,5 @@ END:
 stfs f20,0(r20)
 LOL:
 lfs f2,rtoczero(rtoc)
+
+DONE:

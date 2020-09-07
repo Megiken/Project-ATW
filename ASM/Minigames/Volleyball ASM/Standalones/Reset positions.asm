@@ -48,7 +48,7 @@ mtctr r20
 bctr
 
 ONE:
-load r15,0xC351F0D4
+load r15,0xC3390000
 load r16,0x3f8b7d41
 load r17,0x3f800000
 b END
@@ -63,7 +63,7 @@ load r16,0x3f8b7d41
 load r17,0xbf800000
 b END
 FOUR:
-load r15,0xC2F07E14
+load r15,0xC3103F0A
 load r16,0x3f8b7d41
 load r17,0xbf800000
 b END

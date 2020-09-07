@@ -3,8 +3,15 @@
 .include "Common/common.s"
 
 loadfloat f1,r20,0x3DA3D70A
-loadfloat f12,r20,0x3FC00000
+lfs f12,rtoctwo(rtoc)
 lwz r20,0x2c(r3)
+
+lwz r21,0x10(r20)
+compareieq r21,MrSaturn,SATURN
+lfs	f1, 0x0010 (r4)
+b END
+SATURN:
+
 lfs f10,0x44(r20)
 lfs f9,rtoczero(rtoc)
 fcomparelt f10,f9,NODOUBLE

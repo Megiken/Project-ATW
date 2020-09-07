@@ -68,12 +68,12 @@ bgt \spot
 .endm
 
 .macro fcomparege reg, reg2, spot
-fcpmo 0, \reg, \reg2
+fcmpo 0, \reg, \reg2
 bge \spot
 .endm
 
 .macro fcomparele reg, reg2, spot
-fcpmo 0, \reg, \reg2
+fcmpo 0, \reg, \reg2
 ble \spot
 .endm
 
