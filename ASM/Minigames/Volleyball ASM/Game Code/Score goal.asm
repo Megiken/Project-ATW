@@ -6,7 +6,7 @@ backupall
 lwz r31,0x2c(r3)
 branchlr r14,getHitData
 lwz r20,0xc9c(r31)
-compareieq r20,27,END 
+compareieq r20,35,END 
 GOAL:
 li r20,0
 subi r14,r14,4

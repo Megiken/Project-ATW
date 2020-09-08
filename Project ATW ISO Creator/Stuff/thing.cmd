@@ -6,7 +6,7 @@
 setlocal
 
 for /f "delims=" %%I in ('powershell -noprofile "iex (${%~f0} | out-string)"') do (
-    echo !%%~I!
+    echo %%~I
 )
 goto :EOF
 

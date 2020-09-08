@@ -26,7 +26,7 @@ GO:
 branchl r12,EntityItemSpawn
 stw r3,mrsaturndata(rtoc)
 lwz r20,0x2c(r3)
-li r3,27
+li r3,35
 stw r3,0xc9c(r20)
 lbz r3, 3536(r20)
 li r4, 0x1
