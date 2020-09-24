@@ -42,34 +42,31 @@ stw r20,suddenDeathItem(rtoc)
    lbz r16,0(r16)
    cmpwi r16,0
    beq SKIPDUBS
+   branchl r12,getDoublesWinner
+   stb r3,Stats_gameWinners(r15)
+   stb r4,Stats_gameWinners+1(r15)
    li r14,1
-LOOPDUBS:
-   mr r3,r14
-   branchl r12,getPlayerData
-   lbz r16,0x61b(r3)
-   cmpwi r16,0
-   beq FOUND
-   addi r14,r14,1
-   cmpwi r14,4
-   beq SKIPDUBS
-   b LOOPDUBS
-
-FOUND:
-   stb r14,Stats_doublesbool(r15)
    b DONEDUBS
 SKIPDUBS:
-li r16,-1
-stb r16,Stats_doublesbool(r15)
+branchl r12,getSinglesWinner
+stb r3,Stats_gameWinners(r15)
+li r14,-1
 DONEDUBS:
+stb r16,Stats_doublesbool(r15)
    load r16,stageData
    lwz r16,0x88(r16)
    stb r16,Stats_stageID(r15)
    branchl r12,countPlayersInMatch
    stb r3,Stats_numofplayers(r15)
-   cmpwi r26,1
-   bne ZERO
-   stb r26,Stats_timeoutbool(r15)
-ZERO:
+   branchl r12,getATWTimer
+   loadwz r4,timerSeconds
+   comparegt r4,r3,TIMEOUT
+   li r16,0
+   b STORETIMEOUT
+   TIMEOUT:
+   li r16,1
+   STORETIMEOUT:
+   stb r16,Stats_timeoutbool(r15)
 
    #Player Loop
 

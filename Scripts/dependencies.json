@@ -15,14 +15,18 @@
           "type": "injectFolder",
           "sourceFolder": "..\\ASM\\Misc\\General Codes\\Standalones",
           "isRecursive": false
-        }
-        ,{
+        },{
           "type": "binary",
           "sourceFile": "..\\ASM\\Misc\\On Boot\\PRIM Lite\\main.bin"
-        },{
+        },
+        {
+          "type": "binary",
+          "sourceFile": "..\\ASM\\Misc\\On Boot\\Mytoc\\mytoc.bin"
+        }
+        ,{
           "type": "replaceCodeBlock",
           "address": "80199f4c",
-          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/Variables.s"
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM/Misc/Debug Menu/Submenus/ Variables.s"
         }
       ]
     }

@@ -16,7 +16,7 @@ cd Stuff
 echo If at any point the program appears to be frozen, try hitting enter.
 echo.
 
-for /f "delims=" %%a in ('call ini.cmd ini.ini Path path') do (
+for /f "delims=" %%a in ('call ini.cmd projectatw.ini Path path') do (
     set val=%%a
 
 )
@@ -48,7 +48,7 @@ wget https://tny.sh/o6pkzUd -O patch.vcdiff
 echo Finding output file.
 
 
-for /f "delims=" %%a in ('call ini.cmd ini.ini Output output') do (
+for /f "delims=" %%a in ('call ini.cmd projectatw.ini Output output') do (
     set val3=%%a
 
 )
@@ -73,10 +73,13 @@ echo.
 echo Applying xdelta patch.
 echo.
 
-echo [Path]> ini.ini
-echo path=!val2!>> ini.ini
-echo [Output]>> ini.ini
-echo output=!val4!>> ini.ini
+set val2=%val2:"=%
+set val4=%val4:"=%
+
+echo [Path]> projectatw.ini
+echo path="%val2%">> projectatw.ini
+echo [Output]>> projectatw.ini
+echo output="%val4%">> projectatw.ini
 
 xdelta3.exe -d -vfs "%val2%" "patch.vcdiff" "%val4%/Project ATW.iso"
 del /f patch.vcdiff

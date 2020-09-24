@@ -3,7 +3,7 @@
 .include "Common/common.s"
 
 li r3,8
-branchl r12,getStageGObj
+branchl r12,0x801c2ba4
 li r4,0
 branchl r12,0x801c3fa4
 load r21,0xC1700000
@@ -18,7 +18,7 @@ branchl r12,0x801c438c
 
 
 li r3,8
-branchl r12,getStageGObj
-branchl r12,GObjRemove
+branchl r12,0x801c2ba4
+branchl r12,GObjremoveProc
 
 lwz	r0, 0x000C (sp)

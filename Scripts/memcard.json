@@ -1,0 +1,111 @@
+{
+  "settings": {
+    "areIncludesRelativeFromFile": true
+  },
+  "outputFiles": [
+    {
+      "file": "../Output/ATW Memcard.txt",
+      "header": [
+        "# GALJ01 - Super Smash Bros. Melee NTSC 1.02",
+        "",
+        "[Gecko]"
+      ]
+    }
+  ],
+  "codes": [
+    {
+      "name": "ATW Memcard",
+      "authors": [
+        "Big Money"
+      ],
+      "build": [
+        {
+          "type": "injectFolder",
+          "sourceFolder": "..\\ATW Memory Card\\ASM",
+          "isRecursive": true
+        },{
+          "type": "replaceCodeBlock",
+          "address": "803fa4e0",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ATW Memory Card/ASM/Debug Menu/ Main Menu.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "803fa664",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ATW Memory Card/ASM/Debug Menu/ Start Match.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "803fa768",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ATW Memory Card/ASM/Debug Menu/ Settings.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "803fa86c",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ATW Memory Card/ASM/Debug Menu/ How to play ATW.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "80192f4c",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ATW Memory Card/ASM/Debug Menu/ Text.s"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "80199f4c",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ATW Memory Card/ASM/Debug Menu/ Variables.s"
+        },
+        {
+          "type": "binary",
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/UnlockAllTrophies.bin"
+        },
+        {
+          "type": "injectFolder",
+          "sourceFolder": "..\\ASM\\Misc/On Boot/Slippi/External/Skip Memcard Prompt",
+          "isRecursive": true
+        },
+        {
+          "type": "binary",
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/DisableSpecialMessages.bin"
+        },
+        {
+          "type": "binary",
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/DisableTrophyMessages.bin"
+        },
+        {
+          "type": "binary",
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/DebugMenu.bin"
+        },
+        {
+          "type": "binary",
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/FasterCssLoad.bin"
+        },
+        {
+          "type": "binary",
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/CStickPanWhilePaused.bin"
+        },
+        {
+          "type": "binary",
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/LaglessFod.bin"
+        },
+        {
+          "type": "binary",
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/RandomStageMusic.bin"
+        },
+        {
+          "type": "binary",
+          "sourceFile": "..\\ASM\\Misc/On Boot/Slippi/Binary/FasterMeleeSettings/RandomCssMusic.bin"
+        },
+        {
+          "type": "injectFolder",
+          "isRecursive": true,
+          "sourceFolder": "..\\ASM\\Misc\\On Boot\\Slippi\\External\\Extended Nametag Box"
+        },
+        {
+          "type": "replaceCodeBlock",
+          "address": "804D4D90",
+          "sourceFile": "C:/Users/Thomas/Desktop/Project-ATW/ASM\\Misc\\General Codes\\Misc\\Extended Name Tags\\7.s"
+        }
+
+      ]
+    }
+  ]
+}

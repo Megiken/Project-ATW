@@ -1,60 +1,46 @@
-#To be inserted at 802109D0
+#To be inserted at 8021086c
 
 .include "Common/common.s"
 
 backup
-bl STRUCT
-mflr r20
-lwz r21,0x0(r20)
-subi r21,r21,1
-stw r21,0x0(r20)
-cmpwi r21,0
-bne END
-li r21,900
-stw r21,0x0(r20)
-addi r3,r20,0x18
-branchl r12,0x80224fdc
-addi r20,r20,4
-lwz r21,0x14(r20)
-stw r21,0x20(r20)
-lwz r21,0x18(r20)
-stw r21,0x24(r20)
-li r21,0x2c
-stw r21,0x8(r20)
-lis r21,0x3f80
-stw r21,0x38(r20)
-lis r21,0x8000
-stw r21,0x44(r20)
-mr r3,r20
-branchl r12,0x80268b18
+li r3,6
+li r4,7
+bl DREAMLANDTHINK
+mflr r5
+li r6,0
+li r7,8
+branchl r12,createCustomGObj
 b END
-STRUCT:
+
+DREAMLANDTHINK:
 blrl
-.long 723
-.long 0
-.long 0
-.long 0
-.long 0
-.long 0
-.long 0
-.long 0
-.long 0
-.long 0
-.long 0
-.long 0
-.long 0
-.long 0
-.long 0
-.long 0
-.long 0
-.long 0
-.long 0
-.long 0
-.long 0
-.long 0
-.long 0
-.long 0
+backup
+mr r31,r3
+lwz r30,0x2c(r31)
+lwz r21,0x0(r30)
+addi r21,r21,1
+stw r21,0x0(r30)
+cmpwi r21,900
+bne ENDTHINK
+li r21,0
+stw r21,0x0(r30)
+branchl r12,getCustomEntityStruct
+mflr r29
+addi r3,r29,0x14
+branchl r12,0x8026cb3c
+compareieq r3,0,ENDTHINK
+lwz r21,0x14(r29)
+stw r21,0x20(r29)
+lwz r21,0x18(r29)
+stw r21,0x24(r29)
+li r21,0x2c
+stw r21,0x8(r29)
+mr r3,r29
+branchl r12,0x80268b18
+ENDTHINK:
+restore
+blr
 
 END:
 restore
-blr
+stw	r31, -0x4C04 (r13)

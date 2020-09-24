@@ -8,11 +8,16 @@ public class Main{
 	final static String toCSS = "8032C90c";
 	final static String toCSSClear = "8032C910";
 	public static int spaceLOL = 0;
-	public static int textSpace = 1650508;
-	public static int originalTextSpace = 1650508;
-	public static int subMenuSpace = 6671456;
-	public static int varSpace = 1679180;
-	public static int originalVarSpace = 1679180;
+	//public static int textSpace = 1650508;
+	//public static int originalTextSpace = 1650508;
+	//public static int subMenuSpace = 6671456;
+	//public static int varSpace = 1679180;
+	public static int varSpace = 4171872;
+	public static int subMenuSpace = 4170976;
+	public static int textSpace = 4171968;
+	public static int originalTextSpace = 4171968;
+	//public static int originalVarSpace = 1679180;
+	public static int originalVarSpace = 4171872;
 	public static int currentMenuSpace = subMenuSpace;
 	public static String[][] done = new String[1000][1000];
 	public static String[] doneoffset = new String[1000];
@@ -22,6 +27,7 @@ public class Main{
 	public static int currentID2 = 0;
 	public static File currentFile = new File("");
 	public static String atwFilee = "C:\\Users\\Thomas\\Desktop\\Project-ATW\\ASM\\Misc\\Debug Menu\\Submenus\\ ";
+	public static String memcardFile = "C:\\Users\\Thomas\\Desktop\\Project-ATW\\ATW Memory Card\\ASM\\Debug Menu\\ ";
 	public static String text = "";
 	public static String var = "";
 	public static String eighty = "80";
@@ -30,8 +36,9 @@ public class Main{
 		
 		subMenu projectATW = ProjectATW.getProjectATW();
 		ArrayList<jsonObject> list = new ArrayList<jsonObject>();
-
-		createDebugMenu(projectATW,atwFilee,list);
+		subMenu atwMemCard = ATWMemCard.getATWMemCard();
+		//createDebugMenu(projectATW,atwFilee,list);
+		createDebugMenu(atwMemCard,memcardFile,list);
 
 
 	}

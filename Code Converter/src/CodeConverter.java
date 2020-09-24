@@ -10,6 +10,7 @@ public class CodeConverter
     	String path = "";
     	String path2 = "C:/Users/Thomas/Desktop/Project ATW/ATW.dat";
     	boolean debug = false;
+    	boolean memcard = false;
     	if(args[0].equals("-c")) {
     		path = args[1];
     	}
@@ -19,6 +20,11 @@ public class CodeConverter
     	if(args.length>4) {
     		if(args[4].equals("-d")) {
     			debug = true;
+    		}
+    	}
+    	if(args.length>4) {
+    		if(args[4].equals("-m")) {
+    			memcard = true;
     		}
     	}
     	String temp = "";
@@ -59,7 +65,60 @@ public class CodeConverter
             }
         	sc.close();
             out.close();
-        }else {
+        }else if(memcard){
+        	temp = "";
+            code = "";
+            output = 0;
+            int bytes = 0;
+            out.writeBytes("@title ATW \n");
+            while (sc.hasNext()) {
+                temp = sc.nextLine();
+                if (temp.length() > 2) {
+                    code = temp.substring(0, 2);
+                }
+                if (code.equals("04")) {
+                    code = "@set ";
+                    code += temp.substring(2, 8);
+                    code += " " + temp.substring(9, 17);
+                    out.writeBytes(code + "\n");
+                }
+                else if(code.equals("06")) {
+                	String thing = temp.substring(2,8);
+                	int original = Integer.parseInt(thing,16);
+                	int other = Integer.parseInt(temp.substring(9,17), 16);
+     
+                	for(int i = 0;i<other;i+=8) {
+                		temp = sc.nextLine();
+                        out.writeBytes("@set " + Integer.toHexString(original) + " " + temp.substring(0,8) + "\n");
+                        original+=4;
+                        out.writeBytes("@set " + Integer.toHexString(original) + " " + temp.substring(9,17) + "\n");
+                        original+=4;
+                	}
+
+                }
+                
+            	else if (code.equals("C2")) {
+            		code = "@branch ";
+                    code += temp.substring(2, 8);
+                    out.writeBytes(code + "\n");
+                	String thing = temp.substring(9, 17);
+                	int other = Integer.parseInt(thing, 16);
+                	for(int i = 0; i < other; i++) {
+                        temp = sc.nextLine();
+                        code = temp.substring(0, 8);
+                        out.writeBytes(code + "\n");
+                        code = temp.substring(9, 17);
+                        out.writeBytes(code + "\n");
+                	}
+                }
+        	
+            }
+        	sc.close();
+            out.close();
+        }
+        
+        
+        else {
         
         
         code = Integer.toHexString(getlength(sc, "04"));

@@ -1,3 +1,3 @@
-Double click on the Project ATW ISO Creator.bat to run the program.
+Double click on the preferred ATW ISO Creator.bat to run the program.
 You will always get the latest version with this program, the ISO creator will never need to be updated.
-If you want to change the input/output paths, you can go into Stuff->ini.ini and enter the paths manually.
+If you want to change the input/output paths, you can go into Stuff->projectatw.ini or rollbackatw.ini and change the paths manually.

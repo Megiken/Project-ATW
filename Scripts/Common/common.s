@@ -356,6 +356,9 @@ lwz \reg,0x24(rtoc)
 .set flightModeInit,functSpace+0x14c
 .set calcCustomKnockback,functSpace+0x150
 .set getHitData,functSpace+0x154
+.set getATWTimer,functSpace+0x158
+.set getDoublesWinner,functSpace+0x15c
+.set getSinglesWinner,functSpace+0x160
 
 
 .set prim.new,0x804dd84c
@@ -587,7 +590,7 @@ lwz \reg,0x24(rtoc)
 # Custom Stat Offsets
 ################################################################################
 
-.set Stats_length,0x2c
+.set Stats_length,0x30
 
 .set Stats_stageID,0x0
 .set Stats_numofplayers,0x1
@@ -602,6 +605,7 @@ lwz \reg,0x24(rtoc)
 .set Stats_SDs,0x18
 .set Stats_DamageGiven,0x1c
 .set Stats_DamageTaken,0x24
+.set Stats_gameWinners,0x2c
 
 
 ################################################################################

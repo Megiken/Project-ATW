@@ -22,6 +22,6 @@ loc_0x4:
   beq- loc_0x4
   stw r3, 48(r30)
   mr r0, r15
-  cmplwi r0, 9
 
 END:
+  cmplwi r0, 9
