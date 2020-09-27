@@ -25,10 +25,6 @@ b DOUBLES
 
 TESTDUBS:
 
-branchl r12,getCSSplayers
-cmpwi r3,4
-beq DOUBLES
-
 load r22,doublesByte
 li r21,0
 stb r21,0(r22)
@@ -44,12 +40,8 @@ cmpwi r20,0
 beq NO
 cmpwi r20,5
 blt YES
-li r3,40
-branchl r12,randomI
-li r3,40
-branchl r12,randomI
-li r3,40
-branchl r12,randomI
+branchl r12,getCSSplayers
+compareile r3,2,NEXT
 li r3,40
 branchl r12,randomI
 cmpwi r3,28
@@ -63,24 +55,17 @@ cmpwi r20,4
 blt NEXT
 
 load r20,playerCSSdata1-2
+AGAINLOL:
+li r3,30
+branchl r12,randomI
 
-li r3,30
-branchl r12,randomI
-li r3,30
-branchl r12,randomI
-li r3,30
-branchl r12,randomI
-li r3,30
-branchl r12,randomI
 li r4,10
 divw r3,r3,r4
 addi r3,r3,1
+lwz r4,redTeamMate(rtoc)
+compareeq r4,r3,AGAINLOL
 stw r3,redTeamMate(rtoc)
 
-branchl r12,getCSSplayers
-cmpwi r3,0
-beq NEXT
-lwz r3,redTeamMate(rtoc)
 
 li r19,1
 LOOPING:

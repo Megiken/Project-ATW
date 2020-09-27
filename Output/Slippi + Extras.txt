@@ -4920,6 +4920,8 @@ D0340014 90940008
 B8610008 80010104
 38210100 7C0803A6
 60000000 00000000
+0422C340 60000000 #../ASM/Misc/General Codes/Misc/Disable Custom Rules Texture.asm
+0422C340 60000000 #../ASM/Misc/General Codes/Misc/Disable Custom Rules Texture0.asm
 041A1C58 38000000 #../ASM/Misc/General Codes/Misc/Disable Start Screen Transitions.asm
 041A1CE8 7C010800 #../ASM/Misc/General Codes/Misc/Disable dev game.asm
 C222BA1C 00000007 #../ASM/Misc/General Codes/Misc/Disable screen shake on name entry.asm
@@ -4930,6 +4932,12 @@ C222BA1C 00000007 #../ASM/Misc/General Codes/Misc/Disable screen shake on name e
 2C140005 40820008
 4E800020 7C0802A6
 60000000 00000000
+C2229E34 00000005 #../ASM/Misc/General Codes/Misc/Disable textures.asm
+3E808047 62949D30
+8A940000 2C140001
+41820014 3D808039
+618C069C 7D8803A6
+4E800021 00000000
 04302E00 4E800020 #../ASM/Misc/General Codes/Misc/Don't Run Functions Without A Press.asm
 042F2094 4E800020 #../ASM/Misc/General Codes/Misc/Dont spawn trophys.asm
 C23039A4 00000015 #../ASM/Misc/General Codes/Misc/Everyone can control debug menu.asm

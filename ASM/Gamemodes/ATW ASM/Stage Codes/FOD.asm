@@ -10,10 +10,10 @@ bne END
 lbz r3,0xc(r30)
 branchl r12,getPlayerStatic
 lhz r4,0x60(r3)
-addi r4,r4,5
+addi r4,r4,10
 sth r4,0x60(r3)
 
-li r22,5
+li r22,10
 branchl r12,Int2Float
 lfs f9,0x1830(r30)
 fadd f9,f9,f8

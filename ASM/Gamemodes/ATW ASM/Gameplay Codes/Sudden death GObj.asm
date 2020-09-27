@@ -36,6 +36,7 @@ loadbz r20,doublesByte
 compareieq r20,0,DOIT
 branchl r12,getDoublesWinner
 compareine r3,-1,ENDTHINK
+DOIT:
 li r20,0
 LOOP:
 mr r3,r20

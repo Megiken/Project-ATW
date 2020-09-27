@@ -583,8 +583,7 @@ lwz \reg,0x24(rtoc)
 # Values
 ################################################################################
 
-.set allocSpace,0x28000
-.set debugMenuValues,0x80bdcd40+allocSpace+0x520
+.set allocSpace,0x30000
 
 ################################################################################
 # Custom Stat Offsets

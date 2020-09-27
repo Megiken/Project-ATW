@@ -4,6 +4,7 @@
 
 backup
 
+REDO:
 li r3,1000
 branchl r12,0x80380580
 mr r4,r3
@@ -77,7 +78,7 @@ cmpwi r4,726
 blt FINISH
 li r3,Screwattack
 cmpwi r4,748
-blt FINISH
+blt TEST
 
 li r3,MetalBox
 cmpwi r4,769
@@ -122,8 +123,12 @@ li r3,Starman
 cmpwi r4,980
 blt FINISH
 li r3,Food
-
-
+b FINISH
+TEST:
+mr r20,r3
+branchl r12,countPlayersInMatch
+compareile r3,2,REDO
+mr r3,r20
 
 
 
